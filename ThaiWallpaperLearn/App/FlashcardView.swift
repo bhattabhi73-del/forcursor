@@ -20,8 +20,9 @@ struct FlashcardView: View {
             VStack(spacing: 16) {
                 ZStack {
                     RoundedRectangle(cornerRadius: 28)
-                        .fill(Color(.secondarySystemGroupedBackground))
-                        .shadow(color: .black.opacity(0.08), radius: 16, y: 8)
+                        .fill(ThaiTheme.cream)
+                        .overlay(RoundedRectangle(cornerRadius: 28).stroke(ThaiTheme.gold.opacity(0.3), lineWidth: 1))
+                        .shadow(color: ThaiTheme.ink.opacity(0.12), radius: 16, y: 8)
 
                     if revealed {
                         revealSide.transition(.opacity)
@@ -88,7 +89,7 @@ struct FlashcardView: View {
                 .padding(.bottom, 8)
             }
             .navigationTitle("Practice")
-            .background(Color(.systemGroupedBackground))
+            .background(ThaiTheme.sand)
         }
     }
 
@@ -101,12 +102,13 @@ struct FlashcardView: View {
                 .font(.system(size: 64, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
+                .foregroundStyle(ThaiTheme.ink)
 
             HStack(spacing: 12) {
-                capsuleButton("Play", icon: "speaker.wave.2.fill") {
+                capsuleButton("Play", icon: "speaker.wave.2.fill", fill: ThaiTheme.indigo) {
                     SpeechService.shared.speak(thai: current.thai, romanization: current.romanization)
                 }
-                capsuleButton("Reveal", icon: "eye.fill") {
+                capsuleButton("Reveal", icon: "eye.fill", fill: ThaiTheme.gold) {
                     withAnimation(.spring(duration: 0.35)) { revealed = true }
                 }
             }
@@ -115,10 +117,12 @@ struct FlashcardView: View {
                 HStack(spacing: 8) {
                     Text("🇮🇳").font(.caption)
                     Text(current.hindiPronunciation).font(.title3.weight(.medium))
+                        .foregroundStyle(ThaiTheme.orchid)
                 }
                 HStack(spacing: 8) {
                     Text("🔤").font(.caption)
                     Text(current.romanization).font(.title3.weight(.medium))
+                        .foregroundStyle(ThaiTheme.indigo)
                 }
             }
 
@@ -136,11 +140,11 @@ struct FlashcardView: View {
 
     private func toneColor(_ tone: ThaiTone) -> Color {
         switch tone {
-        case .mid: return .gray
-        case .low: return .blue
-        case .falling: return .red
-        case .high: return .orange
-        case .rising: return .green
+        case .mid: return ThaiTheme.stone
+        case .low: return Color(red: 0.290, green: 0.435, blue: 0.831)
+        case .falling: return Color(red: 0.820, green: 0.302, blue: 0.302)
+        case .high: return Color(red: 0.902, green: 0.541, blue: 0.180)
+        case .rising: return Color(red: 0.243, green: 0.647, blue: 0.424)
         }
     }
 
@@ -197,6 +201,7 @@ struct FlashcardView: View {
                         .font(.system(size: 40, weight: .bold, design: .rounded))
                         .minimumScaleFactor(0.4)
                         .lineLimit(1)
+                        .foregroundStyle(ThaiTheme.ink)
                         .onTapGesture {
                             withAnimation(.spring(duration: 0.35)) {
                                 revealed = false
@@ -267,7 +272,7 @@ struct FlashcardView: View {
                             }
                             .frame(maxWidth: .infinity)
                             .padding(10)
-                            .background(Color(.systemGroupedBackground), in: RoundedRectangle(cornerRadius: 12))
+                            .background(ThaiTheme.sand, in: RoundedRectangle(cornerRadius: 12))
                         }
                     }
                 case .similar:
@@ -326,8 +331,9 @@ struct FlashcardView: View {
             }
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
+            .foregroundStyle(isActive ? .white : ThaiTheme.ink)
             .background(
-                isActive ? Color.accentColor.opacity(0.3) : Color.accentColor.opacity(0.12),
+                isActive ? ThaiTheme.indigo : ThaiTheme.parchment,
                 in: RoundedRectangle(cornerRadius: 12)
             )
         }
@@ -337,9 +343,12 @@ struct FlashcardView: View {
     private func sentencesSection(_ sentences: [WordExample]) -> some View {
         VStack(spacing: 14) {
             sectionLabel("IN SENTENCES")
+            Text("Tap an underlined word for its details")
+                .font(.caption2)
+                .foregroundStyle(.secondary)
             ForEach(Array(sentences.enumerated()), id: \.offset) { _, example in
                 VStack(spacing: 4) {
-                    Text(example.thai)
+                    Text(linkedSentence(example.thai))
                         .font(.headline)
                     Text(example.romanization)
                         .font(.caption)
@@ -357,9 +366,54 @@ struct FlashcardView: View {
                 }
                 .frame(maxWidth: .infinity)
                 .padding(10)
-                .background(Color(.systemGroupedBackground), in: RoundedRectangle(cornerRadius: 12))
+                .background(ThaiTheme.sand, in: RoundedRectangle(cornerRadius: 12))
             }
         }
+        .environment(\.openURL, OpenURLAction { url in
+            if url.scheme == "thaiword", let id = Int(url.host() ?? ""),
+               let word = Vocabulary.all.first(where: { $0.id == id }) {
+                jump(to: word)
+                return .handled
+            }
+            return .systemAction
+        })
+    }
+
+    /// Splits a Thai sentence into vocabulary words (tappable) and glue text,
+    /// using greedy longest-match against the dictionary.
+    private func sentenceSegments(_ thai: String) -> [(text: String, word: ThaiWord?)] {
+        let vocab = Vocabulary.all.sorted { $0.thai.count > $1.thai.count }
+        var result: [(String, ThaiWord?)] = []
+        var rest = Substring(thai)
+        var plain = ""
+        while let first = rest.first {
+            if let match = vocab.first(where: { rest.hasPrefix($0.thai) }) {
+                if !plain.isEmpty { result.append((plain, nil)); plain = "" }
+                result.append((match.thai, match))
+                rest = rest.dropFirst(match.thai.count)
+            } else {
+                plain.append(first)
+                rest = rest.dropFirst()
+            }
+        }
+        if !plain.isEmpty { result.append((plain, nil)) }
+        return result
+    }
+
+    private func linkedSentence(_ thai: String) -> AttributedString {
+        var result = AttributedString()
+        for segment in sentenceSegments(thai) {
+            var piece = AttributedString(segment.text)
+            if let word = segment.word, word.id != current.id {
+                piece.link = URL(string: "thaiword://\(word.id)")
+                piece.foregroundColor = ThaiTheme.indigo
+                piece.underlineStyle = .single
+            } else {
+                piece.foregroundColor = ThaiTheme.ink
+            }
+            result += piece
+        }
+        return result
     }
 
     private func wordChips(_ words: [ThaiWord]) -> some View {
@@ -379,28 +433,29 @@ struct FlashcardView: View {
                     .frame(maxWidth: .infinity)
                     .padding(.vertical, 8)
                     .padding(.horizontal, 6)
-                    .background(Color.accentColor.opacity(0.12), in: RoundedRectangle(cornerRadius: 12))
+                    .background(ThaiTheme.parchment, in: RoundedRectangle(cornerRadius: 12))
                 }
                 .buttonStyle(.plain)
             }
         }
     }
 
-    private func capsuleButton(_ title: String, icon: String, action: @escaping () -> Void) -> some View {
+    private func capsuleButton(_ title: String, icon: String, fill: Color = ThaiTheme.indigo, action: @escaping () -> Void) -> some View {
         Button(action: action) {
             Label(title, systemImage: icon)
                 .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.white)
                 .padding(.horizontal, 16)
                 .padding(.vertical, 8)
         }
-        .background(Color.accentColor.opacity(0.15), in: Capsule())
+        .background(fill, in: Capsule())
     }
 
     private func sectionLabel(_ title: String) -> some View {
         Text(title)
-            .font(.caption2.weight(.semibold))
+            .font(.caption2.weight(.bold))
             .tracking(1.2)
-            .foregroundStyle(.secondary)
+            .foregroundStyle(ThaiTheme.gold)
     }
 
     private func jump(to word: ThaiWord) {

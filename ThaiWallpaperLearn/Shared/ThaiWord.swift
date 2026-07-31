@@ -1,4 +1,31 @@
 import Foundation
+import SwiftUI
+
+/// "Sukhothai Gold" — the design language shared by the app and widgets.
+/// Warm sand surfaces, deep indigo ink, temple-gold accents, orchid for
+/// Devanagari, jade for the English-first direction.
+enum ThaiTheme {
+    static let sand       = Color(red: 0.965, green: 0.941, blue: 0.894)  // #F6F0E4
+    static let cream      = Color(red: 1.000, green: 0.988, blue: 0.961)  // #FFFCF5
+    static let parchment  = Color(red: 0.937, green: 0.902, blue: 0.812)  // #EFE6CF
+    static let ink        = Color(red: 0.165, green: 0.141, blue: 0.251)  // #2A2440
+    static let indigo     = Color(red: 0.239, green: 0.298, blue: 0.620)  // #3D4C9E
+    static let deepIndigo = Color(red: 0.169, green: 0.208, blue: 0.447)  // #2B3572
+    static let gold       = Color(red: 0.851, green: 0.604, blue: 0.169)  // #D99A2B
+    static let lightGold  = Color(red: 0.949, green: 0.784, blue: 0.475)  // #F2C879
+    static let orchid     = Color(red: 0.722, green: 0.298, blue: 0.490)  // #B84C7D
+    static let jade       = Color(red: 0.118, green: 0.420, blue: 0.333)  // #1E6B55
+    static let plum       = Color(red: 0.420, green: 0.231, blue: 0.561)  // #6B3B8F
+    static let stone      = Color(red: 0.541, green: 0.522, blue: 0.467)  // #8A8577
+
+    static let thaiGradient = LinearGradient(
+        colors: [deepIndigo, plum, orchid],
+        startPoint: .topLeading, endPoint: .bottomTrailing)
+
+    static let englishGradient = LinearGradient(
+        colors: [jade, deepIndigo],
+        startPoint: .topLeading, endPoint: .bottomTrailing)
+}
 
 /// A single vocabulary entry shown in the app and on the widget.
 ///

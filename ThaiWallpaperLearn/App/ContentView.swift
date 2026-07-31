@@ -53,6 +53,7 @@ struct ContentView: View {
             HelpView()
                 .tabItem { Label("Widget", systemImage: "square.grid.2x2.fill") }
         }
+        .tint(ThaiTheme.indigo)
     }
 }
 
@@ -96,7 +97,7 @@ struct TodayView: View {
                 .padding(.bottom, 32)
             }
             .navigationTitle("เรียนภาษาไทย")
-            .background(Color(.systemGroupedBackground))
+            .background(ThaiTheme.sand)
         }
     }
 }
@@ -113,16 +114,18 @@ struct WordCard: View {
                 .font(.system(size: compact ? 48 : 72, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
+                .foregroundStyle(ThaiTheme.ink)
 
             Button {
                 SpeechService.shared.speak(thai: word.thai, romanization: word.romanization)
             } label: {
                 Label("Play", systemImage: "speaker.wave.2.fill")
                     .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(.white)
                     .padding(.horizontal, 16)
                     .padding(.vertical, 8)
             }
-            .background(Color.accentColor.opacity(0.15), in: Capsule())
+            .background(ThaiTheme.indigo, in: Capsule())
 
             VStack(spacing: 6) {
                 pronRow(flag: "🇮🇳", label: "HI", value: word.hindiPronunciation)
@@ -137,15 +140,16 @@ struct WordCard: View {
             }
 
             Text(word.category.uppercased())
-                .font(.caption2)
+                .font(.caption2.weight(.bold))
                 .tracking(1.2)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(ThaiTheme.gold)
                 .padding(.top, 4)
         }
         .padding(compact ? 16 : 28)
         .frame(maxWidth: .infinity)
-        .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 24))
-        .shadow(color: .black.opacity(0.06), radius: 12, y: 6)
+        .background(ThaiTheme.cream, in: RoundedRectangle(cornerRadius: 24))
+        .overlay(RoundedRectangle(cornerRadius: 24).stroke(ThaiTheme.gold.opacity(0.3), lineWidth: 1))
+        .shadow(color: ThaiTheme.ink.opacity(0.10), radius: 12, y: 6)
         .padding(.horizontal)
     }
 
@@ -157,6 +161,7 @@ struct WordCard: View {
                 .foregroundStyle(.secondary)
             Text(value)
                 .font(.title3.weight(.medium))
+                .foregroundStyle(label == "HI" ? ThaiTheme.orchid : ThaiTheme.indigo)
         }
     }
 
@@ -166,6 +171,7 @@ struct WordCard: View {
             Text(value)
                 .font(.title3)
                 .multilineTextAlignment(.center)
+                .foregroundStyle(ThaiTheme.ink)
         }
     }
 }
@@ -267,8 +273,9 @@ struct BrowseView: View {
                 .font(.subheadline.weight(selection == value ? .semibold : .regular))
                 .padding(.horizontal, 14)
                 .padding(.vertical, 7)
+                .foregroundStyle(selection == value ? .white : ThaiTheme.ink)
                 .background(
-                    selection == value ? Color.accentColor.opacity(0.2) : Color(.secondarySystemGroupedBackground),
+                    selection == value ? ThaiTheme.indigo : ThaiTheme.parchment,
                     in: Capsule()
                 )
         }

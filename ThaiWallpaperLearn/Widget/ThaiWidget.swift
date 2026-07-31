@@ -68,25 +68,28 @@ struct ThaiWidgetEntryView: View {
                 .font(.system(size: 40, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
+                .foregroundStyle(.white)
             Text(entry.word.hindiPronunciation)
-                .font(.footnote.weight(.medium))
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(ThaiTheme.lightGold)
             Text(entry.word.romanization)
                 .font(.footnote.weight(.medium))
-                .foregroundStyle(.secondary)
-            Divider()
+                .foregroundStyle(.white.opacity(0.85))
+            Divider().overlay(.white.opacity(0.3))
             Text(entry.word.hindiMeaning)
                 .font(.footnote)
+                .foregroundStyle(.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
             Text(entry.word.englishMeaning)
                 .font(.footnote)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.white.opacity(0.85))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
         }
         .multilineTextAlignment(.center)
         .padding(6)
-        .containerBackground(for: .widget) { gradient }
+        .containerBackground(for: .widget) { ThaiTheme.thaiGradient }
     }
 
     // Home screen — medium
@@ -96,24 +99,27 @@ struct ThaiWidgetEntryView: View {
                 .font(.system(size: 42, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
-            Text("🗣️ \(entry.word.hindiPronunciation) · \(entry.word.romanization)")
-                .font(.subheadline.weight(.medium))
+                .foregroundStyle(.white)
+            Text("\(entry.word.hindiPronunciation) · \(entry.word.romanization)")
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(ThaiTheme.lightGold)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            Divider().padding(.horizontal, 24)
+            Divider().overlay(.white.opacity(0.3)).padding(.horizontal, 24)
             Text("🇮🇳 \(entry.word.hindiMeaning)")
                 .font(.subheadline)
+                .foregroundStyle(.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
             Text("🇬🇧 \(entry.word.englishMeaning)")
                 .font(.subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.white.opacity(0.85))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
         }
         .multilineTextAlignment(.center)
         .padding(12)
-        .containerBackground(for: .widget) { gradient }
+        .containerBackground(for: .widget) { ThaiTheme.thaiGradient }
     }
 
     // Home screen — large: roomiest layout, same order top to bottom
@@ -124,42 +130,45 @@ struct ThaiWidgetEntryView: View {
                 .font(.system(size: 76, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
+                .foregroundStyle(.white)
 
             VStack(spacing: 6) {
                 Text("PRONUNCIATION")
-                    .font(.caption2.weight(.semibold))
+                    .font(.caption2.weight(.bold))
                     .tracking(1.2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(ThaiTheme.lightGold)
                 Text(entry.word.hindiPronunciation)
                     .font(.title2.weight(.medium))
+                    .foregroundStyle(.white)
                 Text(entry.word.romanization)
                     .font(.title3.weight(.medium))
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.white.opacity(0.85))
             }
 
-            Divider().padding(.horizontal, 40)
+            Divider().overlay(.white.opacity(0.3)).padding(.horizontal, 40)
 
             VStack(spacing: 6) {
                 Text("MEANING")
-                    .font(.caption2.weight(.semibold))
+                    .font(.caption2.weight(.bold))
                     .tracking(1.2)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(ThaiTheme.lightGold)
                 Text(entry.word.hindiMeaning)
                     .font(.title2)
+                    .foregroundStyle(.white)
                 Text(entry.word.englishMeaning)
                     .font(.title3)
-                    .foregroundStyle(.secondary)
+                    .foregroundStyle(.white.opacity(0.85))
             }
 
             Text(entry.word.category.uppercased())
-                .font(.caption2)
+                .font(.caption2.weight(.semibold))
                 .tracking(1.2)
-                .foregroundStyle(.tertiary)
+                .foregroundStyle(ThaiTheme.lightGold.opacity(0.8))
             Spacer(minLength: 0)
         }
         .multilineTextAlignment(.center)
         .padding(16)
-        .containerBackground(for: .widget) { gradient }
+        .containerBackground(for: .widget) { ThaiTheme.thaiGradient }
     }
 
     // Lock screen — rectangular (tinted / monochrome by system).
@@ -200,14 +209,6 @@ struct ThaiWidgetEntryView: View {
         .containerBackground(for: .widget) { Color.clear }
     }
 
-    private var gradient: LinearGradient {
-        LinearGradient(
-            colors: [Color(red: 0.16, green: 0.32, blue: 0.75).opacity(0.25),
-                     Color(red: 0.86, green: 0.30, blue: 0.55).opacity(0.25)],
-            startPoint: .topLeading,
-            endPoint: .bottomTrailing
-        )
-    }
 }
 
 // MARK: - Paired lock-screen halves
@@ -314,31 +315,27 @@ struct EnglishFirstEntryView: View {
                 .font(.system(size: family == .systemSmall ? 24 : 34, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(family == .systemSmall ? 2 : 1)
-            Divider().padding(.horizontal, 24)
+                .foregroundStyle(ThaiTheme.lightGold)
+            Divider().overlay(.white.opacity(0.3)).padding(.horizontal, 24)
             Text(entry.word.thai)
                 .font(.system(size: family == .systemSmall ? 30 : 40, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
+                .foregroundStyle(.white)
             Text("\(entry.word.hindiPronunciation) · \(entry.word.romanization)")
                 .font(family == .systemSmall ? .footnote.weight(.medium) : .subheadline.weight(.medium))
+                .foregroundStyle(.white.opacity(0.9))
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)
             Text("🇮🇳 \(entry.word.hindiMeaning)")
                 .font(family == .systemSmall ? .footnote : .subheadline)
-                .foregroundStyle(.secondary)
+                .foregroundStyle(.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)
         }
         .multilineTextAlignment(.center)
         .padding(family == .systemSmall ? 8 : 12)
-        .containerBackground(for: .widget) {
-            LinearGradient(
-                colors: [Color(red: 0.13, green: 0.55, blue: 0.45).opacity(0.25),
-                         Color(red: 0.16, green: 0.32, blue: 0.75).opacity(0.25)],
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing
-            )
-        }
+        .containerBackground(for: .widget) { ThaiTheme.englishGradient }
     }
 }
 
