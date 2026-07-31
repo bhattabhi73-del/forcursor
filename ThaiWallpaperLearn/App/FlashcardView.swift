@@ -43,53 +43,62 @@ struct FlashcardView: View {
                         }
                 )
 
-                HStack(spacing: 12) {
-                    Text("\(index + 1) / \(deck.count)")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                    Text("· swipe ← → to change word")
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
-                }
-
-                HStack(spacing: 16) {
+                HStack {
                     Button {
                         goBack()
                     } label: {
-                        Label("Previous", systemImage: "arrow.left")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity)
-                            .padding()
+                        Image(systemName: "chevron.left")
+                            .font(.title3.weight(.bold))
+                            .foregroundStyle(ThaiTheme.indigo)
+                            .frame(width: 54, height: 54)
+                            .background(ThaiTheme.cream, in: Circle())
+                            .overlay(Circle().stroke(ThaiTheme.gold.opacity(0.4), lineWidth: 1))
                     }
-                    .background(Color.accentColor.opacity(0.15), in: RoundedRectangle(cornerRadius: 16))
+
+                    Spacer()
+
+                    VStack(spacing: 2) {
+                        Text("\(index + 1) / \(deck.count)")
+                            .font(.headline)
+                            .foregroundStyle(ThaiTheme.ink)
+                        Text("swipe or tap arrows")
+                            .font(.caption2)
+                            .foregroundStyle(.tertiary)
+                    }
+
+                    Spacer()
 
                     Button {
                         advance()
                     } label: {
-                        Label("Next", systemImage: "arrow.right")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity)
-                            .padding()
+                        Image(systemName: "chevron.right")
+                            .font(.title3.weight(.bold))
+                            .foregroundStyle(.white)
+                            .frame(width: 54, height: 54)
+                            .background(ThaiTheme.indigo.gradient, in: Circle())
+                            .shadow(color: ThaiTheme.indigo.opacity(0.35), radius: 6, y: 3)
                     }
-                    .background(Color.accentColor.opacity(0.15), in: RoundedRectangle(cornerRadius: 16))
-
-                    Button {
-                        deck.shuffle()
-                        index = 0
-                        revealed = false
-                        detail = nil
-                    } label: {
-                        Image(systemName: "shuffle")
-                            .font(.headline)
-                            .padding()
-                    }
-                    .background(Color.accentColor.opacity(0.15), in: RoundedRectangle(cornerRadius: 16))
                 }
-                .padding(.horizontal)
+                .padding(.horizontal, 28)
                 .padding(.bottom, 8)
             }
             .navigationTitle("Practice")
             .background(ThaiTheme.sand)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        withAnimation(.spring(duration: 0.3)) {
+                            deck.shuffle()
+                            index = 0
+                            revealed = false
+                            detail = nil
+                        }
+                    } label: {
+                        Image(systemName: "shuffle")
+                            .foregroundStyle(ThaiTheme.indigo)
+                    }
+                }
+            }
         }
     }
 
