@@ -292,11 +292,15 @@ struct FlashcardView: View {
                 case .joint:
                     VStack(spacing: 12) {
                         if let compoundNote {
-                            VStack(spacing: 6) {
+                            VStack(spacing: 8) {
                                 sectionLabel("BUILT FROM THESE WORDS")
-                                Text(compoundNote)
-                                    .font(.subheadline)
-                                    .multilineTextAlignment(.center)
+                                if let parsed = Self.parseCompound(compoundNote) {
+                                    colorCodedJoint(parsed.parts, result: parsed.result)
+                                } else {
+                                    Text(compoundNote)
+                                        .font(.subheadline)
+                                        .multilineTextAlignment(.center)
+                                }
                             }
                         }
                         if !related.isEmpty {
@@ -490,6 +494,84 @@ struct FlashcardView: View {
             detail = nil
             index = (index - 1 + deck.count) % deck.count
         }
+    }
+
+    // MARK: Color-coded compound breakdown
+
+    struct CompoundPart {
+        let thai: String
+        let roman: String
+        let english: String
+        let hindi: String
+    }
+
+    /// Parses notes in the house format
+    /// "X (rom) meaning / अर्थ + Y (rom) meaning / अर्थ → result / अर्थ".
+    /// Returns nil for free-form notes, which render as plain text.
+    static func parseCompound(_ note: String) -> (parts: [CompoundPart], result: String)? {
+        let halves = note.components(separatedBy: "→")
+        guard halves.count == 2 else { return nil }
+        let partStrings = halves[0].components(separatedBy: " + ")
+        guard partStrings.count >= 2, partStrings.count <= 4 else { return nil }
+        var parts: [CompoundPart] = []
+        for piece in partStrings {
+            guard let open = piece.firstIndex(of: "("), let close = piece.firstIndex(of: ")"), open < close else { return nil }
+            let thai = String(piece[..<open]).trimmingCharacters(in: .whitespaces)
+            let roman = String(piece[piece.index(after: open)..<close])
+            let meanings = String(piece[piece.index(after: close)...]).components(separatedBy: "/")
+            guard !thai.isEmpty, meanings.count >= 2 else { return nil }
+            parts.append(CompoundPart(
+                thai: thai,
+                roman: roman,
+                english: meanings[0].trimmingCharacters(in: .whitespaces),
+                hindi: meanings[1].trimmingCharacters(in: .whitespaces)))
+        }
+        return (parts, halves[1].trimmingCharacters(in: .whitespaces))
+    }
+
+    private static let jointPalette: [Color] = [
+        ThaiTheme.indigo,
+        Color(red: 0.243, green: 0.647, blue: 0.424),
+        ThaiTheme.orchid,
+        ThaiTheme.gold,
+    ]
+
+    private func colorCodedJoint(_ parts: [CompoundPart], result: String) -> some View {
+        VStack(spacing: 10) {
+            HStack(alignment: .top, spacing: 10) {
+                ForEach(Array(parts.enumerated()), id: \.offset) { i, part in
+                    if i > 0 {
+                        Text("+")
+                            .font(.title3.weight(.semibold))
+                            .foregroundStyle(.secondary)
+                            .padding(.top, 6)
+                    }
+                    VStack(spacing: 2) {
+                        Text(part.thai)
+                            .font(.title2.weight(.bold))
+                        Text(part.roman)
+                            .font(.caption)
+                        Text(part.english)
+                            .font(.caption.weight(.medium))
+                        Text(part.hindi)
+                            .font(.caption.weight(.medium))
+                    }
+                    .foregroundStyle(Self.jointPalette[i % Self.jointPalette.count])
+                    .frame(maxWidth: .infinity)
+                }
+            }
+            HStack(spacing: 6) {
+                Text("=")
+                    .font(.headline)
+                    .foregroundStyle(.secondary)
+                Text(result)
+                    .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(ThaiTheme.ink)
+                    .multilineTextAlignment(.leading)
+            }
+        }
+        .padding(12)
+        .background(ThaiTheme.sand, in: RoundedRectangle(cornerRadius: 14))
     }
 }
 
