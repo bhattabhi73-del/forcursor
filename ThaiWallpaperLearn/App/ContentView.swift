@@ -494,6 +494,9 @@ struct BrowseView: View {
 
     private func row(_ word: ThaiWord) -> some View {
         HStack(spacing: 14) {
+            Circle()
+                .fill(progressColor(for: word))
+                .frame(width: 8, height: 8)
             Text(word.thai)
                 .font(.system(size: 30, weight: .bold, design: .rounded))
                 .frame(minWidth: 64, alignment: .leading)
@@ -514,6 +517,15 @@ struct BrowseView: View {
             .buttonStyle(.borderless)
         }
         .padding(.vertical, 4)
+    }
+
+    /// Learning state at a glance: gray = unseen, gold = learning, jade = known.
+    private func progressColor(for word: ThaiWord) -> Color {
+        switch ProgressStore.shared.box(for: word.id) {
+        case 0: return ThaiTheme.stone.opacity(0.35)
+        case 1, 2: return ThaiTheme.gold
+        default: return Color(red: 0.243, green: 0.647, blue: 0.424)
+        }
     }
 }
 

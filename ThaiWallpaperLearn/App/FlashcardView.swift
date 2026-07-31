@@ -8,7 +8,22 @@ import SwiftUI
 struct FlashcardView: View {
     private enum Detail { case sentences, similar, joint, forms }
 
-    @State private var deck: [ThaiWord] = Vocabulary.all.shuffled()
+    @State private var deck: [ThaiWord] = FlashcardView.buildDeck()
+
+    /// The app's session algorithm ("ThaiFlow"): reviews due today come
+    /// first (memory maintenance beats new input), then at most 20 unseen
+    /// words (research caps effective new-word intake around 15-20/day),
+    /// then already-known words as passive reinforcement, then the
+    /// remaining unseen backlog.
+    static func buildDeck() -> [ThaiWord] {
+        let store = ProgressStore.shared
+        let due = Vocabulary.all.filter { store.isDue($0.id) }.shuffled()
+        let fresh = Vocabulary.all.filter { store.box(for: $0.id) == 0 }.shuffled()
+        let seen = Vocabulary.all.filter { store.box(for: $0.id) > 0 && !store.isDue($0.id) }.shuffled()
+        let newToday = Array(fresh.prefix(20))
+        let backlog = Array(fresh.dropFirst(20))
+        return due + newToday + seen + backlog
+    }
     @State private var index = 0
     @State private var revealed = false
     @State private var detail: Detail?
@@ -61,9 +76,10 @@ struct FlashcardView: View {
                         Text("\(index + 1) / \(deck.count)")
                             .font(.headline)
                             .foregroundStyle(ThaiTheme.ink)
-                        Text("swipe or tap arrows")
+                        let stats = ProgressStore.shared.counts(in: Vocabulary.all)
+                        Text("\(stats.due) due · \(stats.fresh) new · \(stats.known) known")
                             .font(.caption2)
-                            .foregroundStyle(.tertiary)
+                            .foregroundStyle(.secondary)
                     }
 
                     Spacer()
@@ -88,7 +104,7 @@ struct FlashcardView: View {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         withAnimation(.spring(duration: 0.3)) {
-                            deck.shuffle()
+                            deck = Self.buildDeck()
                             index = 0
                             revealed = false
                             detail = nil
@@ -107,6 +123,9 @@ struct FlashcardView: View {
     private var frontSide: some View {
         VStack(spacing: 14) {
             Spacer()
+            if let emoji = WordExtras.emoji(for: current) {
+                Text(emoji).font(.system(size: 44))
+            }
             Text(current.thai)
                 .font(.system(size: 64, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
@@ -230,6 +249,15 @@ struct FlashcardView: View {
                     sectionLabel("MEANING")
                     Text("🇮🇳 \(current.hindiMeaning)").font(.title3)
                     Text("🇬🇧 \(current.englishMeaning)").font(.title3)
+                }
+
+                HStack(spacing: 12) {
+                    capsuleButton("Again", icon: "arrow.counterclockwise", fill: Color(red: 0.820, green: 0.302, blue: 0.302)) {
+                        grade(false)
+                    }
+                    capsuleButton("Got it", icon: "checkmark", fill: Color(red: 0.243, green: 0.647, blue: 0.424)) {
+                        grade(true)
+                    }
                 }
 
                 if !sentences.isEmpty || !similar.isEmpty || hasJoint || !forms.isEmpty {
@@ -478,6 +506,14 @@ struct FlashcardView: View {
             revealed = true
             detail = nil
         }
+    }
+
+    /// Records the self-assessment (the "testing effect": retrieval attempts
+    /// strengthen memory) and moves on. Missed words come back tomorrow;
+    /// known words come back at expanding intervals.
+    private func grade(_ known: Bool) {
+        ProgressStore.shared.record(id: current.id, known: known)
+        advance()
     }
 
     private func advance() {

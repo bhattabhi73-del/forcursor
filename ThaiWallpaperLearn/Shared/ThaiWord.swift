@@ -52,6 +52,74 @@ struct WordExample {
     let hindi: String
 }
 
+/// Leitner-style spaced repetition: each word lives in a box (0 = new,
+/// 1-5 = learning through known). A correct answer moves it up a box and
+/// schedules the next review further out (1, 3, 7, 14, 30 days); a miss
+/// drops it back to box 1 and tomorrow. Based on the Ebbinghaus
+/// forgetting-curve research used by Anki/SM-2.
+final class ProgressStore {
+    static let shared = ProgressStore()
+
+    struct WordProgress: Codable {
+        var box = 0
+        var nextReview = Date.distantPast
+        var reviews = 0
+        var lapses = 0
+    }
+
+    private static let intervals: [TimeInterval] = [0, 1, 3, 7, 14, 30].map { $0 * 86_400 }
+    private let key = "wordProgress.v1"
+    private var progress: [Int: WordProgress]
+
+    private init() {
+        if let data = UserDefaults.standard.data(forKey: key),
+           let saved = try? JSONDecoder().decode([Int: WordProgress].self, from: data) {
+            progress = saved
+        } else {
+            progress = [:]
+        }
+    }
+
+    private func save() {
+        if let data = try? JSONEncoder().encode(progress) {
+            UserDefaults.standard.set(data, forKey: key)
+        }
+    }
+
+    func box(for id: Int) -> Int { progress[id]?.box ?? 0 }
+
+    func isDue(_ id: Int) -> Bool {
+        guard let p = progress[id], p.box > 0 else { return false }
+        return p.nextReview <= Date()
+    }
+
+    func record(id: Int, known: Bool) {
+        var p = progress[id] ?? WordProgress()
+        p.reviews += 1
+        if known {
+            p.box = min(p.box + 1, 5)
+        } else {
+            p.box = 1
+            p.lapses += 1
+        }
+        p.nextReview = Date().addingTimeInterval(Self.intervals[p.box])
+        progress[id] = p
+        save()
+    }
+
+    /// (due for review, never seen, known = box 3+)
+    func counts(in words: [ThaiWord]) -> (due: Int, fresh: Int, known: Int) {
+        var due = 0, fresh = 0, known = 0
+        for w in words {
+            let b = box(for: w.id)
+            if b == 0 { fresh += 1 }
+            else if isDue(w.id) { due += 1 }
+            if b >= 3 { known += 1 }
+        }
+        return (due, fresh, known)
+    }
+}
+
 /// Thai's five tones, detected from the tone marks in our romanization
 /// (à = low, á = high, â = falling, ǎ = rising, unmarked = mid).
 enum ThaiTone {
@@ -118,6 +186,12 @@ enum WordExtras {
     }
 
     static func forms(for word: ThaiWord) -> [WordForm] { forms[word.id] ?? [] }
+
+    /// Visual mnemonic (dual-coding research: picture + word beats word
+    /// alone). Populated by the generation pipeline.
+    static func emoji(for word: ThaiWord) -> String? { emojis[word.id] }
+
+    private static let emojis: [Int: String] = [:]
 
     private static let forms: [Int: [WordForm]] = [
         187: [
