@@ -72,7 +72,176 @@ enum Vocabulary {
         // MARK: Time
         ThaiWord(id: 51, thai: "วันนี้",       romanization: "wan-níi",           hindiPronunciation: "वन-नी",          englishMeaning: "today",                 hindiMeaning: "आज",                  category: "Time"),
         ThaiWord(id: 52, thai: "พรุ่งนี้",     romanization: "phrûng-níi",        hindiPronunciation: "फ्रुंग-नी",      englishMeaning: "tomorrow",              hindiMeaning: "कल (आने वाला)",       category: "Time"),
+        ThaiWord(id: 53, thai: "เมื่อวาน",     romanization: "mûea-waan",         hindiPronunciation: "मुआ-वान",        englishMeaning: "yesterday",             hindiMeaning: "बीता कल",             category: "Time"),
+        ThaiWord(id: 54, thai: "เวลา",         romanization: "wee-laa",           hindiPronunciation: "वे-ला",          englishMeaning: "time",                  hindiMeaning: "समय",                 category: "Time"),
+        ThaiWord(id: 55, thai: "ชั่วโมง",      romanization: "chûa-moong",        hindiPronunciation: "चुआ-मोंग",       englishMeaning: "hour",                  hindiMeaning: "घंटा",                category: "Time"),
+        ThaiWord(id: 56, thai: "นาที",         romanization: "naa-thii",          hindiPronunciation: "ना-ती",          englishMeaning: "minute",                hindiMeaning: "मिनट",                category: "Time"),
+        ThaiWord(id: 57, thai: "เช้า",         romanization: "cháao",             hindiPronunciation: "चाउ",            englishMeaning: "morning",               hindiMeaning: "सुबह",                category: "Time"),
+        ThaiWord(id: 58, thai: "เย็น",         romanization: "yen",               hindiPronunciation: "येन",            englishMeaning: "evening",               hindiMeaning: "शाम",                 category: "Time"),
+        ThaiWord(id: 59, thai: "กลางคืน",     romanization: "klaang-khuen",      hindiPronunciation: "क्लांग-खुएन",    englishMeaning: "night",                 hindiMeaning: "रात",                 category: "Time"),
+        ThaiWord(id: 60, thai: "ปี",           romanization: "pii",               hindiPronunciation: "पी",             englishMeaning: "year",                  hindiMeaning: "साल",                 category: "Time"),
+        ThaiWord(id: 61, thai: "เดือน",        romanization: "duean",             hindiPronunciation: "दुअन",           englishMeaning: "month",                 hindiMeaning: "महीना",               category: "Time"),
+        ThaiWord(id: 62, thai: "สัปดาห์",      romanization: "sàp-daa",           hindiPronunciation: "सप-दा",          englishMeaning: "week",                  hindiMeaning: "सप्ताह",              category: "Time"),
+
+        // MARK: Family & people
+        ThaiWord(id: 63, thai: "พ่อ",          romanization: "phôo",              hindiPronunciation: "पॉ",             englishMeaning: "father",                hindiMeaning: "पिता",                category: "Family"),
+        ThaiWord(id: 64, thai: "แม่",          romanization: "mâe",               hindiPronunciation: "मै",             englishMeaning: "mother",                hindiMeaning: "माँ",                 category: "Family"),
+        ThaiWord(id: 65, thai: "ลูก",          romanization: "lûuk",              hindiPronunciation: "लूक",            englishMeaning: "child (son/daughter)",  hindiMeaning: "संतान / बच्चा",       category: "Family"),
+        ThaiWord(id: 66, thai: "พี่",          romanization: "phîi",              hindiPronunciation: "पी",             englishMeaning: "older sibling",         hindiMeaning: "बड़ा भाई / बड़ी बहन", category: "Family"),
+        ThaiWord(id: 67, thai: "น้อง",         romanization: "nóong",             hindiPronunciation: "नोंग",           englishMeaning: "younger sibling",       hindiMeaning: "छोटा भाई / छोटी बहन", category: "Family"),
+        ThaiWord(id: 68, thai: "ผู้ชาย",       romanization: "phûu-chaai",        hindiPronunciation: "पू-चाय",         englishMeaning: "man",                   hindiMeaning: "आदमी",                category: "People"),
+        ThaiWord(id: 69, thai: "ผู้หญิง",      romanization: "phûu-yǐng",         hindiPronunciation: "पू-यिंग",        englishMeaning: "woman",                 hindiMeaning: "औरत",                 category: "People"),
+        ThaiWord(id: 70, thai: "เด็ก",         romanization: "dèk",               hindiPronunciation: "देक",            englishMeaning: "child / kid",           hindiMeaning: "बच्चा",               category: "People"),
+        ThaiWord(id: 71, thai: "ชื่อ",         romanization: "chûue",             hindiPronunciation: "चू",             englishMeaning: "name",                  hindiMeaning: "नाम",                 category: "People"),
+        ThaiWord(id: 72, thai: "ครู",          romanization: "khruu",             hindiPronunciation: "क्रू",           englishMeaning: "teacher",               hindiMeaning: "शिक्षक",              category: "People"),
+
+        // MARK: Body & health
+        ThaiWord(id: 73, thai: "หัว",          romanization: "hǔa",               hindiPronunciation: "हुआ",            englishMeaning: "head",                  hindiMeaning: "सिर",                 category: "Body"),
+        ThaiWord(id: 74, thai: "ตา",           romanization: "taa",               hindiPronunciation: "ता",             englishMeaning: "eye",                   hindiMeaning: "आँख",                 category: "Body"),
+        ThaiWord(id: 75, thai: "มือ",          romanization: "muue",              hindiPronunciation: "मू",             englishMeaning: "hand",                  hindiMeaning: "हाथ",                 category: "Body"),
+        ThaiWord(id: 76, thai: "ใจ",           romanization: "jai",               hindiPronunciation: "जाय",            englishMeaning: "heart / mind",          hindiMeaning: "दिल / मन",            category: "Body"),
+        ThaiWord(id: 77, thai: "ฟัน",          romanization: "fan",               hindiPronunciation: "फन",             englishMeaning: "tooth",                 hindiMeaning: "दाँत",                category: "Body"),
+        ThaiWord(id: 78, thai: "ปวด",          romanization: "pùat",              hindiPronunciation: "पुआद",           englishMeaning: "to ache / pain",        hindiMeaning: "दर्द होना",           category: "Health"),
+        ThaiWord(id: 79, thai: "ป่วย",         romanization: "pùai",              hindiPronunciation: "पुआय",           englishMeaning: "sick / ill",            hindiMeaning: "बीमार",               category: "Health"),
+        ThaiWord(id: 80, thai: "หมอ",          romanization: "mǒo",               hindiPronunciation: "मो",             englishMeaning: "doctor",                hindiMeaning: "डॉक्टर",              category: "Health"),
+        ThaiWord(id: 81, thai: "ยา",           romanization: "yaa",               hindiPronunciation: "या",             englishMeaning: "medicine",              hindiMeaning: "दवा",                 category: "Health"),
+        ThaiWord(id: 82, thai: "โรงพยาบาล",   romanization: "roong-phá-yaa-baan", hindiPronunciation: "रोंग-पया-बान",  englishMeaning: "hospital",              hindiMeaning: "अस्पताल",             category: "Health"),
+
+        // MARK: Colors
+        ThaiWord(id: 83, thai: "สี",           romanization: "sǐi",               hindiPronunciation: "सी",             englishMeaning: "color",                 hindiMeaning: "रंग",                 category: "Colors"),
+        ThaiWord(id: 84, thai: "แดง",          romanization: "daeng",             hindiPronunciation: "दैंग",           englishMeaning: "red",                   hindiMeaning: "लाल",                 category: "Colors"),
+        ThaiWord(id: 85, thai: "ขาว",          romanization: "khǎao",             hindiPronunciation: "खाउ",            englishMeaning: "white",                 hindiMeaning: "सफ़ेद",               category: "Colors"),
+        ThaiWord(id: 86, thai: "ดำ",           romanization: "dam",               hindiPronunciation: "दम",             englishMeaning: "black",                 hindiMeaning: "काला",                category: "Colors"),
+        ThaiWord(id: 87, thai: "เขียว",        romanization: "khǐao",             hindiPronunciation: "खियाउ",          englishMeaning: "green",                 hindiMeaning: "हरा",                 category: "Colors"),
+        ThaiWord(id: 88, thai: "ฟ้า",          romanization: "fáa",               hindiPronunciation: "फ़ा",            englishMeaning: "blue (sky blue)",       hindiMeaning: "नीला / आसमानी",       category: "Colors"),
+        ThaiWord(id: 89, thai: "เหลือง",       romanization: "lǔeang",            hindiPronunciation: "लुअंग",          englishMeaning: "yellow",                hindiMeaning: "पीला",                category: "Colors"),
+
+        // MARK: Nature & weather
+        ThaiWord(id: 90, thai: "ฝน",           romanization: "fǒn",               hindiPronunciation: "फ़ोन",           englishMeaning: "rain",                  hindiMeaning: "बारिश",               category: "Nature"),
+        ThaiWord(id: 91, thai: "แดด",          romanization: "dàet",              hindiPronunciation: "दैद",            englishMeaning: "sunshine",              hindiMeaning: "धूप",                 category: "Nature"),
+        ThaiWord(id: 92, thai: "ลม",           romanization: "lom",               hindiPronunciation: "लोम",            englishMeaning: "wind",                  hindiMeaning: "हवा",                 category: "Nature"),
+        ThaiWord(id: 93, thai: "ทะเล",         romanization: "thá-lee",           hindiPronunciation: "त-ले",           englishMeaning: "sea",                   hindiMeaning: "समुद्र",              category: "Nature"),
+        ThaiWord(id: 94, thai: "ภูเขา",        romanization: "phuu-khǎo",         hindiPronunciation: "पू-खाउ",         englishMeaning: "mountain",              hindiMeaning: "पहाड़",               category: "Nature"),
+        ThaiWord(id: 95, thai: "ต้นไม้",       romanization: "tôn-mái",           hindiPronunciation: "तोन-माय",        englishMeaning: "tree",                  hindiMeaning: "पेड़",                category: "Nature"),
+        ThaiWord(id: 96, thai: "ดอกไม้",       romanization: "dòk-mái",           hindiPronunciation: "दोक-माय",        englishMeaning: "flower",                hindiMeaning: "फूल",                 category: "Nature"),
+        ThaiWord(id: 97, thai: "อากาศ",        romanization: "aa-kàat",           hindiPronunciation: "आ-काद",          englishMeaning: "weather / air",         hindiMeaning: "मौसम / हवा",          category: "Nature"),
+
+        // MARK: Places
+        ThaiWord(id: 98,  thai: "บ้าน",        romanization: "bâan",              hindiPronunciation: "बान",            englishMeaning: "house / home",          hindiMeaning: "घर",                  category: "Places"),
+        ThaiWord(id: 99,  thai: "ตลาด",        romanization: "tà-làat",           hindiPronunciation: "त-लाद",          englishMeaning: "market",                hindiMeaning: "बाज़ार",              category: "Places"),
+        ThaiWord(id: 100, thai: "ร้าน",        romanization: "ráan",              hindiPronunciation: "रान",            englishMeaning: "shop",                  hindiMeaning: "दुकान",               category: "Places"),
+        ThaiWord(id: 101, thai: "ร้านอาหาร",   romanization: "ráan-aa-hǎan",      hindiPronunciation: "रान-आ-हान",     englishMeaning: "restaurant",            hindiMeaning: "रेस्टोरेंट",          category: "Places"),
+        ThaiWord(id: 102, thai: "โรงเรียน",    romanization: "roong-rian",        hindiPronunciation: "रोंग-रियन",      englishMeaning: "school",                hindiMeaning: "स्कूल",               category: "Places"),
+        ThaiWord(id: 103, thai: "วัด",         romanization: "wát",               hindiPronunciation: "वद",             englishMeaning: "temple",                hindiMeaning: "मंदिर",               category: "Places"),
+        ThaiWord(id: 104, thai: "สนามบิน",     romanization: "sà-nǎam-bin",       hindiPronunciation: "स-नाम-बिन",     englishMeaning: "airport",               hindiMeaning: "हवाई अड्डा",          category: "Places"),
+        ThaiWord(id: 105, thai: "ธนาคาร",      romanization: "thá-naa-khaan",     hindiPronunciation: "त-ना-खान",      englishMeaning: "bank",                  hindiMeaning: "बैंक",                category: "Places"),
+        ThaiWord(id: 106, thai: "ถนน",         romanization: "thà-nǒn",           hindiPronunciation: "थ-नोन",          englishMeaning: "road / street",         hindiMeaning: "सड़क",                category: "Places"),
+        ThaiWord(id: 107, thai: "เมือง",       romanization: "mueang",            hindiPronunciation: "मुअंग",          englishMeaning: "city / town",           hindiMeaning: "शहर",                 category: "Places"),
+        ThaiWord(id: 108, thai: "ประเทศ",      romanization: "prà-thêet",         hindiPronunciation: "प्र-तेद",        englishMeaning: "country",               hindiMeaning: "देश",                 category: "Places"),
+
+        // MARK: Money & shopping
+        ThaiWord(id: 109, thai: "เงิน",        romanization: "ngoen",             hindiPronunciation: "ङर्न",             englishMeaning: "money",                 hindiMeaning: "पैसा",                category: "Money"),
+        ThaiWord(id: 110, thai: "บาท",         romanization: "bàat",              hindiPronunciation: "बाद",            englishMeaning: "baht (Thai currency)",  hindiMeaning: "बात (थाई मुद्रा)",    category: "Money"),
+        ThaiWord(id: 111, thai: "ซื้อ",        romanization: "súue",              hindiPronunciation: "सू",             englishMeaning: "to buy",                hindiMeaning: "खरीदना",              category: "Money"),
+        ThaiWord(id: 112, thai: "ขาย",         romanization: "khǎai",             hindiPronunciation: "खाय",            englishMeaning: "to sell",               hindiMeaning: "बेचना",               category: "Money"),
+        ThaiWord(id: 113, thai: "ลดราคา",      romanization: "lót-raa-khaa",      hindiPronunciation: "लोद-रा-खा",     englishMeaning: "discount",              hindiMeaning: "छूट",                 category: "Money"),
+        ThaiWord(id: 114, thai: "ฟรี",         romanization: "frii",              hindiPronunciation: "फ्री",           englishMeaning: "free (no cost)",        hindiMeaning: "मुफ़्त",              category: "Money"),
+
+        // MARK: More verbs
+        ThaiWord(id: 115, thai: "พูด",         romanization: "phûut",             hindiPronunciation: "फूद",            englishMeaning: "to speak",              hindiMeaning: "बोलना",               category: "Verbs"),
+        ThaiWord(id: 116, thai: "ฟัง",         romanization: "fang",              hindiPronunciation: "फंग",            englishMeaning: "to listen",             hindiMeaning: "सुनना",               category: "Verbs"),
+        ThaiWord(id: 117, thai: "อ่าน",        romanization: "àan",               hindiPronunciation: "आन",             englishMeaning: "to read",               hindiMeaning: "पढ़ना",               category: "Verbs"),
+        ThaiWord(id: 118, thai: "เขียน",       romanization: "khǐan",             hindiPronunciation: "खियन",           englishMeaning: "to write",              hindiMeaning: "लिखना",               category: "Verbs"),
+        ThaiWord(id: 119, thai: "ดู",          romanization: "duu",               hindiPronunciation: "दू",             englishMeaning: "to look / watch",       hindiMeaning: "देखना",               category: "Verbs"),
+        ThaiWord(id: 120, thai: "นอน",         romanization: "noon",              hindiPronunciation: "नोन",            englishMeaning: "to sleep",              hindiMeaning: "सोना",                category: "Verbs"),
+        ThaiWord(id: 121, thai: "ตื่น",        romanization: "tùuen",             hindiPronunciation: "तून",            englishMeaning: "to wake up",            hindiMeaning: "जागना",               category: "Verbs"),
+        ThaiWord(id: 122, thai: "ทำ",          romanization: "tham",              hindiPronunciation: "तम",             englishMeaning: "to do / make",          hindiMeaning: "करना",                category: "Verbs"),
+        ThaiWord(id: 123, thai: "ทำงาน",       romanization: "tham-ngaan",        hindiPronunciation: "तम-ङान",        englishMeaning: "to work",               hindiMeaning: "काम करना",            category: "Verbs"),
+        ThaiWord(id: 124, thai: "เดิน",        romanization: "doen",              hindiPronunciation: "दर्न",             englishMeaning: "to walk",               hindiMeaning: "चलना / टहलना",        category: "Verbs"),
+        ThaiWord(id: 125, thai: "วิ่ง",        romanization: "wîng",              hindiPronunciation: "विंग",           englishMeaning: "to run",                hindiMeaning: "दौड़ना",              category: "Verbs"),
+        ThaiWord(id: 126, thai: "เข้าใจ",      romanization: "khâo-jai",          hindiPronunciation: "खाउ-जाय",       englishMeaning: "to understand",         hindiMeaning: "समझना",               category: "Verbs"),
+        ThaiWord(id: 127, thai: "รู้",          romanization: "rúu",               hindiPronunciation: "रू",             englishMeaning: "to know",               hindiMeaning: "जानना",               category: "Verbs"),
+        ThaiWord(id: 128, thai: "คิด",         romanization: "khít",              hindiPronunciation: "खित",            englishMeaning: "to think",              hindiMeaning: "सोचना",               category: "Verbs"),
+        ThaiWord(id: 129, thai: "ช่วย",        romanization: "chûai",             hindiPronunciation: "चुआय",           englishMeaning: "to help",               hindiMeaning: "मदद करना",            category: "Verbs"),
+        ThaiWord(id: 130, thai: "รอ",          romanization: "roo",               hindiPronunciation: "रो",             englishMeaning: "to wait",               hindiMeaning: "इंतज़ार करना",        category: "Verbs"),
+        ThaiWord(id: 131, thai: "หยุด",        romanization: "yùt",               hindiPronunciation: "युद",            englishMeaning: "to stop",               hindiMeaning: "रुकना",               category: "Verbs"),
+        ThaiWord(id: 132, thai: "เปิด",        romanization: "pòet",              hindiPronunciation: "पर्द",             englishMeaning: "to open / turn on",     hindiMeaning: "खोलना / चालू करना",   category: "Verbs"),
+        ThaiWord(id: 133, thai: "ปิด",         romanization: "pìt",               hindiPronunciation: "पिद",            englishMeaning: "to close / turn off",   hindiMeaning: "बंद करना",            category: "Verbs"),
+
+        // MARK: More adjectives
+        ThaiWord(id: 134, thai: "ใหม่",        romanization: "mài",               hindiPronunciation: "माय",            englishMeaning: "new",                   hindiMeaning: "नया",                 category: "Adjectives"),
+        ThaiWord(id: 135, thai: "เก่า",        romanization: "kào",               hindiPronunciation: "काव",            englishMeaning: "old (things)",          hindiMeaning: "पुराना",              category: "Adjectives"),
+        ThaiWord(id: 136, thai: "เร็ว",        romanization: "reo",               hindiPronunciation: "रेव",            englishMeaning: "fast",                  hindiMeaning: "तेज़",                category: "Adjectives"),
+        ThaiWord(id: 137, thai: "ช้า",         romanization: "cháa",              hindiPronunciation: "चा",             englishMeaning: "slow",                  hindiMeaning: "धीमा",                category: "Adjectives"),
+        ThaiWord(id: 138, thai: "ง่าย",        romanization: "ngâai",             hindiPronunciation: "ङाय",            englishMeaning: "easy",                  hindiMeaning: "आसान",                category: "Adjectives"),
+        ThaiWord(id: 139, thai: "ยาก",         romanization: "yâak",              hindiPronunciation: "याक",            englishMeaning: "difficult",             hindiMeaning: "कठिन / मुश्किल",      category: "Adjectives"),
+        ThaiWord(id: 140, thai: "สนุก",        romanization: "sà-nùk",            hindiPronunciation: "स-नुक",          englishMeaning: "fun / enjoyable",       hindiMeaning: "मज़ेदार",             category: "Adjectives"),
+        ThaiWord(id: 141, thai: "เหนื่อย",     romanization: "nùeai",             hindiPronunciation: "नुअय",           englishMeaning: "tired",                 hindiMeaning: "थका हुआ",             category: "Adjectives"),
+        ThaiWord(id: 142, thai: "หวาน",        romanization: "wǎan",              hindiPronunciation: "वान",            englishMeaning: "sweet",                 hindiMeaning: "मीठा",                category: "Adjectives"),
+        ThaiWord(id: 143, thai: "ใกล้",        romanization: "klâi",              hindiPronunciation: "क्लाय",          englishMeaning: "near",                  hindiMeaning: "पास / नज़दीक",        category: "Adjectives"),
+        ThaiWord(id: 144, thai: "ไกล",         romanization: "klai",              hindiPronunciation: "क्लाय",          englishMeaning: "far",                   hindiMeaning: "दूर",                 category: "Adjectives"),
+
+        // MARK: Question words & connectors
+        ThaiWord(id: 145, thai: "อะไร",        romanization: "à-rai",             hindiPronunciation: "अ-राय",          englishMeaning: "what?",                 hindiMeaning: "क्या?",               category: "Questions"),
+        ThaiWord(id: 146, thai: "ที่ไหน",      romanization: "thîi-nǎi",          hindiPronunciation: "ती-नाय",         englishMeaning: "where?",                hindiMeaning: "कहाँ?",               category: "Questions"),
+        ThaiWord(id: 147, thai: "เมื่อไหร่",   romanization: "mûea-rài",          hindiPronunciation: "मुआ-राय",        englishMeaning: "when?",                 hindiMeaning: "कब?",                 category: "Questions"),
+        ThaiWord(id: 148, thai: "ทำไม",        romanization: "tham-mai",          hindiPronunciation: "तम-माय",         englishMeaning: "why?",                  hindiMeaning: "क्यों?",              category: "Questions"),
+        ThaiWord(id: 149, thai: "ใคร",         romanization: "khrai",             hindiPronunciation: "ख्राय",          englishMeaning: "who?",                  hindiMeaning: "कौन?",                category: "Questions"),
+        ThaiWord(id: 150, thai: "ยังไง",       romanization: "yang-ngai",         hindiPronunciation: "यंग-ङाय",        englishMeaning: "how?",                  hindiMeaning: "कैसे?",               category: "Questions"),
+        ThaiWord(id: 151, thai: "และ",         romanization: "láe",               hindiPronunciation: "लै",             englishMeaning: "and",                   hindiMeaning: "और",                  category: "Grammar"),
+        ThaiWord(id: 152, thai: "หรือ",        romanization: "rǔue",              hindiPronunciation: "रू",             englishMeaning: "or",                    hindiMeaning: "या",                  category: "Grammar"),
+        ThaiWord(id: 153, thai: "แต่",         romanization: "tàe",               hindiPronunciation: "तै",             englishMeaning: "but",                   hindiMeaning: "लेकिन",               category: "Grammar"),
+        ThaiWord(id: 154, thai: "นี่",         romanization: "nîi",               hindiPronunciation: "नी",             englishMeaning: "this",                  hindiMeaning: "यह",                  category: "Grammar"),
+        ThaiWord(id: 155, thai: "นั่น",        romanization: "nân",               hindiPronunciation: "नन",             englishMeaning: "that",                  hindiMeaning: "वह",                  category: "Grammar"),
+
+        // MARK: Animals
+        ThaiWord(id: 156, thai: "หมา",         romanization: "mǎa",               hindiPronunciation: "मा",             englishMeaning: "dog",                   hindiMeaning: "कुत्ता",              category: "Animals"),
+        ThaiWord(id: 157, thai: "แมว",         romanization: "maeo",              hindiPronunciation: "मैव",            englishMeaning: "cat",                   hindiMeaning: "बिल्ली",              category: "Animals"),
+        ThaiWord(id: 158, thai: "นก",          romanization: "nók",               hindiPronunciation: "नोक",            englishMeaning: "bird",                  hindiMeaning: "चिड़िया",             category: "Animals"),
+        ThaiWord(id: 159, thai: "ปลา",         romanization: "plaa",              hindiPronunciation: "प्ला",           englishMeaning: "fish",                  hindiMeaning: "मछली",                category: "Animals"),
+        ThaiWord(id: 160, thai: "ช้าง",        romanization: "cháang",            hindiPronunciation: "चांग",           englishMeaning: "elephant",              hindiMeaning: "हाथी",                category: "Animals"),
+
+        // MARK: More food
+        ThaiWord(id: 161, thai: "ผลไม้",       romanization: "phǒn-lá-mái",       hindiPronunciation: "फ़ोन-ल-माय",    englishMeaning: "fruit",                 hindiMeaning: "फल",                  category: "Food"),
+        ThaiWord(id: 162, thai: "ผัก",         romanization: "phàk",              hindiPronunciation: "फक",             englishMeaning: "vegetable",             hindiMeaning: "सब्ज़ी",              category: "Food"),
+        ThaiWord(id: 163, thai: "ไก่",         romanization: "kài",               hindiPronunciation: "काय",            englishMeaning: "chicken",               hindiMeaning: "मुर्गी / चिकन",       category: "Food"),
+        ThaiWord(id: 164, thai: "ไข่",         romanization: "khài",              hindiPronunciation: "खाय",            englishMeaning: "egg",                   hindiMeaning: "अंडा",                category: "Food"),
+        ThaiWord(id: 165, thai: "นม",          romanization: "num",               hindiPronunciation: "नम",             englishMeaning: "milk",                  hindiMeaning: "दूध",                 category: "Food"),
+        ThaiWord(id: 166, thai: "น้ำตาล",      romanization: "nám-taan",          hindiPronunciation: "नम-तान",        englishMeaning: "sugar",                 hindiMeaning: "चीनी",                category: "Food"),
+        ThaiWord(id: 167, thai: "เกลือ",       romanization: "kluea",             hindiPronunciation: "क्लुआ",          englishMeaning: "salt",                  hindiMeaning: "नमक",                 category: "Food"),
+        ThaiWord(id: 168, thai: "แกง",         romanization: "kaeng",             hindiPronunciation: "कैंग",           englishMeaning: "curry",                 hindiMeaning: "करी",                 category: "Food"),
+        ThaiWord(id: 169, thai: "ก๋วยเตี๋ยว",  romanization: "kǔai-tǐao",         hindiPronunciation: "कुआय-तियाव",    englishMeaning: "noodles",               hindiMeaning: "नूडल्स",              category: "Food"),
+
+        // MARK: Safety & essentials
+        ThaiWord(id: 170, thai: "ช่วยด้วย",    romanization: "chûai-dûai",        hindiPronunciation: "चुआय-दुआय",     englishMeaning: "help! (emergency)",     hindiMeaning: "बचाओ! / मदद करो!",    category: "Safety"),
+        ThaiWord(id: 171, thai: "ตำรวจ",       romanization: "tam-rùat",          hindiPronunciation: "तम-रुआद",        englishMeaning: "police",                hindiMeaning: "पुलिस",               category: "Safety"),
+        ThaiWord(id: 172, thai: "อันตราย",     romanization: "an-tà-raai",        hindiPronunciation: "अन-त-राय",       englishMeaning: "danger / dangerous",    hindiMeaning: "खतरा / खतरनाक",       category: "Safety"),
+        ThaiWord(id: 173, thai: "ระวัง",       romanization: "rá-wang",           hindiPronunciation: "र-वंग",          englishMeaning: "careful! / watch out",  hindiMeaning: "सावधान!",             category: "Safety"),
+        ThaiWord(id: 174, thai: "โทรศัพท์",    romanization: "thoo-rá-sàp",       hindiPronunciation: "तो-र-सप",        englishMeaning: "telephone",             hindiMeaning: "फ़ोन",                category: "Safety"),
+
+        // MARK: Directions
+        ThaiWord(id: 175, thai: "ซ้าย",        romanization: "sáai",              hindiPronunciation: "साय",            englishMeaning: "left (side)",           hindiMeaning: "बायाँ",               category: "Directions"),
+        ThaiWord(id: 176, thai: "ขวา",         romanization: "khwǎa",             hindiPronunciation: "ख्वा",           englishMeaning: "right (side)",          hindiMeaning: "दायाँ",               category: "Directions"),
+        ThaiWord(id: 177, thai: "ตรงไป",       romanization: "trong-pai",         hindiPronunciation: "त्रोंग-पाय",     englishMeaning: "straight ahead",        hindiMeaning: "सीधे",                category: "Directions"),
+        ThaiWord(id: 178, thai: "ที่นี่",      romanization: "thîi-nîi",          hindiPronunciation: "ती-नी",          englishMeaning: "here",                  hindiMeaning: "यहाँ",                category: "Directions"),
+        ThaiWord(id: 179, thai: "ที่นั่น",     romanization: "thîi-nân",          hindiPronunciation: "ती-नन",          englishMeaning: "there",                 hindiMeaning: "वहाँ",                category: "Directions"),
+        ThaiWord(id: 180, thai: "ข้างบน",      romanization: "khâang-bon",        hindiPronunciation: "खांग-बोन",       englishMeaning: "above / upstairs",      hindiMeaning: "ऊपर",                 category: "Directions"),
+        ThaiWord(id: 181, thai: "ข้างล่าง",    romanization: "khâang-lâang",      hindiPronunciation: "खांग-लांग",      englishMeaning: "below / downstairs",    hindiMeaning: "नीचे",                category: "Directions"),
+
+        // MARK: Compounds of earlier words (power the "related words" chips)
+        ThaiWord(id: 182, thai: "น้ำแข็ง",     romanization: "nám-khǎeng",        hindiPronunciation: "नम-खैंग",       englishMeaning: "ice",                   hindiMeaning: "बर्फ़",               category: "Food"),
+        ThaiWord(id: 183, thai: "ข้าวผัด",     romanization: "khâao-phàt",        hindiPronunciation: "खाउ-फद",         englishMeaning: "fried rice",            hindiMeaning: "फ्राइड राइस",         category: "Food"),
+        ThaiWord(id: 184, thai: "น้ำส้ม",      romanization: "nám-sôm",           hindiPronunciation: "नम-सोम",        englishMeaning: "orange juice",          hindiMeaning: "संतरे का रस",         category: "Food"),
+        ThaiWord(id: 185, thai: "ไฟ",          romanization: "fai",               hindiPronunciation: "फाय",            englishMeaning: "fire / light",          hindiMeaning: "आग / बत्ती",          category: "Basics"),
+        ThaiWord(id: 186, thai: "รถไฟ",        romanization: "rót-fai",           hindiPronunciation: "रोद-फाय",        englishMeaning: "train",                 hindiMeaning: "रेलगाड़ी",            category: "Travel"),
     ]
+
+    /// Words whose Thai spelling contains this word, or that this word
+    /// contains — e.g. น้ำ → ห้องน้ำ, น้ำตาล, น้ำแข็ง. Powers the
+    /// "related words" chips in Practice.
+    static func related(to word: ThaiWord) -> [ThaiWord] {
+        all.filter { $0.id != word.id && ($0.thai.contains(word.thai) || word.thai.contains($0.thai)) }
+    }
 
     /// A stable, per-day rotation offset so the "word of the day" changes daily.
     static func word(forDayOffset offset: Int) -> ThaiWord {
@@ -83,6 +252,15 @@ enum Vocabulary {
     /// A random word (used by the widget's rotation and the app's shuffle button).
     static func randomWord() -> ThaiWord {
         all.randomElement() ?? all[0]
+    }
+
+    /// A stable per-hour word shared by every widget, so widgets placed
+    /// side by side always show the same word. The prime stride (17 is
+    /// coprime with the list size) pseudo-shuffles the rotation so
+    /// consecutive hours don't show consecutive list entries.
+    static func word(forHour hour: Int) -> ThaiWord {
+        let index = ((hour * 17) % all.count + all.count) % all.count
+        return all[index]
     }
 
     static var categories: [String] {

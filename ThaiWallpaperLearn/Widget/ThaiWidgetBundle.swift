@@ -5,5 +5,8 @@ import SwiftUI
 struct ThaiWidgetBundle: WidgetBundle {
     var body: some Widget {
         ThaiWidget()
+        EnglishFirstWidget()
+        ThaiWordHalfWidget()
+        ThaiMeaningHalfWidget()
     }
 }
