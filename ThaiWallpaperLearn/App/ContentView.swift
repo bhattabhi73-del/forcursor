@@ -130,6 +130,23 @@ struct ThaiLetter: Identifiable {
 
     var id: String { letter }
 
+    /// Thai's three consonant classes — the key to the tone rules. The
+    /// classic "Read Thai" trick: color-code letters by class so the tone
+    /// system is absorbed visually.
+    var letterClass: String {
+        if "กจฎฏดตบปอ".contains(letter) { return "middle" }
+        if "ขฃฉฐถผฝศษสห".contains(letter) { return "high" }
+        return "low"
+    }
+
+    var classColor: Color {
+        switch letterClass {
+        case "middle": return ThaiTheme.indigo
+        case "high": return ThaiTheme.orchid
+        default: return Color(red: 0.243, green: 0.647, blue: 0.424)
+        }
+    }
+
     static let all: [ThaiLetter] = [
         ThaiLetter(letter: "ก", name: "ไก่", nameRoman: "kài", nameEnglish: "chicken", nameHindi: "मुर्गी", sound: "k", devanagari: "क"),
         ThaiLetter(letter: "ข", name: "ไข่", nameRoman: "khài", nameEnglish: "egg", nameHindi: "अंडा", sound: "kh", devanagari: "ख"),
@@ -181,9 +198,24 @@ struct ThaiLetter: Identifiable {
 struct AlphabetView: View {
     var body: some View {
         NavigationStack {
-            List(ThaiLetter.all) { letter in
-                LetterRow(letter: letter)
-                    .listRowBackground(ThaiTheme.cream)
+            List {
+                Section {
+                    HStack(spacing: 14) {
+                        Label("middle", systemImage: "circle.fill").foregroundStyle(ThaiTheme.indigo)
+                        Label("high", systemImage: "circle.fill").foregroundStyle(ThaiTheme.orchid)
+                        Label("low", systemImage: "circle.fill").foregroundStyle(Color(red: 0.243, green: 0.647, blue: 0.424))
+                    }
+                    .font(.caption.weight(.semibold))
+                    .frame(maxWidth: .infinity)
+                    .listRowBackground(ThaiTheme.parchment)
+                } header: {
+                    Text("Letter color = consonant class — the key to Thai tone rules")
+                        .font(.caption2)
+                }
+                ForEach(ThaiLetter.all) { letter in
+                    LetterRow(letter: letter)
+                        .listRowBackground(ThaiTheme.cream)
+                }
             }
             .listStyle(.insetGrouped)
             .scrollContentBackground(.hidden)
@@ -254,7 +286,7 @@ private struct LetterRow: View {
             HStack(spacing: 14) {
                 Text(letter.letter)
                     .font(.system(size: 40, weight: .bold, design: .rounded))
-                    .foregroundStyle(letter.obsolete ? ThaiTheme.stone : ThaiTheme.ink)
+                    .foregroundStyle(letter.obsolete ? ThaiTheme.stone : letter.classColor)
                     .frame(width: 52)
                 VStack(alignment: .leading, spacing: 2) {
                     Text("\(letter.letter) \(letter.name) · \(letter.nameRoman)")
@@ -265,12 +297,17 @@ private struct LetterRow: View {
                         .foregroundStyle(.secondary)
                 }
                 Spacer()
-                Text(letter.sound)
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 9)
-                    .padding(.vertical, 4)
-                    .background(ThaiTheme.gold, in: Capsule())
+                VStack(spacing: 3) {
+                    Text(letter.sound)
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(.white)
+                        .padding(.horizontal, 9)
+                        .padding(.vertical, 4)
+                        .background(ThaiTheme.gold, in: Capsule())
+                    Text(letter.letterClass)
+                        .font(.system(size: 9, weight: .semibold))
+                        .foregroundStyle(letter.classColor)
+                }
                 Button {
                     SpeechService.shared.speak(thai: "\(letter.letter) \(letter.name)", romanization: letter.nameRoman)
                 } label: {
