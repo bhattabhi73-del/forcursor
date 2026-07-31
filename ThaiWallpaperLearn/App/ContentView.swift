@@ -203,8 +203,13 @@ private struct WordCollection {
         ),
         WordCollection(
             name: "Supermarket", emoji: "🛒",
-            categories: ["Money", "Numbers", "Food"],
+            categories: ["Money", "Food"],
             extraIDs: [48, 49, 50]
+        ),
+        WordCollection(
+            name: "Numbers", emoji: "🔢",
+            categories: ["Numbers"],
+            extraIDs: []
         ),
     ]
 }
@@ -256,7 +261,9 @@ struct BrowseView: View {
                 ForEach(WordCollection.all, id: \.name) { collection in
                     chip(collection.name, label: "\(collection.emoji) \(collection.name)")
                 }
-                ForEach(Vocabulary.categories, id: \.self) { category in
+                ForEach(Vocabulary.categories.filter { category in
+                    !WordCollection.all.contains { $0.name == category }
+                }, id: \.self) { category in
                     chip(category, label: category)
                 }
             }
