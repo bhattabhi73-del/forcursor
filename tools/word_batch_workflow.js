@@ -1,16 +1,18 @@
 export const meta = {
-  name: 'thai-vocab-batch',
-  description: 'Generate, verify, and integrate one themed batch of Thai vocabulary (~150 words)',
+  name: 'thai-vocab-batches',
+  description: 'Run several themed Thai vocab batches back-to-back: plan → generate+verify → integrate, repeated',
   phases: [
-    { title: 'Generate', detail: 'one generator per theme + coverage gap-filler' },
+    { title: 'Plan', detail: 'prepare_batch.py emits the batch plan' },
+    { title: 'Generate', detail: 'one generator per theme + gap-filler + compound-miner' },
     { title: 'Verify', detail: 'strict Thai-teacher check per sub-batch' },
     { title: 'Integrate', detail: 'inject Swift + android JSON, typecheck, commit' },
   ],
 }
 
-// args = output of tools/prepare_batch.py:
-// { batch, next_id, total, target, words_per_theme, themes: [{name, category,
-//   level, hint, existing: []}], gap_tokens: [], compound_pool: [] }
+// args (all optional): { cycles: 4 } for the multi-batch loop, OR a full
+// prepare_batch.py plan object { batch, next_id, total, target,
+// words_per_theme, themes: [{name, category, level, hint, existing: []}],
+// gap_tokens: [], compound_pool: [] } to run that single batch first.
 
 const CONVENTIONS = `
 CONTENT CONVENTIONS (authoritative — follow exactly):
@@ -48,6 +50,17 @@ const WORDS_SCHEMA = {
         },
       },
     },
+  },
+}
+
+const PLAN_SCHEMA = {
+  type: 'object', required: ['batch', 'themes', 'total', 'target', 'words_per_theme'],
+  properties: {
+    batch: { type: 'number' }, next_id: { type: 'number' },
+    total: { type: 'number' }, target: { type: 'number' },
+    words_per_theme: { type: 'number' },
+    themes: { type: 'array' }, gap_tokens: { type: 'array' },
+    compound_pool: { type: 'array' },
   },
 }
 
@@ -120,58 +133,41 @@ ${JSON.stringify(generated.words)}
 Return the corrected list via structured output.`
 }
 
-let A = typeof args === 'string' ? JSON.parse(args) : args
-if (!A || !A.themes) {
-  A = await agent(
-    'Run `python3 tools/prepare_batch.py` from the repo root /Users/amitbh/Desktop/forcursor and return the JSON it prints on stdout, exactly and completely, via structured output. Do not modify any files.',
-    { label: 'plan', phase: 'Generate',
-      schema: {
-        type: 'object', required: ['batch', 'themes', 'total', 'target', 'words_per_theme'],
-        properties: {
-          batch: { type: 'number' }, next_id: { type: 'number' },
-          total: { type: 'number' }, target: { type: 'number' },
-          words_per_theme: { type: 'number' },
-          themes: { type: 'array' }, gap_tokens: { type: 'array' },
-          compound_pool: { type: 'array' },
-        },
-      } })
-}
-if (A.total >= A.target) return { done: true, total: A.total }
-
-const items = [
-  ...A.themes.map(t => ({ type: 'theme', t, count: A.words_per_theme })),
-  ...(A.gap_tokens && A.gap_tokens.length >= 5
-    ? [{ type: 'gaps', tokens: A.gap_tokens }] : []),
-  ...(A.compound_pool && A.compound_pool.length
-    ? [{ type: 'compounds', pool: A.compound_pool }] : []),
-]
-
 const itemName = item =>
   item.type === 'gaps' ? 'gap-fill'
   : item.type === 'compounds' ? 'compounds'
   : item.t.name
 
-const verified = await pipeline(
-  items,
-  item => agent(genPrompt(item), {
-    label: `gen:${itemName(item)}`,
-    phase: 'Generate', schema: WORDS_SCHEMA,
-  }),
-  (gen, item) => gen && gen.words.length
-    ? agent(verifyPrompt(item, gen), {
-        label: `verify:${itemName(item)}`,
-        phase: 'Verify', schema: WORDS_SCHEMA,
-      })
-    : { words: [] },
-)
+async function runBatch(A) {
+  const P = `Batch ${A.batch}`
+  const items = [
+    ...A.themes.map(t => ({ type: 'theme', t, count: A.words_per_theme })),
+    ...(A.gap_tokens && A.gap_tokens.length >= 5
+      ? [{ type: 'gaps', tokens: A.gap_tokens }] : []),
+    ...(A.compound_pool && A.compound_pool.length
+      ? [{ type: 'compounds', pool: A.compound_pool }] : []),
+  ]
 
-const words = verified.filter(Boolean).flatMap(v => v.words)
-log(`${words.length} words survived verification across ${items.length} sub-batches`)
+  const verified = await pipeline(
+    items,
+    item => agent(genPrompt(item), {
+      label: `gen:${itemName(item)}`,
+      phase: P, schema: WORDS_SCHEMA,
+    }),
+    (gen, item) => gen && gen.words.length
+      ? agent(verifyPrompt(item, gen), {
+          label: `verify:${itemName(item)}`,
+          phase: P, schema: WORDS_SCHEMA,
+        })
+      : { words: [] },
+  )
 
-if (!words.length) return { batch: A.batch, added: 0, error: 'no words survived verification' }
+  const words = verified.filter(Boolean).flatMap(v => v.words)
+  log(`Batch ${A.batch}: ${words.length} words survived verification across ${items.length} sub-batches`)
+  if (!words.length) return { batch: A.batch, added: 0, error: 'no words survived verification' }
 
-const nnn = String(A.batch).padStart(3, '0')
-const result = await agent(`You are the integrator for Thai Learn vocab batch ${A.batch}. Repo root: /Users/amitbh/Desktop/forcursor
+  const nnn = String(A.batch).padStart(3, '0')
+  const result = await agent(`You are the integrator for Thai Learn vocab batch ${A.batch}. Repo root: /Users/amitbh/Desktop/forcursor
 
 1. Write this exact JSON to tools/batches/batch_${nnn}.json (use the Write tool; content below, as-is):
 ${JSON.stringify({ batch: A.batch, themes: A.themes.map(t => ({ name: t.name })), words })}
@@ -182,6 +178,31 @@ ${JSON.stringify({ batch: A.batch, themes: A.themes.map(t => ({ name: t.name }))
 3. If it reports "typecheck failed", read the stderr it printed, remove ONLY the offending entries from the batch JSON, and run the script once more. Do not retry more than twice total.
 
 Report the final summary via structured output (added/total/commit/etc; put anything noteworthy in notes).`,
-  { label: 'integrate+commit', phase: 'Integrate', schema: INTEGRATE_SCHEMA })
+    { label: `integrate:batch ${A.batch}`, phase: P, schema: INTEGRATE_SCHEMA })
 
-return { batch: A.batch, submitted: words.length, ...result }
+  return { batch: A.batch, submitted: words.length, ...result }
+}
+
+let A0 = typeof args === 'string' ? JSON.parse(args) : (args || {})
+const CYCLES = A0.cycles || 4
+const results = []
+
+for (let c = 0; c < CYCLES; c++) {
+  let A
+  if (c === 0 && A0.themes) {
+    A = A0
+  } else {
+    A = await agent(
+      'Run `python3 tools/prepare_batch.py` from the repo root /Users/amitbh/Desktop/forcursor. It prints the batch-plan JSON on stdout AND writes the identical JSON to tools/batches/plan_NNN.json (NNN = zero-padded batch number). Read that plan file and return its content exactly and completely via structured output. Do not modify any other files.',
+      { label: `plan cycle ${c + 1}`, phase: 'Plan', schema: PLAN_SCHEMA })
+    if (!A || !A.themes || !A.themes.length) { log(`cycle ${c + 1}: no plan — stopping`); break }
+  }
+  if (A.total >= A.target) { log(`target reached (${A.total}/${A.target})`); break }
+
+  const r = await runBatch(A)
+  results.push(r)
+  log(`Batch ${A.batch} done: +${r.added || 0} words, total ${r.total || '?'}${r.error ? ' — ERROR: ' + r.error : ''}`)
+  if (r.error) break
+}
+
+return { batches: results, netAdded: results.reduce((s, r) => s + (r.added || 0), 0) }

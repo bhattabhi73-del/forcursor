@@ -110,7 +110,7 @@ LEVEL_HINTS = {
     2: "intermediate words a resident/frequent visitor needs (no repeats of the obvious basics)",
     3: "less common but still useful words for fluent daily life (deeper cuts)",
 }
-THEMES_PER_BATCH = 5
+THEMES_PER_BATCH = 10
 
 
 def main():
@@ -160,7 +160,11 @@ def main():
     state["theme_cursor"] = cursor + len(slots)
     state["batch"] += 1
     V.save_state(state)
-    print(json.dumps(plan, ensure_ascii=False))
+    out = json.dumps(plan, ensure_ascii=False)
+    # Backstop copy so an interrupted run can be resumed without re-planning.
+    with open(V.ROOT / "tools" / "batches" / f"plan_{plan['batch']:03d}.json", "w") as f:
+        f.write(out)
+    print(out)
 
 
 if __name__ == "__main__":
