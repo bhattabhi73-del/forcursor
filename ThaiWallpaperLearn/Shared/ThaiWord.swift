@@ -4782,6 +4782,423 @@ enum WordExtras {
             WordExample(thai: "ผมกลับบ้าน", romanization: "phǒm klàp bâan", english: "I go back home", hindi: "मैं घर लौटता हूँ"),
             WordExample(thai: "เขากลับมาแล้ว", romanization: "khǎo klàp maa láew", english: "He already came back", hindi: "वह वापस आ गया है"),
         ],
+        // Batch 4
+        810: [
+            WordExample(thai: "เขาใจดีมาก", romanization: "khǎo jai-dii mâak", english: "He is very kind.", hindi: "वह बहुत दयालु है।"),
+            WordExample(thai: "แม่ของฉันใจดี", romanization: "mâe khǒong chǎn jai-dii", english: "My mother is kind.", hindi: "मेरी माँ दयालु हैं।"),
+        ],
+        811: [
+            WordExample(thai: "ผมขี้เกียจมาก", romanization: "phǒm khîi-kìat mâak", english: "I am very lazy.", hindi: "मैं बहुत आलसी हूँ।"),
+            WordExample(thai: "เขาขี้เกียจทำงาน", romanization: "khǎo khîi-kìat tham-ngaan", english: "He is too lazy to work.", hindi: "वह काम करने में आलसी है।"),
+        ],
+        812: [
+            WordExample(thai: "เขาขยันมาก", romanization: "khǎo khà-yǎn mâak", english: "He is very hardworking.", hindi: "वह बहुत मेहनती है।"),
+            WordExample(thai: "เด็กคนนี้ขยันเรียน", romanization: "dèk khon níi khà-yǎn rian", english: "This child studies hard.", hindi: "यह बच्चा मेहनत से पढ़ता है।"),
+        ],
+        813: [
+            WordExample(thai: "เพื่อนของผมตลกมาก", romanization: "phêuan khǒong phǒm tà-lòk mâak", english: "My friend is very funny.", hindi: "मेरा दोस्त बहुत मज़ाकिया है।"),
+            WordExample(thai: "เขาชอบพูดตลก", romanization: "khǎo chôop phûut tà-lòk", english: "He likes to joke.", hindi: "उसे मज़ाक करना पसंद है।"),
+        ],
+        814: [
+            WordExample(thai: "เขาใจร้ายมาก", romanization: "khǎo jai-ráai mâak", english: "He is very mean.", hindi: "वह बहुत निर्दयी है।"),
+            WordExample(thai: "อย่าใจร้ายกับฉัน", romanization: "yàa jai-ráai kàp chǎn", english: "Do not be mean to me.", hindi: "मेरे साथ निर्दयी मत बनो।"),
+        ],
+        815: [
+            WordExample(thai: "น้องของฉันขี้อาย", romanization: "nóong khǒong chǎn khîi-aai", english: "My younger sibling is shy.", hindi: "मेरा छोटा भाई शर्मीला है।"),
+            WordExample(thai: "ผมขี้อายมาก", romanization: "phǒm khîi-aai mâak", english: "I am very shy.", hindi: "मैं बहुत शर्मीला हूँ।"),
+        ],
+        816: [
+            WordExample(thai: "เขาเป็นคนซื่อสัตย์", romanization: "khǎo pen khon sûe-sàt", english: "He is an honest person.", hindi: "वह ईमानदार इंसान है।"),
+            WordExample(thai: "เพื่อนของฉันซื่อสัตย์มาก", romanization: "phêuan khǒong chǎn sûe-sàt mâak", english: "My friend is very honest.", hindi: "मेरा दोस्त बहुत ईमानदार है।"),
+        ],
+        817: [
+            WordExample(thai: "เด็กคนนี้ฉลาดมาก", romanization: "dèk khon níi chà-làat mâak", english: "This child is very clever.", hindi: "यह बच्चा बहुत होशियार है।"),
+            WordExample(thai: "เขาฉลาดจริงๆ", romanization: "khǎo chà-làat jing-jing", english: "He is really smart.", hindi: "वह सचमुच होशियार है।"),
+        ],
+        818: [
+            WordExample(thai: "ผมไม่โง่นะ", romanization: "phǒm mâi ngôo ná", english: "I am not stupid.", hindi: "मैं बेवकूफ़ नहीं हूँ।"),
+            WordExample(thai: "อย่าพูดว่าเขาโง่", romanization: "yàa phûut wâa khǎo ngôo", english: "Do not say he is stupid.", hindi: "मत कहो कि वह बेवकूफ़ है।"),
+        ],
+        819: [
+            WordExample(thai: "พ่อของเขาขี้โมโห", romanization: "phôo khǒong khǎo khîi-moo-hǒo", english: "His father is quick-tempered.", hindi: "उसके पिता गुस्सैल हैं।"),
+            WordExample(thai: "อย่าขี้โมโหนะ", romanization: "yàa khîi-moo-hǒo ná", english: "Do not be so quick-tempered.", hindi: "इतना गुस्सा मत किया करो।"),
+        ],
+        820: [
+            WordExample(thai: "แม่ของฉันขี้ลืม", romanization: "mâe khǒong chǎn khîi-luem", english: "My mother is forgetful.", hindi: "मेरी माँ भुलक्कड़ हैं।"),
+            WordExample(thai: "ผมขี้ลืมมาก", romanization: "phǒm khîi-luem mâak", english: "I am very forgetful.", hindi: "मैं बहुत भुलक्कड़ हूँ।"),
+        ],
+        821: [
+            WordExample(thai: "เขาขี้บ่นมาก", romanization: "khǎo khîi-bòn mâak", english: "He complains a lot.", hindi: "वह बहुत शिकायत करता है।"),
+            WordExample(thai: "แม่ขี้บ่นนิดหน่อย", romanization: "mâe khîi-bòn nít-nòi", english: "Mom nags a little.", hindi: "माँ थोड़ी बड़बड़ाती हैं।"),
+        ],
+        822: [
+            WordExample(thai: "เขาขี้เหนียวมาก", romanization: "khǎo khîi-nǐao mâak", english: "He is very stingy.", hindi: "वह बहुत कंजूस है।"),
+            WordExample(thai: "อย่าขี้เหนียวสิ", romanization: "yàa khîi-nǐao sì", english: "Do not be stingy.", hindi: "कंजूसी मत करो।"),
+        ],
+        823: [
+            WordExample(thai: "เขาเป็นคนใจกว้าง", romanization: "khǎo pen khon jai-kwâang", english: "He is a generous person.", hindi: "वह दरियादिल इंसान है।"),
+            WordExample(thai: "ครูของฉันใจกว้างมาก", romanization: "khruu khǒong chǎn jai-kwâang mâak", english: "My teacher is very generous.", hindi: "मेरे शिक्षक बहुत उदार हैं।"),
+        ],
+        824: [
+            WordExample(thai: "เขาพูดสุภาพมาก", romanization: "khǎo phûut sù-phâap mâak", english: "He speaks very politely.", hindi: "वह बहुत विनम्रता से बोलता है।"),
+            WordExample(thai: "เด็กคนนี้สุภาพ", romanization: "dèk khon níi sù-phâap", english: "This child is polite.", hindi: "यह बच्चा विनम्र है।"),
+        ],
+        825: [
+            WordExample(thai: "เขาหยิ่งมาก", romanization: "khǎo yìng mâak", english: "He is very arrogant.", hindi: "वह बहुत घमंडी है।"),
+            WordExample(thai: "ฉันไม่ชอบคนหยิ่ง", romanization: "chǎn mâi chôop khon yìng", english: "I do not like arrogant people.", hindi: "मुझे घमंडी लोग पसंद नहीं।"),
+        ],
+        826: [
+            WordExample(thai: "เด็กคนนี้ร่าเริงมาก", romanization: "dèk khon níi râa-roeng mâak", english: "This child is very cheerful.", hindi: "यह बच्चा बहुत हँसमुख है।"),
+            WordExample(thai: "วันนี้เขาร่าเริงดี", romanization: "wan-níi khǎo râa-roeng dii", english: "He is quite cheerful today.", hindi: "आज वह खूब खुशमिज़ाज है।"),
+        ],
+        827: [
+            WordExample(thai: "น้องของผมขี้เล่นมาก", romanization: "nóong khǒong phǒm khîi-lên mâak", english: "My younger sibling is very playful.", hindi: "मेरा छोटा भाई बहुत खिलंदड़ है।"),
+            WordExample(thai: "แมวตัวนี้ขี้เล่น", romanization: "maew tua níi khîi-lên", english: "This cat is playful.", hindi: "यह बिल्ली चंचल है।"),
+        ],
+        828: [
+            WordExample(thai: "เด็กคนนี้น่ารักมาก", romanization: "dèk khon níi nâa-rák mâak", english: "This child is very cute.", hindi: "यह बच्चा बहुत प्यारा है।"),
+            WordExample(thai: "เขาน่ารักกับทุกคน", romanization: "khǎo nâa-rák kàp thúk khon", english: "He is sweet to everyone.", hindi: "वह सबके साथ प्यार से पेश आता है।"),
+        ],
+        829: [
+            WordExample(thai: "คนไทยเป็นมิตรมาก", romanization: "khon thai pen-mít mâak", english: "Thai people are very friendly.", hindi: "थाई लोग बहुत मिलनसार हैं।"),
+            WordExample(thai: "เขาเป็นมิตรกับทุกคน", romanization: "khǎo pen-mít kàp thúk khon", english: "He is friendly with everyone.", hindi: "वह सबके साथ मिलनसार है।"),
+        ],
+        830: [
+            WordExample(thai: "น้องขี้กลัวมาก", romanization: "nóong khîi-klua mâak", english: "My little sibling is very timid.", hindi: "छोटा भाई बहुत डरपोक है।"),
+            WordExample(thai: "ฉันขี้กลัวนิดหน่อย", romanization: "chǎn khîi-klua nít-nòi", english: "I am a bit timid.", hindi: "मैं थोड़ी डरपोक हूँ।"),
+        ],
+        831: [
+            WordExample(thai: "เขากล้าหาญมาก", romanization: "khǎo klâa-hǎan mâak", english: "He is very brave.", hindi: "वह बहुत बहादुर है।"),
+            WordExample(thai: "เด็กคนนี้กล้าหาญจริงๆ", romanization: "dèk khon níi klâa-hǎan jing-jing", english: "This child is really brave.", hindi: "यह बच्चा सचमुच बहादुर है।"),
+        ],
+        832: [
+            WordExample(thai: "แม่ของฉันอดทนมาก", romanization: "mâe khǒong chǎn òt-thon mâak", english: "My mother is very patient.", hindi: "मेरी माँ बहुत धैर्यवान हैं।"),
+            WordExample(thai: "เราต้องอดทน", romanization: "rao tông òt-thon", english: "We must be patient.", hindi: "हमें धैर्य रखना होगा।"),
+        ],
+        833: [
+            WordExample(thai: "เด็กคนนี้ซนมาก", romanization: "dèk khon níi son mâak", english: "This child is very naughty.", hindi: "यह बच्चा बहुत शरारती है।"),
+            WordExample(thai: "แมวของฉันซน", romanization: "maew khǒong chǎn son", english: "My cat is mischievous.", hindi: "मेरी बिल्ली शरारती है।"),
+        ],
+        834: [
+            WordExample(thai: "เขาเป็นคนเจ้าชู้", romanization: "khǎo pen khon jâo-chúu", english: "He is a flirt.", hindi: "वह दिलफेंक इंसान है।"),
+            WordExample(thai: "ฉันไม่ชอบคนเจ้าชู้", romanization: "chǎn mâi chôop khon jâo-chúu", english: "I do not like flirty people.", hindi: "मुझे दिलफेंक लोग पसंद नहीं।"),
+        ],
+        835: [
+            WordExample(thai: "เขาเห็นแก่ตัวมาก", romanization: "khǎo hěn-kàe-tua mâak", english: "He is very selfish.", hindi: "वह बहुत स्वार्थी है।"),
+            WordExample(thai: "อย่าเห็นแก่ตัวสิ", romanization: "yàa hěn-kàe-tua sì", english: "Do not be selfish.", hindi: "स्वार्थी मत बनो।"),
+        ],
+        836: [
+            WordExample(thai: "เขาเป็นคนจริงใจ", romanization: "khǎo pen khon jing-jai", english: "He is a sincere person.", hindi: "वह सच्चा इंसान है।"),
+            WordExample(thai: "เพื่อนของฉันจริงใจมาก", romanization: "phêuan khǒong chǎn jing-jai mâak", english: "My friend is very sincere.", hindi: "मेरा दोस्त बहुत सच्चा है।"),
+        ],
+        837: [
+            WordExample(thai: "แม่ของเขาอ่อนโยนมาก", romanization: "mâe khǒong khǎo òon-yoon mâak", english: "His mother is very gentle.", hindi: "उसकी माँ बहुत सौम्य हैं।"),
+            WordExample(thai: "เขาพูดอ่อนโยน", romanization: "khǎo phûut òon-yoon", english: "He speaks gently.", hindi: "वह नरमी से बोलता है।"),
+        ],
+        838: [
+            WordExample(thai: "นี่คือความรัก", romanization: "nîi khuue khwaam-rák", english: "This is love.", hindi: "यह प्यार है।"),
+            WordExample(thai: "ความรักสำคัญมาก", romanization: "khwaam-rák sǎm-khan mâak", english: "Love is very important.", hindi: "प्यार बहुत महत्वपूर्ण है।"),
+        ],
+        839: [
+            WordExample(thai: "ที่รัก กินข้าวไหม", romanization: "thîi-rák kin khâao mǎi", english: "Darling, do you want to eat?", hindi: "जानू, खाना खाओगे?"),
+            WordExample(thai: "คิดถึงนะที่รัก", romanization: "khít-thǔeng ná thîi-rák", english: "I miss you, darling.", hindi: "तुम्हारी याद आती है, जानू।"),
+        ],
+        840: [
+            WordExample(thai: "เขาเป็นคนรักของฉัน", romanization: "khǎo pen khon-rák khǎwng chǎn", english: "He is my sweetheart.", hindi: "वह मेरा प्रियतम है।"),
+            WordExample(thai: "คนรักของผมอยู่ที่นี่", romanization: "khon-rák khǎwng pǒm yùu thîi-nîi", english: "My sweetheart is here.", hindi: "मेरी प्रियतमा यहाँ है।"),
+        ],
+        841: [
+            WordExample(thai: "เขาเป็นคู่รักกัน", romanization: "khǎo pen khûu-rák kan", english: "They are a couple.", hindi: "वे एक प्रेमी जोड़ा हैं।"),
+            WordExample(thai: "คู่รักชอบมาที่นี่", romanization: "khûu-rák châwp maa thîi-nîi", english: "Couples like to come here.", hindi: "प्रेमी जोड़े यहाँ आना पसंद करते हैं।"),
+        ],
+        842: [
+            WordExample(thai: "เขาจีบฉัน", romanization: "khǎo jìip chǎn", english: "He is flirting with me.", hindi: "वह मुझसे फ्लर्ट कर रहा है।"),
+            WordExample(thai: "ผมอยากจีบเขา", romanization: "pǒm yàak jìip khǎo", english: "I want to court her.", hindi: "मैं उसे रिझाना चाहता हूँ।"),
+        ],
+        843: [
+            WordExample(thai: "ฉันแอบชอบเขา", romanization: "chǎn àep-châwp khǎo", english: "I secretly like him.", hindi: "मैं उसे चुपके से पसंद करती हूँ।"),
+            WordExample(thai: "เขาแอบชอบคุณนะ", romanization: "khǎo àep-châwp khun ná", english: "He secretly likes you.", hindi: "वह तुम्हें चुपके से पसंद करता है।"),
+        ],
+        844: [
+            WordExample(thai: "ผมหลงรักเขา", romanization: "pǒm lǒng-rák khǎo", english: "I fell in love with her.", hindi: "मुझे उससे प्यार हो गया।"),
+            WordExample(thai: "เขาหลงรักคุณมาก", romanization: "khǎo lǒng-rák khun mâak", english: "He is deeply in love with you.", hindi: "वह तुमसे बहुत प्यार करता है।"),
+        ],
+        845: [
+            WordExample(thai: "ฉันตกหลุมรักเขา", romanization: "chǎn tòk-lǔm-rák khǎo", english: "I fell in love with him.", hindi: "मैं उसके प्यार में पड़ गई।"),
+            WordExample(thai: "เขาตกหลุมรักฉัน", romanization: "khǎo tòk-lǔm-rák chǎn", english: "He fell in love with me.", hindi: "वह मेरे प्यार में पड़ गया।"),
+        ],
+        846: [
+            WordExample(thai: "ไปเดทกันไหม", romanization: "pai dèet kan mǎi", english: "Shall we go on a date?", hindi: "क्या हम डेट पर चलें?"),
+            WordExample(thai: "คืนนี้ผมมีเดท", romanization: "khuuen-níi pǒm mii dèet", english: "Tonight I have a date.", hindi: "आज रात मेरी डेट है।"),
+        ],
+        847: [
+            WordExample(thai: "เราคบกันสองปี", romanization: "rao khóp kan sǎwng pii", english: "We have been dating for two years.", hindi: "हम दो साल से रिश्ते में हैं।"),
+            WordExample(thai: "คุณคบกับเขาไหม", romanization: "khun khóp kàp khǎo mǎi", english: "Are you dating him?", hindi: "क्या तुम उसके साथ रिश्ते में हो?"),
+        ],
+        848: [
+            WordExample(thai: "กอดฉันหน่อย", romanization: "kàwt chǎn nàwy", english: "Hug me, please.", hindi: "मुझे गले लगा लो।"),
+            WordExample(thai: "ผมอยากกอดคุณ", romanization: "pǒm yàak kàwt khun", english: "I want to hug you.", hindi: "मैं तुम्हें गले लगाना चाहता हूँ।"),
+        ],
+        849: [
+            WordExample(thai: "เขาจูบฉัน", romanization: "khǎo jùup chǎn", english: "He kissed me.", hindi: "उसने मुझे चूमा।"),
+            WordExample(thai: "ผมจูบแฟนทุกวัน", romanization: "pǒm jùup faen thúk-wan", english: "I kiss my girlfriend every day.", hindi: "मैं अपनी गर्लफ्रेंड को रोज़ चूमता हूँ।"),
+        ],
+        850: [
+            WordExample(thai: "อย่างอนนะ", romanization: "yàa ngawn ná", english: "Do not sulk, okay?", hindi: "रूठो मत।"),
+            WordExample(thai: "เขางอนง่ายมาก", romanization: "khǎo ngawn ngâai mâak", english: "She sulks very easily.", hindi: "वह बहुत जल्दी रूठ जाती है।"),
+        ],
+        851: [
+            WordExample(thai: "ผมไปง้อแฟน", romanization: "pǒm pai ngáw faen", english: "I went to make up with my girlfriend.", hindi: "मैं अपनी गर्लफ्रेंड को मनाने गया।"),
+            WordExample(thai: "เขามาง้อฉัน", romanization: "khǎo maa ngáw chǎn", english: "He came to appease me.", hindi: "वह मुझे मनाने आया।"),
+        ],
+        852: [
+            WordExample(thai: "แฟนฉันหึงมาก", romanization: "faen chǎn hǔeng mâak", english: "My boyfriend is very jealous.", hindi: "मेरा बॉयफ्रेंड बहुत जलता है।"),
+            WordExample(thai: "อย่าหึงฉันนะ", romanization: "yàa hǔeng chǎn ná", english: "Do not be jealous of me.", hindi: "मुझसे जलन मत करो।"),
+        ],
+        853: [
+            WordExample(thai: "เราทะเลาะกันบ่อย", romanization: "rao thá-láw kan bàwy", english: "We quarrel often.", hindi: "हम अक्सर झगड़ते हैं।"),
+            WordExample(thai: "อย่าทะเลาะกันนะ", romanization: "yàa thá-láw kan ná", english: "Do not quarrel with each other.", hindi: "आपस में झगड़ो मत।"),
+        ],
+        854: [
+            WordExample(thai: "เราคืนดีกันแล้ว", romanization: "rao khuuen-dii kan láeo", english: "We have made up.", hindi: "हमारी सुलह हो गई है।"),
+            WordExample(thai: "ไปคืนดีกับแฟนนะ", romanization: "pai khuuen-dii kàp faen ná", english: "Go make up with your girlfriend.", hindi: "जाओ, अपनी गर्लफ्रेंड से सुलह कर लो।"),
+        ],
+        855: [
+            WordExample(thai: "เราเลิกกันแล้ว", romanization: "rao lêrk-kan láeo", english: "We have broken up.", hindi: "हमारा ब्रेकअप हो गया है।"),
+            WordExample(thai: "อย่าเลิกกันเลยนะ", romanization: "yàa lêrk-kan loei ná", english: "Please do not break up.", hindi: "प्लीज़ ब्रेकअप मत करो।"),
+        ],
+        856: [
+            WordExample(thai: "ผมอกหักครับ", romanization: "pǒm òk-hàk khráp", english: "I am heartbroken.", hindi: "मेरा दिल टूट गया है।"),
+            WordExample(thai: "ฉันเคยอกหัก", romanization: "chǎn khoei òk-hàk", english: "I have been heartbroken before.", hindi: "मेरा दिल पहले टूट चुका है।"),
+        ],
+        857: [
+            WordExample(thai: "เขาเป็นแฟนเก่าของฉัน", romanization: "khǎo pen faen-kào khǎwng chǎn", english: "He is my ex.", hindi: "वह मेरा एक्स है।"),
+            WordExample(thai: "ผมเจอแฟนเก่าเมื่อวาน", romanization: "pǒm jer faen-kào mûea-waan", english: "I met my ex yesterday.", hindi: "कल मैं अपनी एक्स से मिला।"),
+        ],
+        858: [
+            WordExample(thai: "เขานอกใจฉัน", romanization: "khǎo nâwk-jai chǎn", english: "He cheated on me.", hindi: "उसने मुझे धोखा दिया।"),
+            WordExample(thai: "อย่านอกใจแฟนนะ", romanization: "yàa nâwk-jai faen ná", english: "Do not cheat on your partner.", hindi: "अपने पार्टनर को धोखा मत दो।"),
+        ],
+        859: [
+            WordExample(thai: "เราหมั้นกันแล้ว", romanization: "rao mân kan láeo", english: "We are engaged.", hindi: "हमारी सगाई हो गई है।"),
+            WordExample(thai: "เขาเพิ่งหมั้นกัน", romanization: "khǎo phêrng mân kan", english: "They just got engaged.", hindi: "उनकी अभी-अभी सगाई हुई है।"),
+        ],
+        860: [
+            WordExample(thai: "เขาขอฉันแต่งงาน", romanization: "khǎo khǎw chǎn tàeng-ngaan", english: "He proposed to me.", hindi: "उसने मुझे शादी के लिए प्रपोज़ किया।"),
+            WordExample(thai: "ผมจะขอแฟนแต่งงาน", romanization: "pǒm jà khǎw faen tàeng-ngaan", english: "I will propose to my girlfriend.", hindi: "मैं अपनी गर्लफ्रेंड को प्रपोज़ करूँगा।"),
+        ],
+        861: [
+            WordExample(thai: "เขาโรแมนติกมาก", romanization: "khǎo roo-maen-tìk mâak", english: "He is very romantic.", hindi: "वह बहुत रोमांटिक है।"),
+            WordExample(thai: "ที่นี่โรแมนติกมาก", romanization: "thîi-nîi roo-maen-tìk mâak", english: "This place is very romantic.", hindi: "यह जगह बहुत रोमांटिक है।"),
+        ],
+        862: [
+            WordExample(thai: "ฉันเจ็บลิ้น", romanization: "chǎn jèp lín", english: "My tongue hurts", hindi: "मेरी जीभ में दर्द है"),
+            WordExample(thai: "กินเผ็ดมากเจ็บลิ้น", romanization: "kin pèt mâak jèp lín", english: "Eating very spicy hurts the tongue", hindi: "बहुत तीखा खाने से जीभ जलती है"),
+        ],
+        863: [
+            WordExample(thai: "ฉันเจ็บไหล่มาก", romanization: "chǎn jèp lài mâak", english: "My shoulder hurts a lot", hindi: "मेरे कंधे में बहुत दर्द है"),
+            WordExample(thai: "นวดไหล่สบายมาก", romanization: "nûat lài sà-baai mâak", english: "A shoulder massage feels very good", hindi: "कंधे की मालिश बहुत आराम देती है"),
+        ],
+        864: [
+            WordExample(thai: "ฉันเจ็บเข่า", romanization: "chǎn jèp kào", english: "My knee hurts", hindi: "मेरे घुटने में दर्द है"),
+            WordExample(thai: "เข่าของเขาไม่ดี", romanization: "kào kǒng kǎo mâi dii", english: "His knee is not good", hindi: "उसका घुटना ठीक नहीं है"),
+        ],
+        865: [
+            WordExample(thai: "ฉันเจ็บศอก", romanization: "chǎn jèp sòok", english: "My elbow hurts", hindi: "मेरी कोहनी में दर्द है"),
+            WordExample(thai: "ศอกของฉันมีแผล", romanization: "sòok kǒng chǎn mii plǎe", english: "My elbow has a wound", hindi: "मेरी कोहनी पर घाव है"),
+        ],
+        866: [
+            WordExample(thai: "ฉันเจ็บนิ้วเท้า", romanization: "chǎn jèp níw-táo", english: "My toe hurts", hindi: "मेरे पैर की उंगली में दर्द है"),
+            WordExample(thai: "นิ้วเท้าของเขาเล็ก", romanization: "níw-táo kǒng kǎo lék", english: "His toes are small", hindi: "उसके पैर की उंगलियां छोटी हैं"),
+        ],
+        867: [
+            WordExample(thai: "ฉันตัดเล็บ", romanization: "chǎn tàt lép", english: "I cut my nails", hindi: "मैं नाखून काटती हूं"),
+            WordExample(thai: "เล็บของเขาสวยมาก", romanization: "lép kǒng kǎo sǔai mâak", english: "Her nails are very pretty", hindi: "उसके नाखून बहुत सुंदर हैं"),
+        ],
+        868: [
+            WordExample(thai: "คิ้วของเขาสวย", romanization: "kíw kǒng kǎo sǔai", english: "Her eyebrows are pretty", hindi: "उसकी भौंहें सुंदर हैं"),
+            WordExample(thai: "คิ้วของฉันยาว", romanization: "kíw kǒng chǎn yaao", english: "My eyebrows are long", hindi: "मेरी भौंहें लंबी हैं"),
+        ],
+        869: [
+            WordExample(thai: "ขนตาของเขายาวมาก", romanization: "kǒn-taa kǒng kǎo yaao mâak", english: "Her eyelashes are very long", hindi: "उसकी पलकें बहुत लंबी हैं"),
+            WordExample(thai: "ขนตาของฉันสั้น", romanization: "kǒn-taa kǒng chǎn sân", english: "My eyelashes are short", hindi: "मेरी पलकें छोटी हैं"),
+        ],
+        870: [
+            WordExample(thai: "แก้มของเขาแดง", romanization: "kâem kǒng kǎo daeng", english: "His cheeks are red", hindi: "उसके गाल लाल हैं"),
+            WordExample(thai: "เด็กคนนี้แก้มน่ารัก", romanization: "dèk kon níi kâem nâa-rák", english: "This child has cute cheeks", hindi: "इस बच्चे के गाल प्यारे हैं"),
+        ],
+        871: [
+            WordExample(thai: "ฉันเจ็บคาง", romanization: "chǎn jèp kaang", english: "My chin hurts", hindi: "मेरी ठोड़ी में दर्द है"),
+            WordExample(thai: "คางของเขายาว", romanization: "kaang kǒng kǎo yaao", english: "His chin is long", hindi: "उसकी ठोड़ी लंबी है"),
+        ],
+        872: [
+            WordExample(thai: "หน้าผากของฉันร้อน", romanization: "nâa-pàak kǒng chǎn róon", english: "My forehead is hot", hindi: "मेरा माथा गरम है"),
+            WordExample(thai: "เขามีแผลที่หน้าผาก", romanization: "kǎo mii plǎe tîi nâa-pàak", english: "He has a wound on his forehead", hindi: "उसके माथे पर घाव है"),
+        ],
+        873: [
+            WordExample(thai: "ริมฝีปากของฉันแห้ง", romanization: "rim-fǐi-pàak kǒng chǎn hâeng", english: "My lips are dry", hindi: "मेरे होंठ सूखे हैं"),
+            WordExample(thai: "ริมฝีปากของเขาสวย", romanization: "rim-fǐi-pàak kǒng kǎo sǔai", english: "Her lips are pretty", hindi: "उसके होंठ सुंदर हैं"),
+        ],
+        874: [
+            WordExample(thai: "ฉันเจ็บเอว", romanization: "chǎn jèp eo", english: "My waist hurts", hindi: "मेरी कमर में दर्द है"),
+            WordExample(thai: "เอวของเขาเล็ก", romanization: "eo kǒng kǎo lék", english: "Her waist is small", hindi: "उसकी कमर पतली है"),
+        ],
+        875: [
+            WordExample(thai: "ฉันเจ็บสะโพก", romanization: "chǎn jèp sà-pôok", english: "My hip hurts", hindi: "मेरे कूल्हे में दर्द है"),
+            WordExample(thai: "สะโพกของเขาใหญ่", romanization: "sà-pôok kǒng kǎo yài", english: "His hips are big", hindi: "उसके कूल्हे बड़े हैं"),
+        ],
+        876: [
+            WordExample(thai: "นั่งนานก้นเจ็บ", romanization: "nâng naan kôn jèp", english: "Sitting long makes the bottom hurt", hindi: "देर तक बैठने से नितंब दुखते हैं"),
+            WordExample(thai: "ฉันเจ็บก้น", romanization: "chǎn jèp kôn", english: "My bottom hurts", hindi: "मेरे नितंब में दर्द है"),
+        ],
+        877: [
+            WordExample(thai: "ฉันเจ็บหน้าอก", romanization: "chǎn jèp nâa-òk", english: "My chest hurts", hindi: "मेरी छाती में दर्द है"),
+            WordExample(thai: "หน้าอกของเขาใหญ่", romanization: "nâa-òk kǒng kǎo yài", english: "His chest is big", hindi: "उसकी छाती चौड़ी है"),
+        ],
+        878: [
+            WordExample(thai: "กระดูกของฉันแข็งแรง", romanization: "krà-dùuk kǒng chǎn kǎeng-raeng", english: "My bones are strong", hindi: "मेरी हड्डियां मजबूत हैं"),
+            WordExample(thai: "หมอดูกระดูกของเขา", romanization: "mǒo duu krà-dùuk kǒng kǎo", english: "The doctor looks at his bones", hindi: "डॉक्टर उसकी हड्डियां देखते हैं"),
+        ],
+        879: [
+            WordExample(thai: "กล้ามเนื้อของเขาใหญ่", romanization: "klâam-núea kǒng kǎo yài", english: "His muscles are big", hindi: "उसकी मांसपेशियां बड़ी हैं"),
+            WordExample(thai: "ฉันเจ็บกล้ามเนื้อ", romanization: "chǎn jèp klâam-núea", english: "My muscles hurt", hindi: "मेरी मांसपेशियों में दर्द है"),
+        ],
+        880: [
+            WordExample(thai: "สมองของเขาดีมาก", romanization: "sà-mǒong kǒng kǎo dii mâak", english: "His brain is very good", hindi: "उसका दिमाग बहुत अच्छा है"),
+            WordExample(thai: "ฉันใช้สมองมาก", romanization: "chǎn chái sà-mǒong mâak", english: "I use my brain a lot", hindi: "मैं दिमाग बहुत इस्तेमाल करती हूं"),
+        ],
+        881: [
+            WordExample(thai: "ปอดของเขาแข็งแรง", romanization: "pòot kǒng kǎo kǎeng-raeng", english: "His lungs are strong", hindi: "उसके फेफड़े मजबूत हैं"),
+            WordExample(thai: "หมอดูปอดของฉัน", romanization: "mǒo duu pòot kǒng chǎn", english: "The doctor checks my lungs", hindi: "डॉक्टर मेरे फेफड़े देखते हैं"),
+        ],
+        882: [
+            WordExample(thai: "ฉันเจ็บข้อมือ", romanization: "chǎn jèp kôo-muue", english: "My wrist hurts", hindi: "मेरी कलाई में दर्द है"),
+            WordExample(thai: "ข้อมือของเขาเล็ก", romanization: "kôo-muue kǒng kǎo lék", english: "Her wrist is small", hindi: "उसकी कलाई पतली है"),
+        ],
+        883: [
+            WordExample(thai: "ฉันเจ็บข้อเท้า", romanization: "chǎn jèp kôo-táo", english: "My ankle hurts", hindi: "मेरे टखने में दर्द है"),
+            WordExample(thai: "ข้อเท้าของเขาบวม", romanization: "kôo-táo kǒng kǎo buam", english: "His ankle is swollen", hindi: "उसका टखना सूजा है"),
+        ],
+        884: [
+            WordExample(thai: "ส้นเท้าของฉันเจ็บ", romanization: "sôn-táo kǒng chǎn jèp", english: "My heel hurts", hindi: "मेरी एड़ी में दर्द है"),
+            WordExample(thai: "ส้นเท้าของเขาแห้ง", romanization: "sôn-táo kǒng kǎo hâeng", english: "His heels are dry", hindi: "उसकी एड़ियां सूखी हैं"),
+        ],
+        885: [
+            WordExample(thai: "ฝ่ามือของฉันร้อน", romanization: "fàa-muue kǒng chǎn róon", english: "My palm is hot", hindi: "मेरी हथेली गरम है"),
+            WordExample(thai: "เขาดูฝ่ามือของฉัน", romanization: "kǎo duu fàa-muue kǒng chǎn", english: "He looks at my palm", hindi: "वह मेरी हथेली देखता है"),
+        ],
+        886: [
+            WordExample(thai: "ฉันเจ็บนิ้วโป้ง", romanization: "chǎn jèp níw-pôong", english: "My thumb hurts", hindi: "मेरे अंगूठे में दर्द है"),
+            WordExample(thai: "นิ้วโป้งของเขาใหญ่", romanization: "níw-pôong kǒng kǎo yài", english: "His thumb is big", hindi: "उसका अंगूठा बड़ा है"),
+        ],
+        887: [
+            WordExample(thai: "เขามีหนวดยาว", romanization: "kǎo mii nùat yaao", english: "He has a long mustache", hindi: "उसकी मूंछें लंबी हैं"),
+            WordExample(thai: "พ่อของฉันมีหนวด", romanization: "pôo kǒng chǎn mii nùat", english: "My father has a mustache", hindi: "मेरे पिता की मूंछें हैं"),
+        ],
+        888: [
+            WordExample(thai: "เขามีเครายาว", romanization: "kǎo mii krao yaao", english: "He has a long beard", hindi: "उसकी दाढ़ी लंबी है"),
+            WordExample(thai: "ฉันไม่ชอบเครา", romanization: "chǎn mâi chôop krao", english: "I do not like beards", hindi: "मुझे दाढ़ी पसंद नहीं है"),
+        ],
+        889: [
+            WordExample(thai: "ร่างกายของเขาแข็งแรงมาก", romanization: "râang-kaai kǒng kǎo kǎeng-raeng mâak", english: "His body is very strong", hindi: "उसका शरीर बहुत मजबूत है"),
+            WordExample(thai: "ฉันดูแลร่างกาย", romanization: "chǎn duu-lae râang-kaai", english: "I take care of my body", hindi: "मैं अपने शरीर का ख्याल रखती हूं"),
+        ],
+        890: [
+            WordExample(thai: "ผมจามมากครับ", romanization: "phǒm jaam mâak khráp", english: "I sneeze a lot", hindi: "मुझे बहुत छींकें आ रही हैं"),
+            WordExample(thai: "ฉันเป็นหวัดและจาม", romanization: "chǎn pen wàt láe jaam", english: "I have a cold and sneeze", hindi: "मुझे जुकाम है और छींकें आती हैं"),
+        ],
+        891: [
+            WordExample(thai: "ผมเจ็บคอมากครับ", romanization: "phǒm jèp-khoo mâak khráp", english: "My throat hurts a lot", hindi: "मेरे गले में बहुत दर्द है"),
+            WordExample(thai: "ฉันเจ็บคอวันนี้", romanization: "chǎn jèp-khoo wan-níi", english: "I have a sore throat today", hindi: "आज मेरे गले में दर्द है"),
+        ],
+        892: [
+            WordExample(thai: "ผมปวดหัวมาก", romanization: "phǒm pùat-hǔa mâak", english: "I have a bad headache", hindi: "मुझे बहुत सिरदर्द है"),
+            WordExample(thai: "เขาปวดหัวอยู่", romanization: "khǎo pùat-hǔa yùu", english: "He has a headache", hindi: "उसे सिरदर्द हो रहा है"),
+        ],
+        893: [
+            WordExample(thai: "ฉันปวดท้องค่ะ", romanization: "chǎn pùat-thóong khâ", english: "I have a stomachache", hindi: "मुझे पेट में दर्द है"),
+            WordExample(thai: "กินมากแล้วปวดท้อง", romanization: "kin mâak láew pùat-thóong", english: "Ate too much and got a stomachache", hindi: "ज़्यादा खाया और पेट दर्द हो गया"),
+        ],
+        894: [
+            WordExample(thai: "ผมปวดฟันมากครับ", romanization: "phǒm pùat-fan mâak khráp", english: "I have a bad toothache", hindi: "मुझे दांत में बहुत दर्द है"),
+            WordExample(thai: "ปวดฟันไปหาหมอ", romanization: "pùat-fan pai hǎa mǒo", english: "Toothache, go see the doctor", hindi: "दांत दर्द है, डॉक्टर के पास जाओ"),
+        ],
+        895: [
+            WordExample(thai: "ผมท้องเสียครับ", romanization: "phǒm thóong-sǐa khráp", english: "I have diarrhea", hindi: "मुझे दस्त हैं"),
+            WordExample(thai: "กินแล้วท้องเสีย", romanization: "kin láew thóong-sǐa", english: "Ate and got an upset stomach", hindi: "खाने के बाद पेट खराब हो गया"),
+        ],
+        896: [
+            WordExample(thai: "เขาอาเจียนมาก", romanization: "khǎo aa-jian mâak", english: "He vomits a lot", hindi: "उसे बहुत उल्टी हो रही है"),
+            WordExample(thai: "ฉันอาเจียนและเวียนหัว", romanization: "chǎn aa-jian láe wian-hǔa", english: "I vomit and feel dizzy", hindi: "मुझे उल्टी और चक्कर आ रहे हैं"),
+        ],
+        897: [
+            WordExample(thai: "ผมเวียนหัวครับ", romanization: "phǒm wian-hǔa khráp", english: "I feel dizzy", hindi: "मुझे चक्कर आ रहा है"),
+            WordExample(thai: "เขาเวียนหัวมากวันนี้", romanization: "khǎo wian-hǔa mâak wan-níi", english: "He feels very dizzy today", hindi: "आज उसे बहुत चक्कर आ रहे हैं"),
+        ],
+        898: [
+            WordExample(thai: "ผมมีน้ำมูกครับ", romanization: "phǒm mii nám-mûuk khráp", english: "I have a runny nose", hindi: "मेरी नाक बह रही है"),
+            WordExample(thai: "เขาเป็นหวัดมีน้ำมูก", romanization: "khǎo pen wàt mii nám-mûuk", english: "He has a cold with a runny nose", hindi: "उसे जुकाम है और नाक बह रही है"),
+        ],
+        899: [
+            WordExample(thai: "วันนี้ผมไม่สบาย", romanization: "wan-níi phǒm mâi-sà-baai", english: "Today I am unwell", hindi: "आज मेरी तबीयत खराब है"),
+            WordExample(thai: "เขาไม่สบายอยู่ที่บ้าน", romanization: "khǎo mâi-sà-baai yùu thîi bâan", english: "He is unwell at home", hindi: "वह बीमार है और घर पर है"),
+        ],
+        900: [
+            WordExample(thai: "อาการดีขึ้นแล้ว", romanization: "aa-kaan dii-khûen láew", english: "The symptoms are better now", hindi: "लक्षण अब बेहतर हैं"),
+            WordExample(thai: "อาการไม่ดีครับ", romanization: "aa-kaan mâi dii khráp", english: "The condition is not good", hindi: "हालत ठीक नहीं है"),
+        ],
+        901: [
+            WordExample(thai: "สุขภาพดีมากครับ", romanization: "sùk-khà-phâap dii mâak khráp", english: "Very good health", hindi: "सेहत बहुत अच्छी है"),
+            WordExample(thai: "สุขภาพของเขาดี", romanization: "sùk-khà-phâap khǒong khǎo dii", english: "His health is good", hindi: "उसकी सेहत अच्छी है"),
+        ],
+        902: [
+            WordExample(thai: "เขาแข็งแรงมาก", romanization: "khǎo khǎeng-raeng mâak", english: "He is very healthy", hindi: "वह बहुत तंदुरुस्त है"),
+            WordExample(thai: "ผมอยากแข็งแรง", romanization: "phǒm yàak khǎeng-raeng", english: "I want to be healthy", hindi: "मैं तंदुरुस्त होना चाहता हूँ"),
+        ],
+        903: [
+            WordExample(thai: "ผมหายแล้วครับ", romanization: "phǒm hǎai láew khráp", english: "I have recovered", hindi: "मैं ठीक हो गया हूँ"),
+            WordExample(thai: "เขายังไม่หาย", romanization: "khǎo yang mâi hǎai", english: "He has not recovered yet", hindi: "वह अभी ठीक नहीं हुआ है"),
+        ],
+        904: [
+            WordExample(thai: "วันนี้ดีขึ้นมากค่ะ", romanization: "wan-níi dii-khûen mâak khâ", english: "Today it is much better", hindi: "आज बहुत बेहतर है"),
+            WordExample(thai: "อาการเขาดีขึ้น", romanization: "aa-kaan khǎo dii-khûen", english: "His condition is better", hindi: "उसकी हालत बेहतर है"),
+        ],
+        905: [
+            WordExample(thai: "ผมหายใจไม่ออก", romanization: "phǒm hǎai-jai mâi òok", english: "I cannot breathe", hindi: "मुझे सांस नहीं आ रही है"),
+            WordExample(thai: "หายใจดีขึ้นแล้ว", romanization: "hǎai-jai dii-khûen láew", english: "Breathing is better now", hindi: "अब सांस बेहतर चल रही है"),
+        ],
+        906: [
+            WordExample(thai: "คลินิกอยู่ที่นี่", romanization: "khlii-ník yùu thîi-nîi", english: "The clinic is here", hindi: "क्लिनिक यहाँ है"),
+            WordExample(thai: "ผมไปคลินิกครับ", romanization: "phǒm pai khlii-ník khráp", english: "I am going to the clinic", hindi: "मैं क्लिनिक जा रहा हूँ"),
+        ],
+        907: [
+            WordExample(thai: "ผมไม่ชอบฉีดยา", romanization: "phǒm mâi chôop chìit-yaa", english: "I do not like injections", hindi: "मुझे इंजेक्शन पसंद नहीं है"),
+            WordExample(thai: "หมอฉีดยาให้ผม", romanization: "mǒo chìit-yaa hâi phǒm", english: "The doctor gave me an injection", hindi: "डॉक्टर ने मुझे इंजेक्शन लगाया"),
+        ],
+        908: [
+            WordExample(thai: "คนไข้อยู่ที่นี่", romanization: "khon-khâi yùu thîi nîi", english: "The patient is here", hindi: "मरीज़ यहाँ है"),
+            WordExample(thai: "วันนี้มีคนไข้มาก", romanization: "wan-níi mii khon-khâi mâak", english: "Today there are many patients", hindi: "आज बहुत मरीज़ हैं"),
+        ],
+        909: [
+            WordExample(thai: "กินยาเม็ดนี้", romanization: "kin yaa-mét níi", english: "Take this pill", hindi: "यह गोली खाओ"),
+            WordExample(thai: "ยาเม็ดนี้ขมมาก", romanization: "yaa-mét níi khǒm mâak", english: "This pill is very bitter", hindi: "यह गोली बहुत कड़वी है"),
+        ],
+        910: [
+            WordExample(thai: "ผมไปฉีดวัคซีน", romanization: "pǒm pai chìit wák-siin", english: "I go to get vaccinated", hindi: "मैं टीका लगवाने जाता हूँ"),
+            WordExample(thai: "วัคซีนนี้ดีมาก", romanization: "wák-siin níi dii mâak", english: "This vaccine is very good", hindi: "यह टीका बहुत अच्छा है"),
+        ],
+        911: [
+            WordExample(thai: "หมอตรวจคนไข้", romanization: "mǒr trùat khon-khâi", english: "The doctor examines the patient", hindi: "डॉक्टर मरीज़ की जांच करता है"),
+            WordExample(thai: "ผมไปตรวจที่โรงพยาบาล", romanization: "pǒm pai trùat thîi roong-phá-yaa-baan", english: "I go for a checkup at the hospital", hindi: "मैं जांच के लिए अस्पताल जाता हूँ"),
+        ],
+        912: [
+            WordExample(thai: "เขาต้องผ่าตัด", romanization: "khǎo tông phàa-tàt", english: "He needs surgery", hindi: "उसका ऑपरेशन होना है"),
+            WordExample(thai: "หมอผ่าตัดวันนี้", romanization: "mǒr phàa-tàt wan-níi", english: "The doctor operates today", hindi: "डॉक्टर आज ऑपरेशन करता है"),
+        ],
+        913: [
+            WordExample(thai: "ผมใส่หน้ากาก", romanization: "pǒm sài nâa-kàak", english: "I wear a mask", hindi: "मैं मास्क पहनता हूँ"),
+            WordExample(thai: "ใส่หน้ากากนะครับ", romanization: "sài nâa-kàak ná khráp", english: "Please wear a mask", hindi: "मास्क पहनिए"),
+        ],
     ]
 
     // CHUNKS: sentence batches are appended as examples1, examples2, … by
