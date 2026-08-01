@@ -199,6 +199,94 @@ enum WordExtras {
     private static let emojis: [Int: String] = [:]
 
     private static let forms: [Int: [WordForm]] = [
+        425: [
+            WordForm(thai: "อันนี้", romanization: "an níi", english: "this one", hindi: "यह वाला", note: "นี้ follows a noun or classifier; นี่ stands alone / นี้ संज्ञा के बाद आता है, นี่ अकेला"),
+            WordForm(thai: "วันนี้", romanization: "wan-níi", english: "today", hindi: "आज", note: "วัน day + นี้ this → today / दिन + यह = आज"),
+        ],
+        426: [
+            WordForm(thai: "ขอน้ำ", romanization: "khǒo náam", english: "may I have water", hindi: "पानी दीजिए", note: "ขอ + noun = may I have … / ขอ + संज्ञा = … दीजिए"),
+            WordForm(thai: "ขอโทษ", romanization: "khǒo-thôot", english: "sorry / excuse me", hindi: "माफ़ कीजिए", note: "ขอ + โทษ (blame) → asking forgiveness / क्षमा माँगना"),
+        ],
+        427: [
+            WordForm(thai: "ไปไหม", romanization: "pai mǎi", english: "are you going?", hindi: "चलोगे?", note: "statement + ไหม = yes/no question / वाक्य + ไหม = हाँ/नहीं वाला सवाल"),
+            WordForm(thai: "อร่อยไหม", romanization: "à-ròi mǎi", english: "is it tasty?", hindi: "स्वादिष्ट है क्या?", note: ""),
+        ],
+        428: [
+            WordForm(thai: "ช่วยหน่อย", romanization: "chûai nòi", english: "please help", hindi: "ज़रा मदद कीजिए", note: "verb + หน่อย softens a request / क्रिया + หน่อย अनुरोध को नरम बनाता है"),
+            WordForm(thai: "รอหน่อย", romanization: "roo nòi", english: "wait a moment", hindi: "ज़रा रुकिए", note: ""),
+        ],
+        429: [
+            WordForm(thai: "คนไทย", romanization: "khon thai", english: "Thai person", hindi: "थाई व्यक्ति", note: ""),
+            WordForm(thai: "เมืองไทย", romanization: "mueang-thai", english: "Thailand (colloquial)", hindi: "थाईलैंड (बोलचाल)", note: ""),
+            WordForm(thai: "อาหารไทย", romanization: "aa-hǎan thai", english: "Thai food", hindi: "थाई खाना", note: ""),
+        ],
+        430: [
+            WordForm(thai: "ฝนตก", romanization: "fǒn tòk", english: "it's raining", hindi: "बारिश हो रही है", note: "Thai says 'rain falls' / थाई में 'बारिश गिरती है' कहते हैं"),
+        ],
+        431: [
+            WordForm(thai: "ด้วยกัน", romanization: "dûai-kan", english: "together", hindi: "साथ में", note: ""),
+            WordForm(thai: "ไปกินข้าวกัน", romanization: "pai kin khâao kan", english: "let's go eat!", hindi: "चलो खाने चलें!", note: "verb + กัน = let's … together / क्रिया + กัน = साथ में करना"),
+        ],
+        432: [
+            WordForm(thai: "คืออะไร", romanization: "khuue à-rai", english: "what is …?", hindi: "… क्या है?", note: "คือ links two nouns: A คือ B / คือ दो संज्ञाओं को जोड़ता है"),
+        ],
+        433: [
+            WordForm(thai: "อย่าลืม", romanization: "yàa luem", english: "don't forget", hindi: "भूलना मत", note: "อย่า + verb = don't … / อย่า + क्रिया = मत करो"),
+            WordForm(thai: "อย่าไป", romanization: "yàa pai", english: "don't go", hindi: "मत जाओ", note: ""),
+        ],
+        434: [
+            WordForm(thai: "ตอนนี้", romanization: "toon-níi", english: "now", hindi: "अभी", note: ""),
+            WordForm(thai: "ตอนเช้า", romanization: "toon-cháo", english: "in the morning", hindi: "सुबह के समय", note: "ตอน + time word = during … / ตอน + समय-शब्द = उस समय"),
+        ],
+        435: [
+            WordForm(thai: "ข้างบน", romanization: "khâang-bon", english: "above / upstairs", hindi: "ऊपर", note: ""),
+        ],
+        436: [
+            WordForm(thai: "ที่ไหน", romanization: "thîi-nǎi", english: "where?", hindi: "कहाँ?", note: ""),
+            WordForm(thai: "อันไหน", romanization: "an nǎi", english: "which one?", hindi: "कौन-सा?", note: "noun/classifier + ไหน = which … / गणक + ไหน = कौन-सा"),
+        ],
+        437: [
+            WordForm(thai: "ล้างมือ", romanization: "láang muue", english: "wash hands", hindi: "हाथ धोना", note: ""),
+            WordForm(thai: "ล้างจาน", romanization: "láang jaan", english: "do the dishes", hindi: "बर्तन धोना", note: ""),
+        ],
+        438: [
+            WordForm(thai: "เลี้ยวซ้าย", romanization: "líao sáai", english: "turn left", hindi: "बाएँ मुड़िए", note: ""),
+            WordForm(thai: "เลี้ยวขวา", romanization: "líao khwǎa", english: "turn right", hindi: "दाएँ मुड़िए", note: ""),
+        ],
+        439: [
+            WordForm(thai: "ไม่ชอบเลย", romanization: "mâi chôp loei", english: "don't like it at all", hindi: "बिल्कुल पसंद नहीं", note: "ไม่ + verb + เลย = not at all / ไม่ + क्रिया + เลย = बिल्कुल नहीं"),
+        ],
+        440: [
+            WordForm(thai: "อ่านหนังสือ", romanization: "àan nǎng-sǔue", english: "to read / to study", hindi: "पढ़ना / पढ़ाई करना", note: "Thai says 'read book' even for studying / पढ़ाई के लिए भी 'किताब पढ़ना' कहते हैं"),
+        ],
+        441: [
+            WordForm(thai: "อายุเท่าไหร่", romanization: "aa-yú thâo-rài", english: "how old?", hindi: "उम्र कितनी है?", note: "Same Sanskrit root as Hindi आयु / संस्कृत से आया शब्द, हिंदी 'आयु' जैसा"),
+        ],
+        442: [
+            WordForm(thai: "ยกมือ", romanization: "yók muue", english: "raise your hand", hindi: "हाथ उठाना", note: ""),
+        ],
+        443: [
+            WordForm(thai: "ค่ารถ", romanization: "khâa rót", english: "fare (transport)", hindi: "गाड़ी का किराया", note: "ค่า + noun = cost of … / ค่า + संज्ञा = उसका शुल्क"),
+            WordForm(thai: "ค่าห้อง", romanization: "khâa hôong", english: "room charge", hindi: "कमरे का किराया", note: "Don't confuse with ค่ะ (polite particle) / ค่ะ (आदरसूचक शब्द) से अलग है"),
+        ],
+        444: [
+            WordForm(thai: "อีกครั้ง", romanization: "ìik khráng", english: "once more", hindi: "एक बार फिर", note: ""),
+            WordForm(thai: "อีกแก้ว", romanization: "ìik kâew", english: "one more glass", hindi: "एक गिलास और", note: "อีก + classifier = one more … / อีก + गणक = एक और"),
+        ],
+        445: [
+            WordForm(thai: "อากาศแห้ง", romanization: "aa-kàat hâeng", english: "dry weather", hindi: "सूखा मौसम", note: ""),
+        ],
+        446: [
+            WordForm(thai: "เลิกงาน", romanization: "lôek ngaan", english: "get off work", hindi: "काम से छूटना", note: "Everyday word for finishing the workday / रोज़ काम ख़त्म होने के लिए आम शब्द"),
+        ],
+        447: [
+            WordForm(thai: "รถคันนี้", romanization: "rót khan níi", english: "this car", hindi: "यह गाड़ी", note: "noun + classifier + นี้ = this … / संज्ञा + गणक + นี้ = यह"),
+            WordForm(thai: "รถสองคัน", romanization: "rót sǒong khan", english: "two cars", hindi: "दो गाड़ियाँ", note: "noun + number + classifier / संज्ञा + संख्या + गणक"),
+        ],
+        448: [
+            WordForm(thai: "คนอินเดีย", romanization: "khon in-dia", english: "Indian person", hindi: "भारतीय", note: ""),
+            WordForm(thai: "อาหารอินเดีย", romanization: "aa-hǎan in-dia", english: "Indian food", hindi: "भारतीय खाना", note: ""),
+        ],
         223: [
             WordForm(thai: "พวกเรา", romanization: "phûak-rao", english: "we / us (group)", hindi: "हम लोग", note: "พวก makes pronouns clearly plural / सर्वनाम को बहुवचन बनाता है"),
             WordForm(thai: "เราไปก่อนนะ", romanization: "rao pai kòon ná", english: "I'm off now (casual)", hindi: "मैं चलता हूँ (अनौपचारिक)", note: "Among friends เรา often means 'I' / दोस्तों में เรา का मतलब 'मैं' भी होता है"),
@@ -1481,6 +1569,110 @@ enum WordExtras {
     ]
 
     private static let examples: [Int: [WordExample]] = [
+        425: [
+            WordExample(thai: "บ้านนี้ใหญ่มาก", romanization: "bâan níi yài mâak", english: "This house is very big.", hindi: "यह घर बहुत बड़ा है।"),
+            WordExample(thai: "ร้านนี้ดีมาก", romanization: "ráan níi dii mâak", english: "This shop is very good.", hindi: "यह दुकान बहुत अच्छी है।"),
+        ],
+        426: [
+            WordExample(thai: "ขอกาแฟสองแก้วครับ", romanization: "khǒo kaa-fae sǒong kâew kráp", english: "Two coffees, please.", hindi: "दो गिलास कॉफ़ी दीजिए।"),
+            WordExample(thai: "ขอน้ำแข็งค่ะ", romanization: "khǒo nám-khǎeng khâ", english: "May I have some ice?", hindi: "थोड़ी बर्फ़ दीजिए।"),
+        ],
+        427: [
+            WordExample(thai: "คุณหิวไหม", romanization: "khun hǐu mǎi", english: "Are you hungry?", hindi: "क्या आपको भूख लगी है?"),
+            WordExample(thai: "อาหารอร่อยไหม", romanization: "aa-hǎan à-ròi mǎi", english: "Is the food tasty?", hindi: "क्या खाना स्वादिष्ट है?"),
+        ],
+        428: [
+            WordExample(thai: "ช่วยหน่อยครับ", romanization: "chûai nòi kráp", english: "Please help me a bit.", hindi: "ज़रा मदद कीजिए।"),
+            WordExample(thai: "รอหน่อยนะ", romanization: "roo nòi ná", english: "Wait a moment, okay?", hindi: "ज़रा रुकिए, ठीक है?"),
+        ],
+        429: [
+            WordExample(thai: "ผมชอบอาหารไทย", romanization: "phǒm chôp aa-hǎan thai", english: "I like Thai food.", hindi: "मुझे थाई खाना पसंद है।"),
+            WordExample(thai: "เขาเป็นคนไทย", romanization: "khǎo pen khon thai", english: "He is Thai.", hindi: "वह थाई है।"),
+        ],
+        430: [
+            WordExample(thai: "วันนี้ฝนตกมาก", romanization: "wan-níi fǒn tòk mâak", english: "It's raining a lot today.", hindi: "आज बहुत बारिश हो रही है।"),
+            WordExample(thai: "ฝนตกทุกวัน", romanization: "fǒn tòk thúk-wan", english: "It rains every day.", hindi: "हर दिन बारिश होती है।"),
+        ],
+        431: [
+            WordExample(thai: "เราไปกินข้าวกัน", romanization: "rao pai kin khâao kan", english: "Let's go eat together.", hindi: "चलो साथ में खाना खाएँ।"),
+            WordExample(thai: "เขาเจอกันที่ตลาด", romanization: "khǎo joe kan thîi tà-làat", english: "They met each other at the market.", hindi: "वे बाज़ार में एक-दूसरे से मिले।"),
+        ],
+        432: [
+            WordExample(thai: "นี่คืออะไร", romanization: "nîi khuue à-rai", english: "What is this?", hindi: "यह क्या है?"),
+            WordExample(thai: "เขาคือเพื่อนของผม", romanization: "khǎo khuue phûean khǒong phǒm", english: "He is my friend.", hindi: "वह मेरा दोस्त है।"),
+        ],
+        433: [
+            WordExample(thai: "อย่าลืมนะ", romanization: "yàa luem ná", english: "Don't forget, okay?", hindi: "भूलना मत, ठीक है?"),
+            WordExample(thai: "อย่าไปที่นั่น", romanization: "yàa pai thîi-nân", english: "Don't go there.", hindi: "वहाँ मत जाओ।"),
+        ],
+        434: [
+            WordExample(thai: "ตอนเช้าผมดื่มกาแฟ", romanization: "toon cháo phǒm dùem kaa-fae", english: "In the morning I drink coffee.", hindi: "सुबह मैं कॉफ़ी पीता हूँ।"),
+            WordExample(thai: "เขามาตอนเย็น", romanization: "khǎo maa toon yen", english: "He comes in the evening.", hindi: "वह शाम को आता है।"),
+        ],
+        435: [
+            WordExample(thai: "แมวนอนบนเตียง", romanization: "maew noon bon tiang", english: "The cat sleeps on the bed.", hindi: "बिल्ली बिस्तर पर सोती है।"),
+            WordExample(thai: "มือถืออยู่บนโต๊ะ", romanization: "muue-thǔue yùu bon tó", english: "The phone is on the table.", hindi: "मोबाइल मेज़ पर है।"),
+        ],
+        436: [
+            WordExample(thai: "ห้องน้ำอยู่ไหน", romanization: "hôong-náam yùu nǎi", english: "Where is the bathroom?", hindi: "शौचालय कहाँ है?"),
+            WordExample(thai: "คุณอยู่ที่ไหน", romanization: "khun yùu thîi-nǎi", english: "Where are you?", hindi: "आप कहाँ हैं?"),
+        ],
+        437: [
+            WordExample(thai: "ผมล้างมือก่อนกินข้าว", romanization: "phǒm láang muue kòon kin khâao", english: "I wash my hands before eating.", hindi: "मैं खाने से पहले हाथ धोता हूँ।"),
+            WordExample(thai: "ฉันล้างจานทุกวัน", romanization: "chǎn láang jaan thúk-wan", english: "I wash the dishes every day.", hindi: "मैं हर दिन बर्तन धोती हूँ।"),
+        ],
+        438: [
+            WordExample(thai: "เลี้ยวซ้ายที่ธนาคาร", romanization: "líao sáai thîi thá-naa-khaan", english: "Turn left at the bank.", hindi: "बैंक पर बाएँ मुड़िए।"),
+            WordExample(thai: "เลี้ยวขวาแล้วตรงไป", romanization: "líao khwǎa láew trong-pai", english: "Turn right, then go straight.", hindi: "दाएँ मुड़िए, फिर सीधे जाइए।"),
+        ],
+        439: [
+            WordExample(thai: "ไม่แพงเลย", romanization: "mâi phaeng loei", english: "Not expensive at all.", hindi: "बिल्कुल महँगा नहीं है।"),
+            WordExample(thai: "อาหารอร่อยมากเลย", romanization: "aa-hǎan à-ròi mâak loei", english: "The food is really delicious!", hindi: "खाना सच में बहुत स्वादिष्ट है!"),
+        ],
+        440: [
+            WordExample(thai: "ผมชอบอ่านหนังสือ", romanization: "phǒm chôp àan nǎng-sǔue", english: "I like reading books.", hindi: "मुझे किताबें पढ़ना पसंद है।"),
+            WordExample(thai: "เขาซื้อหนังสือสองเล่ม", romanization: "khǎo súue nǎng-sǔue sǒong lêm", english: "He bought two books.", hindi: "उसने दो किताबें खरीदीं।"),
+        ],
+        441: [
+            WordExample(thai: "คุณอายุเท่าไหร่", romanization: "khun aa-yú thâo-rài", english: "How old are you?", hindi: "आपकी उम्र कितनी है?"),
+            WordExample(thai: "ลูกของฉันอายุห้าปี", romanization: "lûuk khǒong chǎn aa-yú hâa pii", english: "My child is five years old.", hindi: "मेरा बच्चा पाँच साल का है।"),
+        ],
+        442: [
+            WordExample(thai: "กระเป๋าหนัก ผมยกไม่ได้", romanization: "krà-pǎo nàk phǒm yók mâi dâi", english: "The bag is heavy — I can't lift it.", hindi: "बैग भारी है — मैं उठा नहीं सकता।"),
+            WordExample(thai: "เขายกมือถาม", romanization: "khǎo yók muue thǎam", english: "He raises his hand to ask.", hindi: "वह पूछने के लिए हाथ उठाता है।"),
+        ],
+        443: [
+            WordExample(thai: "ค่าห้องเท่าไหร่", romanization: "khâa hôong thâo-rài", english: "How much is the room charge?", hindi: "कमरे का किराया कितना है?"),
+            WordExample(thai: "ค่ารถแพงมาก", romanization: "khâa rót phaeng mâak", english: "The fare is very expensive.", hindi: "किराया बहुत महँगा है।"),
+        ],
+        444: [
+            WordExample(thai: "เอากาแฟอีกแก้ว", romanization: "ao kaa-fae ìik kâew", english: "One more coffee, please.", hindi: "एक और गिलास कॉफ़ी दीजिए।"),
+            WordExample(thai: "พรุ่งนี้มาอีกนะ", romanization: "phrûng-níi maa ìik ná", english: "Come again tomorrow, okay?", hindi: "कल फिर आना, ठीक है?"),
+        ],
+        445: [
+            WordExample(thai: "เสื้อแห้งแล้ว", romanization: "sûea hâeng láew", english: "The shirt is already dry.", hindi: "शर्ट सूख गई है।"),
+            WordExample(thai: "อากาศร้อนและแห้ง", romanization: "aa-kàat róon láe hâeng", english: "The weather is hot and dry.", hindi: "मौसम गरम और सूखा है।"),
+        ],
+        446: [
+            WordExample(thai: "คุณเลิกงานกี่โมง", romanization: "khun lôek ngaan kìi-mohng", english: "What time do you finish work?", hindi: "आप कितने बजे काम से छूटते हैं?"),
+            WordExample(thai: "ผมเลิกงานแล้ว", romanization: "phǒm lôek ngaan láew", english: "I've already finished work.", hindi: "मेरा काम ख़त्म हो गया है।"),
+        ],
+        447: [
+            WordExample(thai: "ผมมีรถหนึ่งคัน", romanization: "phǒm mii rót nèung khan", english: "I have one car.", hindi: "मेरे पास एक गाड़ी है।"),
+            WordExample(thai: "รถสองคันอยู่ที่บ้าน", romanization: "rót sǒong khan yùu thîi bâan", english: "Two cars are at the house.", hindi: "दो गाड़ियाँ घर पर हैं।"),
+        ],
+        448: [
+            WordExample(thai: "ผมมาจากอินเดีย", romanization: "phǒm maa jàak in-dia", english: "I come from India.", hindi: "मैं भारत से आया हूँ।"),
+            WordExample(thai: "อาหารอินเดียเผ็ดมาก", romanization: "aa-hǎan in-dia phèt mâak", english: "Indian food is very spicy.", hindi: "भारतीय खाना बहुत तीखा होता है।"),
+        ],
+        449: [
+            WordExample(thai: "พรุ่งนี้เราไปเชียงใหม่", romanization: "phrûng-níi rao pai chiang-mài", english: "Tomorrow we go to Chiang Mai.", hindi: "कल हम चियांग माई जाएँगे।"),
+            WordExample(thai: "อากาศที่เชียงใหม่ดีมาก", romanization: "aa-kàat thîi chiang-mài dii mâak", english: "The weather in Chiang Mai is very good.", hindi: "चियांग माई का मौसम बहुत अच्छा है।"),
+        ],
+        450: [
+            WordExample(thai: "ผมอยู่ที่กรุงเทพ", romanization: "phǒm yùu thîi krung-thêep", english: "I live in Bangkok.", hindi: "मैं बैंकॉक में रहता हूँ।"),
+            WordExample(thai: "เขาทำงานที่กรุงเทพ", romanization: "khǎo tham-ngaan thîi krung-thêep", english: "He works in Bangkok.", hindi: "वह बैंकॉक में काम करता है।"),
+        ],
         223: [
             WordExample(thai: "เราไปตลาดด้วยกัน", romanization: "rao pai tà-làat dûai-kan", english: "We go to the market together.", hindi: "हम साथ में बाज़ार जाते हैं।"),
             WordExample(thai: "เราหิวมาก", romanization: "rao hǐu mâak", english: "We are very hungry.", hindi: "हमें बहुत भूख लगी है।"),
@@ -2997,6 +3189,8 @@ enum WordExtras {
 
     // How the word combines with (or is built from) other words.
     private static let compounds: [Int: String] = [
+        449: "เชียง (chiang) city (old northern word) / नगर + ใหม่ (mài) new / नया → เชียงใหม่ new city / नया शहर",
+        450: "กรุง (krung) capital / राजधानी + เทพ (thêep) god / देवता → กรุงเทพ city of gods / देवताओं का शहर",
         223: "พวก (phûak) group / समूह + เรา (rao) we / हम → พวกเรา all of us / हम सब",
         226: "ของ (khǒong) of / का + ฉัน (chǎn) I / मैं → ของฉัน mine / मेरा",
         235: "ทุก (thúk) every / हर + วัน (wan) day / दिन → ทุกวัน every day / हर दिन",

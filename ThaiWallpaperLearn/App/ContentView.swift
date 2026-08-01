@@ -90,13 +90,18 @@ struct TodayView: View {
                             word = Vocabulary.randomWord()
                         }
                     } label: {
-                        Label("Shuffle another word", systemImage: "shuffle")
-                            .font(.headline)
-                            .frame(maxWidth: .infinity)
-                            .padding()
+                        Image(systemName: "shuffle")
+                            .font(.title2.weight(.semibold))
+                            .foregroundStyle(.white)
+                            .frame(width: 64, height: 64)
+                            .background(
+                                Circle().fill(
+                                    LinearGradient(colors: [ThaiTheme.gold, ThaiTheme.orchid],
+                                                   startPoint: .topLeading, endPoint: .bottomTrailing)
+                                )
+                            )
+                            .shadow(color: ThaiTheme.gold.opacity(0.45), radius: 10, y: 4)
                     }
-                    .background(Color.accentColor.opacity(0.15), in: RoundedRectangle(cornerRadius: 16))
-                    .padding(.horizontal)
                 }
                 .padding(.bottom, 32)
             }
@@ -719,6 +724,15 @@ struct FunWordListView: View {
                     .font(.subheadline)
                     .foregroundStyle(.secondary)
                     .listRowBackground(ThaiTheme.parchment)
+                HStack {
+                    Image(systemName: "text.book.closed.fill")
+                        .foregroundStyle(ThaiTheme.gold)
+                    Text("\(words.count) words")
+                        .font(.headline)
+                        .foregroundStyle(ThaiTheme.ink)
+                    Spacer()
+                }
+                .listRowBackground(ThaiTheme.parchment)
             }
             ForEach(words) { word in
                 VStack(alignment: .leading, spacing: 4) {
@@ -848,6 +862,12 @@ enum MoreData {
         FunWord(thai: "เกษตร", roman: "kà-sèet", meaning: "agriculture", hindi: "क्षेत्र (kṣetra)", note: "क्षेत्र (field) → farming"),
         FunWord(thai: "กีฬา", roman: "kii-laa", meaning: "sport", hindi: "क्रीडा (krīḍā)", note: "क्रीडा (play) → sport"),
         FunWord(thai: "สุนัข", roman: "sù-nák", meaning: "dog (formal)", hindi: "शुनक (śunaka)", note: "Formal word for dog — everyday word is หมา. शुनक = dog in Sanskrit too (also a Vedic sage's name)"),
+        FunWord(thai: "นายกรัฐมนตรี", roman: "naa-yók rát-thà-mon-trii", meaning: "Prime Minister", hindi: "नायक + राष्ट्र + मंत्री", note: "Literally 'leader of the state ministers' — three Sanskrit words in a row"),
+        FunWord(thai: "รัฐมนตรี", roman: "rát-thà-mon-trii", meaning: "minister (government)", hindi: "राष्ट्र + मंत्री (rāṣṭra-mantrī)", note: "State minister — मंत्री is the same word"),
+        FunWord(thai: "รัฐบาล", roman: "rát-thà-baan", meaning: "government", hindi: "राष्ट्र + पाल (rāṣṭra-pāla)", note: "'Protector of the state' — like गोपाल protects cows"),
+        FunWord(thai: "ประธานาธิบดี", roman: "prà-thaa-naa-thí-bɔɔ-dii", meaning: "President", hindi: "प्रधान + अधिपति (pradhān-adhipati)", note: "'Chief overlord' — pure Sanskrit compound"),
+        FunWord(thai: "กษัตริย์", roman: "kà-sàt", meaning: "king", hindi: "क्षत्रिय (kṣatriya)", note: "The warrior caste word became 'king' in Thai"),
+        FunWord(thai: "มนตรี", roman: "mon-trii", meaning: "counselor / minister", hindi: "मंत्री (mantrī)", note: ""),
     ]
 
     static let facts: [(String, String)] = [
