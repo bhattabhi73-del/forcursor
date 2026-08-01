@@ -1278,6 +1278,206 @@ enum WordExtras {
         2244: "🍲",
         2245: "🍲",
         2246: "🍲",
+        2247: "🩺",
+        2248: "🤧",
+        2249: "🤧",
+        2250: "🩺",
+        2251: "🩺",
+        2252: "🩺",
+        2253: "⛑️",
+        2254: "🧰",
+        2255: "💊",
+        2256: "💊",
+        2257: "👁️",
+        2258: "💊",
+        2259: "💊",
+        2260: "💊",
+        2261: "💊",
+        2262: "📝",
+        2263: "📅",
+        2264: "🚑",
+        2265: "♿",
+        2266: "🦯",
+        2267: "🩺",
+        2268: "🏃",
+        2269: "🤸",
+        2270: "🔥",
+        2271: "❄️",
+        2272: "❤️",
+        2273: "❤️",
+        2274: "😷",
+        2275: "🧴",
+        2276: "🧴",
+        2277: "🩹",
+        2278: "🩹",
+        2279: "💪",
+        2280: "💪",
+        2281: "💪",
+        2282: "🫳",
+        2283: "🦵",
+        2284: "🦵",
+        2285: "🦵",
+        2286: "🦶",
+        2287: "🦷",
+        2288: "🦷",
+        2289: "🗣️",
+        2290: "🫀",
+        2291: "🫀",
+        2292: "🫀",
+        2293: "🩸",
+        2294: "🧠",
+        2295: "🧠",
+        2296: "🧘",
+        2297: "💪",
+        2298: "😟",
+        2299: "🏆",
+        2300: "😌",
+        2301: "😊",
+        2302: "🤩",
+        2303: "😟",
+        2304: "😌",
+        2305: "😩",
+        2306: "🤔",
+        2307: "😍",
+        2308: "🌟",
+        2309: "🎯",
+        2310: "👦",
+        2311: "👧",
+        2312: "🤵",
+        2313: "👰",
+        2314: "👨‍👩‍👧",
+        2315: "🤝",
+        2316: "💔",
+        2317: "🧑‍🎓",
+        2318: "🏠",
+        2319: "🧍",
+        2320: "👨‍👩‍👧",
+        2321: "🙋",
+        2322: "🗣️",
+        2323: "🧑‍🔬",
+        2324: "📷",
+        2325: "📰",
+        2326: "👁️",
+        2327: "🕵️",
+        2328: "🛍️",
+        2329: "📦",
+        2330: "🛡️",
+        2331: "💼",
+        2332: "📄",
+        2333: "🤝",
+        2334: "💼",
+        2335: "💵",
+        2336: "🏖️",
+        2337: "🤒",
+        2338: "🏖️",
+        2339: "🕒",
+        2340: "⏰",
+        2341: "📁",
+        2342: "🎯",
+        2343: "⭐",
+        2344: "📌",
+        2345: "✅",
+        2346: "📊",
+        2347: "💻",
+        2348: "🗓️",
+        2349: "📝",
+        2350: "📽️",
+        2351: "📽️",
+        2352: "🖨️",
+        2353: "🖨️",
+        2354: "📎",
+        2355: "📎",
+        2356: "🖍️",
+        2357: "📁",
+        2358: "🗄️",
+        2359: "👤",
+        2360: "🔑",
+        2361: "🚪",
+        2362: "⬇️",
+        2363: "⬆️",
+        2364: "📎",
+        2365: "📁",
+        2366: "🖥️",
+        2367: "⌨️",
+        2368: "🖱️",
+        2369: "🎧",
+        2370: "🎙️",
+        2371: "📷",
+        2372: "🔋",
+        2373: "🔌",
+        2374: "🔄",
+        2375: "📱",
+        2376: "🔔",
+        2377: "✈️",
+        2378: "📶",
+        2379: "🐢",
+        2380: "🏀",
+        2381: "🏐",
+        2382: "🏸",
+        2383: "🏊",
+        2384: "🚴",
+        2385: "🪢",
+        2386: "🏋️",
+        2387: "🏆",
+        2388: "👥",
+        2389: "🔢",
+        2390: "🏆",
+        2391: "🧑‍⚖️",
+        2392: "🏟️",
+        2393: "🔐",
+        2394: "⚽",
+        2395: "⛑️",
+        2396: "🦺",
+        2397: "🚦",
+        2398: "🚗",
+        2399: "🔥",
+        2400: "⚠️",
+        2401: "⛔",
+        2402: "🚧",
+        2403: "☎️",
+        2404: "📞",
+        2405: "🕵️",
+        2406: "🔥",
+        2407: "💸",
+        2408: "💰",
+        2409: "💵",
+        2410: "📈",
+        2411: "📉",
+        2412: "🏷️",
+        2413: "🧾",
+        2414: "🧾",
+        2415: "💳",
+        2416: "👛",
+        2417: "🏷️",
+        2418: "🧾",
+        2419: "📄",
+        2420: "🩺",
+        2421: "🦷",
+        2422: "👁️",
+        2423: "🤧",
+        2424: "💊",
+        2425: "🛡️",
+        2426: "💪",
+        2427: "🦴",
+        2428: "🫀",
+        2429: "🧴",
+        2430: "🧴",
+        2431: "🤍",
+        2432: "🏆",
+        2433: "✨",
+        2434: "🧘",
+        2435: "📌",
+        2436: "🛠️",
+        2437: "📚",
+        2438: "💬",
+        2439: "📚",
+        2440: "📝",
+        2441: "🎓",
+        2442: "🧪",
+        2443: "🧮",
+        2444: "🦠",
+        2445: "🔒",
+        2446: "💾",
     ]
 
     private static let forms: [Int: [WordForm]] = [
@@ -11468,9 +11668,813 @@ enum WordExtras {
         ],
     ]
 
+
+    private static let examples5: [Int: [WordExample]] = [
+        2247: [
+            WordExample(thai: "นี่คือความดันโลหิต", romanization: "nîi khʉʉ khwaam-dan-lôo-hìt", english: "This is blood pressure.", hindi: "यह रक्तचाप है।"),
+            WordExample(thai: "ฉันรู้จักความดันโลหิต", romanization: "chǎn rúu-jàk khwaam-dan-lôo-hìt", english: "I know about blood pressure.", hindi: "मैं रक्तचाप के बारे में जानता/जानती हूँ।"),
+        ],
+        2248: [
+            WordExample(thai: "นี่คือภูมิแพ้", romanization: "nîi khʉʉ phuum-phâe", english: "This is allergy.", hindi: "यह एलर्जी है।"),
+            WordExample(thai: "ฉันรู้จักภูมิแพ้", romanization: "chǎn rúu-jàk phuum-phâe", english: "I know about allergy.", hindi: "मैं एलर्जी के बारे में जानता/जानती हूँ।"),
+        ],
+        2249: [
+            WordExample(thai: "นี่คือโรคภูมิแพ้", romanization: "nîi khʉʉ rôok-phuum-phâe", english: "This is allergic disease.", hindi: "यह एलर्जी की बीमारी है।"),
+            WordExample(thai: "ฉันรู้จักโรคภูมิแพ้", romanization: "chǎn rúu-jàk rôok-phuum-phâe", english: "I know about allergic disease.", hindi: "मैं एलर्जी की बीमारी के बारे में जानता/जानती हूँ।"),
+        ],
+        2250: [
+            WordExample(thai: "นี่คือโรคเบาหวาน", romanization: "nîi khʉʉ rôok-bao-wǎan", english: "This is diabetes.", hindi: "यह मधुमेह है।"),
+            WordExample(thai: "ฉันรู้จักโรคเบาหวาน", romanization: "chǎn rúu-jàk rôok-bao-wǎan", english: "I know about diabetes.", hindi: "मैं मधुमेह के बारे में जानता/जानती हूँ।"),
+        ],
+        2251: [
+            WordExample(thai: "นี่คือความดันสูง", romanization: "nîi khʉʉ khwaam-dan-sǔung", english: "This is high blood pressure.", hindi: "यह उच्च रक्तचाप है।"),
+            WordExample(thai: "ฉันรู้จักความดันสูง", romanization: "chǎn rúu-jàk khwaam-dan-sǔung", english: "I know about high blood pressure.", hindi: "मैं उच्च रक्तचाप के बारे में जानता/जानती हूँ।"),
+        ],
+        2252: [
+            WordExample(thai: "นี่คือคอเลสเตอรอล", romanization: "nîi khʉʉ khɔɔ-léet-dtee-rɔɔn", english: "This is cholesterol.", hindi: "यह कोलेस्ट्रॉल है।"),
+            WordExample(thai: "ฉันรู้จักคอเลสเตอรอล", romanization: "chǎn rúu-jàk khɔɔ-léet-dtee-rɔɔn", english: "I know about cholesterol.", hindi: "मैं कोलेस्ट्रॉल के बारे में जानता/जानती हूँ।"),
+        ],
+        2253: [
+            WordExample(thai: "นี่คือปฐมพยาบาล", romanization: "nîi khʉʉ bpà-thǒm-pha-yaa-baan", english: "This is first aid.", hindi: "यह प्राथमिक उपचार है।"),
+            WordExample(thai: "ฉันรู้จักปฐมพยาบาล", romanization: "chǎn rúu-jàk bpà-thǒm-pha-yaa-baan", english: "I know about first aid.", hindi: "मैं प्राथमिक उपचार के बारे में जानता/जानती हूँ।"),
+        ],
+        2254: [
+            WordExample(thai: "นี่คือชุดปฐมพยาบาล", romanization: "nîi khʉʉ chút-bpà-thǒm-pha-yaa-baan", english: "This is first-aid kit.", hindi: "यह प्राथमिक उपचार किट है।"),
+            WordExample(thai: "ฉันรู้จักชุดปฐมพยาบาล", romanization: "chǎn rúu-jàk chút-bpà-thǒm-pha-yaa-baan", english: "I know about first-aid kit.", hindi: "मैं प्राथमिक उपचार किट के बारे में जानता/जानती हूँ।"),
+        ],
+        2255: [
+            WordExample(thai: "นี่คือยาฆ่าเชื้อ", romanization: "nîi khʉʉ yaa-khâa-chʉ̂ʉa", english: "This is antiseptic medicine.", hindi: "यह कीटाणुनाशक दवा है।"),
+            WordExample(thai: "ฉันรู้จักยาฆ่าเชื้อ", romanization: "chǎn rúu-jàk yaa-khâa-chʉ̂ʉa", english: "I know about antiseptic medicine.", hindi: "मैं कीटाणुनाशक दवा के बारे में जानता/जानती हूँ।"),
+        ],
+        2256: [
+            WordExample(thai: "นี่คือยาปฏิชีวนะ", romanization: "nîi khʉʉ yaa-bpà-dtì-chii-wá-ná", english: "This is antibiotic.", hindi: "यह एंटीबायोटिक है।"),
+            WordExample(thai: "ฉันรู้จักยาปฏิชีวนะ", romanization: "chǎn rúu-jàk yaa-bpà-dtì-chii-wá-ná", english: "I know about antibiotic.", hindi: "मैं एंटीबायोटिक के बारे में जानता/जानती हूँ।"),
+        ],
+        2257: [
+            WordExample(thai: "นี่คือยาหยอดตา", romanization: "nîi khʉʉ yaa-yɔ̀ɔt-dtaa", english: "This is eye drops.", hindi: "यह आंखों की बूंदें है।"),
+            WordExample(thai: "ฉันรู้จักยาหยอดตา", romanization: "chǎn rúu-jàk yaa-yɔ̀ɔt-dtaa", english: "I know about eye drops.", hindi: "मैं आंखों की बूंदें के बारे में जानता/जानती हूँ।"),
+        ],
+        2258: [
+            WordExample(thai: "นี่คือยาน้ำ", romanization: "nîi khʉʉ yaa-náam", english: "This is liquid medicine.", hindi: "यह तरल दवा है।"),
+            WordExample(thai: "ฉันรู้จักยาน้ำ", romanization: "chǎn rúu-jàk yaa-náam", english: "I know about liquid medicine.", hindi: "मैं तरल दवा के बारे में जानता/जानती हूँ।"),
+        ],
+        2259: [
+            WordExample(thai: "นี่คือยาแก้ไอ", romanization: "nîi khʉʉ yaa-gâe-ai", english: "This is cough medicine.", hindi: "यह खांसी की दवा है।"),
+            WordExample(thai: "ฉันรู้จักยาแก้ไอ", romanization: "chǎn rúu-jàk yaa-gâe-ai", english: "I know about cough medicine.", hindi: "मैं खांसी की दवा के बारे में जानता/जानती हूँ।"),
+        ],
+        2260: [
+            WordExample(thai: "นี่คือยาแก้แพ้", romanization: "nîi khʉʉ yaa-gâe-pháe", english: "This is antihistamine.", hindi: "यह एलर्जी की दवा है।"),
+            WordExample(thai: "ฉันรู้จักยาแก้แพ้", romanization: "chǎn rúu-jàk yaa-gâe-pháe", english: "I know about antihistamine.", hindi: "मैं एलर्जी की दवा के बारे में जानता/जानती हूँ।"),
+        ],
+        2261: [
+            WordExample(thai: "นี่คือยาลดไข้", romanization: "nîi khʉʉ yaa-lót-khâi", english: "This is fever reducer.", hindi: "यह बुखार कम करने की दवा है।"),
+            WordExample(thai: "ฉันรู้จักยาลดไข้", romanization: "chǎn rúu-jàk yaa-lót-khâi", english: "I know about fever reducer.", hindi: "मैं बुखार कम करने की दवा के बारे में जानता/जानती हूँ।"),
+        ],
+        2262: [
+            WordExample(thai: "นี่คือใบสั่งยา", romanization: "nîi khʉʉ bai-sàng-yaa", english: "This is prescription.", hindi: "यह दवा का पर्चा है।"),
+            WordExample(thai: "ฉันรู้จักใบสั่งยา", romanization: "chǎn rúu-jàk bai-sàng-yaa", english: "I know about prescription.", hindi: "मैं दवा का पर्चा के बारे में जानता/जानती हूँ।"),
+        ],
+        2263: [
+            WordExample(thai: "นี่คือนัดหมอ", romanization: "nîi khʉʉ nát-mɔ̌ɔ", english: "This is doctor's appointment.", hindi: "यह डॉक्टर की अपॉइंटमेंट है।"),
+            WordExample(thai: "ฉันรู้จักนัดหมอ", romanization: "chǎn rúu-jàk nát-mɔ̌ɔ", english: "I know about doctor's appointment.", hindi: "मैं डॉक्टर की अपॉइंटमेंट के बारे में जानता/जानती हूँ।"),
+        ],
+        2264: [
+            WordExample(thai: "นี่คือห้องฉุกเฉิน", romanization: "nîi khʉʉ hɔ̂ng-chùk-chǒen", english: "This is emergency room.", hindi: "यह आपातकालीन कक्ष है।"),
+            WordExample(thai: "ฉันรู้จักห้องฉุกเฉิน", romanization: "chǎn rúu-jàk hɔ̂ng-chùk-chǒen", english: "I know about emergency room.", hindi: "मैं आपातकालीन कक्ष के बारे में जानता/जानती हूँ।"),
+        ],
+        2265: [
+            WordExample(thai: "นี่คือรถเข็น", romanization: "nîi khʉʉ rót-khěn", english: "This is wheelchair.", hindi: "यह व्हीलचेयर है।"),
+            WordExample(thai: "ฉันรู้จักรถเข็น", romanization: "chǎn rúu-jàk rót-khěn", english: "I know about wheelchair.", hindi: "मैं व्हीलचेयर के बारे में जानता/जानती हूँ।"),
+        ],
+        2266: [
+            WordExample(thai: "นี่คือไม้เท้า", romanization: "nîi khʉʉ máai-tháao", english: "This is walking cane.", hindi: "यह चलने की छड़ी है।"),
+            WordExample(thai: "ฉันรู้จักไม้เท้า", romanization: "chǎn rúu-jàk máai-tháao", english: "I know about walking cane.", hindi: "मैं चलने की छड़ी के बारे में जानता/जानती हूँ।"),
+        ],
+        2267: [
+            WordExample(thai: "นี่คือการฟื้นฟู", romanization: "nîi khʉʉ gaan-fʉ́ʉn-fuu", english: "This is rehabilitation.", hindi: "यह पुनर्वास है।"),
+            WordExample(thai: "ฉันรู้จักการฟื้นฟู", romanization: "chǎn rúu-jàk gaan-fʉ́ʉn-fuu", english: "I know about rehabilitation.", hindi: "मैं पुनर्वास के बारे में जानता/जानती हूँ।"),
+        ],
+        2268: [
+            WordExample(thai: "นี่คือออกกำลังกาย", romanization: "nîi khʉʉ ɔ̀ɔk-gam-lang-gaai", english: "This is exercise.", hindi: "यह व्यायाम करना है।"),
+            WordExample(thai: "ฉันรู้จักออกกำลังกาย", romanization: "chǎn rúu-jàk ɔ̀ɔk-gam-lang-gaai", english: "I know about exercise.", hindi: "मैं व्यायाम करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2269: [
+            WordExample(thai: "นี่คือยืดกล้ามเนื้อ", romanization: "nîi khʉʉ yʉ̂ʉt-glâam-nʉ́ʉa", english: "This is stretch muscles.", hindi: "यह मांसपेशियां खींचना है।"),
+            WordExample(thai: "ฉันรู้จักยืดกล้ามเนื้อ", romanization: "chǎn rúu-jàk yʉ̂ʉt-glâam-nʉ́ʉa", english: "I know about stretch muscles.", hindi: "मैं मांसपेशियां खींचना के बारे में जानता/जानती हूँ।"),
+        ],
+        2270: [
+            WordExample(thai: "นี่คือวอร์มอัป", romanization: "nîi khʉʉ wɔɔm-áp", english: "This is warm up.", hindi: "यह वार्म-अप करना है।"),
+            WordExample(thai: "ฉันรู้จักวอร์มอัป", romanization: "chǎn rúu-jàk wɔɔm-áp", english: "I know about warm up.", hindi: "मैं वार्म-अप करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2271: [
+            WordExample(thai: "นี่คือคูลดาวน์", romanization: "nîi khʉʉ khuun-daao", english: "This is cool down.", hindi: "यह कूल-डाउन करना है।"),
+            WordExample(thai: "ฉันรู้จักคูลดาวน์", romanization: "chǎn rúu-jàk khuun-daao", english: "I know about cool down.", hindi: "मैं कूल-डाउन करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2272: [
+            WordExample(thai: "นี่คือชีพจร", romanization: "nîi khʉʉ chîip-jɔɔn", english: "This is pulse.", hindi: "यह नाड़ी है।"),
+            WordExample(thai: "ฉันรู้จักชีพจร", romanization: "chǎn rúu-jàk chîip-jɔɔn", english: "I know about pulse.", hindi: "मैं नाड़ी के बारे में जानता/जानती हूँ।"),
+        ],
+        2273: [
+            WordExample(thai: "นี่คืออัตราการเต้นหัวใจ", romanization: "nîi khʉʉ àt-dtraa-gaan-dtên-hǔa-jai", english: "This is heart rate.", hindi: "यह हृदय गति है।"),
+            WordExample(thai: "ฉันรู้จักอัตราการเต้นหัวใจ", romanization: "chǎn rúu-jàk àt-dtraa-gaan-dtên-hǔa-jai", english: "I know about heart rate.", hindi: "मैं हृदय गति के बारे में जानता/जानती हूँ।"),
+        ],
+        2274: [
+            WordExample(thai: "นี่คือหน้ากากอนามัย", romanization: "nîi khʉʉ nâa-gàak-à-naa-mai", english: "This is medical mask.", hindi: "यह मेडिकल मास्क है।"),
+            WordExample(thai: "ฉันรู้จักหน้ากากอนามัย", romanization: "chǎn rúu-jàk nâa-gàak-à-naa-mai", english: "I know about medical mask.", hindi: "मैं मेडिकल मास्क के बारे में जानता/जानती हूँ।"),
+        ],
+        2275: [
+            WordExample(thai: "นี่คือเจลล้างมือ", romanization: "nîi khʉʉ jeen-láang-mʉʉ", english: "This is hand sanitizer.", hindi: "यह हैंड सैनिटाइज़र है।"),
+            WordExample(thai: "ฉันรู้จักเจลล้างมือ", romanization: "chǎn rúu-jàk jeen-láang-mʉʉ", english: "I know about hand sanitizer.", hindi: "मैं हैंड सैनिटाइज़र के बारे में जानता/जानती हूँ।"),
+        ],
+        2276: [
+            WordExample(thai: "นี่คือแอลกอฮอล์", romanization: "nîi khʉʉ aen-gɔɔ-hɔɔ", english: "This is alcohol disinfectant.", hindi: "यह अल्कोहल कीटाणुनाशक है।"),
+            WordExample(thai: "ฉันรู้จักแอลกอฮอล์", romanization: "chǎn rúu-jàk aen-gɔɔ-hɔɔ", english: "I know about alcohol disinfectant.", hindi: "मैं अल्कोहल कीटाणुनाशक के बारे में जानता/जानती हूँ।"),
+        ],
+        2277: [
+            WordExample(thai: "นี่คือฟกช้ำ", romanization: "nîi khʉʉ fók-chám", english: "This is bruised.", hindi: "यह नील पड़ा हुआ है।"),
+            WordExample(thai: "ฉันรู้จักฟกช้ำ", romanization: "chǎn rúu-jàk fók-chám", english: "I know about bruised.", hindi: "मैं नील पड़ा हुआ के बारे में जानता/जानती हूँ।"),
+        ],
+        2278: [
+            WordExample(thai: "นี่คือเคล็ด", romanization: "nîi khʉʉ khlét", english: "This is sprained.", hindi: "यह मोच आया हुआ है।"),
+            WordExample(thai: "ฉันรู้จักเคล็ด", romanization: "chǎn rúu-jàk khlét", english: "I know about sprained.", hindi: "मैं मोच आया हुआ के बारे में जानता/जानती हूँ।"),
+        ],
+        2279: [
+            WordExample(thai: "นี่คือข้อศอก", romanization: "nîi khʉʉ khɔ̂ɔ-sɔ̀ɔk", english: "This is elbow.", hindi: "यह कोहनी है।"),
+            WordExample(thai: "ฉันรู้จักข้อศอก", romanization: "chǎn rúu-jàk khɔ̂ɔ-sɔ̀ɔk", english: "I know about elbow.", hindi: "मैं कोहनी के बारे में जानता/जानती हूँ।"),
+        ],
+        2280: [
+            WordExample(thai: "นี่คือต้นแขน", romanization: "nîi khʉʉ dtôn-khǎen", english: "This is upper arm.", hindi: "यह ऊपरी बांह है।"),
+            WordExample(thai: "ฉันรู้จักต้นแขน", romanization: "chǎn rúu-jàk dtôn-khǎen", english: "I know about upper arm.", hindi: "मैं ऊपरी बांह के बारे में जानता/जानती हूँ।"),
+        ],
+        2281: [
+            WordExample(thai: "นี่คือปลายแขน", romanization: "nîi khʉʉ bplaaai-khǎen", english: "This is forearm.", hindi: "यह अग्रबाहु है।"),
+            WordExample(thai: "ฉันรู้จักปลายแขน", romanization: "chǎn rúu-jàk bplaaai-khǎen", english: "I know about forearm.", hindi: "मैं अग्रबाहु के बारे में जानता/जानती हूँ।"),
+        ],
+        2282: [
+            WordExample(thai: "นี่คือรักแร้", romanization: "nîi khʉʉ rák-ráe", english: "This is armpit.", hindi: "यह बगल है।"),
+            WordExample(thai: "ฉันรู้จักรักแร้", romanization: "chǎn rúu-jàk rák-ráe", english: "I know about armpit.", hindi: "मैं बगल के बारे में जानता/जानती हूँ।"),
+        ],
+        2283: [
+            WordExample(thai: "นี่คือขาหนีบ", romanization: "nîi khʉʉ khǎa-nìip", english: "This is groin.", hindi: "यह जांघ का जोड़ है।"),
+            WordExample(thai: "ฉันรู้จักขาหนีบ", romanization: "chǎn rúu-jàk khǎa-nìip", english: "I know about groin.", hindi: "मैं जांघ का जोड़ के बारे में जानता/जानती हूँ।"),
+        ],
+        2284: [
+            WordExample(thai: "นี่คือน่อง", romanization: "nîi khʉʉ nɔ̂ɔng", english: "This is calf.", hindi: "यह पिंडली है।"),
+            WordExample(thai: "ฉันรู้จักน่อง", romanization: "chǎn rúu-jàk nɔ̂ɔng", english: "I know about calf.", hindi: "मैं पिंडली के बारे में जानता/जानती हूँ।"),
+        ],
+        2285: [
+            WordExample(thai: "นี่คือหน้าแข้ง", romanization: "nîi khʉʉ nâa-khâeng", english: "This is shin.", hindi: "यह पिंडली का अगला भाग है।"),
+            WordExample(thai: "ฉันรู้จักหน้าแข้ง", romanization: "chǎn rúu-jàk nâa-khâeng", english: "I know about shin.", hindi: "मैं पिंडली का अगला भाग के बारे में जानता/जानती हूँ।"),
+        ],
+        2286: [
+            WordExample(thai: "นี่คือฝ่าเท้า", romanization: "nîi khʉʉ fàa-tháao", english: "This is sole of foot.", hindi: "यह पैर का तलवा है।"),
+            WordExample(thai: "ฉันรู้จักฝ่าเท้า", romanization: "chǎn rúu-jàk fàa-tháao", english: "I know about sole of foot.", hindi: "मैं पैर का तलवा के बारे में जानता/जानती हूँ।"),
+        ],
+        2287: [
+            WordExample(thai: "นี่คือขากรรไกร", romanization: "nîi khʉʉ khǎa-gan-grai", english: "This is jaw.", hindi: "यह जबड़ा है।"),
+            WordExample(thai: "ฉันรู้จักขากรรไกร", romanization: "chǎn rúu-jàk khǎa-gan-grai", english: "I know about jaw.", hindi: "मैं जबड़ा के बारे में जानता/जानती हूँ।"),
+        ],
+        2288: [
+            WordExample(thai: "นี่คือเหงือก", romanization: "nîi khʉʉ ngʉ̌ʉak", english: "This is gums.", hindi: "यह मसूड़े है।"),
+            WordExample(thai: "ฉันรู้จักเหงือก", romanization: "chǎn rúu-jàk ngʉ̌ʉak", english: "I know about gums.", hindi: "मैं मसूड़े के बारे में जानता/जानती हूँ।"),
+        ],
+        2289: [
+            WordExample(thai: "นี่คือลำคอ", romanization: "nîi khʉʉ lam-khɔɔ", english: "This is throat.", hindi: "यह गला है।"),
+            WordExample(thai: "ฉันรู้จักลำคอ", romanization: "chǎn rúu-jàk lam-khɔɔ", english: "I know about throat.", hindi: "मैं गला के बारे में जानता/जानती हूँ।"),
+        ],
+        2290: [
+            WordExample(thai: "นี่คือลำไส้", romanization: "nîi khʉʉ lam-sâi", english: "This is intestine.", hindi: "यह आंत है।"),
+            WordExample(thai: "ฉันรู้จักลำไส้", romanization: "chǎn rúu-jàk lam-sâi", english: "I know about intestine.", hindi: "मैं आंत के बारे में जानता/जानती हूँ।"),
+        ],
+        2291: [
+            WordExample(thai: "นี่คือตับ", romanization: "nîi khʉʉ dtàp", english: "This is liver.", hindi: "यह यकृत है।"),
+            WordExample(thai: "ฉันรู้จักตับ", romanization: "chǎn rúu-jàk dtàp", english: "I know about liver.", hindi: "मैं यकृत के बारे में जानता/जानती हूँ।"),
+        ],
+        2292: [
+            WordExample(thai: "นี่คือไต", romanization: "nîi khʉʉ dtai", english: "This is kidney.", hindi: "यह गुर्दा है।"),
+            WordExample(thai: "ฉันรู้จักไต", romanization: "chǎn rúu-jàk dtai", english: "I know about kidney.", hindi: "मैं गुर्दा के बारे में जानता/जानती हूँ।"),
+        ],
+        2293: [
+            WordExample(thai: "นี่คือเส้นเลือด", romanization: "nîi khʉʉ sên-lʉ̂ʉat", english: "This is blood vessel.", hindi: "यह रक्त वाहिका है।"),
+            WordExample(thai: "ฉันรู้จักเส้นเลือด", romanization: "chǎn rúu-jàk sên-lʉ̂ʉat", english: "I know about blood vessel.", hindi: "मैं रक्त वाहिका के बारे में जानता/जानती हूँ।"),
+        ],
+        2294: [
+            WordExample(thai: "นี่คือระบบประสาท", romanization: "nîi khʉʉ rá-bòp-bprà-sàat", english: "This is nervous system.", hindi: "यह तंत्रिका तंत्र है।"),
+            WordExample(thai: "ฉันรู้จักระบบประสาท", romanization: "chǎn rúu-jàk rá-bòp-bprà-sàat", english: "I know about nervous system.", hindi: "मैं तंत्रिका तंत्र के बारे में जानता/जानती हूँ।"),
+        ],
+        2295: [
+            WordExample(thai: "นี่คือความทรงจำ", romanization: "nîi khʉʉ khwaam-song-jam", english: "This is memory.", hindi: "यह स्मृति है।"),
+            WordExample(thai: "ฉันรู้จักความทรงจำ", romanization: "chǎn rúu-jàk khwaam-song-jam", english: "I know about memory.", hindi: "मैं स्मृति के बारे में जानता/जानती हूँ।"),
+        ],
+        2296: [
+            WordExample(thai: "นี่คือสมาธิ", romanization: "nîi khʉʉ sà-maa-thí", english: "This is concentration.", hindi: "यह एकाग्रता है।"),
+            WordExample(thai: "ฉันรู้จักสมาธิ", romanization: "chǎn rúu-jàk sà-maa-thí", english: "I know about concentration.", hindi: "मैं एकाग्रता के बारे में जानता/जानती हूँ।"),
+        ],
+        2297: [
+            WordExample(thai: "นี่คือมั่นใจ", romanization: "nîi khʉʉ mân-jai", english: "This is confident.", hindi: "यह आत्मविश्वासी है।"),
+            WordExample(thai: "ฉันรู้จักมั่นใจ", romanization: "chǎn rúu-jàk mân-jai", english: "I know about confident.", hindi: "मैं आत्मविश्वासी के बारे में जानता/जानती हूँ।"),
+        ],
+        2298: [
+            WordExample(thai: "นี่คือไม่มั่นใจ", romanization: "nîi khʉʉ mâi-mân-jai", english: "This is not confident.", hindi: "यह आत्मविश्वासहीन है।"),
+            WordExample(thai: "ฉันรู้จักไม่มั่นใจ", romanization: "chǎn rúu-jàk mâi-mân-jai", english: "I know about not confident.", hindi: "मैं आत्मविश्वासहीन के बारे में जानता/जानती हूँ।"),
+        ],
+        2299: [
+            WordExample(thai: "นี่คือภาคภูมิใจ", romanization: "nîi khʉʉ phâak-phuum-jai", english: "This is proud.", hindi: "यह गर्वित है।"),
+            WordExample(thai: "ฉันรู้จักภาคภูมิใจ", romanization: "chǎn rúu-jàk phâak-phuum-jai", english: "I know about proud.", hindi: "मैं गर्वित के बारे में जानता/जानती हूँ।"),
+        ],
+        2300: [
+            WordExample(thai: "นี่คือโล่งใจ", romanization: "nîi khʉʉ lôong-jai", english: "This is relieved.", hindi: "यह राहत महसूस करना है।"),
+            WordExample(thai: "ฉันรู้จักโล่งใจ", romanization: "chǎn rúu-jàk lôong-jai", english: "I know about relieved.", hindi: "मैं राहत महसूस करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2301: [
+            WordExample(thai: "นี่คือเขิน", romanization: "nîi khʉʉ khǒen", english: "This is shy; bashful.", hindi: "यह लजाया हुआ है।"),
+            WordExample(thai: "ฉันรู้จักเขิน", romanization: "chǎn rúu-jàk khǒen", english: "I know about shy; bashful.", hindi: "मैं लजाया हुआ के बारे में जानता/जानती हूँ।"),
+        ],
+        2302: [
+            WordExample(thai: "นี่คือประหลาดใจ", romanization: "nîi khʉʉ bprà-làat-jai", english: "This is amazed.", hindi: "यह आश्चर्यचकित है।"),
+            WordExample(thai: "ฉันรู้จักประหลาดใจ", romanization: "chǎn rúu-jàk bprà-làat-jai", english: "I know about amazed.", hindi: "मैं आश्चर्यचकित के बारे में जानता/जानती हूँ।"),
+        ],
+        2303: [
+            WordExample(thai: "นี่คือกังวลใจ", romanization: "nîi khʉʉ gang-won-jai", english: "This is worried.", hindi: "यह चिंतित है।"),
+            WordExample(thai: "ฉันรู้จักกังวลใจ", romanization: "chǎn rúu-jàk gang-won-jai", english: "I know about worried.", hindi: "मैं चिंतित के बारे में जानता/जानती हूँ।"),
+        ],
+        2304: [
+            WordExample(thai: "นี่คือผ่อนคลาย", romanization: "nîi khʉʉ phɔ̀ɔn-khlaai", english: "This is relaxed.", hindi: "यह आराम महसूस करना है।"),
+            WordExample(thai: "ฉันรู้จักผ่อนคลาย", romanization: "chǎn rúu-jàk phɔ̀ɔn-khlaai", english: "I know about relaxed.", hindi: "मैं आराम महसूस करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2305: [
+            WordExample(thai: "นี่คือเบื่อหน่าย", romanization: "nîi khʉʉ bʉ̀ʉa-nàai", english: "This is fed up.", hindi: "यह ऊबा हुआ है।"),
+            WordExample(thai: "ฉันรู้จักเบื่อหน่าย", romanization: "chǎn rúu-jàk bʉ̀ʉa-nàai", english: "I know about fed up.", hindi: "मैं ऊबा हुआ के बारे में जानता/जानती हूँ।"),
+        ],
+        2306: [
+            WordExample(thai: "นี่คือสงสัย", romanization: "nîi khʉʉ sǒng-sǎi", english: "This is curious; doubtful.", hindi: "यह जिज्ञासु; संदेह में है।"),
+            WordExample(thai: "ฉันรู้จักสงสัย", romanization: "chǎn rúu-jàk sǒng-sǎi", english: "I know about curious; doubtful.", hindi: "मैं जिज्ञासु; संदेह में के बारे में जानता/जानती हूँ।"),
+        ],
+        2307: [
+            WordExample(thai: "นี่คือประทับใจ", romanization: "nîi khʉʉ bprà-tháp-jai", english: "This is impressed.", hindi: "यह प्रभावित है।"),
+            WordExample(thai: "ฉันรู้จักประทับใจ", romanization: "chǎn rúu-jàk bprà-tháp-jai", english: "I know about impressed.", hindi: "मैं प्रभावित के बारे में जानता/जानती हूँ।"),
+        ],
+        2308: [
+            WordExample(thai: "นี่คือหวัง", romanization: "nîi khʉʉ wǎng", english: "This is hope.", hindi: "यह आशा करना है।"),
+            WordExample(thai: "ฉันรู้จักหวัง", romanization: "chǎn rúu-jàk wǎng", english: "I know about hope.", hindi: "मैं आशा करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2309: [
+            WordExample(thai: "นี่คือตั้งใจ", romanization: "nîi khʉʉ dtâng-jai", english: "This is determined.", hindi: "यह दृढ़ निश्चयी है।"),
+            WordExample(thai: "ฉันรู้จักตั้งใจ", romanization: "chǎn rúu-jàk dtâng-jai", english: "I know about determined.", hindi: "मैं दृढ़ निश्चयी के बारे में जानता/जानती हूँ।"),
+        ],
+        2310: [
+            WordExample(thai: "นี่คือหลานชาย", romanization: "nîi khʉʉ lǎan-chaai", english: "This is grandson; nephew.", hindi: "यह पोता; भतीजा है।"),
+            WordExample(thai: "ฉันรู้จักหลานชาย", romanization: "chǎn rúu-jàk lǎan-chaai", english: "I know about grandson; nephew.", hindi: "मैं पोता; भतीजा के बारे में जानता/जानती हूँ।"),
+        ],
+        2311: [
+            WordExample(thai: "นี่คือหลานสาว", romanization: "nîi khʉʉ lǎan-sǎao", english: "This is granddaughter; niece.", hindi: "यह पोती; भतीजी है।"),
+            WordExample(thai: "ฉันรู้จักหลานสาว", romanization: "chǎn rúu-jàk lǎan-sǎao", english: "I know about granddaughter; niece.", hindi: "मैं पोती; भतीजी के बारे में जानता/जानती हूँ।"),
+        ],
+        2312: [
+            WordExample(thai: "นี่คือเขย", romanization: "nîi khʉʉ khə̌əi", english: "This is son-in-law.", hindi: "यह दामाद है।"),
+            WordExample(thai: "ฉันรู้จักเขย", romanization: "chǎn rúu-jàk khə̌əi", english: "I know about son-in-law.", hindi: "मैं दामाद के बारे में जानता/जानती हूँ।"),
+        ],
+        2313: [
+            WordExample(thai: "นี่คือสะใภ้", romanization: "nîi khʉʉ sà-phái", english: "This is daughter-in-law.", hindi: "यह बहू है।"),
+            WordExample(thai: "ฉันรู้จักสะใภ้", romanization: "chǎn rúu-jàk sà-phái", english: "I know about daughter-in-law.", hindi: "मैं बहू के बारे में जानता/जानती हूँ।"),
+        ],
+        2314: [
+            WordExample(thai: "นี่คือเลี้ยงลูก", romanization: "nîi khʉʉ líiang-lûuk", english: "This is raise a child.", hindi: "यह बच्चे का पालन-पोषण करना है।"),
+            WordExample(thai: "ฉันรู้จักเลี้ยงลูก", romanization: "chǎn rúu-jàk líiang-lûuk", english: "I know about raise a child.", hindi: "मैं बच्चे का पालन-पोषण करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2315: [
+            WordExample(thai: "นี่คือดูแล", romanization: "nîi khʉʉ duu-lae", english: "This is take care of.", hindi: "यह देखभाल करना है।"),
+            WordExample(thai: "ฉันรู้จักดูแล", romanization: "chǎn rúu-jàk duu-lae", english: "I know about take care of.", hindi: "मैं देखभाल करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2316: [
+            WordExample(thai: "นี่คือหย่า", romanization: "nîi khʉʉ yàa", english: "This is divorce.", hindi: "यह तलाक लेना है।"),
+            WordExample(thai: "ฉันรู้จักหย่า", romanization: "chǎn rúu-jàk yàa", english: "I know about divorce.", hindi: "मैं तलाक लेना के बारे में जानता/जानती हूँ।"),
+        ],
+        2317: [
+            WordExample(thai: "นี่คือเพื่อนร่วมชั้น", romanization: "nîi khʉʉ phʉ̂ʉan-rûam-chán", english: "This is classmate.", hindi: "यह सहपाठी है।"),
+            WordExample(thai: "ฉันรู้จักเพื่อนร่วมชั้น", romanization: "chǎn rúu-jàk phʉ̂ʉan-rûam-chán", english: "I know about classmate.", hindi: "मैं सहपाठी के बारे में जानता/जानती हूँ।"),
+        ],
+        2318: [
+            WordExample(thai: "นี่คือเพื่อนร่วมห้อง", romanization: "nîi khʉʉ phʉ̂ʉan-rûam-hɔ̂ng", english: "This is roommate.", hindi: "यह रूममेट है।"),
+            WordExample(thai: "ฉันรู้จักเพื่อนร่วมห้อง", romanization: "chǎn rúu-jàk phʉ̂ʉan-rûam-hɔ̂ng", english: "I know about roommate.", hindi: "मैं रूममेट के बारे में जानता/जानती हूँ।"),
+        ],
+        2319: [
+            WordExample(thai: "นี่คือคนแปลกหน้า", romanization: "nîi khʉʉ khon-bplàaek-nâa", english: "This is stranger.", hindi: "यह अजनबी है।"),
+            WordExample(thai: "ฉันรู้จักคนแปลกหน้า", romanization: "chǎn rúu-jàk khon-bplàaek-nâa", english: "I know about stranger.", hindi: "मैं अजनबी के बारे में जानता/जानती हूँ।"),
+        ],
+        2320: [
+            WordExample(thai: "นี่คือผู้ปกครอง", romanization: "nîi khʉʉ phûu-bpòk-khrɔɔng", english: "This is parent or guardian.", hindi: "यह अभिभावक है।"),
+            WordExample(thai: "ฉันรู้จักผู้ปกครอง", romanization: "chǎn rúu-jàk phûu-bpòk-khrɔɔng", english: "I know about parent or guardian.", hindi: "मैं अभिभावक के बारे में जानता/जानती हूँ।"),
+        ],
+        2321: [
+            WordExample(thai: "นี่คืออาสาสมัคร", romanization: "nîi khʉʉ aa-sǎa-sà-màk", english: "This is volunteer.", hindi: "यह स्वयंसेवक है।"),
+            WordExample(thai: "ฉันรู้จักอาสาสมัคร", romanization: "chǎn rúu-jàk aa-sǎa-sà-màk", english: "I know about volunteer.", hindi: "मैं स्वयंसेवक के बारे में जानता/जानती हूँ।"),
+        ],
+        2322: [
+            WordExample(thai: "นี่คือล่าม", romanization: "nîi khʉʉ lâam", english: "This is interpreter.", hindi: "यह दुभाषिया है।"),
+            WordExample(thai: "ฉันรู้จักล่าม", romanization: "chǎn rúu-jàk lâam", english: "I know about interpreter.", hindi: "मैं दुभाषिया के बारे में जानता/जानती हूँ।"),
+        ],
+        2323: [
+            WordExample(thai: "นี่คือผู้เชี่ยวชาญ", romanization: "nîi khʉʉ phûu-chîiao-chaan", english: "This is expert.", hindi: "यह विशेषज्ञ है।"),
+            WordExample(thai: "ฉันรู้จักผู้เชี่ยวชาญ", romanization: "chǎn rúu-jàk phûu-chîiao-chaan", english: "I know about expert.", hindi: "मैं विशेषज्ञ के बारे में जानता/जानती हूँ।"),
+        ],
+        2324: [
+            WordExample(thai: "นี่คือช่างภาพ", romanization: "nîi khʉʉ châang-phâap", english: "This is photographer.", hindi: "यह फोटोग्राफर है।"),
+            WordExample(thai: "ฉันรู้จักช่างภาพ", romanization: "chǎn rúu-jàk châang-phâap", english: "I know about photographer.", hindi: "मैं फोटोग्राफर के बारे में जानता/जानती हूँ।"),
+        ],
+        2325: [
+            WordExample(thai: "นี่คือนักข่าว", romanization: "nîi khʉʉ nák-khàao", english: "This is journalist.", hindi: "यह पत्रकार है।"),
+            WordExample(thai: "ฉันรู้จักนักข่าว", romanization: "chǎn rúu-jàk nák-khàao", english: "I know about journalist.", hindi: "मैं पत्रकार के बारे में जानता/जानती हूँ।"),
+        ],
+        2326: [
+            WordExample(thai: "นี่คือพยาน", romanization: "nîi khʉʉ phá-yaan", english: "This is witness.", hindi: "यह गवाह है।"),
+            WordExample(thai: "ฉันรู้จักพยาน", romanization: "chǎn rúu-jàk phá-yaan", english: "I know about witness.", hindi: "मैं गवाह के बारे में जानता/जानती हूँ।"),
+        ],
+        2327: [
+            WordExample(thai: "นี่คือผู้ต้องสงสัย", romanization: "nîi khʉʉ phûu-dtông-sǒng-sǎi", english: "This is suspect.", hindi: "यह संदिग्ध व्यक्ति है।"),
+            WordExample(thai: "ฉันรู้จักผู้ต้องสงสัย", romanization: "chǎn rúu-jàk phûu-dtông-sǒng-sǎi", english: "I know about suspect.", hindi: "मैं संदिग्ध व्यक्ति के बारे में जानता/जानती हूँ।"),
+        ],
+        2328: [
+            WordExample(thai: "นี่คือพนักงานขาย", romanization: "nîi khʉʉ phá-nák-ngaan-khǎai", english: "This is salesperson.", hindi: "यह विक्रेता है।"),
+            WordExample(thai: "ฉันรู้จักพนักงานขาย", romanization: "chǎn rúu-jàk phá-nák-ngaan-khǎai", english: "I know about salesperson.", hindi: "मैं विक्रेता के बारे में जानता/जानती हूँ।"),
+        ],
+        2329: [
+            WordExample(thai: "นี่คือพนักงานส่งของ", romanization: "nîi khʉʉ phá-nák-ngaan-sòng-khɔ̌ɔng", english: "This is delivery worker.", hindi: "यह डिलीवरी कर्मचारी है।"),
+            WordExample(thai: "ฉันรู้จักพนักงานส่งของ", romanization: "chǎn rúu-jàk phá-nák-ngaan-sòng-khɔ̌ɔng", english: "I know about delivery worker.", hindi: "मैं डिलीवरी कर्मचारी के बारे में जानता/जानती हूँ।"),
+        ],
+        2330: [
+            WordExample(thai: "นี่คือพนักงานรักษาความปลอดภัย", romanization: "nîi khʉʉ phá-nák-ngaan-rák-sǎa-khwaam-bplɔ̀ɔt-phai", english: "This is security guard.", hindi: "यह सुरक्षा गार्ड है।"),
+            WordExample(thai: "ฉันรู้จักพนักงานรักษาความปลอดภัย", romanization: "chǎn rúu-jàk phá-nák-ngaan-rák-sǎa-khwaam-bplɔ̀ɔt-phai", english: "I know about security guard.", hindi: "मैं सुरक्षा गार्ड के बारे में जानता/जानती हूँ।"),
+        ],
+        2331: [
+            WordExample(thai: "นี่คือผู้สมัครงาน", romanization: "nîi khʉʉ phûu-sà-màk-ngaan", english: "This is job applicant.", hindi: "यह नौकरी आवेदक है।"),
+            WordExample(thai: "ฉันรู้จักผู้สมัครงาน", romanization: "chǎn rúu-jàk phûu-sà-màk-ngaan", english: "I know about job applicant.", hindi: "मैं नौकरी आवेदक के बारे में जानता/जानती हूँ।"),
+        ],
+        2332: [
+            WordExample(thai: "นี่คือประวัติย่อ", romanization: "nîi khʉʉ bprà-wàt-yɔ̂ɔ", english: "This is résumé.", hindi: "यह बायोडाटा है।"),
+            WordExample(thai: "ฉันรู้จักประวัติย่อ", romanization: "chǎn rúu-jàk bprà-wàt-yɔ̂ɔ", english: "I know about résumé.", hindi: "मैं बायोडाटा के बारे में जानता/जानती हूँ।"),
+        ],
+        2333: [
+            WordExample(thai: "นี่คือสัมภาษณ์งาน", romanization: "nîi khʉʉ sǎm-phàat-ngaan", english: "This is job interview.", hindi: "यह नौकरी का साक्षात्कार है।"),
+            WordExample(thai: "ฉันรู้จักสัมภาษณ์งาน", romanization: "chǎn rúu-jàk sǎm-phàat-ngaan", english: "I know about job interview.", hindi: "मैं नौकरी का साक्षात्कार के बारे में जानता/जानती हूँ।"),
+        ],
+        2334: [
+            WordExample(thai: "นี่คือตำแหน่งงาน", romanization: "nîi khʉʉ dtam-nàeng-ngaan", english: "This is job position.", hindi: "यह नौकरी का पद है।"),
+            WordExample(thai: "ฉันรู้จักตำแหน่งงาน", romanization: "chǎn rúu-jàk dtam-nàeng-ngaan", english: "I know about job position.", hindi: "मैं नौकरी का पद के बारे में जानता/जानती हूँ।"),
+        ],
+        2335: [
+            WordExample(thai: "นี่คือค่าล่วงเวลา", romanization: "nîi khʉʉ khâa-lûang-wee-laa", english: "This is overtime pay.", hindi: "यह ओवरटाइम वेतन है।"),
+            WordExample(thai: "ฉันรู้จักค่าล่วงเวลา", romanization: "chǎn rúu-jàk khâa-lûang-wee-laa", english: "I know about overtime pay.", hindi: "मैं ओवरटाइम वेतन के बारे में जानता/जानती हूँ।"),
+        ],
+        2336: [
+            WordExample(thai: "นี่คือลางาน", romanization: "nîi khʉʉ laa-ngaan", english: "This is take leave from work.", hindi: "यह काम से छुट्टी लेना है।"),
+            WordExample(thai: "ฉันรู้จักลางาน", romanization: "chǎn rúu-jàk laa-ngaan", english: "I know about take leave from work.", hindi: "मैं काम से छुट्टी लेना के बारे में जानता/जानती हूँ।"),
+        ],
+        2337: [
+            WordExample(thai: "นี่คือลาป่วย", romanization: "nîi khʉʉ laa-bpùai", english: "This is take sick leave.", hindi: "यह बीमारी की छुट्टी लेना है।"),
+            WordExample(thai: "ฉันรู้จักลาป่วย", romanization: "chǎn rúu-jàk laa-bpùai", english: "I know about take sick leave.", hindi: "मैं बीमारी की छुट्टी लेना के बारे में जानता/जानती हूँ।"),
+        ],
+        2338: [
+            WordExample(thai: "นี่คือลาพักร้อน", romanization: "nîi khʉʉ laa-phák-rɔ́ɔn", english: "This is take annual leave.", hindi: "यह वार्षिक छुट्टी लेना है।"),
+            WordExample(thai: "ฉันรู้จักลาพักร้อน", romanization: "chǎn rúu-jàk laa-phák-rɔ́ɔn", english: "I know about take annual leave.", hindi: "मैं वार्षिक छुट्टी लेना के बारे में जानता/जानती हूँ।"),
+        ],
+        2339: [
+            WordExample(thai: "นี่คือกะทำงาน", romanization: "nîi khʉʉ gà-tham-ngaan", english: "This is work shift.", hindi: "यह काम की पाली है।"),
+            WordExample(thai: "ฉันรู้จักกะทำงาน", romanization: "chǎn rúu-jàk gà-tham-ngaan", english: "I know about work shift.", hindi: "मैं काम की पाली के बारे में जानता/जानती हूँ।"),
+        ],
+        2340: [
+            WordExample(thai: "นี่คือเดดไลน์", romanization: "nîi khʉʉ dèt-laai", english: "This is deadline.", hindi: "यह समय-सीमा है।"),
+            WordExample(thai: "ฉันรู้จักเดดไลน์", romanization: "chǎn rúu-jàk dèt-laai", english: "I know about deadline.", hindi: "मैं समय-सीमा के बारे में जानता/जानती हूँ।"),
+        ],
+        2341: [
+            WordExample(thai: "นี่คือโปรเจกต์", romanization: "nîi khʉʉ bproo-jèk", english: "This is project.", hindi: "यह परियोजना है।"),
+            WordExample(thai: "ฉันรู้จักโปรเจกต์", romanization: "chǎn rúu-jàk bproo-jèk", english: "I know about project.", hindi: "मैं परियोजना के बारे में जानता/जानती हूँ।"),
+        ],
+        2342: [
+            WordExample(thai: "นี่คือเป้าหมาย", romanization: "nîi khʉʉ bpâo-mǎai", english: "This is goal.", hindi: "यह लक्ष्य है।"),
+            WordExample(thai: "ฉันรู้จักเป้าหมาย", romanization: "chǎn rúu-jàk bpâo-mǎai", english: "I know about goal.", hindi: "मैं लक्ष्य के बारे में जानता/जानती हूँ।"),
+        ],
+        2343: [
+            WordExample(thai: "นี่คือลำดับความสำคัญ", romanization: "nîi khʉʉ lam-dàp-khwaam-sǎm-khan", english: "This is priority.", hindi: "यह प्राथमिकता है।"),
+            WordExample(thai: "ฉันรู้จักลำดับความสำคัญ", romanization: "chǎn rúu-jàk lam-dàp-khwaam-sǎm-khan", english: "I know about priority.", hindi: "मैं प्राथमिकता के बारे में जानता/जानती हूँ।"),
+        ],
+        2344: [
+            WordExample(thai: "นี่คือมอบหมาย", romanization: "nîi khʉʉ mɔ̂ɔp-mǎai", english: "This is assign.", hindi: "यह सौंपना है।"),
+            WordExample(thai: "ฉันรู้จักมอบหมาย", romanization: "chǎn rúu-jàk mɔ̂ɔp-mǎai", english: "I know about assign.", hindi: "मैं सौंपना के बारे में जानता/जानती हूँ।"),
+        ],
+        2345: [
+            WordExample(thai: "นี่คืออนุมัติ", romanization: "nîi khʉʉ à-nú-mát", english: "This is approve.", hindi: "यह अनुमोदित करना है।"),
+            WordExample(thai: "ฉันรู้จักอนุมัติ", romanization: "chǎn rúu-jàk à-nú-mát", english: "I know about approve.", hindi: "मैं अनुमोदित करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2346: [
+            WordExample(thai: "นี่คือรายงาน", romanization: "nîi khʉʉ raai-ngaan", english: "This is report.", hindi: "यह रिपोर्ट है।"),
+            WordExample(thai: "ฉันรู้จักรายงาน", romanization: "chǎn rúu-jàk raai-ngaan", english: "I know about report.", hindi: "मैं रिपोर्ट के बारे में जानता/जानती हूँ।"),
+        ],
+        2347: [
+            WordExample(thai: "นี่คือประชุมออนไลน์", romanization: "nîi khʉʉ bprà-chum-ɔɔn-lai", english: "This is online meeting.", hindi: "यह ऑनलाइन मीटिंग है।"),
+            WordExample(thai: "ฉันรู้จักประชุมออนไลน์", romanization: "chǎn rúu-jàk bprà-chum-ɔɔn-lai", english: "I know about online meeting.", hindi: "मैं ऑनलाइन मीटिंग के बारे में जानता/जानती हूँ।"),
+        ],
+        2348: [
+            WordExample(thai: "นี่คือวาระการประชุม", romanization: "nîi khʉʉ waa-rá-gaan-bprà-chum", english: "This is meeting agenda.", hindi: "यह बैठक का एजेंडा है।"),
+            WordExample(thai: "ฉันรู้จักวาระการประชุม", romanization: "chǎn rúu-jàk waa-rá-gaan-bprà-chum", english: "I know about meeting agenda.", hindi: "मैं बैठक का एजेंडा के बारे में जानता/जानती हूँ।"),
+        ],
+        2349: [
+            WordExample(thai: "นี่คือบันทึกการประชุม", romanization: "nîi khʉʉ ban-thʉ́k-gaan-bprà-chum", english: "This is meeting minutes.", hindi: "यह बैठक का कार्यवृत्त है।"),
+            WordExample(thai: "ฉันรู้จักบันทึกการประชุม", romanization: "chǎn rúu-jàk ban-thʉ́k-gaan-bprà-chum", english: "I know about meeting minutes.", hindi: "मैं बैठक का कार्यवृत्त के बारे में जानता/जानती हूँ।"),
+        ],
+        2350: [
+            WordExample(thai: "นี่คือนำเสนอ", romanization: "nîi khʉʉ nam-sà-nǒoe", english: "This is present.", hindi: "यह प्रस्तुत करना है।"),
+            WordExample(thai: "ฉันรู้จักนำเสนอ", romanization: "chǎn rúu-jàk nam-sà-nǒoe", english: "I know about present.", hindi: "मैं प्रस्तुत करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2351: [
+            WordExample(thai: "นี่คือสไลด์", romanization: "nîi khʉʉ sà-lài", english: "This is presentation slide.", hindi: "यह प्रस्तुति स्लाइड है।"),
+            WordExample(thai: "ฉันรู้จักสไลด์", romanization: "chǎn rúu-jàk sà-lài", english: "I know about presentation slide.", hindi: "मैं प्रस्तुति स्लाइड के बारे में जानता/जानती हूँ।"),
+        ],
+        2352: [
+            WordExample(thai: "นี่คือเครื่องพิมพ์", romanization: "nîi khʉʉ khrʉ̂ʉang-phim", english: "This is printer.", hindi: "यह प्रिंटर है।"),
+            WordExample(thai: "ฉันรู้จักเครื่องพิมพ์", romanization: "chǎn rúu-jàk khrʉ̂ʉang-phim", english: "I know about printer.", hindi: "मैं प्रिंटर के बारे में जानता/जानती हूँ।"),
+        ],
+        2353: [
+            WordExample(thai: "นี่คือเครื่องถ่ายเอกสาร", romanization: "nîi khʉʉ khrʉ̂ʉang-thàai-èek-gà-sǎan", english: "This is photocopier.", hindi: "यह फोटोकॉपी मशीन है।"),
+            WordExample(thai: "ฉันรู้จักเครื่องถ่ายเอกสาร", romanization: "chǎn rúu-jàk khrʉ̂ʉang-thàai-èek-gà-sǎan", english: "I know about photocopier.", hindi: "मैं फोटोकॉपी मशीन के बारे में जानता/जानती हूँ।"),
+        ],
+        2354: [
+            WordExample(thai: "นี่คือลวดเย็บกระดาษ", romanization: "nîi khʉʉ lûat-yép-grà-dàat", english: "This is staple.", hindi: "यह स्टेपल पिन है।"),
+            WordExample(thai: "ฉันรู้จักลวดเย็บกระดาษ", romanization: "chǎn rúu-jàk lûat-yép-grà-dàat", english: "I know about staple.", hindi: "मैं स्टेपल पिन के बारे में जानता/जानती हूँ।"),
+        ],
+        2355: [
+            WordExample(thai: "นี่คือที่เย็บกระดาษ", romanization: "nîi khʉʉ thîi-yép-grà-dàat", english: "This is stapler.", hindi: "यह स्टेपलर है।"),
+            WordExample(thai: "ฉันรู้จักที่เย็บกระดาษ", romanization: "chǎn rúu-jàk thîi-yép-grà-dàat", english: "I know about stapler.", hindi: "मैं स्टेपलर के बारे में जानता/जानती हूँ।"),
+        ],
+        2356: [
+            WordExample(thai: "นี่คือปากกาเน้นข้อความ", romanization: "nîi khʉʉ bpàa-gaa-nén-khɔ̂ɔ-khwaam", english: "This is highlighter pen.", hindi: "यह हाइलाइटर पेन है।"),
+            WordExample(thai: "ฉันรู้จักปากกาเน้นข้อความ", romanization: "chǎn rúu-jàk bpàa-gaa-nén-khɔ̂ɔ-khwaam", english: "I know about highlighter pen.", hindi: "मैं हाइलाइटर पेन के बारे में जानता/जानती हूँ।"),
+        ],
+        2357: [
+            WordExample(thai: "นี่คือแฟ้มเอกสาร", romanization: "nîi khʉʉ fáem-èek-gà-sǎan", english: "This is document folder.", hindi: "यह दस्तावेज़ फ़ोल्डर है।"),
+            WordExample(thai: "ฉันรู้จักแฟ้มเอกสาร", romanization: "chǎn rúu-jàk fáem-èek-gà-sǎan", english: "I know about document folder.", hindi: "मैं दस्तावेज़ फ़ोल्डर के बारे में जानता/जानती हूँ।"),
+        ],
+        2358: [
+            WordExample(thai: "นี่คือตู้เก็บเอกสาร", romanization: "nîi khʉʉ dtûu-gèp-èek-gà-sǎan", english: "This is filing cabinet.", hindi: "यह फाइलिंग कैबिनेट है।"),
+            WordExample(thai: "ฉันรู้จักตู้เก็บเอกสาร", romanization: "chǎn rúu-jàk dtûu-gèp-èek-gà-sǎan", english: "I know about filing cabinet.", hindi: "मैं फाइलिंग कैबिनेट के बारे में जानता/जानती हूँ।"),
+        ],
+        2359: [
+            WordExample(thai: "นี่คือชื่อผู้ใช้", romanization: "nîi khʉʉ chʉ̂ʉ-phûu-chái", english: "This is username.", hindi: "यह उपयोगकर्ता नाम है।"),
+            WordExample(thai: "ฉันรู้จักชื่อผู้ใช้", romanization: "chǎn rúu-jàk chʉ̂ʉ-phûu-chái", english: "I know about username.", hindi: "मैं उपयोगकर्ता नाम के बारे में जानता/जानती हूँ।"),
+        ],
+        2360: [
+            WordExample(thai: "นี่คือเข้าสู่ระบบ", romanization: "nîi khʉʉ khâo-sùu-rá-bòp", english: "This is log in.", hindi: "यह लॉग इन करना है।"),
+            WordExample(thai: "ฉันรู้จักเข้าสู่ระบบ", romanization: "chǎn rúu-jàk khâo-sùu-rá-bòp", english: "I know about log in.", hindi: "मैं लॉग इन करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2361: [
+            WordExample(thai: "นี่คือออกจากระบบ", romanization: "nîi khʉʉ ɔ̀ɔk-jàak-rá-bòp", english: "This is log out.", hindi: "यह लॉग आउट करना है।"),
+            WordExample(thai: "ฉันรู้จักออกจากระบบ", romanization: "chǎn rúu-jàk ɔ̀ɔk-jàak-rá-bòp", english: "I know about log out.", hindi: "मैं लॉग आउट करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2362: [
+            WordExample(thai: "นี่คือดาวน์โหลด", romanization: "nîi khʉʉ daao-lòot", english: "This is download.", hindi: "यह डाउनलोड करना है।"),
+            WordExample(thai: "ฉันรู้จักดาวน์โหลด", romanization: "chǎn rúu-jàk daao-lòot", english: "I know about download.", hindi: "मैं डाउनलोड करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2363: [
+            WordExample(thai: "นี่คืออัปโหลด", romanization: "nîi khʉʉ áp-lòot", english: "This is upload.", hindi: "यह अपलोड करना है।"),
+            WordExample(thai: "ฉันรู้จักอัปโหลด", romanization: "chǎn rúu-jàk áp-lòot", english: "I know about upload.", hindi: "मैं अपलोड करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2364: [
+            WordExample(thai: "นี่คือไฟล์แนบ", romanization: "nîi khʉʉ fai-nàep", english: "This is attachment.", hindi: "यह संलग्न फ़ाइल है।"),
+            WordExample(thai: "ฉันรู้จักไฟล์แนบ", romanization: "chǎn rúu-jàk fai-nàep", english: "I know about attachment.", hindi: "मैं संलग्न फ़ाइल के बारे में जानता/जानती हूँ।"),
+        ],
+        2365: [
+            WordExample(thai: "นี่คือโฟลเดอร์", romanization: "nîi khʉʉ foo-dəə", english: "This is folder.", hindi: "यह फ़ोल्डर है।"),
+            WordExample(thai: "ฉันรู้จักโฟลเดอร์", romanization: "chǎn rúu-jàk foo-dəə", english: "I know about folder.", hindi: "मैं फ़ोल्डर के बारे में जानता/जानती हूँ।"),
+        ],
+        2366: [
+            WordExample(thai: "นี่คือหน้าจอ", romanization: "nîi khʉʉ nâa-jɔɔ", english: "This is screen.", hindi: "यह स्क्रीन है।"),
+            WordExample(thai: "ฉันรู้จักหน้าจอ", romanization: "chǎn rúu-jàk nâa-jɔɔ", english: "I know about screen.", hindi: "मैं स्क्रीन के बारे में जानता/जानती हूँ।"),
+        ],
+        2367: [
+            WordExample(thai: "นี่คือแป้นพิมพ์", romanization: "nîi khʉʉ bpâen-phim", english: "This is keyboard.", hindi: "यह कीबोर्ड है।"),
+            WordExample(thai: "ฉันรู้จักแป้นพิมพ์", romanization: "chǎn rúu-jàk bpâen-phim", english: "I know about keyboard.", hindi: "मैं कीबोर्ड के बारे में जानता/जानती हूँ।"),
+        ],
+        2368: [
+            WordExample(thai: "นี่คือเมาส์", romanization: "nîi khʉʉ maao", english: "This is computer mouse.", hindi: "यह कंप्यूटर माउस है।"),
+            WordExample(thai: "ฉันรู้จักเมาส์", romanization: "chǎn rúu-jàk maao", english: "I know about computer mouse.", hindi: "मैं कंप्यूटर माउस के बारे में जानता/जानती हूँ।"),
+        ],
+        2369: [
+            WordExample(thai: "นี่คือหูฟัง", romanization: "nîi khʉʉ hǔu-fang", english: "This is headphones.", hindi: "यह हेडफ़ोन है।"),
+            WordExample(thai: "ฉันรู้จักหูฟัง", romanization: "chǎn rúu-jàk hǔu-fang", english: "I know about headphones.", hindi: "मैं हेडफ़ोन के बारे में जानता/जानती हूँ।"),
+        ],
+        2370: [
+            WordExample(thai: "นี่คือไมโครโฟน", romanization: "nîi khʉʉ mai-khroo-foon", english: "This is microphone.", hindi: "यह माइक्रोफोन है।"),
+            WordExample(thai: "ฉันรู้จักไมโครโฟน", romanization: "chǎn rúu-jàk mai-khroo-foon", english: "I know about microphone.", hindi: "मैं माइक्रोफोन के बारे में जानता/जानती हूँ।"),
+        ],
+        2371: [
+            WordExample(thai: "นี่คือกล้องเว็บแคม", romanization: "nîi khʉʉ glɔ̂ɔng-wép-khaem", english: "This is webcam.", hindi: "यह वेबकैम है।"),
+            WordExample(thai: "ฉันรู้จักกล้องเว็บแคม", romanization: "chǎn rúu-jàk glɔ̂ɔng-wép-khaem", english: "I know about webcam.", hindi: "मैं वेबकैम के बारे में जानता/जानती हूँ।"),
+        ],
+        2372: [
+            WordExample(thai: "นี่คือแบตเตอรี่", romanization: "nîi khʉʉ bàet-dtəə-rii", english: "This is battery.", hindi: "यह बैटरी है।"),
+            WordExample(thai: "ฉันรู้จักแบตเตอรี่", romanization: "chǎn rúu-jàk bàet-dtəə-rii", english: "I know about battery.", hindi: "मैं बैटरी के बारे में जानता/जानती हूँ।"),
+        ],
+        2373: [
+            WordExample(thai: "นี่คือสายชาร์จ", romanization: "nîi khʉʉ sǎai-cháat", english: "This is charging cable.", hindi: "यह चार्जिंग केबल है।"),
+            WordExample(thai: "ฉันรู้จักสายชาร์จ", romanization: "chǎn rúu-jàk sǎai-cháat", english: "I know about charging cable.", hindi: "मैं चार्जिंग केबल के बारे में जानता/जानती हूँ।"),
+        ],
+        2374: [
+            WordExample(thai: "นี่คืออัปเดต", romanization: "nîi khʉʉ áp-dàet", english: "This is update.", hindi: "यह अपडेट करना है।"),
+            WordExample(thai: "ฉันรู้จักอัปเดต", romanization: "chǎn rúu-jàk áp-dàet", english: "I know about update.", hindi: "मैं अपडेट करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2375: [
+            WordExample(thai: "นี่คือแอปพลิเคชัน", romanization: "nîi khʉʉ àep-phlí-khée-chán", english: "This is application.", hindi: "यह ऐप्लिकेशन है।"),
+            WordExample(thai: "ฉันรู้จักแอปพลิเคชัน", romanization: "chǎn rúu-jàk àep-phlí-khée-chán", english: "I know about application.", hindi: "मैं ऐप्लिकेशन के बारे में जानता/जानती हूँ।"),
+        ],
+        2376: [
+            WordExample(thai: "นี่คือการแจ้งเตือน", romanization: "nîi khʉʉ gaan-jâeng-dtʉʉan", english: "This is notification.", hindi: "यह सूचना है।"),
+            WordExample(thai: "ฉันรู้จักการแจ้งเตือน", romanization: "chǎn rúu-jàk gaan-jâeng-dtʉʉan", english: "I know about notification.", hindi: "मैं सूचना के बारे में जानता/जानती हूँ।"),
+        ],
+        2377: [
+            WordExample(thai: "นี่คือโหมดเครื่องบิน", romanization: "nîi khʉʉ mòot-khrʉ̂ʉang-bin", english: "This is airplane mode.", hindi: "यह एयरप्लेन मोड है।"),
+            WordExample(thai: "ฉันรู้จักโหมดเครื่องบิน", romanization: "chǎn rúu-jàk mòot-khrʉ̂ʉang-bin", english: "I know about airplane mode.", hindi: "मैं एयरप्लेन मोड के बारे में जानता/जानती हूँ।"),
+        ],
+        2378: [
+            WordExample(thai: "นี่คือสัญญาณ", romanization: "nîi khʉʉ sǎn-yaan", english: "This is signal.", hindi: "यह सिग्नल है।"),
+            WordExample(thai: "ฉันรู้จักสัญญาณ", romanization: "chǎn rúu-jàk sǎn-yaan", english: "I know about signal.", hindi: "मैं सिग्नल के बारे में जानता/जानती हूँ।"),
+        ],
+        2379: [
+            WordExample(thai: "นี่คือเน็ตช้า", romanization: "nîi khʉʉ nét-cháa", english: "This is slow internet.", hindi: "यह धीमा इंटरनेट है।"),
+            WordExample(thai: "ฉันรู้จักเน็ตช้า", romanization: "chǎn rúu-jàk nét-cháa", english: "I know about slow internet.", hindi: "मैं धीमा इंटरनेट के बारे में जानता/जानती हूँ।"),
+        ],
+        2380: [
+            WordExample(thai: "นี่คือบาสเกตบอล", romanization: "nîi khʉʉ bàat-gèt-bɔɔn", english: "This is basketball.", hindi: "यह बास्केटबॉल है।"),
+            WordExample(thai: "ฉันรู้จักบาสเกตบอล", romanization: "chǎn rúu-jàk bàat-gèt-bɔɔn", english: "I know about basketball.", hindi: "मैं बास्केटबॉल के बारे में जानता/जानती हूँ।"),
+        ],
+        2381: [
+            WordExample(thai: "นี่คือวอลเลย์บอล", romanization: "nîi khʉʉ wɔɔn-lee-bɔɔn", english: "This is volleyball.", hindi: "यह वॉलीबॉल है।"),
+            WordExample(thai: "ฉันรู้จักวอลเลย์บอล", romanization: "chǎn rúu-jàk wɔɔn-lee-bɔɔn", english: "I know about volleyball.", hindi: "मैं वॉलीबॉल के बारे में जानता/जानती हूँ।"),
+        ],
+        2382: [
+            WordExample(thai: "นี่คือแบดมินตัน", romanization: "nîi khʉʉ bàet-min-dtan", english: "This is badminton.", hindi: "यह बैडमिंटन है।"),
+            WordExample(thai: "ฉันรู้จักแบดมินตัน", romanization: "chǎn rúu-jàk bàet-min-dtan", english: "I know about badminton.", hindi: "मैं बैडमिंटन के बारे में जानता/जानती हूँ।"),
+        ],
+        2383: [
+            WordExample(thai: "นี่คือว่ายน้ำ", romanization: "nîi khʉʉ wâai-náam", english: "This is swim.", hindi: "यह तैरना है।"),
+            WordExample(thai: "ฉันรู้จักว่ายน้ำ", romanization: "chǎn rúu-jàk wâai-náam", english: "I know about swim.", hindi: "मैं तैरना के बारे में जानता/जानती हूँ।"),
+        ],
+        2384: [
+            WordExample(thai: "นี่คือปั่นจักรยาน", romanization: "nîi khʉʉ bpàn-jàk-grà-yaan", english: "This is cycle.", hindi: "यह साइकिल चलाना है।"),
+            WordExample(thai: "ฉันรู้จักปั่นจักรยาน", romanization: "chǎn rúu-jàk bpàn-jàk-grà-yaan", english: "I know about cycle.", hindi: "मैं साइकिल चलाना के बारे में जानता/जानती हूँ।"),
+        ],
+        2385: [
+            WordExample(thai: "นี่คือกระโดดเชือก", romanization: "nîi khʉʉ grà-dòot-chʉ̂ʉak", english: "This is jump rope.", hindi: "यह रस्सी कूदना है।"),
+            WordExample(thai: "ฉันรู้จักกระโดดเชือก", romanization: "chǎn rúu-jàk grà-dòot-chʉ̂ʉak", english: "I know about jump rope.", hindi: "मैं रस्सी कूदना के बारे में जानता/जानती हूँ।"),
+        ],
+        2386: [
+            WordExample(thai: "นี่คือยกน้ำหนัก", romanization: "nîi khʉʉ yók-náam-nàk", english: "This is lift weights.", hindi: "यह वज़न उठाना है।"),
+            WordExample(thai: "ฉันรู้จักยกน้ำหนัก", romanization: "chǎn rúu-jàk yók-náam-nàk", english: "I know about lift weights.", hindi: "मैं वज़न उठाना के बारे में जानता/जानती हूँ।"),
+        ],
+        2387: [
+            WordExample(thai: "นี่คือการแข่งขัน", romanization: "nîi khʉʉ gaan-khàeng-khǎn", english: "This is competition.", hindi: "यह प्रतियोगिता है।"),
+            WordExample(thai: "ฉันรู้จักการแข่งขัน", romanization: "chǎn rúu-jàk gaan-khàeng-khǎn", english: "I know about competition.", hindi: "मैं प्रतियोगिता के बारे में जानता/जानती हूँ।"),
+        ],
+        2388: [
+            WordExample(thai: "นี่คือทีม", romanization: "nîi khʉʉ thiim", english: "This is team.", hindi: "यह टीम है।"),
+            WordExample(thai: "ฉันรู้จักทีม", romanization: "chǎn rúu-jàk thiim", english: "I know about team.", hindi: "मैं टीम के बारे में जानता/जानती हूँ।"),
+        ],
+        2389: [
+            WordExample(thai: "นี่คือคะแนน", romanization: "nîi khʉʉ kha-naen", english: "This is score.", hindi: "यह स्कोर है।"),
+            WordExample(thai: "ฉันรู้จักคะแนน", romanization: "chǎn rúu-jàk kha-naen", english: "I know about score.", hindi: "मैं स्कोर के बारे में जानता/जानती हूँ।"),
+        ],
+        2390: [
+            WordExample(thai: "นี่คือชนะ", romanization: "nîi khʉʉ chá-ná", english: "This is win.", hindi: "यह जीतना है।"),
+            WordExample(thai: "ฉันรู้จักชนะ", romanization: "chǎn rúu-jàk chá-ná", english: "I know about win.", hindi: "मैं जीतना के बारे में जानता/जानती हूँ।"),
+        ],
+        2391: [
+            WordExample(thai: "นี่คือผู้ตัดสิน", romanization: "nîi khʉʉ phûu-dtàt-sǐn", english: "This is referee.", hindi: "यह रेफरी है।"),
+            WordExample(thai: "ฉันรู้จักผู้ตัดสิน", romanization: "chǎn rúu-jàk phûu-dtàt-sǐn", english: "I know about referee.", hindi: "मैं रेफरी के बारे में जानता/जानती हूँ।"),
+        ],
+        2392: [
+            WordExample(thai: "นี่คือสนามกีฬา", romanization: "nîi khʉʉ sà-nǎam-gii-laa", english: "This is sports field.", hindi: "यह खेल का मैदान है।"),
+            WordExample(thai: "ฉันรู้จักสนามกีฬา", romanization: "chǎn rúu-jàk sà-nǎam-gii-laa", english: "I know about sports field.", hindi: "मैं खेल का मैदान के बारे में जानता/जानती हूँ।"),
+        ],
+        2393: [
+            WordExample(thai: "นี่คือห้องล็อกเกอร์", romanization: "nîi khʉʉ hɔ̂ng-lɔ́k-gəə", english: "This is locker room.", hindi: "यह लॉकर रूम है।"),
+            WordExample(thai: "ฉันรู้จักห้องล็อกเกอร์", romanization: "chǎn rúu-jàk hɔ̂ng-lɔ́k-gəə", english: "I know about locker room.", hindi: "मैं लॉकर रूम के बारे में जानता/जानती हूँ।"),
+        ],
+        2394: [
+            WordExample(thai: "นี่คืออุปกรณ์กีฬา", romanization: "nîi khʉʉ ù-bpà-gɔɔn-gii-laa", english: "This is sports equipment.", hindi: "यह खेल उपकरण है।"),
+            WordExample(thai: "ฉันรู้จักอุปกรณ์กีฬา", romanization: "chǎn rúu-jàk ù-bpà-gɔɔn-gii-laa", english: "I know about sports equipment.", hindi: "मैं खेल उपकरण के बारे में जानता/जानती हूँ।"),
+        ],
+        2395: [
+            WordExample(thai: "นี่คือหมวกนิรภัย", romanization: "nîi khʉʉ mùak-ni-rá-phai", english: "This is safety helmet.", hindi: "यह सुरक्षा हेलमेट है।"),
+            WordExample(thai: "ฉันรู้จักหมวกนิรภัย", romanization: "chǎn rúu-jàk mùak-ni-rá-phai", english: "I know about safety helmet.", hindi: "मैं सुरक्षा हेलमेट के बारे में जानता/जानती हूँ।"),
+        ],
+        2396: [
+            WordExample(thai: "นี่คือเสื้อชูชีพ", romanization: "nîi khʉʉ sʉ̂ʉa-chuu-chîip", english: "This is life jacket.", hindi: "यह लाइफ जैकेट है।"),
+            WordExample(thai: "ฉันรู้จักเสื้อชูชีพ", romanization: "chǎn rúu-jàk sʉ̂ʉa-chuu-chîip", english: "I know about life jacket.", hindi: "मैं लाइफ जैकेट के बारे में जानता/जानती हूँ।"),
+        ],
+        2397: [
+            WordExample(thai: "นี่คือสัญญาณไฟจราจร", romanization: "nîi khʉʉ sǎn-yaan-fai-jà-raa-jàawn", english: "This is traffic light.", hindi: "यह ट्रैफिक सिग्नल है।"),
+            WordExample(thai: "ฉันรู้จักสัญญาณไฟจราจร", romanization: "chǎn rúu-jàk sǎn-yaan-fai-jà-raa-jàawn", english: "I know about traffic light.", hindi: "मैं ट्रैफिक सिग्नल के बारे में जानता/जानती हूँ।"),
+        ],
+        2398: [
+            WordExample(thai: "นี่คือคาดเข็มขัดนิรภัย", romanization: "nîi khʉʉ khâat-khěm-khàt-ni-rá-phai", english: "This is fasten a seat belt.", hindi: "यह सीट बेल्ट बांधना है।"),
+            WordExample(thai: "ฉันรู้จักคาดเข็มขัดนิรภัย", romanization: "chǎn rúu-jàk khâat-khěm-khàt-ni-rá-phai", english: "I know about fasten a seat belt.", hindi: "मैं सीट बेल्ट बांधना के बारे में जानता/जानती हूँ।"),
+        ],
+        2399: [
+            WordExample(thai: "นี่คือปิดแก๊ส", romanization: "nîi khʉʉ bpìt-gáet", english: "This is turn off the gas.", hindi: "यह गैस बंद करना है।"),
+            WordExample(thai: "ฉันรู้จักปิดแก๊ส", romanization: "chǎn rúu-jàk bpìt-gáet", english: "I know about turn off the gas.", hindi: "मैं गैस बंद करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2400: [
+            WordExample(thai: "นี่คือระวังลื่น", romanization: "nîi khʉʉ rá-wang-lʉ̂ʉn", english: "This is beware of slipping.", hindi: "यह फिसलने से सावधान है।"),
+            WordExample(thai: "ฉันรู้จักระวังลื่น", romanization: "chǎn rúu-jàk rá-wang-lʉ̂ʉn", english: "I know about beware of slipping.", hindi: "मैं फिसलने से सावधान के बारे में जानता/जानती हूँ।"),
+        ],
+        2401: [
+            WordExample(thai: "นี่คือห้ามแตะ", romanization: "nîi khʉʉ hâam-dtàe", english: "This is do not touch.", hindi: "यह छूना मना है है।"),
+            WordExample(thai: "ฉันรู้จักห้ามแตะ", romanization: "chǎn rúu-jàk hâam-dtàe", english: "I know about do not touch.", hindi: "मैं छूना मना है के बारे में जानता/जानती हूँ।"),
+        ],
+        2402: [
+            WordExample(thai: "นี่คือเขตก่อสร้าง", romanization: "nîi khʉʉ khèt-gɔ̀ɔ-sâang", english: "This is construction zone.", hindi: "यह निर्माण क्षेत्र है।"),
+            WordExample(thai: "ฉันรู้จักเขตก่อสร้าง", romanization: "chǎn rúu-jàk khèt-gɔ̀ɔ-sâang", english: "I know about construction zone.", hindi: "मैं निर्माण क्षेत्र के बारे में जानता/जानती हूँ।"),
+        ],
+        2403: [
+            WordExample(thai: "นี่คือเบอร์ฉุกเฉิน", romanization: "nîi khʉʉ bəə-chùk-chǒen", english: "This is emergency number.", hindi: "यह आपातकालीन नंबर है।"),
+            WordExample(thai: "ฉันรู้จักเบอร์ฉุกเฉิน", romanization: "chǎn rúu-jàk bəə-chùk-chǒen", english: "I know about emergency number.", hindi: "मैं आपातकालीन नंबर के बारे में जानता/जानती हूँ।"),
+        ],
+        2404: [
+            WordExample(thai: "นี่คือแจ้งเหตุ", romanization: "nîi khʉʉ jâeng-hèt", english: "This is report an incident.", hindi: "यह घटना की सूचना देना है।"),
+            WordExample(thai: "ฉันรู้จักแจ้งเหตุ", romanization: "chǎn rúu-jàk jâeng-hèt", english: "I know about report an incident.", hindi: "मैं घटना की सूचना देना के बारे में जानता/जानती हूँ।"),
+        ],
+        2405: [
+            WordExample(thai: "นี่คือขโมย", romanization: "nîi khʉʉ khà-mooi", english: "This is thief.", hindi: "यह चोर है।"),
+            WordExample(thai: "ฉันรู้จักขโมย", romanization: "chǎn rúu-jàk khà-mooi", english: "I know about thief.", hindi: "मैं चोर के बारे में जानता/जानती हूँ।"),
+        ],
+        2406: [
+            WordExample(thai: "นี่คือไฟไหม้", romanization: "nîi khʉʉ fai-mâi", english: "This is fire; blaze.", hindi: "यह आग लगना है।"),
+            WordExample(thai: "ฉันรู้จักไฟไหม้", romanization: "chǎn rúu-jàk fai-mâi", english: "I know about fire; blaze.", hindi: "मैं आग लगना के बारे में जानता/जानती हूँ।"),
+        ],
+        2407: [
+            WordExample(thai: "นี่คือค่าใช้จ่าย", romanization: "nîi khʉʉ khâa-chái-jàai", english: "This is expense.", hindi: "यह खर्च है।"),
+            WordExample(thai: "ฉันรู้จักค่าใช้จ่าย", romanization: "chǎn rúu-jàk khâa-chái-jàai", english: "I know about expense.", hindi: "मैं खर्च के बारे में जानता/जानती हूँ।"),
+        ],
+        2408: [
+            WordExample(thai: "นี่คืองบประมาณ", romanization: "nîi khʉʉ ngóp-bprà-maan", english: "This is budget.", hindi: "यह बजट है।"),
+            WordExample(thai: "ฉันรู้จักงบประมาณ", romanization: "chǎn rúu-jàk ngóp-bprà-maan", english: "I know about budget.", hindi: "मैं बजट के बारे में जानता/जानती हूँ।"),
+        ],
+        2409: [
+            WordExample(thai: "นี่คือรายได้", romanization: "nîi khʉʉ raai-dâai", english: "This is income.", hindi: "यह आय है।"),
+            WordExample(thai: "ฉันรู้จักรายได้", romanization: "chǎn rúu-jàk raai-dâai", english: "I know about income.", hindi: "मैं आय के बारे में जानता/जानती हूँ।"),
+        ],
+        2410: [
+            WordExample(thai: "นี่คือกำไร", romanization: "nîi khʉʉ gam-rai", english: "This is profit.", hindi: "यह लाभ है।"),
+            WordExample(thai: "ฉันรู้จักกำไร", romanization: "chǎn rúu-jàk gam-rai", english: "I know about profit.", hindi: "मैं लाभ के बारे में जानता/जानती हूँ।"),
+        ],
+        2411: [
+            WordExample(thai: "นี่คือขาดทุน", romanization: "nîi khʉʉ khàat-thun", english: "This is loss.", hindi: "यह हानि है।"),
+            WordExample(thai: "ฉันรู้จักขาดทุน", romanization: "chǎn rúu-jàk khàat-thun", english: "I know about loss.", hindi: "मैं हानि के बारे में जानता/जानती हूँ।"),
+        ],
+        2412: [
+            WordExample(thai: "นี่คือส่วนลด", romanization: "nîi khʉʉ sùan-lót", english: "This is discount.", hindi: "यह छूट है।"),
+            WordExample(thai: "ฉันรู้จักส่วนลด", romanization: "chǎn rúu-jàk sùan-lót", english: "I know about discount.", hindi: "मैं छूट के बारे में जानता/जानती हूँ।"),
+        ],
+        2413: [
+            WordExample(thai: "นี่คือใบกำกับภาษี", romanization: "nîi khʉʉ bai-gam-gàp-phaa-sǐi", english: "This is tax invoice.", hindi: "यह कर चालान है।"),
+            WordExample(thai: "ฉันรู้จักใบกำกับภาษี", romanization: "chǎn rúu-jàk bai-gam-gàp-phaa-sǐi", english: "I know about tax invoice.", hindi: "मैं कर चालान के बारे में जानता/जानती हूँ।"),
+        ],
+        2414: [
+            WordExample(thai: "นี่คือภาษี", romanization: "nîi khʉʉ phaa-sǐi", english: "This is tax.", hindi: "यह कर है।"),
+            WordExample(thai: "ฉันรู้จักภาษี", romanization: "chǎn rúu-jàk phaa-sǐi", english: "I know about tax.", hindi: "मैं कर के बारे में जानता/जानती हूँ।"),
+        ],
+        2415: [
+            WordExample(thai: "นี่คือหนี้", romanization: "nîi khʉʉ nîi", english: "This is debt.", hindi: "यह ऋण है।"),
+            WordExample(thai: "ฉันรู้จักหนี้", romanization: "chǎn rúu-jàk nîi", english: "I know about debt.", hindi: "मैं ऋण के बारे में जानता/जानती हूँ।"),
+        ],
+        2416: [
+            WordExample(thai: "นี่คือกระเป๋าสตางค์", romanization: "nîi khʉʉ grà-bpǎo-sà-dtaang", english: "This is wallet.", hindi: "यह बटुआ है।"),
+            WordExample(thai: "ฉันรู้จักกระเป๋าสตางค์", romanization: "chǎn rúu-jàk grà-bpǎo-sà-dtaang", english: "I know about wallet.", hindi: "मैं बटुआ के बारे में जानता/जानती हूँ।"),
+        ],
+        2417: [
+            WordExample(thai: "นี่คือราคาพิเศษ", romanization: "nîi khʉʉ raa-khaa-phí-sèt", english: "This is special price.", hindi: "यह विशेष कीमत है।"),
+            WordExample(thai: "ฉันรู้จักราคาพิเศษ", romanization: "chǎn rúu-jàk raa-khaa-phí-sèt", english: "I know about special price.", hindi: "मैं विशेष कीमत के बारे में जानता/जानती हूँ।"),
+        ],
+        2418: [
+            WordExample(thai: "นี่คือจ่ายบิล", romanization: "nîi khʉʉ jàai-bin", english: "This is pay a bill.", hindi: "यह बिल का भुगतान करना है।"),
+            WordExample(thai: "ฉันรู้จักจ่ายบิล", romanization: "chǎn rúu-jàk jàai-bin", english: "I know about pay a bill.", hindi: "मैं बिल का भुगतान करना के बारे में जानता/जानती हूँ।"),
+        ],
+        2419: [
+            WordExample(thai: "นี่คือใบรับรองแพทย์", romanization: "nîi khʉʉ bai-ráp-rɔɔng-phâet", english: "This is medical certificate.", hindi: "यह चिकित्सकीय प्रमाणपत्र है।"),
+            WordExample(thai: "ฉันรู้จักใบรับรองแพทย์", romanization: "chǎn rúu-jàk bai-ráp-rɔɔng-phâet", english: "I know about medical certificate.", hindi: "मैं चिकित्सकीय प्रमाणपत्र के बारे में जानता/जानती हूँ।"),
+        ],
+        2420: [
+            WordExample(thai: "นี่คือตรวจสุขภาพ", romanization: "nîi khʉʉ dtrùat-sùk-khà-phâap", english: "This is health checkup.", hindi: "यह स्वास्थ्य जांच है।"),
+            WordExample(thai: "ฉันรู้จักตรวจสุขภาพ", romanization: "chǎn rúu-jàk dtrùat-sùk-khà-phâap", english: "I know about health checkup.", hindi: "मैं स्वास्थ्य जांच के बारे में जानता/जानती हूँ।"),
+        ],
+        2421: [
+            WordExample(thai: "นี่คือทันตแพทย์", romanization: "nîi khʉʉ than-dtà-phâet", english: "This is dentist.", hindi: "यह दंत चिकित्सक है।"),
+            WordExample(thai: "ฉันรู้จักทันตแพทย์", romanization: "chǎn rúu-jàk than-dtà-phâet", english: "I know about dentist.", hindi: "मैं दंत चिकित्सक के बारे में जानता/जानती हूँ।"),
+        ],
+        2422: [
+            WordExample(thai: "นี่คือจักษุแพทย์", romanization: "nîi khʉʉ jàk-sù-phâet", english: "This is eye doctor.", hindi: "यह नेत्र चिकित्सक है।"),
+            WordExample(thai: "ฉันรู้จักจักษุแพทย์", romanization: "chǎn rúu-jàk jàk-sù-phâet", english: "I know about eye doctor.", hindi: "मैं नेत्र चिकित्सक के बारे में जानता/जानती हूँ।"),
+        ],
+        2423: [
+            WordExample(thai: "นี่คืออาการแพ้", romanization: "nîi khʉʉ aa-gaan-pháe", english: "This is allergic reaction.", hindi: "यह एलर्जी के लक्षण है।"),
+            WordExample(thai: "ฉันรู้จักอาการแพ้", romanization: "chǎn rúu-jàk aa-gaan-pháe", english: "I know about allergic reaction.", hindi: "मैं एलर्जी के लक्षण के बारे में जानता/जानती हूँ।"),
+        ],
+        2424: [
+            WordExample(thai: "นี่คือผลข้างเคียง", romanization: "nîi khʉʉ phǒn-khâang-khiiang", english: "This is side effect.", hindi: "यह दुष्प्रभाव है।"),
+            WordExample(thai: "ฉันรู้จักผลข้างเคียง", romanization: "chǎn rúu-jàk phǒn-khâang-khiiang", english: "I know about side effect.", hindi: "मैं दुष्प्रभाव के बारे में जानता/जानती हूँ।"),
+        ],
+        2425: [
+            WordExample(thai: "นี่คือประกันสุขภาพ", romanization: "nîi khʉʉ bprà-gan-sùk-khà-phâap", english: "This is health insurance.", hindi: "यह स्वास्थ्य बीमा है।"),
+            WordExample(thai: "ฉันรู้จักประกันสุขภาพ", romanization: "chǎn rúu-jàk bprà-gan-sùk-khà-phâap", english: "I know about health insurance.", hindi: "मैं स्वास्थ्य बीमा के बारे में जानता/जानती हूँ।"),
+        ],
+        2426: [
+            WordExample(thai: "นี่คือกล้ามท้อง", romanization: "nîi khʉʉ glâam-thɔ́ɔng", english: "This is abdominal muscles.", hindi: "यह पेट की मांसपेशियां है।"),
+            WordExample(thai: "ฉันรู้จักกล้ามท้อง", romanization: "chǎn rúu-jàk glâam-thɔ́ɔng", english: "I know about abdominal muscles.", hindi: "मैं पेट की मांसपेशियां के बारे में जानता/जानती हूँ।"),
+        ],
+        2427: [
+            WordExample(thai: "นี่คือกระดูกสันหลัง", romanization: "nîi khʉʉ grà-dùuk-sǎn-lǎng", english: "This is spine.", hindi: "यह रीढ़ की हड्डी है।"),
+            WordExample(thai: "ฉันรู้จักกระดูกสันหลัง", romanization: "chǎn rúu-jàk grà-dùuk-sǎn-lǎng", english: "I know about spine.", hindi: "मैं रीढ़ की हड्डी के बारे में जानता/जानती हूँ।"),
+        ],
+        2428: [
+            WordExample(thai: "นี่คือต่อมไทรอยด์", romanization: "nîi khʉʉ dtɔ̀ɔm-thai-rɔɔi", english: "This is thyroid gland.", hindi: "यह थायरॉयड ग्रंथि है।"),
+            WordExample(thai: "ฉันรู้จักต่อมไทรอยด์", romanization: "chǎn rúu-jàk dtɔ̀ɔm-thai-rɔɔi", english: "I know about thyroid gland.", hindi: "मैं थायरॉयड ग्रंथि के बारे में जानता/जानती हूँ।"),
+        ],
+        2429: [
+            WordExample(thai: "นี่คือผิวหนัง", romanization: "nîi khʉʉ phǐu-nǎng", english: "This is skin.", hindi: "यह त्वचा है।"),
+            WordExample(thai: "ฉันรู้จักผิวหนัง", romanization: "chǎn rúu-jàk phǐu-nǎng", english: "I know about skin.", hindi: "मैं त्वचा के बारे में जानता/जानती हूँ।"),
+        ],
+        2430: [
+            WordExample(thai: "นี่คือรูขุมขน", romanization: "nîi khʉʉ ruu-khǔm-khǒn", english: "This is pore.", hindi: "यह रोमछिद्र है।"),
+            WordExample(thai: "ฉันรู้จักรูขุมขน", romanization: "chǎn rúu-jàk ruu-khǔm-khǒn", english: "I know about pore.", hindi: "मैं रोमछिद्र के बारे में जानता/जानती हूँ।"),
+        ],
+        2431: [
+            WordExample(thai: "นี่คือความเห็นอกเห็นใจ", romanization: "nîi khʉʉ khwaam-hěn-òk-hěn-jai", english: "This is empathy.", hindi: "यह सहानुभूति है।"),
+            WordExample(thai: "ฉันรู้จักความเห็นอกเห็นใจ", romanization: "chǎn rúu-jàk khwaam-hěn-òk-hěn-jai", english: "I know about empathy.", hindi: "मैं सहानुभूति के बारे में जानता/जानती हूँ।"),
+        ],
+        2432: [
+            WordExample(thai: "นี่คือความภาคภูมิใจ", romanization: "nîi khʉʉ khwaam-phâak-phuum-jai", english: "This is pride.", hindi: "यह गर्व है।"),
+            WordExample(thai: "ฉันรู้จักความภาคภูมิใจ", romanization: "chǎn rúu-jàk khwaam-phâak-phuum-jai", english: "I know about pride.", hindi: "मैं गर्व के बारे में जानता/जानती हूँ।"),
+        ],
+        2433: [
+            WordExample(thai: "นี่คือแรงบันดาลใจ", romanization: "nîi khʉʉ raeng-ban-daan-jai", english: "This is inspiration.", hindi: "यह प्रेरणा है।"),
+            WordExample(thai: "ฉันรู้จักแรงบันดาลใจ", romanization: "chǎn rúu-jàk raeng-ban-daan-jai", english: "I know about inspiration.", hindi: "मैं प्रेरणा के बारे में जानता/जानती हूँ।"),
+        ],
+        2434: [
+            WordExample(thai: "นี่คือความอดทน", romanization: "nîi khʉʉ khwaam-òt-thon", english: "This is patience.", hindi: "यह धैर्य है।"),
+            WordExample(thai: "ฉันรู้จักความอดทน", romanization: "chǎn rúu-jàk khwaam-òt-thon", english: "I know about patience.", hindi: "मैं धैर्य के बारे में जानता/जानती हूँ।"),
+        ],
+        2435: [
+            WordExample(thai: "นี่คือความรับผิดชอบ", romanization: "nîi khʉʉ khwaam-ráp-phìt-chɔ̂ɔp", english: "This is responsibility.", hindi: "यह जिम्मेदारी है।"),
+            WordExample(thai: "ฉันรู้จักความรับผิดชอบ", romanization: "chǎn rúu-jàk khwaam-ráp-phìt-chɔ̂ɔp", english: "I know about responsibility.", hindi: "मैं जिम्मेदारी के बारे में जानता/जानती हूँ।"),
+        ],
+        2436: [
+            WordExample(thai: "นี่คือทักษะ", romanization: "nîi khʉʉ thák-sà", english: "This is skill.", hindi: "यह कौशल है।"),
+            WordExample(thai: "ฉันรู้จักทักษะ", romanization: "chǎn rúu-jàk thák-sà", english: "I know about skill.", hindi: "मैं कौशल के बारे में जानता/जानती हूँ।"),
+        ],
+        2437: [
+            WordExample(thai: "นี่คือประสบการณ์", romanization: "nîi khʉʉ bprà-sòp-gaan", english: "This is experience.", hindi: "यह अनुभव है।"),
+            WordExample(thai: "ฉันรู้จักประสบการณ์", romanization: "chǎn rúu-jàk bprà-sòp-gaan", english: "I know about experience.", hindi: "मैं अनुभव के बारे में जानता/जानती हूँ।"),
+        ],
+        2438: [
+            WordExample(thai: "นี่คือผลตอบรับ", romanization: "nîi khʉʉ phǒn-dtɔ̀ɔp-ráp", english: "This is feedback.", hindi: "यह प्रतिक्रिया है।"),
+            WordExample(thai: "ฉันรู้จักผลตอบรับ", romanization: "chǎn rúu-jàk phǒn-dtɔ̀ɔp-ráp", english: "I know about feedback.", hindi: "मैं प्रतिक्रिया के बारे में जानता/जानती हूँ।"),
+        ],
+        2439: [
+            WordExample(thai: "นี่คือการบ้าน", romanization: "nîi khʉʉ gaan-bâan", english: "This is homework.", hindi: "यह गृहकार्य है।"),
+            WordExample(thai: "ฉันรู้จักการบ้าน", romanization: "chǎn rúu-jàk gaan-bâan", english: "I know about homework.", hindi: "मैं गृहकार्य के बारे में जानता/जानती हूँ।"),
+        ],
+        2440: [
+            WordExample(thai: "นี่คือการสอบ", romanization: "nîi khʉʉ gaan-sɔ̀ɔp", english: "This is examination.", hindi: "यह परीक्षा है।"),
+            WordExample(thai: "ฉันรู้จักการสอบ", romanization: "chǎn rúu-jàk gaan-sɔ̀ɔp", english: "I know about examination.", hindi: "मैं परीक्षा के बारे में जानता/जानती हूँ।"),
+        ],
+        2441: [
+            WordExample(thai: "นี่คือทุนการศึกษา", romanization: "nîi khʉʉ thun-gaan-sʉ̀k-sǎa", english: "This is scholarship.", hindi: "यह छात्रवृत्ति है।"),
+            WordExample(thai: "ฉันรู้จักทุนการศึกษา", romanization: "chǎn rúu-jàk thun-gaan-sʉ̀k-sǎa", english: "I know about scholarship.", hindi: "मैं छात्रवृत्ति के बारे में जानता/जानती हूँ।"),
+        ],
+        2442: [
+            WordExample(thai: "นี่คือห้องปฏิบัติการ", romanization: "nîi khʉʉ hɔ̂ng-bpà-dtì-bat-gaan", english: "This is laboratory.", hindi: "यह प्रयोगशाला है।"),
+            WordExample(thai: "ฉันรู้จักห้องปฏิบัติการ", romanization: "chǎn rúu-jàk hɔ̂ng-bpà-dtì-bat-gaan", english: "I know about laboratory.", hindi: "मैं प्रयोगशाला के बारे में जानता/जानती हूँ।"),
+        ],
+        2443: [
+            WordExample(thai: "นี่คือเครื่องคิดเลข", romanization: "nîi khʉʉ khrʉ̂ʉang-khít-lék", english: "This is calculator.", hindi: "यह कैलकुलेटर है।"),
+            WordExample(thai: "ฉันรู้จักเครื่องคิดเลข", romanization: "chǎn rúu-jàk khrʉ̂ʉang-khít-lék", english: "I know about calculator.", hindi: "मैं कैलकुलेटर के बारे में जानता/जानती हूँ।"),
+        ],
+        2444: [
+            WordExample(thai: "นี่คือไวรัสคอมพิวเตอร์", romanization: "nîi khʉʉ wai-rát-khɔɔm-phiu-dtəə", english: "This is computer virus.", hindi: "यह कंप्यूटर वायरस है।"),
+            WordExample(thai: "ฉันรู้จักไวรัสคอมพิวเตอร์", romanization: "chǎn rúu-jàk wai-rát-khɔɔm-phiu-dtəə", english: "I know about computer virus.", hindi: "मैं कंप्यूटर वायरस के बारे में जानता/जानती हूँ।"),
+        ],
+        2445: [
+            WordExample(thai: "นี่คือความเป็นส่วนตัว", romanization: "nîi khʉʉ khwaam-bpen-sùan-dtua", english: "This is privacy.", hindi: "यह गोपनीयता है।"),
+            WordExample(thai: "ฉันรู้จักความเป็นส่วนตัว", romanization: "chǎn rúu-jàk khwaam-bpen-sùan-dtua", english: "I know about privacy.", hindi: "मैं गोपनीयता के बारे में जानता/जानती हूँ।"),
+        ],
+        2446: [
+            WordExample(thai: "นี่คือสำรองข้อมูล", romanization: "nîi khʉʉ sǎm-rɔɔng-khɔ̂ɔ-muun", english: "This is back up data.", hindi: "यह डेटा का बैकअप लेना है।"),
+            WordExample(thai: "ฉันรู้จักสำรองข้อมูล", romanization: "chǎn rúu-jàk sǎm-rɔɔng-khɔ̂ɔ-muun", english: "I know about back up data.", hindi: "मैं डेटा का बैकअप लेना के बारे में जानता/जानती हूँ।"),
+        ],
+    ]
+
     // CHUNKS: sentence batches are appended as examples1, examples2, … by
     // tools/integrate_batch.py, which also maintains this merge list.
-    private static let exampleChunks: [[Int: [WordExample]]] = [examples0, examples1, examples3, examples4]
+    private static let exampleChunks: [[Int: [WordExample]]] = [examples0, examples1, examples3, examples4, examples5]
     private static let examples: [Int: [WordExample]] = exampleChunks.reduce(into: [:]) { $0.merge($1) { a, _ in a } }
 
     // How the word combines with (or is built from) other words.
