@@ -44,6 +44,19 @@ struct ThaiWidgetEntryView: View {
     @Environment(\.widgetFamily) private var family
     var entry: ThaiEntry
 
+    /// Every placement teaches a different word: the hourly sequence is
+    /// deterministic, so each widget family shifts to its own offset.
+    private var word: ThaiWord {
+        let hour = Int(entry.date.timeIntervalSince1970 / 3600)
+        switch family {
+        case .systemMedium: return Vocabulary.word(forHour: hour + 1)
+        case .systemLarge: return Vocabulary.word(forHour: hour + 2)
+        case .accessoryRectangular: return Vocabulary.word(forHour: hour + 5)
+        case .accessoryInline: return Vocabulary.word(forHour: hour + 6)
+        default: return entry.word
+        }
+    }
+
     var body: some View {
         switch family {
         case .accessoryRectangular:
@@ -51,7 +64,7 @@ struct ThaiWidgetEntryView: View {
         case .accessoryCircular:
             lockScreenCircular
         case .accessoryInline:
-            Text("\(entry.word.thai) · \(entry.word.englishMeaning)")
+            Text("\(word.thai) · \(word.englishMeaning)")
         case .systemSmall:
             smallWidget
         case .systemLarge:
@@ -64,24 +77,24 @@ struct ThaiWidgetEntryView: View {
     // Home screen — small: Thai on top, then pronunciation (HI + EN), then meaning (HI + EN)
     private var smallWidget: some View {
         VStack(spacing: 4) {
-            Text(entry.word.thai)
+            Text(word.thai)
                 .font(.system(size: 40, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
                 .foregroundStyle(.white)
-            Text(entry.word.hindiPronunciation)
+            Text(word.hindiPronunciation)
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(ThaiTheme.lightGold)
-            Text(entry.word.romanization)
+            Text(word.romanization)
                 .font(.footnote.weight(.medium))
                 .foregroundStyle(.white.opacity(0.85))
             Divider().overlay(.white.opacity(0.3))
-            Text(entry.word.hindiMeaning)
+            Text(word.hindiMeaning)
                 .font(.footnote)
                 .foregroundStyle(.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            Text(entry.word.englishMeaning)
+            Text(word.englishMeaning)
                 .font(.footnote)
                 .foregroundStyle(.white.opacity(0.85))
                 .lineLimit(1)
@@ -95,23 +108,23 @@ struct ThaiWidgetEntryView: View {
     // Home screen — medium
     private var mediumWidget: some View {
         VStack(spacing: 5) {
-            Text(entry.word.thai)
+            Text(word.thai)
                 .font(.system(size: 42, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
                 .foregroundStyle(.white)
-            Text("\(entry.word.hindiPronunciation) · \(entry.word.romanization)")
+            Text("\(word.hindiPronunciation) · \(word.romanization)")
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(ThaiTheme.lightGold)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
             Divider().overlay(.white.opacity(0.3)).padding(.horizontal, 24)
-            Text("🇮🇳 \(entry.word.hindiMeaning)")
+            Text("🇮🇳 \(word.hindiMeaning)")
                 .font(.subheadline)
                 .foregroundStyle(.white)
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-            Text("🇬🇧 \(entry.word.englishMeaning)")
+            Text("🇬🇧 \(word.englishMeaning)")
                 .font(.subheadline)
                 .foregroundStyle(.white.opacity(0.85))
                 .lineLimit(1)
@@ -126,7 +139,7 @@ struct ThaiWidgetEntryView: View {
     private var largeWidget: some View {
         VStack(spacing: 14) {
             Spacer(minLength: 0)
-            Text(entry.word.thai)
+            Text(word.thai)
                 .font(.system(size: 76, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
@@ -137,10 +150,10 @@ struct ThaiWidgetEntryView: View {
                     .font(.caption2.weight(.bold))
                     .tracking(1.2)
                     .foregroundStyle(ThaiTheme.lightGold)
-                Text(entry.word.hindiPronunciation)
+                Text(word.hindiPronunciation)
                     .font(.title2.weight(.medium))
                     .foregroundStyle(.white)
-                Text(entry.word.romanization)
+                Text(word.romanization)
                     .font(.title3.weight(.medium))
                     .foregroundStyle(.white.opacity(0.85))
             }
@@ -152,15 +165,15 @@ struct ThaiWidgetEntryView: View {
                     .font(.caption2.weight(.bold))
                     .tracking(1.2)
                     .foregroundStyle(ThaiTheme.lightGold)
-                Text(entry.word.hindiMeaning)
+                Text(word.hindiMeaning)
                     .font(.title2)
                     .foregroundStyle(.white)
-                Text(entry.word.englishMeaning)
+                Text(word.englishMeaning)
                     .font(.title3)
                     .foregroundStyle(.white.opacity(0.85))
             }
 
-            Text(entry.word.category.uppercased())
+            Text(word.category.uppercased())
                 .font(.caption2.weight(.semibold))
                 .tracking(1.2)
                 .foregroundStyle(ThaiTheme.lightGold.opacity(0.8))
@@ -175,16 +188,16 @@ struct ThaiWidgetEntryView: View {
     // iOS fixes this slot's size, so the goal is filling every point of it.
     private var lockScreenRectangular: some View {
         VStack(alignment: .center, spacing: -2) {
-            Text(entry.word.thai)
+            Text(word.thai)
                 .font(.system(size: 32, weight: .bold, design: .rounded))
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
                 .widgetAccentable()
-            Text("\(entry.word.hindiPronunciation) · \(entry.word.romanization)")
+            Text("\(word.hindiPronunciation) · \(word.romanization)")
                 .font(.system(size: 14, weight: .semibold))
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
-            Text("\(entry.word.hindiMeaning) · \(entry.word.englishMeaning)")
+            Text("\(word.hindiMeaning) · \(word.englishMeaning)")
                 .font(.system(size: 14))
                 .lineLimit(1)
                 .minimumScaleFactor(0.5)
@@ -285,16 +298,25 @@ struct EnglishFirstEntryView: View {
     @Environment(\.widgetFamily) private var family
     var entry: ThaiEntry
 
+    private var word: ThaiWord {
+        let hour = Int(entry.date.timeIntervalSince1970 / 3600)
+        switch family {
+        case .systemMedium: return Vocabulary.word(forHour: hour + 4)
+        case .accessoryRectangular: return Vocabulary.word(forHour: hour + 7)
+        default: return entry.word   // provider already offset by 3
+        }
+    }
+
     var body: some View {
         switch family {
         case .accessoryRectangular:
             VStack(alignment: .center, spacing: -2) {
-                Text(entry.word.englishMeaning)
+                Text(word.englishMeaning)
                     .font(.system(size: 22, weight: .bold, design: .rounded))
                     .widgetAccentable()
-                Text("\(entry.word.thai) · \(entry.word.romanization)")
+                Text("\(word.thai) · \(word.romanization)")
                     .font(.system(size: 15, weight: .semibold))
-                Text("\(entry.word.hindiPronunciation) · \(entry.word.hindiMeaning)")
+                Text("\(word.hindiPronunciation) · \(word.hindiMeaning)")
                     .font(.system(size: 14))
             }
             .lineLimit(1)
@@ -303,7 +325,7 @@ struct EnglishFirstEntryView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .containerBackground(for: .widget) { AccessoryWidgetBackground() }
         case .accessoryInline:
-            Text("\(entry.word.englishMeaning) · \(entry.word.thai)")
+            Text("\(word.englishMeaning) · \(word.thai)")
         default:
             homeScreen
         }
@@ -311,23 +333,23 @@ struct EnglishFirstEntryView: View {
 
     private var homeScreen: some View {
         VStack(spacing: family == .systemSmall ? 4 : 8) {
-            Text(entry.word.englishMeaning)
+            Text(word.englishMeaning)
                 .font(.system(size: family == .systemSmall ? 24 : 34, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(family == .systemSmall ? 2 : 1)
                 .foregroundStyle(ThaiTheme.lightGold)
             Divider().overlay(.white.opacity(0.3)).padding(.horizontal, 24)
-            Text(entry.word.thai)
+            Text(word.thai)
                 .font(.system(size: family == .systemSmall ? 30 : 40, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
                 .foregroundStyle(.white)
-            Text("\(entry.word.hindiPronunciation) · \(entry.word.romanization)")
+            Text("\(word.hindiPronunciation) · \(word.romanization)")
                 .font(family == .systemSmall ? .footnote.weight(.medium) : .subheadline.weight(.medium))
                 .foregroundStyle(.white.opacity(0.9))
                 .lineLimit(1)
                 .minimumScaleFactor(0.6)
-            Text("🇮🇳 \(entry.word.hindiMeaning)")
+            Text("🇮🇳 \(word.hindiMeaning)")
                 .font(family == .systemSmall ? .footnote : .subheadline)
                 .foregroundStyle(.white)
                 .lineLimit(1)

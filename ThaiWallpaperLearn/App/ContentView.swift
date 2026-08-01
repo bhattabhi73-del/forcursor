@@ -52,6 +52,9 @@ struct ContentView: View {
 
             AlphabetView()
                 .tabItem { Label("Alphabet", systemImage: "character.book.closed.fill") }
+
+            MoreView()
+                .tabItem { Label("More", systemImage: "sparkles") }
         }
         .tint(ThaiTheme.indigo)
     }
@@ -404,9 +407,10 @@ private struct WordCollection {
     let emoji: String
     let categories: Set<String>
     let extraIDs: Set<Int>
+    var thaiWords: Set<String> = []
 
     func contains(_ word: ThaiWord) -> Bool {
-        categories.contains(word.category) || extraIDs.contains(word.id)
+        categories.contains(word.category) || extraIDs.contains(word.id) || thaiWords.contains(word.thai)
     }
 
     static let all: [WordCollection] = [
@@ -428,6 +432,22 @@ private struct WordCollection {
         WordCollection(
             name: "Numbers", emoji: "🔢",
             categories: ["Numbers"],
+            extraIDs: []
+        ),
+        WordCollection(
+            name: "Days", emoji: "📅",
+            categories: [],
+            extraIDs: [],
+            thaiWords: ["วันจันทร์", "วันอังคาร", "วันพุธ", "วันพฤหัสบดี", "วันศุกร์", "วันเสาร์", "วันอาทิตย์", "สุดสัปดาห์", "วันหยุด", "วันนี้", "พรุ่งนี้", "เมื่อวาน"]
+        ),
+        WordCollection(
+            name: "Months", emoji: "🗓️",
+            categories: ["Months"],
+            extraIDs: []
+        ),
+        WordCollection(
+            name: "Colors", emoji: "🎨",
+            categories: ["Colors"],
             extraIDs: []
         ),
     ]
@@ -620,6 +640,207 @@ struct HelpView: View {
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 16))
     }
+}
+
+
+// MARK: - More: slang, Hindi-Thai cousins, fun facts
+
+struct FunWord: Identifiable {
+    let thai: String
+    let roman: String
+    let meaning: String
+    let hindi: String
+    let note: String
+    var id: String { thai }
+}
+
+struct MoreView: View {
+    var body: some View {
+        NavigationStack {
+            List {
+                NavigationLink {
+                    FunWordListView(title: "Thai Slang", words: MoreData.slang,
+                                    intro: "What Thais actually say with friends — you won't find these in textbooks.")
+                } label: {
+                    moreRow(icon: "flame.fill", color: ThaiTheme.orchid, title: "Thai Slang",
+                            subtitle: "จริงดิ, 555, ชิวๆ — talk like a local")
+                }
+                .listRowBackground(ThaiTheme.cream)
+
+                NavigationLink {
+                    FunWordListView(title: "Hindi–Thai Cousins", words: MoreData.cousins,
+                                    intro: "Thai borrowed hundreds of words from Sanskrit — so Hindi speakers already half-know them. Same root, slightly different sound.")
+                } label: {
+                    moreRow(icon: "link", color: ThaiTheme.indigo, title: "Hindi–Thai Cousins",
+                            subtitle: "ภาษา = भाषा, ครू = गुरु — words you already know")
+                }
+                .listRowBackground(ThaiTheme.cream)
+
+                NavigationLink {
+                    FactsView()
+                } label: {
+                    moreRow(icon: "lightbulb.fill", color: ThaiTheme.gold, title: "Must-Know Thai Facts",
+                            subtitle: "Why Thai is easier than you think")
+                }
+                .listRowBackground(ThaiTheme.cream)
+            }
+            .listStyle(.insetGrouped)
+            .scrollContentBackground(.hidden)
+            .background(ThaiTheme.sand)
+            .navigationTitle("More")
+        }
+    }
+
+    private func moreRow(icon: String, color: Color, title: String, subtitle: String) -> some View {
+        HStack(spacing: 14) {
+            Image(systemName: icon)
+                .font(.title3)
+                .foregroundStyle(.white)
+                .frame(width: 40, height: 40)
+                .background(color.gradient, in: RoundedRectangle(cornerRadius: 10))
+            VStack(alignment: .leading, spacing: 2) {
+                Text(title).font(.headline).foregroundStyle(ThaiTheme.ink)
+                Text(subtitle).font(.caption).foregroundStyle(.secondary)
+            }
+        }
+        .padding(.vertical, 4)
+    }
+}
+
+struct FunWordListView: View {
+    let title: String
+    let words: [FunWord]
+    let intro: String
+
+    var body: some View {
+        List {
+            Section {
+                Text(intro)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .listRowBackground(ThaiTheme.parchment)
+            }
+            ForEach(words) { word in
+                VStack(alignment: .leading, spacing: 4) {
+                    HStack(spacing: 10) {
+                        Text(word.thai)
+                            .font(.title3.weight(.bold))
+                            .foregroundStyle(ThaiTheme.ink)
+                        Text(word.roman)
+                            .font(.subheadline)
+                            .foregroundStyle(ThaiTheme.indigo)
+                        Spacer()
+                        Button {
+                            SpeechService.shared.speak(thai: word.thai, romanization: word.roman)
+                        } label: {
+                            Image(systemName: "speaker.wave.2.fill")
+                                .font(.caption)
+                                .foregroundStyle(ThaiTheme.indigo)
+                        }
+                        .buttonStyle(.borderless)
+                    }
+                    Text("🇬🇧 \(word.meaning) · 🇮🇳 \(word.hindi)")
+                        .font(.subheadline)
+                        .foregroundStyle(ThaiTheme.ink)
+                    if !word.note.isEmpty {
+                        Text(word.note)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .padding(.vertical, 3)
+                .listRowBackground(ThaiTheme.cream)
+            }
+        }
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(ThaiTheme.sand)
+        .navigationTitle(title)
+    }
+}
+
+struct FactsView: View {
+    var body: some View {
+        List {
+            ForEach(Array(MoreData.facts.enumerated()), id: \.offset) { _, fact in
+                VStack(alignment: .leading, spacing: 6) {
+                    Text(fact.0)
+                        .font(.headline)
+                        .foregroundStyle(ThaiTheme.ink)
+                    Text(fact.1)
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                .padding(.vertical, 4)
+                .listRowBackground(ThaiTheme.cream)
+            }
+        }
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(ThaiTheme.sand)
+        .navigationTitle("Must-Know Facts")
+    }
+}
+
+enum MoreData {
+    static let slang: [FunWord] = [
+        FunWord(thai: "555", roman: "hâa hâa hâa", meaning: "hahaha (laughing)", hindi: "हाहाहा", note: "ห้า (5) sounds like \"ha\" — Thais type 555 instead of lol"),
+        FunWord(thai: "จริงดิ", roman: "jing dì", meaning: "really?!", hindi: "सच में?!", note: "Casual shortening of จริงหรือ"),
+        FunWord(thai: "ชิวๆ", roman: "chiu-chiu", meaning: "chill / relaxed", hindi: "आराम से / चिल", note: "From English \"chill\""),
+        FunWord(thai: "เจ๋ง", roman: "jěng", meaning: "cool / awesome", hindi: "ज़बरदस्त", note: ""),
+        FunWord(thai: "ปัง", roman: "pang", meaning: "amazing / on point", hindi: "कमाल", note: "Literally the sound \"bang!\""),
+        FunWord(thai: "แซ่บ", roman: "sâep", meaning: "spicy-delicious / hot (person)", hindi: "मस्त / तीखा", note: "Isaan (northeastern) word — used everywhere now"),
+        FunWord(thai: "ฟิน", roman: "fin", meaning: "blissful / so satisfying", hindi: "मज़ा आ गया", note: "From English \"finale\""),
+        FunWord(thai: "งง", roman: "ngong", meaning: "confused", hindi: "उलझन में", note: "Super common — \"ngong mâak\" = totally confused"),
+        FunWord(thai: "เว่อร์", roman: "wôe", meaning: "over the top / exaggerating", hindi: "ज़्यादा ही", note: "From English \"over\""),
+        FunWord(thai: "กิ๊ก", roman: "kík", meaning: "casual fling / side crush", hindi: "अफ़ेयर / चक्कर", note: ""),
+        FunWord(thai: "เท", roman: "thee", meaning: "to dump / stand someone up", hindi: "छोड़ देना / धोखा", note: "Literally \"to pour out\""),
+        FunWord(thai: "มโน", roman: "má-noo", meaning: "to imagine things / delusional", hindi: "मन में ही सोचना", note: "From Sanskrit มโน = मन (mind)! Slang and cousin-word at once"),
+        FunWord(thai: "สายเปย์", roman: "sǎai pee", meaning: "big spender (on someone)", hindi: "दिल खोलकर ख़र्च करने वाला", note: "สาย = type of person + \"pay\""),
+        FunWord(thai: "เกรงใจ", roman: "kreeng-jai", meaning: "not wanting to trouble anyone", hindi: "संकोच", note: "Not slang but essential — the most Thai feeling there is; untranslatable"),
+    ]
+
+    static let cousins: [FunWord] = [
+        FunWord(thai: "ภาษา", roman: "phaa-sǎa", meaning: "language", hindi: "भाषा (bhāṣā)", note: "Same Sanskrit root — identical meaning"),
+        FunWord(thai: "ครู", roman: "khruu", meaning: "teacher", hindi: "गुरु (guru)", note: "गुरु → khruu"),
+        FunWord(thai: "อาหาร", roman: "aa-hǎan", meaning: "food", hindi: "आहार (āhār)", note: "Same word, same meaning"),
+        FunWord(thai: "อากาศ", roman: "aa-kàat", meaning: "weather / air", hindi: "आकाश (ākāsh)", note: "In Hindi it means sky; in Thai, weather"),
+        FunWord(thai: "ราชา", roman: "raa-chaa", meaning: "king", hindi: "राजा (rājā)", note: ""),
+        FunWord(thai: "มนุษย์", roman: "má-nút", meaning: "human", hindi: "मनुष्य (manuṣya)", note: ""),
+        FunWord(thai: "ชีวิต", roman: "chii-wít", meaning: "life", hindi: "जीवित (jīvit)", note: "जीवित = alive; Thai = life"),
+        FunWord(thai: "สุข", roman: "sùk", meaning: "happiness", hindi: "सुख (sukh)", note: "As in สุขุมวิท Sukhumvit road!"),
+        FunWord(thai: "ทุกข์", roman: "thúk", meaning: "suffering", hindi: "दुःख (duḥkh)", note: "सुख-दुःख both crossed over"),
+        FunWord(thai: "กรรม", roman: "kam", meaning: "karma / deed", hindi: "कर्म (karma)", note: ""),
+        FunWord(thai: "ธรรม", roman: "tham", meaning: "dharma / righteousness", hindi: "धर्म (dharm)", note: ""),
+        FunWord(thai: "บุญ", roman: "bun", meaning: "merit / good deed", hindi: "पुण्य (puṇya)", note: ""),
+        FunWord(thai: "เทวดา", roman: "thee-wá-daa", meaning: "deity / angel", hindi: "देवता (devtā)", note: ""),
+        FunWord(thai: "อาทิตย์", roman: "aa-thít", meaning: "sun / Sunday / week", hindi: "आदित्य (āditya)", note: "आदित्य = the sun god"),
+        FunWord(thai: "จันทร์", roman: "jan", meaning: "moon / Monday", hindi: "चन्द्र (chandra)", note: "All Thai weekday names are Sanskrit planets, like Hindi!"),
+        FunWord(thai: "สิงห์", roman: "sǐng", meaning: "lion", hindi: "सिंह (siṃha)", note: "Yes — Singha beer means Lion, same as Singh"),
+        FunWord(thai: "มหา", roman: "má-hǎa", meaning: "great", hindi: "महा (mahā)", note: "มหานคร = महानगर = metropolis"),
+        FunWord(thai: "นคร", roman: "ná-khon", meaning: "city", hindi: "नगर (nagar)", note: "City names: Nakhon Pathom etc."),
+        FunWord(thai: "รัตน์", roman: "rát", meaning: "jewel", hindi: "रत्न (ratna)", note: "In Bangkok's full name: Ratanakosin"),
+        FunWord(thai: "วิชา", roman: "wí-chaa", meaning: "subject / knowledge", hindi: "विद्या (vidyā)", note: ""),
+        FunWord(thai: "เศรษฐี", roman: "sèet-thǐi", meaning: "rich person", hindi: "सेठ (seṭh)", note: "श्रेष्ठी → seth → sèet-thǐi"),
+        FunWord(thai: "สัปดาห์", roman: "sàp-daa", meaning: "week", hindi: "सप्ताह (saptāh)", note: ""),
+        FunWord(thai: "ภูมิ", roman: "phuum", meaning: "land / ground", hindi: "भूमि (bhūmi)", note: "Airport: Suvarnabhumi = सुवर्णभूमि, golden land"),
+        FunWord(thai: "นาม", roman: "naam", meaning: "name (formal)", hindi: "नाम (nām)", note: "นามสกุล = surname"),
+    ]
+
+    static let facts: [(String, String)] = [
+        ("Thai grammar is EASY", "No verb conjugation, no plurals, no articles, no gender agreement. \"I go yesterday\" is perfectly correct Thai. The hard part is only tones and script — grammar takes days, not years."),
+        ("One syllable, five meanings", "The classic: ไม้ใหม่ไม่ไหม้ใช่ไหม (mái mài mâi mâi châi mǎi) = \"New wood doesn't burn, right?\" — five different tones of \"mai\" in one sentence."),
+        ("555 = hahaha", "The number 5 is pronounced \"hâa\", so Thais type 555 to laugh online. 5555555 = laughing hard."),
+        ("ไปไหน is a greeting", "\"Where are you going?\" (pai nǎi) is a friendly hello, like Hindi's \"और कहाँ चले?\" — nobody expects a real answer."),
+        ("No word for yes", "Thai answers with the verb: \"Do you want rice?\" → \"Want\" (เอา) or \"Not want\" (ไม่เอา). ใช่ only confirms facts."),
+        ("Bangkok has the world's longest city name", "The full ceremonial name is 169 letters — Krung Thep Maha Nakhon Amon Rattanakosin... and it's full of Sanskrit a Hindi speaker can decode: महानगर, रत्न, इन्द्र, अयोध्या!"),
+        ("Thai script is Devanagari's cousin", "Both descend from ancient Brahmi script. The consonant order ก ข ค ง... follows the same varga system as क ख ग घ... — that's why our Alphabet tab shows the cousins."),
+        ("ครับ/ค่ะ makes everything polite", "Men end sentences with khráp, women with khâ. One syllable turns any sentence polite — the single highest-value habit for a visitor."),
+        ("Spaces separate sentences, not words", "Thaiiswrittenlikethis — words run together, spaces mark sentence-like pauses. That's why learning to spot word boundaries (our tappable sentences!) matters."),
+        ("Weekdays are planets, like Hindi", "Monday = วันจันทร์ (चन्द्र moon), Tuesday = อังคาร (मंगल Mars), Sunday = อาทิตย์ (आदित्य sun). If you know Hindi weekdays, you know Thai ones."),
+        ("เกรงใจ — the most Thai word", "Kreng-jai: reluctance to impose on anyone. Declining a favor so the other person isn't troubled. Understand this and you understand Thai culture."),
+        ("Nicknames rule", "Every Thai has a short nickname (often unrelated to their real name): Bird, Golf, Fon, Nok. Ask ชื่อเล่นอะไร (What's your nickname?) — it's friendlier than formal names."),
+    ]
 }
 
 #Preview {
