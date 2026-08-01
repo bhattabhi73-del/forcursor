@@ -30,6 +30,23 @@ enum ThaiTheme {
         colors: [Color(red: 0.05, green: 0.20, blue: 0.16),
                  Color(red: 0.10, green: 0.12, blue: 0.28)],
         startPoint: .topLeading, endPoint: .bottomTrailing)
+
+    // MARK: Layout v2 — Liquid Glass surfaces + Caladea display face
+
+    /// Caladea (SIL OFL) is the metric-compatible stand-in for Cambria;
+    /// registered from the app bundle at launch. Use for display text only —
+    /// it lacks the caron tone vowels (ǎ ǐ ǒ ǔ), so romanization stays in
+    /// the system face.
+    static func display(_ size: CGFloat, bold: Bool = false) -> Font {
+        .custom(bold ? "Caladea-Bold" : "Caladea", size: size)
+    }
+
+    /// Soft lavender→sand→jade wash the glass cards float on.
+    static let glassWash = LinearGradient(
+        colors: [Color(red: 0.910, green: 0.894, blue: 0.957),
+                 Color(red: 0.957, green: 0.929, blue: 0.867),
+                 Color(red: 0.894, green: 0.933, blue: 0.914)],
+        startPoint: .topLeading, endPoint: .bottomTrailing)
 }
 
 /// A single vocabulary entry shown in the app and on the widget.
@@ -93,6 +110,8 @@ final class ProgressStore {
 
     func box(for id: Int) -> Int { progress[id]?.box ?? 0 }
 
+    func nextReview(for id: Int) -> Date? { progress[id]?.nextReview }
+
     func isDue(_ id: Int) -> Bool {
         guard let p = progress[id], p.box > 0 else { return false }
         return p.nextReview <= Date()
@@ -110,6 +129,38 @@ final class ProgressStore {
         p.nextReview = Date().addingTimeInterval(Self.intervals[p.box])
         progress[id] = p
         save()
+        recordPracticeToday()
+    }
+
+    // MARK: Daily practice streak
+
+    private let streakKey = "practiceDays.v1"
+
+    private func recordPracticeToday() {
+        var days = Set(UserDefaults.standard.array(forKey: streakKey) as? [Double] ?? [])
+        days.insert(Calendar.current.startOfDay(for: Date()).timeIntervalSince1970)
+        UserDefaults.standard.set(Array(days), forKey: streakKey)
+    }
+
+    /// Consecutive practice days ending today — or yesterday, so a streak
+    /// isn't shown as broken before today's session happens.
+    func currentStreak() -> Int {
+        let stored = (UserDefaults.standard.array(forKey: streakKey) as? [Double] ?? [])
+        guard !stored.isEmpty else { return 0 }
+        let cal = Calendar.current
+        let days = Set(stored.map { cal.startOfDay(for: Date(timeIntervalSince1970: $0)) })
+        var cursor = cal.startOfDay(for: Date())
+        if !days.contains(cursor) {
+            guard let yesterday = cal.date(byAdding: .day, value: -1, to: cursor),
+                  days.contains(yesterday) else { return 0 }
+            cursor = yesterday
+        }
+        var count = 0
+        while days.contains(cursor), let prev = cal.date(byAdding: .day, value: -1, to: cursor) {
+            count += 1
+            cursor = prev
+        }
+        return count
     }
 
     /// (due for review, never seen, known = box 3+)

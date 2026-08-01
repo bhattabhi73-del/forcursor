@@ -28,6 +28,32 @@ struct FlashcardView: View {
     @State private var revealed = false
     @State private var detail: Detail?
 
+    // One "session" = today's due reviews plus the capped new words; grading
+    // that many cards earns the completion screen (peak-end moment).
+    @State private var sessionTarget = FlashcardView.initialSessionTarget()
+    @State private var sessionReviewed = 0
+    @State private var sessionCorrect = 0
+    @State private var movedUp: [String] = []
+    @State private var showComplete = false
+
+    static func initialSessionTarget() -> Int {
+        let stats = ProgressStore.shared.counts(in: Vocabulary.all)
+        return max(stats.due + min(stats.fresh, 20), 5)
+    }
+
+    #if DEBUG
+    // `simctl launch … -previewSessionComplete` opens the celebration screen
+    // with sample stats — simulator screenshots without grading 20 cards.
+    init() {
+        if ProcessInfo.processInfo.arguments.contains("-previewSessionComplete") {
+            _showComplete = State(initialValue: true)
+            _sessionReviewed = State(initialValue: 12)
+            _sessionCorrect = State(initialValue: 9)
+            _movedUp = State(initialValue: ["ครู", "อาหาร"])
+        }
+    }
+    #endif
+
     private var current: ThaiWord { deck[index] }
 
     var body: some View {
@@ -100,6 +126,24 @@ struct FlashcardView: View {
             }
             .navigationTitle("Practice")
             .background(ThaiTheme.sand)
+            .fullScreenCover(isPresented: $showComplete) {
+                SessionCompleteView(
+                    reviewed: sessionReviewed,
+                    correct: sessionCorrect,
+                    movedUp: movedUp,
+                    dueTomorrow: Vocabulary.all.filter {
+                        let p = ProgressStore.shared
+                        return p.box(for: $0.id) > 0 && !p.isDue($0.id)
+                            && p.nextReview(for: $0.id).map {
+                                Calendar.current.isDateInTomorrow($0) } == true
+                    }.count
+                ) {
+                    // Next celebration after ~another day's worth of cards.
+                    sessionTarget = sessionReviewed + 20
+                    showComplete = false
+                    advance()
+                }
+            }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -512,8 +556,20 @@ struct FlashcardView: View {
     /// strengthen memory) and moves on. Missed words come back tomorrow;
     /// known words come back at expanding intervals.
     private func grade(_ known: Bool) {
+        let before = ProgressStore.shared.box(for: current.id)
         ProgressStore.shared.record(id: current.id, known: known)
-        advance()
+        sessionReviewed += 1
+        if known {
+            sessionCorrect += 1
+            if ProgressStore.shared.box(for: current.id) > before {
+                movedUp.append(current.thai)
+            }
+        }
+        if sessionReviewed >= sessionTarget {
+            showComplete = true
+        } else {
+            advance()
+        }
     }
 
     private func advance() {
@@ -608,6 +664,98 @@ struct FlashcardView: View {
         }
         .padding(12)
         .background(ThaiTheme.sand, in: RoundedRectangle(cornerRadius: 14))
+    }
+}
+
+// MARK: - Session complete — the peak-end moment
+
+/// Shown after finishing a session (due reviews + today's new words).
+/// The celebration itself teaches: เก่งมาก is a dictionary phrase.
+struct SessionCompleteView: View {
+    let reviewed: Int
+    let correct: Int
+    let movedUp: [String]
+    let dueTomorrow: Int
+    let onDone: () -> Void
+
+    @State private var burst = false
+
+    var body: some View {
+        VStack(spacing: 14) {
+            Spacer()
+
+            Text("🎉")
+                .font(.system(size: 56))
+                .scaleEffect(burst ? 1 : 0.3)
+                .animation(.spring(duration: 0.5, bounce: 0.5), value: burst)
+
+            Text("เก่งมาก!")
+                .font(.system(size: 44, weight: .bold, design: .rounded))
+                .foregroundStyle(ThaiTheme.ink)
+            Text("kèng mâak — great job!")
+                .font(.headline)
+                .foregroundStyle(ThaiTheme.indigo)
+            Text("You showed up today. That's the whole game.")
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+
+            HStack(spacing: 0) {
+                stat("\(reviewed)", "Reviewed", ThaiTheme.gold)
+                stat("\(correct)", "Got it", ThaiTheme.jade)
+                stat("\(ProgressStore.shared.currentStreak())", "Day streak", ThaiTheme.orchid)
+            }
+            .padding(.vertical, 16)
+            .frame(maxWidth: .infinity)
+            .thaiGlass(cornerRadius: 20)
+            .padding(.horizontal)
+
+            if !movedUp.isEmpty {
+                Text("↑ \(movedUp.count) word\(movedUp.count == 1 ? "" : "s") moved up a box — \(movedUp.prefix(3).joined(separator: " · ")) \(movedUp.count > 3 ? "…" : "")almost yours.")
+                    .font(.footnote.weight(.medium))
+                    .foregroundStyle(ThaiTheme.jade)
+                    .multilineTextAlignment(.center)
+                    .padding(.horizontal, 28)
+            }
+
+            if dueTomorrow > 0 {
+                Text("\(dueTomorrow) word\(dueTomorrow == 1 ? "" : "s") come due tomorrow — see you then 🌅")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(ThaiTheme.deepIndigo)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 11)
+                    .thaiGlass(cornerRadius: 16)
+            }
+
+            Spacer()
+
+            Button(action: onDone) {
+                Text("Done")
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 14)
+            }
+            .background(ThaiTheme.indigo.opacity(0.92), in: RoundedRectangle(cornerRadius: 18))
+            .shadow(color: ThaiTheme.indigo.opacity(0.35), radius: 8, y: 4)
+            .padding(.horizontal)
+            .padding(.bottom, 20)
+        }
+        .glassWashBackground()
+        .onAppear { burst = true }
+    }
+
+    private func stat(_ number: String, _ caption: String, _ color: Color) -> some View {
+        VStack(spacing: 2) {
+            Text(number)
+                .font(.system(size: 30, weight: .bold, design: .rounded))
+                .monospacedDigit()
+                .foregroundStyle(color)
+            Text(caption.uppercased())
+                .font(.caption2.weight(.bold))
+                .tracking(1)
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity)
     }
 }
 

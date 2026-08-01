@@ -60,11 +60,52 @@ struct ContentView: View {
     }
 }
 
+// MARK: - Liquid Glass surface (Layout v2)
+
+/// Frosted glass card: Apple's real Liquid Glass on iOS 26+, a material
+/// with a hairline highlight as the visually-matching fallback below.
+struct ThaiGlass: ViewModifier {
+    var cornerRadius: CGFloat = 24
+
+    func body(content: Content) -> some View {
+        if #available(iOS 26.0, *) {
+            content.glassEffect(in: .rect(cornerRadius: cornerRadius))
+        } else {
+            content
+                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius))
+                .overlay(RoundedRectangle(cornerRadius: cornerRadius)
+                    .stroke(.white.opacity(0.55), lineWidth: 1))
+        }
+    }
+}
+
+extension View {
+    func thaiGlass(cornerRadius: CGFloat = 24) -> some View {
+        modifier(ThaiGlass(cornerRadius: cornerRadius))
+    }
+
+    /// The wash the glass floats on: sand gradient plus two soft color blooms.
+    func glassWashBackground() -> some View {
+        background(
+            ZStack {
+                ThaiTheme.glassWash
+                Circle().fill(ThaiTheme.gold.opacity(0.22)).frame(width: 300).blur(radius: 60)
+                    .offset(x: -130, y: -160)
+                Circle().fill(ThaiTheme.indigo.opacity(0.16)).frame(width: 340).blur(radius: 70)
+                    .offset(x: 150, y: 220)
+            }
+            .ignoresSafeArea()
+        )
+    }
+}
+
 // MARK: - Today (word of the day)
 
 struct TodayView: View {
     @State private var word: ThaiWord = Vocabulary.word(forDayOffset: Self.dayOffset())
     @State private var showWidgetHelp = false
+    @State private var streak = ProgressStore.shared.currentStreak()
+    @State private var dueCounts = ProgressStore.shared.counts(in: Vocabulary.all)
 
     static func dayOffset() -> Int {
         // Days since a fixed reference so everyone sees the same daily word.
@@ -72,41 +113,48 @@ struct TodayView: View {
         return days
     }
 
+    private static let thaiWeekday: [String] = [
+        "วันอาทิตย์", "วันจันทร์", "วันอังคาร", "วันพุธ", "วันพฤหัสบดี", "วันศุกร์", "วันเสาร์",
+    ]
+
+    private var dayLine: String {
+        let weekday = Calendar.current.component(.weekday, from: Date())
+        let english = Date().formatted(.dateTime.weekday(.wide))
+        return "\(Self.thaiWeekday[weekday - 1]) · \(english)"
+    }
+
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 24) {
-                    Text("Word of the day")
-                        .font(.subheadline)
-                        .foregroundStyle(.secondary)
-                        .textCase(.uppercase)
-                        .tracking(1.5)
-                        .padding(.top, 8)
+                VStack(spacing: 14) {
+                    HStack {
+                        Text(dayLine.uppercased())
+                            .font(.caption.weight(.bold))
+                            .tracking(1.5)
+                            .foregroundStyle(.secondary)
+                        Spacer()
+                        if streak > 0 {
+                            Label("\(streak)-day streak", systemImage: "flame.fill")
+                                .font(.caption.weight(.bold))
+                                .foregroundStyle(ThaiTheme.gold)
+                                .padding(.horizontal, 12)
+                                .padding(.vertical, 6)
+                                .thaiGlass(cornerRadius: 14)
+                        }
+                    }
+                    .padding(.horizontal)
+                    .padding(.top, 4)
 
                     WordCard(word: word)
 
-                    Button {
-                        withAnimation(.spring(duration: 0.35)) {
-                            word = Vocabulary.randomWord()
-                        }
-                    } label: {
-                        Image(systemName: "shuffle")
-                            .font(.title2.weight(.semibold))
-                            .foregroundStyle(.white)
-                            .frame(width: 64, height: 64)
-                            .background(
-                                Circle().fill(
-                                    LinearGradient(colors: [ThaiTheme.gold, ThaiTheme.orchid],
-                                                   startPoint: .topLeading, endPoint: .bottomTrailing)
-                                )
-                            )
-                            .shadow(color: ThaiTheme.gold.opacity(0.45), radius: 10, y: 4)
-                    }
+                    practiceStrip
+
+                    actionRow
                 }
-                .padding(.bottom, 32)
+                .padding(.bottom, 24)
             }
+            .glassWashBackground()
             .navigationTitle("เรียนภาษาไทย")
-            .background(ThaiTheme.sand)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -117,7 +165,62 @@ struct TodayView: View {
                 }
             }
             .sheet(isPresented: $showWidgetHelp) { HelpView() }
+            .onAppear {
+                streak = ProgressStore.shared.currentStreak()
+                dueCounts = ProgressStore.shared.counts(in: Vocabulary.all)
+            }
         }
+    }
+
+    /// SRS status surfaced where the day starts (tap → Practice tab).
+    private var practiceStrip: some View {
+        HStack(spacing: 8) {
+            Circle().fill(ThaiTheme.jade).frame(width: 8, height: 8)
+            Text(dueCounts.due > 0
+                 ? "Practice today · \(dueCounts.due) due, \(min(dueCounts.fresh, 20)) new"
+                 : "Practice today · \(min(dueCounts.fresh, 20)) new words waiting")
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(ThaiTheme.ink)
+            Spacer()
+            Image(systemName: "chevron.right")
+                .font(.caption.weight(.bold))
+                .foregroundStyle(.secondary)
+        }
+        .padding(.horizontal, 14)
+        .padding(.vertical, 12)
+        .thaiGlass(cornerRadius: 16)
+        .padding(.horizontal)
+    }
+
+    /// Primary actions live in the thumb zone, not mid-card.
+    private var actionRow: some View {
+        HStack(spacing: 10) {
+            Button {
+                SpeechService.shared.speak(thai: word.thai, romanization: word.romanization)
+            } label: {
+                Label("Play", systemImage: "speaker.wave.2.fill")
+                    .font(.headline)
+                    .foregroundStyle(.white)
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 14)
+            }
+            .background(ThaiTheme.indigo.opacity(0.92), in: RoundedRectangle(cornerRadius: 18))
+            .shadow(color: ThaiTheme.indigo.opacity(0.35), radius: 8, y: 4)
+
+            Button {
+                withAnimation(.spring(duration: 0.35)) {
+                    word = Vocabulary.randomWord()
+                }
+            } label: {
+                Image(systemName: "shuffle")
+                    .font(.title3.weight(.semibold))
+                    .foregroundStyle(ThaiTheme.orchid)
+                    .frame(width: 52, height: 52)
+                    .thaiGlass(cornerRadius: 18)
+            }
+        }
+        .padding(.horizontal)
+        .padding(.top, 2)
     }
 }
 
@@ -336,46 +439,38 @@ struct WordCard: View {
     var compact: Bool = false
 
     var body: some View {
-        VStack(spacing: compact ? 8 : 16) {
+        VStack(spacing: compact ? 8 : 14) {
+            Text(word.category.uppercased())
+                .font(.caption2.weight(.bold))
+                .tracking(1.4)
+                .foregroundStyle(Color(red: 0.541, green: 0.373, blue: 0.059))
+                .padding(.horizontal, 12)
+                .padding(.vertical, 5)
+                .background(ThaiTheme.gold.opacity(0.16), in: Capsule())
+
             Text(word.thai)
-                .font(.system(size: compact ? 48 : 72, weight: .bold, design: .rounded))
+                .font(.system(size: compact ? 48 : 68, weight: .bold, design: .rounded))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
                 .foregroundStyle(ThaiTheme.ink)
 
-            Button {
-                SpeechService.shared.speak(thai: word.thai, romanization: word.romanization)
-            } label: {
-                Label("Play", systemImage: "speaker.wave.2.fill")
-                    .font(.subheadline.weight(.semibold))
-                    .foregroundStyle(.white)
-                    .padding(.horizontal, 16)
-                    .padding(.vertical, 8)
-            }
-            .background(ThaiTheme.indigo, in: Capsule())
-
-            VStack(spacing: 6) {
+            VStack(spacing: 5) {
                 pronRow(flag: "🇮🇳", label: "HI", value: word.hindiPronunciation)
                 pronRow(flag: "🔤", label: "EN", value: word.romanization)
             }
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 10)
+            .background(.white.opacity(0.42), in: RoundedRectangle(cornerRadius: 14))
+            .overlay(RoundedRectangle(cornerRadius: 14).stroke(.white.opacity(0.5), lineWidth: 1))
 
-            Divider().padding(.horizontal, 40)
-
-            VStack(spacing: 6) {
+            VStack(spacing: 4) {
                 meaningRow(flag: "🇮🇳", value: word.hindiMeaning)
                 meaningRow(flag: "🇬🇧", value: word.englishMeaning)
             }
-
-            Text(word.category.uppercased())
-                .font(.caption2.weight(.bold))
-                .tracking(1.2)
-                .foregroundStyle(ThaiTheme.gold)
-                .padding(.top, 4)
         }
-        .padding(compact ? 16 : 28)
+        .padding(compact ? 16 : 22)
         .frame(maxWidth: .infinity)
-        .background(ThaiTheme.cream, in: RoundedRectangle(cornerRadius: 24))
-        .overlay(RoundedRectangle(cornerRadius: 24).stroke(ThaiTheme.gold.opacity(0.3), lineWidth: 1))
+        .thaiGlass(cornerRadius: 24)
         .shadow(color: ThaiTheme.ink.opacity(0.10), radius: 12, y: 6)
         .padding(.horizontal)
     }
@@ -395,8 +490,10 @@ struct WordCard: View {
     private func meaningRow(flag: String, value: String) -> some View {
         HStack(spacing: 8) {
             Text(flag)
+            // Caladea (the Cambria stand-in) carries the meaning text; the
+            // Devanagari half falls through to the system face by design.
             Text(value)
-                .font(.title3)
+                .font(ThaiTheme.display(21))
                 .multilineTextAlignment(.center)
                 .foregroundStyle(ThaiTheme.ink)
         }
