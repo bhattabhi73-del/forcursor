@@ -25,8 +25,10 @@ struct FlashcardView: View {
         return due + newToday + seen + backlog
     }
     @State private var index = 0
-    @State private var revealed = false
+    @State private var isFlipped = false
+    @State private var showDetails = false
     @State private var detail: Detail?
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
 
     // One "session" = today's due reviews plus the capped new words; grading
     // that many cards earns the completion screen (peak-end moment).
@@ -51,6 +53,9 @@ struct FlashcardView: View {
             _sessionCorrect = State(initialValue: 9)
             _movedUp = State(initialValue: ["ครู", "อาหาร"])
         }
+        if ProcessInfo.processInfo.arguments.contains("-flipped") {
+            _isFlipped = State(initialValue: true)
+        }
     }
     #endif
 
@@ -58,74 +63,26 @@ struct FlashcardView: View {
 
     var body: some View {
         NavigationStack {
-            VStack(spacing: 16) {
-                ZStack {
-                    RoundedRectangle(cornerRadius: 28)
-                        .fill(ThaiTheme.cream)
-                        .overlay(RoundedRectangle(cornerRadius: 28).stroke(ThaiTheme.gold.opacity(0.3), lineWidth: 1))
-                        .shadow(color: ThaiTheme.ink.opacity(0.12), radius: 16, y: 8)
-
-                    if revealed {
-                        revealSide.transition(.opacity)
-                    } else {
-                        frontSide.transition(.opacity)
-                    }
-                }
-                .padding(.horizontal)
-                .simultaneousGesture(
-                    DragGesture(minimumDistance: 30)
-                        .onEnded { value in
-                            guard abs(value.translation.width) > abs(value.translation.height) else { return }
-                            if value.translation.width < -50 {
-                                advance()
-                            } else if value.translation.width > 50 {
-                                goBack()
-                            }
-                        }
-                )
-
-                HStack {
-                    Button {
-                        goBack()
-                    } label: {
-                        Image(systemName: "chevron.left")
-                            .font(.title3.weight(.bold))
-                            .foregroundStyle(ThaiTheme.indigo)
-                            .frame(width: 54, height: 54)
-                            .background(ThaiTheme.cream, in: Circle())
-                            .overlay(Circle().stroke(ThaiTheme.gold.opacity(0.4), lineWidth: 1))
-                    }
-
-                    Spacer()
-
-                    VStack(spacing: 2) {
-                        Text("\(index + 1) / \(deck.count)")
-                            .font(.headline)
-                            .foregroundStyle(ThaiTheme.ink)
-                        let stats = ProgressStore.shared.counts(in: Vocabulary.all)
-                        Text("\(stats.due) due · \(stats.fresh) new · \(stats.known) known")
-                            .font(.caption2)
-                            .foregroundStyle(.secondary)
-                    }
-
-                    Spacer()
-
-                    Button {
-                        advance()
-                    } label: {
-                        Image(systemName: "chevron.right")
-                            .font(.title3.weight(.bold))
-                            .foregroundStyle(.white)
-                            .frame(width: 54, height: 54)
-                            .background(ThaiTheme.indigo.gradient, in: Circle())
-                            .shadow(color: ThaiTheme.indigo.opacity(0.35), radius: 6, y: 3)
-                    }
-                }
-                .padding(.horizontal, 28)
-                .padding(.bottom, 8)
+            VStack(spacing: 14) {
+                header
+                deckProgress
+                flipCard
+                gradeRow
             }
-            .navigationTitle("Practice")
-            .background(ThaiTheme.sand)
+            .padding(.horizontal, 22)
+            .padding(.bottom, 8)
+            .background(
+                ZStack {
+                    ThaiTheme.bg
+                    Circle().fill(ThaiTheme.accent200.opacity(0.55)).frame(width: 280).blur(radius: 60)
+                        .offset(x: 130, y: -260)
+                    Circle().fill(ThaiTheme.accent2100.opacity(0.7)).frame(width: 240).blur(radius: 70)
+                        .offset(x: -140, y: 280)
+                }
+                .ignoresSafeArea()
+            )
+            .toolbar(.hidden, for: .navigationBar)
+            .sheet(isPresented: $showDetails) { detailsSheet }
             .fullScreenCover(isPresented: $showComplete) {
                 SessionCompleteView(
                     reviewed: sessionReviewed,
@@ -144,68 +101,277 @@ struct FlashcardView: View {
                     advance()
                 }
             }
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        withAnimation(.spring(duration: 0.3)) {
-                            deck = Self.buildDeck()
-                            index = 0
-                            revealed = false
-                            detail = nil
-                        }
-                    } label: {
-                        Image(systemName: "shuffle")
-                            .foregroundStyle(ThaiTheme.indigo)
-                    }
+        }
+    }
+
+    // MARK: Header — title, session line, streak pill, reshuffle
+
+    private var header: some View {
+        HStack(alignment: .center, spacing: 10) {
+            VStack(alignment: .leading, spacing: 1) {
+                Text("Practice")
+                    .font(ThaiTheme.display(20, bold: true))
+                    .foregroundStyle(ThaiTheme.ink)
+                Text("Today's deck · \(deck.count) cards")
+                    .font(.system(size: 11.5))
+                    .foregroundStyle(ThaiTheme.textMuted)
+            }
+            Spacer()
+            let streak = ProgressStore.shared.currentStreak()
+            if streak > 0 {
+                HStack(spacing: 4) {
+                    Text("🔥")
+                    Text("\(streak)")
+                        .font(.system(size: 13, weight: .bold))
+                        .foregroundStyle(ThaiTheme.accent700)
+                }
+                .padding(.horizontal, 12)
+                .padding(.vertical, 6)
+                .background(ThaiTheme.accent100, in: Capsule())
+            }
+            Button {
+                withAnimation(.spring(duration: 0.3)) {
+                    deck = Self.buildDeck()
+                    index = 0
+                    isFlipped = false
+                    detail = nil
+                }
+            } label: {
+                Image(systemName: "shuffle")
+                    .font(.subheadline.weight(.bold))
+                    .foregroundStyle(ThaiTheme.textMuted)
+                    .frame(width: 40, height: 40)
+                    .background(ThaiTheme.surfaceSunken, in: Circle())
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(.top, 6)
+    }
+
+    // MARK: Deck progress — one pill per session card
+
+    private var deckProgress: some View {
+        VStack(spacing: 6) {
+            HStack {
+                Text("TODAY'S DECK")
+                    .font(.system(size: 10, weight: .semibold))
+                    .tracking(1.2)
+                    .foregroundStyle(ThaiTheme.textMuted)
+                Spacer()
+                Text("\(min(sessionReviewed, sessionTarget))/\(sessionTarget)")
+                    .font(.system(size: 11, weight: .bold))
+                    .monospacedDigit()
+                    .foregroundStyle(ThaiTheme.accent700)
+            }
+            LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 5), count: 12), spacing: 5) {
+                ForEach(0..<sessionTarget, id: \.self) { i in
+                    Capsule()
+                        .fill(i < sessionReviewed ? ThaiTheme.accent
+                              : i == sessionReviewed ? ThaiTheme.accent400
+                              : ThaiTheme.hairline)
+                        .frame(height: 7)
+                        .animation(.easeInOut(duration: 0.3), value: sessionReviewed)
                 }
             }
         }
     }
 
-    // MARK: Front — guess the meaning from sound
+    // MARK: Flip card
 
-    private var frontSide: some View {
-        VStack(spacing: 14) {
-            Spacer()
+    private var flipCard: some View {
+        ZStack {
+            cardFront
+                .opacity(isFlipped ? 0 : 1)
+                .rotation3DEffect(.degrees(reduceMotion ? 0 : (isFlipped ? 180 : 0)),
+                                  axis: (x: 0, y: 1, z: 0), perspective: 0.35)
+            cardBack
+                .opacity(isFlipped ? 1 : 0)
+                .rotation3DEffect(.degrees(reduceMotion ? 0 : (isFlipped ? 0 : -180)),
+                                  axis: (x: 0, y: 1, z: 0), perspective: 0.35)
+        }
+        .frame(maxHeight: .infinity)
+        .animation(reduceMotion ? .easeInOut(duration: 0.2)
+                                : .spring(response: 0.45, dampingFraction: 0.8), value: isFlipped)
+        .contentShape(RoundedRectangle(cornerRadius: 28))
+        .onTapGesture { isFlipped.toggle() }
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 30)
+                .onEnded { value in
+                    guard abs(value.translation.width) > abs(value.translation.height) else { return }
+                    if value.translation.width < -50 {
+                        advance()
+                    } else if value.translation.width > 50 {
+                        goBack()
+                    }
+                }
+        )
+    }
+
+    private var cardFront: some View {
+        VStack(spacing: 12) {
+            Text(current.category.uppercased())
+                .font(.system(size: 11, weight: .bold))
+                .tracking(1.1)
+                .foregroundStyle(ThaiTheme.accent700)
+                .padding(.horizontal, 12)
+                .padding(.vertical, 5)
+                .background(ThaiTheme.accent200, in: Capsule())
+
+            Spacer(minLength: 0)
+
             if let emoji = WordExtras.emoji(for: current) {
-                Text(emoji).font(.system(size: 44))
+                Text(emoji).font(.system(size: 38))
             }
             Text(current.thai)
-                .font(.system(size: 64, weight: .bold, design: .rounded))
+                .font(ThaiTheme.thai(66))
                 .minimumScaleFactor(0.4)
                 .lineLimit(1)
                 .foregroundStyle(ThaiTheme.ink)
 
-            HStack(spacing: 12) {
-                capsuleButton("Play", icon: "speaker.wave.2.fill", fill: ThaiTheme.indigo) {
-                    SpeechService.shared.speak(thai: current.thai, romanization: current.romanization)
-                }
-                capsuleButton("Reveal", icon: "eye.fill", fill: ThaiTheme.gold) {
-                    withAnimation(.spring(duration: 0.35)) { revealed = true }
-                }
-            }
-
-            VStack(spacing: 6) {
-                HStack(spacing: 8) {
-                    Text("🇮🇳").font(.caption)
-                    Text(current.hindiPronunciation).font(.title3.weight(.medium))
-                        .foregroundStyle(ThaiTheme.orchid)
-                }
-                HStack(spacing: 8) {
-                    Text("🔤").font(.caption)
-                    Text(current.romanization).font(.title3.weight(.medium))
-                        .foregroundStyle(ThaiTheme.indigo)
-                }
+            VStack(spacing: 4) {
+                Text(current.hindiPronunciation)
+                    .font(.system(size: 15, weight: .medium))
+                    .foregroundStyle(ThaiTheme.accent700)
+                Text(current.romanization)
+                    .font(.system(size: 15, weight: .medium))
+                    .foregroundStyle(ThaiTheme.accent)
             }
 
             toneRow(for: current)
 
-            Text("Can you guess the meaning?")
-                .font(.footnote)
-                .foregroundStyle(.secondary)
-            Spacer()
+            Spacer(minLength: 0)
+
+            Button {
+                SpeechService.shared.speak(thai: current.thai, romanization: current.romanization)
+            } label: {
+                Label("Hear it", systemImage: "speaker.wave.2.fill")
+                    .font(ThaiTheme.display(16, bold: true))
+                    .foregroundStyle(ThaiTheme.bg)
+                    .padding(.horizontal, 22)
+                    .padding(.vertical, 12)
+                    .background(ThaiTheme.accent, in: Capsule())
+                    .shadow(color: ThaiTheme.accent.opacity(0.4), radius: 6, y: 3)
+            }
+            .buttonStyle(.plain)
+
+            Text("Tap card to reveal meaning")
+                .font(.system(size: 11.5))
+                .foregroundStyle(ThaiTheme.textFaint)
         }
-        .padding(20)
+        .padding(24)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(ThaiTheme.surface, in: RoundedRectangle(cornerRadius: 28))
+        .shadow(color: ThaiTheme.ink.opacity(0.18), radius: 20, y: 12)
+    }
+
+    private var cardBack: some View {
+        VStack(spacing: 12) {
+            Text(current.thai)
+                .font(ThaiTheme.thai(34))
+                .minimumScaleFactor(0.5)
+                .lineLimit(1)
+                .foregroundStyle(ThaiTheme.bg)
+
+            meaningBlock(label: "हिन्दी", labelColor: ThaiTheme.accent400,
+                         meaning: current.hindiMeaning, meaningSize: 26,
+                         pron: current.hindiPronunciation)
+            meaningBlock(label: "ENGLISH", labelColor: ThaiTheme.accent2400,
+                         meaning: current.englishMeaning, meaningSize: 24,
+                         pron: current.romanization)
+
+            if let example = WordExtras.examples(for: current).first {
+                VStack(spacing: 5) {
+                    Rectangle()
+                        .fill(ThaiTheme.bg.opacity(0.14))
+                        .frame(height: 1)
+                    Text("IN A SENTENCE")
+                        .font(.system(size: 10, weight: .semibold))
+                        .tracking(1.2)
+                        .foregroundStyle(ThaiTheme.textFaint)
+                    Text(example.thai)
+                        .font(ThaiTheme.thai(17))
+                        .foregroundStyle(ThaiTheme.bg)
+                        .multilineTextAlignment(.center)
+                        .minimumScaleFactor(0.7)
+                    Text(example.english)
+                        .font(.system(size: 13))
+                        .foregroundStyle(ThaiTheme.bg.opacity(0.7))
+                        .multilineTextAlignment(.center)
+                }
+            }
+
+            Button {
+                showDetails = true
+            } label: {
+                Label("More details", systemImage: "text.book.closed")
+                    .font(.system(size: 12, weight: .semibold))
+                    .foregroundStyle(ThaiTheme.accent2400)
+                    .padding(.horizontal, 14)
+                    .padding(.vertical, 7)
+                    .background(ThaiTheme.bg.opacity(0.08), in: Capsule())
+                    .overlay(Capsule().stroke(ThaiTheme.bg.opacity(0.16), lineWidth: 1))
+            }
+            .buttonStyle(.plain)
+        }
+        .padding(22)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(ThaiTheme.inkDeep, in: RoundedRectangle(cornerRadius: 28))
+        .shadow(color: .black.opacity(0.4), radius: 20, y: 12)
+    }
+
+    private func meaningBlock(label: String, labelColor: Color,
+                              meaning: String, meaningSize: CGFloat, pron: String) -> some View {
+        VStack(spacing: 3) {
+            Text(label)
+                .font(.system(size: 10, weight: .semibold))
+                .tracking(1.2)
+                .foregroundStyle(labelColor)
+            Text(meaning)
+                .font(.system(size: meaningSize, weight: .semibold))
+                .foregroundStyle(ThaiTheme.bg)
+                .multilineTextAlignment(.center)
+                .minimumScaleFactor(0.6)
+            Text(pron)
+                .font(.system(size: 15))
+                .foregroundStyle(Color(hex: 0xB3C1D4))
+        }
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 10)
+        .padding(.horizontal, 12)
+        .background(ThaiTheme.bg.opacity(0.08), in: RoundedRectangle(cornerRadius: 20))
+        .overlay(RoundedRectangle(cornerRadius: 20).stroke(ThaiTheme.bg.opacity(0.16), lineWidth: 1))
+    }
+
+    // MARK: Grade row
+
+    private var gradeRow: some View {
+        HStack(spacing: 12) {
+            Button {
+                grade(false)
+            } label: {
+                Label("Again", systemImage: "arrow.counterclockwise")
+                    .font(ThaiTheme.display(16, bold: true))
+                    .foregroundStyle(ThaiTheme.accent700)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 56)
+                    .background(ThaiTheme.accent100, in: Capsule())
+                    .overlay(Capsule().stroke(ThaiTheme.accent300, lineWidth: 1.5))
+            }
+            .buttonStyle(.plain)
+
+            Button {
+                grade(true)
+            } label: {
+                Label("Got it", systemImage: "checkmark")
+                    .font(ThaiTheme.display(16, bold: true))
+                    .foregroundStyle(ThaiTheme.bg)
+                    .frame(maxWidth: .infinity)
+                    .frame(height: 56)
+                    .background(ThaiTheme.accent2, in: Capsule())
+                    .shadow(color: ThaiTheme.accent2.opacity(0.4), radius: 8, y: 4)
+            }
+            .buttonStyle(.plain)
+        }
     }
 
     // MARK: Tone chips — one colored capsule per syllable
@@ -256,9 +422,9 @@ struct FlashcardView: View {
         }
     }
 
-    // MARK: Reveal — meaning + detail buttons
+    // MARK: Details sheet — sentences, forms, similar sounds, joint words
 
-    private var revealSide: some View {
+    private var detailsSheet: some View {
         let sentences = WordExtras.examples(for: current)
         let similar = WordExtras.similarSounds(for: current)
         let compoundNote = WordExtras.compoundNote(for: current)
@@ -270,37 +436,16 @@ struct FlashcardView: View {
             VStack(spacing: 16) {
                 VStack(spacing: 6) {
                     Text(current.thai)
-                        .font(.system(size: 40, weight: .bold, design: .rounded))
+                        .font(ThaiTheme.thai(40))
                         .minimumScaleFactor(0.4)
                         .lineLimit(1)
                         .foregroundStyle(ThaiTheme.ink)
-                        .onTapGesture {
-                            withAnimation(.spring(duration: 0.35)) {
-                                revealed = false
-                                detail = nil
-                            }
-                        }
                     Text("\(current.hindiPronunciation) · \(current.romanization)")
                         .font(.subheadline.weight(.medium))
                         .foregroundStyle(.secondary)
                     toneRow(for: current)
                     capsuleButton("Play", icon: "speaker.wave.2.fill") {
                         SpeechService.shared.speak(thai: current.thai, romanization: current.romanization)
-                    }
-                }
-
-                VStack(spacing: 6) {
-                    sectionLabel("MEANING")
-                    Text("🇮🇳 \(current.hindiMeaning)").font(.title3)
-                    Text("🇬🇧 \(current.englishMeaning)").font(.title3)
-                }
-
-                HStack(spacing: 12) {
-                    capsuleButton("Again", icon: "arrow.counterclockwise", fill: Color(red: 0.820, green: 0.302, blue: 0.302)) {
-                        grade(false)
-                    }
-                    capsuleButton("Got it", icon: "checkmark", fill: Color(red: 0.243, green: 0.647, blue: 0.424)) {
-                        grade(true)
                     }
                 }
 
@@ -390,14 +535,12 @@ struct FlashcardView: View {
                     .font(.caption2)
                     .tracking(1.2)
                     .foregroundStyle(.secondary)
-
-                Text("Tap the Thai word to hide the answer")
-                    .font(.caption2)
-                    .foregroundStyle(.tertiary)
             }
             .frame(maxWidth: .infinity)
             .padding(20)
         }
+        .presentationDetents([.medium, .large])
+        .presentationBackground(ThaiTheme.bgAlt)
     }
 
     private func detailButton(_ title: String, icon: String, target: Detail) -> some View {
@@ -545,9 +688,10 @@ struct FlashcardView: View {
 
     private func jump(to word: ThaiWord) {
         guard let target = deck.firstIndex(where: { $0.id == word.id }) else { return }
+        showDetails = false
         withAnimation(.spring(duration: 0.3)) {
             index = target
-            revealed = true
+            isFlipped = true
             detail = nil
         }
     }
@@ -574,7 +718,7 @@ struct FlashcardView: View {
 
     private func advance() {
         withAnimation(.spring(duration: 0.3)) {
-            revealed = false
+            isFlipped = false
             detail = nil
             index = (index + 1) % deck.count
         }
@@ -582,7 +726,7 @@ struct FlashcardView: View {
 
     private func goBack() {
         withAnimation(.spring(duration: 0.3)) {
-            revealed = false
+            isFlipped = false
             detail = nil
             index = (index - 1 + deck.count) % deck.count
         }

@@ -1,37 +1,90 @@
 import Foundation
 import SwiftUI
 
-/// "Sukhothai Gold" — the design language shared by the app and widgets.
-/// Warm sand surfaces, deep indigo ink, temple-gold accents, orchid for
-/// Devanagari, jade for the English-first direction.
+/// Blue rebrand (from Sukhothai Gold) — pale-blue grounds, mid-blue primary
+/// accent, light-blue second accent, navy ink. Old warm names stay as
+/// semantic aliases (indigo → accent, gold → accent2 400, orchid → accent700,
+/// jade → accent2) so every screen keeps compiling; prefer the new roles in
+/// new code.
 enum ThaiTheme {
-    static let sand       = Color(red: 0.965, green: 0.941, blue: 0.894)  // #F6F0E4
-    static let cream      = Color(red: 1.000, green: 0.988, blue: 0.961)  // #FFFCF5
-    static let parchment  = Color(red: 0.937, green: 0.902, blue: 0.812)  // #EFE6CF
-    static let ink        = Color(red: 0.165, green: 0.141, blue: 0.251)  // #2A2440
-    static let indigo     = Color(red: 0.239, green: 0.298, blue: 0.620)  // #3D4C9E
-    static let deepIndigo = Color(red: 0.169, green: 0.208, blue: 0.447)  // #2B3572
-    static let gold       = Color(red: 0.851, green: 0.604, blue: 0.169)  // #D99A2B
-    static let lightGold  = Color(red: 0.949, green: 0.784, blue: 0.475)  // #F2C879
-    static let orchid     = Color(red: 0.722, green: 0.298, blue: 0.490)  // #B84C7D
-    static let jade       = Color(red: 0.118, green: 0.420, blue: 0.333)  // #1E6B55
-    static let plum       = Color(red: 0.420, green: 0.231, blue: 0.561)  // #6B3B8F
-    static let stone      = Color(red: 0.541, green: 0.522, blue: 0.467)  // #8A8577
+    // MARK: New semantic roles
+
+    static let bg            = Color(hex: 0xEEF3FA)  // page ground
+    static let bgAlt         = Color(hex: 0xF5F8FC)  // alternate ground (quiz)
+    static let surface       = Color(hex: 0xFBFDFF)  // cards, rows
+    static let surfaceSunken = Color(hex: 0xE3EBF5)  // chips, pressed rows
+    static let hairline      = Color(hex: 0xDCE5F0)  // dividers, empty progress
+
+    static let accent100     = Color(hex: 0xEAF2FC)
+    static let accent200     = Color(hex: 0xD8E7F8)
+    static let accent300     = Color(hex: 0xAECDF0)
+    static let accent400     = Color(hex: 0x6F9FE0)
+    static let accent        = Color(hex: 0x2F6BC0)  // primary
+    static let accent600     = Color(hex: 0x24559C)  // hover
+    static let accent700     = Color(hex: 0x1B4079)  // pressed / accent text
+
+    static let accent2100    = Color(hex: 0xE6F3FB)
+    static let accent2200    = Color(hex: 0xCFE7F6)
+    static let accent2300    = Color(hex: 0xA9D3EA)
+    static let accent2400    = Color(hex: 0x79B6DA)
+    static let accent2       = Color(hex: 0x3B7AA2)  // second voice / success
+    static let accent2600    = Color(hex: 0x2C5F80)
+    static let accent2800    = Color(hex: 0x1C3352)
+
+    static let textMuted     = Color(hex: 0x64748E)
+    static let textFaint     = Color(hex: 0x8C9CB4)
+    static let inkDeep       = Color(hex: 0x16233D)  // dark card face
+
+    // MARK: Warm-name aliases (legacy call sites)
+
+    static let sand       = bg
+    static let cream      = surface
+    static let parchment  = surfaceSunken
+    static let ink        = Color(hex: 0x101C33)
+    static let indigo     = accent
+    static let deepIndigo = inkDeep
+    static let gold       = accent2400
+    static let lightGold  = accent200
+    static let orchid     = accent700   // Devanagari voice
+    static let jade       = accent2
+    static let plum       = Color(hex: 0x4E92BD)
+    static let stone      = textMuted
+
+    // Semantic roles — prefer these over raw RGB in UI chrome.
+    static let success    = accent2
+    static let danger     = Color(hex: 0xC2503F)
+    static let toneMid    = textMuted
+    static let toneLow    = Color(red: 0.290, green: 0.435, blue: 0.831)
+    static let toneFalling = danger
+    static let toneHigh   = Color(red: 0.902, green: 0.541, blue: 0.180)
+    static let toneRising = Color(red: 0.243, green: 0.647, blue: 0.424)
+
+    // Consonant classes must stay three distinguishable hues.
+    static let classMiddle = accent
+    static let classHigh   = accent700
+    static let classLow    = accent2
+
+    // Spacing / radius scale (8-pt grid).
+    static let spaceXS: CGFloat = 4
+    static let spaceSM: CGFloat = 8
+    static let spaceMD: CGFloat = 12
+    static let spaceLG: CGFloat = 16
+    static let spaceXL: CGFloat = 24
+    static let radiusControl: CGFloat = 14
+    static let radiusCard: CGFloat = 24
+    static let radiusChip: CGFloat = 14
 
     // Widget backgrounds are deliberately dark: white text stays readable
     // no matter what wallpaper sits behind or beside the widget.
     static let thaiGradient = LinearGradient(
-        colors: [Color(red: 0.10, green: 0.12, blue: 0.28),
-                 Color(red: 0.20, green: 0.12, blue: 0.30),
-                 Color(red: 0.34, green: 0.13, blue: 0.26)],
+        colors: [Color(hex: 0x101C33), Color(hex: 0x1C3352)],
         startPoint: .topLeading, endPoint: .bottomTrailing)
 
     static let englishGradient = LinearGradient(
-        colors: [Color(red: 0.05, green: 0.20, blue: 0.16),
-                 Color(red: 0.10, green: 0.12, blue: 0.28)],
+        colors: [Color(hex: 0x16233D), Color(hex: 0x2C5F80)],
         startPoint: .topLeading, endPoint: .bottomTrailing)
 
-    // MARK: Layout v2 — Liquid Glass surfaces + Caladea display face
+    // MARK: Fonts
 
     /// Caladea (SIL OFL) is the metric-compatible stand-in for Cambria;
     /// registered from the app bundle at launch. Use for display text only —
@@ -41,12 +94,26 @@ enum ThaiTheme {
         .custom(bold ? "Caladea-Bold" : "Caladea", size: size)
     }
 
-    /// Soft lavender→sand→jade wash the glass cards float on.
+    /// Mitr (Google, OFL) — the Thai hero voice of the blue design system.
+    /// Falls back to the system face where unregistered (widgets).
+    static func thai(_ size: CGFloat) -> Font {
+        .custom("Mitr-Medium", size: size)
+    }
+
+    /// Quiet pale-blue wash the glass cards float on.
     static let glassWash = LinearGradient(
-        colors: [Color(red: 0.910, green: 0.894, blue: 0.957),
-                 Color(red: 0.957, green: 0.929, blue: 0.867),
-                 Color(red: 0.894, green: 0.933, blue: 0.914)],
+        colors: [sand, parchment.opacity(0.85), sand],
         startPoint: .topLeading, endPoint: .bottomTrailing)
+}
+
+extension Color {
+    /// 0xRRGGBB convenience initializer.
+    init(hex: UInt32) {
+        self.init(
+            red:   Double((hex >> 16) & 0xFF) / 255,
+            green: Double((hex >> 8) & 0xFF) / 255,
+            blue:  Double(hex & 0xFF) / 255)
+    }
 }
 
 /// A single vocabulary entry shown in the app and on the widget.

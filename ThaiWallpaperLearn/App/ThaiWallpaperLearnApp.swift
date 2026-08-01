@@ -16,7 +16,7 @@ struct ThaiWallpaperLearnApp: App {
     /// Caladea ships as a bundled resource; the Info.plist is generated from
     /// build settings (no UIAppFonts key), so register the faces by hand.
     private static func registerBundledFonts() {
-        for name in ["Caladea-Regular", "Caladea-Bold"] {
+        for name in ["Caladea-Regular", "Caladea-Bold", "Mitr-Medium"] {
             guard let url = Bundle.main.url(forResource: name, withExtension: "ttf") else {
                 NSLog("Fonts: %@ missing from bundle", name)
                 continue

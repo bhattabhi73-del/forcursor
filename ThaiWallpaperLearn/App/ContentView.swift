@@ -39,69 +39,44 @@ final class SpeechService {
 }
 
 struct ContentView: View {
+    @State private var selectedTab: Int = {
+        #if DEBUG
+        // `simctl launch … -openPractice` → screenshot automation lands on Practice.
+        if ProcessInfo.processInfo.arguments.contains("-openPractice") { return 1 }
+        #endif
+        return 0
+    }()
+
     var body: some View {
-        TabView {
-            TodayView()
+        TabView(selection: $selectedTab) {
+            TodayView(selectedTab: $selectedTab)
                 .tabItem { Label("Today", systemImage: "sun.max.fill") }
+                .tag(0)
 
             FlashcardView()
                 .tabItem { Label("Practice", systemImage: "rectangle.on.rectangle.angled") }
+                .tag(1)
 
             BrowseView()
                 .tabItem { Label("Browse", systemImage: "list.bullet") }
+                .tag(2)
 
             AlphabetView()
                 .tabItem { Label("Alphabet", systemImage: "character.book.closed.fill") }
+                .tag(3)
 
             MoreView()
                 .tabItem { Label("More", systemImage: "sparkles") }
+                .tag(4)
         }
         .tint(ThaiTheme.indigo)
-    }
-}
-
-// MARK: - Liquid Glass surface (Layout v2)
-
-/// Frosted glass card: Apple's real Liquid Glass on iOS 26+, a material
-/// with a hairline highlight as the visually-matching fallback below.
-struct ThaiGlass: ViewModifier {
-    var cornerRadius: CGFloat = 24
-
-    func body(content: Content) -> some View {
-        if #available(iOS 26.0, *) {
-            content.glassEffect(in: .rect(cornerRadius: cornerRadius))
-        } else {
-            content
-                .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: cornerRadius))
-                .overlay(RoundedRectangle(cornerRadius: cornerRadius)
-                    .stroke(.white.opacity(0.55), lineWidth: 1))
-        }
-    }
-}
-
-extension View {
-    func thaiGlass(cornerRadius: CGFloat = 24) -> some View {
-        modifier(ThaiGlass(cornerRadius: cornerRadius))
-    }
-
-    /// The wash the glass floats on: sand gradient plus two soft color blooms.
-    func glassWashBackground() -> some View {
-        background(
-            ZStack {
-                ThaiTheme.glassWash
-                Circle().fill(ThaiTheme.gold.opacity(0.22)).frame(width: 300).blur(radius: 60)
-                    .offset(x: -130, y: -160)
-                Circle().fill(ThaiTheme.indigo.opacity(0.16)).frame(width: 340).blur(radius: 70)
-                    .offset(x: 150, y: 220)
-            }
-            .ignoresSafeArea()
-        )
     }
 }
 
 // MARK: - Today (word of the day)
 
 struct TodayView: View {
+    @Binding var selectedTab: Int
     @State private var word: ThaiWord = Vocabulary.word(forDayOffset: Self.dayOffset())
     @State private var showWidgetHelp = false
     @State private var streak = ProgressStore.shared.currentStreak()
@@ -126,20 +101,19 @@ struct TodayView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 14) {
+                VStack(spacing: ThaiTheme.spaceMD) {
                     HStack {
-                        Text(dayLine.uppercased())
-                            .font(.caption.weight(.bold))
-                            .tracking(1.5)
-                            .foregroundStyle(.secondary)
+                        Text(dayLine)
+                            .font(.caption.weight(.medium))
+                            .foregroundStyle(ThaiTheme.stone)
                         Spacer()
                         if streak > 0 {
                             Label("\(streak)-day streak", systemImage: "flame.fill")
-                                .font(.caption.weight(.bold))
+                                .font(.caption.weight(.semibold))
                                 .foregroundStyle(ThaiTheme.gold)
                                 .padding(.horizontal, 12)
                                 .padding(.vertical, 6)
-                                .thaiGlass(cornerRadius: 14)
+                                .thaiGlass(cornerRadius: ThaiTheme.radiusControl)
                         }
                     }
                     .padding(.horizontal)
@@ -151,7 +125,7 @@ struct TodayView: View {
 
                     actionRow
                 }
-                .padding(.bottom, 24)
+                .padding(.bottom, ThaiTheme.spaceXL)
             }
             .glassWashBackground()
             .navigationTitle("เรียนภาษาไทย")
@@ -172,51 +146,42 @@ struct TodayView: View {
         }
     }
 
-    /// SRS status surfaced where the day starts (tap → Practice tab).
+    /// SRS status — taps through to the Practice tab.
     private var practiceStrip: some View {
-        HStack(spacing: 8) {
-            Circle().fill(ThaiTheme.jade).frame(width: 8, height: 8)
-            Text(dueCounts.due > 0
-                 ? "Practice today · \(dueCounts.due) due, \(min(dueCounts.fresh, 20)) new"
-                 : "Practice today · \(min(dueCounts.fresh, 20)) new words waiting")
-                .font(.footnote.weight(.semibold))
-                .foregroundStyle(ThaiTheme.ink)
-            Spacer()
-            Image(systemName: "chevron.right")
-                .font(.caption.weight(.bold))
-                .foregroundStyle(.secondary)
+        Button {
+            selectedTab = 1
+        } label: {
+            HStack(spacing: ThaiTheme.spaceSM) {
+                Circle().fill(ThaiTheme.jade).frame(width: 8, height: 8)
+                Text(dueCounts.due > 0
+                     ? "Practice today · \(dueCounts.due) due, \(min(dueCounts.fresh, 20)) new"
+                     : "Practice today · \(min(dueCounts.fresh, 20)) new words waiting")
+                    .font(.footnote.weight(.semibold))
+                    .foregroundStyle(ThaiTheme.ink)
+                Spacer()
+                Image(systemName: "chevron.right")
+                    .font(.caption.weight(.bold))
+                    .foregroundStyle(.secondary)
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 12)
+            .thaiGlass(cornerRadius: ThaiTheme.radiusControl)
+            .padding(.horizontal)
         }
-        .padding(.horizontal, 14)
-        .padding(.vertical, 12)
-        .thaiGlass(cornerRadius: 16)
-        .padding(.horizontal)
+        .buttonStyle(.plain)
     }
 
     /// Primary actions live in the thumb zone, not mid-card.
     private var actionRow: some View {
         HStack(spacing: 10) {
-            Button {
+            PrimaryButton(title: "Play", icon: "speaker.wave.2.fill") {
                 SpeechService.shared.speak(thai: word.thai, romanization: word.romanization)
-            } label: {
-                Label("Play", systemImage: "speaker.wave.2.fill")
-                    .font(.headline)
-                    .foregroundStyle(.white)
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 14)
             }
-            .background(ThaiTheme.indigo.opacity(0.92), in: RoundedRectangle(cornerRadius: 18))
-            .shadow(color: ThaiTheme.indigo.opacity(0.35), radius: 8, y: 4)
 
-            Button {
+            IconGlassButton(systemName: "shuffle", foreground: ThaiTheme.indigo) {
                 withAnimation(.spring(duration: 0.35)) {
                     word = Vocabulary.randomWord()
                 }
-            } label: {
-                Image(systemName: "shuffle")
-                    .font(.title3.weight(.semibold))
-                    .foregroundStyle(ThaiTheme.orchid)
-                    .frame(width: 52, height: 52)
-                    .thaiGlass(cornerRadius: 18)
             }
         }
         .padding(.horizontal)
@@ -254,7 +219,7 @@ struct ThaiLetter: Identifiable {
         switch letterClass {
         case "middle": return ThaiTheme.indigo
         case "high": return ThaiTheme.orchid
-        default: return Color(red: 0.243, green: 0.647, blue: 0.424)
+        default: return ThaiTheme.classLow
         }
     }
 
@@ -311,12 +276,11 @@ struct AlphabetView: View {
         NavigationStack {
             List {
                 Section {
-                    HStack(spacing: 14) {
-                        Label("middle", systemImage: "circle.fill").foregroundStyle(ThaiTheme.indigo)
-                        Label("high", systemImage: "circle.fill").foregroundStyle(ThaiTheme.orchid)
-                        Label("low", systemImage: "circle.fill").foregroundStyle(Color(red: 0.243, green: 0.647, blue: 0.424))
+                    HStack(spacing: 16) {
+                        classKey(color: ThaiTheme.indigo, label: "middle")
+                        classKey(color: ThaiTheme.orchid, label: "high")
+                        classKey(color: ThaiTheme.classLow, label: "low")
                     }
-                    .font(.caption.weight(.semibold))
                     .frame(maxWidth: .infinity)
                     .listRowBackground(ThaiTheme.parchment)
                 } header: {
@@ -332,6 +296,15 @@ struct AlphabetView: View {
             .scrollContentBackground(.hidden)
             .background(ThaiTheme.sand)
             .navigationTitle("Thai Alphabet")
+        }
+    }
+
+    private func classKey(color: Color, label: String) -> some View {
+        HStack(spacing: 6) {
+            Circle().fill(color).frame(width: 8, height: 8)
+            Text(label)
+                .font(.caption.weight(.medium))
+                .foregroundStyle(ThaiTheme.ink)
         }
     }
 }
@@ -414,7 +387,7 @@ private struct LetterRow: View {
                         .foregroundStyle(.white)
                         .padding(.horizontal, 9)
                         .padding(.vertical, 4)
-                        .background(ThaiTheme.gold, in: Capsule())
+                        .background(ThaiTheme.gold, in: RoundedRectangle(cornerRadius: ThaiTheme.radiusChip))
                     Text(letter.letterClass)
                         .font(.system(size: 9, weight: .semibold))
                         .foregroundStyle(letter.classColor)
@@ -428,74 +401,6 @@ private struct LetterRow: View {
                 }
                 .buttonStyle(.borderless)
             }
-        }
-    }
-}
-
-// MARK: - Reusable word card
-
-struct WordCard: View {
-    let word: ThaiWord
-    var compact: Bool = false
-
-    var body: some View {
-        VStack(spacing: compact ? 8 : 14) {
-            Text(word.category.uppercased())
-                .font(.caption2.weight(.bold))
-                .tracking(1.4)
-                .foregroundStyle(Color(red: 0.541, green: 0.373, blue: 0.059))
-                .padding(.horizontal, 12)
-                .padding(.vertical, 5)
-                .background(ThaiTheme.gold.opacity(0.16), in: Capsule())
-
-            Text(word.thai)
-                .font(.system(size: compact ? 48 : 68, weight: .bold, design: .rounded))
-                .minimumScaleFactor(0.4)
-                .lineLimit(1)
-                .foregroundStyle(ThaiTheme.ink)
-
-            VStack(spacing: 5) {
-                pronRow(flag: "🇮🇳", label: "HI", value: word.hindiPronunciation)
-                pronRow(flag: "🔤", label: "EN", value: word.romanization)
-            }
-            .frame(maxWidth: .infinity)
-            .padding(.vertical, 10)
-            .background(.white.opacity(0.42), in: RoundedRectangle(cornerRadius: 14))
-            .overlay(RoundedRectangle(cornerRadius: 14).stroke(.white.opacity(0.5), lineWidth: 1))
-
-            VStack(spacing: 4) {
-                meaningRow(flag: "🇮🇳", value: word.hindiMeaning)
-                meaningRow(flag: "🇬🇧", value: word.englishMeaning)
-            }
-        }
-        .padding(compact ? 16 : 22)
-        .frame(maxWidth: .infinity)
-        .thaiGlass(cornerRadius: 24)
-        .shadow(color: ThaiTheme.ink.opacity(0.10), radius: 12, y: 6)
-        .padding(.horizontal)
-    }
-
-    private func pronRow(flag: String, label: String, value: String) -> some View {
-        HStack(spacing: 8) {
-            Text(flag)
-            Text(label)
-                .font(.caption2.weight(.bold))
-                .foregroundStyle(.secondary)
-            Text(value)
-                .font(.title3.weight(.medium))
-                .foregroundStyle(label == "HI" ? ThaiTheme.orchid : ThaiTheme.indigo)
-        }
-    }
-
-    private func meaningRow(flag: String, value: String) -> some View {
-        HStack(spacing: 8) {
-            Text(flag)
-            // Caladea (the Cambria stand-in) carries the meaning text; the
-            // Devanagari half falls through to the system face by design.
-            Text(value)
-                .font(ThaiTheme.display(21))
-                .multilineTextAlignment(.center)
-                .foregroundStyle(ThaiTheme.ink)
         }
     }
 }
@@ -588,6 +493,7 @@ struct BrowseView: View {
                 filterChips
                 wordList
             }
+            .background(ThaiTheme.sand)
             .searchable(text: $query, prompt: "Search Thai, English or Hindi")
             .navigationTitle("All Words")
             .onChange(of: selection) { visibleCount = Self.pageSize }
@@ -597,37 +503,26 @@ struct BrowseView: View {
 
     private var filterChips: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 8) {
-                chip("All", label: "All")
+            HStack(spacing: ThaiTheme.spaceSM) {
+                FilterChip(label: "All", selected: selection == "All") { selection = "All" }
                 ForEach(WordCollection.all, id: \.name) { collection in
-                    chip(collection.name, label: "\(collection.emoji) \(collection.name)")
+                    FilterChip(
+                        label: "\(collection.emoji) \(collection.name)",
+                        selected: selection == collection.name
+                    ) { selection = collection.name }
                 }
                 ForEach(Vocabulary.categories.filter { category in
                     !WordCollection.all.contains { $0.name == category }
                 }, id: \.self) { category in
-                    chip(category, label: category)
+                    FilterChip(label: category, selected: selection == category) {
+                        selection = category
+                    }
                 }
             }
             .padding(.horizontal)
-            .padding(.vertical, 8)
+            .padding(.vertical, ThaiTheme.spaceSM)
         }
-    }
-
-    private func chip(_ value: String, label: String) -> some View {
-        Button {
-            selection = value
-        } label: {
-            Text(label)
-                .font(.subheadline.weight(selection == value ? .semibold : .regular))
-                .padding(.horizontal, 14)
-                .padding(.vertical, 7)
-                .foregroundStyle(selection == value ? .white : ThaiTheme.ink)
-                .background(
-                    selection == value ? ThaiTheme.indigo : ThaiTheme.parchment,
-                    in: Capsule()
-                )
-        }
-        .buttonStyle(.plain)
+        .background(ThaiTheme.sand)
     }
 
     private var wordList: some View {
@@ -636,6 +531,7 @@ struct BrowseView: View {
         List {
             ForEach(filtered.prefix(visibleCount)) { word in
                 row(word)
+                    .listRowBackground(ThaiTheme.cream)
             }
             if filtered.count > visibleCount {
                 Button {
@@ -646,9 +542,12 @@ struct BrowseView: View {
                         .frame(maxWidth: .infinity)
                         .padding(.vertical, 6)
                 }
+                .listRowBackground(ThaiTheme.parchment)
             }
         }
         .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .background(ThaiTheme.sand)
     }
 
     private func row(_ word: ThaiWord) -> some View {
@@ -671,7 +570,7 @@ struct BrowseView: View {
                 SpeechService.shared.speak(thai: word.thai, romanization: word.romanization)
             } label: {
                 Image(systemName: "speaker.wave.2.fill")
-                    .foregroundStyle(Color.accentColor)
+                    .foregroundStyle(ThaiTheme.indigo)
             }
             .buttonStyle(.borderless)
         }
@@ -683,7 +582,7 @@ struct BrowseView: View {
         switch ProgressStore.shared.box(for: word.id) {
         case 0: return ThaiTheme.stone.opacity(0.35)
         case 1, 2: return ThaiTheme.gold
-        default: return Color(red: 0.243, green: 0.647, blue: 0.424)
+        default: return ThaiTheme.success
         }
     }
 }
@@ -832,7 +731,7 @@ struct MoreView: View {
                 .font(.title3)
                 .foregroundStyle(.white)
                 .frame(width: 40, height: 40)
-                .background(color.gradient, in: RoundedRectangle(cornerRadius: 10))
+                .background(color, in: RoundedRectangle(cornerRadius: 10))
             VStack(alignment: .leading, spacing: 2) {
                 Text(title).font(.headline).foregroundStyle(ThaiTheme.ink)
                 Text(subtitle).font(.caption).foregroundStyle(.secondary)
@@ -883,9 +782,18 @@ struct FunWordListView: View {
                         }
                         .buttonStyle(.borderless)
                     }
-                    Text("🇬🇧 \(word.meaning) · 🇮🇳 \(word.hindi)")
-                        .font(.subheadline)
-                        .foregroundStyle(ThaiTheme.ink)
+                    HStack(spacing: 6) {
+                        LanguageTag(kind: .en)
+                        Text(word.meaning)
+                            .font(.subheadline)
+                            .foregroundStyle(ThaiTheme.ink)
+                        Text("·")
+                            .foregroundStyle(.secondary)
+                        LanguageTag(kind: .hi)
+                        Text(word.hindi)
+                            .font(.subheadline)
+                            .foregroundStyle(ThaiTheme.ink)
+                    }
                     if !word.note.isEmpty {
                         Text(word.note)
                             .font(.caption)
