@@ -36,6 +36,11 @@ struct FlashcardView: View {
     @State private var movedUp: [String] = []
     @State private var showComplete = false
 
+    // Other practice modes open on top of the deck.
+    @State private var showQuiz = false
+    @State private var showToneTrainer = false
+    @State private var showSpeak = false
+
     static func initialSessionTarget() -> Int {
         let stats = ProgressStore.shared.counts(in: Vocabulary.all)
         return max(stats.due + min(stats.fresh, 20), 5)
@@ -54,6 +59,17 @@ struct FlashcardView: View {
         if ProcessInfo.processInfo.arguments.contains("-flipped") {
             _isFlipped = State(initialValue: true)
         }
+        // `simctl launch … -openQuiz` / `-openTones` / `-openSpeak` jump
+        // straight into a practice mode for screenshot automation.
+        if ProcessInfo.processInfo.arguments.contains("-openQuiz") {
+            _showQuiz = State(initialValue: true)
+        }
+        if ProcessInfo.processInfo.arguments.contains("-openTones") {
+            _showToneTrainer = State(initialValue: true)
+        }
+        if ProcessInfo.processInfo.arguments.contains("-openSpeak") {
+            _showSpeak = State(initialValue: true)
+        }
     }
     #endif
 
@@ -63,6 +79,7 @@ struct FlashcardView: View {
         NavigationStack {
             VStack(spacing: 14) {
                 header
+                modeRow
                 deckProgress
                 flipCard
                 gradeRow
@@ -84,6 +101,9 @@ struct FlashcardView: View {
                 WordDetailView(word: current)
                     .presentationDetents([.medium, .large])
             }
+            .fullScreenCover(isPresented: $showQuiz) { QuizView() }
+            .fullScreenCover(isPresented: $showToneTrainer) { ToneTrainerView() }
+            .fullScreenCover(isPresented: $showSpeak) { SpeakPracticeView() }
             .fullScreenCover(isPresented: $showComplete) {
                 SessionCompleteView(
                     reviewed: sessionReviewed,
@@ -146,6 +166,35 @@ struct FlashcardView: View {
             .buttonStyle(.plain)
         }
         .padding(.top, 6)
+    }
+
+    // MARK: Practice modes — the deck is home; Quiz, Tones and Speak open on top
+
+    private var modeRow: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 8) {
+                modeChip("Flip Deck", icon: "rectangle.on.rectangle.angled", selected: true) {}
+                modeChip("Quiz", icon: "checklist") { showQuiz = true }
+                modeChip("Tones", icon: "waveform.path.ecg") { showToneTrainer = true }
+                if SpeakPracticeView.isSupported {
+                    modeChip("Speak", icon: "mic.fill") { showSpeak = true }
+                }
+            }
+        }
+        .scrollClipDisabled()
+    }
+
+    private func modeChip(_ label: String, icon: String, selected: Bool = false,
+                          action: @escaping () -> Void) -> some View {
+        Button(action: action) {
+            Label(label, systemImage: icon)
+                .font(.system(size: 12.5, weight: .semibold))
+                .foregroundStyle(selected ? ThaiTheme.bg : ThaiTheme.accent700)
+                .padding(.horizontal, 13)
+                .padding(.vertical, 8)
+                .background(selected ? ThaiTheme.accent : ThaiTheme.accent100, in: Capsule())
+        }
+        .buttonStyle(.plain)
     }
 
     // MARK: Deck progress — one pill per session card

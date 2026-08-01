@@ -3,7 +3,12 @@
 <plist version="1.0">
 <dict>
 	<!-- Merged with the build-setting-generated Info.plist; this file only
-	     adds what build settings cannot express (the widget deep-link scheme). -->
+	     adds what build settings cannot express (the widget deep-link scheme
+	     and the Speak-practice privacy strings). -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Thai Learn listens while you practice saying words aloud.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>Speech recognition checks whether your spoken Thai matches the word you are practicing.</string>
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>

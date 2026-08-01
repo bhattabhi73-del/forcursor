@@ -14,6 +14,9 @@
 		E0000000000000000000B011 /* WordDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B011 /* WordDetailView.swift */; };
 		E0000000000000000000B012 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B012 /* OnboardingView.swift */; };
 		E0000000000000000000B013 /* ShareCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B013 /* ShareCard.swift */; };
+		E0000000000000000000B014 /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B014 /* QuizView.swift */; };
+		E0000000000000000000B015 /* ToneTrainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B015 /* ToneTrainerView.swift */; };
+		E0000000000000000000B016 /* SpeakPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B016 /* SpeakPracticeView.swift */; };
 		E0000000000000000000B004 /* ThaiWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B004 /* ThaiWord.swift */; };
 		E0000000000000000000B005 /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B005 /* Vocabulary.swift */; };
 		E0000000000000000000C001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000C001 /* Assets.xcassets */; };
@@ -64,6 +67,9 @@
 		D0000000000000000000B011 /* WordDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordDetailView.swift; sourceTree = "<group>"; };
 		D0000000000000000000B012 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		D0000000000000000000B013 /* ShareCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareCard.swift; sourceTree = "<group>"; };
+		D0000000000000000000B014 /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		D0000000000000000000B015 /* ToneTrainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneTrainerView.swift; sourceTree = "<group>"; };
+		D0000000000000000000B016 /* SpeakPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakPracticeView.swift; sourceTree = "<group>"; };
 		D0000000000000000000B004 /* ThaiWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiWord.swift; sourceTree = "<group>"; };
 		D0000000000000000000B005 /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
 		D0000000000000000000C001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -116,6 +122,9 @@
 				D0000000000000000000B011 /* WordDetailView.swift */,
 				D0000000000000000000B012 /* OnboardingView.swift */,
 				D0000000000000000000B013 /* ShareCard.swift */,
+				D0000000000000000000B014 /* QuizView.swift */,
+				D0000000000000000000B015 /* ToneTrainerView.swift */,
+				D0000000000000000000B016 /* SpeakPracticeView.swift */,
 				D0000000000000000000C001 /* Assets.xcassets */,
 				C0000000000000000000A006 /* Fonts */,
 			);
@@ -274,6 +283,9 @@
 				E0000000000000000000B011 /* WordDetailView.swift in Sources */,
 				E0000000000000000000B012 /* OnboardingView.swift in Sources */,
 				E0000000000000000000B013 /* ShareCard.swift in Sources */,
+				E0000000000000000000B014 /* QuizView.swift in Sources */,
+				E0000000000000000000B015 /* ToneTrainerView.swift in Sources */,
+				E0000000000000000000B016 /* SpeakPracticeView.swift in Sources */,
 				E0000000000000000000B001 /* ThaiWallpaperLearnApp.swift in Sources */,
 				E0000000000000000000B004 /* ThaiWord.swift in Sources */,
 				E0000000000000000000B005 /* Vocabulary.swift in Sources */,
