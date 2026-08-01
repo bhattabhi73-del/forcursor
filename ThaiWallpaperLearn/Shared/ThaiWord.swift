@@ -197,6 +197,44 @@ final class ProgressStore {
         progress[id] = p
         save()
         recordPracticeToday()
+        bumpReviewsToday()
+    }
+
+    // MARK: Daily goal (cards reviewed today)
+
+    static let dailyGoal = 12
+
+    private let reviewsDayKey = "reviewsDay.v1"
+    private let reviewsCountKey = "reviewsTodayCount.v1"
+
+    private func bumpReviewsToday() {
+        let today = Calendar.current.startOfDay(for: Date()).timeIntervalSince1970
+        let storedDay = UserDefaults.standard.double(forKey: reviewsDayKey)
+        let count = storedDay == today ? UserDefaults.standard.integer(forKey: reviewsCountKey) : 0
+        UserDefaults.standard.set(today, forKey: reviewsDayKey)
+        UserDefaults.standard.set(count + 1, forKey: reviewsCountKey)
+    }
+
+    var reviewsToday: Int {
+        let today = Calendar.current.startOfDay(for: Date()).timeIntervalSince1970
+        guard UserDefaults.standard.double(forKey: reviewsDayKey) == today else { return 0 }
+        return UserDefaults.standard.integer(forKey: reviewsCountKey)
+    }
+
+    // MARK: Recently viewed words (Browse detail, search suggestions)
+
+    private let recentsKey = "recentWords.v1"
+
+    func recordViewed(id: Int) {
+        var ids = (UserDefaults.standard.array(forKey: recentsKey) as? [Int]) ?? []
+        ids.removeAll { $0 == id }
+        ids.insert(id, at: 0)
+        UserDefaults.standard.set(Array(ids.prefix(10)), forKey: recentsKey)
+    }
+
+    var recentlyViewed: [ThaiWord] {
+        let ids = (UserDefaults.standard.array(forKey: recentsKey) as? [Int]) ?? []
+        return ids.compactMap { id in Vocabulary.all.first { $0.id == id } }
     }
 
     // MARK: Daily practice streak

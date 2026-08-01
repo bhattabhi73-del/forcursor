@@ -47,6 +47,21 @@ struct ContentView: View {
         return 0
     }()
 
+    /// Word opened from a widget tap (thailearn://word/<id>).
+    @State private var deepLinkWord: ThaiWord? = {
+        #if DEBUG
+        // `simctl launch … -openWord=<id>` opens the detail sheet directly,
+        // standing in for a widget tap in screenshot automation.
+        if let arg = ProcessInfo.processInfo.arguments.first(where: { $0.hasPrefix("-openWord=") }),
+           let id = Int(arg.dropFirst("-openWord=".count)) {
+            return Vocabulary.all.first { $0.id == id }
+        }
+        #endif
+        return nil
+    }()
+
+    @State private var showOnboarding = !UserDefaults.standard.bool(forKey: "hasOnboarded.v1")
+
     var body: some View {
         TabView(selection: $selectedTab) {
             TodayView(selectedTab: $selectedTab)
@@ -70,6 +85,19 @@ struct ContentView: View {
                 .tag(4)
         }
         .tint(ThaiTheme.indigo)
+        .fullScreenCover(isPresented: $showOnboarding) {
+            OnboardingView(selectedTab: $selectedTab)
+        }
+        .onOpenURL { url in
+            guard url.scheme == "thailearn", url.host() == "word",
+                  let id = Int(url.lastPathComponent),
+                  let word = Vocabulary.all.first(where: { $0.id == id }) else { return }
+            deepLinkWord = word
+        }
+        .sheet(item: $deepLinkWord) { word in
+            WordDetailView(word: word)
+                .presentationDetents([.medium, .large])
+        }
     }
 }
 
@@ -81,6 +109,8 @@ struct TodayView: View {
     @State private var showWidgetHelp = false
     @State private var streak = ProgressStore.shared.currentStreak()
     @State private var dueCounts = ProgressStore.shared.counts(in: Vocabulary.all)
+    @State private var reviewsToday = ProgressStore.shared.reviewsToday
+    @State private var reminderOn = ReminderService.isEnabled
 
     static func dayOffset() -> Int {
         // Days since a fixed reference so everyone sees the same daily word.
@@ -131,6 +161,22 @@ struct TodayView: View {
             .navigationTitle("เรียนภาษาไทย")
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
+                    ShareLink(
+                        item: ShareCardRenderer.image(for: word),
+                        preview: SharePreview("\(word.thai) — \(word.englishMeaning)",
+                                              image: ShareCardRenderer.image(for: word))
+                    ) {
+                        Image(systemName: "square.and.arrow.up")
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        ReminderService.toggle { on in reminderOn = on }
+                    } label: {
+                        Image(systemName: reminderOn ? "bell.fill" : "bell")
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
                     Button {
                         showWidgetHelp = true
                     } label: {
@@ -142,26 +188,47 @@ struct TodayView: View {
             .onAppear {
                 streak = ProgressStore.shared.currentStreak()
                 dueCounts = ProgressStore.shared.counts(in: Vocabulary.all)
+                reviewsToday = ProgressStore.shared.reviewsToday
             }
         }
     }
+
+    private var goalDone: Bool { reviewsToday >= ProgressStore.dailyGoal }
 
     /// SRS status — taps through to the Practice tab.
     private var practiceStrip: some View {
         Button {
             selectedTab = 1
         } label: {
-            HStack(spacing: ThaiTheme.spaceSM) {
-                Circle().fill(ThaiTheme.jade).frame(width: 8, height: 8)
-                Text(dueCounts.due > 0
-                     ? "Practice today · \(dueCounts.due) due, \(min(dueCounts.fresh, 20)) new"
-                     : "Practice today · \(min(dueCounts.fresh, 20)) new words waiting")
-                    .font(.footnote.weight(.semibold))
-                    .foregroundStyle(ThaiTheme.ink)
-                Spacer()
-                Image(systemName: "chevron.right")
-                    .font(.caption.weight(.bold))
-                    .foregroundStyle(.secondary)
+            VStack(spacing: 8) {
+                HStack(spacing: ThaiTheme.spaceSM) {
+                    Circle().fill(ThaiTheme.jade).frame(width: 8, height: 8)
+                    Text(goalDone
+                         ? "Goal done — \(reviewsToday) cards today 🎉"
+                         : dueCounts.due > 0
+                         ? "Practice today · \(dueCounts.due) due, \(min(dueCounts.fresh, 20)) new"
+                         : "Practice today · \(min(dueCounts.fresh, 20)) new words waiting")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(goalDone ? ThaiTheme.accent2 : ThaiTheme.ink)
+                    Spacer()
+                    Text("\(min(reviewsToday, ProgressStore.dailyGoal))/\(ProgressStore.dailyGoal)")
+                        .font(.caption.weight(.bold))
+                        .monospacedDigit()
+                        .foregroundStyle(goalDone ? ThaiTheme.accent2 : ThaiTheme.textMuted)
+                    Image(systemName: "chevron.right")
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(.secondary)
+                }
+                GeometryReader { geo in
+                    ZStack(alignment: .leading) {
+                        Capsule().fill(ThaiTheme.hairline)
+                        Capsule()
+                            .fill(goalDone ? ThaiTheme.accent2 : ThaiTheme.accent)
+                            .frame(width: geo.size.width *
+                                   min(CGFloat(reviewsToday) / CGFloat(ProgressStore.dailyGoal), 1))
+                    }
+                }
+                .frame(height: 5)
             }
             .padding(.horizontal, 14)
             .padding(.vertical, 12)
@@ -466,6 +533,7 @@ struct BrowseView: View {
     @State private var query = ""
     @State private var selection = "All"
     @State private var visibleCount = BrowseView.pageSize
+    @State private var detailWord: ThaiWord?
 
     private var baseList: [ThaiWord] {
         if selection == "All" { return Vocabulary.all }
@@ -498,6 +566,10 @@ struct BrowseView: View {
             .navigationTitle("All Words")
             .onChange(of: selection) { visibleCount = Self.pageSize }
             .onChange(of: query) { visibleCount = Self.pageSize }
+            .sheet(item: $detailWord) { word in
+                WordDetailView(word: word)
+                    .presentationDetents([.medium, .large])
+            }
         }
     }
 
@@ -529,6 +601,9 @@ struct BrowseView: View {
         // Only `visibleCount` rows are materialized at once; the button at
         // the bottom pages in the next batch so scrolling stays smooth.
         List {
+            if query.isEmpty {
+                suggestions
+            }
             ForEach(filtered.prefix(visibleCount)) { word in
                 row(word)
                     .listRowBackground(ThaiTheme.cream)
@@ -548,6 +623,52 @@ struct BrowseView: View {
         .listStyle(.plain)
         .scrollContentBackground(.hidden)
         .background(ThaiTheme.sand)
+    }
+
+    /// Quick entry points shown while the search field is empty: words due
+    /// for review and recently opened details.
+    @ViewBuilder private var suggestions: some View {
+        let due = Vocabulary.all.filter { ProgressStore.shared.isDue($0.id) }.prefix(6)
+        let recents = ProgressStore.shared.recentlyViewed.prefix(6)
+        if !due.isEmpty || !recents.isEmpty {
+            VStack(alignment: .leading, spacing: 8) {
+                if !due.isEmpty {
+                    suggestionRow(label: "DUE TODAY", words: Array(due), tint: ThaiTheme.accent2)
+                }
+                if !recents.isEmpty {
+                    suggestionRow(label: "RECENT", words: Array(recents), tint: ThaiTheme.accent)
+                }
+            }
+            .padding(.vertical, 6)
+            .listRowBackground(ThaiTheme.surfaceSunken.opacity(0.5))
+        }
+    }
+
+    private func suggestionRow(label: String, words: [ThaiWord], tint: Color) -> some View {
+        VStack(alignment: .leading, spacing: 5) {
+            Text(label)
+                .font(.system(size: 10, weight: .bold))
+                .tracking(1.2)
+                .foregroundStyle(ThaiTheme.textMuted)
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(spacing: 6) {
+                    ForEach(words) { word in
+                        Button {
+                            detailWord = word
+                        } label: {
+                            Text("\(word.thai) · \(word.englishMeaning)")
+                                .font(.footnote.weight(.semibold))
+                                .lineLimit(1)
+                                .foregroundStyle(tint)
+                                .padding(.horizontal, 11)
+                                .padding(.vertical, 6)
+                                .background(tint.opacity(0.12), in: Capsule())
+                        }
+                        .buttonStyle(.borderless)
+                    }
+                }
+            }
+        }
     }
 
     private func row(_ word: ThaiWord) -> some View {
@@ -575,6 +696,8 @@ struct BrowseView: View {
             .buttonStyle(.borderless)
         }
         .padding(.vertical, 4)
+        .contentShape(Rectangle())
+        .onTapGesture { detailWord = word }
     }
 
     /// Learning state at a glance: gray = unseen, gold = learning, jade = known.

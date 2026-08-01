@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- Merged with the build-setting-generated Info.plist; this file only
+	     adds what build settings cannot express (the widget deep-link scheme). -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.thailearn.ThaiWallpaperLearn</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>thailearn</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

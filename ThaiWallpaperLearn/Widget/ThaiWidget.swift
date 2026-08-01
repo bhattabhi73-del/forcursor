@@ -58,20 +58,24 @@ struct ThaiWidgetEntryView: View {
     }
 
     var body: some View {
-        switch family {
-        case .accessoryRectangular:
-            lockScreenRectangular
-        case .accessoryCircular:
-            lockScreenCircular
-        case .accessoryInline:
-            Text("\(word.thai) · \(word.englishMeaning)")
-        case .systemSmall:
-            smallWidget
-        case .systemLarge:
-            largeWidget
-        default:
-            mediumWidget
+        Group {
+            switch family {
+            case .accessoryRectangular:
+                lockScreenRectangular
+            case .accessoryCircular:
+                lockScreenCircular
+            case .accessoryInline:
+                Text("\(word.thai) · \(word.englishMeaning)")
+            case .systemSmall:
+                smallWidget
+            case .systemLarge:
+                largeWidget
+            default:
+                mediumWidget
+            }
         }
+        // Glance → one-tap review: opens this exact word in the app.
+        .widgetURL(URL(string: "thailearn://word/\(word.id)"))
     }
 
     // Home screen — small: Thai on top, then pronunciation (HI + EN), then meaning (HI + EN)
@@ -308,6 +312,7 @@ struct EnglishFirstEntryView: View {
     }
 
     var body: some View {
+        Group {
         switch family {
         case .accessoryRectangular:
             VStack(alignment: .center, spacing: -2) {
@@ -329,6 +334,8 @@ struct EnglishFirstEntryView: View {
         default:
             homeScreen
         }
+        }
+        .widgetURL(URL(string: "thailearn://word/\(word.id)"))
     }
 
     private var homeScreen: some View {
