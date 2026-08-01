@@ -3341,6 +3341,491 @@ enum WordExtras {
         170: [
             WordExample(thai: "ช่วยด้วย!", romanization: "chûai-dûai!", english: "Help!", hindi: "बचाओ!"),
         ],
+        // Batch 1
+        451: [
+            WordExample(thai: "หมูอร่อยมาก", romanization: "mǔu à-ròi mâak", english: "The pork is very delicious", hindi: "पोर्क बहुत स्वादिष्ट है"),
+            WordExample(thai: "ผมกินหมูครับ", romanization: "phǒm kin mǔu khráp", english: "I eat pork", hindi: "मैं पोर्क खाता हूँ"),
+        ],
+        452: [
+            WordExample(thai: "เนื้ออร่อยมาก", romanization: "núea à-ròi mâak", english: "The beef is very delicious", hindi: "बीफ़ बहुत स्वादिष्ट है"),
+            WordExample(thai: "ฉันไม่กินเนื้อ", romanization: "chǎn mâi kin núea", english: "I do not eat beef", hindi: "मैं बीफ़ नहीं खाती"),
+        ],
+        453: [
+            WordExample(thai: "กุ้งอร่อยมาก", romanization: "kûng à-ròi mâak", english: "The shrimp is very delicious", hindi: "झींगा बहुत स्वादिष्ट है"),
+            WordExample(thai: "ผมชอบกินกุ้ง", romanization: "phǒm chôop kin kûng", english: "I like eating shrimp", hindi: "मुझे झींगा खाना पसंद है"),
+        ],
+        454: [
+            WordExample(thai: "ต้มยำเผ็ดมาก", romanization: "tôm-yam phèt mâak", english: "Tom yum is very spicy", hindi: "टॉम यम बहुत तीखा है"),
+            WordExample(thai: "ฉันชอบต้มยำ", romanization: "chǎn chôop tôm-yam", english: "I like tom yum", hindi: "मुझे टॉम यम पसंद है"),
+        ],
+        455: [
+            WordExample(thai: "ข้าวเหนียวอร่อยมาก", romanization: "khâao-nǐao à-ròi mâak", english: "Sticky rice is very delicious", hindi: "स्टिकी राइस बहुत स्वादिष्ट है"),
+            WordExample(thai: "ผมกินข้าวเหนียว", romanization: "phǒm kin khâao-nǐao", english: "I eat sticky rice", hindi: "मैं स्टिकी राइस खाता हूँ"),
+        ],
+        456: [
+            WordExample(thai: "ส้มตำเปรี้ยวมาก", romanization: "sôm-tam prîao mâak", english: "Som tam is very sour", hindi: "सोम तम बहुत खट्टा है"),
+            WordExample(thai: "ฉันไม่ชอบเปรี้ยว", romanization: "chǎn mâi chôop prîao", english: "I do not like sour", hindi: "मुझे खट्टा पसंद नहीं है"),
+        ],
+        457: [
+            WordExample(thai: "แกงเค็มมาก", romanization: "kaeng khem mâak", english: "The curry is very salty", hindi: "करी बहुत नमकीन है"),
+            WordExample(thai: "ปลาเค็มมาก", romanization: "plaa khem mâak", english: "The fish is very salty", hindi: "मछली बहुत नमकीन है"),
+        ],
+        458: [
+            WordExample(thai: "ขนมอร่อยมาก", romanization: "khà-nǒm à-ròi mâak", english: "The dessert is very tasty", hindi: "मिठाई बहुत स्वादिष्ट है"),
+            WordExample(thai: "เขาชอบกินขนม", romanization: "khǎo chôop kin khà-nǒm", english: "He likes eating snacks", hindi: "उसे मिठाई खाना पसंद है"),
+        ],
+        459: [
+            WordExample(thai: "ผมกินขนมปัง", romanization: "phǒm kin khà-nǒm-pang", english: "I eat bread", hindi: "मैं ब्रेड खाता हूँ"),
+            WordExample(thai: "ขนมปังอร่อยดี", romanization: "khà-nǒm-pang à-ròi dii", english: "The bread is quite tasty", hindi: "ब्रेड काफ़ी स्वादिष्ट है"),
+        ],
+        460: [
+            WordExample(thai: "กล้วยหวานมาก", romanization: "klûai wǎan mâak", english: "The banana is very sweet", hindi: "केला बहुत मीठा है"),
+            WordExample(thai: "ฉันกินกล้วย", romanization: "chǎn kin klûai", english: "I eat a banana", hindi: "मैं केला खाती हूँ"),
+        ],
+        461: [
+            WordExample(thai: "มะม่วงหวานมาก", romanization: "má-mûang wǎan mâak", english: "The mango is very sweet", hindi: "आम बहुत मीठा है"),
+            WordExample(thai: "ผมชอบกินมะม่วง", romanization: "phǒm chôop kin má-mûang", english: "I like eating mango", hindi: "मुझे आम खाना पसंद है"),
+        ],
+        462: [
+            WordExample(thai: "แตงโมหวานดี", romanization: "taeng-moo wǎan dii", english: "The watermelon is nicely sweet", hindi: "तरबूज़ अच्छा मीठा है"),
+            WordExample(thai: "ฉันชอบกินแตงโม", romanization: "chǎn chôop kin taeng-moo", english: "I like eating watermelon", hindi: "मुझे तरबूज़ खाना पसंद है"),
+        ],
+        463: [
+            WordExample(thai: "สับปะรดหวานมาก", romanization: "sàp-pà-rót wǎan mâak", english: "The pineapple is very sweet", hindi: "अनानास बहुत मीठा है"),
+            WordExample(thai: "ผมชอบสับปะรด", romanization: "phǒm chôop sàp-pà-rót", english: "I like pineapple", hindi: "मुझे अनानास पसंद है"),
+        ],
+        464: [
+            WordExample(thai: "น้ำมะพร้าวอร่อยมาก", romanization: "nám-má-práao à-ròi mâak", english: "Coconut water is very tasty", hindi: "नारियल पानी बहुत स्वादिष्ट है"),
+            WordExample(thai: "ฉันชอบมะพร้าว", romanization: "chǎn chôop má-práao", english: "I like coconut", hindi: "मुझे नारियल पसंद है"),
+        ],
+        465: [
+            WordExample(thai: "น้ำปลาเค็มมาก", romanization: "nám-plaa khem mâak", english: "Fish sauce is very salty", hindi: "फ़िश सॉस बहुत नमकीन है"),
+            WordExample(thai: "เขาชอบน้ำปลา", romanization: "khǎo chôop nám-plaa", english: "He likes fish sauce", hindi: "उसे फ़िश सॉस पसंद है"),
+        ],
+        466: [
+            WordExample(thai: "พริกเผ็ดมาก", romanization: "phrík phèt mâak", english: "The chili is very spicy", hindi: "मिर्च बहुत तीखी है"),
+            WordExample(thai: "ฉันไม่กินพริก", romanization: "chǎn mâi kin phrík", english: "I do not eat chili", hindi: "मैं मिर्च नहीं खाती"),
+        ],
+        467: [
+            WordExample(thai: "ขอเมนูครับ", romanization: "khǎaw mee-nuu khráp", english: "The menu, please", hindi: "मेन्यू दीजिए"),
+            WordExample(thai: "เมนูอยู่ที่นี่", romanization: "mee-nuu yùu thîi-nîi", english: "The menu is here", hindi: "मेन्यू यहाँ है"),
+        ],
+        468: [
+            WordExample(thai: "ขอน้ำเปล่าครับ", romanization: "khǎaw nám-plàao khráp", english: "Plain water, please", hindi: "सादा पानी दीजिए"),
+            WordExample(thai: "ฉันดื่มน้ำเปล่า", romanization: "chǎn dùuem nám-plàao", english: "I drink plain water", hindi: "मैं सादा पानी पीती हूँ"),
+        ],
+        469: [
+            WordExample(thai: "ไอศกรีมหวานมาก", romanization: "ai-sà-kriim wǎan mâak", english: "The ice cream is very sweet", hindi: "आइसक्रीम बहुत मीठी है"),
+            WordExample(thai: "เขาชอบกินไอศกรีม", romanization: "khǎo chôop kin ai-sà-kriim", english: "He likes eating ice cream", hindi: "उसे आइसक्रीम खाना पसंद है"),
+        ],
+        470: [
+            WordExample(thai: "ผมชอบข้าวผัด", romanization: "phǒm chôop khâao-phàt", english: "I like fried rice", hindi: "मुझे फ्राइड राइस पसंद है"),
+            WordExample(thai: "ผัดผักอร่อยดี", romanization: "phàt-phàk à-ròi dii", english: "Stir-fried vegetables are tasty", hindi: "भुनी सब्ज़ी स्वादिष्ट है"),
+        ],
+        471: [
+            WordExample(thai: "ไก่ทอดอร่อยมาก", romanization: "kài-thâawt à-ròi mâak", english: "Fried chicken is very tasty", hindi: "फ्राइड चिकन बहुत स्वादिष्ट है"),
+            WordExample(thai: "ฉันชอบปลาทอด", romanization: "chǎn chôop plaa-thâawt", english: "I like fried fish", hindi: "मुझे तली हुई मछली पसंद है"),
+        ],
+        472: [
+            WordExample(thai: "ผมกินอาหารเช้า", romanization: "phǒm kin aa-hǎan-cháao", english: "I eat breakfast", hindi: "मैं नाश्ता करता हूँ"),
+            WordExample(thai: "อาหารเช้าอร่อยมาก", romanization: "aa-hǎan-cháao à-ròi mâak", english: "Breakfast is very tasty", hindi: "नाश्ता बहुत स्वादिष्ट है"),
+        ],
+        473: [
+            WordExample(thai: "ผมหิวน้ำมาก", romanization: "phǒm hǐu-náam mâak", english: "I am very thirsty", hindi: "मुझे बहुत प्यास लगी है"),
+            WordExample(thai: "คุณหิวน้ำไหม", romanization: "khun hǐu-náam mǎi", english: "Are you thirsty?", hindi: "क्या आपको प्यास लगी है?"),
+        ],
+        474: [
+            WordExample(thai: "ส้มอร่อยมาก", romanization: "sôm à-ròi mâak", english: "Oranges are very delicious.", hindi: "संतरा बहुत स्वादिष्ट है।"),
+            WordExample(thai: "คุณชอบส้มไหมครับ", romanization: "khun chôp sôm mǎi khráp", english: "Do you like oranges?", hindi: "क्या आपको संतरा पसंद है?"),
+        ],
+        475: [
+            WordExample(thai: "มะละกออร่อยมาก", romanization: "má-lá-kaw à-ròi mâak", english: "Papaya is very delicious.", hindi: "पपीता बहुत स्वादिष्ट है।"),
+            WordExample(thai: "ฉันไม่ชอบมะละกอค่ะ", romanization: "chǎn mâi chôp má-lá-kaw khâ", english: "I do not like papaya.", hindi: "मुझे पपीता पसंद नहीं है।"),
+        ],
+        476: [
+            WordExample(thai: "ทุเรียนอยู่ที่นี่", romanization: "thú-rian yùu thîi-nîi", english: "The durian is here.", hindi: "ड्यूरियन यहाँ है।"),
+            WordExample(thai: "ผมไม่ชอบทุเรียนครับ", romanization: "pǒm mâi chôp thú-rian khráp", english: "I do not like durian.", hindi: "मुझे ड्यूरियन पसंद नहीं है।"),
+        ],
+        477: [
+            WordExample(thai: "มังคุดอร่อยมาก", romanization: "mang-khút à-ròi mâak", english: "Mangosteen is very delicious.", hindi: "मैंगोस्टीन बहुत स्वादिष्ट है।"),
+            WordExample(thai: "เขาชอบกินมังคุด", romanization: "khǎo chôp kin mang-khút", english: "He likes eating mangosteen.", hindi: "उसे मैंगोस्टीन खाना पसंद है।"),
+        ],
+        478: [
+            WordExample(thai: "เงาะนี้ดีมาก", romanization: "ngáw níi dii mâak", english: "This rambutan is very good.", hindi: "यह रामबूतान बहुत अच्छा है।"),
+            WordExample(thai: "ฉันชอบกินเงาะค่ะ", romanization: "chǎn chôp kin ngáw khâ", english: "I like eating rambutan.", hindi: "मुझे रामबूतान खाना पसंद है।"),
+        ],
+        479: [
+            WordExample(thai: "ลำไยอร่อยมาก", romanization: "lam-yai à-ròi mâak", english: "Longan is very delicious.", hindi: "लोंगन बहुत स्वादिष्ट है।"),
+            WordExample(thai: "คุณชอบลำไยไหมครับ", romanization: "khun chôp lam-yai mǎi khráp", english: "Do you like longan?", hindi: "क्या आपको लोंगन पसंद है?"),
+        ],
+        480: [
+            WordExample(thai: "ฉันชอบกินลิ้นจี่ค่ะ", romanization: "chǎn chôp kin lín-chìi khâ", english: "I like eating lychee.", hindi: "मुझे लीची खाना पसंद है।"),
+            WordExample(thai: "ลิ้นจี่ที่นี่ดีมาก", romanization: "lín-chìi thîi-nîi dii mâak", english: "The lychee here is very good.", hindi: "यहाँ की लीची बहुत अच्छी है।"),
+        ],
+        481: [
+            WordExample(thai: "ผมกินฝรั่งครับ", romanization: "pǒm kin fà-ràng khráp", english: "I eat guava.", hindi: "मैं अमरूद खाता हूँ।"),
+            WordExample(thai: "ฝรั่งนี้อร่อยมาก", romanization: "fà-ràng níi à-ròi mâak", english: "This guava is very delicious.", hindi: "यह अमरूद बहुत स्वादिष्ट है।"),
+        ],
+        482: [
+            WordExample(thai: "ฉันกินแอปเปิ้ลค่ะ", romanization: "chǎn kin áep-pêrn khâ", english: "I eat an apple.", hindi: "मैं सेब खाती हूँ।"),
+            WordExample(thai: "แอปเปิ้ลดีมาก", romanization: "áep-pêrn dii mâak", english: "Apples are very good.", hindi: "सेब बहुत अच्छा है।"),
+        ],
+        483: [
+            WordExample(thai: "องุ่นอร่อยมาก", romanization: "à-ngùn à-ròi mâak", english: "Grapes are very delicious.", hindi: "अंगूर बहुत स्वादिष्ट हैं।"),
+            WordExample(thai: "เขาชอบกินองุ่นมาก", romanization: "khǎo chôp kin à-ngùn mâak", english: "He really likes eating grapes.", hindi: "उसे अंगूर खाना बहुत पसंद है।"),
+        ],
+        484: [
+            WordExample(thai: "น้ำมะนาวอร่อยมาก", romanization: "nám-má-naao à-ròi mâak", english: "Lime juice is very delicious.", hindi: "नींबू पानी बहुत स्वादिष्ट है।"),
+            WordExample(thai: "มะนาวอยู่ที่นี่", romanization: "má-naao yùu thîi-nîi", english: "The limes are here.", hindi: "नींबू यहाँ है।"),
+        ],
+        485: [
+            WordExample(thai: "ขนุนอร่อยมาก", romanization: "khà-nǔn à-ròi mâak", english: "Jackfruit is very delicious.", hindi: "कटहल बहुत स्वादिष्ट है।"),
+            WordExample(thai: "ผมชอบกินขนุนครับ", romanization: "pǒm chôp kin khà-nǔn khráp", english: "I like eating jackfruit.", hindi: "मुझे कटहल खाना पसंद है।"),
+        ],
+        486: [
+            WordExample(thai: "แก้วมังกรอยู่ที่นี่", romanization: "kâew-mang-kawn yùu thîi-nîi", english: "The dragon fruit is here.", hindi: "ड्रैगन फ्रूट यहाँ है।"),
+            WordExample(thai: "ฉันชอบแก้วมังกรค่ะ", romanization: "chǎn chôp kâew-mang-kawn khâ", english: "I like dragon fruit.", hindi: "मुझे ड्रैगन फ्रूट पसंद है।"),
+        ],
+        487: [
+            WordExample(thai: "มะเขือเทศนี้ดีมาก", romanization: "má-khǔea-thêet níi dii mâak", english: "This tomato is very good.", hindi: "यह टमाटर बहुत अच्छा है।"),
+            WordExample(thai: "ฉันกินมะเขือเทศค่ะ", romanization: "chǎn kin má-khǔea-thêet khâ", english: "I eat tomatoes.", hindi: "मैं टमाटर खाती हूँ।"),
+        ],
+        488: [
+            WordExample(thai: "แตงกวาอยู่ที่นี่", romanization: "taeng-kwaa yùu thîi-nîi", english: "The cucumber is here.", hindi: "खीरा यहाँ है।"),
+            WordExample(thai: "ผมกินแตงกวาครับ", romanization: "pǒm kin taeng-kwaa khráp", english: "I eat cucumber.", hindi: "मैं खीरा खाता हूँ।"),
+        ],
+        489: [
+            WordExample(thai: "กระเทียมอยู่ที่นี่", romanization: "krà-thiam yùu thîi-nîi", english: "The garlic is here.", hindi: "लहसुन यहाँ है।"),
+            WordExample(thai: "ผมชอบกระเทียมครับ", romanization: "pǒm chôp krà-thiam khráp", english: "I like garlic.", hindi: "मुझे लहसुन पसंद है।"),
+        ],
+        490: [
+            WordExample(thai: "หัวหอมอยู่ที่นี่", romanization: "hǔa-hǎwm yùu thîi-nîi", english: "The onions are here.", hindi: "प्याज यहाँ है।"),
+            WordExample(thai: "ฉันไม่ชอบหัวหอมค่ะ", romanization: "chǎn mâi chôp hǔa-hǎwm khâ", english: "I do not like onions.", hindi: "मुझे प्याज पसंद नहीं है।"),
+        ],
+        491: [
+            WordExample(thai: "ชาขิงอร่อยมาก", romanization: "chaa-khǐng à-ròi mâak", english: "Ginger tea is very delicious.", hindi: "अदरक की चाय बहुत स्वादिष्ट है।"),
+            WordExample(thai: "ผมไม่กินขิงครับ", romanization: "pǒm mâi kin khǐng khráp", english: "I do not eat ginger.", hindi: "मैं अदरक नहीं खाता।"),
+        ],
+        492: [
+            WordExample(thai: "ฉันชอบกินผักบุ้งค่ะ", romanization: "chǎn chôp kin phàk-bûng khâ", english: "I like eating morning glory.", hindi: "मुझे कलमी साग खाना पसंद है।"),
+            WordExample(thai: "ผักบุ้งดีมาก", romanization: "phàk-bûng dii mâak", english: "Morning glory is very good.", hindi: "कलमी साग बहुत अच्छा है।"),
+        ],
+        493: [
+            WordExample(thai: "กะหล่ำปลีอยู่ที่นี่", romanization: "kà-làm-plii yùu thîi-nîi", english: "The cabbage is here.", hindi: "पत्ता गोभी यहाँ है।"),
+            WordExample(thai: "ฉันกินกะหล่ำปลีค่ะ", romanization: "chǎn kin kà-làm-plii khâ", english: "I eat cabbage.", hindi: "मैं पत्ता गोभी खाती हूँ।"),
+        ],
+        494: [
+            WordExample(thai: "แครอทดีมาก", romanization: "khae-ràwt dii mâak", english: "Carrots are very good.", hindi: "गाजर बहुत अच्छी है।"),
+            WordExample(thai: "เขาชอบกินแครอท", romanization: "khǎo chôp kin khae-ràwt", english: "He likes eating carrots.", hindi: "उसे गाजर खाना पसंद है।"),
+        ],
+        495: [
+            WordExample(thai: "เห็ดอร่อยมาก", romanization: "hèt à-ròi mâak", english: "Mushrooms are very delicious.", hindi: "मशरूम बहुत स्वादिष्ट है।"),
+            WordExample(thai: "คุณชอบเห็ดไหมครับ", romanization: "khun chôp hèt mǎi khráp", english: "Do you like mushrooms?", hindi: "क्या आपको मशरूम पसंद है?"),
+        ],
+        496: [
+            WordExample(thai: "ข้าวโพดอร่อยมาก", romanization: "khâao-phôot à-ròi mâak", english: "Corn is very delicious.", hindi: "मक्का बहुत स्वादिष्ट है।"),
+            WordExample(thai: "ผมชอบกินข้าวโพดครับ", romanization: "pǒm chôp kin khâao-phôot khráp", english: "I like eating corn.", hindi: "मुझे मक्का खाना पसंद है।"),
+        ],
+        497: [
+            WordExample(thai: "แกงฟักทองอร่อยมาก", romanization: "kaeng fák-thawng à-ròi mâak", english: "Pumpkin curry is very delicious.", hindi: "कद्दू की करी बहुत स्वादिष्ट है।"),
+            WordExample(thai: "ฉันชอบฟักทองค่ะ", romanization: "chǎn chôp fák-thawng khâ", english: "I like pumpkin.", hindi: "मुझे कद्दू पसंद है।"),
+        ],
+        498: [
+            WordExample(thai: "แม่ทำอาหารอร่อยมาก", romanization: "mâe tham-aa-hǎan à-ròi mâak", english: "Mom cooks very delicious food.", hindi: "माँ बहुत स्वादिष्ट खाना बनाती हैं।"),
+            WordExample(thai: "ผมชอบทำอาหารไทย", romanization: "phǒm chôrp tham-aa-hǎan thai", english: "I like cooking Thai food.", hindi: "मुझे थाई खाना बनाना पसंद है।"),
+        ],
+        499: [
+            WordExample(thai: "ต้มไข่ให้หน่อย", romanization: "tôm khài hâi nòi", english: "Boil an egg for me please.", hindi: "मेरे लिए अंडा उबाल दो।"),
+            WordExample(thai: "เขาต้มน้ำอยู่", romanization: "khǎo tôm náam yùu", english: "He is boiling water.", hindi: "वह पानी उबाल रहा है।"),
+        ],
+        500: [
+            WordExample(thai: "ปลานึ่งอร่อยมาก", romanization: "plaa nûeng à-ròi mâak", english: "Steamed fish is very delicious.", hindi: "भाप में पकी मछली बहुत स्वादिष्ट है।"),
+            WordExample(thai: "แม่นึ่งข้าวเหนียว", romanization: "mâe nûeng khâao-nǐao", english: "Mom steams sticky rice.", hindi: "माँ चिपचिपा चावल भाप में पकाती हैं।"),
+        ],
+        501: [
+            WordExample(thai: "ไก่ย่างอร่อยมาก", romanization: "kài yâang à-ròi mâak", english: "Grilled chicken is very delicious.", hindi: "ग्रिल्ड चिकन बहुत स्वादिष्ट है।"),
+            WordExample(thai: "เขาย่างปลาที่นี่", romanization: "khǎo yâang plaa thîi-nîi", english: "He grills fish here.", hindi: "वह यहाँ मछली ग्रिल करता है।"),
+        ],
+        502: [
+            WordExample(thai: "ฉันหั่นผักในครัว", romanization: "chǎn hàn phàk nai khrua", english: "I cut vegetables in the kitchen.", hindi: "मैं रसोई में सब्ज़ियाँ काटती हूँ।"),
+            WordExample(thai: "หั่นพริกให้หน่อย", romanization: "hàn phrík hâi nòi", english: "Please cut the chilies for me.", hindi: "मेरे लिए मिर्च काट दो।"),
+        ],
+        503: [
+            WordExample(thai: "แม่อยู่ในครัว", romanization: "mâe yùu nai khrua", english: "Mom is in the kitchen.", hindi: "माँ रसोई में हैं।"),
+            WordExample(thai: "ครัวนี้สะอาดมาก", romanization: "khrua níi sà-àat mâak", english: "This kitchen is very clean.", hindi: "यह रसोई बहुत साफ़ है।"),
+        ],
+        504: [
+            WordExample(thai: "มีดนี้คมมาก", romanization: "mîit níi khom mâak", english: "This knife is very sharp.", hindi: "यह चाकू बहुत तेज़ है।"),
+            WordExample(thai: "ผมใช้มีดหั่นผัก", romanization: "phǒm chái mîit hàn phàk", english: "I use a knife to cut vegetables.", hindi: "मैं सब्ज़ी काटने के लिए चाकू इस्तेमाल करता हूँ।"),
+        ],
+        505: [
+            WordExample(thai: "ก๋วยเตี๋ยวชามใหญ่", romanization: "kǔai-tǐao chaam yài", english: "A big bowl of noodles.", hindi: "नूडल्स का बड़ा कटोरा।"),
+            WordExample(thai: "ขอชามหน่อยค่ะ", romanization: "khǒr chaam nòi khâ", english: "May I have a bowl please.", hindi: "एक कटोरा देना।"),
+        ],
+        506: [
+            WordExample(thai: "หม้อนี้ร้อนมาก", romanization: "môr níi rórn mâak", english: "This pot is very hot.", hindi: "यह पतीला बहुत गरम है।"),
+            WordExample(thai: "แม่ต้มแกงในหม้อ", romanization: "mâe tôm kaeng nai môr", english: "Mom boils curry in the pot.", hindi: "माँ पतीले में करी पकाती हैं।"),
+        ],
+        507: [
+            WordExample(thai: "กระทะร้อนแล้ว", romanization: "krà-thá rórn láew", english: "The pan is hot already.", hindi: "कड़ाही गरम हो गई है।"),
+            WordExample(thai: "ผมผัดข้าวในกระทะ", romanization: "phǒm phàt khâao nai krà-thá", english: "I fry rice in the pan.", hindi: "मैं कड़ाही में चावल भूनता हूँ।"),
+        ],
+        508: [
+            WordExample(thai: "ผมใช้ตะเกียบไม่เป็น", romanization: "phǒm chái tà-kìap mâi pen", english: "I cannot use chopsticks.", hindi: "मुझे चॉपस्टिक चलाना नहीं आता।"),
+            WordExample(thai: "ขอตะเกียบหน่อยครับ", romanization: "khǒr tà-kìap nòi khráp", english: "Chopsticks please.", hindi: "चॉपस्टिक देना।"),
+        ],
+        509: [
+            WordExample(thai: "เตานี้ร้อนมาก", romanization: "tao níi rórn mâak", english: "This stove is very hot.", hindi: "यह चूल्हा बहुत गरम है।"),
+            WordExample(thai: "หม้ออยู่บนเตา", romanization: "môr yùu bon tao", english: "The pot is on the stove.", hindi: "पतीला चूल्हे पर है।"),
+        ],
+        510: [
+            WordExample(thai: "ใส่น้ำมันหน่อย", romanization: "sài nám-man nòi", english: "Add a little oil.", hindi: "थोड़ा तेल डालो।"),
+            WordExample(thai: "น้ำมันร้อนแล้ว", romanization: "nám-man rórn láew", english: "The oil is hot already.", hindi: "तेल गरम हो गया है।"),
+        ],
+        511: [
+            WordExample(thai: "ขอซอสหน่อยครับ", romanization: "khǒr sórt nòi khráp", english: "Some sauce please.", hindi: "थोड़ा सॉस देना।"),
+            WordExample(thai: "ซอสนี้อร่อยมาก", romanization: "sórt níi à-ròi mâak", english: "This sauce is very delicious.", hindi: "यह सॉस बहुत स्वादिष्ट है।"),
+        ],
+        512: [
+            WordExample(thai: "ไก่อบอร่อยมาก", romanization: "kài òp à-ròi mâak", english: "Baked chicken is very delicious.", hindi: "बेक किया चिकन बहुत स्वादिष्ट है।"),
+            WordExample(thai: "แม่อบขนมอยู่", romanization: "mâe òp khà-nǒm yùu", english: "Mom is baking sweets.", hindi: "माँ मिठाई बेक कर रही हैं।"),
+        ],
+        513: [
+            WordExample(thai: "ชิมหน่อยไหม", romanization: "chim nòi mǎi", english: "Want to taste a little?", hindi: "थोड़ा चखोगे?"),
+            WordExample(thai: "ฉันชิมแกงแล้ว", romanization: "chǎn chim kaeng láew", english: "I already tasted the curry.", hindi: "मैंने करी चख ली है।"),
+        ],
+        514: [
+            WordExample(thai: "ข้าวสุกแล้ว", romanization: "khâao sùk láew", english: "The rice is cooked.", hindi: "चावल पक गया है।"),
+            WordExample(thai: "ไก่ยังไม่สุก", romanization: "kài yang mâi sùk", english: "The chicken is not cooked yet.", hindi: "चिकन अभी पका नहीं है।"),
+        ],
+        515: [
+            WordExample(thai: "ผมไม่กินปลาดิบ", romanization: "phǒm mâi kin plaa dìp", english: "I do not eat raw fish.", hindi: "मैं कच्ची मछली नहीं खाता।"),
+            WordExample(thai: "ผักนี้ยังดิบอยู่", romanization: "phàk níi yang dìp yùu", english: "These vegetables are still raw.", hindi: "यह सब्ज़ी अभी कच्ची है।"),
+        ],
+        516: [
+            WordExample(thai: "อุ่นข้าวให้หน่อย", romanization: "ùn khâao hâi nòi", english: "Please warm up the rice.", hindi: "चावल थोड़ा गरम कर दो।"),
+            WordExample(thai: "ฉันชอบน้ำอุ่น", romanization: "chǎn chôrp náam ùn", english: "I like warm water.", hindi: "मुझे गुनगुना पानी पसंद है।"),
+        ],
+        517: [
+            WordExample(thai: "ขอข้าวเปล่าครับ", romanization: "khǒo khâao plào khráp", english: "Plain rice, please", hindi: "सादा चावल दीजिए"),
+            WordExample(thai: "เขากินข้าวเปล่า", romanization: "kháo kin khâao plào", english: "He eats plain rice", hindi: "वह सादा चावल खाता है"),
+        ],
+        518: [
+            WordExample(thai: "ไปร้านกาแฟไหม", romanization: "pai ráan-kaa-fae mǎi", english: "Shall we go to the coffee shop?", hindi: "कॉफ़ी शॉप चलें?"),
+            WordExample(thai: "ร้านกาแฟนี้ดีมาก", romanization: "ráan-kaa-fae níi dii mâak", english: "This coffee shop is very good", hindi: "यह कॉफ़ी शॉप बहुत अच्छी है"),
+        ],
+        519: [
+            WordExample(thai: "คุณสั่งอะไร", romanization: "khun sàng à-rai", english: "What did you order?", hindi: "आपने क्या ऑर्डर किया?"),
+            WordExample(thai: "ผมสั่งกาแฟร้อน", romanization: "phǒm sàng kaa-fae rón", english: "I order hot coffee", hindi: "मैं गरम कॉफ़ी ऑर्डर करता हूँ"),
+        ],
+        520: [
+            WordExample(thai: "กาแฟดำขมมาก", romanization: "kaa-fae-dam khǒm mâak", english: "Black coffee is very bitter", hindi: "ब्लैक कॉफ़ी बहुत कड़वी होती है"),
+            WordExample(thai: "ชานี้ขมมาก", romanization: "chaa níi khǒm mâak", english: "This tea is very bitter", hindi: "यह चाय बहुत कड़वी है"),
+        ],
+        521: [
+            WordExample(thai: "ขอชาเย็นหวานน้อย", romanization: "khǒo chaa-yen wǎan-nói", english: "Thai iced tea, less sweet please", hindi: "थाई ठंडी चाय कम मीठी दीजिए"),
+            WordExample(thai: "เอาหวานน้อยครับ", romanization: "ao wǎan-nói khráp", english: "Less sweet, please", hindi: "कम मीठा कीजिए"),
+        ],
+        522: [
+            WordExample(thai: "ขอเพิ่มน้ำแข็งหน่อย", romanization: "khǒo phêrm nám-khǎeng nòi", english: "Please add more ice", hindi: "थोड़ी और बर्फ़ डालिए"),
+            WordExample(thai: "เพิ่มนมได้ไหม", romanization: "phêrm num dâi mǎi", english: "Can you add milk?", hindi: "क्या दूध बढ़ा सकते हैं?"),
+        ],
+        523: [
+            WordExample(thai: "ฉันชอบน้ำผลไม้", romanization: "chǎn chôp nám-phǒn-lá-mái", english: "I like fruit juice", hindi: "मुझे फलों का रस पसंद है"),
+            WordExample(thai: "ขอน้ำผลไม้หนึ่งแก้ว", romanization: "khǒo nám-phǒn-lá-mái nèung kâew", english: "One glass of fruit juice, please", hindi: "फलों के रस का एक गिलास दीजिए"),
+        ],
+        524: [
+            WordExample(thai: "ขอน้ำมะนาวเย็น", romanization: "khǒo nám-má-naao yen", english: "An iced lime juice, please", hindi: "ठंडा नींबू पानी दीजिए"),
+            WordExample(thai: "น้ำมะนาวอร่อยมาก", romanization: "nám-má-naao à-ròi mâak", english: "Lime juice is very tasty", hindi: "नींबू पानी बहुत स्वादिष्ट है"),
+        ],
+        525: [
+            WordExample(thai: "น้ำมะพร้าวเย็นอร่อย", romanization: "nám-má-phráao yen à-ròi", english: "Cold coconut water is tasty", hindi: "ठंडा नारियल पानी स्वादिष्ट है"),
+            WordExample(thai: "ขอน้ำมะพร้าวครับ", romanization: "khǒo nám-má-phráao khráp", english: "Coconut water, please", hindi: "नारियल पानी दीजिए"),
+        ],
+        526: [
+            WordExample(thai: "เขาชอบน้ำอัดลม", romanization: "kháo chôp nám-àt-lom", english: "He likes soft drinks", hindi: "उसे कोल्ड ड्रिंक पसंद है"),
+            WordExample(thai: "น้ำอัดลมหวานมาก", romanization: "nám-àt-lom wǎan mâak", english: "Soft drinks are very sweet", hindi: "कोल्ड ड्रिंक बहुत मीठी होती है"),
+        ],
+        527: [
+            WordExample(thai: "ขอน้ำปั่นหนึ่งแก้ว", romanization: "khǒo nám-pàn nèung kâew", english: "One smoothie, please", hindi: "एक स्मूदी दीजिए"),
+            WordExample(thai: "น้ำปั่นเย็นมาก", romanization: "nám-pàn yen mâak", english: "The smoothie is very cold", hindi: "स्मूदी बहुत ठंडी है"),
+        ],
+        528: [
+            WordExample(thai: "ชาเย็นหวานมาก", romanization: "chaa-yen wǎan mâak", english: "Thai iced tea is very sweet", hindi: "थाई ठंडी चाय बहुत मीठी होती है"),
+            WordExample(thai: "ขอชาเย็นหนึ่งแก้ว", romanization: "khǒo chaa-yen nèung kâew", english: "One Thai iced tea, please", hindi: "एक थाई ठंडी चाय दीजिए"),
+        ],
+        529: [
+            WordExample(thai: "ฉันชอบชานมมาก", romanization: "chǎn chôp chaa-num mâak", english: "I like milk tea a lot", hindi: "मुझे दूध वाली चाय बहुत पसंद है"),
+            WordExample(thai: "ชานมแก้วนี้อร่อย", romanization: "chaa-num kâew níi à-ròi", english: "This glass of milk tea is tasty", hindi: "दूध वाली चाय का यह गिलास स्वादिष्ट है"),
+        ],
+        530: [
+            WordExample(thai: "ชาเขียวร้อนหอมมาก", romanization: "chaa-khǐao rón hǒom mâak", english: "Hot green tea is very fragrant", hindi: "गरम ग्रीन टी बहुत खुशबूदार है"),
+            WordExample(thai: "คุณชอบชาเขียวไหม", romanization: "khun chôp chaa-khǐao mǎi", english: "Do you like green tea?", hindi: "क्या आपको ग्रीन टी पसंद है?"),
+        ],
+        531: [
+            WordExample(thai: "ขอกาแฟเย็นครับ", romanization: "khǒo kaa-fae-yen khráp", english: "An iced coffee, please", hindi: "ठंडी कॉफ़ी दीजिए"),
+            WordExample(thai: "กาแฟเย็นหวานมาก", romanization: "kaa-fae-yen wǎan mâak", english: "Iced coffee is very sweet", hindi: "ठंडी कॉफ़ी बहुत मीठी होती है"),
+        ],
+        532: [
+            WordExample(thai: "ผมดื่มกาแฟดำ", romanization: "phǒm dùem kaa-fae-dam", english: "I drink black coffee", hindi: "मैं ब्लैक कॉफ़ी पीता हूँ"),
+            WordExample(thai: "กาแฟดำไม่หวาน", romanization: "kaa-fae-dam mâi wǎan", english: "Black coffee is not sweet", hindi: "ब्लैक कॉफ़ी मीठी नहीं होती"),
+        ],
+        533: [
+            WordExample(thai: "นมเย็นหวานอร่อย", romanization: "num-yen wǎan à-ròi", english: "Pink milk is sweet and tasty", hindi: "गुलाबी दूध मीठा और स्वादिष्ट है"),
+            WordExample(thai: "ขอนมเย็นหนึ่งแก้ว", romanization: "khǒo num-yen nèung kâew", english: "One pink milk, please", hindi: "एक गुलाबी दूध दीजिए"),
+        ],
+        534: [
+            WordExample(thai: "โกโก้ร้อนอร่อยมาก", romanization: "koo-kôo rón à-ròi mâak", english: "Hot cocoa is very tasty", hindi: "गरम कोको बहुत स्वादिष्ट है"),
+            WordExample(thai: "เขาชอบโกโก้เย็น", romanization: "kháo chôp koo-kôo yen", english: "He likes iced cocoa", hindi: "उसे ठंडा कोको पसंद है"),
+        ],
+        535: [
+            WordExample(thai: "ผมไม่ดื่มเบียร์", romanization: "phǒm mâi dùem bia", english: "I do not drink beer", hindi: "मैं बीयर नहीं पीता"),
+            WordExample(thai: "เบียร์แก้วนี้เย็นมาก", romanization: "bia kâew níi yen mâak", english: "This glass of beer is very cold", hindi: "बीयर का यह गिलास बहुत ठंडा है"),
+        ],
+        536: [
+            WordExample(thai: "เค้กนี้อร่อยมาก", romanization: "khéek níi à-ròi mâak", english: "This cake is very tasty", hindi: "यह केक बहुत स्वादिष्ट है"),
+            WordExample(thai: "ฉันกินเค้กกับชา", romanization: "chǎn kin khéek kàp chaa", english: "I eat cake with tea", hindi: "मैं चाय के साथ केक खाती हूँ"),
+        ],
+        537: [
+            WordExample(thai: "ขอหลอดหน่อยครับ", romanization: "khǒo lòot nòi khráp", english: "A straw, please", hindi: "एक स्ट्रॉ दीजिए"),
+            WordExample(thai: "ไม่เอาหลอดค่ะ", romanization: "mâi ao lòot khâ", english: "No straw, please", hindi: "स्ट्रॉ नहीं चाहिए"),
+        ],
+        538: [
+            WordExample(thai: "แกงนี้มีข่า", romanization: "kaeng níi mii khàa", english: "This curry has galangal.", hindi: "इस करी में कुलंजन है।"),
+            WordExample(thai: "ข่าไม่ใช่ขิง", romanization: "khàa mâi châi khǐng", english: "Galangal is not ginger.", hindi: "कुलंजन अदरक नहीं है।"),
+        ],
+        539: [
+            WordExample(thai: "ตะไคร้หอมมาก", romanization: "tà-khrái hǒm mâak", english: "Lemongrass is very fragrant.", hindi: "लेमनग्रास बहुत खुशबूदार है।"),
+            WordExample(thai: "อาหารนี้มีตะไคร้", romanization: "aa-hǎan níi mii tà-khrái", english: "This food has lemongrass.", hindi: "इस खाने में लेमनग्रास है।"),
+        ],
+        540: [
+            WordExample(thai: "แกงมีใบมะกรูด", romanization: "kaeng mii bai-má-krùut", english: "The curry has kaffir lime leaves.", hindi: "करी में काफिर नींबू के पत्ते हैं।"),
+            WordExample(thai: "ใบมะกรูดหอมมาก", romanization: "bai-má-krùut hǒm mâak", english: "Kaffir lime leaves are very fragrant.", hindi: "काफिर नींबू के पत्ते बहुत खुशबूदार हैं।"),
+        ],
+        541: [
+            WordExample(thai: "ผมชอบโหระพาครับ", romanization: "phǒm chôp hǒo-rá-phaa khráp", english: "I like Thai basil.", hindi: "मुझे थाई तुलसी पसंद है।"),
+            WordExample(thai: "ใส่โหระพาหน่อยค่ะ", romanization: "sài hǒo-rá-phaa nòi khâ", english: "Please add some Thai basil.", hindi: "थोड़ी थाई तुलसी डालिए।"),
+        ],
+        542: [
+            WordExample(thai: "ผมชอบกะเพรามาก", romanization: "phǒm chôp kà-phrao mâak", english: "I like holy basil a lot.", hindi: "मुझे होली बेसिल बहुत पसंद है।"),
+            WordExample(thai: "กะเพราเผ็ดนิดหน่อย", romanization: "kà-phrao phèt nít-nòi", english: "Holy basil is a little spicy.", hindi: "होली बेसिल थोड़ी तीखी है।"),
+        ],
+        543: [
+            WordExample(thai: "ไม่ใส่ผักชีครับ", romanization: "mâi sài phàk-chii khráp", english: "No coriander, please.", hindi: "धनिया मत डालिए।"),
+            WordExample(thai: "คุณชอบผักชีไหม", romanization: "khun chôp phàk-chii mǎi", english: "Do you like coriander?", hindi: "क्या आपको धनिया पसंद है?"),
+        ],
+        544: [
+            WordExample(thai: "สะระแหน่หอมดี", romanization: "sà-rá-nàe hǒm dii", english: "Mint is nicely fragrant.", hindi: "पुदीना अच्छा खुशबूदार है।"),
+            WordExample(thai: "ฉันชอบสะระแหน่ค่ะ", romanization: "chǎn chôp sà-rá-nàe khâ", english: "I like mint.", hindi: "मुझे पुदीना पसंद है।"),
+        ],
+        545: [
+            WordExample(thai: "ขอพริกไทยหน่อยครับ", romanization: "khǒo phrík-thai nòi khráp", english: "Some pepper, please.", hindi: "थोड़ी काली मिर्च दीजिए।"),
+            WordExample(thai: "พริกไทยเผ็ดนิดหน่อย", romanization: "phrík-thai phèt nít-nòi", english: "Pepper is a little spicy.", hindi: "काली मिर्च थोड़ी तीखी है।"),
+        ],
+        546: [
+            WordExample(thai: "ใส่ซีอิ๊วหน่อยครับ", romanization: "sài sii-íu nòi khráp", english: "Add a little soy sauce.", hindi: "थोड़ा सोया सॉस डालिए।"),
+            WordExample(thai: "ผมชอบซีอิ๊วครับ", romanization: "phǒm chôp sii-íu khráp", english: "I like soy sauce.", hindi: "मुझे सोया सॉस पसंद है।"),
+        ],
+        547: [
+            WordExample(thai: "อาหารนี้มีน้ำมันหอย", romanization: "aa-hǎan níi mii nám-man-hǒi", english: "This dish has oyster sauce.", hindi: "इस खाने में ऑयस्टर सॉस है।"),
+            WordExample(thai: "น้ำมันหอยอร่อยมาก", romanization: "nám-man-hǒi à-ròi mâak", english: "Oyster sauce is very tasty.", hindi: "ऑयस्टर सॉस बहुत स्वादिष्ट है।"),
+        ],
+        548: [
+            WordExample(thai: "กะปิหอมมาก", romanization: "kà-pì hǒm mâak", english: "Shrimp paste is very fragrant.", hindi: "झींगा पेस्ट बहुत खुशबूदार है।"),
+            WordExample(thai: "ฉันไม่กินกะปิค่ะ", romanization: "chǎn mâi kin kà-pì khâ", english: "I do not eat shrimp paste.", hindi: "मैं झींगा पेस्ट नहीं खाती।"),
+        ],
+        549: [
+            WordExample(thai: "ขอน้ำจิ้มหน่อยครับ", romanization: "khǒo nám-jîm nòi khráp", english: "Some dipping sauce, please.", hindi: "थोड़ी डिपिंग सॉस दीजिए।"),
+            WordExample(thai: "น้ำจิ้มนี้อร่อยมาก", romanization: "nám-jîm níi à-ròi mâak", english: "This dipping sauce is delicious.", hindi: "यह डिपिंग सॉस बहुत स्वादिष्ट है।"),
+        ],
+        550: [
+            WordExample(thai: "มะขามเปรี้ยวนิดหน่อย", romanization: "má-khǎam prîao nít-nòi", english: "Tamarind is a bit sour.", hindi: "इमली थोड़ी खट्टी है।"),
+            WordExample(thai: "ผมชอบมะขามครับ", romanization: "phǒm chôp má-khǎam khráp", english: "I like tamarind.", hindi: "मुझे इमली पसंद है।"),
+        ],
+        551: [
+            WordExample(thai: "ขมิ้นดีมาก", romanization: "khà-mîn dii mâak", english: "Turmeric is very good.", hindi: "हल्दी बहुत अच्छी है।"),
+            WordExample(thai: "แกงนี้มีขมิ้น", romanization: "kaeng níi mii khà-mîn", english: "This curry has turmeric.", hindi: "इस करी में हल्दी है।"),
+        ],
+        552: [
+            WordExample(thai: "อบเชยหอมมาก", romanization: "òp-choei hǒm mâak", english: "Cinnamon is very fragrant.", hindi: "दालचीनी बहुत खुशबूदार है।"),
+            WordExample(thai: "ชานี้มีอบเชย", romanization: "chaa níi mii òp-choei", english: "This tea has cinnamon.", hindi: "इस चाय में दालचीनी है।"),
+        ],
+        553: [
+            WordExample(thai: "แกงนี้มียี่หร่า", romanization: "kaeng níi mii yîi-ràa", english: "This curry has cumin.", hindi: "इस करी में जीरा है।"),
+            WordExample(thai: "ยี่หร่าหอมดี", romanization: "yîi-ràa hǒm dii", english: "Cumin is nicely fragrant.", hindi: "जीरा अच्छा खुशबूदार है।"),
+        ],
+        554: [
+            WordExample(thai: "อาหารนี้มีหอมแดง", romanization: "aa-hǎan níi mii hǒm-daeng", english: "This dish has shallots.", hindi: "इस खाने में छोटे प्याज हैं।"),
+            WordExample(thai: "หอมแดงอยู่ที่นี่", romanization: "hǒm-daeng yùu thîi-nîi", english: "The shallots are here.", hindi: "छोटे प्याज यहाँ हैं।"),
+        ],
+        555: [
+            WordExample(thai: "ไม่ใส่ต้นหอมค่ะ", romanization: "mâi sài tôn-hǒm khâ", english: "No spring onion, please.", hindi: "हरा प्याज मत डालिए।"),
+            WordExample(thai: "ต้นหอมอยู่ที่นี่", romanization: "tôn-hǒm yùu thîi-nîi", english: "The spring onions are here.", hindi: "हरा प्याज यहाँ है।"),
+        ],
+        556: [
+            WordExample(thai: "พริกแห้งเผ็ดมาก", romanization: "phrík-hâeng phèt mâak", english: "Dried chilies are very spicy.", hindi: "सूखी मिर्च बहुत तीखी है।"),
+            WordExample(thai: "ผมไม่กินพริกแห้งครับ", romanization: "phǒm mâi kin phrík-hâeng khráp", english: "I do not eat dried chili.", hindi: "मैं सूखी मिर्च नहीं खाता।"),
+        ],
+        557: [
+            WordExample(thai: "ขอพริกป่นหน่อยครับ", romanization: "khǒo phrík-pòn nòi khráp", english: "Some chili powder, please.", hindi: "थोड़ा मिर्च पाउडर दीजिए।"),
+            WordExample(thai: "พริกป่นเผ็ดมาก", romanization: "phrík-pòn phèt mâak", english: "Chili powder is very spicy.", hindi: "मिर्च पाउडर बहुत तीखा है।"),
+        ],
+        558: [
+            WordExample(thai: "ขอน้ำส้มสายชูหน่อยค่ะ", romanization: "khǒo nám-sôm-sǎai-chuu nòi khâ", english: "Some vinegar, please.", hindi: "थोड़ा सिरका दीजिए।"),
+            WordExample(thai: "น้ำส้มสายชูเปรี้ยวมาก", romanization: "nám-sôm-sǎai-chuu prîao mâak", english: "Vinegar is very sour.", hindi: "सिरका बहुत खट्टा है।"),
+        ],
+        559: [
+            WordExample(thai: "น้ำพริกเผ็ดมาก", romanization: "nám-phrík phèt mâak", english: "Chili dip is very spicy.", hindi: "मिर्च की चटनी बहुत तीखी है।"),
+            WordExample(thai: "ฉันชอบน้ำพริกค่ะ", romanization: "chǎn chôp nám-phrík khâ", english: "I like chili dip.", hindi: "मुझे मिर्च की चटनी पसंद है।"),
+        ],
+        560: [
+            WordExample(thai: "อาหารไทยมีเครื่องเทศมาก", romanization: "aa-hǎan thai mii khrûeang-thêet mâak", english: "Thai food has many spices.", hindi: "थाई खाने में बहुत मसाले हैं।"),
+            WordExample(thai: "ผมชอบเครื่องเทศครับ", romanization: "phǒm chôp khrûeang-thêet khráp", english: "I like spices.", hindi: "मुझे मसाले पसंद हैं।"),
+        ],
+        561: [
+            WordExample(thai: "สมุนไพรดีมาก", romanization: "sà-mǔn-phrai dii mâak", english: "Herbs are very good.", hindi: "जड़ी-बूटियाँ बहुत अच्छी हैं।"),
+            WordExample(thai: "แกงนี้มีสมุนไพร", romanization: "kaeng níi mii sà-mǔn-phrai", english: "This curry has herbs.", hindi: "इस करी में जड़ी-बूटियाँ हैं।"),
+        ],
+        562: [
+            WordExample(thai: "ขนมนี้มีงา", romanization: "khà-nǒm níi mii ngaa", english: "This snack has sesame.", hindi: "इस मिठाई में तिल हैं।"),
+            WordExample(thai: "ผมชอบงาครับ", romanization: "phǒm chôp ngaa khráp", english: "I like sesame.", hindi: "मुझे तिल पसंद है।"),
+        ],
+        563: [
+            WordExample(thai: "ที่นี่ดีมากๆ", romanization: "tîi-nîi dii mâak-mâak", english: "This place is very, very good.", hindi: "यह जगह बहुत ही अच्छी है।"),
+            WordExample(thai: "ผมชอบมากๆครับ", romanization: "pǒm chôop mâak-mâak kráp", english: "I like it very much.", hindi: "मुझे बहुत ही पसंद है।"),
+        ],
+        564: [
+            WordExample(thai: "วันนี้ผมกินมาก", romanization: "wan-níi pǒm kin mâak", english: "Today I ate a lot.", hindi: "आज मैंने बहुत खाया।"),
+            WordExample(thai: "วันนั้นเขามาที่นี่", romanization: "wan nán kǎo maa tîi-nîi", english: "That day he came here.", hindi: "उस दिन वह यहाँ आया।"),
+        ],
+        565: [
+            WordExample(thai: "เดินตรงไปครับ", romanization: "dern trong pai kráp", english: "Walk straight ahead.", hindi: "सीधे चलते जाइए।"),
+            WordExample(thai: "บ้านอยู่ตรงนั้น", romanization: "bâan yùu trong nán", english: "The house is right there.", hindi: "घर ठीक वहीं है।"),
+        ],
+        566: [
+            WordExample(thai: "วันพฤหัสผมไม่มา", romanization: "wan-pá-réu-hàt pǒm mâi maa", english: "On Thursday I am not coming.", hindi: "गुरुवार को मैं नहीं आऊँगा।"),
+            WordExample(thai: "เขามาวันพฤหัสครับ", romanization: "kǎo maa wan-pá-réu-hàt kráp", english: "He is coming on Thursday.", hindi: "वह गुरुवार को आएगा।"),
+        ],
+        567: [
+            WordExample(thai: "ฝนตกแรงมาก", romanization: "fǒn tòk raeng mâak", english: "It is raining very hard.", hindi: "बहुत ज़ोर से बारिश हो रही है।"),
+            WordExample(thai: "วันนี้ลมแรงมาก", romanization: "wan-níi lom raeng mâak", english: "The wind is very strong today.", hindi: "आज हवा बहुत तेज़ है।"),
+        ],
+        568: [
+            WordExample(thai: "เขาออกไปแล้ว", romanization: "kǎo òok pai láew", english: "He has already gone out.", hindi: "वह बाहर जा चुका है।"),
+            WordExample(thai: "ผมออกไปกินครับ", romanization: "pǒm òok pai kin kráp", english: "I am going out to eat.", hindi: "मैं खाने के लिए बाहर जा रहा हूँ।"),
+        ],
+        569: [
+            WordExample(thai: "คนนั้นดีมาก", romanization: "kon nán dii mâak", english: "That person is very good.", hindi: "वह व्यक्ति बहुत अच्छा है।"),
+            WordExample(thai: "วันนั้นผมไม่มา", romanization: "wan nán pǒm mâi maa", english: "That day I did not come.", hindi: "उस दिन मैं नहीं आया।"),
+        ],
+        570: [
+            WordExample(thai: "ไปทางนี้ครับ", romanization: "pai taang níi kráp", english: "Go this way.", hindi: "इस रास्ते से जाइए।"),
+            WordExample(thai: "ทางนั้นไม่ดี", romanization: "taang nán mâi dii", english: "That way is not good.", hindi: "वह रास्ता अच्छा नहीं है।"),
+        ],
+        571: [
+            WordExample(thai: "อร่อยจังครับ", romanization: "à-ròi jang kráp", english: "So delicious!", hindi: "बहुत ही स्वादिष्ट है!"),
+            WordExample(thai: "ที่นี่ดีจังค่ะ", romanization: "tîi-nîi dii jang kâ", english: "This place is so nice.", hindi: "यह जगह बहुत ही अच्छी है।"),
+        ],
     ]
 
     // CHUNKS: sentence batches are appended as examples1, examples2, … by
