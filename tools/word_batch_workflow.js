@@ -102,10 +102,27 @@ ${JSON.stringify(generated.words)}
 Return the corrected list via structured output.`
 }
 
+let A = typeof args === 'string' ? JSON.parse(args) : args
+if (!A || !A.themes) {
+  A = await agent(
+    'Run `python3 tools/prepare_batch.py` from the repo root /Users/amitbh/Desktop/forcursor and return the JSON it prints on stdout, exactly and completely, via structured output. Do not modify any files.',
+    { label: 'plan', phase: 'Generate',
+      schema: {
+        type: 'object', required: ['batch', 'themes', 'total', 'target', 'words_per_theme'],
+        properties: {
+          batch: { type: 'number' }, next_id: { type: 'number' },
+          total: { type: 'number' }, target: { type: 'number' },
+          words_per_theme: { type: 'number' },
+          themes: { type: 'array' }, gap_tokens: { type: 'array' },
+        },
+      } })
+}
+if (A.total >= A.target) return { done: true, total: A.total }
+
 const items = [
-  ...args.themes.map(t => ({ type: 'theme', t, count: args.words_per_theme })),
-  ...(args.gap_tokens && args.gap_tokens.length >= 5
-    ? [{ type: 'gaps', tokens: args.gap_tokens }] : []),
+  ...A.themes.map(t => ({ type: 'theme', t, count: A.words_per_theme })),
+  ...(A.gap_tokens && A.gap_tokens.length >= 5
+    ? [{ type: 'gaps', tokens: A.gap_tokens }] : []),
 ]
 
 const verified = await pipeline(
@@ -125,13 +142,13 @@ const verified = await pipeline(
 const words = verified.filter(Boolean).flatMap(v => v.words)
 log(`${words.length} words survived verification across ${items.length} sub-batches`)
 
-if (!words.length) return { batch: args.batch, added: 0, error: 'no words survived verification' }
+if (!words.length) return { batch: A.batch, added: 0, error: 'no words survived verification' }
 
-const nnn = String(args.batch).padStart(3, '0')
-const result = await agent(`You are the integrator for Thai Learn vocab batch ${args.batch}. Repo root: /Users/amitbh/Desktop/forcursor
+const nnn = String(A.batch).padStart(3, '0')
+const result = await agent(`You are the integrator for Thai Learn vocab batch ${A.batch}. Repo root: /Users/amitbh/Desktop/forcursor
 
 1. Write this exact JSON to tools/batches/batch_${nnn}.json (use the Write tool; content below, as-is):
-${JSON.stringify({ batch: args.batch, themes: args.themes.map(t => ({ name: t.name })), words })}
+${JSON.stringify({ batch: A.batch, themes: A.themes.map(t => ({ name: t.name })), words })}
 
 2. Run from the repo root: python3 tools/integrate_batch.py tools/batches/batch_${nnn}.json --commit
    (It validates, dedupes, injects Swift literals, regenerates android vocabulary.json, typechecks, commits and pushes. The last line of stdout is a JSON summary.)
@@ -141,4 +158,4 @@ ${JSON.stringify({ batch: args.batch, themes: args.themes.map(t => ({ name: t.na
 Report the final summary via structured output (added/total/commit/etc; put anything noteworthy in notes).`,
   { label: 'integrate+commit', phase: 'Integrate', schema: INTEGRATE_SCHEMA })
 
-return { batch: args.batch, submitted: words.length, ...result }
+return { batch: A.batch, submitted: words.length, ...result }
