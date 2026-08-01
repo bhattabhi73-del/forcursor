@@ -22,7 +22,7 @@ App Store Connect app **"Thai Learn - Word Widgets"** (bundle `com.thailearn.Tha
 
 - `Shared/Vocabulary.swift` — the word list (`ThaiWord` entries, sequential ids). `Vocabulary.word(forHour:)` gives the deterministic hourly rotation shared by all widgets; `related(to:)` derives compound relationships by substring.
 - `Shared/ThaiWord.swift` — `WordExtras` (example sentences, joint-word notes, similar-sound map, word forms, emoji), `ThaiTheme` (Sukhothai Gold palette + dark widget gradients), `ToneAnalyzer` (tone from romanization marks), `ProgressStore` (Leitner SRS: boxes, 1/3/7/14/30-day intervals).
-- `App/ContentView.swift` — Today, Browse (collections + 50/page), Alphabet (44 consonants, class colors, Devanagari cousins), `SpeechService` (th-TH TTS with romanization fallback).
+- `App/ContentView.swift` — Today (round gradient shuffle button), Browse (collections + 50/page), Alphabet (44 consonants, class colors, Devanagari cousins), More (`MoreData`: 14 slang + 188 Hindi–Thai Sanskrit-cognate cousins with word-count header), `SpeechService` (th-TH TTS with romanization fallback).
 - `App/FlashcardView.swift` — Practice: guess-from-sound cards, tone chips, "ThaiFlow" deck ordering (due → ≤20 new → reinforcement → backlog), Again/Got-it grading, detail sections (Sentences with tappable word links, Word Forms, Similar, Joint Word with color-coded breakdown).
 - `Widget/ThaiWidget.swift` — Thai-first widget (small/medium/large/lock), English→Thai widget, paired lock-screen halves. Each widget family displays a different word offset (+1…+7) so every surface teaches a different word; halves share one word by design.
 
@@ -31,7 +31,8 @@ App Store Connect app **"Thai Learn - Word Widgets"** (bundle `com.thailearn.Tha
 - Romanization: tone marks (à á ǎ â), hyphenated syllables, **k/t/p style** (normalize g→k, dt→t, bp→p).
 - Devanagari (`hindiPronunciation`) is a **pronunciation transliteration**: น้ำ alone = นาม but **short नम inside compounds** (น้ำตาล = नम-तान); the เ-ิ "er" vowel uses र् (เปิด = पर्द, เดิน = दर्न).
 - `hindiMeaning` is a translation. Joint-word notes use the parseable format `X (rom) meaning / अर्थ + Y (rom) meaning / अर्थ → result / अर्थ` (rendered color-coded).
-- **Standing rule:** every Thai word used inside an example sentence must itself be a dictionary entry. Check with a greedy longest-match segmentation of all sentences against the vocab after adding content.
+- **Standing rule:** every Thai word used inside an example sentence must itself be a dictionary entry. Check with a greedy longest-match segmentation of all sentences against the vocab after adding content. (Vocabulary entries are column-aligned — match with `ThaiWord\(id: \d+,\s+thai:`.)
+- **Hindi–Thai cousins:** only genuine Sanskrit/Pali cognates. Reject Perso-Arabic Hindi words (बयान), Khmer-routed Thai (สำเร็จ), disputed etymologies (กระดาษ); verify user-supplied pairs before adding (สุนัข = dog शुनक, not god). Dedupe against existing `FunWord` thai strings.
 
 ## Content pipeline
 
