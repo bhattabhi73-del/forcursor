@@ -12472,9 +12472,4029 @@ enum WordExtras {
         ],
     ]
 
+
+    private static let examples6: [Int: [WordExample]] = [
+        2447: [
+            WordExample(thai: "ผมชอบกระโดด", romanization: "phǒm chôp krà-dòot", english: "I like jump", hindi: "मुझे कूदना पसंद है"),
+            WordExample(thai: "นี่คือกระโดด", romanization: "nîi khuue krà-dòot", english: "This is jump", hindi: "यह कूदना है"),
+        ],
+        2448: [
+            WordExample(thai: "ผมชอบคลาน", romanization: "phǒm chôp klaan", english: "I like crawl", hindi: "मुझे रेंगना पसंद है"),
+            WordExample(thai: "นี่คือคลาน", romanization: "nîi khuue klaan", english: "This is crawl", hindi: "यह रेंगना है"),
+        ],
+        2449: [
+            WordExample(thai: "ผมชอบปีน", romanization: "phǒm chôp piin", english: "I like climb", hindi: "मुझे चढ़ना पसंद है"),
+            WordExample(thai: "นี่คือปีน", romanization: "nîi khuue piin", english: "This is climb", hindi: "यह चढ़ना है"),
+        ],
+        2450: [
+            WordExample(thai: "ผมชอบบิน", romanization: "phǒm chôp bin", english: "I like fly", hindi: "मुझे उड़ना पसंद है"),
+            WordExample(thai: "นี่คือบิน", romanization: "nîi khuue bin", english: "This is fly", hindi: "यह उड़ना है"),
+        ],
+        2451: [
+            WordExample(thai: "ผมชอบขี่", romanization: "phǒm chôp khìi", english: "I like ride", hindi: "मुझे सवारी करना पसंद है"),
+            WordExample(thai: "นี่คือขี่", romanization: "nîi khuue khìi", english: "This is ride", hindi: "यह सवारी करना है"),
+        ],
+        2452: [
+            WordExample(thai: "ผมชอบเดินเล่น", romanization: "phǒm chôp dern-lên", english: "I like stroll", hindi: "मुझे टहलना पसंद है"),
+            WordExample(thai: "นี่คือเดินเล่น", romanization: "nîi khuue dern-lên", english: "This is stroll", hindi: "यह टहलना है"),
+        ],
+        2453: [
+            WordExample(thai: "ผมชอบวิ่งเหยาะ", romanization: "phǒm chôp wîng-yàw", english: "I like jog", hindi: "मुझे धीरे दौड़ना पसंद है"),
+            WordExample(thai: "นี่คือวิ่งเหยาะ", romanization: "nîi khuue wîng-yàw", english: "This is jog", hindi: "यह धीरे दौड़ना है"),
+        ],
+        2454: [
+            WordExample(thai: "ผมชอบก้าว", romanization: "phǒm chôp kâao", english: "I like step", hindi: "मुझे कदम रखना पसंद है"),
+            WordExample(thai: "นี่คือก้าว", romanization: "nîi khuue kâao", english: "This is step", hindi: "यह कदम रखना है"),
+        ],
+        2455: [
+            WordExample(thai: "ผมชอบถอย", romanization: "phǒm chôp thaw̌i", english: "I like back up", hindi: "मुझे पीछे हटना पसंद है"),
+            WordExample(thai: "นี่คือถอย", romanization: "nîi khuue thaw̌i", english: "This is back up", hindi: "यह पीछे हटना है"),
+        ],
+        2456: [
+            WordExample(thai: "ผมชอบหมุน", romanization: "phǒm chôp mǔn", english: "I like spin", hindi: "मुझे घूमना पसंद है"),
+            WordExample(thai: "นี่คือหมุน", romanization: "nîi khuue mǔn", english: "This is spin", hindi: "यह घूमना है"),
+        ],
+        2457: [
+            WordExample(thai: "ผมชอบกลิ้ง", romanization: "phǒm chôp klîng", english: "I like roll", hindi: "मुझे लुढ़कना पसंद है"),
+            WordExample(thai: "นี่คือกลิ้ง", romanization: "nîi khuue klîng", english: "This is roll", hindi: "यह लुढ़कना है"),
+        ],
+        2458: [
+            WordExample(thai: "ผมชอบล้ม", romanization: "phǒm chôp lóm", english: "I like fall over", hindi: "मुझे गिरना पसंद है"),
+            WordExample(thai: "นี่คือล้ม", romanization: "nîi khuue lóm", english: "This is fall over", hindi: "यह गिरना है"),
+        ],
+        2459: [
+            WordExample(thai: "ผมชอบสะดุด", romanization: "phǒm chôp sà-dùt", english: "I like trip (verbs motion)", hindi: "मुझे ठोकर खाना पसंद है"),
+            WordExample(thai: "นี่คือสะดุด", romanization: "nîi khuue sà-dùt", english: "This is trip (verbs motion)", hindi: "यह ठोकर खाना है"),
+        ],
+        2460: [
+            WordExample(thai: "ผมชอบกระเด้ง", romanization: "phǒm chôp krà-dèng", english: "I like bounce", hindi: "मुझे उछलना पसंद है"),
+            WordExample(thai: "นี่คือกระเด้ง", romanization: "nîi khuue krà-dèng", english: "This is bounce", hindi: "यह उछलना है"),
+        ],
+        2461: [
+            WordExample(thai: "ผมชอบผ่าน", romanization: "phǒm chôp phàan", english: "I like pass by", hindi: "मुझे गुज़रना पसंद है"),
+            WordExample(thai: "นี่คือผ่าน", romanization: "nîi khuue phàan", english: "This is pass by", hindi: "यह गुज़रना है"),
+        ],
+        2462: [
+            WordExample(thai: "ผมชอบตาม", romanization: "phǒm chôp taam", english: "I like follow", hindi: "मुझे पीछा करना पसंद है"),
+            WordExample(thai: "นี่คือตาม", romanization: "nîi khuue taam", english: "This is follow", hindi: "यह पीछा करना है"),
+        ],
+        2463: [
+            WordExample(thai: "ผมชอบหนี", romanization: "phǒm chôp nǐi", english: "I like flee", hindi: "मुझे भागना पसंद है"),
+            WordExample(thai: "นี่คือหนี", romanization: "nîi khuue nǐi", english: "This is flee", hindi: "यह भागना है"),
+        ],
+        2464: [
+            WordExample(thai: "ผมชอบไล่", romanization: "phǒm chôp lâi", english: "I like chase", hindi: "मुझे पीछा करना पसंद है"),
+            WordExample(thai: "นี่คือไล่", romanization: "nîi khuue lâi", english: "This is chase", hindi: "यह पीछा करना है"),
+        ],
+        2465: [
+            WordExample(thai: "ผมชอบซ่อน", romanization: "phǒm chôp saŵn", english: "I like hide", hindi: "मुझे छिपना पसंद है"),
+            WordExample(thai: "นี่คือซ่อน", romanization: "nîi khuue saŵn", english: "This is hide", hindi: "यह छिपना है"),
+        ],
+        2466: [
+            WordExample(thai: "ผมชอบโผล่", romanization: "phǒm chôp phlò", english: "I like emerge", hindi: "मुझे प्रकट होना पसंद है"),
+            WordExample(thai: "นี่คือโผล่", romanization: "nîi khuue phlò", english: "This is emerge", hindi: "यह प्रकट होना है"),
+        ],
+        2467: [
+            WordExample(thai: "ผมชอบมุด", romanization: "phǒm chôp mút", english: "I like duck under", hindi: "मुझे नीचे से निकलना पसंद है"),
+            WordExample(thai: "นี่คือมุด", romanization: "nîi khuue mút", english: "This is duck under", hindi: "यह नीचे से निकलना है"),
+        ],
+        2468: [
+            WordExample(thai: "ผมชอบเลื้อย", romanization: "phǒm chôp luéai", english: "I like slither", hindi: "मुझे रेंगना पसंद है"),
+            WordExample(thai: "นี่คือเลื้อย", romanization: "nîi khuue luéai", english: "This is slither", hindi: "यह रेंगना है"),
+        ],
+        2469: [
+            WordExample(thai: "ผมชอบกระโผลกกระเผลก", romanization: "phǒm chôp krà-phlòk-krà-phlèk", english: "I like limp", hindi: "मुझे लंगड़ाना पसंद है"),
+            WordExample(thai: "นี่คือกระโผลกกระเผลก", romanization: "nîi khuue krà-phlòk-krà-phlèk", english: "This is limp", hindi: "यह लंगड़ाना है"),
+        ],
+        2470: [
+            WordExample(thai: "ผมชอบเดินเร็ว", romanization: "phǒm chôp dern-reo", english: "I like walk fast", hindi: "मुझे तेज़ चलना पसंद है"),
+            WordExample(thai: "นี่คือเดินเร็ว", romanization: "nîi khuue dern-reo", english: "This is walk fast", hindi: "यह तेज़ चलना है"),
+        ],
+        2471: [
+            WordExample(thai: "ผมชอบถอยหลัง", romanization: "phǒm chôp thaw̌i-lǎng", english: "I like move backwards", hindi: "मुझे पीछे जाना पसंद है"),
+            WordExample(thai: "นี่คือถอยหลัง", romanization: "nîi khuue thaw̌i-lǎng", english: "This is move backwards", hindi: "यह पीछे जाना है"),
+        ],
+        2472: [
+            WordExample(thai: "ผมชอบโยน", romanization: "phǒm chôp yoon", english: "I like throw", hindi: "मुझे फेंकना पसंद है"),
+            WordExample(thai: "นี่คือโยน", romanization: "nîi khuue yoon", english: "This is throw", hindi: "यह फेंकना है"),
+        ],
+        2473: [
+            WordExample(thai: "ผมชอบขว้าง", romanization: "phǒm chôp khwâang", english: "I like hurl", hindi: "मुझे ज़ोर से फेंकना पसंद है"),
+            WordExample(thai: "นี่คือขว้าง", romanization: "nîi khuue khwâang", english: "This is hurl", hindi: "यह ज़ोर से फेंकना है"),
+        ],
+        2474: [
+            WordExample(thai: "ผมชอบดึง", romanization: "phǒm chôp dueng", english: "I like pull", hindi: "मुझे खींचना पसंद है"),
+            WordExample(thai: "นี่คือดึง", romanization: "nîi khuue dueng", english: "This is pull", hindi: "यह खींचना है"),
+        ],
+        2475: [
+            WordExample(thai: "ผมชอบผลัก", romanization: "phǒm chôp phlàk", english: "I like push", hindi: "मुझे धक्का देना पसंद है"),
+            WordExample(thai: "นี่คือผลัก", romanization: "nîi khuue phlàk", english: "This is push", hindi: "यह धक्का देना है"),
+        ],
+        2476: [
+            WordExample(thai: "ผมชอบวาง", romanization: "phǒm chôp waang", english: "I like put down", hindi: "मुझे रखना पसंद है"),
+            WordExample(thai: "นี่คือวาง", romanization: "nîi khuue waang", english: "This is put down", hindi: "यह रखना है"),
+        ],
+        2477: [
+            WordExample(thai: "ผมชอบแบก", romanization: "phǒm chôp bàek", english: "I like carry on shoulder", hindi: "मुझे कंधे पर उठाना पसंद है"),
+            WordExample(thai: "นี่คือแบก", romanization: "nîi khuue bàek", english: "This is carry on shoulder", hindi: "यह कंधे पर उठाना है"),
+        ],
+        2478: [
+            WordExample(thai: "ผมชอบหิ้ว", romanization: "phǒm chôp hîw", english: "I like carry by hand", hindi: "मुझे हाथ में ले जाना पसंद है"),
+            WordExample(thai: "นี่คือหิ้ว", romanization: "nîi khuue hîw", english: "This is carry by hand", hindi: "यह हाथ में ले जाना है"),
+        ],
+        2479: [
+            WordExample(thai: "ผมชอบลาก", romanization: "phǒm chôp lâak", english: "I like drag", hindi: "मुझे घसीटना पसंद है"),
+            WordExample(thai: "นี่คือลาก", romanization: "nîi khuue lâak", english: "This is drag", hindi: "यह घसीटना है"),
+        ],
+        2480: [
+            WordExample(thai: "ผมชอบดัน", romanization: "phǒm chôp dan", english: "I like shove", hindi: "मुझे धकेलना पसंद है"),
+            WordExample(thai: "นี่คือดัน", romanization: "nîi khuue dan", english: "This is shove", hindi: "यह धकेलना है"),
+        ],
+        2481: [
+            WordExample(thai: "ผมชอบบีบ", romanization: "phǒm chôp bìip", english: "I like squeeze", hindi: "मुझे दबाना पसंद है"),
+            WordExample(thai: "นี่คือบีบ", romanization: "nîi khuue bìip", english: "This is squeeze", hindi: "यह दबाना है"),
+        ],
+        2482: [
+            WordExample(thai: "ผมชอบกด", romanization: "phǒm chôp kòt", english: "I like press", hindi: "मुझे दबाना पसंद है"),
+            WordExample(thai: "นี่คือกด", romanization: "nîi khuue kòt", english: "This is press", hindi: "यह दबाना है"),
+        ],
+        2483: [
+            WordExample(thai: "ผมชอบตี", romanization: "phǒm chôp tii", english: "I like hit", hindi: "मुझे मारना पसंद है"),
+            WordExample(thai: "นี่คือตี", romanization: "nîi khuue tii", english: "This is hit", hindi: "यह मारना है"),
+        ],
+        2484: [
+            WordExample(thai: "ผมชอบต่อย", romanization: "phǒm chôp taẁi", english: "I like punch", hindi: "मुझे मुक्का मारना पसंद है"),
+            WordExample(thai: "นี่คือต่อย", romanization: "nîi khuue taẁi", english: "This is punch", hindi: "यह मुक्का मारना है"),
+        ],
+        2485: [
+            WordExample(thai: "ผมชอบเตะ", romanization: "phǒm chôp tè", english: "I like kick", hindi: "मुझे लात मारना पसंद है"),
+            WordExample(thai: "นี่คือเตะ", romanization: "nîi khuue tè", english: "This is kick", hindi: "यह लात मारना है"),
+        ],
+        2486: [
+            WordExample(thai: "ผมชอบฉีก", romanization: "phǒm chôp chìik", english: "I like tear", hindi: "मुझे फाड़ना पसंद है"),
+            WordExample(thai: "นี่คือฉีก", romanization: "nîi khuue chìik", english: "This is tear", hindi: "यह फाड़ना है"),
+        ],
+        2487: [
+            WordExample(thai: "ผมชอบสับ", romanization: "phǒm chôp sàp", english: "I like chop", hindi: "मुझे काटना पसंद है"),
+            WordExample(thai: "นี่คือสับ", romanization: "nîi khuue sàp", english: "This is chop", hindi: "यह काटना है"),
+        ],
+        2488: [
+            WordExample(thai: "ผมชอบทุบ", romanization: "phǒm chôp thúp", english: "I like smash", hindi: "मुझे कुचलना पसंद है"),
+            WordExample(thai: "นี่คือทุบ", romanization: "nîi khuue thúp", english: "This is smash", hindi: "यह कुचलना है"),
+        ],
+        2489: [
+            WordExample(thai: "ผมชอบเจาะ", romanization: "phǒm chôp jaẁ", english: "I like pierce", hindi: "मुझे छेदना पसंद है"),
+            WordExample(thai: "นี่คือเจาะ", romanization: "nîi khuue jaẁ", english: "This is pierce", hindi: "यह छेदना है"),
+        ],
+        2490: [
+            WordExample(thai: "ผมชอบขูด", romanization: "phǒm chôp khùut", english: "I like scrape", hindi: "मुझे खुरचना पसंद है"),
+            WordExample(thai: "นี่คือขูด", romanization: "nîi khuue khùut", english: "This is scrape", hindi: "यह खुरचना है"),
+        ],
+        2491: [
+            WordExample(thai: "ผมชอบพับ", romanization: "phǒm chôp pháp", english: "I like fold", hindi: "मुझे मोड़ना पसंद है"),
+            WordExample(thai: "นี่คือพับ", romanization: "nîi khuue pháp", english: "This is fold", hindi: "यह मोड़ना है"),
+        ],
+        2492: [
+            WordExample(thai: "ผมชอบม้วน", romanization: "phǒm chôp múan", english: "I like roll up", hindi: "मुझे लपेटना पसंद है"),
+            WordExample(thai: "นี่คือม้วน", romanization: "nîi khuue múan", english: "This is roll up", hindi: "यह लपेटना है"),
+        ],
+        2493: [
+            WordExample(thai: "ผมชอบผูก", romanization: "phǒm chôp phùuk", english: "I like tie", hindi: "मुझे बाँधना पसंद है"),
+            WordExample(thai: "นี่คือผูก", romanization: "nîi khuue phùuk", english: "This is tie", hindi: "यह बाँधना है"),
+        ],
+        2494: [
+            WordExample(thai: "ผมชอบมัด", romanization: "phǒm chôp mát", english: "I like bind", hindi: "मुझे बाँधना पसंद है"),
+            WordExample(thai: "นี่คือมัด", romanization: "nîi khuue mát", english: "This is bind", hindi: "यह बाँधना है"),
+        ],
+        2495: [
+            WordExample(thai: "ผมชอบล็อก", romanization: "phǒm chôp lók", english: "I like lock", hindi: "मुझे ताला लगाना पसंद है"),
+            WordExample(thai: "นี่คือล็อก", romanization: "nîi khuue lók", english: "This is lock", hindi: "यह ताला लगाना है"),
+        ],
+        2496: [
+            WordExample(thai: "ผมชอบเสียบ", romanization: "phǒm chôp sìap", english: "I like plug in (verbs action)", hindi: "मुझे लगाना पसंद है"),
+            WordExample(thai: "นี่คือเสียบ", romanization: "nîi khuue sìap", english: "This is plug in (verbs action)", hindi: "यह लगाना है"),
+        ],
+        2497: [
+            WordExample(thai: "ผมชอบถอด", romanization: "phǒm chôp thaẁt", english: "I like take off", hindi: "मुझे उतारना पसंद है"),
+            WordExample(thai: "นี่คือถอด", romanization: "nîi khuue thaẁt", english: "This is take off", hindi: "यह उतारना है"),
+        ],
+        2498: [
+            WordExample(thai: "ผมชอบสวม", romanization: "phǒm chôp sǔam", english: "I like wear", hindi: "मुझे पहनना पसंद है"),
+            WordExample(thai: "นี่คือสวม", romanization: "nîi khuue sǔam", english: "This is wear", hindi: "यह पहनना है"),
+        ],
+        2499: [
+            WordExample(thai: "ผมชอบติด", romanization: "phǒm chôp tìt", english: "I like attach", hindi: "मुझे जोड़ना पसंद है"),
+            WordExample(thai: "นี่คือติด", romanization: "nîi khuue tìt", english: "This is attach", hindi: "यह जोड़ना है"),
+        ],
+        2500: [
+            WordExample(thai: "ผมชอบแปะ", romanization: "phǒm chôp paè", english: "I like stick on", hindi: "मुझे चिपकाना पसंद है"),
+            WordExample(thai: "นี่คือแปะ", romanization: "nîi khuue paè", english: "This is stick on", hindi: "यह चिपकाना है"),
+        ],
+        2501: [
+            WordExample(thai: "ผมชอบทา", romanization: "phǒm chôp thaa", english: "I like spread on", hindi: "मुझे लगाना पसंद है"),
+            WordExample(thai: "นี่คือทา", romanization: "nîi khuue thaa", english: "This is spread on", hindi: "यह लगाना है"),
+        ],
+        2502: [
+            WordExample(thai: "ผมชอบพ่น", romanization: "phǒm chôp phôn", english: "I like spray", hindi: "मुझे छिड़कना पसंद है"),
+            WordExample(thai: "นี่คือพ่น", romanization: "nîi khuue phôn", english: "This is spray", hindi: "यह छिड़कना है"),
+        ],
+        2503: [
+            WordExample(thai: "ผมชอบเท", romanization: "phǒm chôp thee", english: "I like pour", hindi: "मुझे उंडेलना पसंद है"),
+            WordExample(thai: "นี่คือเท", romanization: "nîi khuue thee", english: "This is pour", hindi: "यह उंडेलना है"),
+        ],
+        2504: [
+            WordExample(thai: "ผมชอบราด", romanization: "phǒm chôp râat", english: "I like pour over", hindi: "मुझे ऊपर डालना पसंद है"),
+            WordExample(thai: "นี่คือราด", romanization: "nîi khuue râat", english: "This is pour over", hindi: "यह ऊपर डालना है"),
+        ],
+        2505: [
+            WordExample(thai: "ผมชอบกรอก", romanization: "phǒm chôp kraẁawk", english: "I like fill in", hindi: "मुझे भरना पसंद है"),
+            WordExample(thai: "นี่คือกรอก", romanization: "nîi khuue kraẁawk", english: "This is fill in", hindi: "यह भरना है"),
+        ],
+        2506: [
+            WordExample(thai: "ผมชอบเติม", romanization: "phǒm chôp term", english: "I like top up", hindi: "मुझे भरना पसंद है"),
+            WordExample(thai: "นี่คือเติม", romanization: "nîi khuue term", english: "This is top up", hindi: "यह भरना है"),
+        ],
+        2507: [
+            WordExample(thai: "ผมชอบตวง", romanization: "phǒm chôp tuang", english: "I like measure out", hindi: "मुझे नापना पसंद है"),
+            WordExample(thai: "นี่คือตวง", romanization: "nîi khuue tuang", english: "This is measure out", hindi: "यह नापना है"),
+        ],
+        2508: [
+            WordExample(thai: "ผมชอบชั่ง", romanization: "phǒm chôp chàng", english: "I like weigh", hindi: "मुझे तौलना पसंद है"),
+            WordExample(thai: "นี่คือชั่ง", romanization: "nîi khuue chàng", english: "This is weigh", hindi: "यह तौलना है"),
+        ],
+        2509: [
+            WordExample(thai: "ผมชอบแบ่ง", romanization: "phǒm chôp bàeng", english: "I like divide", hindi: "मुझे बाँटना पसंद है"),
+            WordExample(thai: "นี่คือแบ่ง", romanization: "nîi khuue bàeng", english: "This is divide", hindi: "यह बाँटना है"),
+        ],
+        2510: [
+            WordExample(thai: "ผมชอบเรียง", romanization: "phǒm chôp riang", english: "I like arrange in order", hindi: "मुझे क्रम में रखना पसंद है"),
+            WordExample(thai: "นี่คือเรียง", romanization: "nîi khuue riang", english: "This is arrange in order", hindi: "यह क्रम में रखना है"),
+        ],
+        2511: [
+            WordExample(thai: "ผมชอบคัด", romanization: "phǒm chôp khát", english: "I like select out", hindi: "मुझे छाँटना पसंद है"),
+            WordExample(thai: "นี่คือคัด", romanization: "nîi khuue khát", english: "This is select out", hindi: "यह छाँटना है"),
+        ],
+        2512: [
+            WordExample(thai: "ผมชอบขุด", romanization: "phǒm chôp khùt", english: "I like dig", hindi: "मुझे खोदना पसंद है"),
+            WordExample(thai: "นี่คือขุด", romanization: "nîi khuue khùt", english: "This is dig", hindi: "यह खोदना है"),
+        ],
+        2513: [
+            WordExample(thai: "ผมชอบรด", romanization: "phǒm chôp rót", english: "I like water (plants)", hindi: "मुझे पौधों को पानी देना पसंद है"),
+            WordExample(thai: "นี่คือรด", romanization: "nîi khuue rót", english: "This is water (plants)", hindi: "यह पौधों को पानी देना है"),
+        ],
+        2514: [
+            WordExample(thai: "ผมชอบเก็บเกี่ยว", romanization: "phǒm chôp kèp-kìao", english: "I like harvest", hindi: "मुझे फसल काटना पसंद है"),
+            WordExample(thai: "นี่คือเก็บเกี่ยว", romanization: "nîi khuue kèp-kìao", english: "This is harvest", hindi: "यह फसल काटना है"),
+        ],
+        2515: [
+            WordExample(thai: "ผมชอบล่า", romanization: "phǒm chôp lâa", english: "I like hunt", hindi: "मुझे शिकार करना पसंद है"),
+            WordExample(thai: "นี่คือล่า", romanization: "nîi khuue lâa", english: "This is hunt", hindi: "यह शिकार करना है"),
+        ],
+        2516: [
+            WordExample(thai: "ผมชอบยิง", romanization: "phǒm chôp ying", english: "I like shoot", hindi: "मुझे गोली चलाना पसंद है"),
+            WordExample(thai: "นี่คือยิง", romanization: "nîi khuue ying", english: "This is shoot", hindi: "यह गोली चलाना है"),
+        ],
+        2517: [
+            WordExample(thai: "ผมชอบสาน", romanization: "phǒm chôp sǎan", english: "I like weave", hindi: "मुझे बुनना पसंद है"),
+            WordExample(thai: "นี่คือสาน", romanization: "nîi khuue sǎan", english: "This is weave", hindi: "यह बुनना है"),
+        ],
+        2518: [
+            WordExample(thai: "ผมชอบปัก", romanization: "phǒm chôp pàk", english: "I like embroider", hindi: "मुझे कढ़ाई करना पसंद है"),
+            WordExample(thai: "นี่คือปัก", romanization: "nîi khuue pàk", english: "This is embroider", hindi: "यह कढ़ाई करना है"),
+        ],
+        2519: [
+            WordExample(thai: "ผมชอบเย็บ", romanization: "phǒm chôp yép", english: "I like sew", hindi: "मुझे सिलना पसंद है"),
+            WordExample(thai: "นี่คือเย็บ", romanization: "nîi khuue yép", english: "This is sew", hindi: "यह सिलना है"),
+        ],
+        2520: [
+            WordExample(thai: "ผมชอบทอ", romanization: "phǒm chôp thawaw", english: "I like weave (cloth)", hindi: "मुझे कपड़ा बुनना पसंद है"),
+            WordExample(thai: "นี่คือทอ", romanization: "nîi khuue thawaw", english: "This is weave (cloth)", hindi: "यह कपड़ा बुनना है"),
+        ],
+        2521: [
+            WordExample(thai: "ผมชอบหลอม", romanization: "phǒm chôp law̌awm", english: "I like melt down", hindi: "मुझे पिघलाना पसंद है"),
+            WordExample(thai: "นี่คือหลอม", romanization: "nîi khuue law̌awm", english: "This is melt down", hindi: "यह पिघलाना है"),
+        ],
+        2522: [
+            WordExample(thai: "ผมชอบเชื่อม", romanization: "phǒm chôp chuêam", english: "I like weld", hindi: "मुझे वेल्ड करना पसंद है"),
+            WordExample(thai: "นี่คือเชื่อม", romanization: "nîi khuue chuêam", english: "This is weld", hindi: "यह वेल्ड करना है"),
+        ],
+        2523: [
+            WordExample(thai: "ผมชอบตอก", romanization: "phǒm chôp taẁawk", english: "I like hammer in", hindi: "मुझे ठोकना पसंद है"),
+            WordExample(thai: "นี่คือตอก", romanization: "nîi khuue taẁawk", english: "This is hammer in", hindi: "यह ठोकना है"),
+        ],
+        2524: [
+            WordExample(thai: "ผมชอบขัน", romanization: "phǒm chôp khǎn", english: "I like tighten (screw)", hindi: "मुझे कसना पसंद है"),
+            WordExample(thai: "นี่คือขัน", romanization: "nîi khuue khǎn", english: "This is tighten (screw)", hindi: "यह कसना है"),
+        ],
+        2525: [
+            WordExample(thai: "ผมชอบคลาย", romanization: "phǒm chôp khlaai", english: "I like loosen", hindi: "मुझे ढीला करना पसंद है"),
+            WordExample(thai: "นี่คือคลาย", romanization: "nîi khuue khlaai", english: "This is loosen", hindi: "यह ढीला करना है"),
+        ],
+        2526: [
+            WordExample(thai: "ผมชอบงัด", romanization: "phǒm chôp ngát", english: "I like pry open", hindi: "मुझे उचकाना पसंद है"),
+            WordExample(thai: "นี่คืองัด", romanization: "nîi khuue ngát", english: "This is pry open", hindi: "यह उचकाना है"),
+        ],
+        2527: [
+            WordExample(thai: "ผมชอบเชื่อ", romanization: "phǒm chôp chuêa", english: "I like believe", hindi: "मुझे विश्वास करना पसंद है"),
+            WordExample(thai: "นี่คือเชื่อ", romanization: "nîi khuue chuêa", english: "This is believe", hindi: "यह विश्वास करना है"),
+        ],
+        2528: [
+            WordExample(thai: "ผมชอบเดา", romanization: "phǒm chôp dao", english: "I like guess", hindi: "मुझे अनुमान लगाना पसंद है"),
+            WordExample(thai: "นี่คือเดา", romanization: "nîi khuue dao", english: "This is guess", hindi: "यह अनुमान लगाना है"),
+        ],
+        2529: [
+            WordExample(thai: "ผมชอบตัดสินใจ", romanization: "phǒm chôp tàt-sǐn-jai", english: "I like decide", hindi: "मुझे फैसला करना पसंद है"),
+            WordExample(thai: "นี่คือตัดสินใจ", romanization: "nîi khuue tàt-sǐn-jai", english: "This is decide", hindi: "यह फैसला करना है"),
+        ],
+        2530: [
+            WordExample(thai: "ผมชอบวางแผน", romanization: "phǒm chôp waang-phaěaen", english: "I like plan", hindi: "मुझे योजना बनाना पसंद है"),
+            WordExample(thai: "นี่คือวางแผน", romanization: "nîi khuue waang-phaěaen", english: "This is plan", hindi: "यह योजना बनाना है"),
+        ],
+        2531: [
+            WordExample(thai: "ผมชอบสนใจ", romanization: "phǒm chôp sǒn-jai", english: "I like be interested", hindi: "मुझे दिलचस्पी लेना पसंद है"),
+            WordExample(thai: "นี่คือสนใจ", romanization: "nîi khuue sǒn-jai", english: "This is be interested", hindi: "यह दिलचस्पी लेना है"),
+        ],
+        2532: [
+            WordExample(thai: "ผมชอบปรารถนา", romanization: "phǒm chôp pràat-thà-nǎa", english: "I like desire", hindi: "मुझे इच्छा करना पसंद है"),
+            WordExample(thai: "นี่คือปรารถนา", romanization: "nîi khuue pràat-thà-nǎa", english: "This is desire", hindi: "यह इच्छा करना है"),
+        ],
+        2533: [
+            WordExample(thai: "ผมชอบฝัน", romanization: "phǒm chôp fǎn", english: "I like dream", hindi: "मुझे सपना देखना पसंद है"),
+            WordExample(thai: "นี่คือฝัน", romanization: "nîi khuue fǎn", english: "This is dream", hindi: "यह सपना देखना है"),
+        ],
+        2534: [
+            WordExample(thai: "ผมชอบนึก", romanization: "phǒm chôp nuék", english: "I like recall", hindi: "मुझे याद करना पसंद है"),
+            WordExample(thai: "นี่คือนึก", romanization: "nîi khuue nuék", english: "This is recall", hindi: "यह याद करना है"),
+        ],
+        2535: [
+            WordExample(thai: "ผมชอบจินตนาการ", romanization: "phǒm chôp jin-tà-naa-kaan", english: "I like imagine", hindi: "मुझे कल्पना करना पसंद है"),
+            WordExample(thai: "นี่คือจินตนาการ", romanization: "nîi khuue jin-tà-naa-kaan", english: "This is imagine", hindi: "यह कल्पना करना है"),
+        ],
+        2536: [
+            WordExample(thai: "ผมชอบสังเกต", romanization: "phǒm chôp sǎng-kèet", english: "I like observe", hindi: "मुझे ध्यान से देखना पसंद है"),
+            WordExample(thai: "นี่คือสังเกต", romanization: "nîi khuue sǎng-kèet", english: "This is observe", hindi: "यह ध्यान से देखना है"),
+        ],
+        2537: [
+            WordExample(thai: "ผมชอบเดือดร้อน", romanization: "phǒm chôp duèat-raẃawn", english: "I like be troubled", hindi: "मुझे परेशान होना पसंद है"),
+            WordExample(thai: "นี่คือเดือดร้อน", romanization: "nîi khuue duèat-raẃawn", english: "This is be troubled", hindi: "यह परेशान होना है"),
+        ],
+        2538: [
+            WordExample(thai: "ผมชอบตั้งสติ", romanization: "phǒm chôp tâng-sà-tì", english: "I like compose oneself", hindi: "मुझे संयम रखना पसंद है"),
+            WordExample(thai: "นี่คือตั้งสติ", romanization: "nîi khuue tâng-sà-tì", english: "This is compose oneself", hindi: "यह संयम रखना है"),
+        ],
+        2539: [
+            WordExample(thai: "ผมชอบทบทวน", romanization: "phǒm chôp thóp-thuan", english: "I like review", hindi: "मुझे दोहराना पसंद है"),
+            WordExample(thai: "นี่คือทบทวน", romanization: "nîi khuue thóp-thuan", english: "This is review", hindi: "यह दोहराना है"),
+        ],
+        2540: [
+            WordExample(thai: "ผมชอบวิเคราะห์", romanization: "phǒm chôp wí-khraẃ", english: "I like analyse", hindi: "मुझे विश्लेषण करना पसंद है"),
+            WordExample(thai: "นี่คือวิเคราะห์", romanization: "nîi khuue wí-khraẃ", english: "This is analyse", hindi: "यह विश्लेषण करना है"),
+        ],
+        2541: [
+            WordExample(thai: "ผมชอบคาดเดา", romanization: "phǒm chôp khâat-dao", english: "I like speculate", hindi: "मुझे अनुमान लगाना पसंद है"),
+            WordExample(thai: "นี่คือคาดเดา", romanization: "nîi khuue khâat-dao", english: "This is speculate", hindi: "यह अनुमान लगाना है"),
+        ],
+        2542: [
+            WordExample(thai: "ผมชอบตระหนัก", romanization: "phǒm chôp trà-nàk", english: "I like be aware of", hindi: "मुझे जागरूक होना पसंद है"),
+            WordExample(thai: "นี่คือตระหนัก", romanization: "nîi khuue trà-nàk", english: "This is be aware of", hindi: "यह जागरूक होना है"),
+        ],
+        2543: [
+            WordExample(thai: "ผมชอบยอมแพ้", romanization: "phǒm chôp yawawm-phaéae", english: "I like give up", hindi: "मुझे हार मानना पसंद है"),
+            WordExample(thai: "นี่คือยอมแพ้", romanization: "nîi khuue yawawm-phaéae", english: "This is give up", hindi: "यह हार मानना है"),
+        ],
+        2544: [
+            WordExample(thai: "ผมชอบเล่า", romanization: "phǒm chôp lâo", english: "I like narrate", hindi: "मुझे कहानी सुनाना पसंद है"),
+            WordExample(thai: "นี่คือเล่า", romanization: "nîi khuue lâo", english: "This is narrate", hindi: "यह कहानी सुनाना है"),
+        ],
+        2545: [
+            WordExample(thai: "ผมชอบสนทนา", romanization: "phǒm chôp sǒn-thà-naa", english: "I like converse", hindi: "मुझे बातचीत करना पसंद है"),
+            WordExample(thai: "นี่คือสนทนา", romanization: "nîi khuue sǒn-thà-naa", english: "This is converse", hindi: "यह बातचीत करना है"),
+        ],
+        2546: [
+            WordExample(thai: "ผมชอบเถียง", romanization: "phǒm chôp thǐang", english: "I like argue", hindi: "मुझे बहस करना पसंद है"),
+            WordExample(thai: "นี่คือเถียง", romanization: "nîi khuue thǐang", english: "This is argue", hindi: "यह बहस करना है"),
+        ],
+        2547: [
+            WordExample(thai: "ผมชอบบ่น", romanization: "phǒm chôp bòn", english: "I like complain", hindi: "मुझे शिकायत करना पसंद है"),
+            WordExample(thai: "นี่คือบ่น", romanization: "nîi khuue bòn", english: "This is complain", hindi: "यह शिकायत करना है"),
+        ],
+        2548: [
+            WordExample(thai: "ผมชอบชม", romanization: "phǒm chôp chom", english: "I like praise", hindi: "मुझे प्रशंसा करना पसंद है"),
+            WordExample(thai: "นี่คือชม", romanization: "nîi khuue chom", english: "This is praise", hindi: "यह प्रशंसा करना है"),
+        ],
+        2549: [
+            WordExample(thai: "ผมชอบด่า", romanization: "phǒm chôp dàa", english: "I like scold", hindi: "मुझे डाँटना पसंद है"),
+            WordExample(thai: "นี่คือด่า", romanization: "nîi khuue dàa", english: "This is scold", hindi: "यह डाँटना है"),
+        ],
+        2550: [
+            WordExample(thai: "ผมชอบล้อ", romanization: "phǒm chôp laẃaw", english: "I like tease", hindi: "मुझे चिढ़ाना पसंद है"),
+            WordExample(thai: "นี่คือล้อ", romanization: "nîi khuue laẃaw", english: "This is tease", hindi: "यह चिढ़ाना है"),
+        ],
+        2551: [
+            WordExample(thai: "ผมชอบโกหก", romanization: "phǒm chôp koo-hòk", english: "I like lie", hindi: "मुझे झूठ बोलना पसंद है"),
+            WordExample(thai: "นี่คือโกหก", romanization: "nîi khuue koo-hòk", english: "This is lie", hindi: "यह झूठ बोलना है"),
+        ],
+        2552: [
+            WordExample(thai: "ผมชอบสาบาน", romanization: "phǒm chôp sǎa-baan", english: "I like swear an oath", hindi: "मुझे कसम खाना पसंद है"),
+            WordExample(thai: "นี่คือสาบาน", romanization: "nîi khuue sǎa-baan", english: "This is swear an oath", hindi: "यह कसम खाना है"),
+        ],
+        2553: [
+            WordExample(thai: "ผมชอบเชิญ", romanization: "phǒm chôp choen", english: "I like invite", hindi: "मुझे निमंत्रित करना पसंद है"),
+            WordExample(thai: "นี่คือเชิญ", romanization: "nîi khuue choen", english: "This is invite", hindi: "यह निमंत्रित करना है"),
+        ],
+        2554: [
+            WordExample(thai: "ผมชอบขอร้อง", romanization: "phǒm chôp khaw̌aw-raẃawng", english: "I like plead", hindi: "मुझे विनती करना पसंद है"),
+            WordExample(thai: "นี่คือขอร้อง", romanization: "nîi khuue khaw̌aw-raẃawng", english: "This is plead", hindi: "यह विनती करना है"),
+        ],
+        2555: [
+            WordExample(thai: "ผมชอบยอมรับ", romanization: "phǒm chôp yawawm-ráp", english: "I like accept", hindi: "मुझे स्वीकार करना पसंद है"),
+            WordExample(thai: "นี่คือยอมรับ", romanization: "nîi khuue yawawm-ráp", english: "This is accept", hindi: "यह स्वीकार करना है"),
+        ],
+        2556: [
+            WordExample(thai: "ผมชอบตกลง", romanization: "phǒm chôp tòk-long", english: "I like agree (verbs speech)", hindi: "मुझे सहमत होना पसंद है"),
+            WordExample(thai: "นี่คือตกลง", romanization: "nîi khuue tòk-long", english: "This is agree (verbs speech)", hindi: "यह सहमत होना है"),
+        ],
+        2557: [
+            WordExample(thai: "ผมชอบประกาศ", romanization: "phǒm chôp prà-gaat", english: "I like announce", hindi: "मुझे घोषणा करना पसंद है"),
+            WordExample(thai: "นี่คือประกาศ", romanization: "nîi khuue prà-gaat", english: "This is announce", hindi: "यह घोषणा करना है"),
+        ],
+        2558: [
+            WordExample(thai: "ผมชอบบรรยาย", romanization: "phǒm chôp ban-yaai", english: "I like lecture", hindi: "मुझे व्याख्यान देना पसंद है"),
+            WordExample(thai: "นี่คือบรรยาย", romanization: "nîi khuue ban-yaai", english: "This is lecture", hindi: "यह व्याख्यान देना है"),
+        ],
+        2559: [
+            WordExample(thai: "ผมชอบเรียก", romanization: "phǒm chôp rîak", english: "I like call out", hindi: "मुझे पुकारना पसंद है"),
+            WordExample(thai: "นี่คือเรียก", romanization: "nîi khuue rîak", english: "This is call out", hindi: "यह पुकारना है"),
+        ],
+        2560: [
+            WordExample(thai: "ผมชอบทัก", romanization: "phǒm chôp thák", english: "I like greet", hindi: "मुझे अभिवादन करना पसंद है"),
+            WordExample(thai: "นี่คือทัก", romanization: "nîi khuue thák", english: "This is greet", hindi: "यह अभिवादन करना है"),
+        ],
+        2561: [
+            WordExample(thai: "ผมชอบลา", romanization: "phǒm chôp laa", english: "I like take leave", hindi: "मुझे विदा लेना पसंद है"),
+            WordExample(thai: "นี่คือลา", romanization: "nîi khuue laa", english: "This is take leave", hindi: "यह विदा लेना है"),
+        ],
+        2562: [
+            WordExample(thai: "ผมชอบพูดเล่น", romanization: "phǒm chôp phûut-lên", english: "I like joke", hindi: "मुझे मज़ाक करना पसंद है"),
+            WordExample(thai: "นี่คือพูดเล่น", romanization: "nîi khuue phûut-lên", english: "This is joke", hindi: "यह मज़ाक करना है"),
+        ],
+        2563: [
+            WordExample(thai: "ผมชอบมอง", romanization: "phǒm chôp mawawng", english: "I like look", hindi: "मुझे देखना पसंद है"),
+            WordExample(thai: "นี่คือมอง", romanization: "nîi khuue mawawng", english: "This is look", hindi: "यह देखना है"),
+        ],
+        2564: [
+            WordExample(thai: "ผมชอบจ้อง", romanization: "phǒm chôp jaŵng", english: "I like stare", hindi: "मुझे घूरना पसंद है"),
+            WordExample(thai: "นี่คือจ้อง", romanization: "nîi khuue jaŵng", english: "This is stare", hindi: "यह घूरना है"),
+        ],
+        2565: [
+            WordExample(thai: "ผมชอบเหลือบ", romanization: "phǒm chôp luèap", english: "I like glance", hindi: "मुझे नज़र डालना पसंद है"),
+            WordExample(thai: "นี่คือเหลือบ", romanization: "nîi khuue luèap", english: "This is glance", hindi: "यह नज़र डालना है"),
+        ],
+        2566: [
+            WordExample(thai: "ผมชอบได้ยิน", romanization: "phǒm chôp dâai-yin", english: "I like hear", hindi: "मुझे सुनना पसंद है"),
+            WordExample(thai: "นี่คือได้ยิน", romanization: "nîi khuue dâai-yin", english: "This is hear", hindi: "यह सुनना है"),
+        ],
+        2567: [
+            WordExample(thai: "ผมชอบดม", romanization: "phǒm chôp dom", english: "I like smell", hindi: "मुझे सूँघना पसंद है"),
+            WordExample(thai: "นี่คือดม", romanization: "nîi khuue dom", english: "This is smell", hindi: "यह सूँघना है"),
+        ],
+        2568: [
+            WordExample(thai: "ผมชอบสัมผัส", romanization: "phǒm chôp sǎm-phàt", english: "I like touch", hindi: "मुझे छूना पसंद है"),
+            WordExample(thai: "นี่คือสัมผัส", romanization: "nîi khuue sǎm-phàt", english: "This is touch", hindi: "यह छूना है"),
+        ],
+        2569: [
+            WordExample(thai: "ผมชอบเพ่ง", romanization: "phǒm chôp phêng", english: "I like focus eyes on", hindi: "मुझे आँखें केंद्रित करना पसंद है"),
+            WordExample(thai: "นี่คือเพ่ง", romanization: "nîi khuue phêng", english: "This is focus eyes on", hindi: "यह आँखें केंद्रित करना है"),
+        ],
+        2570: [
+            WordExample(thai: "ผมชอบแอบดู", romanization: "phǒm chôp aèaep-duu", english: "I like peek", hindi: "मुझे चुपके से देखना पसंद है"),
+            WordExample(thai: "นี่คือแอบดู", romanization: "nîi khuue aèaep-duu", english: "This is peek", hindi: "यह चुपके से देखना है"),
+        ],
+        2571: [
+            WordExample(thai: "ผมชอบสูดดม", romanization: "phǒm chôp sùut-dom", english: "I like sniff", hindi: "मुझे सूँघना पसंद है"),
+            WordExample(thai: "นี่คือสูดดม", romanization: "nîi khuue sùut-dom", english: "This is sniff", hindi: "यह सूँघना है"),
+        ],
+        2572: [
+            WordExample(thai: "ผมชอบเงี่ยหูฟัง", romanization: "phǒm chôp ngìa-hǔu-fang", english: "I like listen closely", hindi: "मुझे ध्यान से सुनना पसंद है"),
+            WordExample(thai: "นี่คือเงี่ยหูฟัง", romanization: "nîi khuue ngìa-hǔu-fang", english: "This is listen closely", hindi: "यह ध्यान से सुनना है"),
+        ],
+        2573: [
+            WordExample(thai: "ผมชอบลูบ", romanization: "phǒm chôp lûup", english: "I like stroke", hindi: "मुझे सहलाना पसंद है"),
+            WordExample(thai: "นี่คือลูบ", romanization: "nîi khuue lûup", english: "This is stroke", hindi: "यह सहलाना है"),
+        ],
+        2574: [
+            WordExample(thai: "ผมชอบเกา", romanization: "phǒm chôp kao", english: "I like scratch", hindi: "मुझे खुजलाना पसंद है"),
+            WordExample(thai: "นี่คือเกา", romanization: "nîi khuue kao", english: "This is scratch", hindi: "यह खुजलाना है"),
+        ],
+        2575: [
+            WordExample(thai: "ผมชอบสะอึก", romanization: "phǒm chôp sà-uèk", english: "I like hiccup", hindi: "मुझे हिचकी लेना पसंद है"),
+            WordExample(thai: "นี่คือสะอึก", romanization: "nîi khuue sà-uèk", english: "This is hiccup", hindi: "यह हिचकी लेना है"),
+        ],
+        2576: [
+            WordExample(thai: "ผมชอบหาว", romanization: "phǒm chôp hǎao", english: "I like yawn", hindi: "मुझे जम्हाई लेना पसंद है"),
+            WordExample(thai: "นี่คือหาว", romanization: "nîi khuue hǎao", english: "This is yawn", hindi: "यह जम्हाई लेना है"),
+        ],
+        2577: [
+            WordExample(thai: "ผมชอบกลืน", romanization: "phǒm chôp klueuen", english: "I like swallow", hindi: "मुझे निगलना पसंद है"),
+            WordExample(thai: "นี่คือกลืน", romanization: "nîi khuue klueuen", english: "This is swallow", hindi: "यह निगलना है"),
+        ],
+        2578: [
+            WordExample(thai: "ผมชอบเคี้ยว", romanization: "phǒm chôp khíao", english: "I like chew", hindi: "मुझे चबाना पसंद है"),
+            WordExample(thai: "นี่คือเคี้ยว", romanization: "nîi khuue khíao", english: "This is chew", hindi: "यह चबाना है"),
+        ],
+        2579: [
+            WordExample(thai: "ผมชอบกัด", romanization: "phǒm chôp kàt", english: "I like bite", hindi: "मुझे काटना पसंद है"),
+            WordExample(thai: "นี่คือกัด", romanization: "nîi khuue kàt", english: "This is bite", hindi: "यह काटना है"),
+        ],
+        2580: [
+            WordExample(thai: "ผมชอบเลีย", romanization: "phǒm chôp lia", english: "I like lick", hindi: "मुझे चाटना पसंद है"),
+            WordExample(thai: "นี่คือเลีย", romanization: "nîi khuue lia", english: "This is lick", hindi: "यह चाटना है"),
+        ],
+        2581: [
+            WordExample(thai: "ผมชอบถ่มน้ำลาย", romanization: "phǒm chôp thòm-nám-laai", english: "I like spit", hindi: "मुझे थूकना पसंद है"),
+            WordExample(thai: "นี่คือถ่มน้ำลาย", romanization: "nîi khuue thòm-nám-laai", english: "This is spit", hindi: "यह थूकना है"),
+        ],
+        2582: [
+            WordExample(thai: "ผมชอบสั่น", romanization: "phǒm chôp sàn", english: "I like shiver", hindi: "मुझे काँपना पसंद है"),
+            WordExample(thai: "นี่คือสั่น", romanization: "nîi khuue sàn", english: "This is shiver", hindi: "यह काँपना है"),
+        ],
+        2583: [
+            WordExample(thai: "ผมชอบเหงื่อออก", romanization: "phǒm chôp nguèa-aẁawk", english: "I like sweat", hindi: "मुझे पसीना आना पसंद है"),
+            WordExample(thai: "นี่คือเหงื่อออก", romanization: "nîi khuue nguèa-aẁawk", english: "This is sweat", hindi: "यह पसीना आना है"),
+        ],
+        2584: [
+            WordExample(thai: "ผมชอบหัวเราะ", romanization: "phǒm chôp hǔa-raẃ", english: "I like laugh", hindi: "मुझे हँसना पसंद है"),
+            WordExample(thai: "นี่คือหัวเราะ", romanization: "nîi khuue hǔa-raẃ", english: "This is laugh", hindi: "यह हँसना है"),
+        ],
+        2585: [
+            WordExample(thai: "ผมชอบถอนหายใจ", romanization: "phǒm chôp thaw̌awn-hǎai-jai", english: "I like sigh", hindi: "मुझे आह भरना पसंद है"),
+            WordExample(thai: "นี่คือถอนหายใจ", romanization: "nîi khuue thaw̌awn-hǎai-jai", english: "This is sigh", hindi: "यह आह भरना है"),
+        ],
+        2586: [
+            WordExample(thai: "ผมชอบกระพริบตา", romanization: "phǒm chôp krà-phríp-taa", english: "I like blink", hindi: "मुझे पलक झपकाना पसंद है"),
+            WordExample(thai: "นี่คือกระพริบตา", romanization: "nîi khuue krà-phríp-taa", english: "This is blink", hindi: "यह पलक झपकाना है"),
+        ],
+        2587: [
+            WordExample(thai: "ผมชอบพยักหน้า", romanization: "phǒm chôp phá-yák-nâa", english: "I like nod", hindi: "मुझे सिर हिलाना पसंद है"),
+            WordExample(thai: "นี่คือพยักหน้า", romanization: "nîi khuue phá-yák-nâa", english: "This is nod", hindi: "यह सिर हिलाना है"),
+        ],
+        2588: [
+            WordExample(thai: "ผมชอบส่ายหัว", romanization: "phǒm chôp sàai-hǔa", english: "I like shake head", hindi: "मुझे सिर हिलाकर मना करना पसंद है"),
+            WordExample(thai: "นี่คือส่ายหัว", romanization: "nîi khuue sàai-hǔa", english: "This is shake head", hindi: "यह सिर हिलाकर मना करना है"),
+        ],
+        2589: [
+            WordExample(thai: "ผมชอบเครื่อง", romanization: "phǒm chôp khruêang", english: "I like machines", hindi: "मुझे मशीनों के लिए वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือเครื่อง", romanization: "nîi khuue khruêang", english: "This is machines", hindi: "यह मशीनों के लिए वर्गसूचक है"),
+        ],
+        2590: [
+            WordExample(thai: "ผมชอบแผ่น", romanization: "phǒm chôp phaèaen", english: "I like flat sheets", hindi: "मुझे चपटी चीज़ों का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือแผ่น", romanization: "nîi khuue phaèaen", english: "This is flat sheets", hindi: "यह चपटी चीज़ों का वर्गसूचक है"),
+        ],
+        2591: [
+            WordExample(thai: "ผมชอบองค์", romanization: "phǒm chôp ong", english: "I like monks, royalty, images", hindi: "मुझे भिक्षु या राजसी वस्तु का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือองค์", romanization: "nîi khuue ong", english: "This is monks, royalty, images", hindi: "यह भिक्षु या राजसी वस्तु का वर्गसूचक है"),
+        ],
+        2592: [
+            WordExample(thai: "ผมชอบรูป", romanization: "phǒm chôp rûup", english: "I like monks, photos", hindi: "मुझे भिक्षु या फोटो का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือรูป", romanization: "nîi khuue rûup", english: "This is monks, photos", hindi: "यह भिक्षु या फोटो का वर्गसूचक है"),
+        ],
+        2593: [
+            WordExample(thai: "ผมชอบท่าน", romanization: "phǒm chôp thâan", english: "I like respected persons", hindi: "मुझे सम्मानित व्यक्ति का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือท่าน", romanization: "nîi khuue thâan", english: "This is respected persons", hindi: "यह सम्मानित व्यक्ति का वर्गसूचक है"),
+        ],
+        2594: [
+            WordExample(thai: "ผมชอบดวง", romanization: "phǒm chôp duang", english: "I like stars, hearts, stamps", hindi: "मुझे तारे या दिल का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือดวง", romanization: "nîi khuue duang", english: "This is stars, hearts, stamps", hindi: "यह तारे या दिल का वर्गसूचक है"),
+        ],
+        2595: [
+            WordExample(thai: "ผมชอบต้น", romanization: "phǒm chôp tôn", english: "I like trees, plants", hindi: "मुझे पेड़-पौधों का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือต้น", romanization: "nîi khuue tôn", english: "This is trees, plants", hindi: "यह पेड़-पौधों का वर्गसूचक है"),
+        ],
+        2596: [
+            WordExample(thai: "ผมชอบดอก", romanization: "phǒm chôp daẁawk", english: "I like flowers", hindi: "मुझे फूलों का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือดอก", romanization: "nîi khuue daẁawk", english: "This is flowers", hindi: "यह फूलों का वर्गसूचक है"),
+        ],
+        2597: [
+            WordExample(thai: "ผมชอบผล", romanization: "phǒm chôp phǒn", english: "I like fruits, results", hindi: "मुझे फल का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือผล", romanization: "nîi khuue phǒn", english: "This is fruits, results", hindi: "यह फल का वर्गसूचक है"),
+        ],
+        2598: [
+            WordExample(thai: "ผมชอบเม็ด", romanization: "phǒm chôp mét", english: "I like seeds, pills, grains", hindi: "मुझे बीज या गोली का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือเม็ด", romanization: "nîi khuue mét", english: "This is seeds, pills, grains", hindi: "यह बीज या गोली का वर्गसूचक है"),
+        ],
+        2599: [
+            WordExample(thai: "ผมชอบก้อน", romanization: "phǒm chôp kaŵawn", english: "I like lumps, rocks", hindi: "मुझे गांठ या पत्थर का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือก้อน", romanization: "nîi khuue kaŵawn", english: "This is lumps, rocks", hindi: "यह गांठ या पत्थर का वर्गसूचक है"),
+        ],
+        2600: [
+            WordExample(thai: "ผมชอบหยด", romanization: "phǒm chôp yòt", english: "I like drops", hindi: "मुझे बूंद का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือหยด", romanization: "nîi khuue yòt", english: "This is drops", hindi: "यह बूंद का वर्गसूचक है"),
+        ],
+        2601: [
+            WordExample(thai: "ผมชอบฟอง", romanization: "phǒm chôp fawawng", english: "I like eggs, bubbles", hindi: "मुझे अंडे या बुलबुले का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือฟอง", romanization: "nîi khuue fawawng", english: "This is eggs, bubbles", hindi: "यह अंडे या बुलबुले का वर्गसूचक है"),
+        ],
+        2602: [
+            WordExample(thai: "ผมชอบมวน", romanization: "phǒm chôp muan", english: "I like cigarettes", hindi: "मुझे सिगरेट का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือมวน", romanization: "nîi khuue muan", english: "This is cigarettes", hindi: "यह सिगरेट का वर्गसूचक है"),
+        ],
+        2603: [
+            WordExample(thai: "ผมชอบซอง", romanization: "phǒm chôp sawawng", english: "I like envelopes, packs", hindi: "मुझे लिफाफे का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือซอง", romanization: "nîi khuue sawawng", english: "This is envelopes, packs", hindi: "यह लिफाफे का वर्गसूचक है"),
+        ],
+        2604: [
+            WordExample(thai: "ผมชอบแห่ง", romanization: "phǒm chôp hàeng", english: "I like places", hindi: "मुझे स्थान का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือแห่ง", romanization: "nîi khuue hàeng", english: "This is places", hindi: "यह स्थान का वर्गसूचक है"),
+        ],
+        2605: [
+            WordExample(thai: "ผมชอบเที่ยว", romanization: "phǒm chôp thîao", english: "I like trips, journeys", hindi: "मुझे यात्रा का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือเที่ยว", romanization: "nîi khuue thîao", english: "This is trips, journeys", hindi: "यह यात्रा का वर्गसूचक है"),
+        ],
+        2606: [
+            WordExample(thai: "ผมชอบที", romanization: "phǒm chôp thii", english: "I like times (informal)", hindi: "मुझे बार का अनौपचारिक वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือที", romanization: "nîi khuue thii", english: "This is times (informal)", hindi: "यह बार का अनौपचारिक वर्गसूचक है"),
+        ],
+        2607: [
+            WordExample(thai: "ผมชอบรอบ", romanization: "phǒm chôp raŵawp", english: "I like rounds, cycles", hindi: "मुझे चक्कर का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือรอบ", romanization: "nîi khuue raŵawp", english: "This is rounds, cycles", hindi: "यह चक्कर का वर्गसूचक है"),
+        ],
+        2608: [
+            WordExample(thai: "ผมชอบประโยค", romanization: "phǒm chôp prà-yòok", english: "I like sentences", hindi: "मुझे वाक्य का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือประโยค", romanization: "nîi khuue prà-yòok", english: "This is sentences", hindi: "यह वाक्य का वर्गसूचक है"),
+        ],
+        2609: [
+            WordExample(thai: "ผมชอบข้อ", romanization: "phǒm chôp khaŵaw", english: "I like items, clauses", hindi: "मुझे वस्तु या खंड का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือข้อ", romanization: "nîi khuue khaŵaw", english: "This is items, clauses", hindi: "यह वस्तु या खंड का वर्गसूचक है"),
+        ],
+        2610: [
+            WordExample(thai: "ผมชอบเรื่อง", romanization: "phǒm chôp ruêang", english: "I like stories, matters", hindi: "मुझे कहानी का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือเรื่อง", romanization: "nîi khuue ruêang", english: "This is stories, matters", hindi: "यह कहानी का वर्गसूचक है"),
+        ],
+        2611: [
+            WordExample(thai: "ผมชอบชนิด", romanization: "phǒm chôp cha-nít", english: "I like kinds, types", hindi: "मुझे प्रकार का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือชนิด", romanization: "nîi khuue cha-nít", english: "This is kinds, types", hindi: "यह प्रकार का वर्गसूचक है"),
+        ],
+        2612: [
+            WordExample(thai: "ผมชอบอย่าง", romanization: "phǒm chôp yàang", english: "I like sorts, ways", hindi: "मुझे तरह या ढंग का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คืออย่าง", romanization: "nîi khuue yàang", english: "This is sorts, ways", hindi: "यह तरह या ढंग का वर्गसूचक है"),
+        ],
+        2613: [
+            WordExample(thai: "ผมชอบแบบ", romanization: "phǒm chôp baèaep", english: "I like styles, models", hindi: "मुझे शैली का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือแบบ", romanization: "nîi khuue baèaep", english: "This is styles, models", hindi: "यह शैली का वर्गसूचक है"),
+        ],
+        2614: [
+            WordExample(thai: "ผมชอบกลุ่ม", romanization: "phǒm chôp klùm", english: "I like groups", hindi: "मुझे समूह का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือกลุ่ม", romanization: "nîi khuue klùm", english: "This is groups", hindi: "यह समूह का वर्गसूचक है"),
+        ],
+        2615: [
+            WordExample(thai: "ผมชอบฝูง", romanization: "phǒm chôp fǔung", english: "I like herds, flocks", hindi: "मुझे झुंड का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือฝูง", romanization: "nîi khuue fǔung", english: "This is herds, flocks", hindi: "यह झुंड का वर्गसूचक है"),
+        ],
+        2616: [
+            WordExample(thai: "ผมชอบพวก", romanization: "phǒm chôp phûak", english: "I like groups of people", hindi: "मुझे लोगों का समूह पसंद है"),
+            WordExample(thai: "นี่คือพวก", romanization: "nîi khuue phûak", english: "This is groups of people", hindi: "यह लोगों का समूह है"),
+        ],
+        2617: [
+            WordExample(thai: "ผมชอบบาน", romanization: "phǒm chôp baan", english: "I like doors, windows", hindi: "मुझे दरवाज़े या खिड़की का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือบาน", romanization: "nîi khuue baan", english: "This is doors, windows", hindi: "यह दरवाज़े या खिड़की का वर्गसूचक है"),
+        ],
+        2618: [
+            WordExample(thai: "ผมชอบผืน", romanization: "phǒm chôp phueuen", english: "I like cloth, land, mats", hindi: "मुझे कपड़े या भूमि का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือผืน", romanization: "nîi khuue phueuen", english: "This is cloth, land, mats", hindi: "यह कपड़े या भूमि का वर्गसूचक है"),
+        ],
+        2619: [
+            WordExample(thai: "ผมชอบลำ", romanization: "phǒm chôp lam", english: "I like boats, aircraft", hindi: "मुझे नाव या विमान का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือลำ", romanization: "nîi khuue lam", english: "This is boats, aircraft", hindi: "यह नाव या विमान का वर्गसूचक है"),
+        ],
+        2620: [
+            WordExample(thai: "ผมชอบขบวน", romanization: "phǒm chôp khà-buan", english: "I like processions, trains", hindi: "मुझे जुलूस या रेल का वर्गसूचक पसंद है"),
+            WordExample(thai: "นี่คือขบวน", romanization: "nîi khuue khà-buan", english: "This is processions, trains", hindi: "यह जुलूस या रेल का वर्गसूचक है"),
+        ],
+        2621: [
+            WordExample(thai: "ผมชอบเพราะ", romanization: "phǒm chôp phraẃ", english: "I like because", hindi: "मुझे क्योंकि पसंद है"),
+            WordExample(thai: "นี่คือเพราะ", romanization: "nîi khuue phraẃ", english: "This is because", hindi: "यह क्योंकि है"),
+        ],
+        2622: [
+            WordExample(thai: "ผมชอบดังนั้น", romanization: "phǒm chôp dang-nán", english: "I like therefore", hindi: "मुझे इसलिए पसंद है"),
+            WordExample(thai: "นี่คือดังนั้น", romanization: "nîi khuue dang-nán", english: "This is therefore", hindi: "यह इसलिए है"),
+        ],
+        2623: [
+            WordExample(thai: "ผมชอบถ้า", romanization: "phǒm chôp thâa", english: "I like if", hindi: "मुझे अगर पसंद है"),
+            WordExample(thai: "นี่คือถ้า", romanization: "nîi khuue thâa", english: "This is if", hindi: "यह अगर है"),
+        ],
+        2624: [
+            WordExample(thai: "ผมชอบเมื่อ", romanization: "phǒm chôp muêa", english: "I like when", hindi: "मुझे जब पसंद है"),
+            WordExample(thai: "นี่คือเมื่อ", romanization: "nîi khuue muêa", english: "This is when", hindi: "यह जब है"),
+        ],
+        2625: [
+            WordExample(thai: "ผมชอบขณะที่", romanization: "phǒm chôp khà-nà-thîi", english: "I like while", hindi: "मुझे जबकि पसंद है"),
+            WordExample(thai: "นี่คือขณะที่", romanization: "nîi khuue khà-nà-thîi", english: "This is while", hindi: "यह जबकि है"),
+        ],
+        2626: [
+            WordExample(thai: "ผมชอบก่อนที่", romanization: "phǒm chôp kaẁawn-thîi", english: "I like before (clause)", hindi: "मुझे इससे पहले कि पसंद है"),
+            WordExample(thai: "นี่คือก่อนที่", romanization: "nîi khuue kaẁawn-thîi", english: "This is before (clause)", hindi: "यह इससे पहले कि है"),
+        ],
+        2627: [
+            WordExample(thai: "ผมชอบหลังจาก", romanization: "phǒm chôp lǎng-jàak", english: "I like after (grammar connect)", hindi: "मुझे के बाद पसंद है"),
+            WordExample(thai: "นี่คือหลังจาก", romanization: "nîi khuue lǎng-jàak", english: "This is after (grammar connect)", hindi: "यह के बाद है"),
+        ],
+        2628: [
+            WordExample(thai: "ผมชอบจนกระทั่ง", romanization: "phǒm chôp jon-krà-thâng", english: "I like until", hindi: "मुझे तक पसंद है"),
+            WordExample(thai: "นี่คือจนกระทั่ง", romanization: "nîi khuue jon-krà-thâng", english: "This is until", hindi: "यह तक है"),
+        ],
+        2629: [
+            WordExample(thai: "ผมชอบตั้งแต่", romanization: "phǒm chôp tâng-taèae", english: "I like since", hindi: "मुझे से पसंद है"),
+            WordExample(thai: "นี่คือตั้งแต่", romanization: "nîi khuue tâng-taèae", english: "This is since", hindi: "यह से है"),
+        ],
+        2630: [
+            WordExample(thai: "ผมชอบเพื่อ", romanization: "phǒm chôp phuêa", english: "I like in order to", hindi: "मुझे के लिए पसंद है"),
+            WordExample(thai: "นี่คือเพื่อ", romanization: "nîi khuue phuêa", english: "This is in order to", hindi: "यह के लिए है"),
+        ],
+        2631: [
+            WordExample(thai: "ผมชอบแม้ว่า", romanization: "phǒm chôp maéae-wâa", english: "I like although", hindi: "मुझे हालाँकि पसंद है"),
+            WordExample(thai: "นี่คือแม้ว่า", romanization: "nîi khuue maéae-wâa", english: "This is although", hindi: "यह हालाँकि है"),
+        ],
+        2632: [
+            WordExample(thai: "ผมชอบถึงแม้", romanization: "phǒm chôp thuěng-maéae", english: "I like even though", hindi: "मुझे भले ही पसंद है"),
+            WordExample(thai: "นี่คือถึงแม้", romanization: "nîi khuue thuěng-maéae", english: "This is even though", hindi: "यह भले ही है"),
+        ],
+        2633: [
+            WordExample(thai: "ผมชอบนอกจาก", romanization: "phǒm chôp naŵawk-jàak", english: "I like besides", hindi: "मुझे के अलावा पसंद है"),
+            WordExample(thai: "นี่คือนอกจาก", romanization: "nîi khuue naŵawk-jàak", english: "This is besides", hindi: "यह के अलावा है"),
+        ],
+        2634: [
+            WordExample(thai: "ผมชอบรวมทั้ง", romanization: "phǒm chôp ruam-tháng", english: "I like including", hindi: "मुझे सहित पसंद है"),
+            WordExample(thai: "นี่คือรวมทั้ง", romanization: "nîi khuue ruam-tháng", english: "This is including", hindi: "यह सहित है"),
+        ],
+        2635: [
+            WordExample(thai: "ผมชอบยกเว้น", romanization: "phǒm chôp yók-wên", english: "I like except", hindi: "मुझे को छोड़कर पसंद है"),
+            WordExample(thai: "นี่คือยกเว้น", romanization: "nîi khuue yók-wên", english: "This is except", hindi: "यह को छोड़कर है"),
+        ],
+        2636: [
+            WordExample(thai: "ผมชอบแทนที่", romanization: "phǒm chôp thaeaen-thîi", english: "I like instead of", hindi: "मुझे के बजाय पसंद है"),
+            WordExample(thai: "นี่คือแทนที่", romanization: "nîi khuue thaeaen-thîi", english: "This is instead of", hindi: "यह के बजाय है"),
+        ],
+        2637: [
+            WordExample(thai: "ผมชอบเช่น", romanization: "phǒm chôp chên", english: "I like such as", hindi: "मुझे जैसे पसंद है"),
+            WordExample(thai: "นี่คือเช่น", romanization: "nîi khuue chên", english: "This is such as", hindi: "यह जैसे है"),
+        ],
+        2638: [
+            WordExample(thai: "ผมชอบได้แก่", romanization: "phǒm chôp dâai-kaèae", english: "I like namely", hindi: "मुझे अर्थात पसंद है"),
+            WordExample(thai: "นี่คือได้แก่", romanization: "nîi khuue dâai-kaèae", english: "This is namely", hindi: "यह अर्थात है"),
+        ],
+        2639: [
+            WordExample(thai: "ผมชอบอย่างไรก็ตาม", romanization: "phǒm chôp yàang-rai-kawaw-taam", english: "I like however", hindi: "मुझे हालाँकि पसंद है"),
+            WordExample(thai: "นี่คืออย่างไรก็ตาม", romanization: "nîi khuue yàang-rai-kawaw-taam", english: "This is however", hindi: "यह हालाँकि है"),
+        ],
+        2640: [
+            WordExample(thai: "ผมชอบในขณะเดียวกัน", romanization: "phǒm chôp nai-khà-nà-diao-kan", english: "I like meanwhile", hindi: "मुझे इसी बीच पसंद है"),
+            WordExample(thai: "นี่คือในขณะเดียวกัน", romanization: "nîi khuue nai-khà-nà-diao-kan", english: "This is meanwhile", hindi: "यह इसी बीच है"),
+        ],
+        2641: [
+            WordExample(thai: "ผมชอบยิ่งกว่านั้น", romanization: "phǒm chôp yîng-kwàa-nán", english: "I like moreover", hindi: "मुझे इसके अलावा पसंद है"),
+            WordExample(thai: "นี่คือยิ่งกว่านั้น", romanization: "nîi khuue yîng-kwàa-nán", english: "This is moreover", hindi: "यह इसके अलावा है"),
+        ],
+        2642: [
+            WordExample(thai: "ผมชอบสรุปแล้ว", romanization: "phǒm chôp sà-rùp-laéaeo", english: "I like in conclusion", hindi: "मुझे निष्कर्ष में पसंद है"),
+            WordExample(thai: "นี่คือสรุปแล้ว", romanization: "nîi khuue sà-rùp-laéaeo", english: "This is in conclusion", hindi: "यह निष्कर्ष में है"),
+        ],
+        2643: [
+            WordExample(thai: "ผมชอบใต้", romanization: "phǒm chôp tâi", english: "I like under", hindi: "मुझे के नीचे पसंद है"),
+            WordExample(thai: "นี่คือใต้", romanization: "nîi khuue tâi", english: "This is under", hindi: "यह के नीचे है"),
+        ],
+        2644: [
+            WordExample(thai: "ผมชอบข้าง", romanization: "phǒm chôp khâang", english: "I like beside (grammar prep)", hindi: "मुझे के पास पसंद है"),
+            WordExample(thai: "นี่คือข้าง", romanization: "nîi khuue khâang", english: "This is beside (grammar prep)", hindi: "यह के पास है"),
+        ],
+        2645: [
+            WordExample(thai: "ผมชอบไกลจาก", romanization: "phǒm chôp klai-jàak", english: "I like far from", hindi: "मुझे से दूर पसंद है"),
+            WordExample(thai: "นี่คือไกลจาก", romanization: "nîi khuue klai-jàak", english: "This is far from", hindi: "यह से दूर है"),
+        ],
+        2646: [
+            WordExample(thai: "ผมชอบโดย", romanization: "phǒm chôp doi", english: "I like by means of", hindi: "मुझे के द्वारा पसंद है"),
+            WordExample(thai: "นี่คือโดย", romanization: "nîi khuue doi", english: "This is by means of", hindi: "यह के द्वारा है"),
+        ],
+    ]
+
+
+    private static let examples7: [Int: [WordExample]] = [
+        2647: [
+            WordExample(thai: "นี่สำหรับคุณ", romanization: "nîi-sǎm-ràp-khun", english: "This is for you.", hindi: "यह आपके लिए है"),
+            WordExample(thai: "ของขวัญสำหรับแม่", romanization: "khǎawng-khwǎn-sǎm-ràp-mâe", english: "A gift for mom.", hindi: "माँ के लिए उपहार"),
+        ],
+        2648: [
+            WordExample(thai: "คุยเกี่ยวกับงาน", romanization: "khui-kìeow-kàp-ngaan", english: "Talk about work.", hindi: "काम के बारे में बात करो"),
+            WordExample(thai: "หนังสือเกี่ยวกับไทย", romanization: "nǎng-sǔe-kìeow-kàp-thai", english: "A book about Thai.", hindi: "थाई के बारे में किताब"),
+        ],
+        2649: [
+            WordExample(thai: "ทั่วโลก", romanization: "thûa-lôok", english: "Throughout the world.", hindi: "पूरी दुनिया में"),
+            WordExample(thai: "ทั่วเมือง", romanization: "thûa-mueang", english: "Throughout the city.", hindi: "पूरे शहर में"),
+        ],
+        2650: [
+            WordExample(thai: "ภายในบ้าน", romanization: "phaai-nai-bâan", english: "Inside the house.", hindi: "घर के भीतर"),
+            WordExample(thai: "ภายในห้อง", romanization: "phaai-nai-hâawng", english: "Within the room.", hindi: "कमरे के भीतर"),
+        ],
+        2651: [
+            WordExample(thai: "ภายนอกอาคาร", romanization: "phaai-nâawk-aa-kaan", english: "Outside of the building.", hindi: "इमारत के बाहर"),
+            WordExample(thai: "ดูภายนอก", romanization: "duu-phaai-nâawk", english: "Look at the outside.", hindi: "बाहर देखो"),
+        ],
+        2652: [
+            WordExample(thai: "ไปเถอะ", romanization: "pai-thèr", english: "Let's go.", hindi: "चलो चलें"),
+            WordExample(thai: "กินเถอะ", romanization: "kin-thèr", english: "Let's eat.", hindi: "चलो खाएं"),
+        ],
+        2653: [
+            WordExample(thai: "ไม่ใช่หรอก", romanization: "mâi-châi-ràwk", english: "No, it's not.", hindi: "नहीं है भला"),
+            WordExample(thai: "อย่าไปหรอก", romanization: "yàa-pai-ràwk", english: "Don't go then.", hindi: "मत जाओ भला"),
+        ],
+        2654: [
+            WordExample(thai: "แล้วคุณล่ะ", romanization: "láeo-khun-lâ", english: "And you then?", hindi: "और तुम तो"),
+            WordExample(thai: "ทำไมล่ะ", romanization: "tham-mai-lâ", english: "Why then?", hindi: "क्यों तो"),
+        ],
+        2655: [
+            WordExample(thai: "มานี่จ๊ะ", romanization: "maa-nîi-já", english: "Come here, okay?", hindi: "इधर आओ ना"),
+            WordExample(thai: "นั่งจ๊ะ", romanization: "nâng-já", english: "Sit down, please.", hindi: "बैठ जाओ ना"),
+        ],
+        2656: [
+            WordExample(thai: "แค่นี้แหละ", romanization: "khâe-níi-làe", english: "Just this much.", hindi: "बस इतना ही"),
+            WordExample(thai: "อย่างนี้แหละ", romanization: "yàang-níi-làe", english: "Just like this.", hindi: "ऐसे ही"),
+        ],
+        2657: [
+            WordExample(thai: "อร่อยใช่ไหม", romanization: "à-ràwy-châi-mǎi", english: "It's tasty, isn't it?", hindi: "स्वादिष्ट है ना"),
+            WordExample(thai: "ถูกใช่ไหม", romanization: "thùuk-châi-mǎi", english: "It's correct, isn't it?", hindi: "सही है ना"),
+        ],
+        2658: [
+            WordExample(thai: "ไปหรือเปล่า", romanization: "pai-rǔe-plào", english: "Are you going or not?", hindi: "जा रहे हो या नहीं"),
+            WordExample(thai: "รู้หรือเปล่า", romanization: "rúu-rǔe-plào", english: "Do you know or not?", hindi: "पता है या नहीं"),
+        ],
+        2659: [
+            WordExample(thai: "มีบ้างไหม", romanization: "mii-bâang-mǎi", english: "Do you have some?", hindi: "कुछ है क्या"),
+            WordExample(thai: "กินบ้าง", romanization: "kin-bâang", english: "Eat some.", hindi: "कुछ खाओ"),
+        ],
+        2660: [
+            WordExample(thai: "ทำเอง", romanization: "tham-eeng", english: "Do it yourself.", hindi: "खुद करो"),
+            WordExample(thai: "ไปเอง", romanization: "pai-eeng", english: "Go by yourself.", hindi: "खुद जाओ"),
+        ],
+        2661: [
+            WordExample(thai: "ใช่มั้ง", romanization: "châi-máng", english: "It's yes, probably.", hindi: "हाँ शायद"),
+            WordExample(thai: "เขามามั้ง", romanization: "khǎo-maa-máng", english: "He'll come, probably.", hindi: "वह आएगा शायद"),
+        ],
+        2662: [
+            WordExample(thai: "นี่แหละที่ต้องการ", romanization: "nîi-làe-thîi-tâawng-kaan", english: "This is the very one I want.", hindi: "यही तो चाहिए"),
+            WordExample(thai: "อันนี่แหละ", romanization: "an-nîi-làe", english: "This very one.", hindi: "यही वाला"),
+        ],
+        2663: [
+            WordExample(thai: "นานๆ ครั้งจะไป", romanization: "naan-naan-khráng-jà-pai", english: "I go rarely.", hindi: "कभी-कभी जाता हूँ"),
+            WordExample(thai: "เจอนานๆ ครั้ง", romanization: "jer-naan-naan-khráng", english: "Meet rarely.", hindi: "कभी-कभी मिलते हैं"),
+        ],
+        2664: [
+            WordExample(thai: "ค่อยๆ เดิน", romanization: "khôi-khôi-dern", english: "Walk gradually.", hindi: "धीरे-धीरे चलो"),
+            WordExample(thai: "ค่อยๆ กิน", romanization: "khôi-khôi-kin", english: "Eat gradually.", hindi: "धीरे-धीरे खाओ"),
+        ],
+        2665: [
+            WordExample(thai: "ทันใดนั้น", romanization: "than-dai-nán", english: "Suddenly then.", hindi: "अचानक तब"),
+            WordExample(thai: "ฝนตกทันใด", romanization: "fǒn-tòk-than-dai", english: "Rain fell suddenly.", hindi: "बारिश अचानक गिरी"),
+        ],
+        2666: [
+            WordExample(thai: "เกือบเสร็จ", romanization: "kùeap-sèt", english: "Almost finished.", hindi: "लगभग पूरा"),
+            WordExample(thai: "เกือบถึง", romanization: "kùeap-thǔeng", english: "Almost arrived.", hindi: "लगभग पहुँच गए"),
+        ],
+        2667: [
+            WordExample(thai: "เพิ่งมา", romanization: "phêng-maa", english: "Just arrived.", hindi: "अभी-अभी आया"),
+            WordExample(thai: "เพิ่งกิน", romanization: "phêng-kin", english: "Just ate.", hindi: "अभी-अभी खाया"),
+        ],
+        2668: [
+            WordExample(thai: "แค่นี้เท่านั้น", romanization: "khâe-níi-thâo-nán", english: "Only this much.", hindi: "केवल इतना"),
+            WordExample(thai: "สองคนเท่านั้น", romanization: "sǎawng-khon-thâo-nán", english: "Only two people.", hindi: "केवल दो लोग"),
+        ],
+        2669: [
+            WordExample(thai: "อย่างน้อยสิบคน", romanization: "yàang-náwy-sìp-khon", english: "At least ten people.", hindi: "कम से कम दस लोग"),
+            WordExample(thai: "อย่างน้อยลองดู", romanization: "yàang-náwy-lawng-duu", english: "At least try.", hindi: "कम से कम कोशिश करो"),
+        ],
+        2670: [
+            WordExample(thai: "อย่างมากห้าคน", romanization: "yàang-mâak-hâa-khon", english: "At most five people.", hindi: "ज्यादा से ज्यादा पाँच लोग"),
+            WordExample(thai: "อย่างมากสองวัน", romanization: "yàang-mâak-sǎawng-wan", english: "At most two days.", hindi: "ज्यादा से ज्यादा दो दिन"),
+        ],
+        2671: [
+            WordExample(thai: "ค่อนข้างดี", romanization: "khôrn-khâang-dii", english: "Rather good.", hindi: "काफ़ी अच्छा"),
+            WordExample(thai: "ค่อนข้างแพง", romanization: "khôrn-khâang-phaaeng", english: "Rather expensive.", hindi: "काफ़ी महँगा"),
+        ],
+        2672: [
+            WordExample(thai: "ดีทีเดียว", romanization: "dii-thii-diao", english: "Quite good.", hindi: "काफ़ी अच्छा"),
+            WordExample(thai: "ไกลทีเดียว", romanization: "klai-thii-diao", english: "Quite far.", hindi: "काफ़ी दूर"),
+        ],
+        2673: [
+            WordExample(thai: "โดยเฉพาะวันนี้", romanization: "dooi-chà-pháw-wan-níi", english: "Especially today.", hindi: "खासकर आज"),
+            WordExample(thai: "รักโดยเฉพาะแม่", romanization: "rák-dooi-chà-pháw-mâe", english: "Love especially mom.", hindi: "खासकर माँ से प्यार"),
+        ],
+        2674: [
+            WordExample(thai: "ปกติฉันตื่นเช้า", romanization: "pòk-kà-tì-chǎn-tùen-cháo", english: "Normally I wake early.", hindi: "सामान्यतः मैं जल्दी उठता हूँ"),
+            WordExample(thai: "เป็นปกติ", romanization: "pen-pòk-kà-tì", english: "It is normal.", hindi: "यह सामान्य है"),
+        ],
+        2675: [
+            WordExample(thai: "โดยทั่วไปคนไทยใจดี", romanization: "dooi-thûa-pai-khon-thai-jai-dii", english: "Generally Thai people are kind.", hindi: "आमतौर पर थाई लोग दयालु हैं"),
+            WordExample(thai: "โดยทั่วไปถูก", romanization: "dooi-thûa-pai-thùuk", english: "Generally correct.", hindi: "आमतौर पर सही"),
+        ],
+        2676: [
+            WordExample(thai: "คงจะมา", romanization: "khong-jà-maa", english: "He will probably come.", hindi: "शायद आएगा"),
+            WordExample(thai: "คงจะฝนตก", romanization: "khong-jà-fǒn-tòk", english: "It will probably rain.", hindi: "शायद बारिश होगी"),
+        ],
+        2677: [
+            WordExample(thai: "แทบไม่เห็น", romanization: "thâep-mâi-hěn", english: "Hardly see.", hindi: "शायद ही दिखे"),
+            WordExample(thai: "แทบไม่กิน", romanization: "thâep-mâi-kin", english: "Hardly eat.", hindi: "शायद ही खाए"),
+        ],
+        2678: [
+            WordExample(thai: "เดินเร็วๆ", romanization: "dern-reo-reo", english: "Walk quickly.", hindi: "जल्दी-जल्दी चलो"),
+            WordExample(thai: "ทำเร็วๆ", romanization: "tham-reo-reo", english: "Do it quickly.", hindi: "जल्दी-जल्दी करो"),
+        ],
+        2679: [
+            WordExample(thai: "พูดช้าๆ", romanization: "phûut-cháa-cháa", english: "Speak slowly.", hindi: "धीरे-धीरे बोलो"),
+            WordExample(thai: "ขับรถช้าๆ", romanization: "khàp-rót-cháa-cháa", english: "Drive slowly.", hindi: "धीरे-धीरे गाड़ी चलाओ"),
+        ],
+        2680: [
+            WordExample(thai: "นั่งเงียบๆ", romanization: "nâng-ngîap-ngîap", english: "Sit quietly.", hindi: "चुपचाप बैठो"),
+            WordExample(thai: "พูดเงียบๆ", romanization: "phûut-ngîap-ngîap", english: "Speak quietly.", hindi: "चुपचाप बोलो"),
+        ],
+        2681: [
+            WordExample(thai: "พื้นเรียบ", romanization: "phúuen-rîap", english: "The floor is smooth.", hindi: "फर्श चिकना है"),
+            WordExample(thai: "ผิวเรียบ", romanization: "phǐu-rîap", english: "Smooth skin.", hindi: "चिकनी त्वचा"),
+        ],
+        2682: [
+            WordExample(thai: "ถนนขรุขระ", romanization: "thà-nǒn-khà-rú-khà-rá", english: "The road is rough.", hindi: "सड़क ऊबड़-खाबड़ है"),
+            WordExample(thai: "พื้นขรุขระ", romanization: "phúuen-khà-rú-khà-rá", english: "Rough surface.", hindi: "ऊबड़-खाबड़ सतह"),
+        ],
+        2683: [
+            WordExample(thai: "มีดทื่อ", romanization: "mîit-thûe", english: "The knife is blunt.", hindi: "चाकू कुंद है"),
+            WordExample(thai: "ดินสอทื่อ", romanization: "din-sǎaw-thûe", english: "The pencil is blunt.", hindi: "पेंसिल कुंद है"),
+        ],
+        2684: [
+            WordExample(thai: "น้ำลึก", romanization: "náam-lúek", english: "Deep water.", hindi: "गहरा पानी"),
+            WordExample(thai: "หลุมลึก", romanization: "lǔm-lúek", english: "A deep hole.", hindi: "गहरा गड्ढा"),
+        ],
+        2685: [
+            WordExample(thai: "น้ำตื้น", romanization: "náam-túen", english: "Shallow water.", hindi: "उथला पानी"),
+            WordExample(thai: "แม่น้ำตื้น", romanization: "mâe-náam-túen", english: "The river is shallow.", hindi: "नदी उथली है"),
+        ],
+        2686: [
+            WordExample(thai: "หนังสือหนา", romanization: "nǎng-sǔe-nǎa", english: "A thick book.", hindi: "मोटी किताब"),
+            WordExample(thai: "กำแพงหนา", romanization: "kam-phaaeng-nǎa", english: "A thick wall.", hindi: "मोटी दीवार"),
+        ],
+        2687: [
+            WordExample(thai: "เขาสั้นเตี้ย", romanization: "khǎo-sân-tîa", english: "He is short.", hindi: "वह नाटा है"),
+            WordExample(thai: "เก้าอี้เตี้ย", romanization: "kâo-îi-tîa", english: "A short chair.", hindi: "नाटी कुर्सी"),
+        ],
+        2688: [
+            WordExample(thai: "ถนนโค้ง", romanization: "thà-nǒn-khóong", english: "A curved road.", hindi: "मुड़ी सड़क"),
+            WordExample(thai: "เส้นโค้ง", romanization: "sên-khóong", english: "A curved line.", hindi: "मुड़ी रेखा"),
+        ],
+        2689: [
+            WordExample(thai: "ลูกกลม", romanization: "lûuk-klom", english: "A round ball.", hindi: "गोला गेंद"),
+            WordExample(thai: "โต๊ะกลม", romanization: "tó-klom", english: "A round table.", hindi: "गोल मेज़"),
+        ],
+        2690: [
+            WordExample(thai: "พื้นแบน", romanization: "phúuen-baen", english: "A flat surface.", hindi: "चपटी सतह"),
+            WordExample(thai: "กล่องแบน", romanization: "klâawng-baen", english: "A flat box.", hindi: "चपटा डिब्बा"),
+        ],
+        2691: [
+            WordExample(thai: "แก้วเต็ม", romanization: "kâeo-tem", english: "The glass is full.", hindi: "गिलास भरा है"),
+            WordExample(thai: "รถเต็ม", romanization: "rót-tem", english: "The car is full.", hindi: "गाड़ी भरी है"),
+        ],
+        2692: [
+            WordExample(thai: "กางเกงหลวม", romanization: "kaang-keeng-lǔam", english: "Loose pants.", hindi: "ढीली पैंट"),
+            WordExample(thai: "เชือกหลวม", romanization: "chûeak-lǔam", english: "A loose rope.", hindi: "ढीली रस्सी"),
+        ],
+        2693: [
+            WordExample(thai: "เขารวยมาก", romanization: "khǎo-ruay-mâak", english: "He is very rich.", hindi: "वह बहुत अमीर है"),
+            WordExample(thai: "ครอบครัวรวย", romanization: "khrâawp-khrua-ruay", english: "A rich family.", hindi: "अमीर परिवार"),
+        ],
+        2694: [
+            WordExample(thai: "เขาจนมาก", romanization: "khǎo-jon-mâak", english: "He is very poor.", hindi: "वह बहुत गरीब है"),
+            WordExample(thai: "หมู่บ้านจน", romanization: "mùu-bâan-jon", english: "A poor village.", hindi: "गरीब गाँव"),
+        ],
+        2695: [
+            WordExample(thai: "น้ำขุ่น", romanization: "náam-khùn", english: "Cloudy water.", hindi: "मटमैला पानी"),
+            WordExample(thai: "น้ำตาขุ่น", romanization: "náam-taa-khùn", english: "Cloudy tears.", hindi: "मटमैले आँसू"),
+        ],
+        2696: [
+            WordExample(thai: "เขากล้ามาก", romanization: "khǎo-klâa-mâak", english: "He is very brave.", hindi: "वह बहुत बहादुर है"),
+            WordExample(thai: "ต้องกล้า", romanization: "tâawng-klâa", english: "Must be brave.", hindi: "बहादुर बनो"),
+        ],
+        2697: [
+            WordExample(thai: "อย่าขี้ขลาด", romanization: "yàa-khîi-khlàat", english: "Don't be cowardly.", hindi: "कायर मत बनो"),
+            WordExample(thai: "เขาขี้ขลาด", romanization: "khǎo-khîi-khlàat", english: "He is cowardly.", hindi: "वह कायर है"),
+        ],
+        2698: [
+            WordExample(thai: "อย่าโกง", romanization: "yàa-koong", english: "Don't cheat.", hindi: "बेईमानी मत करो"),
+            WordExample(thai: "คนโกง", romanization: "khon-koong", english: "A dishonest person.", hindi: "बेईमान व्यक्ति"),
+        ],
+        2699: [
+            WordExample(thai: "หนังน่าเบื่อ", romanization: "nǎng-nâa-bùea", english: "The movie is boring.", hindi: "फिल्म उबाऊ है"),
+            WordExample(thai: "งานน่าเบื่อ", romanization: "ngaan-nâa-bùea", english: "Boring work.", hindi: "उबाऊ काम"),
+        ],
+        2700: [
+            WordExample(thai: "เรื่องแปลก", romanization: "rûeang-plàek", english: "A strange story.", hindi: "अजीब कहानी"),
+            WordExample(thai: "คนแปลก", romanization: "khon-plàek", english: "A strange person.", hindi: "अजीब व्यक्ति"),
+        ],
+        2701: [
+            WordExample(thai: "คุ้นเคยกับที่นี่", romanization: "khún-khoeey-kàp-thîi-nîi", english: "Familiar with this place.", hindi: "यहाँ से परिचित"),
+            WordExample(thai: "หน้าคุ้นเคย", romanization: "nâa-khún-khoeey", english: "A familiar face.", hindi: "परिचित चेहरा"),
+        ],
+        2702: [
+            WordExample(thai: "วันนี้ยุ่ง", romanization: "wan-níi-yûng", english: "Busy today.", hindi: "आज व्यस्त"),
+            WordExample(thai: "เขายุ่งมาก", romanization: "khǎo-yûng-mâak", english: "He is very busy.", hindi: "वह बहुत व्यस्त है"),
+        ],
+        2703: [
+            WordExample(thai: "ชีวิตลำบาก", romanization: "chii-wít-lam-bàak", english: "Life is hard.", hindi: "जीवन कठिन है"),
+            WordExample(thai: "เดินลำบาก", romanization: "dern-lam-bàak", english: "Hard to walk.", hindi: "चलना कठिन"),
+        ],
+        2704: [
+            WordExample(thai: "เงินปลอม", romanization: "ngern-plawm", english: "Fake money.", hindi: "नकली पैसे"),
+            WordExample(thai: "นาฬิกาปลอม", romanization: "naa-lí-kaa-plawm", english: "A fake watch.", hindi: "नकली घड़ी"),
+        ],
+        2705: [
+            WordExample(thai: "เหมือนกัน", romanization: "mǔean-kan", english: "The same.", hindi: "समान हैं"),
+            WordExample(thai: "ดูเหมือน", romanization: "duu-mǔean", english: "Looks the same.", hindi: "समान दिखता है"),
+        ],
+        2706: [
+            WordExample(thai: "ต่างกัน", romanization: "tàang-kan", english: "Different from each other.", hindi: "एक-दूसरे से अलग"),
+            WordExample(thai: "คนต่างเมือง", romanization: "khon-tàang-mueang", english: "People from different cities.", hindi: "अलग शहर के लोग"),
+        ],
+        2707: [
+            WordExample(thai: "พอแล้ว", romanization: "phaw-láeo", english: "Enough already.", hindi: "पर्याप्त है"),
+            WordExample(thai: "เงินพอ", romanization: "ngern-phaw", english: "Enough money.", hindi: "पर्याप्त पैसे"),
+        ],
+        2708: [
+            WordExample(thai: "ขาดน้ำ", romanization: "khàat-náam", english: "Lacking water.", hindi: "पानी की कमी"),
+            WordExample(thai: "ขาดเงิน", romanization: "khàat-ngern", english: "Lacking money.", hindi: "पैसे की कमी"),
+        ],
+        2709: [
+            WordExample(thai: "เกินขนาด", romanization: "kern-khà-nâat", english: "Excessive amount.", hindi: "अत्यधिक मात्रा"),
+            WordExample(thai: "เกินเวลา", romanization: "kern-wee-laa", english: "Over time.", hindi: "समय से अधिक"),
+        ],
+        2710: [
+            WordExample(thai: "ท้องฟ้าสุกใส", romanization: "tháawng-fáa-sùk-sǎi", english: "Radiant sky.", hindi: "चमकदार आकाश"),
+            WordExample(thai: "ผิวสุกใส", romanization: "phǐu-sùk-sǎi", english: "Radiant skin.", hindi: "चमकदार त्वचा"),
+        ],
+        2711: [
+            WordExample(thai: "ปัญญาซับซ้อน", romanization: "pan-haa-sáp-sáwn", english: "A complicated problem.", hindi: "जटिल समस्या"),
+            WordExample(thai: "เรื่องซับซ้อน", romanization: "rûeang-sáp-sáwn", english: "A complicated matter.", hindi: "जटिल मामला"),
+        ],
+        2712: [
+            WordExample(thai: "บ้านทันสมัย", romanization: "bâan-than-sà-mǎi", english: "A modern house.", hindi: "आधुनिक घर"),
+            WordExample(thai: "คิดทันสมัย", romanization: "khít-than-sà-mǎi", english: "Modern thinking.", hindi: "आधुनिक सोच"),
+        ],
+        2713: [
+            WordExample(thai: "เสื้อล้าสมัย", romanization: "sûea-láa-sà-mǎi", english: "Outdated clothes.", hindi: "पुराने कपड़े"),
+            WordExample(thai: "ไอเดียล้าสมัย", romanization: "ai-dia-láa-sà-mǎi", english: "An outdated idea.", hindi: "पुराना विचार"),
+        ],
+        2714: [
+            WordExample(thai: "อากาศสดชื่น", romanization: "aa-kàat-sòt-chûen", english: "Refreshed air.", hindi: "ताज़गी भरी हवा"),
+            WordExample(thai: "รู้สึกสดชื่น", romanization: "rúu-sùek-sòt-chûen", english: "Feel refreshed.", hindi: "ताज़गी महसूस करो"),
+        ],
+        2715: [
+            WordExample(thai: "พบแพทย์", romanization: "phóp-phâet", english: "See a physician.", hindi: "चिकित्सक से मिलो"),
+            WordExample(thai: "แพทย์ดี", romanization: "phâet-dii", english: "A good physician.", hindi: "अच्छा चिकित्सक"),
+        ],
+        2716: [
+            WordExample(thai: "ถามเภสัชกร", romanization: "thǎam-phee-sàt-chá-kawn", english: "Ask the pharmacist.", hindi: "फार्मासिस्ट से पूछो"),
+            WordExample(thai: "เภสัชกรช่วย", romanization: "phee-sàt-chá-kawn-chûay", english: "The pharmacist helps.", hindi: "फार्मासिस्ट मदद करता है"),
+        ],
+        2717: [
+            WordExample(thai: "เขาเป็นสถาปนิก", romanization: "khǎo-pen-sà-thǎa-pà-ník", english: "He is an architect.", hindi: "वह वास्तुकार है"),
+            WordExample(thai: "สถาปนิกออกแบบบ้าน", romanization: "sà-thǎa-pà-ník-àwk-bàaep-bâan", english: "The architect designs houses.", hindi: "वास्तुकार घर बनाता है"),
+        ],
+        2718: [
+            WordExample(thai: "ผู้พิพากษาตัดสิน", romanization: "phûu-phí-phâak-sǎa-tàt-sǐn", english: "The judge decides.", hindi: "न्यायाधीश फैसला करता है"),
+            WordExample(thai: "พบผู้พิพากษา", romanization: "phóp-phûu-phí-phâak-sǎa", english: "Meet the judge.", hindi: "न्यायाधीश से मिलो"),
+        ],
+        2719: [
+            WordExample(thai: "นักดับเพลิงช่วยคน", romanization: "nák-dáp-pleung-chûay-khon", english: "The firefighter helps people.", hindi: "अग्निशामक लोगों की मदद करता है"),
+            WordExample(thai: "เรียกนักดับเพลิง", romanization: "rîak-nák-dáp-pleung", english: "Call a firefighter.", hindi: "अग्निशामक बुलाओ"),
+        ],
+        2720: [
+            WordExample(thai: "แอร์โฮสเตสยิ้ม", romanization: "aae-hoo-sà-têet-yím", english: "The flight attendant smiles.", hindi: "हवाई परिचारिका मुस्कुराती है"),
+            WordExample(thai: "ถามแอร์โฮสเตส", romanization: "thǎam-aae-hoo-sà-têet", english: "Ask the flight attendant.", hindi: "हवाई परिचारिका से पूछो"),
+        ],
+        2721: [
+            WordExample(thai: "กัปตันบินเครื่อง", romanization: "kàp-tan-bin-khrûeang", english: "The captain flies the plane.", hindi: "कप्तान विमान उड़ाता है"),
+            WordExample(thai: "สวัสดีกัปตัน", romanization: "sà-wàt-dii-kàp-tan", english: "Hello captain.", hindi: "नमस्ते कप्तान"),
+        ],
+        2722: [
+            WordExample(thai: "ชาวประมงจับปลา", romanization: "chaao-prà-mong-jàp-plaa", english: "The fisherman catches fish.", hindi: "मछुआरा मछली पकड़ता है"),
+            WordExample(thai: "บ้านชาวประมง", romanization: "bâan-chaao-prà-mong", english: "A fisherman's house.", hindi: "मछुआरे का घर"),
+        ],
+        2723: [
+            WordExample(thai: "ช่างไม้ทำโต๊ะ", romanization: "châang-máai-tham-tó", english: "The carpenter makes a table.", hindi: "बढ़ई मेज़ बनाता है"),
+            WordExample(thai: "เรียกช่างไม้", romanization: "rîak-châang-máai", english: "Call a carpenter.", hindi: "बढ़ई बुलाओ"),
+        ],
+        2724: [
+            WordExample(thai: "ช่างไฟฟ้าซ่อมไฟ", romanization: "châang-fai-fáa-sâwm-fai", english: "The electrician fixes the lights.", hindi: "बिजली मिस्त्री लाइट ठीक करता है"),
+            WordExample(thai: "จ้างช่างไฟฟ้า", romanization: "jâang-châang-fai-fáa", english: "Hire an electrician.", hindi: "बिजली मिस्त्री रखो"),
+        ],
+        2725: [
+            WordExample(thai: "ช่างประปาซ่อมท่อ", romanization: "châang-prà-paa-sâwm-thâw", english: "The plumber fixes pipes.", hindi: "प्लंबर पाइप ठीक करता है"),
+            WordExample(thai: "เรียกช่างประปา", romanization: "rîak-châang-prà-paa", english: "Call a plumber.", hindi: "प्लंबर बुलाओ"),
+        ],
+        2726: [
+            WordExample(thai: "ช่างเสริมสวยตัดผม", romanization: "châang-sěrm-sǔay-tàt-phǒm", english: "The hairdresser cuts hair.", hindi: "हेयरड्रेसर बाल काटता है"),
+            WordExample(thai: "ไปหาช่างเสริมสวย", romanization: "pai-hǎa-châang-sěrm-sǔay", english: "Go to the hairdresser.", hindi: "हेयरड्रेसर के पास जाओ"),
+        ],
+        2727: [
+            WordExample(thai: "ช่างซ่อมรถ", romanization: "châang-sâwm-rót", english: "A car repairman.", hindi: "गाड़ी मरम्मत वाला"),
+            WordExample(thai: "จ้างช่างซ่อม", romanization: "jâang-châang-sâwm", english: "Hire a repairman.", hindi: "मरम्मत वाला रखो"),
+        ],
+        2728: [
+            WordExample(thai: "บริกรเสิร์ฟอาหาร", romanization: "boo-rí-kawn-sèrf-aa-hǎan", english: "The waiter serves food.", hindi: "वेटर खाना परोसता है"),
+            WordExample(thai: "เรียกบริกร", romanization: "rîak-boo-rí-kawn", english: "Call the waiter.", hindi: "वेटर बुलाओ"),
+        ],
+        2729: [
+            WordExample(thai: "พนักงานบัญชีตรวจบัญชี", romanization: "phá-nák-ngaan-ban-chii-trùat-ban-chii", english: "The accountant checks the books.", hindi: "लेखाकार खाते जाँचता है"),
+            WordExample(thai: "คุยกับพนักงานบัญชี", romanization: "khui-kàp-phá-nák-ngaan-ban-chii", english: "Talk with the accountant.", hindi: "लेखाकार से बात करो"),
+        ],
+        2730: [
+            WordExample(thai: "เลขานุการนัดหมาย", romanization: "lee-khǎa-nú-kaan-nát-mǎai", english: "The secretary makes appointments.", hindi: "सचिव अपॉइंटमेंट तय करता है"),
+            WordExample(thai: "โทรหาเลขานุการ", romanization: "thoo-hǎa-lee-khǎa-nú-kaan", english: "Call the secretary.", hindi: "सचिव को फोन करो"),
+        ],
+        2731: [
+            WordExample(thai: "ผู้อำนวยการพูด", romanization: "phûu-am-nuay-kaan-phûut", english: "The director speaks.", hindi: "निदेशक बोलता है"),
+            WordExample(thai: "พบผู้อำนวยการ", romanization: "phóp-phûu-am-nuay-kaan", english: "Meet the director.", hindi: "निदेशक से मिलो"),
+        ],
+        2732: [
+            WordExample(thai: "เจ้าของร้าน", romanization: "jâo-khǎawng-ráan", english: "Shop owner.", hindi: "दुकान का मालिक"),
+            WordExample(thai: "เขาเป็นเจ้าของ", romanization: "khǎo-pen-jâo-khǎawng", english: "He is the owner.", hindi: "वह मालिक है"),
+        ],
+        2733: [
+            WordExample(thai: "ลูกจ้างใหม่", romanization: "lûuk-jâang-mài", english: "A new employee.", hindi: "नया कर्मचारी"),
+            WordExample(thai: "ลูกจ้างทำงานหนัก", romanization: "lûuk-jâang-tham-ngaan-nàk", english: "The employee works hard.", hindi: "कर्मचारी मेहनत करता है"),
+        ],
+        2734: [
+            WordExample(thai: "นายจ้างดี", romanization: "naai-jâang-dii", english: "A good employer.", hindi: "अच्छा नियोक्ता"),
+            WordExample(thai: "คุยกับนายจ้าง", romanization: "khui-kàp-naai-jâang", english: "Talk with the employer.", hindi: "नियोक्ता से बात करो"),
+        ],
+        2735: [
+            WordExample(thai: "นักแปลภาษา", romanization: "nák-plaae-phaa-sǎa", english: "A language translator.", hindi: "भाषा अनुवादक"),
+            WordExample(thai: "จ้างนักแปล", romanization: "jâang-nák-plaae", english: "Hire a translator.", hindi: "अनुवादक रखो"),
+        ],
+        2736: [
+            WordExample(thai: "นักวิทยาศาสตร์วิจัย", romanization: "nák-wít-thá-yaa-sàat-wí-jai", english: "The scientist researches.", hindi: "वैज्ञानिक शोध करता है"),
+            WordExample(thai: "เขาเป็นนักวิทยาศาสตร์", romanization: "khǎo-pen-nák-wít-thá-yaa-sàat", english: "He is a scientist.", hindi: "वह वैज्ञानिक है"),
+        ],
+        2737: [
+            WordExample(thai: "นักวิจัยทำงาน", romanization: "nák-wí-jai-tham-ngaan", english: "The researcher works.", hindi: "शोधकर्ता काम करता है"),
+            WordExample(thai: "พบนักวิจัย", romanization: "phóp-nák-wí-jai", english: "Meet the researcher.", hindi: "शोधकर्ता से मिलो"),
+        ],
+        2738: [
+            WordExample(thai: "โปรแกรมเมอร์เขียนโค้ด", romanization: "proo-kraam-mêer-khǐan-khôot", english: "The programmer writes code.", hindi: "प्रोग्रैमर कोड लिखता है"),
+            WordExample(thai: "เขาเป็นโปรแกรมเมอร์", romanization: "khǎo-pen-proo-kraam-mêer", english: "He is a programmer.", hindi: "वह प्रोग्रैमर है"),
+        ],
+        2739: [
+            WordExample(thai: "นักออกแบบวาดรูป", romanization: "nák-àwk-bàaep-wâat-rûup", english: "The designer draws.", hindi: "डिज़ाइनर चित्र बनाता है"),
+            WordExample(thai: "จ้างนักออกแบบ", romanization: "jâang-nák-àwk-bàaep", english: "Hire a designer.", hindi: "डिज़ाइनर रखो"),
+        ],
+        2740: [
+            WordExample(thai: "ศิลปินวาดภาพ", romanization: "sǐn-lá-pin-wâat-phâap", english: "The artist paints.", hindi: "कलाकार चित्र बनाता है"),
+            WordExample(thai: "ศิลปินดัง", romanization: "sǐn-lá-pin-dang", english: "A famous artist.", hindi: "प्रसिद्ध कलाकार"),
+        ],
+        2741: [
+            WordExample(thai: "นักดนตรีเล่นกีตาร์", romanization: "nák-don-trii-lên-kii-tâa", english: "The musician plays guitar.", hindi: "संगीतकार गिटार बजाता है"),
+            WordExample(thai: "ฟังนักดนตรี", romanization: "fang-nák-don-trii", english: "Listen to the musician.", hindi: "संगीतकार को सुनो"),
+        ],
+        2742: [
+            WordExample(thai: "โค้ชสอนทีม", romanization: "khôot-sǎawn-thiim", english: "The coach teaches the team.", hindi: "कोच टीम सिखाता है"),
+            WordExample(thai: "พบโค้ช", romanization: "phóp-khôot", english: "Meet the coach.", hindi: "कोच से मिलो"),
+        ],
+        2743: [
+            WordExample(thai: "พระสวดมนต์", romanization: "phrá-sùat-mon", english: "The monk chants.", hindi: "भिक्षु मंत्र पढ़ता है"),
+            WordExample(thai: "ไหว้พระ", romanization: "wâi-phrá", english: "Pay respect to the monk.", hindi: "भिक्षु को प्रणाम करो"),
+        ],
+        2744: [
+            WordExample(thai: "นักบวชในวัด", romanization: "nák-bùat-nai-wát", english: "Clergy in the temple.", hindi: "मंदिर में धार्मिक व्यक्ति"),
+            WordExample(thai: "คุยกับนักบวช", romanization: "khui-kàp-nák-bùat", english: "Talk with the clergy.", hindi: "धार्मिक व्यक्ति से बात करो"),
+        ],
+        2745: [
+            WordExample(thai: "เกษตรกรปลูกข้าว", romanization: "kà-sèet-trà-kawn-plùuk-khâao", english: "The farmer grows rice.", hindi: "कृषक धान उगाता है"),
+            WordExample(thai: "ช่วยเกษตรกร", romanization: "chûay-kà-sèet-trà-kawn", english: "Help the farmer.", hindi: "कृषक की मदद करो"),
+        ],
+        2746: [
+            WordExample(thai: "คนสวนรดน้ำ", romanization: "khon-sǔan-rót-náam", english: "The gardener waters plants.", hindi: "माली पानी देता है"),
+            WordExample(thai: "จ้างคนสวน", romanization: "jâang-khon-sǔan", english: "Hire a gardener.", hindi: "माली रखो"),
+        ],
+        2747: [
+            WordExample(thai: "คนขับแท็กซี่ใจดี", romanization: "khon-khàp-tháek-sîi-jai-dii", english: "The taxi driver is kind.", hindi: "टैक्सी चालक दयालु है"),
+            WordExample(thai: "เรียกคนขับแท็กซี่", romanization: "rîak-khon-khàp-tháek-sîi", english: "Call a taxi driver.", hindi: "टैक्सी चालक बुलाओ"),
+        ],
+        2748: [
+            WordExample(thai: "บุรุษไปรษณีย์ส่งจดหมาย", romanization: "bù-rút-prai-sà-nii-sòng-jòt-mǎai", english: "The postman delivers letters.", hindi: "डाकिया चिट्ठी पहुँचाता है"),
+            WordExample(thai: "รอบุรุษไปรษณีย์", romanization: "raw-bù-rút-prai-sà-nii", english: "Wait for the postman.", hindi: "डाकिया का इंतज़ार करो"),
+        ],
+        2749: [
+            WordExample(thai: "พนักงานธนาคารช่วยลูกค้า", romanization: "phá-nák-ngaan-thá-naa-khaan-chûay-lûuk-kháa", english: "The bank clerk helps customers.", hindi: "बैंक क्लर्क ग्राहकों की मदद करता है"),
+            WordExample(thai: "ถามพนักงานธนาคาร", romanization: "thǎam-phá-nák-ngaan-thá-naa-khaan", english: "Ask the bank clerk.", hindi: "बैंक क्लर्क से पूछो"),
+        ],
+        2750: [
+            WordExample(thai: "สัตวแพทย์ตรวจหมา", romanization: "sàt-tà-wá-phâet-trùat-mǎa", english: "The veterinarian checks the dog.", hindi: "पशु चिकित्सक कुत्ते की जाँच करता है"),
+            WordExample(thai: "พาสัตว์ไปสัตวแพทย์", romanization: "phaa-sàt-pai-sàt-tà-wá-phâet", english: "Take the animal to the veterinarian.", hindi: "जानवर को पशु चिकित्सक के पास ले जाओ"),
+        ],
+        2751: [
+            WordExample(thai: "ทันตแพทย์ผู้ช่วยเตรียมเครื่องมือ", romanization: "than-tà-phâet-phûu-chûay-triam-khrûeang-mue", english: "The dental assistant prepares tools.", hindi: "दंत सहायक औज़ार तैयार करता है"),
+            WordExample(thai: "ขอบคุณทันตแพทย์ผู้ช่วย", romanization: "khàawp-khun-than-tà-phâet-phûu-chûay", english: "Thank the dental assistant.", hindi: "दंत सहायक को धन्यवाद"),
+        ],
+        2752: [
+            WordExample(thai: "นักบัญชีภาษีคำนวณภาษี", romanization: "nák-ban-chii-phaa-sǐi-kham-nuan-phaa-sǐi", english: "The tax accountant calculates tax.", hindi: "कर लेखाकार कर जोड़ता है"),
+            WordExample(thai: "จ้างนักบัญชีภาษี", romanization: "jâang-nák-ban-chii-phaa-sǐi", english: "Hire a tax accountant.", hindi: "कर लेखाकार रखो"),
+        ],
+        2753: [
+            WordExample(thai: "เรียนที่วิทยาลัย", romanization: "rian-thîi-wít-thá-yaa-lai", english: "Study at college.", hindi: "कॉलेज में पढ़ो"),
+            WordExample(thai: "วิทยาลัยใกล้บ้าน", romanization: "wít-thá-yaa-lai-klâi-bâan", english: "A college near home.", hindi: "घर के पास कॉलेज"),
+        ],
+        2754: [
+            WordExample(thai: "ลูกไปอนุบาล", romanization: "lûuk-pai-à-nú-baan", english: "The child goes to kindergarten.", hindi: "बच्चा बालवाड़ी जाता है"),
+            WordExample(thai: "ครูอนุบาล", romanization: "khruu-à-nú-baan", english: "A kindergarten teacher.", hindi: "बालवाड़ी शिक्षक"),
+        ],
+        2755: [
+            WordExample(thai: "เรียนประถม", romanization: "rian-prà-thǒm", english: "Attend primary school.", hindi: "प्राथमिक विद्यालय में पढ़ो"),
+            WordExample(thai: "จบประถม", romanization: "jòp-prà-thǒm", english: "Finish primary school.", hindi: "प्राथमिक विद्यालय पूरा करो"),
+        ],
+        2756: [
+            WordExample(thai: "เรียนมัธยม", romanization: "rian-mát-thá-yom", english: "Attend secondary school.", hindi: "माध्यमिक विद्यालय में पढ़ो"),
+            WordExample(thai: "นักเรียนมัธยม", romanization: "nák-rian-mát-thá-yom", english: "A secondary school student.", hindi: "माध्यमिक विद्यालय का छात्र"),
+        ],
+        2757: [
+            WordExample(thai: "เข้าห้องทดลอง", romanization: "khâo-hâawng-thót-lǎawng", english: "Enter the laboratory.", hindi: "प्रयोगशाला में प्रवेश करो"),
+            WordExample(thai: "ห้องทดลองเคมี", romanization: "hâawng-thót-lǎawng-khee-mii", english: "Chemistry laboratory.", hindi: "रसायन प्रयोगशाला"),
+        ],
+        2758: [
+            WordExample(thai: "เด็กเล่นที่สนามเด็กเล่น", romanization: "dèk-lên-thîi-sà-nǎam-dèk-lên", english: "Kids play at the playground.", hindi: "बच्चे खेल के मैदान में खेलते हैं"),
+            WordExample(thai: "ไปสนามเด็กเล่น", romanization: "pai-sà-nǎam-dèk-lên", english: "Go to the playground.", hindi: "खेल के मैदान जाओ"),
+        ],
+        2759: [
+            WordExample(thai: "กินที่โรงอาหาร", romanization: "kin-thîi-roong-aa-hǎan", english: "Eat at the canteen.", hindi: "कैंटीन में खाओ"),
+            WordExample(thai: "โรงอาหารโรงเรียน", romanization: "roong-aa-hǎan-roong-rian", english: "School canteen.", hindi: "स्कूल की कैंटीन"),
+        ],
+        2760: [
+            WordExample(thai: "เขียนบนกระดานดำ", romanization: "khǐan-bon-krà-daan-dam", english: "Write on the blackboard.", hindi: "श्यामपट पर लिखो"),
+            WordExample(thai: "ลบกระดานดำ", romanization: "lóp-krà-daan-dam", english: "Erase the blackboard.", hindi: "श्यामपट साफ़ करो"),
+        ],
+        2761: [
+            WordExample(thai: "ใช้ชอล์กเขียน", romanization: "chái-cháwk-khǐan", english: "Write with chalk.", hindi: "खड़िया से लिखो"),
+            WordExample(thai: "ซื้อชอล์ก", romanization: "súue-cháwk", english: "Buy chalk.", hindi: "खड़िया खरीदें"),
+        ],
+        2762: [
+            WordExample(thai: "เขียนในสมุด", romanization: "khǐan-nai-sà-mùt", english: "Write in the notebook.", hindi: "नोटबुक में लिखो"),
+            WordExample(thai: "เปิดสมุด", romanization: "pèrt-sà-mùt", english: "Open the notebook.", hindi: "नोटबुक खोलो"),
+        ],
+        2763: [
+            WordExample(thai: "เขียนด้วยดินสอ", romanization: "khǐan-dûay-din-sǎaw", english: "Write with a pencil.", hindi: "पेंसिल से लिखो"),
+            WordExample(thai: "เหลาดินสอ", romanization: "lǎo-din-sǎaw", english: "Sharpen the pencil.", hindi: "पेंसिल तेज़ करो"),
+        ],
+        2764: [
+            WordExample(thai: "เขียนด้วยปากกา", romanization: "khǐan-dûay-pàak-kaa", english: "Write with a pen.", hindi: "कलम से लिखो"),
+            WordExample(thai: "ยืมปากกา", romanization: "yuem-pàak-kaa", english: "Borrow a pen.", hindi: "कलम उधार लो"),
+        ],
+        2765: [
+            WordExample(thai: "ใช้ยางลบ", romanization: "chái-yaang-lóp", english: "Use an eraser.", hindi: "रबड़ इस्तेमाल करो"),
+            WordExample(thai: "หายางลบ", romanization: "hǎa-yaang-lóp", english: "Find the eraser.", hindi: "रबड़ ढूँढो"),
+        ],
+        2766: [
+            WordExample(thai: "วัดด้วยไม้บรรทัด", romanization: "wát-dûay-máai-ban-thát", english: "Measure with a ruler.", hindi: "पट्टी से मापो"),
+            WordExample(thai: "ใช้ไม้บรรทัด", romanization: "chái-máai-ban-thát", english: "Use a ruler.", hindi: "पट्टी इस्तेमाल करो"),
+        ],
+        2767: [
+            WordExample(thai: "หิ้วกระเป๋านักเรียน", romanization: "hîu-krà-pǎo-nák-rian", english: "Carry a schoolbag.", hindi: "स्कूल बैग उठाओ"),
+            WordExample(thai: "กระเป๋านักเรียนหนัก", romanization: "krà-pǎo-nák-rian-nàk", english: "The schoolbag is heavy.", hindi: "स्कूल बैग भारी है"),
+        ],
+        2768: [
+            WordExample(thai: "อ่านตำรา", romanization: "àan-tam-raa", english: "Read a textbook.", hindi: "पाठ्य पुस्तक पढ़ो"),
+            WordExample(thai: "ตำราภาษาไทย", romanization: "tam-raa-phaa-sǎa-thai", english: "A Thai textbook.", hindi: "थाई पाठ्य पुस्तक"),
+        ],
+        2769: [
+            WordExample(thai: "เปิดพจนานุกรม", romanization: "pèrt-phót-jà-naa-nú-krom", english: "Open the dictionary.", hindi: "शब्दकोश खोलो"),
+            WordExample(thai: "หาคำในพจนานุกรม", romanization: "hǎa-kham-nai-phót-jà-naa-nú-krom", english: "Find a word in the dictionary.", hindi: "शब्दकोश में शब्द ढूँढो"),
+        ],
+        2770: [
+            WordExample(thai: "ทำแบบฝึกหัด", romanization: "tham-bàaep-fùk-hàt", english: "Do the exercise.", hindi: "अभ्यास प्रश्न करो"),
+            WordExample(thai: "ส่งแบบฝึกหัด", romanization: "sòng-bàaep-fùk-hàt", english: "Submit the exercise.", hindi: "अभ्यास प्रश्न जमा करो"),
+        ],
+        2771: [
+            WordExample(thai: "ทำข้อสอบ", romanization: "tham-khôr-sàwp", english: "Take the exam paper.", hindi: "प्रश्न पत्र हल करो"),
+            WordExample(thai: "อ่านข้อสอบ", romanization: "àan-khôr-sàwp", english: "Read the exam paper.", hindi: "प्रश्न पत्र पढ़ो"),
+        ],
+        2772: [
+            WordExample(thai: "ได้เกรดดี", romanization: "dâi-krèet-dii", english: "Get a good grade.", hindi: "अच्छा ग्रेड पाओ"),
+            WordExample(thai: "ดูเกรด", romanization: "duu-krèet", english: "Check the grade.", hindi: "ग्रेड देखो"),
+        ],
+        2773: [
+            WordExample(thai: "วิชาโปรด", romanization: "wí-chaa-pròot", english: "Favorite subject.", hindi: "पसंदीदा विषय"),
+            WordExample(thai: "เรียนวิชาไทย", romanization: "rian-wí-chaa-thai", english: "Study Thai subject.", hindi: "थाई विषय पढ़ो"),
+        ],
+        2774: [
+            WordExample(thai: "เรียนคณิตศาสตร์", romanization: "rian-khá-nít-tà-sàat", english: "Study mathematics.", hindi: "गणित पढ़ो"),
+            WordExample(thai: "คณิตศาสตร์ยาก", romanization: "khá-nít-tà-sàat-yâak", english: "Mathematics is hard.", hindi: "गणित कठिन है"),
+        ],
+        2775: [
+            WordExample(thai: "เรียนวิทยาศาสตร์", romanization: "rian-wít-thá-yaa-sàat", english: "Study science.", hindi: "विज्ञान पढ़ो"),
+            WordExample(thai: "ชอบวิทยาศาสตร์", romanization: "châwp-wít-thá-yaa-sàat", english: "Like science.", hindi: "विज्ञान पसंद है"),
+        ],
+        2776: [
+            WordExample(thai: "เรียนฟิสิกส์", romanization: "rian-fí-sìk", english: "Study physics.", hindi: "भौतिकी पढ़ो"),
+            WordExample(thai: "ฟิสิกส์สนุก", romanization: "fí-sìk-sà-nùk", english: "Physics is fun.", hindi: "भौतिकी मज़ेदार है"),
+        ],
+        2777: [
+            WordExample(thai: "เรียนเคมี", romanization: "rian-khee-mii", english: "Study chemistry.", hindi: "रसायन पढ़ो"),
+            WordExample(thai: "ทดลองเคมี", romanization: "thót-lǎawng-khee-mii", english: "Chemistry experiment.", hindi: "रसायन प्रयोग"),
+        ],
+        2778: [
+            WordExample(thai: "เรียนชีววิทยา", romanization: "rian-chii-wá-wít-thá-yaa", english: "Study biology.", hindi: "जीव विज्ञान पढ़ो"),
+            WordExample(thai: "ชอบชีววิทยา", romanization: "châwp-chii-wá-wít-thá-yaa", english: "Like biology.", hindi: "जीव विज्ञान पसंद है"),
+        ],
+        2779: [
+            WordExample(thai: "เรียนประวัติศาสตร์", romanization: "rian-prà-wàt-tì-sàat", english: "Study history.", hindi: "इतिहास पढ़ो"),
+            WordExample(thai: "ประวัติศาสตร์ไทย", romanization: "prà-wàt-tì-sàat-thai", english: "Thai history.", hindi: "थाई इतिहास"),
+        ],
+        2780: [
+            WordExample(thai: "เรียนภูมิศาสตร์", romanization: "rian-phuum-mí-sàat", english: "Study geography.", hindi: "भूगोल पढ़ो"),
+            WordExample(thai: "แผนที่ภูมิศาสตร์", romanization: "phǎen-thîi-phuum-mí-sàat", english: "Geography map.", hindi: "भूगोल का नक्शा"),
+        ],
+        2781: [
+            WordExample(thai: "เรียนศิลปะ", romanization: "rian-sǐn-lá-pá", english: "Study art.", hindi: "कला विषय पढ़ो"),
+            WordExample(thai: "ชั่วโมงศิลปะ", romanization: "chûa-moong-sǐn-lá-pá", english: "Art class period.", hindi: "कला विषय की घंटी"),
+        ],
+        2782: [
+            WordExample(thai: "เรียนพลศึกษา", romanization: "rian-phon-lá-sùk-sǎa", english: "Study physical education.", hindi: "शारीरिक शिक्षा पढ़ो"),
+            WordExample(thai: "ชั่วโมงพลศึกษา", romanization: "chûa-moong-phon-lá-sùk-sǎa", english: "PE class period.", hindi: "शारीरिक शिक्षा की घंटी"),
+        ],
+        2783: [
+            WordExample(thai: "เรียนดนตรี", romanization: "rian-don-trii", english: "Study music.", hindi: "संगीत विषय पढ़ो"),
+            WordExample(thai: "ชั่วโมงดนตรี", romanization: "chûa-moong-don-trii", english: "Music class period.", hindi: "संगीत विषय की घंटी"),
+        ],
+        2784: [
+            WordExample(thai: "ท่องบทเรียน", romanization: "thâawng-bòt-rian", english: "Memorise the lesson.", hindi: "पाठ रटो"),
+            WordExample(thai: "ท่องคำศัพท์", romanization: "thâawng-kham-sàp", english: "Memorise vocabulary.", hindi: "शब्द रटो"),
+        ],
+        2785: [
+            WordExample(thai: "สอบพรุ่งนี้", romanization: "sàwp-phrûng-níi", english: "Take an exam tomorrow.", hindi: "कल परीक्षा दो"),
+            WordExample(thai: "เตรียมสอบ", romanization: "triam-sàwp", english: "Prepare for the exam.", hindi: "परीक्षा की तैयारी करो"),
+        ],
+        2786: [
+            WordExample(thai: "จบการศึกษาแล้ว", romanization: "jòp-kaan-sùk-sǎa-láeo", english: "Already graduated.", hindi: "स्नातक हो चुके"),
+            WordExample(thai: "จะจบการศึกษา", romanization: "jà-jòp-kaan-sùk-sǎa", english: "Will graduate.", hindi: "स्नातक होंगे"),
+        ],
+        2787: [
+            WordExample(thai: "ได้ปริญญา", romanization: "dâi-pà-rin-yaa", english: "Get a degree.", hindi: "उपाधि पाओ"),
+            WordExample(thai: "ปริญญาสำคัญ", romanization: "pà-rin-yaa-sǎm-khan", english: "A degree is important.", hindi: "उपाधि महत्वपूर्ण है"),
+        ],
+        2788: [
+            WordExample(thai: "เรียนปริญญาตรี", romanization: "rian-pà-rin-yaa-trii", english: "Study for a bachelor's degree.", hindi: "स्नातक उपाधि के लिए पढ़ो"),
+            WordExample(thai: "จบปริญญาตรี", romanization: "jòp-pà-rin-yaa-trii", english: "Finish a bachelor's degree.", hindi: "स्नातक उपाधि पूरी करो"),
+        ],
+        2789: [
+            WordExample(thai: "เรียนปริญญาโท", romanization: "rian-pà-rin-yaa-thoo", english: "Study for a master's degree.", hindi: "स्नातकोत्तर उपाधि के लिए पढ़ो"),
+            WordExample(thai: "ได้ปริญญาโท", romanization: "dâi-pà-rin-yaa-thoo", english: "Get a master's degree.", hindi: "स्नातकोत्तर उपाधि पाओ"),
+        ],
+        2790: [
+            WordExample(thai: "ทำปริญญาเอก", romanization: "tham-pà-rin-yaa-èek", english: "Do a doctorate.", hindi: "डॉक्टरेट करो"),
+            WordExample(thai: "จบปริญญาเอก", romanization: "jòp-pà-rin-yaa-èek", english: "Finish a doctorate.", hindi: "डॉक्टरेट पूरा करो"),
+        ],
+        2791: [
+            WordExample(thai: "จ่ายค่าเทอม", romanization: "jàai-khâa-theem", english: "Pay the tuition fee.", hindi: "शिक्षण शुल्क दो"),
+            WordExample(thai: "ค่าเทอมแพง", romanization: "khâa-theem-phaaeng", english: "Tuition fee is expensive.", hindi: "शिक्षण शुल्क महँगा है"),
+        ],
+        2792: [
+            WordExample(thai: "ภาคเรียนใหม่", romanization: "phâak-rian-mài", english: "New semester.", hindi: "नया सेमेस्टर"),
+            WordExample(thai: "จบภาคเรียน", romanization: "jòp-phâak-rian", english: "End of the semester.", hindi: "सेमेस्टर समाप्त"),
+        ],
+        2793: [
+            WordExample(thai: "ดูตารางเรียน", romanization: "duu-taa-raang-rian", english: "Check the timetable.", hindi: "समय सारिणी देखो"),
+            WordExample(thai: "ตารางเรียนวันนี้", romanization: "taa-raang-rian-wan-níi", english: "Today's timetable.", hindi: "आज की समय सारिणी"),
+        ],
+        2794: [
+            WordExample(thai: "พบผู้อำนวยการโรงเรียน", romanization: "phóp-phûu-am-nuay-kaan-roong-rian", english: "Meet the school principal.", hindi: "विद्यालय प्राचार्य से मिलो"),
+            WordExample(thai: "ผู้อำนวยการโรงเรียนพูด", romanization: "phûu-am-nuay-kaan-roong-rian-phûut", english: "The school principal speaks.", hindi: "विद्यालय प्राचार्य बोलता है"),
+        ],
+        2795: [
+            WordExample(thai: "ขอใบรับรอง", romanization: "khǎaw-bai-ráp-rawng", english: "Request a certificate.", hindi: "प्रमाण पत्र माँगो"),
+            WordExample(thai: "มีใบรับรอง", romanization: "mii-bai-ráp-rawng", english: "Have a certificate.", hindi: "प्रमाण पत्र है"),
+        ],
+        2796: [
+            WordExample(thai: "วันปฐมนิเทศ", romanization: "wan-pà-thǒm-ní-thêet", english: "Orientation day.", hindi: "अभिविन्यास दिवस"),
+            WordExample(thai: "เข้าร่วมปฐมนิเทศ", romanization: "khâo-rûam-pà-thǒm-ní-thêet", english: "Join the orientation.", hindi: "अभिविन्यास में शामिल होओ"),
+        ],
+        2797: [
+            WordExample(thai: "ทำงานที่บริษัท", romanization: "tham-ngaan-thîi-boo-rí-sàt", english: "Work at a company.", hindi: "कंपनी में काम करो"),
+            WordExample(thai: "บริษัทใหญ่", romanization: "boo-rí-sàt-yài", english: "A big company.", hindi: "बड़ी कंपनी"),
+        ],
+        2798: [
+            WordExample(thai: "ทำธุรกิจ", romanization: "tham-thú-rá-kìt", english: "Do business.", hindi: "व्यवसाय करो"),
+            WordExample(thai: "ธุรกิจเล็ก", romanization: "thú-rá-kìt-lék", english: "A small business.", hindi: "छोटा व्यवसाय"),
+        ],
+        2799: [
+            WordExample(thai: "สาขาธนาคาร", romanization: "sǎa-khǎa-thá-naa-khaan", english: "Bank branch.", hindi: "बैंक शाखा"),
+            WordExample(thai: "เปิดสาขาใหม่", romanization: "pèrt-sǎa-khǎa-mài", english: "Open a new branch.", hindi: "नई शाखा खोलो"),
+        ],
+        2800: [
+            WordExample(thai: "ทำงานในโรงงาน", romanization: "tham-ngaan-nai-roong-ngaan", english: "Work in a factory.", hindi: "कारखाने में काम करो"),
+            WordExample(thai: "โรงงานใหญ่", romanization: "roong-ngaan-yài", english: "A big factory.", hindi: "बड़ा कारखाना"),
+        ],
+        2801: [
+            WordExample(thai: "เก็บของในคลังสินค้า", romanization: "kèp-khǎawng-nai-khlang-sǐn-kháa", english: "Store goods in the warehouse.", hindi: "गोदाम में सामान रखो"),
+            WordExample(thai: "ไปคลังสินค้า", romanization: "pai-khlang-sǐn-kháa", english: "Go to the warehouse.", hindi: "गोदाम जाओ"),
+        ],
+        2802: [
+            WordExample(thai: "เปิดร้านค้า", romanization: "pèrt-ráan-kháa", english: "Open a shop.", hindi: "दुकान खोलो"),
+            WordExample(thai: "ร้านค้าใกล้บ้าน", romanization: "ráan-kháa-klâi-bâan", english: "A shop near home.", hindi: "घर के पास दुकान"),
+        ],
+        2803: [
+            WordExample(thai: "ผู้ขายยิ้ม", romanization: "phûu-khǎai-yím", english: "The seller smiles.", hindi: "विक्रेता मुस्कुराता है"),
+            WordExample(thai: "คุยกับผู้ขาย", romanization: "khui-kàp-phûu-khǎai", english: "Talk with the seller.", hindi: "विक्रेता से बात करो"),
+        ],
+        2804: [
+            WordExample(thai: "ผู้ซื้อเลือกของ", romanization: "phûu-súue-lúeak-khǎawng", english: "The buyer chooses goods.", hindi: "खरीदार सामान चुनता है"),
+            WordExample(thai: "มีผู้ซื้อมาก", romanization: "mii-phûu-súue-mâak", english: "There are many buyers.", hindi: "बहुत खरीदार हैं"),
+        ],
+        2805: [
+            WordExample(thai: "ดูคู่แข่ง", romanization: "duu-khûu-khàeng", english: "Watch the competitor.", hindi: "प्रतिद्वंद्वी देखो"),
+            WordExample(thai: "คู่แข่งแข็งแรง", romanization: "khûu-khàeng-khǎeng-raeng", english: "A strong competitor.", hindi: "मज़बूत प्रतिद्वंद्वी"),
+        ],
+        2806: [
+            WordExample(thai: "หาหุ้นส่วน", romanization: "hǎa-hûn-sùan", english: "Find a partner.", hindi: "साझेदार ढूँढो"),
+            WordExample(thai: "เขาเป็นหุ้นส่วน", romanization: "khǎo-pen-hûn-sùan", english: "He is a partner.", hindi: "वह साझेदार है"),
+        ],
+        2807: [
+            WordExample(thai: "เซ็นข้อตกลง", romanization: "sen-khôr-tòk-long", english: "Sign an agreement.", hindi: "समझौते पर दस्तखत करो"),
+            WordExample(thai: "มีข้อตกลง", romanization: "mii-khôr-tòk-long", english: "Have an agreement.", hindi: "समझौता है"),
+        ],
+        2808: [
+            WordExample(thai: "ส่งใบแจ้งหนี้", romanization: "sòng-bai-jáeng-nîi", english: "Send an invoice.", hindi: "बीजक भेजो"),
+            WordExample(thai: "จ่ายตามใบแจ้งหนี้", romanization: "jàai-taam-bai-jáeng-nîi", english: "Pay per the invoice.", hindi: "बीजक के अनुसार भुगतान करो"),
+        ],
+        2809: [
+            WordExample(thai: "ออกใบสั่งซื้อ", romanization: "àawk-bai-sàng-súue", english: "Issue a purchase order.", hindi: "क्रय आदेश जारी करो"),
+            WordExample(thai: "รับใบสั่งซื้อ", romanization: "ráp-bai-sàng-súue", english: "Receive a purchase order.", hindi: "क्रय आदेश प्राप्त करो"),
+        ],
+        2810: [
+            WordExample(thai: "ลดต้นทุน", romanization: "lót-tôn-thun", english: "Reduce cost.", hindi: "लागत घटाओ"),
+            WordExample(thai: "ต้นทุนสูง", romanization: "tôn-thun-sǔung", english: "High cost.", hindi: "ऊँची लागत"),
+        ],
+        2811: [
+            WordExample(thai: "ดูรายจ่าย", romanization: "duu-raai-jàai", english: "Check expenses.", hindi: "व्यय देखो"),
+            WordExample(thai: "รายจ่ายเดือนนี้", romanization: "raai-jàai-duean-níi", english: "This month's expenses.", hindi: "इस महीने का व्यय"),
+        ],
+        2812: [
+            WordExample(thai: "ได้โบนัส", romanization: "dâi-boo-nát", english: "Get a bonus.", hindi: "बोनस पाओ"),
+            WordExample(thai: "โบนัสปีนี้", romanization: "boo-nát-pii-níi", english: "This year's bonus.", hindi: "इस साल का बोनस"),
+        ],
+        2813: [
+            WordExample(thai: "รับค่าจ้าง", romanization: "ráp-khâa-jâang", english: "Receive wages.", hindi: "मज़दूरी लो"),
+            WordExample(thai: "ค่าจ้างดี", romanization: "khâa-jâang-dii", english: "Good wages.", hindi: "अच्छी मज़दूरी"),
+        ],
+        2814: [
+            WordExample(thai: "มีสวัสดิการ", romanization: "mii-sà-wàt-dì-kaan", english: "Have welfare benefits.", hindi: "कल्याण लाभ हैं"),
+            WordExample(thai: "สวัสดิการพนักงาน", romanization: "sà-wàt-dì-kaan-phá-nák-ngaan", english: "Employee welfare benefits.", hindi: "कर्मचारी कल्याण लाभ"),
+        ],
+        2815: [
+            WordExample(thai: "เริ่มโครงการ", romanization: "rôem-khroong-kaan", english: "Start a project.", hindi: "परियोजना शुरू करो"),
+            WordExample(thai: "โครงการใหม่", romanization: "khroong-kaan-mài", english: "A new project.", hindi: "नई परियोजना"),
+        ],
+        2816: [
+            WordExample(thai: "ผลงานดี", romanization: "phǒn-ngaan-dii", english: "Good performance.", hindi: "अच्छा कार्य निष्पादन"),
+            WordExample(thai: "ดูผลงาน", romanization: "duu-phǒn-ngaan", english: "Check performance.", hindi: "कार्य निष्पादन देखो"),
+        ],
+        2817: [
+            WordExample(thai: "อ่านรายงานประจำปี", romanization: "àan-raai-ngaan-prà-jam-pii", english: "Read the annual report.", hindi: "वार्षिक रिपोर्ट पढ़ो"),
+            WordExample(thai: "เขียนรายงานประจำปี", romanization: "khǐan-raai-ngaan-prà-jam-pii", english: "Write the annual report.", hindi: "वार्षिक रिपोर्ट लिखो"),
+        ],
+        2818: [
+            WordExample(thai: "ทำด้านการตลาด", romanization: "tham-dâan-kaan-tà-làat", english: "Do marketing.", hindi: "विपणन करो"),
+            WordExample(thai: "ทีมการตลาด", romanization: "thiim-kaan-tà-làat", english: "Marketing team.", hindi: "विपणन टीम"),
+        ],
+        2819: [
+            WordExample(thai: "ดูโฆษณา", romanization: "duu-khoot-sà-nǎa", english: "Watch an advertisement.", hindi: "विज्ञापन देखो"),
+            WordExample(thai: "ทำโฆษณา", romanization: "tham-khoot-sà-nǎa", english: "Make an advertisement.", hindi: "विज्ञापन बनाओ"),
+        ],
+        2820: [
+            WordExample(thai: "แบรนด์ดัง", romanization: "braen-dang", english: "A famous brand.", hindi: "प्रसिद्ध ब्रांड"),
+            WordExample(thai: "เลือกแบรนด์", romanization: "lúeak-braen", english: "Choose a brand.", hindi: "ब्रांड चुनो"),
+        ],
+        2821: [
+            WordExample(thai: "ขายสินค้า", romanization: "khǎai-sǐn-kháa", english: "Sell goods.", hindi: "माल बेचो"),
+            WordExample(thai: "สินค้าดี", romanization: "sǐn-kháa-dii", english: "Good goods.", hindi: "अच्छा माल"),
+        ],
+        2822: [
+            WordExample(thai: "เปิดคลังสินค้าออนไลน์", romanization: "pèrt-khlang-sǐn-kháa-awn-lai", english: "Open an online store.", hindi: "ऑनलाइन स्टोर खोलो"),
+            WordExample(thai: "ซื้อจากคลังสินค้าออนไลน์", romanization: "súue-jàak-khlang-sǐn-kháa-awn-lai", english: "Buy from an online store.", hindi: "ऑनलाइन स्टोर से खरीदें"),
+        ],
+        2823: [
+            WordExample(thai: "ส่งออกผลไม้", romanization: "sòng-àawk-phǒn-lá-máai", english: "Export fruit.", hindi: "फल निर्यात करो"),
+            WordExample(thai: "ธุรกิจส่งออก", romanization: "thú-rá-kìt-sòng-àawk", english: "Export business.", hindi: "निर्यात व्यवसाय"),
+        ],
+        2824: [
+            WordExample(thai: "นำเข้าสินค้า", romanization: "nam-khâo-sǐn-kháa", english: "Import goods.", hindi: "माल आयात करो"),
+            WordExample(thai: "ภาษีนำเข้า", romanization: "phaa-sǐi-nam-khâo", english: "Import tax.", hindi: "आयात कर"),
+        ],
+        2825: [
+            WordExample(thai: "ขายส่งถูก", romanization: "khǎai-sòng-thùuk", english: "Wholesale is cheap.", hindi: "थोक सस्ता है"),
+            WordExample(thai: "ร้านขายส่ง", romanization: "ráan-khǎai-sòng", english: "A wholesale shop.", hindi: "थोक दुकान"),
+        ],
+        2826: [
+            WordExample(thai: "ขายปลีกออนไลน์", romanization: "khǎai-plùek-awn-lai", english: "Online retail.", hindi: "ऑनलाइन खुदरा"),
+            WordExample(thai: "ร้านขายปลีก", romanization: "ráan-khǎai-plùek", english: "A retail shop.", hindi: "खुदरा दुकान"),
+        ],
+        2827: [
+            WordExample(thai: "เช็คสต็อก", romanization: "chék-sà-tók", english: "Check stock.", hindi: "स्टॉक जाँचो"),
+            WordExample(thai: "สต็อกหมด", romanization: "sà-tók-mòt", english: "Stock is out.", hindi: "स्टॉक खत्म"),
+        ],
+        2828: [
+            WordExample(thai: "จัดส่งวันนี้", romanization: "jàt-sòng-wan-níi", english: "Delivery today.", hindi: "आज डिलीवरी"),
+            WordExample(thai: "ค่าจัดส่ง", romanization: "khâa-jàt-sòng", english: "Delivery fee.", hindi: "डिलीवरी शुल्क"),
+        ],
+        2829: [
+            WordExample(thai: "มีรับประกัน", romanization: "mii-ráp-prà-kan", english: "Has a warranty.", hindi: "वारंटी है"),
+            WordExample(thai: "รับประกันหนึ่งปี", romanization: "ráp-prà-kan-nùeng-pii", english: "One-year warranty.", hindi: "एक साल की वारंटी"),
+        ],
+        2830: [
+            WordExample(thai: "ขอคืนสินค้า", romanization: "khǎaw-khuuen-sǐn-kháa", english: "Request to return goods.", hindi: "माल वापस करने का अनुरोध"),
+            WordExample(thai: "คืนสินค้าได้", romanization: "khuuen-sǐn-kháa-dâi", english: "Can return goods.", hindi: "माल वापस कर सकते हैं"),
+        ],
+        2831: [
+            WordExample(thai: "ร้องเรียนกับร้าน", romanization: "ráawng-rian-kàp-ráan", english: "File a complaint with the shop.", hindi: "दुकान में शिकायत दर्ज करो"),
+            WordExample(thai: "ไปร้องเรียน", romanization: "pai-ráawng-rian", english: "Go file a complaint.", hindi: "शिकायत दर्ज करने जाओ"),
+        ],
+        2832: [
+            WordExample(thai: "สมัครงานวันนี้", romanization: "sà-màk-ngaan-wan-níi", english: "Apply for a job today.", hindi: "आज नौकरी के लिए आवेदन करो"),
+            WordExample(thai: "อยากสมัครงาน", romanization: "yàak-sà-màk-ngaan", english: "Want to apply for a job.", hindi: "नौकरी के लिए आवेदन करना चाहते हैं"),
+        ],
+        2833: [
+            WordExample(thai: "ไปสัมภาษณ์", romanization: "pai-sǎm-phâat", english: "Go to an interview.", hindi: "साक्षात्कार में जाओ"),
+            WordExample(thai: "สัมภาษณ์งาน", romanization: "sǎm-phâat-ngaan", english: "Job interview.", hindi: "नौकरी साक्षात्कार"),
+        ],
+        2834: [
+            WordExample(thai: "ส่งเรซูเม่", romanization: "sòng-ree-suu-mêe", english: "Send a resume.", hindi: "बायोडाटा भेजो"),
+            WordExample(thai: "เขียนเรซูเม่", romanization: "khǐan-ree-suu-mêe", english: "Write a resume.", hindi: "बायोडाटा लिखो"),
+        ],
+        2835: [
+            WordExample(thai: "อยากลาออก", romanization: "yàak-laa-àawk", english: "Want to resign.", hindi: "इस्तीफा देना चाहते हैं"),
+            WordExample(thai: "ลาออกจากงาน", romanization: "laa-àawk-jàak-ngaan", english: "Resign from the job.", hindi: "नौकरी से इस्तीफा दो"),
+        ],
+        2836: [
+            WordExample(thai: "ถูกเลิกจ้าง", romanization: "thùuk-lêek-jâang", english: "Got laid off.", hindi: "बर्खास्त हो गए"),
+            WordExample(thai: "บริษัทเลิกจ้าง", romanization: "boo-rí-sàt-lêek-jâang", english: "The company lays off.", hindi: "कंपनी बर्खास्त करती है"),
+        ],
+        2837: [
+            WordExample(thai: "ได้เลื่อนตำแหน่ง", romanization: "dâi-lúean-tam-nàeng", english: "Got a promotion.", hindi: "पदोन्नति मिली"),
+            WordExample(thai: "ขอเลื่อนตำแหน่ง", romanization: "khǎaw-lúean-tam-nàeng", english: "Request a promotion.", hindi: "पदोन्नति माँगो"),
+        ],
+        2838: [
+            WordExample(thai: "ไปฝึกงาน", romanization: "pai-fùk-ngaan", english: "Go for an internship.", hindi: "इंटर्नशिप पर जाओ"),
+            WordExample(thai: "ช่วงฝึกงาน", romanization: "chûang-fùk-ngaan", english: "Internship period.", hindi: "इंटर्नशिप अवधि"),
+        ],
+        2839: [
+            WordExample(thai: "ต้องทำงานล่วงเวลา", romanization: "tâawng-tham-ngaan-lûang-wee-laa", english: "Must work overtime.", hindi: "ओवरटाइम काम करना होगा"),
+            WordExample(thai: "ได้ค่าทำงานล่วงเวลา", romanization: "dâi-khâa-tham-ngaan-lûang-wee-laa", english: "Get overtime pay.", hindi: "ओवरटाइम वेतन मिलता है"),
+        ],
+        2840: [
+            WordExample(thai: "ใช้คอมพิวเตอร์", romanization: "chái-khawm-phiu-têer", english: "Use a computer.", hindi: "कंप्यूटर इस्तेमाल करो"),
+            WordExample(thai: "ซื้อคอมพิวเตอร์", romanization: "súue-khawm-phiu-têer", english: "Buy a computer.", hindi: "कंप्यूटर खरीदें"),
+        ],
+        2841: [
+            WordExample(thai: "พกแล็ปท็อป", romanization: "phók-láep-tháp", english: "Carry a laptop.", hindi: "लैपटॉप ले जाओ"),
+            WordExample(thai: "เปิดแล็ปท็อป", romanization: "pèrt-láep-tháp", english: "Open the laptop.", hindi: "लैपटॉप खोलो"),
+        ],
+        2842: [
+            WordExample(thai: "เล่นแท็บเล็ต", romanization: "lên-tháep-lét", english: "Play on a tablet.", hindi: "टैबलेट पर खेलो"),
+            WordExample(thai: "ชาร์จแท็บเล็ต", romanization: "cháat-tháep-lét", english: "Charge the tablet.", hindi: "टैबलेट चार्ज करो"),
+        ],
+        2843: [
+            WordExample(thai: "ใช้สมาร์ตโฟน", romanization: "chái-sà-máat-foon", english: "Use a smartphone.", hindi: "स्मार्टफोन इस्तेमाल करो"),
+            WordExample(thai: "ซื้อสมาร์ตโฟน", romanization: "súue-sà-máat-foon", english: "Buy a smartphone.", hindi: "स्मार्टफोन खरीदें"),
+        ],
+        2844: [
+            WordExample(thai: "พิมพ์บนคีย์บอร์ด", romanization: "phim-bon-khíi-bâwt", english: "Type on the keyboard.", hindi: "कीबोर्ड पर टाइप करो"),
+            WordExample(thai: "ซื้อคีย์บอร์ด", romanization: "súue-khíi-bâwt", english: "Buy a keyboard.", hindi: "कीबोर्ड खरीदें"),
+        ],
+        2845: [
+            WordExample(thai: "เปิดลำโพง", romanization: "pèrt-lam-phoong", english: "Turn on the speaker.", hindi: "स्पीकर चालू करो"),
+            WordExample(thai: "เสียงลำโพงดัง", romanization: "sǐang-lam-phoong-dang", english: "The speaker is loud.", hindi: "स्पीकर तेज़ है"),
+        ],
+        2846: [
+            WordExample(thai: "ใช้สแกนเนอร์", romanization: "chái-sà-kaen-nêer", english: "Use a scanner.", hindi: "स्कैनर इस्तेमाल करो"),
+            WordExample(thai: "ซื้อสแกนเนอร์", romanization: "súue-sà-kaen-nêer", english: "Buy a scanner.", hindi: "स्कैनर खरीदें"),
+        ],
+    ]
+
+
+    private static let examples8: [Int: [WordExample]] = [
+        2847: [
+            WordExample(thai: "ฉันใช้ฮาร์ดดิสก์ทุกวัน", romanization: "harddiskâ", english: "hard disk", hindi: "मेरे पास बड़ा हार्ड डिस्क है"),
+            WordExample(thai: "ฮาร์ดดิสก์สำคัญมาก", romanization: "harddiskâ", english: "hard disk", hindi: "हार्ड डिस्क में फ़ाइलें रखो"),
+        ],
+        2848: [
+            WordExample(thai: "ฉันใช้หน่วยความจำทุกวัน", romanization: "hnàwykhwamjam", english: "memory (technology)", hindi: "कंप्यूटर की मेमोरी कम है"),
+            WordExample(thai: "หน่วยความจำสำคัญมาก", romanization: "hnàwykhwamjam", english: "memory (technology)", hindi: "और मेमोरी जोड़ो"),
+        ],
+        2849: [
+            WordExample(thai: "ฉันใช้อะแดปเตอร์ทุกวัน", romanization: "oaedpetorâ", english: "adapter", hindi: "एडाप्टर कहाँ है?"),
+            WordExample(thai: "อะแดปเตอร์สำคัญมาก", romanization: "oaedpetorâ", english: "adapter", hindi: "यह चार्जर एडाप्टर है"),
+        ],
+        2850: [
+            WordExample(thai: "ฉันใช้ปลั๊กทุกวัน", romanization: "plaák", english: "plug", hindi: "प्लग दीवार में लगाओ"),
+            WordExample(thai: "ปลั๊กสำคัญมาก", romanization: "plaák", english: "plug", hindi: "प्लग निकाल दो"),
+        ],
+        2851: [
+            WordExample(thai: "ฉันใช้สายไฟทุกวัน", romanization: "sayaifâ", english: "electric wire", hindi: "बिजली का तार खराब है"),
+            WordExample(thai: "สายไฟสำคัญมาก", romanization: "sayaifâ", english: "electric wire", hindi: "तार सावधानी से छुओ"),
+        ],
+        2852: [
+            WordExample(thai: "ฉันใช้อินเทอร์เน็ตทุกวัน", romanization: "oinethorentâ", english: "internet", hindi: "इंटरनेट धीमा है"),
+            WordExample(thai: "อินเทอร์เน็ตสำคัญมาก", romanization: "oinethorentâ", english: "internet", hindi: "मुझे इंटरनेट चाहिए"),
+        ],
+        2853: [
+            WordExample(thai: "ฉันใช้เว็บไซต์ทุกวัน", romanization: "ewbaistâ", english: "website", hindi: "यह वेबसाइट अच्छी है"),
+            WordExample(thai: "เว็บไซต์สำคัญมาก", romanization: "ewbaistâ", english: "website", hindi: "वेबसाइट खोलो"),
+        ],
+        2854: [
+            WordExample(thai: "ฉันใช้เบราว์เซอร์ทุกวัน", romanization: "ebrawesorâ", english: "browser", hindi: "ब्राउज़र बंद करो"),
+            WordExample(thai: "เบราว์เซอร์สำคัญมาก", romanization: "ebrawesorâ", english: "browser", hindi: "नया ब्राउज़र खोलो"),
+        ],
+        2855: [
+            WordExample(thai: "ฉันใช้เสิร์ชเอนจินทุกวัน", romanization: "esircheonjinâ", english: "search engine", hindi: "सर्च इंजन से खोजो"),
+            WordExample(thai: "เสิร์ชเอนจินสำคัญมาก", romanization: "esircheonjinâ", english: "search engine", hindi: "मैं सर्च इंजन इस्तेमाल करता हूँ"),
+        ],
+        2856: [
+            WordExample(thai: "ฉันใช้บัญชีผู้ใช้ทุกวัน", romanization: "baychiphuâaichâ", english: "user account", hindi: "नया उपयोगकर्ता खाता बनाओ"),
+            WordExample(thai: "บัญชีผู้ใช้สำคัญมาก", romanization: "baychiphuâaichâ", english: "user account", hindi: "मेरा खाता लॉग इन है"),
+        ],
+        2857: [
+            WordExample(thai: "ฉันใช้สมัครสมาชิกทุกวัน", romanization: "smakhrsmachikâ", english: "sign up", hindi: "कृपया साइन अप करें"),
+            WordExample(thai: "สมัครสมาชิกสำคัญมาก", romanization: "smakhrsmachikâ", english: "sign up", hindi: "मैंने साइन अप कर लिया"),
+        ],
+        2858: [
+            WordExample(thai: "ฉันใช้ลบทุกวัน", romanization: "lbâ", english: "delete", hindi: "इस फ़ाइल को हटा दो"),
+            WordExample(thai: "ลบสำคัญมาก", romanization: "lbâ", english: "delete", hindi: "गलत शब्द हटाओ"),
+        ],
+        2859: [
+            WordExample(thai: "ฉันใช้บันทึกทุกวัน", romanization: "banthuekâ", english: "save", hindi: "काम सेव कर लो"),
+            WordExample(thai: "บันทึกสำคัญมาก", romanization: "banthuekâ", english: "save", hindi: "फ़ाइल सहेजो"),
+        ],
+        2860: [
+            WordExample(thai: "ฉันใช้แชร์ทุกวัน", romanization: "aechrâ", english: "share", hindi: "लिंक शेयर करो"),
+            WordExample(thai: "แชร์สำคัญมาก", romanization: "aechrâ", english: "share", hindi: "फ़ोटो शेयर मत करो"),
+        ],
+        2861: [
+            WordExample(thai: "ฉันใช้โพสต์ทุกวัน", romanization: "ophstâ", english: "post", hindi: "नई पोस्ट लिखो"),
+            WordExample(thai: "โพสต์สำคัญมาก", romanization: "ophstâ", english: "post", hindi: "उसकी पोस्ट देखी?"),
+        ],
+        2862: [
+            WordExample(thai: "ฉันใช้คอมเมนต์ทุกวัน", romanization: "khomemntâ", english: "comment", hindi: "एक कमेंट छोड़ो"),
+            WordExample(thai: "คอมเมนต์สำคัญมาก", romanization: "khomemntâ", english: "comment", hindi: "कमेंट पढ़ो"),
+        ],
+        2863: [
+            WordExample(thai: "ฉันใช้ไลก์ทุกวัน", romanization: "ailkâ", english: "like", hindi: "पोस्ट को लाइक करो"),
+            WordExample(thai: "ไลก์สำคัญมาก", romanization: "ailkâ", english: "like", hindi: "मुझे लाइक मिला"),
+        ],
+        2864: [
+            WordExample(thai: "ฉันใช้ติดตามทุกวัน", romanization: "tidtamâ", english: "follow (social/tech)", hindi: "उस अकाउंट को फ़ॉलो करो"),
+            WordExample(thai: "ติดตามสำคัญมาก", romanization: "tidtamâ", english: "follow (social/tech)", hindi: "मैं न्यूज़ फ़ॉलो करता हूँ"),
+        ],
+        2865: [
+            WordExample(thai: "ฉันใช้บล็อกทุกวัน", romanization: "blokâ", english: "block", hindi: "स्पैम को ब्लॉक करो"),
+            WordExample(thai: "บล็อกสำคัญมาก", romanization: "blokâ", english: "block", hindi: "उसने मुझे ब्लॉक किया"),
+        ],
+        2866: [
+            WordExample(thai: "ฉันใช้แชททุกวัน", romanization: "aechthâ", english: "chat", hindi: "हम चैट करते हैं"),
+            WordExample(thai: "แชทสำคัญมาก", romanization: "aechthâ", english: "chat", hindi: "चैट भेजो"),
+        ],
+        2867: [
+            WordExample(thai: "ฉันใช้วิดีโอคอลทุกวัน", romanization: "widiokholâ", english: "video call", hindi: "वीडियो कॉल करो"),
+            WordExample(thai: "วิดีโอคอลสำคัญมาก", romanization: "widiokholâ", english: "video call", hindi: "वीडियो कॉल अच्छी रही"),
+        ],
+        2868: [
+            WordExample(thai: "ฉันใช้ซอฟต์แวร์ทุกวัน", romanization: "softaewrâ", english: "software", hindi: "नया सॉफ़्टवेयर इंस्टॉल करो"),
+            WordExample(thai: "ซอฟต์แวร์สำคัญมาก", romanization: "softaewrâ", english: "software", hindi: "यह सॉफ़्टवेयर मुफ़्त है"),
+        ],
+        2869: [
+            WordExample(thai: "ฉันใช้ฮาร์ดแวร์ทุกวัน", romanization: "hardaewrâ", english: "hardware", hindi: "हार्डवेयर अपडेट चाहिए"),
+            WordExample(thai: "ฮาร์ดแวร์สำคัญมาก", romanization: "hardaewrâ", english: "hardware", hindi: "नया हार्डवेयर ख़रीदो"),
+        ],
+        2870: [
+            WordExample(thai: "ฉันใช้โปรแกรมทุกวัน", romanization: "opraekrmâ", english: "program", hindi: "यह प्रोग्राम आसान है"),
+            WordExample(thai: "โปรแกรมสำคัญมาก", romanization: "opraekrmâ", english: "program", hindi: "प्रोग्राम चलाओ"),
+        ],
+        2871: [
+            WordExample(thai: "ฉันใช้ไฟล์ทุกวัน", romanization: "aiflâ", english: "computer file", hindi: "कंप्यूटर फ़ाइल खोलो"),
+            WordExample(thai: "ไฟล์สำคัญมาก", romanization: "aiflâ", english: "computer file", hindi: "फ़ाइल कहाँ सेव है?"),
+        ],
+        2872: [
+            WordExample(thai: "ฉันใช้ข้อมูลทุกวัน", romanization: "khâomul", english: "data", hindi: "डेटा सुरक्षित रखो"),
+            WordExample(thai: "ข้อมูลสำคัญมาก", romanization: "khâomul", english: "data", hindi: "यह जानकारी सही है"),
+        ],
+        2873: [
+            WordExample(thai: "ฉันใช้ฐานข้อมูลทุกวัน", romanization: "thankhâomul", english: "database", hindi: "डेटाबेस अपडेट करो"),
+            WordExample(thai: "ฐานข้อมูลสำคัญมาก", romanization: "thankhâomul", english: "database", hindi: "डेटाबेस में खोजो"),
+        ],
+        2874: [
+            WordExample(thai: "ฉันใช้เครือข่ายทุกวัน", romanization: "ekhrueokhàay", english: "network", hindi: "नेटवर्क कनेक्ट नहीं है"),
+            WordExample(thai: "เครือข่ายสำคัญมาก", romanization: "ekhrueokhàay", english: "network", hindi: "ऑफ़िस नेटवर्क धीमा है"),
+        ],
+        2875: [
+            WordExample(thai: "ฉันใช้ไวไฟทุกวัน", romanization: "aiwaifâ", english: "wi-fi", hindi: "वाई-फ़ाई पासवर्ड क्या है?"),
+            WordExample(thai: "ไวไฟสำคัญมาก", romanization: "aiwaifâ", english: "wi-fi", hindi: "वाई-फ़ाई चालू करो"),
+        ],
+        2876: [
+            WordExample(thai: "ฉันใช้บลูทูธทุกวัน", romanization: "bluthuthâ", english: "bluetooth", hindi: "ब्लूटूथ चालू करो"),
+            WordExample(thai: "บลูทูธสำคัญมาก", romanization: "bluthuthâ", english: "bluetooth", hindi: "फ़ोन ब्लूटूथ से जोड़ो"),
+        ],
+        2877: [
+            WordExample(thai: "ฉันใช้คลาวด์ทุกวัน", romanization: "khlawdâ", english: "cloud (technology)", hindi: "फ़ाइल क्लाउड पर सेव करो"),
+            WordExample(thai: "คลาวด์สำคัญมาก", romanization: "khlawdâ", english: "cloud (technology)", hindi: "क्लाउड स्टोरेज भर गया"),
+        ],
+        2878: [
+            WordExample(thai: "ฉันใช้ไวรัสทุกวัน", romanization: "aiwrasâ", english: "virus", hindi: "कंप्यूटर में वायरस है"),
+            WordExample(thai: "ไวรัสสำคัญมาก", romanization: "aiwrasâ", english: "virus", hindi: "वायरस स्कैन चलाओ"),
+        ],
+        2879: [
+            WordExample(thai: "ฉันใช้แฮ็กเกอร์ทุกวัน", romanization: "aehkekorâ", english: "hacker", hindi: "हैकर ने अकाउंट तोड़ा"),
+            WordExample(thai: "แฮ็กเกอร์สำคัญมาก", romanization: "aehkekorâ", english: "hacker", hindi: "हैकर से सावधान रहो"),
+        ],
+        2880: [
+            WordExample(thai: "ฉันใช้ความปลอดภัยไซเบอร์ทุกวัน", romanization: "khwamplodphayaiseborâ", english: "cybersecurity", hindi: "साइबर सुरक्षा ज़रूरी है"),
+            WordExample(thai: "ความปลอดภัยไซเบอร์สำคัญมาก", romanization: "khwamplodphayaiseborâ", english: "cybersecurity", hindi: "साइबर सुरक्षा सीखो"),
+        ],
+        2881: [
+            WordExample(thai: "ฉันใช้ปัญญาประดิษฐ์ทุกวัน", romanization: "payyapradisthâ", english: "artificial intelligence", hindi: "कृत्रिम बुद्धिमत्ता बढ़ रही है"),
+            WordExample(thai: "ปัญญาประดิษฐ์สำคัญมาก", romanization: "payyapradisthâ", english: "artificial intelligence", hindi: "एआई टूल इस्तेमाल करो"),
+        ],
+        2882: [
+            WordExample(thai: "ฉันใช้หุ่นยนต์ทุกวัน", romanization: "huànynt", english: "robot", hindi: "रोबोट काम करता है"),
+            WordExample(thai: "หุ่นยนต์สำคัญมาก", romanization: "huànynt", english: "robot", hindi: "नया रोबोट आया"),
+        ],
+        2883: [
+            WordExample(thai: "ฉันใช้โดรนทุกวัน", romanization: "odrnâ", english: "drone", hindi: "ड्रोन उड़ाओ"),
+            WordExample(thai: "โดรนสำคัญมาก", romanization: "odrnâ", english: "drone", hindi: "ड्रोन से फ़ोटो लो"),
+        ],
+        2884: [
+            WordExample(thai: "ฉันใช้เครื่องพิมพ์สามมิติทุกวัน", romanization: "ekhrueàongphimphsammiti", english: "3D printer", hindi: "थ्रीडी प्रिंटर महँगा है"),
+            WordExample(thai: "เครื่องพิมพ์สามมิติสำคัญมาก", romanization: "ekhrueàongphimphsammiti", english: "3D printer", hindi: "मॉडल प्रिंट करो"),
+        ],
+        2885: [
+            WordExample(thai: "ฉันใช้รถยนต์ไฟฟ้าทุกวัน", romanization: "rthyntaiffâa", english: "electric car", hindi: "इलेक्ट्रिक कार शांत है"),
+            WordExample(thai: "รถยนต์ไฟฟ้าสำคัญมาก", romanization: "rthyntaiffâa", english: "electric car", hindi: "इलेक्ट्रिक कार चार्ज करो"),
+        ],
+        2886: [
+            WordExample(thai: "ฉันใช้พลังงานแสงอาทิตย์ทุกวัน", romanization: "phlangnganaesngoathityâ", english: "solar energy", hindi: "सौर ऊर्जा स्वच्छ है"),
+            WordExample(thai: "พลังงานแสงอาทิตย์สำคัญมาก", romanization: "phlangnganaesngoathityâ", english: "solar energy", hindi: "घर में सौर ऊर्जा लगाओ"),
+        ],
+        2887: [
+            WordExample(thai: "ฉันชอบภาพยนตร์", romanization: "phaphyntrâ", english: "film", hindi: "नई फ़िल्म अच्छी है"),
+            WordExample(thai: "ภาพยนตร์น่าสนใจมาก", romanization: "phaphyntrâ", english: "film", hindi: "फ़िल्म देखने चलो"),
+        ],
+        2888: [
+            WordExample(thai: "ฉันชอบละคร", romanization: "lakhrâ", english: "drama series", hindi: "यह नाटक श्रृंखला रोचक है"),
+            WordExample(thai: "ละครน่าสนใจมาก", romanization: "lakhrâ", english: "drama series", hindi: "मैं यह ड्रामा देखता हूँ"),
+        ],
+        2889: [
+            WordExample(thai: "ฉันชอบซีรีส์", romanization: "sirisâ", english: "series", hindi: "नई सीरीज़ शुरू हुई"),
+            WordExample(thai: "ซีรีส์น่าสนใจมาก", romanization: "sirisâ", english: "series", hindi: "पूरी सीरीज़ देखी"),
+        ],
+        2890: [
+            WordExample(thai: "ฉันชอบสารคดี", romanization: "sarkhdiâ", english: "documentary", hindi: "यह वृत्तचित्र सच्चा है"),
+            WordExample(thai: "สารคดีน่าสนใจมาก", romanization: "sarkhdiâ", english: "documentary", hindi: "वृत्तचित्र देखो"),
+        ],
+        2891: [
+            WordExample(thai: "ฉันชอบการ์ตูน", romanization: "kartunâ", english: "cartoon", hindi: "बच्चे कार्टून देखते हैं"),
+            WordExample(thai: "การ์ตูนน่าสนใจมาก", romanization: "kartunâ", english: "cartoon", hindi: "कार्टून मज़ेदार है"),
+        ],
+        2892: [
+            WordExample(thai: "ฉันชอบรายการ", romanization: "raykarâ", english: "programme", hindi: "टीवी कार्यक्रम कब है?"),
+            WordExample(thai: "รายการน่าสนใจมาก", romanization: "raykarâ", english: "programme", hindi: "यह कार्यक्रम लोकप्रिय है"),
+        ],
+        2893: [
+            WordExample(thai: "ฉันชอบข่าว", romanization: "khàaw", english: "news", hindi: "आज का समाचार पढ़ो"),
+            WordExample(thai: "ข่าวน่าสนใจมาก", romanization: "khàaw", english: "news", hindi: "समाचार सुनो"),
+        ],
+        2894: [
+            WordExample(thai: "ฉันชอบหนังสือพิมพ์", romanization: "hnangsueophimphâ", english: "newspaper", hindi: "अखबार लाओ"),
+            WordExample(thai: "หนังสือพิมพ์น่าสนใจมาก", romanization: "hnangsueophimphâ", english: "newspaper", hindi: "मैं अखबार पढ़ता हूँ"),
+        ],
+        2895: [
+            WordExample(thai: "ฉันชอบนิตยสาร", romanization: "nitysarâ", english: "magazine", hindi: "यह पत्रिका नई है"),
+            WordExample(thai: "นิตยสารน่าสนใจมาก", romanization: "nitysarâ", english: "magazine", hindi: "पत्रिका ख़रीदो"),
+        ],
+        2896: [
+            WordExample(thai: "ฉันชอบวิทยุ", romanization: "withyuâ", english: "radio", hindi: "रेडियो चालू करो"),
+            WordExample(thai: "วิทยุน่าสนใจมาก", romanization: "withyuâ", english: "radio", hindi: "रेडियो पर गाना है"),
+        ],
+        2897: [
+            WordExample(thai: "ฉันชอบโทรทัศน์", romanization: "othrthasnâ", english: "television (media)", hindi: "टेलीविज़न देखो"),
+            WordExample(thai: "โทรทัศน์น่าสนใจมาก", romanization: "othrthasnâ", english: "television (media)", hindi: "टेलीविज़न बंद करो"),
+        ],
+        2898: [
+            WordExample(thai: "ฉันชอบช่อง", romanization: "chàong", english: "channel", hindi: "चैनल बदलो"),
+            WordExample(thai: "ช่องน่าสนใจมาก", romanization: "chàong", english: "channel", hindi: "कौन सा चैनल है?"),
+        ],
+        2899: [
+            WordExample(thai: "ฉันชอบผู้ประกาศข่าว", romanization: "phuâprakaskhàaw", english: "news anchor", hindi: "समाचार प्रस्तुतकर्ता बोल रहा है"),
+            WordExample(thai: "ผู้ประกาศข่าวน่าสนใจมาก", romanization: "phuâprakaskhàaw", english: "news anchor", hindi: "उद्घोषक स्पष्ट बोलता है"),
+        ],
+        2900: [
+            WordExample(thai: "ฉันชอบพิธีกร", romanization: "phithikrâ", english: "host", hindi: "होस्ट मज़ाकिया है"),
+            WordExample(thai: "พิธีกรน่าสนใจมาก", romanization: "phithikrâ", english: "host", hindi: "उद्घोषक मंच पर है"),
+        ],
+        2901: [
+            WordExample(thai: "ฉันชอบผู้กำกับ", romanization: "phuâkamkab", english: "director (film)", hindi: "फ़िल्म निर्देशक प्रसिद्ध है"),
+            WordExample(thai: "ผู้กำกับน่าสนใจมาก", romanization: "phuâkamkab", english: "director (film)", hindi: "निर्देशक ने शूट किया"),
+        ],
+        2902: [
+            WordExample(thai: "ฉันชอบนักแสดงนำ", romanization: "nakaesdngnamâ", english: "lead actor", hindi: "मुख्य अभिनेता अच्छा है"),
+            WordExample(thai: "นักแสดงนำน่าสนใจมาก", romanization: "nakaesdngnamâ", english: "lead actor", hindi: "लीड एक्टर पुरस्कार जीता"),
+        ],
+        2903: [
+            WordExample(thai: "ฉันชอบบทภาพยนตร์", romanization: "bthphaphyntrâ", english: "screenplay", hindi: "पटकथा लिखो"),
+            WordExample(thai: "บทภาพยนตร์น่าสนใจมาก", romanization: "bthphaphyntrâ", english: "screenplay", hindi: "यह पटकथा मजबूत है"),
+        ],
+        2904: [
+            WordExample(thai: "ฉันชอบฉาก", romanization: "chakâ", english: "scene", hindi: "अगला दृश्य शुरू हो"),
+            WordExample(thai: "ฉากน่าสนใจมาก", romanization: "chakâ", english: "scene", hindi: "यह सीन लंबा है"),
+        ],
+        2905: [
+            WordExample(thai: "ฉันชอบตัวอย่างหนัง", romanization: "tawoyàanghnang", english: "movie trailer", hindi: "मूवी ट्रेलर देखो"),
+            WordExample(thai: "ตัวอย่างหนังน่าสนใจมาก", romanization: "tawoyàanghnang", english: "movie trailer", hindi: "ट्रेलर रोमांचक है"),
+        ],
+        2906: [
+            WordExample(thai: "ฉันชอบโปสเตอร์", romanization: "opsetorâ", english: "poster", hindi: "फ़िल्म पोस्टर लगाओ"),
+            WordExample(thai: "โปสเตอร์น่าสนใจมาก", romanization: "opsetorâ", english: "poster", hindi: "पोस्टर सुंदर है"),
+        ],
+        2907: [
+            WordExample(thai: "ฉันชอบตั๋วหนัง", romanization: "taǎwhnang", english: "movie ticket", hindi: "मूवी टिकट ख़रीदो"),
+            WordExample(thai: "ตั๋วหนังน่าสนใจมาก", romanization: "taǎwhnang", english: "movie ticket", hindi: "टिकट सस्ता है"),
+        ],
+        2908: [
+            WordExample(thai: "ฉันชอบคำบรรยาย", romanization: "khambrryayâ", english: "subtitles", hindi: "उपशीर्षक चालू करो"),
+            WordExample(thai: "คำบรรยายน่าสนใจมาก", romanization: "khambrryayâ", english: "subtitles", hindi: "हिंदी उपशीर्षक चाहिए"),
+        ],
+        2909: [
+            WordExample(thai: "ฉันชอบพากย์เสียง", romanization: "phakyesiyngâ", english: "dubbing", hindi: "डबिंग अच्छी नहीं है"),
+            WordExample(thai: "พากย์เสียงน่าสนใจมาก", romanization: "phakyesiyngâ", english: "dubbing", hindi: "थाई डबिंग सुनो"),
+        ],
+        2910: [
+            WordExample(thai: "ฉันชอบเรตติ้ง", romanization: "erttiâng", english: "rating", hindi: "फ़िल्म की रेटिंग ऊँची है"),
+            WordExample(thai: "เรตติ้งน่าสนใจมาก", romanization: "erttiâng", english: "rating", hindi: "रेटिंग देखो"),
+        ],
+        2911: [
+            WordExample(thai: "ฉันชอบรางวัล", romanization: "rangwalâ", english: "award", hindi: "उन्हें पुरस्कार मिला"),
+            WordExample(thai: "รางวัลน่าสนใจมาก", romanization: "rangwalâ", english: "award", hindi: "पुरस्कार समारोह है"),
+        ],
+        2912: [
+            WordExample(thai: "ฉันชอบเทศกาลภาพยนตร์", romanization: "ethskalphaphyntrâ", english: "film festival", hindi: "फ़िल्म समारोह में जाओ"),
+            WordExample(thai: "เทศกาลภาพยนตร์น่าสนใจมาก", romanization: "ethskalphaphyntrâ", english: "film festival", hindi: "समारोह अगले हफ़्ते है"),
+        ],
+        2913: [
+            WordExample(thai: "ฉันชอบสตูดิโอ", romanization: "studioâ", english: "studio", hindi: "स्टूडियो में रिकॉर्ड करो"),
+            WordExample(thai: "สตูดิโอน่าสนใจมาก", romanization: "studioâ", english: "studio", hindi: "नया स्टूडियो खुला"),
+        ],
+        2914: [
+            WordExample(thai: "ฉันชอบถ่ายทำ", romanization: "thàaytham", english: "shoot, film", hindi: "वे फ़िल्मांकन कर रहे हैं"),
+            WordExample(thai: "ถ่ายทำน่าสนใจมาก", romanization: "thàaytham", english: "shoot, film", hindi: "शूटिंग कल है"),
+        ],
+        2915: [
+            WordExample(thai: "ฉันชอบตัดต่อ", romanization: "tadtào", english: "edit", hindi: "वीडियो एडिट करो"),
+            WordExample(thai: "ตัดต่อน่าสนใจมาก", romanization: "tadtào", english: "edit", hindi: "एडिटिंग में समय लगता है"),
+        ],
+        2916: [
+            WordExample(thai: "ฉันชอบออกอากาศ", romanization: "okoakasâ", english: "broadcast", hindi: "लाइव प्रसारण शुरू हो"),
+            WordExample(thai: "ออกอากาศน่าสนใจมาก", romanization: "okoakasâ", english: "broadcast", hindi: "कब प्रसारण होगा?"),
+        ],
+        2917: [
+            WordExample(thai: "ฉันชอบบันทึกเทป", romanization: "banthuekethpâ", english: "recorded", hindi: "यह कार्यक्रम रिकॉर्डेड है"),
+            WordExample(thai: "บันทึกเทปน่าสนใจมาก", romanization: "banthuekethpâ", english: "recorded", hindi: "रिकॉर्डेड एपिसोड देखो"),
+        ],
+        2918: [
+            WordExample(thai: "ฉันชอบผู้ชม", romanization: "phuâchm", english: "audience", hindi: "दर्शक ताली बजा रहे हैं"),
+            WordExample(thai: "ผู้ชมน่าสนใจมาก", romanization: "phuâchm", english: "audience", hindi: "बड़े दर्शक आए"),
+        ],
+        2919: [
+            WordExample(thai: "ฉันชอบแฟนคลับ", romanization: "aefnkhlabâ", english: "fan club", hindi: "फ़ैन क्लब मिलना है"),
+            WordExample(thai: "แฟนคลับน่าสนใจมาก", romanization: "aefnkhlabâ", english: "fan club", hindi: "मैं फ़ैन क्लब में हूँ"),
+        ],
+        2920: [
+            WordExample(thai: "ฉันชอบดารา", romanization: "daraâ", english: "celebrity", hindi: "वह सेलिब्रिटी प्रसिद्ध है"),
+            WordExample(thai: "ดาราน่าสนใจมาก", romanization: "daraâ", english: "celebrity", hindi: "सेलिब्रिटी ने मुस्कुराया"),
+        ],
+        2921: [
+            WordExample(thai: "ฉันชอบบทบาท", romanization: "bthbathâ", english: "role", hindi: "उसकी भूमिका बड़ी है"),
+            WordExample(thai: "บทบาทน่าสนใจมาก", romanization: "bthbathâ", english: "role", hindi: "नई भूमिका मिल गई"),
+        ],
+        2922: [
+            WordExample(thai: "ฉันชอบเพลง", romanization: "ephlngâ", english: "song", hindi: "यह गाना पसंद है"),
+            WordExample(thai: "เขาเรียนเพลงทุกวัน", romanization: "ephlngâ", english: "song", hindi: "नया गाना सुनो"),
+        ],
+        2923: [
+            WordExample(thai: "ฉันชอบนักดนตรีอาชีพ", romanization: "nakdntrioachiphâ", english: "professional musician", hindi: "वह पेशेवर संगीतकार है"),
+            WordExample(thai: "เขาเรียนนักดนตรีอาชีพทุกวัน", romanization: "nakdntrioachiphâ", english: "professional musician", hindi: "संगीतकार मंच पर है"),
+        ],
+        2924: [
+            WordExample(thai: "ฉันชอบวงดนตรี", romanization: "wngdntriâ", english: "band", hindi: "बैंड अच्छा बजता है"),
+            WordExample(thai: "เขาเรียนวงดนตรีทุกวัน", romanization: "wngdntriâ", english: "band", hindi: "नया बैंड बना"),
+        ],
+        2925: [
+            WordExample(thai: "ฉันชอบวงออร์เคสตรา", romanization: "wngorekhstraâ", english: "orchestra", hindi: "ऑर्केस्ट्रा बजा रहा है"),
+            WordExample(thai: "เขาเรียนวงออร์เคสตราทุกวัน", romanization: "wngorekhstraâ", english: "orchestra", hindi: "ऑर्केस्ट्रा देखो"),
+        ],
+        2926: [
+            WordExample(thai: "ฉันชอบคอนเสิร์ต", romanization: "khonesirtâ", english: "concert", hindi: "कॉन्सर्ट में जाओ"),
+            WordExample(thai: "เขาเรียนคอนเสิร์ตทุกวัน", romanization: "khonesirtâ", english: "concert", hindi: "कॉन्सर्ट शानदार था"),
+        ],
+        2927: [
+            WordExample(thai: "ฉันชอบเวที", romanization: "ewthiâ", english: "stage", hindi: "मंच पर आओ"),
+            WordExample(thai: "เขาเรียนเวทีทุกวัน", romanization: "ewthiâ", english: "stage", hindi: "मंच तैयार है"),
+        ],
+        2928: [
+            WordExample(thai: "ฉันชอบเนื้อเพลง", romanization: "enueâoephlng", english: "lyrics", hindi: "गीत के बोल याद करो"),
+            WordExample(thai: "เขาเรียนเนื้อเพลงทุกวัน", romanization: "enueâoephlng", english: "lyrics", hindi: "बोल सुंदर हैं"),
+        ],
+        2929: [
+            WordExample(thai: "ฉันชอบทำนอง", romanization: "thamnongâ", english: "melody", hindi: "धुन याद आ गई"),
+            WordExample(thai: "เขาเรียนทำนองทุกวัน", romanization: "thamnongâ", english: "melody", hindi: "नई धुन बनाओ"),
+        ],
+        2930: [
+            WordExample(thai: "ฉันชอบจังหวะ", romanization: "janghwaâ", english: "rhythm", hindi: "ताल सही रखो"),
+            WordExample(thai: "เขาเรียนจังหวะทุกวัน", romanization: "janghwaâ", english: "rhythm", hindi: "रिदम तेज़ है"),
+        ],
+        2931: [
+            WordExample(thai: "ฉันชอบโน้ตดนตรี", romanization: "onâtdntri", english: "musical note", hindi: "संगीत स्वर पढ़ो"),
+            WordExample(thai: "เขาเรียนโน้ตดนตรีทุกวัน", romanization: "onâtdntri", english: "musical note", hindi: "नोट सीखो"),
+        ],
+        2932: [
+            WordExample(thai: "ฉันชอบคอร์ด", romanization: "khordâ", english: "chord", hindi: "यह कॉर्ड आसान है"),
+            WordExample(thai: "เขาเรียนคอร์ดทุกวัน", romanization: "khordâ", english: "chord", hindi: "गिटार कॉर्ड बजाओ"),
+        ],
+        2933: [
+            WordExample(thai: "ฉันชอบกีตาร์", romanization: "kitarâ", english: "guitar", hindi: "गिटार बजाओ"),
+            WordExample(thai: "เขาเรียนกีตาร์ทุกวัน", romanization: "kitarâ", english: "guitar", hindi: "मेरा गिटार नया है"),
+        ],
+        2934: [
+            WordExample(thai: "ฉันชอบเปียโน", romanization: "epiyonâ", english: "piano", hindi: "पियानो सीखो"),
+            WordExample(thai: "เขาเรียนเปียโนทุกวัน", romanization: "epiyonâ", english: "piano", hindi: "पियानो की आवाज़ सुंदर है"),
+        ],
+        2935: [
+            WordExample(thai: "ฉันชอบไวโอลิน", romanization: "aiwolinâ", english: "violin", hindi: "वायलिन बजाओ"),
+            WordExample(thai: "เขาเรียนไวโอลินทุกวัน", romanization: "aiwolinâ", english: "violin", hindi: "वायलिन कठिन है"),
+        ],
+        2936: [
+            WordExample(thai: "ฉันชอบกลอง", romanization: "klongâ", english: "drum", hindi: "ड्रम जोर से बजता है"),
+            WordExample(thai: "เขาเรียนกลองทุกวัน", romanization: "klongâ", english: "drum", hindi: "ड्रम सीखो"),
+        ],
+        2937: [
+            WordExample(thai: "ฉันชอบขลุ่ย", romanization: "khluày", english: "flute", hindi: "बांसुरी मीठी है"),
+            WordExample(thai: "เขาเรียนขลุ่ยทุกวัน", romanization: "khluày", english: "flute", hindi: "बांसुरी बजाओ"),
+        ],
+        2938: [
+            WordExample(thai: "ฉันชอบระนาด", romanization: "ranadâ", english: "Thai xylophone", hindi: "थाई ज़ाइलोफ़ोन सुनो"),
+            WordExample(thai: "เขาเรียนระนาดทุกวัน", romanization: "ranadâ", english: "Thai xylophone", hindi: "रनाद बजाओ"),
+        ],
+        2939: [
+            WordExample(thai: "ฉันชอบซอ", romanization: "soâ", english: "Thai fiddle", hindi: "थाई वायलिन बज रहा है"),
+            WordExample(thai: "เขาเรียนซอทุกวัน", romanization: "soâ", english: "Thai fiddle", hindi: "सो की धुन सुनो"),
+        ],
+        2940: [
+            WordExample(thai: "ฉันชอบฆ้อง", romanization: "khâong", english: "gong", hindi: "गोंग बजा"),
+            WordExample(thai: "เขาเรียนฆ้องทุกวัน", romanization: "khâong", english: "gong", hindi: "गोंग की आवाज़ तेज़ है"),
+        ],
+        2941: [
+            WordExample(thai: "ฉันชอบพิณ", romanization: "phinâ", english: "lute", hindi: "ल्यूट बजाओ"),
+            WordExample(thai: "เขาเรียนพิณทุกวัน", romanization: "phinâ", english: "lute", hindi: "वीणा सुंदर लगती है"),
+        ],
+        2942: [
+            WordExample(thai: "ฉันชอบแซกโซโฟน", romanization: "aeskosofnâ", english: "saxophone", hindi: "सैक्सोफ़ोन सुनो"),
+            WordExample(thai: "เขาเรียนแซกโซโฟนทุกวัน", romanization: "aeskosofnâ", english: "saxophone", hindi: "सैक्सोफ़ोन जैज़ में है"),
+        ],
+        2943: [
+            WordExample(thai: "ฉันชอบทรัมเป็ต", romanization: "thrameptâ", english: "trumpet", hindi: "तुरही जोर से बजती है"),
+            WordExample(thai: "เขาเรียนทรัมเป็ตทุกวัน", romanization: "thrameptâ", english: "trumpet", hindi: "तुरही सीखो"),
+        ],
+        2944: [
+            WordExample(thai: "ฉันชอบร้องเพลง", romanization: "râongephlng", english: "sing", hindi: "मैं गाना गाता हूँ"),
+            WordExample(thai: "เขาเรียนร้องเพลงทุกวัน", romanization: "râongephlng", english: "sing", hindi: "साथ में गाओ"),
+        ],
+        2945: [
+            WordExample(thai: "ฉันชอบเล่นดนตรี", romanization: "elàndntri", english: "play music", hindi: "संगीत बजाओ"),
+            WordExample(thai: "เขาเรียนเล่นดนตรีทุกวัน", romanization: "elàndntri", english: "play music", hindi: "वे संगीत बजाते हैं"),
+        ],
+        2946: [
+            WordExample(thai: "ฉันชอบแต่งเพลง", romanization: "aetàngephlng", english: "compose", hindi: "नया गाना रचना करो"),
+            WordExample(thai: "เขาเรียนแต่งเพลงทุกวัน", romanization: "aetàngephlng", english: "compose", hindi: "उसने गाना लिखा"),
+        ],
+        2947: [
+            WordExample(thai: "ฉันชอบซ้อม", romanization: "sâom", english: "rehearse", hindi: "रिहर्सल करो"),
+            WordExample(thai: "เขาเรียนซ้อมทุกวัน", romanization: "sâom", english: "rehearse", hindi: "कल रिहर्सल है"),
+        ],
+        2948: [
+            WordExample(thai: "ฉันชอบจิตรกรรม", romanization: "jitrkrrmâ", english: "painting", hindi: "चित्रकला सुंदर है"),
+            WordExample(thai: "จิตรกรรมสวยมาก", romanization: "jitrkrrmâ", english: "painting", hindi: "मैं चित्रकला सीखता हूँ"),
+        ],
+        2949: [
+            WordExample(thai: "ฉันชอบประติมากรรม", romanization: "pratimakrrmâ", english: "sculpture", hindi: "मूर्तिकला देखो"),
+            WordExample(thai: "ประติมากรรมสวยมาก", romanization: "pratimakrrmâ", english: "sculpture", hindi: "यह मूर्ति प्राचीन है"),
+        ],
+        2950: [
+            WordExample(thai: "ฉันชอบภาพวาด", romanization: "phaphwadâ", english: "drawing", hindi: "चित्र बनाओ"),
+            WordExample(thai: "ภาพวาดสวยมาก", romanization: "phaphwadâ", english: "drawing", hindi: "यह ड्रॉइंग अच्छी है"),
+        ],
+        2951: [
+            WordExample(thai: "ฉันชอบภาพเหมือน", romanization: "phaphehmueonâ", english: "portrait", hindi: "पोर्ट्रेट बनाओ"),
+            WordExample(thai: "ภาพเหมือนสวยมาก", romanization: "phaphehmueonâ", english: "portrait", hindi: "पोर्ट्रेट सजीव है"),
+        ],
+        2952: [
+            WordExample(thai: "ฉันชอบทิวทัศน์", romanization: "thiwthasnâ", english: "landscape", hindi: "परिदृश्य सुंदर है"),
+            WordExample(thai: "ทิวทัศน์สวยมาก", romanization: "thiwthasnâ", english: "landscape", hindi: "पहाड़ का लैंडस्केप देखो"),
+        ],
+        2953: [
+            WordExample(thai: "ฉันชอบพู่กัน", romanization: "phuàkan", english: "paintbrush", hindi: "ब्रश से रंग लगाओ"),
+            WordExample(thai: "พู่กันสวยมาก", romanization: "phuàkan", english: "paintbrush", hindi: "नया ब्रश ख़रीदो"),
+        ],
+        2954: [
+            WordExample(thai: "ฉันชอบสีน้ำ", romanization: "sinâam", english: "watercolour", hindi: "जलरंग से पेंट करो"),
+            WordExample(thai: "สีน้ำสวยมาก", romanization: "sinâam", english: "watercolour", hindi: "जलरंग हल्के होते हैं"),
+        ],
+        2955: [
+            WordExample(thai: "ฉันชอบสีน้ำมัน", romanization: "sinâamman", english: "oil paint", hindi: "तेल रंग गाढ़ा है"),
+            WordExample(thai: "สีน้ำมันสวยมาก", romanization: "sinâamman", english: "oil paint", hindi: "तेल रंग से चित्र बनाओ"),
+        ],
+        2956: [
+            WordExample(thai: "ฉันชอบผ้าใบ", romanization: "phâaib", english: "canvas", hindi: "कैनवास पर चित्र बनाओ"),
+            WordExample(thai: "ผ้าใบสวยมาก", romanization: "phâaib", english: "canvas", hindi: "बड़ा कैनवास चाहिए"),
+        ],
+        2957: [
+            WordExample(thai: "ฉันชอบนิทรรศการ", romanization: "nithrrskarâ", english: "exhibition", hindi: "प्रदर्शनी देखो"),
+            WordExample(thai: "นิทรรศการสวยมาก", romanization: "nithrrskarâ", english: "exhibition", hindi: "कला प्रदर्शनी खुली है"),
+        ],
+        2958: [
+            WordExample(thai: "ฉันชอบผลงานศิลปะ", romanization: "phlngansilpaâ", english: "artwork", hindi: "यह कलाकृति अनोखी है"),
+            WordExample(thai: "ผลงานศิลปะสวยมาก", romanization: "phlngansilpaâ", english: "artwork", hindi: "कलाकृति बेच दी"),
+        ],
+        2959: [
+            WordExample(thai: "ฉันชอบลวดลาย", romanization: "lwdlayâ", english: "pattern", hindi: "पैटर्न दोहराया गया"),
+            WordExample(thai: "ลวดลายสวยมาก", romanization: "lwdlayâ", english: "pattern", hindi: "सुंदर डिज़ाइन है"),
+        ],
+        2960: [
+            WordExample(thai: "ฉันชอบงานฝีมือ", romanization: "nganfimueoâ", english: "handicraft", hindi: "हस्तशिल्प ख़रीदो"),
+            WordExample(thai: "งานฝีมือสวยมาก", romanization: "nganfimueoâ", english: "handicraft", hindi: "हस्तशिल्प हाथ से बना है"),
+        ],
+        2961: [
+            WordExample(thai: "ฉันชอบเครื่องปั้นดินเผา", romanization: "ekhrueàongpaândinepha", english: "pottery", hindi: "मिट्टी के बर्तन बनाओ"),
+            WordExample(thai: "เครื่องปั้นดินเผาสวยมาก", romanization: "ekhrueàongpaândinepha", english: "pottery", hindi: "बर्तन सुंदर हैं"),
+        ],
+        2962: [
+            WordExample(thai: "ฉันชอบการถักทอ", romanization: "karthakthoâ", english: "weaving", hindi: "बुनाई सीखो"),
+            WordExample(thai: "การถักทอสวยมาก", romanization: "karthakthoâ", english: "weaving", hindi: "कपड़ा बुनाई से बना"),
+        ],
+        2963: [
+            WordExample(thai: "ฉันชอบแกะสลัก", romanization: "aekaslakâ", english: "carve", hindi: "लकड़ी पर नक्काशी करो"),
+            WordExample(thai: "แกะสลักสวยมาก", romanization: "aekaslakâ", english: "carve", hindi: "नक्काशी बारीक है"),
+        ],
+        2964: [
+            WordExample(thai: "ฉันชอบฟุตบอล", romanization: "futbolâ", english: "football", hindi: "फ़ुटबॉल खेलो"),
+            WordExample(thai: "เขาเล่นฟุตบอลเก่ง", romanization: "futbolâ", english: "football", hindi: "फ़ुटबॉल मैच देखो"),
+        ],
+        2965: [
+            WordExample(thai: "ฉันชอบเทนนิส", romanization: "ethnnisâ", english: "tennis", hindi: "टेनिस खेलो"),
+            WordExample(thai: "เขาเล่นเทนนิสเก่ง", romanization: "ethnnisâ", english: "tennis", hindi: "टेनिस रैकेट कहाँ है?"),
+        ],
+        2966: [
+            WordExample(thai: "ฉันชอบปิงปอง", romanization: "pingpongâ", english: "table tennis", hindi: "टेबल टेनिस मज़ेदार है"),
+            WordExample(thai: "เขาเล่นปิงปองเก่ง", romanization: "pingpongâ", english: "table tennis", hindi: "पिंग पॉन्ग खेलो"),
+        ],
+        2967: [
+            WordExample(thai: "ฉันชอบกอล์ฟ", romanization: "kolfâ", english: "golf", hindi: "गोल्फ़ खेलो"),
+            WordExample(thai: "เขาเล่นกอล์ฟเก่ง", romanization: "kolfâ", english: "golf", hindi: "गोल्फ़ मैदान बड़ा है"),
+        ],
+        2968: [
+            WordExample(thai: "ฉันชอบมวยไทย", romanization: "mwyaithyâ", english: "Muay Thai", hindi: "मुअय थाई सीखो"),
+            WordExample(thai: "เขาเล่นมวยไทยเก่ง", romanization: "mwyaithyâ", english: "Muay Thai", hindi: "मुअय थाई कठिन है"),
+        ],
+        2969: [
+            WordExample(thai: "ฉันชอบยูโด", romanization: "yuodâ", english: "judo", hindi: "जूडो कक्षा में जाओ"),
+            WordExample(thai: "เขาเล่นยูโดเก่ง", romanization: "yuodâ", english: "judo", hindi: "जूडो सुरक्षित खेलो"),
+        ],
+        2970: [
+            WordExample(thai: "ฉันชอบคาราเต้", romanization: "kharaetâ", english: "karate", hindi: "कराटे अभ्यास करो"),
+            WordExample(thai: "เขาเล่นคาราเต้เก่ง", romanization: "kharaetâ", english: "karate", hindi: "कराटे बेल्ट काला है"),
+        ],
+        2971: [
+            WordExample(thai: "ฉันชอบว่ายน้ำแข่ง", romanization: "wàaynâamaekhàng", english: "competitive swimming", hindi: "प्रतिस्पर्धी तैराकी तेज़ है"),
+            WordExample(thai: "เขาเล่นว่ายน้ำแข่งเก่ง", romanization: "wàaynâamaekhàng", english: "competitive swimming", hindi: "तैराकी प्रतियोगिता है"),
+        ],
+        2972: [
+            WordExample(thai: "ฉันชอบวิ่งมาราธอน", romanization: "wiàngmarathon", english: "marathon", hindi: "मैराथन दौड़ो"),
+            WordExample(thai: "เขาเล่นวิ่งมาราธอนเก่ง", romanization: "wiàngmarathon", english: "marathon", hindi: "मैराथन लंबी है"),
+        ],
+        2973: [
+            WordExample(thai: "ฉันชอบโยคะ", romanization: "oykhaâ", english: "yoga", hindi: "योग करो"),
+            WordExample(thai: "เขาเล่นโยคะเก่ง", romanization: "oykhaâ", english: "yoga", hindi: "सुबह योग अच्छा है"),
+        ],
+        2974: [
+            WordExample(thai: "ฉันชอบแอโรบิก", romanization: "aeorbikâ", english: "aerobics", hindi: "एरोबिक्स क्लास में जाओ"),
+            WordExample(thai: "เขาเล่นแอโรบิกเก่ง", romanization: "aeorbikâ", english: "aerobics", hindi: "एरोबिक्स से पसीना आता है"),
+        ],
+        2975: [
+            WordExample(thai: "ฉันชอบสนามหญ้า", romanization: "snamhyâa", english: "pitch", hindi: "मैदान गीला है"),
+            WordExample(thai: "เขาเล่นสนามหญ้าเก่ง", romanization: "snamhyâa", english: "pitch", hindi: "पिच पर खेलो"),
+        ],
+        2976: [
+            WordExample(thai: "ฉันชอบลู่วิ่ง", romanization: "luàwiàng", english: "running track", hindi: "दौड़ ट्रैक पर दौड़ो"),
+            WordExample(thai: "เขาเล่นลู่วิ่งเก่ง", romanization: "luàwiàng", english: "running track", hindi: "ट्रैक गोल है"),
+        ],
+        2977: [
+            WordExample(thai: "ฉันชอบกรรมการ", romanization: "krrmkarâ", english: "judge, official", hindi: "जज ने फ़ैसला दिया"),
+            WordExample(thai: "เขาเล่นกรรมการเก่ง", romanization: "krrmkarâ", english: "judge, official", hindi: "अधिकारी सीटी बजाता है"),
+        ],
+        2978: [
+            WordExample(thai: "ฉันชอบทีมเหย้า", romanization: "thimehyâa", english: "home team", hindi: "होम टीम जीती"),
+            WordExample(thai: "เขาเล่นทีมเหย้าเก่ง", romanization: "thimehyâa", english: "home team", hindi: "होम टीम के फ़ैन ज़्यादा हैं"),
+        ],
+        2979: [
+            WordExample(thai: "ฉันชอบทีมเยือน", romanization: "thimeyueonâ", english: "away team", hindi: "अवे टीम आई"),
+            WordExample(thai: "เขาเล่นทีมเยือนเก่ง", romanization: "thimeyueonâ", english: "away team", hindi: "अवे टीम ने स्कोर किया"),
+        ],
+        2980: [
+            WordExample(thai: "ฉันชอบกองเชียร์", romanization: "kongechiyrâ", english: "supporters", hindi: "समर्थक चिल्ला रहे हैं"),
+            WordExample(thai: "เขาเล่นกองเชียร์เก่ง", romanization: "kongechiyrâ", english: "supporters", hindi: "फ़ैन उत्साहित हैं"),
+        ],
+        2981: [
+            WordExample(thai: "ฉันชอบคะแนนนำ", romanization: "khaennnamâ", english: "lead", hindi: "टीम की बढ़त है"),
+            WordExample(thai: "เขาเล่นคะแนนนำเก่ง", romanization: "khaennnamâ", english: "lead", hindi: "लीड बचाओ"),
+        ],
+        2982: [
+            WordExample(thai: "ฉันชอบแชมป์", romanization: "aechmpâ", english: "champion", hindi: "वे चैंपियन हैं"),
+            WordExample(thai: "เขาเล่นแชมป์เก่ง", romanization: "aechmpâ", english: "champion", hindi: "चैंपियन ट्रॉफ़ी उठाओ"),
+        ],
+        2983: [
+            WordExample(thai: "ฉันชอบเหรียญทอง", romanization: "ehriyythongâ", english: "gold medal", hindi: "स्वर्ण पदक मिला"),
+            WordExample(thai: "เขาเล่นเหรียญทองเก่ง", romanization: "ehriyythongâ", english: "gold medal", hindi: "गोल्ड मेडल चमकता है"),
+        ],
+        2984: [
+            WordExample(thai: "ฉันชอบถ้วยรางวัล", romanization: "thâwyrangwal", english: "trophy", hindi: "ट्रॉफ़ी उठाओ"),
+            WordExample(thai: "เขาเล่นถ้วยรางวัลเก่ง", romanization: "thâwyrangwal", english: "trophy", hindi: "ट्रॉफ़ी भारी है"),
+        ],
+        2985: [
+            WordExample(thai: "ฉันชอบรอบชิงชนะเลิศ", romanization: "robchingchnaelisâ", english: "final round", hindi: "फ़ाइनल राउंड शुरू हो"),
+            WordExample(thai: "เขาเล่นรอบชิงชนะเลิศเก่ง", romanization: "robchingchnaelisâ", english: "final round", hindi: "फ़ाइनल रोमांचक है"),
+        ],
+        2986: [
+            WordExample(thai: "ฉันชอบอบอุ่นร่างกาย", romanization: "obouànràangkay", english: "warm up (sports)", hindi: "वार्म अप करो"),
+            WordExample(thai: "เขาเล่นอบอุ่นร่างกายเก่ง", romanization: "obouànràangkay", english: "warm up (sports)", hindi: "वार्म अप ज़रूरी है"),
+        ],
+        2987: [
+            WordExample(thai: "ฉันชอบบาดเจ็บ", romanization: "badejbâ", english: "injured", hindi: "खिलाड़ी घायल है"),
+            WordExample(thai: "เขาเล่นบาดเจ็บเก่ง", romanization: "badejbâ", english: "injured", hindi: "चोट लग गई"),
+        ],
+        2988: [
+            WordExample(thai: "ฉันชอบฟาวล์", romanization: "fawlâ", english: "foul", hindi: "यह फाउल था"),
+            WordExample(thai: "เขาเล่นฟาวล์เก่ง", romanization: "fawlâ", english: "foul", hindi: "फाउल न करो"),
+        ],
+        2989: [
+            WordExample(thai: "ฉันชอบใบเหลือง", romanization: "aibehlueongâ", english: "yellow card", hindi: "पीला कार्ड दिखाया"),
+            WordExample(thai: "เขาเล่นใบเหลืองเก่ง", romanization: "aibehlueongâ", english: "yellow card", hindi: "पीला कार्ड मिला"),
+        ],
+        2990: [
+            WordExample(thai: "ข่าวเกี่ยวกับรัฐบาล", romanization: "rathbalâ", english: "government", hindi: "सरकार नई नीति लाई"),
+            WordExample(thai: "รัฐบาลสำคัญต่อประเทศ", romanization: "rathbalâ", english: "government", hindi: "सरकार ने घोषणा की"),
+        ],
+        2991: [
+            WordExample(thai: "ข่าวเกี่ยวกับนายกรัฐมนตรี", romanization: "naykrathmntriâ", english: "prime minister", hindi: "प्रधानमंत्री भाषण दे रहे हैं"),
+            WordExample(thai: "นายกรัฐมนตรีสำคัญต่อประเทศ", romanization: "naykrathmntriâ", english: "prime minister", hindi: "प्रधानमंत्री विदेश गए"),
+        ],
+        2992: [
+            WordExample(thai: "ข่าวเกี่ยวกับรัฐมนตรี", romanization: "rathmntriâ", english: "minister", hindi: "मंत्री ने बैठक की"),
+            WordExample(thai: "รัฐมนตรีสำคัญต่อประเทศ", romanization: "rathmntriâ", english: "minister", hindi: "नए मंत्री नियुक्त हुए"),
+        ],
+        2993: [
+            WordExample(thai: "ข่าวเกี่ยวกับกระทรวง", romanization: "krathrwngâ", english: "ministry", hindi: "मंत्रालय का दफ़्तर है"),
+            WordExample(thai: "กระทรวงสำคัญต่อประเทศ", romanization: "krathrwngâ", english: "ministry", hindi: "शिक्षा मंत्रालय"),
+        ],
+        2994: [
+            WordExample(thai: "ข่าวเกี่ยวกับรัฐสภา", romanization: "rathsphaâ", english: "parliament", hindi: "संसद में बहस हुई"),
+            WordExample(thai: "รัฐสภาสำคัญต่อประเทศ", romanization: "rathsphaâ", english: "parliament", hindi: "संसद भवन बड़ा है"),
+        ],
+        2995: [
+            WordExample(thai: "ข่าวเกี่ยวกับสมาชิกสภา", romanization: "smachiksphaâ", english: "member of parliament", hindi: "सांसद वोट देते हैं"),
+            WordExample(thai: "สมาชิกสภาสำคัญต่อประเทศ", romanization: "smachiksphaâ", english: "member of parliament", hindi: "नए सांसद चुने गए"),
+        ],
+        2996: [
+            WordExample(thai: "ข่าวเกี่ยวกับการเลือกตั้ง", romanization: "karelueoktaâng", english: "election", hindi: "चुनाव अगले महीने है"),
+            WordExample(thai: "การเลือกตั้งสำคัญต่อประเทศ", romanization: "karelueoktaâng", english: "election", hindi: "चुनाव में वोट दो"),
+        ],
+        2997: [
+            WordExample(thai: "ข่าวเกี่ยวกับลงคะแนน", romanization: "lngkhaennâ", english: "cast a vote", hindi: "वोट डालो"),
+            WordExample(thai: "ลงคะแนนสำคัญต่อประเทศ", romanization: "lngkhaennâ", english: "cast a vote", hindi: "मैंने वोट डाल दिया"),
+        ],
+        2998: [
+            WordExample(thai: "ข่าวเกี่ยวกับพรรคการเมือง", romanization: "phrrkhkaremueongâ", english: "political party", hindi: "राजनीतिक दल बड़ा है"),
+            WordExample(thai: "พรรคการเมืองสำคัญต่อประเทศ", romanization: "phrrkhkaremueongâ", english: "political party", hindi: "नया दल बना"),
+        ],
+        2999: [
+            WordExample(thai: "ข่าวเกี่ยวกับนโยบาย", romanization: "noybayâ", english: "policy", hindi: "नई नीति आई"),
+            WordExample(thai: "นโยบายสำคัญต่อประเทศ", romanization: "noybayâ", english: "policy", hindi: "नीति बदल गई"),
+        ],
+        3000: [
+            WordExample(thai: "ข่าวเกี่ยวกับกฎหมาย", romanization: "kdhmayâ", english: "law", hindi: "कानून का पालन करो"),
+            WordExample(thai: "กฎหมายสำคัญต่อประเทศ", romanization: "kdhmayâ", english: "law", hindi: "नया कानून पास हुआ"),
+        ],
+        3001: [
+            WordExample(thai: "ข่าวเกี่ยวกับรัฐธรรมนูญ", romanization: "raththrrmnuyâ", english: "constitution", hindi: "संविधान सर्वोच्च है"),
+            WordExample(thai: "รัฐธรรมนูญสำคัญต่อประเทศ", romanization: "raththrrmnuyâ", english: "constitution", hindi: "संविधान पढ़ो"),
+        ],
+        3002: [
+            WordExample(thai: "ข่าวเกี่ยวกับศาล", romanization: "salâ", english: "court", hindi: "अदालत में जाना है"),
+            WordExample(thai: "ศาลสำคัญต่อประเทศ", romanization: "salâ", english: "court", hindi: "अदालत ने फ़ैसला सुनाया"),
+        ],
+        3003: [
+            WordExample(thai: "ข่าวเกี่ยวกับคดี", romanization: "khdiâ", english: "legal case", hindi: "मुक़दमा लंबित है"),
+            WordExample(thai: "คดีสำคัญต่อประเทศ", romanization: "khdiâ", english: "legal case", hindi: "केस बंद हो गया"),
+        ],
+        3004: [
+            WordExample(thai: "ข่าวเกี่ยวกับหลักฐาน", romanization: "hlakthanâ", english: "evidence", hindi: "सबूत पेश करो"),
+            WordExample(thai: "หลักฐานสำคัญต่อประเทศ", romanization: "hlakthanâ", english: "evidence", hindi: "सबूत मज़बूत है"),
+        ],
+        3005: [
+            WordExample(thai: "ข่าวเกี่ยวกับจำเลย", romanization: "jamelyâ", english: "defendant", hindi: "प्रतिवादी निर्दोष है"),
+            WordExample(thai: "จำเลยสำคัญต่อประเทศ", romanization: "jamelyâ", english: "defendant", hindi: "प्रतिवादी अदालत में है"),
+        ],
+        3006: [
+            WordExample(thai: "ข่าวเกี่ยวกับโจทก์", romanization: "ojthkâ", english: "plaintiff", hindi: "वादी ने मुक़दमा दायर किया"),
+            WordExample(thai: "โจทก์สำคัญต่อประเทศ", romanization: "ojthkâ", english: "plaintiff", hindi: "वादी गवाही दे रहा है"),
+        ],
+        3007: [
+            WordExample(thai: "ข่าวเกี่ยวกับคำพิพากษา", romanization: "khamphiphaksaâ", english: "verdict", hindi: "अदालत का फ़ैसला आया"),
+            WordExample(thai: "คำพิพากษาสำคัญต่อประเทศ", romanization: "khamphiphaksaâ", english: "verdict", hindi: "निर्णय अंतिम है"),
+        ],
+        3008: [
+            WordExample(thai: "ข่าวเกี่ยวกับอุทธรณ์", romanization: "ouththrnâ", english: "appeal", hindi: "अपील दायर करो"),
+            WordExample(thai: "อุทธรณ์สำคัญต่อประเทศ", romanization: "ouththrnâ", english: "appeal", hindi: "अपील मंजूर हुई"),
+        ],
+        3009: [
+            WordExample(thai: "ข่าวเกี่ยวกับเรือนจำ", romanization: "erueonjamâ", english: "prison", hindi: "जेल सख्त है"),
+            WordExample(thai: "เรือนจำสำคัญต่อประเทศ", romanization: "erueonjamâ", english: "prison", hindi: "कैदी जेल में है"),
+        ],
+        3010: [
+            WordExample(thai: "ข่าวเกี่ยวกับค่าปรับ", romanization: "khàaprab", english: "fine", hindi: "जुर्माना भरो"),
+            WordExample(thai: "ค่าปรับสำคัญต่อประเทศ", romanization: "khàaprab", english: "fine", hindi: "जुर्माना ऊँचा है"),
+        ],
+        3011: [
+            WordExample(thai: "ข่าวเกี่ยวกับทะเบียน", romanization: "thaebiynâ", english: "registration", hindi: "पंजीकरण करो"),
+            WordExample(thai: "ทะเบียนสำคัญต่อประเทศ", romanization: "thaebiynâ", english: "registration", hindi: "पंजीकरण ज़रूरी है"),
+        ],
+        3012: [
+            WordExample(thai: "ข่าวเกี่ยวกับสูติบัตร", romanization: "sutibatrâ", english: "birth certificate", hindi: "जन्म प्रमाणपत्र लाओ"),
+            WordExample(thai: "สูติบัตรสำคัญต่อประเทศ", romanization: "sutibatrâ", english: "birth certificate", hindi: "जन्म प्रमाणपत्र खो गया"),
+        ],
+        3013: [
+            WordExample(thai: "ข่าวเกี่ยวกับทะเบียนสมรส", romanization: "thaebiynsmrsâ", english: "marriage certificate", hindi: "विवाह प्रमाणपत्र चाहिए"),
+            WordExample(thai: "ทะเบียนสมรสสำคัญต่อประเทศ", romanization: "thaebiynsmrsâ", english: "marriage certificate", hindi: "विवाह प्रमाणपत्र मिला"),
+        ],
+        3014: [
+            WordExample(thai: "ข่าวเกี่ยวกับสัญชาติ", romanization: "saychatiâ", english: "nationality", hindi: "राष्ट्रीयता क्या है?"),
+            WordExample(thai: "สัญชาติสำคัญต่อประเทศ", romanization: "saychatiâ", english: "nationality", hindi: "थाई राष्ट्रीयता"),
+        ],
+        3015: [
+            WordExample(thai: "ข่าวเกี่ยวกับพลเมือง", romanization: "phlemueongâ", english: "citizen", hindi: "नागरिक अधिकार हैं"),
+            WordExample(thai: "พลเมืองสำคัญต่อประเทศ", romanization: "phlemueongâ", english: "citizen", hindi: "अच्छा नागरिक बनो"),
+        ],
+        3016: [
+            WordExample(thai: "ข่าวเกี่ยวกับสิทธิ", romanization: "siththiâ", english: "right", hindi: "यह आपका अधिकार है"),
+            WordExample(thai: "สิทธิสำคัญต่อประเทศ", romanization: "siththiâ", english: "right", hindi: "अधिकार की रक्षा करो"),
+        ],
+        3017: [
+            WordExample(thai: "ข่าวเกี่ยวกับหน้าที่", romanization: "hnâathià", english: "duty", hindi: "कर्तव्य निभाओ"),
+            WordExample(thai: "หน้าที่สำคัญต่อประเทศ", romanization: "hnâathià", english: "duty", hindi: "नागरिक कर्तव्य है"),
+        ],
+        3018: [
+            WordExample(thai: "ข่าวเกี่ยวกับเสรีภาพ", romanization: "esriphaphâ", english: "freedom", hindi: "स्वतंत्रता अनमोल है"),
+            WordExample(thai: "เสรีภาพสำคัญต่อประเทศ", romanization: "esriphaphâ", english: "freedom", hindi: "अभिव्यक्ति की स्वतंत्रता"),
+        ],
+        3019: [
+            WordExample(thai: "ข่าวเกี่ยวกับความยุติธรรม", romanization: "khwamyutithrrmâ", english: "justice", hindi: "न्याय चाहिए"),
+            WordExample(thai: "ความยุติธรรมสำคัญต่อประเทศ", romanization: "khwamyutithrrmâ", english: "justice", hindi: "न्याय मिलना चाहिए"),
+        ],
+        3020: [
+            WordExample(thai: "ข่าวเกี่ยวกับคอร์รัปชัน", romanization: "khorrapchanâ", english: "corruption", hindi: "भ्रष्टाचार बंद करो"),
+            WordExample(thai: "คอร์รัปชันสำคัญต่อประเทศ", romanization: "khorrapchanâ", english: "corruption", hindi: "भ्रष्टाचार गलत है"),
+        ],
+        3021: [
+            WordExample(thai: "ข่าวเกี่ยวกับประท้วง", romanization: "prathâwng", english: "protest", hindi: "लोग विरोध कर रहे हैं"),
+            WordExample(thai: "ประท้วงสำคัญต่อประเทศ", romanization: "prathâwng", english: "protest", hindi: "शांतिपूर्ण विरोध"),
+        ],
+        3022: [
+            WordExample(thai: "ข่าวเกี่ยวกับสงคราม", romanization: "sngkhramâ", english: "war", hindi: "युद्ध भयानक है"),
+            WordExample(thai: "สงครามสำคัญต่อประเทศ", romanization: "sngkhramâ", english: "war", hindi: "युद्ध बंद हो"),
+        ],
+        3023: [
+            WordExample(thai: "ข่าวเกี่ยวกับสันติภาพ", romanization: "santiphaphâ", english: "peace", hindi: "शांति चाहिए"),
+            WordExample(thai: "สันติภาพสำคัญต่อประเทศ", romanization: "santiphaphâ", english: "peace", hindi: "शांति बनाए रखो"),
+        ],
+        3024: [
+            WordExample(thai: "ข่าวเกี่ยวกับสนธิสัญญา", romanization: "snthisayyaâ", english: "treaty", hindi: "संधि पर हस्ताक्षर हुए"),
+            WordExample(thai: "สนธิสัญญาสำคัญต่อประเทศ", romanization: "snthisayyaâ", english: "treaty", hindi: "नई संधि बनी"),
+        ],
+        3025: [
+            WordExample(thai: "ข่าวเกี่ยวกับสถานทูต", romanization: "sthanthutâ", english: "embassy", hindi: "दूतावास जाओ"),
+            WordExample(thai: "สถานทูตสำคัญต่อประเทศ", romanization: "sthanthutâ", english: "embassy", hindi: "दूतावास में वीज़ा लो"),
+        ],
+        3026: [
+            WordExample(thai: "ข่าวเกี่ยวกับกงสุล", romanization: "kngsulâ", english: "consulate", hindi: "कांसुलेट खुला है"),
+            WordExample(thai: "กงสุลสำคัญต่อประเทศ", romanization: "kngsulâ", english: "consulate", hindi: "कांसुलेट में मदद मिलती है"),
+        ],
+        3027: [
+            WordExample(thai: "ข่าวเกี่ยวกับภาษีเงินได้", romanization: "phasienginaidâ", english: "income tax", hindi: "आयकर भरना है"),
+            WordExample(thai: "ภาษีเงินได้สำคัญต่อประเทศ", romanization: "phasienginaidâ", english: "income tax", hindi: "आयकर कितना है?"),
+        ],
+        3028: [
+            WordExample(thai: "ข่าวเกี่ยวกับงบแผ่นดิน", romanization: "ngbaephàndin", english: "national budget", hindi: "राष्ट्रीय बजट घोषित हुआ"),
+            WordExample(thai: "งบแผ่นดินสำคัญต่อประเทศ", romanization: "ngbaephàndin", english: "national budget", hindi: "बजट बढ़ गया"),
+        ],
+        3029: [
+            WordExample(thai: "ข่าวเกี่ยวกับข้าราชการ", romanization: "khâarachkar", english: "civil servant", hindi: "सरकारी कर्मचारी मदद करते हैं"),
+            WordExample(thai: "ข้าราชการสำคัญต่อประเทศ", romanization: "khâarachkar", english: "civil servant", hindi: "सरकारी कर्मचारी दफ़्तर में हैं"),
+        ],
+        3030: [
+            WordExample(thai: "ข่าวเกี่ยวกับเทศบาล", romanization: "ethsbalâ", english: "municipality", hindi: "नगरपालिका सड़क साफ़ करती है"),
+            WordExample(thai: "เทศบาลสำคัญต่อประเทศ", romanization: "ethsbalâ", english: "municipality", hindi: "नगरपालिका से शिकायत करो"),
+        ],
+        3031: [
+            WordExample(thai: "ข่าวเกี่ยวกับตำบล", romanization: "tamblâ", english: "subdistrict", hindi: "यह उपज़िला छोटा है"),
+            WordExample(thai: "ตำบลสำคัญต่อประเทศ", romanization: "tamblâ", english: "subdistrict", hindi: "उपज़िला कार्यालय"),
+        ],
+        3032: [
+            WordExample(thai: "ข่าวเกี่ยวกับเมืองหลวง", romanization: "emueonghlwngâ", english: "capital city", hindi: "राजधानी बैंकॉक है"),
+            WordExample(thai: "เมืองหลวงสำคัญต่อประเทศ", romanization: "emueonghlwngâ", english: "capital city", hindi: "राजधानी घूमो"),
+        ],
+        3033: [
+            WordExample(thai: "ฉันอยากไปประเทศไทย", romanization: "praethsaithyâ", english: "Thailand", hindi: "थाईलैंड घूमना है"),
+            WordExample(thai: "ประเทศไทยสวยมาก", romanization: "praethsaithyâ", english: "Thailand", hindi: "थाईलैंड गर्म है"),
+        ],
+        3034: [
+            WordExample(thai: "ฉันอยากไปประเทศอินเดีย", romanization: "praethsoinediyâ", english: "India (geography)", hindi: "भारत बड़ा देश है"),
+            WordExample(thai: "ประเทศอินเดียสวยมาก", romanization: "praethsoinediyâ", english: "India (geography)", hindi: "भारत जाओ"),
+        ],
+        3035: [
+            WordExample(thai: "ฉันอยากไปประเทศจีน", romanization: "praethsjinâ", english: "China", hindi: "चीन दूर है"),
+            WordExample(thai: "ประเทศจีนสวยมาก", romanization: "praethsjinâ", english: "China", hindi: "चीन घूमो"),
+        ],
+        3036: [
+            WordExample(thai: "ฉันอยากไปประเทศญี่ปุ่น", romanization: "praethsyiàpuàn", english: "Japan", hindi: "जापान सुंदर है"),
+            WordExample(thai: "ประเทศญี่ปุ่นสวยมาก", romanization: "praethsyiàpuàn", english: "Japan", hindi: "जापान जाऊँगा"),
+        ],
+        3037: [
+            WordExample(thai: "ฉันอยากไปประเทศเกาหลี", romanization: "praethsekahliâ", english: "Korea", hindi: "कोरिया लोकप्रिय है"),
+            WordExample(thai: "ประเทศเกาหลีสวยมาก", romanization: "praethsekahliâ", english: "Korea", hindi: "कोरिया घूमो"),
+        ],
+        3038: [
+            WordExample(thai: "ฉันอยากไปประเทศลาว", romanization: "praethslawâ", english: "Laos", hindi: "लाओस पड़ोसी देश है"),
+            WordExample(thai: "ประเทศลาวสวยมาก", romanization: "praethslawâ", english: "Laos", hindi: "लाओस शांत है"),
+        ],
+        3039: [
+            WordExample(thai: "ฉันอยากไปประเทศกัมพูชา", romanization: "praethskamphuchaâ", english: "Cambodia", hindi: "कंबोडिया में मंदिर हैं"),
+            WordExample(thai: "ประเทศกัมพูชาสวยมาก", romanization: "praethskamphuchaâ", english: "Cambodia", hindi: "कंबोडिया जाओ"),
+        ],
+        3040: [
+            WordExample(thai: "ฉันอยากไปประเทศเวียดนาม", romanization: "praethsewiydnamâ", english: "Vietnam", hindi: "वियतनाम का खाना अच्छा है"),
+            WordExample(thai: "ประเทศเวียดนามสวยมาก", romanization: "praethsewiydnamâ", english: "Vietnam", hindi: "वियतनाम घूमो"),
+        ],
+        3041: [
+            WordExample(thai: "ฉันอยากไปประเทศพม่า", romanization: "praethsphmàa", english: "Myanmar", hindi: "म्यांमार पड़ोस में है"),
+            WordExample(thai: "ประเทศพม่าสวยมาก", romanization: "praethsphmàa", english: "Myanmar", hindi: "म्यांमार देखो"),
+        ],
+        3042: [
+            WordExample(thai: "ฉันอยากไปประเทศมาเลเซีย", romanization: "praethsmaelesiyâ", english: "Malaysia", hindi: "मलेशिया विविध है"),
+            WordExample(thai: "ประเทศมาเลเซียสวยมาก", romanization: "praethsmaelesiyâ", english: "Malaysia", hindi: "मलेशिया जाओ"),
+        ],
+        3043: [
+            WordExample(thai: "ฉันอยากไปประเทศสิงคโปร์", romanization: "praethssingkhoprâ", english: "Singapore", hindi: "सिंगापुर साफ़ है"),
+            WordExample(thai: "ประเทศสิงคโปร์สวยมาก", romanization: "praethssingkhoprâ", english: "Singapore", hindi: "सिंगापुर छोटा देश है"),
+        ],
+        3044: [
+            WordExample(thai: "ฉันอยากไปประเทศอินโดนีเซีย", romanization: "praethsoinodniesiyâ", english: "Indonesia", hindi: "इंडोनेशिया द्वीपों का देश है"),
+            WordExample(thai: "ประเทศอินโดนีเซียสวยมาก", romanization: "praethsoinodniesiyâ", english: "Indonesia", hindi: "इंडोनेशिया घूमो"),
+        ],
+        3045: [
+            WordExample(thai: "ฉันอยากไปประเทศฟิลิปปินส์", romanization: "praethsfilippinsâ", english: "Philippines", hindi: "फ़िलिपींस द्वीप हैं"),
+            WordExample(thai: "ประเทศฟิลิปปินส์สวยมาก", romanization: "praethsfilippinsâ", english: "Philippines", hindi: "फ़िलिपींस जाओ"),
+        ],
+        3046: [
+            WordExample(thai: "ฉันอยากไปประเทศอังกฤษ", romanization: "praethsoangkruesâ", english: "England", hindi: "इंग्लैंड ठंडा है"),
+            WordExample(thai: "ประเทศอังกฤษสวยมาก", romanization: "praethsoangkruesâ", english: "England", hindi: "इंग्लैंड घूमो"),
+        ],
+    ]
+
+
+    private static let examples9: [Int: [WordExample]] = [
+        3047: [
+            WordExample(thai: "นี่คือประเทศฝรั่งเศส", romanization: "นี่คือbpra-thêt-fà-ràng-sèt", english: "France", hindi: "यह फ़्रांस है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประเทศฝรั่งเศส", romanization: "ฉันกำลังเรียนรู้คำว่าbpra-thêt-fà-ràng-sèt", english: "France", hindi: "यह फ़्रांस है"),
+        ],
+        3048: [
+            WordExample(thai: "นี่คือประเทศเยอรมนี", romanization: "นี่คือbpra-thêt-yoe-ra-maa-nee", english: "Germany", hindi: "यह जर्मनी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประเทศเยอรมนี", romanization: "ฉันกำลังเรียนรู้คำว่าbpra-thêt-yoe-ra-maa-nee", english: "Germany", hindi: "यह जर्मनी है"),
+        ],
+        3049: [
+            WordExample(thai: "นี่คือประเทศรัสเซีย", romanization: "นี่คือbpra-thêt-rát-sia", english: "Russia", hindi: "यह रूस है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประเทศรัสเซีย", romanization: "ฉันกำลังเรียนรู้คำว่าbpra-thêt-rát-sia", english: "Russia", hindi: "यह रूस है"),
+        ],
+        3050: [
+            WordExample(thai: "นี่คือประเทศอเมริกา", romanization: "นี่คือbpra-thêt-a-may-ri-kaa", english: "America", hindi: "यह अमेरिका है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประเทศอเมริกา", romanization: "ฉันกำลังเรียนรู้คำว่าbpra-thêt-a-may-ri-kaa", english: "America", hindi: "यह अमेरिका है"),
+        ],
+        3051: [
+            WordExample(thai: "นี่คือประเทศออสเตรเลีย", romanization: "นี่คือbpra-thêt-awt-sà-tray-lia", english: "Australia", hindi: "यह ऑस्ट्रेलिया है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประเทศออสเตรเลีย", romanization: "ฉันกำลังเรียนรู้คำว่าbpra-thêt-awt-sà-tray-lia", english: "Australia", hindi: "यह ऑस्ट्रेलिया है"),
+        ],
+        3052: [
+            WordExample(thai: "นี่คือทวีป", romanization: "นี่คือtá-wêep", english: "continent", hindi: "यह महाद्वीप है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าทวีป", romanization: "ฉันกำลังเรียนรู้คำว่าtá-wêep", english: "continent", hindi: "यह महाद्वीप है"),
+        ],
+        3053: [
+            WordExample(thai: "นี่คือเอเชีย", romanization: "นี่คือay-chia", english: "Asia", hindi: "यह एशिया है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเอเชีย", romanization: "ฉันกำลังเรียนรู้คำว่าay-chia", english: "Asia", hindi: "यह एशिया है"),
+        ],
+        3054: [
+            WordExample(thai: "นี่คือยุโรป", romanization: "นี่คือyoo-ròpe", english: "Europe", hindi: "यह यूरोप है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ายุโรป", romanization: "ฉันกำลังเรียนรู้คำว่าyoo-ròpe", english: "Europe", hindi: "यह यूरोप है"),
+        ],
+        3055: [
+            WordExample(thai: "นี่คือแอฟริกา", romanization: "นี่คือaep-rí-kaa", english: "Africa", hindi: "यह अफ़्रीका है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าแอฟริกา", romanization: "ฉันกำลังเรียนรู้คำว่าaep-rí-kaa", english: "Africa", hindi: "यह अफ़्रीका है"),
+        ],
+        3056: [
+            WordExample(thai: "นี่คือมหาสมุทร", romanization: "นี่คือmá-hǎa-sà-mùt", english: "ocean", hindi: "यह महासागर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามหาสมุทร", romanization: "ฉันกำลังเรียนรู้คำว่าmá-hǎa-sà-mùt", english: "ocean", hindi: "यह महासागर है"),
+        ],
+        3057: [
+            WordExample(thai: "นี่คือช่องแคบ", romanization: "นี่คือchâawng-kâep", english: "strait", hindi: "यह जलडमरूमध्य है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าช่องแคบ", romanization: "ฉันกำลังเรียนรู้คำว่าchâawng-kâep", english: "strait", hindi: "यह जलडमरूमध्य है"),
+        ],
+        3058: [
+            WordExample(thai: "นี่คือคาบสมุทร", romanization: "นี่คือkâap-sà-mùt", english: "peninsula", hindi: "यह प्रायद्वीप है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าคาบสมุทร", romanization: "ฉันกำลังเรียนรู้คำว่าkâap-sà-mùt", english: "peninsula", hindi: "यह प्रायद्वीप है"),
+        ],
+        3059: [
+            WordExample(thai: "นี่คือที่ราบ", romanization: "นี่คือtêe-râap", english: "plain", hindi: "यह मैदान है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าที่ราบ", romanization: "ฉันกำลังเรียนรู้คำว่าtêe-râap", english: "plain", hindi: "यह मैदान है"),
+        ],
+        3060: [
+            WordExample(thai: "นี่คือที่ราบสูง", romanization: "นี่คือtêe-râap-sǔung", english: "plateau", hindi: "यह पठार है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าที่ราบสูง", romanization: "ฉันกำลังเรียนรู้คำว่าtêe-râap-sǔung", english: "plateau", hindi: "यह पठार है"),
+        ],
+        3061: [
+            WordExample(thai: "นี่คือยอดเขา", romanization: "นี่คือyâawt-kǎo", english: "summit", hindi: "यह पर्वत-शिखर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ายอดเขา", romanization: "ฉันกำลังเรียนรู้คำว่าyâawt-kǎo", english: "summit", hindi: "यह पर्वत-शिखर है"),
+        ],
+        3062: [
+            WordExample(thai: "นี่คือบึง", romanization: "นี่คือbeung", english: "swamp", hindi: "यह दलदल है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าบึง", romanization: "ฉันกำลังเรียนรู้คำว่าbeung", english: "swamp", hindi: "यह दलदल है"),
+        ],
+        3063: [
+            WordExample(thai: "นี่คือทะเลทราย", romanization: "นี่คือtá-lay-saai", english: "desert", hindi: "यह रेगिस्तान है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าทะเลทราย", romanization: "ฉันกำลังเรียนรู้คำว่าtá-lay-saai", english: "desert", hindi: "यह रेगिस्तान है"),
+        ],
+        3064: [
+            WordExample(thai: "นี่คือป่าดิบ", romanization: "นี่คือbpàa-dìp", english: "rainforest (geography)", hindi: "यह वर्षावन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าป่าดิบ", romanization: "ฉันกำลังเรียนรู้คำว่าbpàa-dìp", english: "rainforest (geography)", hindi: "यह वर्षावन है"),
+        ],
+        3065: [
+            WordExample(thai: "นี่คือขั้วโลก", romanization: "นี่คือkûa-lôke", english: "pole", hindi: "यह ध्रुव है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าขั้วโลก", romanization: "ฉันกำลังเรียนรู้คำว่าkûa-lôke", english: "pole", hindi: "यह ध्रुव है"),
+        ],
+        3066: [
+            WordExample(thai: "นี่คือเส้นศูนย์สูตร", romanization: "นี่คือsên-sǔun-sùut", english: "equator", hindi: "यह भूमध्य रेखा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเส้นศูนย์สูตร", romanization: "ฉันกำลังเรียนรู้คำว่าsên-sǔun-sùut", english: "equator", hindi: "यह भूमध्य रेखा है"),
+        ],
+        3067: [
+            WordExample(thai: "นี่คือเข็มทิศ", romanization: "นี่คือkĕm-tít", english: "compass", hindi: "यह दिशासूचक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเข็มทิศ", romanization: "ฉันกำลังเรียนรู้คำว่าkĕm-tít", english: "compass", hindi: "यह दिशासूचक है"),
+        ],
+        3068: [
+            WordExample(thai: "นี่คือละติจูด", romanization: "นี่คือlá-dtì-jòot", english: "latitude", hindi: "यह अक्षांश है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าละติจูด", romanization: "ฉันกำลังเรียนรู้คำว่าlá-dtì-jòot", english: "latitude", hindi: "यह अक्षांश है"),
+        ],
+        3069: [
+            WordExample(thai: "นี่คือลองจิจูด", romanization: "นี่คือlawng-jì-jòot", english: "longitude", hindi: "यह देशांतर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าลองจิจูด", romanization: "ฉันกำลังเรียนรู้คำว่าlawng-jì-jòot", english: "longitude", hindi: "यह देशांतर है"),
+        ],
+        3070: [
+            WordExample(thai: "นี่คือพรมแดน", romanization: "นี่คือprom-daen", english: "border", hindi: "यह सीमा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพรมแดน", romanization: "ฉันกำลังเรียนรู้คำว่าprom-daen", english: "border", hindi: "यह सीमा है"),
+        ],
+        3071: [
+            WordExample(thai: "นี่คือชายแดน", romanization: "นี่คือchaai-daen", english: "frontier", hindi: "यह सरहद है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าชายแดน", romanization: "ฉันกำลังเรียนรู้คำว่าchaai-daen", english: "frontier", hindi: "यह सरहद है"),
+        ],
+        3072: [
+            WordExample(thai: "นี่คือภูมิภาค", romanization: "นี่คือpoom-mí-pâak", english: "region", hindi: "यह क्षेत्र है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าภูมิภาค", romanization: "ฉันกำลังเรียนรู้คำว่าpoom-mí-pâak", english: "region", hindi: "यह क्षेत्र है"),
+        ],
+        3073: [
+            WordExample(thai: "นี่คือประชากร", romanization: "นี่คือbprà-chaa-kawn", english: "population", hindi: "यह जनसंख्या है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประชากร", romanization: "ฉันกำลังเรียนรู้คำว่าbprà-chaa-kawn", english: "population", hindi: "यह जनसंख्या है"),
+        ],
+        3074: [
+            WordExample(thai: "นี่คือศาสนา", romanization: "นี่คือsàat-sà-nǎa", english: "religion", hindi: "यह धर्म है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าศาสนา", romanization: "ฉันกำลังเรียนรู้คำว่าsàat-sà-nǎa", english: "religion", hindi: "यह धर्म है"),
+        ],
+        3075: [
+            WordExample(thai: "นี่คือพุทธศาสนา", romanization: "นี่คือpút-tá-sàat-sà-nǎa", english: "Buddhism", hindi: "यह बौद्ध धर्म है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพุทธศาสนา", romanization: "ฉันกำลังเรียนรู้คำว่าpút-tá-sàat-sà-nǎa", english: "Buddhism", hindi: "यह बौद्ध धर्म है"),
+        ],
+        3076: [
+            WordExample(thai: "นี่คือศาสนาฮินดู", romanization: "นี่คือsàat-sà-nǎa-hin-doo", english: "Hinduism", hindi: "यह हिंदू धर्म है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าศาสนาฮินดู", romanization: "ฉันกำลังเรียนรู้คำว่าsàat-sà-nǎa-hin-doo", english: "Hinduism", hindi: "यह हिंदू धर्म है"),
+        ],
+        3077: [
+            WordExample(thai: "นี่คือศาสนาคริสต์", romanization: "นี่คือsàat-sà-nǎa-krít", english: "Christianity", hindi: "यह ईसाई धर्म है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าศาสนาคริสต์", romanization: "ฉันกำลังเรียนรู้คำว่าsàat-sà-nǎa-krít", english: "Christianity", hindi: "यह ईसाई धर्म है"),
+        ],
+        3078: [
+            WordExample(thai: "นี่คือศาสนาอิสลาม", romanization: "นี่คือsàat-sà-nǎa-ìt-sà-laam", english: "Islam", hindi: "यह इस्लाम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าศาสนาอิสลาม", romanization: "ฉันกำลังเรียนรู้คำว่าsàat-sà-nǎa-ìt-sà-laam", english: "Islam", hindi: "यह इस्लाम है"),
+        ],
+        3079: [
+            WordExample(thai: "นี่คือพระพุทธเจ้า", romanization: "นี่คือprá-pút-tá-jâao", english: "the Buddha", hindi: "यह बुद्ध है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพระพุทธเจ้า", romanization: "ฉันกำลังเรียนรู้คำว่าprá-pút-tá-jâao", english: "the Buddha", hindi: "यह बुद्ध है"),
+        ],
+        3080: [
+            WordExample(thai: "นี่คือพระเจ้า", romanization: "นี่คือprá-jâao", english: "God", hindi: "यह ईश्वर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพระเจ้า", romanization: "ฉันกำลังเรียนรู้คำว่าprá-jâao", english: "God", hindi: "यह ईश्वर है"),
+        ],
+        3081: [
+            WordExample(thai: "นี่คือเทพเจ้า", romanization: "นี่คือtâyp-pá-jâao", english: "deity", hindi: "यह देवता है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเทพเจ้า", romanization: "ฉันกำลังเรียนรู้คำว่าtâyp-pá-jâao", english: "deity", hindi: "यह देवता है"),
+        ],
+        3082: [
+            WordExample(thai: "นี่คือวิญญาณ", romanization: "นี่คือwin-yaan", english: "spirit", hindi: "यह आत्मा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าวิญญาณ", romanization: "ฉันกำลังเรียนรู้คำว่าwin-yaan", english: "spirit", hindi: "यह आत्मा है"),
+        ],
+        3083: [
+            WordExample(thai: "นี่คือสวรรค์", romanization: "นี่คือsà-wǎn", english: "heaven", hindi: "यह स्वर्ग है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสวรรค์", romanization: "ฉันกำลังเรียนรู้คำว่าsà-wǎn", english: "heaven", hindi: "यह स्वर्ग है"),
+        ],
+        3084: [
+            WordExample(thai: "นี่คือนรก", romanization: "นี่คือná-rók", english: "hell", hindi: "यह नरक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่านรก", romanization: "ฉันกำลังเรียนรู้คำว่าná-rók", english: "hell", hindi: "यह नरक है"),
+        ],
+        3085: [
+            WordExample(thai: "นี่คือกรรม", romanization: "นี่คือkam", english: "karma", hindi: "यह कर्म है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากรรม", romanization: "ฉันกำลังเรียนรู้คำว่าkam", english: "karma", hindi: "यह कर्म है"),
+        ],
+        3086: [
+            WordExample(thai: "นี่คือบุญ", romanization: "นี่คือbun", english: "merit", hindi: "यह पुण्य है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าบุญ", romanization: "ฉันกำลังเรียนรู้คำว่าbun", english: "merit", hindi: "यह पुण्य है"),
+        ],
+        3087: [
+            WordExample(thai: "นี่คือบาป", romanization: "นี่คือbàap", english: "sin", hindi: "यह पाप है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าบาป", romanization: "ฉันกำลังเรียนรู้คำว่าbàap", english: "sin", hindi: "यह पाप है"),
+        ],
+        3088: [
+            WordExample(thai: "นี่คือชาติหน้า", romanization: "นี่คือchâat-nâa", english: "next life", hindi: "यह अगला जन्म है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าชาติหน้า", romanization: "ฉันกำลังเรียนรู้คำว่าchâat-nâa", english: "next life", hindi: "यह अगला जन्म है"),
+        ],
+        3089: [
+            WordExample(thai: "นี่คือนิพพาน", romanization: "นี่คือníp-paan", english: "nirvana", hindi: "यह निर्वाण है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่านิพพาน", romanization: "ฉันกำลังเรียนรู้คำว่าníp-paan", english: "nirvana", hindi: "यह निर्वाण है"),
+        ],
+        3090: [
+            WordExample(thai: "นี่คือไหว้", romanization: "นี่คือwâai", english: "pay respect", hindi: "यह नमस्कार करना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าไหว้", romanization: "ฉันกำลังเรียนรู้คำว่าwâai", english: "pay respect", hindi: "यह नमस्कार करना है"),
+        ],
+        3091: [
+            WordExample(thai: "นี่คือบิณฑบาต", romanization: "นี่คือbin-dtà-bàat", english: "alms round", hindi: "यह भिक्षा-यात्रा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าบิณฑบาต", romanization: "ฉันกำลังเรียนรู้คำว่าbin-dtà-bàat", english: "alms round", hindi: "यह भिक्षा-यात्रा है"),
+        ],
+        3092: [
+            WordExample(thai: "นี่คือวัดวาอาราม", romanization: "นี่คือwát-waa-aa-raam", english: "temple grounds", hindi: "यह मंदिर परिसर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าวัดวาอาราม", romanization: "ฉันกำลังเรียนรู้คำว่าwát-waa-aa-raam", english: "temple grounds", hindi: "यह मंदिर परिसर है"),
+        ],
+        3093: [
+            WordExample(thai: "นี่คือศาลพระภูมิ", romanization: "นี่คือsǎan-prá-poom", english: "spirit house", hindi: "यह आत्मा-घर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าศาลพระภูมิ", romanization: "ฉันกำลังเรียนรู้คำว่าsǎan-prá-poom", english: "spirit house", hindi: "यह आत्मा-घर है"),
+        ],
+        3094: [
+            WordExample(thai: "นี่คือโบสถ์", romanization: "นี่คือbòot", english: "church, ordination hall", hindi: "यह गिरजाघर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าโบสถ์", romanization: "ฉันกำลังเรียนรู้คำว่าbòot", english: "church, ordination hall", hindi: "यह गिरजाघर है"),
+        ],
+        3095: [
+            WordExample(thai: "นี่คือมัสยิด", romanization: "นี่คือmát-yít", english: "mosque", hindi: "यह मस्जिद है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามัสยิด", romanization: "ฉันกำลังเรียนรู้คำว่าmát-yít", english: "mosque", hindi: "यह मस्जिद है"),
+        ],
+        3096: [
+            WordExample(thai: "นี่คือพิธีกรรม", romanization: "นี่คือpí-tee-kam", english: "ritual", hindi: "यह अनुष्ठान है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพิธีกรรม", romanization: "ฉันกำลังเรียนรู้คำว่าpí-tee-kam", english: "ritual", hindi: "यह अनुष्ठान है"),
+        ],
+        3097: [
+            WordExample(thai: "นี่คืองานศพ", romanization: "นี่คือngaan-sòp", english: "funeral", hindi: "यह अंत्येष्टि है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่างานศพ", romanization: "ฉันกำลังเรียนรู้คำว่าngaan-sòp", english: "funeral", hindi: "यह अंत्येष्टि है"),
+        ],
+        3098: [
+            WordExample(thai: "นี่คืองานแต่งงาน", romanization: "นี่คือngaan-dtàeng-ngaan", english: "wedding", hindi: "यह विवाह है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่างานแต่งงาน", romanization: "ฉันกำลังเรียนรู้คำว่าngaan-dtàeng-ngaan", english: "wedding", hindi: "यह विवाह है"),
+        ],
+        3099: [
+            WordExample(thai: "นี่คือเผา", romanization: "นี่คือpào", english: "cremate", hindi: "यह दाह करना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเผา", romanization: "ฉันกำลังเรียนรู้คำว่าpào", english: "cremate", hindi: "यह दाह करना है"),
+        ],
+        3100: [
+            WordExample(thai: "นี่คือโชคลาง", romanization: "นี่คือchôke-laang", english: "superstition", hindi: "यह अंधविश्वास है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าโชคลาง", romanization: "ฉันกำลังเรียนรู้คำว่าchôke-laang", english: "superstition", hindi: "यह अंधविश्वास है"),
+        ],
+        3101: [
+            WordExample(thai: "นี่คือเครื่องราง", romanization: "นี่คือkrûeang-raang", english: "amulet", hindi: "यह ताबीज़ है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเครื่องราง", romanization: "ฉันกำลังเรียนรู้คำว่าkrûeang-raang", english: "amulet", hindi: "यह ताबीज़ है"),
+        ],
+        3102: [
+            WordExample(thai: "นี่คือดวงชะตา", romanization: "นี่คือduang-chá-dtaa", english: "fate", hindi: "यह भाग्य है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าดวงชะตา", romanization: "ฉันกำลังเรียนรู้คำว่าduang-chá-dtaa", english: "fate", hindi: "यह भाग्य है"),
+        ],
+        3103: [
+            WordExample(thai: "นี่คือหมอดู", romanization: "นี่คือmǎaw-doo", english: "fortune teller", hindi: "यह ज्योतिषी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าหมอดู", romanization: "ฉันกำลังเรียนรู้คำว่าmǎaw-doo", english: "fortune teller", hindi: "यह ज्योतिषी है"),
+        ],
+        3104: [
+            WordExample(thai: "นี่คือเมตร", romanization: "นี่คือmét", english: "metre", hindi: "यह मीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเมตร", romanization: "ฉันกำลังเรียนรู้คำว่าmét", english: "metre", hindi: "यह मीटर है"),
+        ],
+        3105: [
+            WordExample(thai: "นี่คือเซนติเมตร", romanization: "นี่คือsayn-dtì-mét", english: "centimetre", hindi: "यह सेंटीमीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเซนติเมตร", romanization: "ฉันกำลังเรียนรู้คำว่าsayn-dtì-mét", english: "centimetre", hindi: "यह सेंटीमीटर है"),
+        ],
+        3106: [
+            WordExample(thai: "นี่คือมิลลิเมตร", romanization: "นี่คือmin-lí-mét", english: "millimetre", hindi: "यह मिलीमीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามิลลิเมตร", romanization: "ฉันกำลังเรียนรู้คำว่าmin-lí-mét", english: "millimetre", hindi: "यह मिलीमीटर है"),
+        ],
+        3107: [
+            WordExample(thai: "นี่คือกิโลเมตร", romanization: "นี่คือkì-loo-mét", english: "kilometre", hindi: "यह किलोमीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากิโลเมตร", romanization: "ฉันกำลังเรียนรู้คำว่าkì-loo-mét", english: "kilometre", hindi: "यह किलोमीटर है"),
+        ],
+        3108: [
+            WordExample(thai: "นี่คือฟุต", romanization: "นี่คือfút", english: "foot (measure)", hindi: "यह फुट है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าฟุต", romanization: "ฉันกำลังเรียนรู้คำว่าfút", english: "foot (measure)", hindi: "यह फुट है"),
+        ],
+        3109: [
+            WordExample(thai: "นี่คือไมล์", romanization: "นี่คือmai", english: "mile", hindi: "यह मील है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าไมล์", romanization: "ฉันกำลังเรียนรู้คำว่าmai", english: "mile", hindi: "यह मील है"),
+        ],
+        3110: [
+            WordExample(thai: "นี่คือกรัม", romanization: "นี่คือkram", english: "gram", hindi: "यह ग्राम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากรัม", romanization: "ฉันกำลังเรียนรู้คำว่าkram", english: "gram", hindi: "यह ग्राम है"),
+        ],
+        3111: [
+            WordExample(thai: "นี่คือกิโลกรัม", romanization: "นี่คือkì-loo-kram", english: "kilogram (measure)", hindi: "यह किलोग्राम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากิโลกรัม", romanization: "ฉันกำลังเรียนรู้คำว่าkì-loo-kram", english: "kilogram (measure)", hindi: "यह किलोग्राम है"),
+        ],
+        3112: [
+            WordExample(thai: "นี่คือตัน", romanization: "นี่คือdtan", english: "tonne", hindi: "यह टन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าตัน", romanization: "ฉันกำลังเรียนรู้คำว่าdtan", english: "tonne", hindi: "यह टन है"),
+        ],
+        3113: [
+            WordExample(thai: "นี่คือลิตร", romanization: "นี่คือlít", english: "litre", hindi: "यह लीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าลิตร", romanization: "ฉันกำลังเรียนรู้คำว่าlít", english: "litre", hindi: "यह लीटर है"),
+        ],
+        3114: [
+            WordExample(thai: "นี่คือมิลลิลิตร", romanization: "นี่คือmin-lí-lít", english: "millilitre", hindi: "यह मिलीलीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามิลลิลิตร", romanization: "ฉันกำลังเรียนรู้คำว่าmin-lí-lít", english: "millilitre", hindi: "यह मिलीलीटर है"),
+        ],
+        3115: [
+            WordExample(thai: "นี่คือแกลลอน", romanization: "นี่คือkaen-lawn", english: "gallon", hindi: "यह गैलन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าแกลลอน", romanization: "ฉันกำลังเรียนรู้คำว่าkaen-lawn", english: "gallon", hindi: "यह गैलन है"),
+        ],
+        3116: [
+            WordExample(thai: "นี่คือตารางเมตร", romanization: "นี่คือdtaa-raang-mét", english: "square metre", hindi: "यह वर्ग मीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าตารางเมตร", romanization: "ฉันกำลังเรียนรู้คำว่าdtaa-raang-mét", english: "square metre", hindi: "यह वर्ग मीटर है"),
+        ],
+        3117: [
+            WordExample(thai: "นี่คือลูกบาศก์เมตร", romanization: "นี่คือlûuk-bàat-mét", english: "cubic metre", hindi: "यह घन मीटर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าลูกบาศก์เมตร", romanization: "ฉันกำลังเรียนรู้คำว่าlûuk-bàat-mét", english: "cubic metre", hindi: "यह घन मीटर है"),
+        ],
+        3118: [
+            WordExample(thai: "นี่คือไร่", romanization: "นี่คือrâi", english: "rai (land unit)", hindi: "यह राई है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าไร่", romanization: "ฉันกำลังเรียนรู้คำว่าrâi", english: "rai (land unit)", hindi: "यह राई है"),
+        ],
+        3119: [
+            WordExample(thai: "นี่คือเปอร์เซ็นต์", romanization: "นี่คือbpoe-sen", english: "percent", hindi: "यह प्रतिशत है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเปอร์เซ็นต์", romanization: "ฉันกำลังเรียนรู้คำว่าbpoe-sen", english: "percent", hindi: "यह प्रतिशत है"),
+        ],
+        3120: [
+            WordExample(thai: "นี่คือเศษหนึ่งส่วนสี่", romanization: "นี่คือsèt-nèung-sùan-sèe", english: "one quarter", hindi: "यह एक चौथाई है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเศษหนึ่งส่วนสี่", romanization: "ฉันกำลังเรียนรู้คำว่าsèt-nèung-sùan-sèe", english: "one quarter", hindi: "यह एक चौथाई है"),
+        ],
+        3121: [
+            WordExample(thai: "นี่คือสองเท่า", romanization: "นี่คือsǎawng-tâo", english: "double", hindi: "यह दोगुना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสองเท่า", romanization: "ฉันกำลังเรียนรู้คำว่าsǎawng-tâo", english: "double", hindi: "यह दोगुना है"),
+        ],
+        3122: [
+            WordExample(thai: "นี่คือสามเท่า", romanization: "นี่คือsǎam-tâo", english: "triple", hindi: "यह तीन गुना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสามเท่า", romanization: "ฉันกำลังเรียนรู้คำว่าsǎam-tâo", english: "triple", hindi: "यह तीन गुना है"),
+        ],
+        3123: [
+            WordExample(thai: "นี่คือความยาว", romanization: "นี่คือkhwaam-yaao", english: "length", hindi: "यह लंबाई है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความยาว", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-yaao", english: "length", hindi: "यह लंबाई है"),
+        ],
+        3124: [
+            WordExample(thai: "นี่คือความกว้าง", romanization: "นี่คือkhwaam-kwâang", english: "width", hindi: "यह चौड़ाई है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความกว้าง", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-kwâang", english: "width", hindi: "यह चौड़ाई है"),
+        ],
+        3125: [
+            WordExample(thai: "นี่คือความสูง", romanization: "นี่คือkhwaam-sǔung", english: "height", hindi: "यह ऊँचाई है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความสูง", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-sǔung", english: "height", hindi: "यह ऊँचाई है"),
+        ],
+        3126: [
+            WordExample(thai: "นี่คือความลึก", romanization: "นี่คือkhwaam-léuk", english: "depth", hindi: "यह गहराई है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความลึก", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-léuk", english: "depth", hindi: "यह गहराई है"),
+        ],
+        3127: [
+            WordExample(thai: "นี่คือปริมาตร", romanization: "นี่คือbpà-rí-maan", english: "volume", hindi: "यह आयतन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าปริมาตร", romanization: "ฉันกำลังเรียนรู้คำว่าbpà-rí-maan", english: "volume", hindi: "यह आयतन है"),
+        ],
+        3128: [
+            WordExample(thai: "นี่คือพื้นที่", romanization: "นี่คือpéun-têe", english: "area", hindi: "यह क्षेत्रफल है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพื้นที่", romanization: "ฉันกำลังเรียนรู้คำว่าpéun-têe", english: "area", hindi: "यह क्षेत्रफल है"),
+        ],
+        3129: [
+            WordExample(thai: "นี่คือความเร็ว", romanization: "นี่คือkhwaam-reo", english: "speed", hindi: "यह गति है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความเร็ว", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-reo", english: "speed", hindi: "यह गति है"),
+        ],
+        3130: [
+            WordExample(thai: "นี่คือความดัน", romanization: "นี่คือkhwaam-dan", english: "pressure", hindi: "यह दबाव है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความดัน", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-dan", english: "pressure", hindi: "यह दबाव है"),
+        ],
+        3131: [
+            WordExample(thai: "นี่คือวงกลม", romanization: "นี่คือwong-klom", english: "circle", hindi: "यह वृत्त है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าวงกลม", romanization: "ฉันกำลังเรียนรู้คำว่าwong-klom", english: "circle", hindi: "यह वृत्त है"),
+        ],
+        3132: [
+            WordExample(thai: "นี่คือสี่เหลี่ยม", romanization: "นี่คือsèe-lìam", english: "square (shapes)", hindi: "यह वर्ग है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสี่เหลี่ยม", romanization: "ฉันกำลังเรียนรู้คำว่าsèe-lìam", english: "square (shapes)", hindi: "यह वर्ग है"),
+        ],
+        3133: [
+            WordExample(thai: "นี่คือสามเหลี่ยม", romanization: "นี่คือsǎam-lìam", english: "triangle", hindi: "यह त्रिभुज है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสามเหลี่ยม", romanization: "ฉันกำลังเรียนรู้คำว่าsǎam-lìam", english: "triangle", hindi: "यह त्रिभुज है"),
+        ],
+        3134: [
+            WordExample(thai: "นี่คือสี่เหลี่ยมผืนผ้า", romanization: "นี่คือsèe-lìam-pǔen-pâa", english: "rectangle", hindi: "यह आयत है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสี่เหลี่ยมผืนผ้า", romanization: "ฉันกำลังเรียนรู้คำว่าsèe-lìam-pǔen-pâa", english: "rectangle", hindi: "यह आयत है"),
+        ],
+        3135: [
+            WordExample(thai: "นี่คือวงรี", romanization: "นี่คือwong-ree", english: "oval", hindi: "यह अंडाकार है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าวงรี", romanization: "ฉันกำลังเรียนรู้คำว่าwong-ree", english: "oval", hindi: "यह अंडाकार है"),
+        ],
+        3136: [
+            WordExample(thai: "นี่คือห้าเหลี่ยม", romanization: "นี่คือhâa-lìam", english: "pentagon", hindi: "यह पंचभुज है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าห้าเหลี่ยม", romanization: "ฉันกำลังเรียนรู้คำว่าhâa-lìam", english: "pentagon", hindi: "यह पंचभुज है"),
+        ],
+        3137: [
+            WordExample(thai: "นี่คือหกเหลี่ยม", romanization: "นี่คือhòk-lìam", english: "hexagon", hindi: "यह षट्भुज है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าหกเหลี่ยม", romanization: "ฉันกำลังเรียนรู้คำว่าhòk-lìam", english: "hexagon", hindi: "यह षट्भुज है"),
+        ],
+        3138: [
+            WordExample(thai: "นี่คือทรงกลม", romanization: "นี่คือsong-klom", english: "sphere", hindi: "यह गोला है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าทรงกลม", romanization: "ฉันกำลังเรียนรู้คำว่าsong-klom", english: "sphere", hindi: "यह गोला है"),
+        ],
+        3139: [
+            WordExample(thai: "นี่คือลูกบาศก์", romanization: "นี่คือlûuk-bàat", english: "cube", hindi: "यह घन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าลูกบาศก์", romanization: "ฉันกำลังเรียนรู้คำว่าlûuk-bàat", english: "cube", hindi: "यह घन है"),
+        ],
+        3140: [
+            WordExample(thai: "นี่คือทรงกระบอก", romanization: "นี่คือsong-krà-bawk", english: "cylinder", hindi: "यह बेलन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าทรงกระบอก", romanization: "ฉันกำลังเรียนรู้คำว่าsong-krà-bawk", english: "cylinder", hindi: "यह बेलन है"),
+        ],
+        3141: [
+            WordExample(thai: "นี่คือกรวย", romanization: "นี่คือkruay", english: "cone", hindi: "यह शंकु है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากรวย", romanization: "ฉันกำลังเรียนรู้คำว่าkruay", english: "cone", hindi: "यह शंकु है"),
+        ],
+        3142: [
+            WordExample(thai: "นี่คือพีระมิด", romanization: "นี่คือpee-rá-mít", english: "pyramid", hindi: "यह पिरामिड है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพีระมิด", romanization: "ฉันกำลังเรียนรู้คำว่าpee-rá-mít", english: "pyramid", hindi: "यह पिरामिड है"),
+        ],
+        3143: [
+            WordExample(thai: "นี่คือเส้นตรง", romanization: "นี่คือsên-dtrong", english: "straight line", hindi: "यह सीधी रेखा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเส้นตรง", romanization: "ฉันกำลังเรียนรู้คำว่าsên-dtrong", english: "straight line", hindi: "यह सीधी रेखा है"),
+        ],
+        3144: [
+            WordExample(thai: "นี่คือเส้นโค้ง", romanization: "นี่คือsên-kóhng", english: "curve", hindi: "यह वक्र है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเส้นโค้ง", romanization: "ฉันกำลังเรียนรู้คำว่าsên-kóhng", english: "curve", hindi: "यह वक्र है"),
+        ],
+        3145: [
+            WordExample(thai: "นี่คือมุมฉาก", romanization: "นี่คือmum-chàak", english: "right angle", hindi: "यह समकोण है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามุมฉาก", romanization: "ฉันกำลังเรียนรู้คำว่าmum-chàak", english: "right angle", hindi: "यह समकोण है"),
+        ],
+        3146: [
+            WordExample(thai: "นี่คือเส้นขนาน", romanization: "นี่คือsên-kà-nǎan", english: "parallel line", hindi: "यह समानांतर रेखा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเส้นขนาน", romanization: "ฉันกำลังเรียนรู้คำว่าsên-kà-nǎan", english: "parallel line", hindi: "यह समानांतर रेखा है"),
+        ],
+        3147: [
+            WordExample(thai: "นี่คือรัศมี", romanization: "นี่คือrát-sà-mee", english: "radius", hindi: "यह त्रिज्या है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ารัศมี", romanization: "ฉันกำลังเรียนรู้คำว่าrát-sà-mee", english: "radius", hindi: "यह त्रिज्या है"),
+        ],
+        3148: [
+            WordExample(thai: "นี่คือเส้นผ่านศูนย์กลาง", romanization: "นี่คือsên-pàan-sǔun-klaang", english: "diameter", hindi: "यह व्यास है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเส้นผ่านศูนย์กลาง", romanization: "ฉันกำลังเรียนรู้คำว่าsên-pàan-sǔun-klaang", english: "diameter", hindi: "यह व्यास है"),
+        ],
+        3149: [
+            WordExample(thai: "นี่คือบวก", romanization: "นี่คือbùak", english: "add", hindi: "यह जोड़ना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าบวก", romanization: "ฉันกำลังเรียนรู้คำว่าbùak", english: "add", hindi: "यह जोड़ना है"),
+        ],
+        3150: [
+            WordExample(thai: "นี่คือคูณ", romanization: "นี่คือkuun", english: "multiply", hindi: "यह गुणा करना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าคูณ", romanization: "ฉันกำลังเรียนรู้คำว่าkuun", english: "multiply", hindi: "यह गुणा करना है"),
+        ],
+        3151: [
+            WordExample(thai: "นี่คือหาร", romanization: "นี่คือhǎan", english: "divide (math)", hindi: "यह भाग देना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าหาร", romanization: "ฉันกำลังเรียนรู้คำว่าhǎan", english: "divide (math)", hindi: "यह भाग देना है"),
+        ],
+        3152: [
+            WordExample(thai: "นี่คือเท่ากับ", romanization: "นี่คือtâo-kàp", english: "equals", hindi: "यह बराबर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเท่ากับ", romanization: "ฉันกำลังเรียนรู้คำว่าtâo-kàp", english: "equals", hindi: "यह बराबर है"),
+        ],
+        3153: [
+            WordExample(thai: "นี่คือมากกว่า", romanization: "นี่คือmâak-kwàa", english: "greater than", hindi: "यह से अधिक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามากกว่า", romanization: "ฉันกำลังเรียนรู้คำว่าmâak-kwàa", english: "greater than", hindi: "यह से अधिक है"),
+        ],
+        3154: [
+            WordExample(thai: "นี่คือน้อยกว่า", romanization: "นี่คือnáawy-kwàa", english: "less than", hindi: "यह से कम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าน้อยกว่า", romanization: "ฉันกำลังเรียนรู้คำว่าnáawy-kwàa", english: "less than", hindi: "यह से कम है"),
+        ],
+        3155: [
+            WordExample(thai: "นี่คือผลลัพธ์", romanization: "นี่คือpǒn-láp", english: "result", hindi: "यह परिणाम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าผลลัพธ์", romanization: "ฉันกำลังเรียนรู้คำว่าpǒn-láp", english: "result", hindi: "यह परिणाम है"),
+        ],
+        3156: [
+            WordExample(thai: "นี่คือสมการ", romanization: "นี่คือsà-mà-kaan", english: "equation", hindi: "यह समीकरण है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสมการ", romanization: "ฉันกำลังเรียนรู้คำว่าsà-mà-kaan", english: "equation", hindi: "यह समीकरण है"),
+        ],
+        3157: [
+            WordExample(thai: "นี่คือไม้", romanization: "นี่คือmáai", english: "wood", hindi: "यह लकड़ी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าไม้", romanization: "ฉันกำลังเรียนรู้คำว่าmáai", english: "wood", hindi: "यह लकड़ी है"),
+        ],
+        3158: [
+            WordExample(thai: "นี่คือเหล็ก", romanization: "นี่คือlèk", english: "iron", hindi: "यह लोहा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเหล็ก", romanization: "ฉันกำลังเรียนรู้คำว่าlèk", english: "iron", hindi: "यह लोहा है"),
+        ],
+        3159: [
+            WordExample(thai: "นี่คือเหล็กกล้า", romanization: "นี่คือlèk-klâa", english: "steel", hindi: "यह इस्पात है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเหล็กกล้า", romanization: "ฉันกำลังเรียนรู้คำว่าlèk-klâa", english: "steel", hindi: "यह इस्पात है"),
+        ],
+        3160: [
+            WordExample(thai: "นี่คือทองแดง", romanization: "นี่คือtawng-daeng", english: "copper", hindi: "यह ताँबा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าทองแดง", romanization: "ฉันกำลังเรียนรู้คำว่าtawng-daeng", english: "copper", hindi: "यह ताँबा है"),
+        ],
+        3161: [
+            WordExample(thai: "นี่คือทองเหลือง", romanization: "นี่คือtawng-lǔeang", english: "brass", hindi: "यह पीतल है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าทองเหลือง", romanization: "ฉันกำลังเรียนรู้คำว่าtawng-lǔeang", english: "brass", hindi: "यह पीतल है"),
+        ],
+        3162: [
+            WordExample(thai: "นี่คืออะลูมิเนียม", romanization: "นี่คือa-loo-mí-niam", english: "aluminium", hindi: "यह एल्यूमिनियम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าอะลูมิเนียม", romanization: "ฉันกำลังเรียนรู้คำว่าa-loo-mí-niam", english: "aluminium", hindi: "यह एल्यूमिनियम है"),
+        ],
+        3163: [
+            WordExample(thai: "นี่คือทองคำ", romanization: "นี่คือtawng-kam", english: "gold (materials)", hindi: "यह सोना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าทองคำ", romanization: "ฉันกำลังเรียนรู้คำว่าtawng-kam", english: "gold (materials)", hindi: "यह सोना है"),
+        ],
+        3164: [
+            WordExample(thai: "นี่คือแพลตินัม", romanization: "นี่คือpae-lá-dti-num", english: "platinum", hindi: "यह प्लैटिनम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าแพลตินัม", romanization: "ฉันกำลังเรียนรู้คำว่าpae-lá-dti-num", english: "platinum", hindi: "यह प्लैटिनम है"),
+        ],
+        3165: [
+            WordExample(thai: "นี่คือพลาสติก", romanization: "นี่คือplaa-sà-dtìk", english: "plastic", hindi: "यह प्लास्टिक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพลาสติก", romanization: "ฉันกำลังเรียนรู้คำว่าplaa-sà-dtìk", english: "plastic", hindi: "यह प्लास्टिक है"),
+        ],
+        3166: [
+            WordExample(thai: "นี่คือยาง", romanization: "นี่คือyaang", english: "rubber", hindi: "यह रबर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ายาง", romanization: "ฉันกำลังเรียนรู้คำว่าyaang", english: "rubber", hindi: "यह रबर है"),
+        ],
+        3167: [
+            WordExample(thai: "นี่คือกระเบื้อง", romanization: "นี่คือkrà-bêuuang", english: "tile", hindi: "यह टाइल है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากระเบื้อง", romanization: "ฉันกำลังเรียนรู้คำว่าkrà-bêuuang", english: "tile", hindi: "यह टाइल है"),
+        ],
+        3168: [
+            WordExample(thai: "นี่คือปูน", romanization: "นี่คือbpuun", english: "cement", hindi: "यह सीमेंट है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าปูน", romanization: "ฉันกำลังเรียนรู้คำว่าbpuun", english: "cement", hindi: "यह सीमेंट है"),
+        ],
+        3169: [
+            WordExample(thai: "นี่คือคอนกรีต", romanization: "นี่คือkawn-kreet", english: "concrete", hindi: "यह कंक्रीट है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าคอนกรีต", romanization: "ฉันกำลังเรียนรู้คำว่าkawn-kreet", english: "concrete", hindi: "यह कंक्रीट है"),
+        ],
+        3170: [
+            WordExample(thai: "นี่คืออิฐ", romanization: "นี่คือìt", english: "brick", hindi: "यह ईंट है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าอิฐ", romanization: "ฉันกำลังเรียนรู้คำว่าìt", english: "brick", hindi: "यह ईंट है"),
+        ],
+        3171: [
+            WordExample(thai: "นี่คือดินเหนียว", romanization: "นี่คือdin-nǐao", english: "clay", hindi: "यह चिकनी मिट्टी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าดินเหนียว", romanization: "ฉันกำลังเรียนรู้คำว่าdin-nǐao", english: "clay", hindi: "यह चिकनी मिट्टी है"),
+        ],
+        3172: [
+            WordExample(thai: "นี่คือกระดาษ", romanization: "นี่คือkrà-dàat", english: "paper", hindi: "यह कागज़ है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากระดาษ", romanization: "ฉันกำลังเรียนรู้คำว่าkrà-dàat", english: "paper", hindi: "यह कागज़ है"),
+        ],
+        3173: [
+            WordExample(thai: "นี่คือกระดาษแข็ง", romanization: "นี่คือkrà-dàat-kǎeng", english: "cardboard", hindi: "यह गत्ता है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากระดาษแข็ง", romanization: "ฉันกำลังเรียนรู้คำว่าkrà-dàat-kǎeng", english: "cardboard", hindi: "यह गत्ता है"),
+        ],
+        3174: [
+            WordExample(thai: "นี่คือผ้าฝ้าย", romanization: "นี่คือpâa-fâai", english: "cotton", hindi: "यह कपास है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าผ้าฝ้าย", romanization: "ฉันกำลังเรียนรู้คำว่าpâa-fâai", english: "cotton", hindi: "यह कपास है"),
+        ],
+        3175: [
+            WordExample(thai: "นี่คือผ้าไหม", romanization: "นี่คือpâa-mǎi", english: "silk", hindi: "यह रेशम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าผ้าไหม", romanization: "ฉันกำลังเรียนรู้คำว่าpâa-mǎi", english: "silk", hindi: "यह रेशम है"),
+        ],
+        3176: [
+            WordExample(thai: "นี่คือผ้าลินิน", romanization: "นี่คือpâa-lí-nin", english: "linen", hindi: "यह लिनन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าผ้าลินิน", romanization: "ฉันกำลังเรียนรู้คำว่าpâa-lí-nin", english: "linen", hindi: "यह लिनन है"),
+        ],
+        3177: [
+            WordExample(thai: "นี่คือผ้าขนสัตว์", romanization: "นี่คือpâa-kǒn-sàt", english: "wool", hindi: "यह ऊन है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าผ้าขนสัตว์", romanization: "ฉันกำลังเรียนรู้คำว่าpâa-kǒn-sàt", english: "wool", hindi: "यह ऊन है"),
+        ],
+        3178: [
+            WordExample(thai: "นี่คือหนัง", romanization: "นี่คือnǎng", english: "leather", hindi: "यह चमड़ा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าหนัง", romanization: "ฉันกำลังเรียนรู้คำว่าnǎng", english: "leather", hindi: "यह चमड़ा है"),
+        ],
+        3179: [
+            WordExample(thai: "นี่คือใยสังเคราะห์", romanization: "นี่คือyai-sǎng-kráw", english: "synthetic fibre", hindi: "यह कृत्रिम रेशा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าใยสังเคราะห์", romanization: "ฉันกำลังเรียนรู้คำว่าyai-sǎng-kráw", english: "synthetic fibre", hindi: "यह कृत्रिम रेशा है"),
+        ],
+        3180: [
+            WordExample(thai: "นี่คือโฟม", romanization: "นี่คือfohm", english: "foam", hindi: "यह फोम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าโฟม", romanization: "ฉันกำลังเรียนรู้คำว่าfohm", english: "foam", hindi: "यह फोम है"),
+        ],
+        3181: [
+            WordExample(thai: "นี่คือเซรามิก", romanization: "นี่คือsay-raa-mík", english: "ceramic", hindi: "यह चीनी मिट्टी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเซรามิก", romanization: "ฉันกำลังเรียนรู้คำว่าsay-raa-mík", english: "ceramic", hindi: "यह चीनी मिट्टी है"),
+        ],
+        3182: [
+            WordExample(thai: "นี่คือคริสตัล", romanization: "นี่คือkrít-dtan", english: "crystal", hindi: "यह क्रिस्टल है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าคริสตัล", romanization: "ฉันกำลังเรียนรู้คำว่าkrít-dtan", english: "crystal", hindi: "यह क्रिस्टल है"),
+        ],
+        3183: [
+            WordExample(thai: "นี่คือค้อน", romanization: "นี่คือkón", english: "hammer", hindi: "यह हथौड़ा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าค้อน", romanization: "ฉันกำลังเรียนรู้คำว่าkón", english: "hammer", hindi: "यह हथौड़ा है"),
+        ],
+        3184: [
+            WordExample(thai: "นี่คือตะปู", romanization: "นี่คือdtà-bpuu", english: "nail", hindi: "यह कील है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าตะปู", romanization: "ฉันกำลังเรียนรู้คำว่าdtà-bpuu", english: "nail", hindi: "यह कील है"),
+        ],
+        3185: [
+            WordExample(thai: "นี่คือสกรู", romanization: "นี่คือsà-kruu", english: "screw", hindi: "यह पेंच है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสกรู", romanization: "ฉันกำลังเรียนรู้คำว่าsà-kruu", english: "screw", hindi: "यह पेंच है"),
+        ],
+        3186: [
+            WordExample(thai: "นี่คือไขควง", romanization: "นี่คือkài-khuang", english: "screwdriver", hindi: "यह पेचकस है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าไขควง", romanization: "ฉันกำลังเรียนรู้คำว่าkài-khuang", english: "screwdriver", hindi: "यह पेचकस है"),
+        ],
+        3187: [
+            WordExample(thai: "นี่คือประแจ", romanization: "นี่คือbprà-jae", english: "wrench", hindi: "यह रिंच है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประแจ", romanization: "ฉันกำลังเรียนรู้คำว่าbprà-jae", english: "wrench", hindi: "यह रिंच है"),
+        ],
+        3188: [
+            WordExample(thai: "นี่คือคีม", romanization: "นี่คือkeem", english: "pliers", hindi: "यह चिमटा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าคีม", romanization: "ฉันกำลังเรียนรู้คำว่าkeem", english: "pliers", hindi: "यह चिमटा है"),
+        ],
+        3189: [
+            WordExample(thai: "นี่คือเลื่อย", romanization: "นี่คือlêuay", english: "saw", hindi: "यह आरी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเลื่อย", romanization: "ฉันกำลังเรียนรู้คำว่าlêuay", english: "saw", hindi: "यह आरी है"),
+        ],
+        3190: [
+            WordExample(thai: "นี่คือสว่าน", romanization: "นี่คือsà-wàan", english: "drill", hindi: "यह ड्रिल है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสว่าน", romanization: "ฉันกำลังเรียนรู้คำว่าsà-wàan", english: "drill", hindi: "यह ड्रिल है"),
+        ],
+        3191: [
+            WordExample(thai: "นี่คือกบไสไม้", romanization: "นี่คือkòp-sǎi-máai", english: "plane", hindi: "यह रंदा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากบไสไม้", romanization: "ฉันกำลังเรียนรู้คำว่าkòp-sǎi-máai", english: "plane", hindi: "यह रंदा है"),
+        ],
+        3192: [
+            WordExample(thai: "นี่คือสิ่ว", romanization: "นี่คือsìu", english: "chisel", hindi: "यह छेनी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าสิ่ว", romanization: "ฉันกำลังเรียนรู้คำว่าsìu", english: "chisel", hindi: "यह छेनी है"),
+        ],
+        3193: [
+            WordExample(thai: "นี่คือตะไบ", romanization: "นี่คือdtà-bai", english: "file", hindi: "यह रेती है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าตะไบ", romanization: "ฉันกำลังเรียนรู้คำว่าdtà-bai", english: "file", hindi: "यह रेती है"),
+        ],
+        3194: [
+            WordExample(thai: "นี่คือมีดพับ", romanization: "นี่คือmêet-páp", english: "pocket knife", hindi: "यह जेबी चाकू है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามีดพับ", romanization: "ฉันกำลังเรียนรู้คำว่าmêet-páp", english: "pocket knife", hindi: "यह जेबी चाकू है"),
+        ],
+        3195: [
+            WordExample(thai: "นี่คือเทปวัด", romanization: "นี่คือtâyp-wát", english: "tape measure", hindi: "यह मापने का फीता है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเทปวัด", romanization: "ฉันกำลังเรียนรู้คำว่าtâyp-wát", english: "tape measure", hindi: "यह मापने का फीता है"),
+        ],
+        3196: [
+            WordExample(thai: "นี่คือระดับน้ำ", romanization: "นี่คือrá-dàp-náam", english: "spirit level", hindi: "यह स्पिरिट स्तर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าระดับน้ำ", romanization: "ฉันกำลังเรียนรู้คำว่าrá-dàp-náam", english: "spirit level", hindi: "यह स्पिरिट स्तर है"),
+        ],
+        3197: [
+            WordExample(thai: "นี่คือพลั่ว", romanization: "นี่คือplûa", english: "shovel", hindi: "यह फावड़ा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าพลั่ว", romanization: "ฉันกำลังเรียนรู้คำว่าplûa", english: "shovel", hindi: "यह फावड़ा है"),
+        ],
+        3198: [
+            WordExample(thai: "นี่คือจอบ", romanization: "นี่คือjàawp", english: "hoe", hindi: "यह कुदाल है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าจอบ", romanization: "ฉันกำลังเรียนรู้คำว่าjàawp", english: "hoe", hindi: "यह कुदाल है"),
+        ],
+        3199: [
+            WordExample(thai: "นี่คือคราด", romanization: "นี่คือkrâat", english: "rake", hindi: "यह रैक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าคราด", romanization: "ฉันกำลังเรียนรู้คำว่าkrâat", english: "rake", hindi: "यह रैक है"),
+        ],
+        3200: [
+            WordExample(thai: "นี่คือเคียว", romanization: "นี่คือkiao", english: "sickle", hindi: "यह हँसिया है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเคียว", romanization: "ฉันกำลังเรียนรู้คำว่าkiao", english: "sickle", hindi: "यह हँसिया है"),
+        ],
+        3201: [
+            WordExample(thai: "นี่คือขวาน", romanization: "นี่คือkwǎan", english: "axe", hindi: "यह कुल्हाड़ी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าขวาน", romanization: "ฉันกำลังเรียนรู้คำว่าkwǎan", english: "axe", hindi: "यह कुल्हाड़ी है"),
+        ],
+        3202: [
+            WordExample(thai: "นี่คือลูกกลิ้ง", romanization: "นี่คือlûuk-klîng", english: "roller", hindi: "यह रोलर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าลูกกลิ้ง", romanization: "ฉันกำลังเรียนรู้คำว่าlûuk-klîng", english: "roller", hindi: "यह रोलर है"),
+        ],
+        3203: [
+            WordExample(thai: "นี่คือกาว", romanization: "นี่คือkaao", english: "glue", hindi: "यह गोंद है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากาว", romanization: "ฉันกำลังเรียนรู้คำว่าkaao", english: "glue", hindi: "यह गोंद है"),
+        ],
+        3204: [
+            WordExample(thai: "นี่คือเทปกาว", romanization: "นี่คือtâyp-kaao", english: "adhesive tape", hindi: "यह चिपकने वाला टेप है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเทปกาว", romanization: "ฉันกำลังเรียนรู้คำว่าtâyp-kaao", english: "adhesive tape", hindi: "यह चिपकने वाला टेप है"),
+        ],
+        3205: [
+            WordExample(thai: "นี่คือเชือก", romanization: "นี่คือchêuuak", english: "rope", hindi: "यह रस्सी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเชือก", romanization: "ฉันกำลังเรียนรู้คำว่าchêuuak", english: "rope", hindi: "यह रस्सी है"),
+        ],
+        3206: [
+            WordExample(thai: "นี่คือลวด", romanization: "นี่คือlûat", english: "wire", hindi: "यह तार है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าลวด", romanization: "ฉันกำลังเรียนรู้คำว่าlûat", english: "wire", hindi: "यह तार है"),
+        ],
+        3207: [
+            WordExample(thai: "นี่คือโซ่", romanization: "นี่คือsôh", english: "chain", hindi: "यह जंजीर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าโซ่", romanization: "ฉันกำลังเรียนรู้คำว่าsôh", english: "chain", hindi: "यह जंजीर है"),
+        ],
+        3208: [
+            WordExample(thai: "นี่คือแม่แรง", romanization: "นี่คือmâe-raeng", english: "jack", hindi: "यह जैक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าแม่แรง", romanization: "ฉันกำลังเรียนรู้คำว่าmâe-raeng", english: "jack", hindi: "यह जैक है"),
+        ],
+        3209: [
+            WordExample(thai: "นี่คือไฟฉาย", romanization: "นี่คือfai-chǎai", english: "torch", hindi: "यह टॉर्च है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าไฟฉาย", romanization: "ฉันกำลังเรียนรู้คำว่าfai-chǎai", english: "torch", hindi: "यह टॉर्च है"),
+        ],
+        3210: [
+            WordExample(thai: "นี่คือถังน้ำมัน", romanization: "นี่คือtǎng-náam-man", english: "fuel tank", hindi: "यह ईंधन टैंक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าถังน้ำมัน", romanization: "ฉันกำลังเรียนรู้คำว่าtǎng-náam-man", english: "fuel tank", hindi: "यह ईंधन टैंक है"),
+        ],
+        3211: [
+            WordExample(thai: "นี่คือความคิด", romanization: "นี่คือkhwaam-kít", english: "idea", hindi: "यह विचार है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความคิด", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-kít", english: "idea", hindi: "यह विचार है"),
+        ],
+        3212: [
+            WordExample(thai: "นี่คือความจริง", romanization: "นี่คือkhwaam-jing", english: "truth", hindi: "यह सत्य है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความจริง", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-jing", english: "truth", hindi: "यह सत्य है"),
+        ],
+        3213: [
+            WordExample(thai: "นี่คือความรู้", romanization: "นี่คือkhwaam-róo", english: "knowledge", hindi: "यह ज्ञान है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความรู้", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-róo", english: "knowledge", hindi: "यह ज्ञान है"),
+        ],
+        3214: [
+            WordExample(thai: "นี่คือความเชื่อ", romanization: "นี่คือkhwaam-chêua", english: "belief", hindi: "यह विश्वास है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความเชื่อ", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-chêua", english: "belief", hindi: "यह विश्वास है"),
+        ],
+        3215: [
+            WordExample(thai: "นี่คือความหวัง", romanization: "นี่คือkhwaam-wǎng", english: "hope (concepts)", hindi: "यह आशा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความหวัง", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-wǎng", english: "hope (concepts)", hindi: "यह आशा है"),
+        ],
+        3216: [
+            WordExample(thai: "นี่คือความฝัน", romanization: "นี่คือkhwaam-fǎn", english: "a dream (noun)", hindi: "यह सपना है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความฝัน", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-fǎn", english: "a dream (noun)", hindi: "यह सपना है"),
+        ],
+        3217: [
+            WordExample(thai: "นี่คือความทุกข์", romanization: "นี่คือkhwaam-túk", english: "suffering", hindi: "यह दुःख है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความทุกข์", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-túk", english: "suffering", hindi: "यह दुःख है"),
+        ],
+        3218: [
+            WordExample(thai: "นี่คือความกลัว", romanization: "นี่คือkhwaam-klua", english: "fear", hindi: "यह डर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความกลัว", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-klua", english: "fear", hindi: "यह डर है"),
+        ],
+        3219: [
+            WordExample(thai: "นี่คือความโกรธ", romanization: "นี่คือkhwaam-kròht", english: "anger", hindi: "यह क्रोध है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความโกรธ", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-kròht", english: "anger", hindi: "यह क्रोध है"),
+        ],
+        3220: [
+            WordExample(thai: "นี่คือความกล้าหาญ", romanization: "นี่คือkhwaam-klâa-hǎan", english: "courage", hindi: "यह साहस है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความกล้าหาญ", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-klâa-hǎan", english: "courage", hindi: "यह साहस है"),
+        ],
+        3221: [
+            WordExample(thai: "นี่คือความซื่อสัตย์", romanization: "นี่คือkhwaam-sêu-sàt", english: "honesty", hindi: "यह ईमानदारी है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความซื่อสัตย์", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-sêu-sàt", english: "honesty", hindi: "यह ईमानदारी है"),
+        ],
+        3222: [
+            WordExample(thai: "นี่คือความเมตตา", romanization: "นี่คือkhwaam-mây-dtaa", english: "compassion", hindi: "यह करुणा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความเมตตา", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-mây-dtaa", english: "compassion", hindi: "यह करुणा है"),
+        ],
+        3223: [
+            WordExample(thai: "นี่คือความสำเร็จ", romanization: "นี่คือkhwaam-sǎm-rèt", english: "success", hindi: "यह सफलता है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความสำเร็จ", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-sǎm-rèt", english: "success", hindi: "यह सफलता है"),
+        ],
+        3224: [
+            WordExample(thai: "นี่คือความล้มเหลว", romanization: "นี่คือkhwaam-lóm-lǎew", english: "failure", hindi: "यह असफलता है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความล้มเหลว", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-lóm-lǎew", english: "failure", hindi: "यह असफलता है"),
+        ],
+        3225: [
+            WordExample(thai: "นี่คือความพยายาม", romanization: "นี่คือkhwaam-pá-yaa-yaam", english: "effort", hindi: "यह प्रयास है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความพยายาม", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-pá-yaa-yaam", english: "effort", hindi: "यह प्रयास है"),
+        ],
+        3226: [
+            WordExample(thai: "นี่คือโอกาส", romanization: "นี่คือoh-kàat", english: "opportunity", hindi: "यह अवसर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าโอกาส", romanization: "ฉันกำลังเรียนรู้คำว่าoh-kàat", english: "opportunity", hindi: "यह अवसर है"),
+        ],
+        3227: [
+            WordExample(thai: "นี่คือปัญหา", romanization: "นี่คือbpan-hǎa", english: "problem", hindi: "यह समस्या है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าปัญหา", romanization: "ฉันกำลังเรียนรู้คำว่าbpan-hǎa", english: "problem", hindi: "यह समस्या है"),
+        ],
+        3228: [
+            WordExample(thai: "นี่คือวิธีแก้", romanization: "นี่คือwí-tee-kâe", english: "solution", hindi: "यह समाधान है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าวิธีแก้", romanization: "ฉันกำลังเรียนรู้คำว่าwí-tee-kâe", english: "solution", hindi: "यह समाधान है"),
+        ],
+        3229: [
+            WordExample(thai: "นี่คือเหตุผล", romanization: "นี่คือhèt-pǒn", english: "reason", hindi: "यह कारण है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเหตุผล", romanization: "ฉันกำลังเรียนรู้คำว่าhèt-pǒn", english: "reason", hindi: "यह कारण है"),
+        ],
+        3230: [
+            WordExample(thai: "นี่คือผลลัพธ์สุดท้าย", romanization: "นี่คือpǒn-láp-sùt-táai", english: "outcome", hindi: "यह अंतिम परिणाम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าผลลัพธ์สุดท้าย", romanization: "ฉันกำลังเรียนรู้คำว่าpǒn-láp-sùt-táai", english: "outcome", hindi: "यह अंतिम परिणाम है"),
+        ],
+        3231: [
+            WordExample(thai: "นี่คือความเสี่ยง", romanization: "นี่คือkhwaam-sìang", english: "risk", hindi: "यह जोखिम है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความเสี่ยง", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-sìang", english: "risk", hindi: "यह जोखिम है"),
+        ],
+        3232: [
+            WordExample(thai: "นี่คือประโยชน์", romanization: "นี่คือbprà-yòht", english: "benefit", hindi: "यह लाभ है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าประโยชน์", romanization: "ฉันกำลังเรียนรู้คำว่าbprà-yòht", english: "benefit", hindi: "यह लाभ है"),
+        ],
+        3233: [
+            WordExample(thai: "นี่คือข้อดี", romanization: "นี่คือkâaw-dee", english: "advantage", hindi: "यह फ़ायदा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าข้อดี", romanization: "ฉันกำลังเรียนรู้คำว่าkâaw-dee", english: "advantage", hindi: "यह फ़ायदा है"),
+        ],
+        3234: [
+            WordExample(thai: "นี่คือข้อเสีย", romanization: "นี่คือkâaw-sǐa", english: "disadvantage", hindi: "यह नुकसान है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าข้อเสีย", romanization: "ฉันกำลังเรียนรู้คำว่าkâaw-sǐa", english: "disadvantage", hindi: "यह नुकसान है"),
+        ],
+        3235: [
+            WordExample(thai: "นี่คือความแตกต่าง", romanization: "นี่คือkhwaam-dtàek-dtàang", english: "difference", hindi: "यह अंतर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความแตกต่าง", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-dtàek-dtàang", english: "difference", hindi: "यह अंतर है"),
+        ],
+        3236: [
+            WordExample(thai: "นี่คือความคล้ายคลึง", romanization: "นี่คือkhwaam-kláai-kleung", english: "similarity", hindi: "यह समानता है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าความคล้ายคลึง", romanization: "ฉันกำลังเรียนรู้คำว่าkhwaam-kláai-kleung", english: "similarity", hindi: "यह समानता है"),
+        ],
+        3237: [
+            WordExample(thai: "นี่คือตัวอย่าง", romanization: "นี่คือdtua-yàang", english: "example", hindi: "यह उदाहरण है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าตัวอย่าง", romanization: "ฉันกำลังเรียนรู้คำว่าdtua-yàang", english: "example", hindi: "यह उदाहरण है"),
+        ],
+        3238: [
+            WordExample(thai: "นี่คือคุณภาพ", romanization: "นี่คือkhun-ná-pâap", english: "quality", hindi: "यह गुणवत्ता है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าคุณภาพ", romanization: "ฉันกำลังเรียนรู้คำว่าkhun-ná-pâap", english: "quality", hindi: "यह गुणवत्ता है"),
+        ],
+        3239: [
+            WordExample(thai: "นี่คือปริมาณ", romanization: "นี่คือbpà-rí-maan", english: "quantity", hindi: "यह मात्रा है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าปริมาณ", romanization: "ฉันกำลังเรียนรู้คำว่าbpà-rí-maan", english: "quantity", hindi: "यह मात्रा है"),
+        ],
+        3240: [
+            WordExample(thai: "นี่คือระดับ", romanization: "นี่คือrá-dàp", english: "level", hindi: "यह स्तर है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าระดับ", romanization: "ฉันกำลังเรียนรู้คำว่าrá-dàp", english: "level", hindi: "यह स्तर है"),
+        ],
+        3241: [
+            WordExample(thai: "นี่คือมาตรฐาน", romanization: "นี่คือmâat-dtà-thǎan", english: "standard", hindi: "यह मानक है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ามาตรฐาน", romanization: "ฉันกำลังเรียนรู้คำว่าmâat-dtà-thǎan", english: "standard", hindi: "यह मानक है"),
+        ],
+        3242: [
+            WordExample(thai: "นี่คือระบบ", romanization: "นี่คือrá-bòp", english: "system", hindi: "यह प्रणाली है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าระบบ", romanization: "ฉันกำลังเรียนรู้คำว่าrá-bòp", english: "system", hindi: "यह प्रणाली है"),
+        ],
+        3243: [
+            WordExample(thai: "นี่คือวิธีการ", romanization: "นี่คือwí-tee-kaan", english: "method", hindi: "यह तरीका है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าวิธีการ", romanization: "ฉันกำลังเรียนรู้คำว่าwí-tee-kaan", english: "method", hindi: "यह तरीका है"),
+        ],
+        3244: [
+            WordExample(thai: "นี่คือขั้นตอน", romanization: "นี่คือkân-dtawn", english: "step, procedure", hindi: "यह चरण है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าขั้นตอน", romanization: "ฉันกำลังเรียนรู้คำว่าkân-dtawn", english: "step, procedure", hindi: "यह चरण है"),
+        ],
+        3245: [
+            WordExample(thai: "นี่คือกระบวนการ", romanization: "นี่คือkrà-buan-kaan", english: "process", hindi: "यह प्रक्रिया है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่ากระบวนการ", romanization: "ฉันกำลังเรียนรู้คำว่าkrà-buan-kaan", english: "process", hindi: "यह प्रक्रिया है"),
+        ],
+        3246: [
+            WordExample(thai: "นี่คือเป้าประสงค์", romanization: "นี่คือbpâo-bprà-song", english: "objective", hindi: "यह उद्देश्य है"),
+            WordExample(thai: "ฉันกำลังเรียนรู้คำว่าเป้าประสงค์", romanization: "ฉันกำลังเรียนรู้คำว่าbpâo-bprà-song", english: "objective", hindi: "यह उद्देश्य है"),
+        ],
+    ]
+
+
+    private static let examples10: [Int: [WordExample]] = [
+        3247: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าแผนงาน", romanization: "chǎn-kam-lang-rian-kham-wâa-phǎen-ngaan", english: "I am learning the word plan of work.", hindi: "मैं कार्य योजना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าแผนงานได้แล้ว", romanization: "chǎn-jam-kham-wâa-phǎen-ngaan-dâi-láeo", english: "I remember the word plan of work now.", hindi: "मुझे अब कार्य योजना शब्द याद है।"),
+        ],
+        3248: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าทางเลือก", romanization: "chǎn-kam-lang-rian-kham-wâa-thaang-luêak", english: "I am learning the word alternative.", hindi: "मैं विकल्प शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าทางเลือกได้แล้ว", romanization: "chǎn-jam-kham-wâa-thaang-luêak-dâi-láeo", english: "I remember the word alternative now.", hindi: "मुझे अब विकल्प शब्द याद है।"),
+        ],
+        3249: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าการตัดสินใจ", romanization: "chǎn-kam-lang-rian-kham-wâa-kaan-tàt-sǐn-jai", english: "I am learning the word decision.", hindi: "मैं निर्णय शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าการตัดสินใจได้แล้ว", romanization: "chǎn-jam-kham-wâa-kaan-tàt-sǐn-jai-dâi-láeo", english: "I remember the word decision now.", hindi: "मुझे अब निर्णय शब्द याद है।"),
+        ],
+        3250: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าความจำเป็น", romanization: "chǎn-kam-lang-rian-kham-wâa-khwaam-jam-pen", english: "I am learning the word necessity.", hindi: "मैं आवश्यकता शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าความจำเป็นได้แล้ว", romanization: "chǎn-jam-kham-wâa-khwaam-jam-pen-dâi-láeo", english: "I remember the word necessity now.", hindi: "मुझे अब आवश्यकता शब्द याद है।"),
+        ],
+        3251: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าวัฒนธรรม", romanization: "chǎn-kam-lang-rian-kham-wâa-wát-thá-ná-tham", english: "I am learning the word culture.", hindi: "मैं संस्कृति शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าวัฒนธรรมได้แล้ว", romanization: "chǎn-jam-kham-wâa-wát-thá-ná-tham-dâi-láeo", english: "I remember the word culture now.", hindi: "मुझे अब संस्कृति शब्द याद है।"),
+        ],
+        3252: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าประเพณี", romanization: "chǎn-kam-lang-rian-kham-wâa-prà-phee-nii", english: "I am learning the word tradition.", hindi: "मैं परंपरा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าประเพณีได้แล้ว", romanization: "chǎn-jam-kham-wâa-prà-phee-nii-dâi-láeo", english: "I remember the word tradition now.", hindi: "मुझे अब परंपरा शब्द याद है।"),
+        ],
+        3253: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสังคม", romanization: "chǎn-kam-lang-rian-kham-wâa-sǎng-khom", english: "I am learning the word society.", hindi: "मैं समाज शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสังคมได้แล้ว", romanization: "chǎn-jam-kham-wâa-sǎng-khom-dâi-láeo", english: "I remember the word society now.", hindi: "मुझे अब समाज शब्द याद है।"),
+        ],
+        3254: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าครอบครัวใหญ่", romanization: "chǎn-kam-lang-rian-kham-wâa-khraŵawp-khrua-yài", english: "I am learning the word extended family.", hindi: "मैं संयुक्त परिवार शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าครอบครัวใหญ่ได้แล้ว", romanization: "chǎn-jam-kham-wâa-khraŵawp-khrua-yài-dâi-láeo", english: "I remember the word extended family now.", hindi: "मुझे अब संयुक्त परिवार शब्द याद है।"),
+        ],
+        3255: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามิตรภาพ", romanization: "chǎn-kam-lang-rian-kham-wâa-mít-trà-phâap", english: "I am learning the word friendship.", hindi: "मैं मित्रता शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามิตรภาพได้แล้ว", romanization: "chǎn-jam-kham-wâa-mít-trà-phâap-dâi-láeo", english: "I remember the word friendship now.", hindi: "मुझे अब मित्रता शब्द याद है।"),
+        ],
+        3256: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าธนาคารกลาง", romanization: "chǎn-kam-lang-rian-kham-wâa-thá-naa-khaan-klaang", english: "I am learning the word central bank.", hindi: "मैं केंद्रीय बैंक शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าธนาคารกลางได้แล้ว", romanization: "chǎn-jam-kham-wâa-thá-naa-khaan-klaang-dâi-láeo", english: "I remember the word central bank now.", hindi: "मुझे अब केंद्रीय बैंक शब्द याद है।"),
+        ],
+        3257: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าบัญชีออมทรัพย์", romanization: "chǎn-kam-lang-rian-kham-wâa-ban-chii-awawm-sáp", english: "I am learning the word savings account.", hindi: "मैं बचत खाता शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าบัญชีออมทรัพย์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-ban-chii-awawm-sáp-dâi-láeo", english: "I remember the word savings account now.", hindi: "मुझे अब बचत खाता शब्द याद है।"),
+        ],
+        3258: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าบัญชีกระแสรายวัน", romanization: "chǎn-kam-lang-rian-kham-wâa-ban-chii-krà-sǎe-raai-wan", english: "I am learning the word current account.", hindi: "मैं चालू खाता शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าบัญชีกระแสรายวันได้แล้ว", romanization: "chǎn-jam-kham-wâa-ban-chii-krà-sǎe-raai-wan-dâi-láeo", english: "I remember the word current account now.", hindi: "मुझे अब चालू खाता शब्द याद है।"),
+        ],
+        3259: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเงินกู้", romanization: "chǎn-kam-lang-rian-kham-wâa-ngoen-kûu", english: "I am learning the word loan.", hindi: "मैं ऋण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเงินกู้ได้แล้ว", romanization: "chǎn-jam-kham-wâa-ngoen-kûu-dâi-láeo", english: "I remember the word loan now.", hindi: "मुझे अब ऋण शब्द याद है।"),
+        ],
+        3260: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าจำนอง", romanization: "chǎn-kam-lang-rian-kham-wâa-jam-nawawng", english: "I am learning the word mortgage.", hindi: "मैं बंधक शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าจำนองได้แล้ว", romanization: "chǎn-jam-kham-wâa-jam-nawawng-dâi-láeo", english: "I remember the word mortgage now.", hindi: "मुझे अब बंधक शब्द याद है।"),
+        ],
+        3261: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเงินฝาก", romanization: "chǎn-kam-lang-rian-kham-wâa-ngoen-fàak", english: "I am learning the word deposit.", hindi: "मैं जमा राशि शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเงินฝากได้แล้ว", romanization: "chǎn-jam-kham-wâa-ngoen-fàak-dâi-láeo", english: "I remember the word deposit now.", hindi: "मुझे अब जमा राशि शब्द याद है।"),
+        ],
+        3262: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเช็ค", romanization: "chǎn-kam-lang-rian-kham-wâa-chék", english: "I am learning the word cheque.", hindi: "मैं चेक शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเช็คได้แล้ว", romanization: "chǎn-jam-kham-wâa-chék-dâi-láeo", english: "I remember the word cheque now.", hindi: "मुझे अब चेक शब्द याद है।"),
+        ],
+        3263: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสมุดบัญชี", romanization: "chǎn-kam-lang-rian-kham-wâa-sà-mùt-ban-chii", english: "I am learning the word passbook.", hindi: "मैं पासबुक शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสมุดบัญชีได้แล้ว", romanization: "chǎn-jam-kham-wâa-sà-mùt-ban-chii-dâi-láeo", english: "I remember the word passbook now.", hindi: "मुझे अब पासबुक शब्द याद है।"),
+        ],
+        3264: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าธนบัตร", romanization: "chǎn-kam-lang-rian-kham-wâa-thá-na-bàt", english: "I am learning the word banknote (finance).", hindi: "मैं मुद्रा नोट शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าธนบัตรได้แล้ว", romanization: "chǎn-jam-kham-wâa-thá-na-bàt-dâi-láeo", english: "I remember the word banknote (finance) now.", hindi: "मुझे अब मुद्रा नोट शब्द याद है।"),
+        ],
+        3265: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าหุ้น", romanization: "chǎn-kam-lang-rian-kham-wâa-hûn", english: "I am learning the word share, stock.", hindi: "मैं शेयर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าหุ้นได้แล้ว", romanization: "chǎn-jam-kham-wâa-hûn-dâi-láeo", english: "I remember the word share, stock now.", hindi: "मुझे अब शेयर शब्द याद है।"),
+        ],
+        3266: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าตลาดหลักทรัพย์", romanization: "chǎn-kam-lang-rian-kham-wâa-tà-làat-làk-sáp", english: "I am learning the word stock exchange.", hindi: "मैं शेयर बाज़ार शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าตลาดหลักทรัพย์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-tà-làat-làk-sáp-dâi-láeo", english: "I remember the word stock exchange now.", hindi: "मुझे अब शेयर बाज़ार शब्द याद है।"),
+        ],
+        3267: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากองทุน", romanization: "chǎn-kam-lang-rian-kham-wâa-kawawng-thun", english: "I am learning the word fund.", hindi: "मैं कोष शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากองทุนได้แล้ว", romanization: "chǎn-jam-kham-wâa-kawawng-thun-dâi-láeo", english: "I remember the word fund now.", hindi: "मुझे अब कोष शब्द याद है।"),
+        ],
+        3268: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าการลงทุน", romanization: "chǎn-kam-lang-rian-kham-wâa-kaan-long-thun", english: "I am learning the word investment.", hindi: "मैं निवेश शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าการลงทุนได้แล้ว", romanization: "chǎn-jam-kham-wâa-kaan-long-thun-dâi-láeo", english: "I remember the word investment now.", hindi: "मुझे अब निवेश शब्द याद है।"),
+        ],
+        3269: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าผลตอบแทน", romanization: "chǎn-kam-lang-rian-kham-wâa-phǒn-taẁawp-thaen", english: "I am learning the word return.", hindi: "मैं प्रतिफल शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าผลตอบแทนได้แล้ว", romanization: "chǎn-jam-kham-wâa-phǒn-taẁawp-thaen-dâi-láeo", english: "I remember the word return now.", hindi: "मुझे अब प्रतिफल शब्द याद है।"),
+        ],
+        3270: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเงินปันผล", romanization: "chǎn-kam-lang-rian-kham-wâa-ngoen-pan-phǒn", english: "I am learning the word dividend.", hindi: "मैं लाभांश शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเงินปันผลได้แล้ว", romanization: "chǎn-jam-kham-wâa-ngoen-pan-phǒn-dâi-láeo", english: "I remember the word dividend now.", hindi: "मुझे अब लाभांश शब्द याद है।"),
+        ],
+        3271: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าประกันชีวิต", romanization: "chǎn-kam-lang-rian-kham-wâa-prà-kan-chii-wít", english: "I am learning the word life insurance.", hindi: "मैं जीवन बीमा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าประกันชีวิตได้แล้ว", romanization: "chǎn-jam-kham-wâa-prà-kan-chii-wít-dâi-láeo", english: "I remember the word life insurance now.", hindi: "मुझे अब जीवन बीमा शब्द याद है।"),
+        ],
+        3272: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าประกันภัย", romanization: "chǎn-kam-lang-rian-kham-wâa-prà-kan-phai", english: "I am learning the word insurance (finance).", hindi: "मैं बीमा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าประกันภัยได้แล้ว", romanization: "chǎn-jam-kham-wâa-prà-kan-phai-dâi-láeo", english: "I remember the word insurance (finance) now.", hindi: "मुझे अब बीमा शब्द याद है।"),
+        ],
+        3273: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเบี้ยประกัน", romanization: "chǎn-kam-lang-rian-kham-wâa-bîa-prà-kan", english: "I am learning the word premium.", hindi: "मैं बीमा प्रीमियम शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเบี้ยประกันได้แล้ว", romanization: "chǎn-jam-kham-wâa-bîa-prà-kan-dâi-láeo", english: "I remember the word premium now.", hindi: "मुझे अब बीमा प्रीमियम शब्द याद है।"),
+        ],
+        3274: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเงินทุน", romanization: "chǎn-kam-lang-rian-kham-wâa-ngoen-thun", english: "I am learning the word capital.", hindi: "मैं पूंजी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเงินทุนได้แล้ว", romanization: "chǎn-jam-kham-wâa-ngoen-thun-dâi-láeo", english: "I remember the word capital now.", hindi: "मुझे अब पूंजी शब्द याद है।"),
+        ],
+        3275: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าล้มละลาย", romanization: "chǎn-kam-lang-rian-kham-wâa-lóm-lá-laai", english: "I am learning the word bankrupt.", hindi: "मैं दिवालिया शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าล้มละลายได้แล้ว", romanization: "chǎn-jam-kham-wâa-lóm-lá-laai-dâi-láeo", english: "I remember the word bankrupt now.", hindi: "मुझे अब दिवालिया शब्द याद है।"),
+        ],
+        3276: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเงินเฟ้อ", romanization: "chǎn-kam-lang-rian-kham-wâa-ngoen-foéoe", english: "I am learning the word inflation.", hindi: "मैं मुद्रास्फीति शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเงินเฟ้อได้แล้ว", romanization: "chǎn-jam-kham-wâa-ngoen-foéoe-dâi-láeo", english: "I remember the word inflation now.", hindi: "मुझे अब मुद्रास्फीति शब्द याद है।"),
+        ],
+        3277: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเศรษฐกิจ", romanization: "chǎn-kam-lang-rian-kham-wâa-sèet-thà-kìt", english: "I am learning the word economy.", hindi: "मैं अर्थव्यवस्था शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเศรษฐกิจได้แล้ว", romanization: "chǎn-jam-kham-wâa-sèet-thà-kìt-dâi-láeo", english: "I remember the word economy now.", hindi: "मुझे अब अर्थव्यवस्था शब्द याद है।"),
+        ],
+        3278: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าโรงพยาบาลรัฐ", romanization: "chǎn-kam-lang-rian-kham-wâa-roong-pha-yaa-baan-rát", english: "I am learning the word public hospital.", hindi: "मैं सरकारी अस्पताल शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าโรงพยาบาลรัฐได้แล้ว", romanization: "chǎn-jam-kham-wâa-roong-pha-yaa-baan-rát-dâi-láeo", english: "I remember the word public hospital now.", hindi: "मुझे अब सरकारी अस्पताल शब्द याद है।"),
+        ],
+        3279: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าห้องผ่าตัด", romanization: "chǎn-kam-lang-rian-kham-wâa-haŵng-phàa-tàt", english: "I am learning the word operating theatre.", hindi: "मैं ऑपरेशन कक्ष शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าห้องผ่าตัดได้แล้ว", romanization: "chǎn-jam-kham-wâa-haŵng-phàa-tàt-dâi-láeo", english: "I remember the word operating theatre now.", hindi: "मुझे अब ऑपरेशन कक्ष शब्द याद है।"),
+        ],
+        3280: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าหอผู้ป่วย", romanization: "chǎn-kam-lang-rian-kham-wâa-hawaw-phûu-pùai", english: "I am learning the word ward.", hindi: "मैं वार्ड शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าหอผู้ป่วยได้แล้ว", romanization: "chǎn-jam-kham-wâa-hawaw-phûu-pùai-dâi-láeo", english: "I remember the word ward now.", hindi: "मुझे अब वार्ड शब्द याद है।"),
+        ],
+        3281: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเปลหาม", romanization: "chǎn-kam-lang-rian-kham-wâa-plae-hǎam", english: "I am learning the word stretcher.", hindi: "मैं स्ट्रेचर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเปลหามได้แล้ว", romanization: "chǎn-jam-kham-wâa-plae-hǎam-dâi-láeo", english: "I remember the word stretcher now.", hindi: "मुझे अब स्ट्रेचर शब्द याद है।"),
+        ],
+        3282: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเตียงคนไข้", romanization: "chǎn-kam-lang-rian-kham-wâa-tiang-khon-khâi", english: "I am learning the word patient bed.", hindi: "मैं मरीज़ का बिस्तर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเตียงคนไข้ได้แล้ว", romanization: "chǎn-jam-kham-wâa-tiang-khon-khâi-dâi-láeo", english: "I remember the word patient bed now.", hindi: "मुझे अब मरीज़ का बिस्तर शब्द याद है।"),
+        ],
+        3283: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าผู้ป่วย", romanization: "chǎn-kam-lang-rian-kham-wâa-phûu-pùai", english: "I am learning the word patient (health).", hindi: "मैं मरीज़ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าผู้ป่วยได้แล้ว", romanization: "chǎn-jam-kham-wâa-phûu-pùai-dâi-láeo", english: "I remember the word patient (health) now.", hindi: "मुझे अब मरीज़ शब्द याद है।"),
+        ],
+        3284: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าวินิจฉัย", romanization: "chǎn-kam-lang-rian-kham-wâa-wí-nít-chǎi", english: "I am learning the word diagnose.", hindi: "मैं निदान करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าวินิจฉัยได้แล้ว", romanization: "chǎn-jam-kham-wâa-wí-nít-chǎi-dâi-láeo", english: "I remember the word diagnose now.", hindi: "मुझे अब निदान करना शब्द याद है।"),
+        ],
+        3285: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารักษา", romanization: "chǎn-kam-lang-rian-kham-wâa-rák-sǎa", english: "I am learning the word treat.", hindi: "मैं इलाज करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารักษาได้แล้ว", romanization: "chǎn-jam-kham-wâa-rák-sǎa-dâi-láeo", english: "I remember the word treat now.", hindi: "मुझे अब इलाज करना शब्द याद है।"),
+        ],
+        3286: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าผ้าพันแผล", romanization: "chǎn-kam-lang-rian-kham-wâa-phâa-phan-phlǎe", english: "I am learning the word bandage.", hindi: "मैं पट्टी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าผ้าพันแผลได้แล้ว", romanization: "chǎn-jam-kham-wâa-phâa-phan-phlǎe-dâi-láeo", english: "I remember the word bandage now.", hindi: "मुझे अब पट्टी शब्द याद है।"),
+        ],
+        3287: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเฝือก", romanization: "chǎn-kam-lang-rian-kham-wâa-fuèak", english: "I am learning the word cast, splint.", hindi: "मैं प्लास्टर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเฝือกได้แล้ว", romanization: "chǎn-jam-kham-wâa-fuèak-dâi-láeo", english: "I remember the word cast, splint now.", hindi: "मुझे अब प्लास्टर शब्द याद है।"),
+        ],
+        3288: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเอกซเรย์", romanization: "chǎn-kam-lang-rian-kham-wâa-èek-sà-raeae", english: "I am learning the word X-ray.", hindi: "मैं एक्स-रे शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเอกซเรย์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-èek-sà-raeae-dâi-láeo", english: "I remember the word X-ray now.", hindi: "मुझे अब एक्स-रे शब्द याद है।"),
+        ],
+        3289: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าตรวจเลือด", romanization: "chǎn-kam-lang-rian-kham-wâa-trùat-luêat", english: "I am learning the word blood test.", hindi: "मैं रक्त जाँच शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าตรวจเลือดได้แล้ว", romanization: "chǎn-jam-kham-wâa-trùat-luêat-dâi-láeo", english: "I remember the word blood test now.", hindi: "मुझे अब रक्त जाँच शब्द याद है।"),
+        ],
+        3290: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าไข้หวัดใหญ่", romanization: "chǎn-kam-lang-rian-kham-wâa-khâi-wàt-yài", english: "I am learning the word influenza.", hindi: "मैं इन्फ्लुएंज़ा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าไข้หวัดใหญ่ได้แล้ว", romanization: "chǎn-jam-kham-wâa-khâi-wàt-yài-dâi-láeo", english: "I remember the word influenza now.", hindi: "मुझे अब इन्फ्लुएंज़ा शब्द याद है।"),
+        ],
+        3291: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปอดบวม", romanization: "chǎn-kam-lang-rian-kham-wâa-paẁawt-buam", english: "I am learning the word pneumonia.", hindi: "मैं निमोनिया शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปอดบวมได้แล้ว", romanization: "chǎn-jam-kham-wâa-paẁawt-buam-dâi-láeo", english: "I remember the word pneumonia now.", hindi: "मुझे अब निमोनिया शब्द याद है।"),
+        ],
+        3292: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเบาหวาน", romanization: "chǎn-kam-lang-rian-kham-wâa-bao-wǎan", english: "I am learning the word diabetes (health).", hindi: "मैं मधुमेह शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเบาหวานได้แล้ว", romanization: "chǎn-jam-kham-wâa-bao-wǎan-dâi-láeo", english: "I remember the word diabetes (health) now.", hindi: "मुझे अब मधुमेह शब्द याद है।"),
+        ],
+        3293: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามะเร็ง", romanization: "chǎn-kam-lang-rian-kham-wâa-má-reng", english: "I am learning the word cancer.", hindi: "मैं कैंसर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามะเร็งได้แล้ว", romanization: "chǎn-jam-kham-wâa-má-reng-dâi-láeo", english: "I remember the word cancer now.", hindi: "मुझे अब कैंसर शब्द याद है।"),
+        ],
+        3294: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าโรคหัวใจ", romanization: "chǎn-kam-lang-rian-kham-wâa-rôok-hǔa-jai", english: "I am learning the word heart disease.", hindi: "मैं हृदय रोग शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าโรคหัวใจได้แล้ว", romanization: "chǎn-jam-kham-wâa-rôok-hǔa-jai-dâi-láeo", english: "I remember the word heart disease now.", hindi: "मुझे अब हृदय रोग शब्द याद है।"),
+        ],
+        3295: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าติดเชื้อ", romanization: "chǎn-kam-lang-rian-kham-wâa-tìt-chuéa", english: "I am learning the word infection.", hindi: "मैं संक्रमण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าติดเชื้อได้แล้ว", romanization: "chǎn-jam-kham-wâa-tìt-chuéa-dâi-láeo", english: "I remember the word infection now.", hindi: "मुझे अब संक्रमण शब्द याद है।"),
+        ],
+        3296: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าอักเสบ", romanization: "chǎn-kam-lang-rian-kham-wâa-àk-sèep", english: "I am learning the word inflammation.", hindi: "मैं सूजन शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าอักเสบได้แล้ว", romanization: "chǎn-jam-kham-wâa-àk-sèep-dâi-láeo", english: "I remember the word inflammation now.", hindi: "मुझे अब सूजन शब्द याद है।"),
+        ],
+        3297: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าแผลเป็น", romanization: "chǎn-kam-lang-rian-kham-wâa-phlǎe-pen", english: "I am learning the word scar.", hindi: "मैं निशान शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าแผลเป็นได้แล้ว", romanization: "chǎn-jam-kham-wâa-phlǎe-pen-dâi-láeo", english: "I remember the word scar now.", hindi: "मुझे अब निशान शब्द याद है।"),
+        ],
+        3298: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากระดูกหัก", romanization: "chǎn-kam-lang-rian-kham-wâa-krà-dùuk-hàk", english: "I am learning the word broken bone.", hindi: "मैं हड्डी टूटना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากระดูกหักได้แล้ว", romanization: "chǎn-jam-kham-wâa-krà-dùuk-hàk-dâi-láeo", english: "I remember the word broken bone now.", hindi: "मुझे अब हड्डी टूटना शब्द याद है।"),
+        ],
+        3299: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเป็นลม", romanization: "chǎn-kam-lang-rian-kham-wâa-pen-lom", english: "I am learning the word faint.", hindi: "मैं बेहोश होना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเป็นลมได้แล้ว", romanization: "chǎn-jam-kham-wâa-pen-lom-dâi-láeo", english: "I remember the word faint now.", hindi: "मुझे अब बेहोश होना शब्द याद है।"),
+        ],
+        3300: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าพักฟื้น", romanization: "chǎn-kam-lang-rian-kham-wâa-phák-fuéuen", english: "I am learning the word recuperate.", hindi: "मैं स्वास्थ्यलाभ करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าพักฟื้นได้แล้ว", romanization: "chǎn-jam-kham-wâa-phák-fuéuen-dâi-láeo", english: "I remember the word recuperate now.", hindi: "मुझे अब स्वास्थ्यलाभ करना शब्द याद है।"),
+        ],
+        3301: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากายภาพบำบัด", romanization: "chǎn-kam-lang-rian-kham-wâa-kaai-yá-phâap-bam-bàt", english: "I am learning the word physiotherapy.", hindi: "मैं फिजियोथेरेपी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากายภาพบำบัดได้แล้ว", romanization: "chǎn-jam-kham-wâa-kaai-yá-phâap-bam-bàt-dâi-láeo", english: "I remember the word physiotherapy now.", hindi: "मुझे अब फिजियोथेरेपी शब्द याद है।"),
+        ],
+        3302: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสึนามิ", romanization: "chǎn-kam-lang-rian-kham-wâa-tsue-naa-mí", english: "I am learning the word tsunami.", hindi: "मैं सुनामी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสึนามิได้แล้ว", romanization: "chǎn-jam-kham-wâa-tsue-naa-mí-dâi-láeo", english: "I remember the word tsunami now.", hindi: "मुझे अब सुनामी शब्द याद है।"),
+        ],
+        3303: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าพายุไต้ฝุ่น", romanization: "chǎn-kam-lang-rian-kham-wâa-phaa-yú-tâi-fùn", english: "I am learning the word typhoon.", hindi: "मैं टाइफून शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าพายุไต้ฝุ่นได้แล้ว", romanization: "chǎn-jam-kham-wâa-phaa-yú-tâi-fùn-dâi-láeo", english: "I remember the word typhoon now.", hindi: "मुझे अब टाइफून शब्द याद है।"),
+        ],
+        3304: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าดินถล่ม", romanization: "chǎn-kam-lang-rian-kham-wâa-din-thà-lòm", english: "I am learning the word landslide.", hindi: "मैं भूस्खलन शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าดินถล่มได้แล้ว", romanization: "chǎn-jam-kham-wâa-din-thà-lòm-dâi-láeo", english: "I remember the word landslide now.", hindi: "मुझे अब भूस्खलन शब्द याद है।"),
+        ],
+        3305: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าภัยแล้ง", romanization: "chǎn-kam-lang-rian-kham-wâa-phai-laéaeng", english: "I am learning the word drought.", hindi: "मैं सूखा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าภัยแล้งได้แล้ว", romanization: "chǎn-jam-kham-wâa-phai-laéaeng-dâi-láeo", english: "I remember the word drought now.", hindi: "मुझे अब सूखा शब्द याद है।"),
+        ],
+        3306: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าชนกัน", romanization: "chǎn-kam-lang-rian-kham-wâa-chon-kan", english: "I am learning the word collide.", hindi: "मैं टकराना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าชนกันได้แล้ว", romanization: "chǎn-jam-kham-wâa-chon-kan-dâi-láeo", english: "I remember the word collide now.", hindi: "मुझे अब टकराना शब्द याद है।"),
+        ],
+        3307: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าระเบิด", romanization: "chǎn-kam-lang-rian-kham-wâa-rá-boèoet", english: "I am learning the word explosion.", hindi: "मैं विस्फोट शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าระเบิดได้แล้ว", romanization: "chǎn-jam-kham-wâa-rá-boèoet-dâi-láeo", english: "I remember the word explosion now.", hindi: "मुझे अब विस्फोट शब्द याद है।"),
+        ],
+        3308: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารั่ว", romanization: "chǎn-kam-lang-rian-kham-wâa-rûa", english: "I am learning the word leak.", hindi: "मैं रिसना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารั่วได้แล้ว", romanization: "chǎn-jam-kham-wâa-rûa-dâi-láeo", english: "I remember the word leak now.", hindi: "मुझे अब रिसना शब्द याद है।"),
+        ],
+        3309: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าไฟดับ", romanization: "chǎn-kam-lang-rian-kham-wâa-fai-dàp", english: "I am learning the word power cut.", hindi: "मैं बिजली कटना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าไฟดับได้แล้ว", romanization: "chǎn-jam-kham-wâa-fai-dàp-dâi-láeo", english: "I remember the word power cut now.", hindi: "मुझे अब बिजली कटना शब्द याद है।"),
+        ],
+        3310: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าขาดน้ำ", romanization: "chǎn-kam-lang-rian-kham-wâa-khàat-náam", english: "I am learning the word water shortage.", hindi: "मैं पानी की कमी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าขาดน้ำได้แล้ว", romanization: "chǎn-jam-kham-wâa-khàat-náam-dâi-láeo", english: "I remember the word water shortage now.", hindi: "मुझे अब पानी की कमी शब्द याद है।"),
+        ],
+        3311: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าอพยพ", romanization: "chǎn-kam-lang-rian-kham-wâa-òp-pha-yóp", english: "I am learning the word evacuate.", hindi: "मैं निकालना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าอพยพได้แล้ว", romanization: "chǎn-jam-kham-wâa-òp-pha-yóp-dâi-láeo", english: "I remember the word evacuate now.", hindi: "मुझे अब निकालना शब्द याद है।"),
+        ],
+        3312: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าที่พักพิง", romanization: "chǎn-kam-lang-rian-kham-wâa-thîi-phák-phing", english: "I am learning the word shelter.", hindi: "मैं आश्रय शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าที่พักพิงได้แล้ว", romanization: "chǎn-jam-kham-wâa-thîi-phák-phing-dâi-láeo", english: "I remember the word shelter now.", hindi: "मुझे अब आश्रय शब्द याद है।"),
+        ],
+        3313: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากู้ภัย", romanization: "chǎn-kam-lang-rian-kham-wâa-kûu-phai", english: "I am learning the word rescue.", hindi: "मैं बचाव शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากู้ภัยได้แล้ว", romanization: "chǎn-jam-kham-wâa-kûu-phai-dâi-láeo", english: "I remember the word rescue now.", hindi: "मुझे अब बचाव शब्द याद है।"),
+        ],
+        3314: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าผู้ประสบภัย", romanization: "chǎn-kam-lang-rian-kham-wâa-phûu-prà-sòp-phai", english: "I am learning the word victim.", hindi: "मैं पीड़ित शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าผู้ประสบภัยได้แล้ว", romanization: "chǎn-jam-kham-wâa-phûu-prà-sòp-phai-dâi-láeo", english: "I remember the word victim now.", hindi: "मुझे अब पीड़ित शब्द याद है।"),
+        ],
+        3315: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าบริจาค", romanization: "chǎn-kam-lang-rian-kham-wâa-bawaw-rí-jàak", english: "I am learning the word donate.", hindi: "मैं दान करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าบริจาคได้แล้ว", romanization: "chǎn-jam-kham-wâa-bawaw-rí-jàak-dâi-láeo", english: "I remember the word donate now.", hindi: "मुझे अब दान करना शब्द याद है।"),
+        ],
+        3316: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสิ่งแวดล้อม", romanization: "chǎn-kam-lang-rian-kham-wâa-sìng-waêaet-laẃawm", english: "I am learning the word environment.", hindi: "मैं पर्यावरण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสิ่งแวดล้อมได้แล้ว", romanization: "chǎn-jam-kham-wâa-sìng-waêaet-laẃawm-dâi-láeo", english: "I remember the word environment now.", hindi: "मुझे अब पर्यावरण शब्द याद है।"),
+        ],
+        3317: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามลพิษ", romanization: "chǎn-kam-lang-rian-kham-wâa-mon-lá-phít", english: "I am learning the word pollution.", hindi: "मैं प्रदूषण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามลพิษได้แล้ว", romanization: "chǎn-jam-kham-wâa-mon-lá-phít-dâi-láeo", english: "I remember the word pollution now.", hindi: "मुझे अब प्रदूषण शब्द याद है।"),
+        ],
+        3318: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามลพิษทางอากาศ", romanization: "chǎn-kam-lang-rian-kham-wâa-mon-lá-phít-thaang-aa-kàat", english: "I am learning the word air pollution.", hindi: "मैं वायु प्रदूषण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามลพิษทางอากาศได้แล้ว", romanization: "chǎn-jam-kham-wâa-mon-lá-phít-thaang-aa-kàat-dâi-láeo", english: "I remember the word air pollution now.", hindi: "मुझे अब वायु प्रदूषण शब्द याद है।"),
+        ],
+        3319: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าฝุ่นละออง", romanization: "chǎn-kam-lang-rian-kham-wâa-fùn-lá-awawng", english: "I am learning the word dust particles.", hindi: "मैं धूल कण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าฝุ่นละอองได้แล้ว", romanization: "chǎn-jam-kham-wâa-fùn-lá-awawng-dâi-láeo", english: "I remember the word dust particles now.", hindi: "मुझे अब धूल कण शब्द याद है।"),
+        ],
+        3320: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าควัน", romanization: "chǎn-kam-lang-rian-kham-wâa-khwan", english: "I am learning the word smoke.", hindi: "मैं धुआँ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าควันได้แล้ว", romanization: "chǎn-jam-kham-wâa-khwan-dâi-láeo", english: "I remember the word smoke now.", hindi: "मुझे अब धुआँ शब्द याद है।"),
+        ],
+        3321: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าก๊าซเรือนกระจก", romanization: "chǎn-kam-lang-rian-kham-wâa-káat-ruean-krà-jòk", english: "I am learning the word greenhouse gas.", hindi: "मैं ग्रीनहाउस गैस शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าก๊าซเรือนกระจกได้แล้ว", romanization: "chǎn-jam-kham-wâa-káat-ruean-krà-jòk-dâi-láeo", english: "I remember the word greenhouse gas now.", hindi: "मुझे अब ग्रीनहाउस गैस शब्द याद है।"),
+        ],
+        3322: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าโลกร้อน", romanization: "chǎn-kam-lang-rian-kham-wâa-lôok-raẃawn", english: "I am learning the word global warming.", hindi: "मैं वैश्विक तापमान वृद्धि शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าโลกร้อนได้แล้ว", romanization: "chǎn-jam-kham-wâa-lôok-raẃawn-dâi-láeo", english: "I remember the word global warming now.", hindi: "मुझे अब वैश्विक तापमान वृद्धि शब्द याद है।"),
+        ],
+        3323: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าการเปลี่ยนแปลงสภาพภูมิอากาศ", romanization: "chǎn-kam-lang-rian-kham-wâa-kaan-plìan-plaeaeng-sà-phâap-phuum-mí-aa-kàat", english: "I am learning the word climate change.", hindi: "मैं जलवायु परिवर्तन शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าการเปลี่ยนแปลงสภาพภูมิอากาศได้แล้ว", romanization: "chǎn-jam-kham-wâa-kaan-plìan-plaeaeng-sà-phâap-phuum-mí-aa-kàat-dâi-láeo", english: "I remember the word climate change now.", hindi: "मुझे अब जलवायु परिवर्तन शब्द याद है।"),
+        ],
+        3324: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าขยะพลาสติก", romanization: "chǎn-kam-lang-rian-kham-wâa-khà-yà-phláat-sà-tìk", english: "I am learning the word plastic waste.", hindi: "मैं प्लास्टिक कचरा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าขยะพลาสติกได้แล้ว", romanization: "chǎn-jam-kham-wâa-khà-yà-phláat-sà-tìk-dâi-láeo", english: "I remember the word plastic waste now.", hindi: "मुझे अब प्लास्टिक कचरा शब्द याद है।"),
+        ],
+        3325: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าน้ำเสีย", romanization: "chǎn-kam-lang-rian-kham-wâa-náam-sǐa", english: "I am learning the word wastewater.", hindi: "मैं गंदा पानी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าน้ำเสียได้แล้ว", romanization: "chǎn-jam-kham-wâa-náam-sǐa-dâi-láeo", english: "I remember the word wastewater now.", hindi: "मुझे अब गंदा पानी शब्द याद है।"),
+        ],
+        3326: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าบำบัด", romanization: "chǎn-kam-lang-rian-kham-wâa-bam-bàt", english: "I am learning the word treat (water).", hindi: "मैं शुद्ध करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าบำบัดได้แล้ว", romanization: "chǎn-jam-kham-wâa-bam-bàt-dâi-láeo", english: "I remember the word treat (water) now.", hindi: "मुझे अब शुद्ध करना शब्द याद है।"),
+        ],
+        3327: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าอนุรักษ์", romanization: "chǎn-kam-lang-rian-kham-wâa-à-nú-rák", english: "I am learning the word conserve.", hindi: "मैं संरक्षण करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าอนุรักษ์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-à-nú-rák-dâi-láeo", english: "I remember the word conserve now.", hindi: "मुझे अब संरक्षण करना शब्द याद है।"),
+        ],
+        3328: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าทรัพยากรธรรมชาติ", romanization: "chǎn-kam-lang-rian-kham-wâa-sáp-pha-yaa-kawawn-tham-má-châat", english: "I am learning the word natural resources.", hindi: "मैं प्राकृतिक संसाधन शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าทรัพยากรธรรมชาติได้แล้ว", romanization: "chǎn-jam-kham-wâa-sáp-pha-yaa-kawawn-tham-má-châat-dâi-láeo", english: "I remember the word natural resources now.", hindi: "मुझे अब प्राकृतिक संसाधन शब्द याद है।"),
+        ],
+        3329: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าพลังงานทดแทน", romanization: "chǎn-kam-lang-rian-kham-wâa-pha-lang-ngaan-thót-thaen", english: "I am learning the word renewable energy.", hindi: "मैं नवीकरणीय ऊर्जा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าพลังงานทดแทนได้แล้ว", romanization: "chǎn-jam-kham-wâa-pha-lang-ngaan-thót-thaen-dâi-láeo", english: "I remember the word renewable energy now.", hindi: "मुझे अब नवीकरणीय ऊर्जा शब्द याद है।"),
+        ],
+        3330: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าพลังงานลม", romanization: "chǎn-kam-lang-rian-kham-wâa-pha-lang-ngaan-lom", english: "I am learning the word wind power.", hindi: "मैं पवन ऊर्जा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าพลังงานลมได้แล้ว", romanization: "chǎn-jam-kham-wâa-pha-lang-ngaan-lom-dâi-láeo", english: "I remember the word wind power now.", hindi: "मुझे अब पवन ऊर्जा शब्द याद है।"),
+        ],
+        3331: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าตัดไม้ทำลายป่า", romanization: "chǎn-kam-lang-rian-kham-wâa-tàt-máai-tham-laai-pàa", english: "I am learning the word deforestation.", hindi: "मैं वनों की कटाई शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าตัดไม้ทำลายป่าได้แล้ว", romanization: "chǎn-jam-kham-wâa-tàt-máai-tham-laai-pàa-dâi-láeo", english: "I remember the word deforestation now.", hindi: "मुझे अब वनों की कटाई शब्द याद है।"),
+        ],
+        3332: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปลูกป่า", romanization: "chǎn-kam-lang-rian-kham-wâa-plùuk-pàa", english: "I am learning the word reforestation.", hindi: "मैं वनरोपण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปลูกป่าได้แล้ว", romanization: "chǎn-jam-kham-wâa-plùuk-pàa-dâi-láeo", english: "I remember the word reforestation now.", hindi: "मुझे अब वनरोपण शब्द याद है।"),
+        ],
+        3333: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสัตว์ใกล้สูญพันธุ์", romanization: "chǎn-kam-lang-rian-kham-wâa-sàt-klâi-sǔun-phan", english: "I am learning the word endangered species.", hindi: "मैं लुप्तप्राय प्रजाति शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสัตว์ใกล้สูญพันธุ์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-sàt-klâi-sǔun-phan-dâi-láeo", english: "I remember the word endangered species now.", hindi: "मुझे अब लुप्तप्राय प्रजाति शब्द याद है।"),
+        ],
+        3334: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเขตอนุรักษ์", romanization: "chǎn-kam-lang-rian-kham-wâa-khèt-à-nú-rák", english: "I am learning the word conservation area.", hindi: "मैं संरक्षित क्षेत्र शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเขตอนุรักษ์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-khèt-à-nú-rák-dâi-láeo", english: "I remember the word conservation area now.", hindi: "मुझे अब संरक्षित क्षेत्र शब्द याद है।"),
+        ],
+        3335: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าอุทยานแห่งชาติ", romanization: "chǎn-kam-lang-rian-kham-wâa-ùt-thá-yaan-hàeng-châat", english: "I am learning the word national park.", hindi: "मैं राष्ट्रीय उद्यान शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าอุทยานแห่งชาติได้แล้ว", romanization: "chǎn-jam-kham-wâa-ùt-thá-yaan-hàeng-châat-dâi-láeo", english: "I remember the word national park now.", hindi: "मुझे अब राष्ट्रीय उद्यान शब्द याद है।"),
+        ],
+        3336: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าระบบนิเวศ", romanization: "chǎn-kam-lang-rian-kham-wâa-rá-bòp-ni-wêet", english: "I am learning the word ecosystem.", hindi: "मैं पारिस्थितिकी तंत्र शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าระบบนิเวศได้แล้ว", romanization: "chǎn-jam-kham-wâa-rá-bòp-ni-wêet-dâi-láeo", english: "I remember the word ecosystem now.", hindi: "मुझे अब पारिस्थितिकी तंत्र शब्द याद है।"),
+        ],
+        3337: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าความหลากหลายทางชีวภาพ", romanization: "chǎn-kam-lang-rian-kham-wâa-khwaam-làak-lǎai-thaang-chii-wá-phâap", english: "I am learning the word biodiversity.", hindi: "मैं जैव विविधता शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าความหลากหลายทางชีวภาพได้แล้ว", romanization: "chǎn-jam-kham-wâa-khwaam-làak-lǎai-thaang-chii-wá-phâap-dâi-láeo", english: "I remember the word biodiversity now.", hindi: "मुझे अब जैव विविधता शब्द याद है।"),
+        ],
+        3338: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ายั่งยืน", romanization: "chǎn-kam-lang-rian-kham-wâa-yâng-yueuen", english: "I am learning the word sustainable.", hindi: "मैं टिकाऊ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ายั่งยืนได้แล้ว", romanization: "chǎn-jam-kham-wâa-yâng-yueuen-dâi-láeo", english: "I remember the word sustainable now.", hindi: "मुझे अब टिकाऊ शब्द याद है।"),
+        ],
+        3339: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าคนรู้จัก", romanization: "chǎn-kam-lang-rian-kham-wâa-khon-rúu-jàk", english: "I am learning the word acquaintance.", hindi: "मैं परिचित शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าคนรู้จักได้แล้ว", romanization: "chǎn-jam-kham-wâa-khon-rúu-jàk-dâi-láeo", english: "I remember the word acquaintance now.", hindi: "मुझे अब परिचित शब्द याद है।"),
+        ],
+        3340: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าคู่หมั้น", romanization: "chǎn-kam-lang-rian-kham-wâa-khûu-mân", english: "I am learning the word fiancé.", hindi: "मैं मंगेतर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าคู่หมั้นได้แล้ว", romanization: "chǎn-jam-kham-wâa-khûu-mân-dâi-láeo", english: "I remember the word fiancé now.", hindi: "मुझे अब मंगेतर शब्द याद है।"),
+        ],
+        3341: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าคู่สมรส", romanization: "chǎn-kam-lang-rian-kham-wâa-khûu-sǒm-rót", english: "I am learning the word spouse.", hindi: "मैं जीवनसाथी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าคู่สมรสได้แล้ว", romanization: "chǎn-jam-kham-wâa-khûu-sǒm-rót-dâi-láeo", english: "I remember the word spouse now.", hindi: "मुझे अब जीवनसाथी शब्द याद है।"),
+        ],
+        3342: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่านัดเดต", romanization: "chǎn-kam-lang-rian-kham-wâa-nát-dèet", english: "I am learning the word go on a date.", hindi: "मैं डेट पर जाना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่านัดเดตได้แล้ว", romanization: "chǎn-jam-kham-wâa-nát-dèet-dâi-láeo", english: "I remember the word go on a date now.", hindi: "मुझे अब डेट पर जाना शब्द याद है।"),
+        ],
+        3343: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าคบกัน", romanization: "chǎn-kam-lang-rian-kham-wâa-khóp-kan", english: "I am learning the word be together.", hindi: "मैं रिश्ते में होना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าคบกันได้แล้ว", romanization: "chǎn-jam-kham-wâa-khóp-kan-dâi-láeo", english: "I remember the word be together now.", hindi: "मुझे अब रिश्ते में होना शब्द याद है।"),
+        ],
+        3344: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าไว้ใจ", romanization: "chǎn-kam-lang-rian-kham-wâa-wái-jai", english: "I am learning the word trust.", hindi: "मैं भरोसा करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าไว้ใจได้แล้ว", romanization: "chǎn-jam-kham-wâa-wái-jai-dâi-láeo", english: "I remember the word trust now.", hindi: "मुझे अब भरोसा करना शब्द याद है।"),
+        ],
+        3345: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่านินทา", romanization: "chǎn-kam-lang-rian-kham-wâa-nin-thaa", english: "I am learning the word gossip.", hindi: "मैं गपशप करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่านินทาได้แล้ว", romanization: "chǎn-jam-kham-wâa-nin-thaa-dâi-láeo", english: "I remember the word gossip now.", hindi: "मुझे अब गपशप करना शब्द याद है।"),
+        ],
+        3346: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าให้อภัย", romanization: "chǎn-kam-lang-rian-kham-wâa-hâi-à-phai", english: "I am learning the word forgive.", hindi: "मैं माफ़ करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าให้อภัยได้แล้ว", romanization: "chǎn-jam-kham-wâa-hâi-à-phai-dâi-láeo", english: "I remember the word forgive now.", hindi: "मुझे अब माफ़ करना शब्द याद है।"),
+        ],
+        3347: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าช่วยเหลือ", romanization: "chǎn-kam-lang-rian-kham-wâa-chûai-luěa", english: "I am learning the word assist.", hindi: "मैं मदद करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าช่วยเหลือได้แล้ว", romanization: "chǎn-jam-kham-wâa-chûai-luěa-dâi-láeo", english: "I remember the word assist now.", hindi: "मुझे अब मदद करना शब्द याद है।"),
+        ],
+        3348: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าพึ่งพา", romanization: "chǎn-kam-lang-rian-kham-wâa-phuêng-phaa", english: "I am learning the word rely on.", hindi: "मैं निर्भर रहना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าพึ่งพาได้แล้ว", romanization: "chǎn-jam-kham-wâa-phuêng-phaa-dâi-láeo", english: "I remember the word rely on now.", hindi: "मुझे अब निर्भर रहना शब्द याद है।"),
+        ],
+        3349: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าร่วมมือ", romanization: "chǎn-kam-lang-rian-kham-wâa-rûam-mueue", english: "I am learning the word cooperate.", hindi: "मैं सहयोग करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าร่วมมือได้แล้ว", romanization: "chǎn-jam-kham-wâa-rûam-mueue-dâi-láeo", english: "I remember the word cooperate now.", hindi: "मुझे अब सहयोग करना शब्द याद है।"),
+        ],
+        3350: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเข้ากันได้", romanization: "chǎn-kam-lang-rian-kham-wâa-khâo-kan-dâi", english: "I am learning the word get along.", hindi: "मैं मेलजोल होना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเข้ากันได้ได้แล้ว", romanization: "chǎn-jam-kham-wâa-khâo-kan-dâi-dâi-láeo", english: "I remember the word get along now.", hindi: "मुझे अब मेलजोल होना शब्द याद है।"),
+        ],
+        3351: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าขัดแย้ง", romanization: "chǎn-kam-lang-rian-kham-wâa-khàt-yaéaeng", english: "I am learning the word conflict.", hindi: "मैं विरोध करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าขัดแย้งได้แล้ว", romanization: "chǎn-jam-kham-wâa-khàt-yaéaeng-dâi-láeo", english: "I remember the word conflict now.", hindi: "मुझे अब विरोध करना शब्द याद है।"),
+        ],
+        3352: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าประนีประนอม", romanization: "chǎn-kam-lang-rian-kham-wâa-prà-nii-prà-nawawm", english: "I am learning the word compromise.", hindi: "मैं समझौता करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าประนีประนอมได้แล้ว", romanization: "chǎn-jam-kham-wâa-prà-nii-prà-nawawm-dâi-láeo", english: "I remember the word compromise now.", hindi: "मुझे अब समझौता करना शब्द याद है।"),
+        ],
+        3353: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเคารพ", romanization: "chǎn-kam-lang-rian-kham-wâa-khao-róp", english: "I am learning the word respect.", hindi: "मैं सम्मान करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเคารพได้แล้ว", romanization: "chǎn-jam-kham-wâa-khao-róp-dâi-láeo", english: "I remember the word respect now.", hindi: "मुझे अब सम्मान करना शब्द याद है।"),
+        ],
+        3354: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าดูถูก", romanization: "chǎn-kam-lang-rian-kham-wâa-duu-thùuk", english: "I am learning the word look down on.", hindi: "मैं नीचा समझना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าดูถูกได้แล้ว", romanization: "chǎn-jam-kham-wâa-duu-thùuk-dâi-láeo", english: "I remember the word look down on now.", hindi: "मुझे अब नीचा समझना शब्द याद है।"),
+        ],
+        3355: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าต้อนรับ", romanization: "chǎn-kam-lang-rian-kham-wâa-taŵawn-ráp", english: "I am learning the word welcome.", hindi: "मैं स्वागत करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าต้อนรับได้แล้ว", romanization: "chǎn-jam-kham-wâa-taŵawn-ráp-dâi-láeo", english: "I remember the word welcome now.", hindi: "मुझे अब स्वागत करना शब्द याद है।"),
+        ],
+        3356: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเลี้ยงฉลอง", romanization: "chǎn-kam-lang-rian-kham-wâa-líang-chà-law̌awng", english: "I am learning the word throw a party.", hindi: "मैं पार्टी देना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเลี้ยงฉลองได้แล้ว", romanization: "chǎn-jam-kham-wâa-líang-chà-law̌awng-dâi-láeo", english: "I remember the word throw a party now.", hindi: "मुझे अब पार्टी देना शब्द याद है।"),
+        ],
+        3357: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าของขวัญ", romanization: "chǎn-kam-lang-rian-kham-wâa-khaw̌awng-khwǎn", english: "I am learning the word gift.", hindi: "मैं उपहार शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าของขวัญได้แล้ว", romanization: "chǎn-jam-kham-wâa-khaw̌awng-khwǎn-dâi-láeo", english: "I remember the word gift now.", hindi: "मुझे अब उपहार शब्द याद है।"),
+        ],
+        3358: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าการ์ดอวยพร", romanization: "chǎn-kam-lang-rian-kham-wâa-kàat-uai-phon", english: "I am learning the word greeting card.", hindi: "मैं शुभकामना कार्ड शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าการ์ดอวยพรได้แล้ว", romanization: "chǎn-jam-kham-wâa-kàat-uai-phon-dâi-láeo", english: "I remember the word greeting card now.", hindi: "मुझे अब शुभकामना कार्ड शब्द याद है।"),
+        ],
+        3359: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามารยาท", romanization: "chǎn-kam-lang-rian-kham-wâa-maa-rá-yàat", english: "I am learning the word manners.", hindi: "मैं शिष्टाचार शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามารยาทได้แล้ว", romanization: "chǎn-jam-kham-wâa-maa-rá-yàat-dâi-láeo", english: "I remember the word manners now.", hindi: "मुझे अब शिष्टाचार शब्द याद है।"),
+        ],
+        3360: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเกรงใจ", romanization: "chǎn-kam-lang-rian-kham-wâa-kreng-jai", english: "I am learning the word considerateness.", hindi: "मैं लिहाज़ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเกรงใจได้แล้ว", romanization: "chǎn-jam-kham-wâa-kreng-jai-dâi-láeo", english: "I remember the word considerateness now.", hindi: "मुझे अब लिहाज़ शब्द याद है।"),
+        ],
+        3361: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเสียหน้า", romanization: "chǎn-kam-lang-rian-kham-wâa-sǐa-nâa", english: "I am learning the word lose face.", hindi: "मैं इज़्ज़त खोना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเสียหน้าได้แล้ว", romanization: "chǎn-jam-kham-wâa-sǐa-nâa-dâi-láeo", english: "I remember the word lose face now.", hindi: "मुझे अब इज़्ज़त खोना शब्द याद है।"),
+        ],
+        3362: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารุ่นพี่", romanization: "chǎn-kam-lang-rian-kham-wâa-rûn-phîi", english: "I am learning the word senior.", hindi: "मैं वरिष्ठ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารุ่นพี่ได้แล้ว", romanization: "chǎn-jam-kham-wâa-rûn-phîi-dâi-láeo", english: "I remember the word senior now.", hindi: "मुझे अब वरिष्ठ शब्द याद है।"),
+        ],
+        3363: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารุ่นน้อง", romanization: "chǎn-kam-lang-rian-kham-wâa-rûn-naẃawng", english: "I am learning the word junior.", hindi: "मैं कनिष्ठ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารุ่นน้องได้แล้ว", romanization: "chǎn-jam-kham-wâa-rûn-naẃawng-dâi-láeo", english: "I remember the word junior now.", hindi: "मुझे अब कनिष्ठ शब्द याद है।"),
+        ],
+        3364: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเมื่อวานซืน", romanization: "chǎn-kam-lang-rian-kham-wâa-muêa-waan-sueuen", english: "I am learning the word the day before yesterday.", hindi: "मैं परसों बीता हुआ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเมื่อวานซืนได้แล้ว", romanization: "chǎn-jam-kham-wâa-muêa-waan-sueuen-dâi-láeo", english: "I remember the word the day before yesterday now.", hindi: "मुझे अब परसों बीता हुआ शब्द याद है।"),
+        ],
+        3365: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามะรืนนี้", romanization: "chǎn-kam-lang-rian-kham-wâa-má-rueuen-níi", english: "I am learning the word the day after tomorrow.", hindi: "मैं आने वाला परसों शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามะรืนนี้ได้แล้ว", romanization: "chǎn-jam-kham-wâa-má-rueuen-níi-dâi-láeo", english: "I remember the word the day after tomorrow now.", hindi: "मुझे अब आने वाला परसों शब्द याद है।"),
+        ],
+        3366: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสัปดาห์หน้า", romanization: "chǎn-kam-lang-rian-kham-wâa-sàp-daa-nâa", english: "I am learning the word next week (time).", hindi: "मैं अगला सप्ताह शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสัปดาห์หน้าได้แล้ว", romanization: "chǎn-jam-kham-wâa-sàp-daa-nâa-dâi-láeo", english: "I remember the word next week (time) now.", hindi: "मुझे अब अगला सप्ताह शब्द याद है।"),
+        ],
+        3367: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสัปดาห์ที่แล้ว", romanization: "chǎn-kam-lang-rian-kham-wâa-sàp-daa-thîi-laéaeo", english: "I am learning the word last week (time).", hindi: "मैं पिछला सप्ताह शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสัปดาห์ที่แล้วได้แล้ว", romanization: "chǎn-jam-kham-wâa-sàp-daa-thîi-laéaeo-dâi-láeo", english: "I remember the word last week (time) now.", hindi: "मुझे अब पिछला सप्ताह शब्द याद है।"),
+        ],
+        3368: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเดือนหน้า", romanization: "chǎn-kam-lang-rian-kham-wâa-duean-nâa", english: "I am learning the word next month.", hindi: "मैं अगला महीना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเดือนหน้าได้แล้ว", romanization: "chǎn-jam-kham-wâa-duean-nâa-dâi-láeo", english: "I remember the word next month now.", hindi: "मुझे अब अगला महीना शब्द याद है।"),
+        ],
+        3369: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเดือนที่แล้ว", romanization: "chǎn-kam-lang-rian-kham-wâa-duean-thîi-laéaeo", english: "I am learning the word last month.", hindi: "मैं पिछला महीना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเดือนที่แล้วได้แล้ว", romanization: "chǎn-jam-kham-wâa-duean-thîi-laéaeo-dâi-láeo", english: "I remember the word last month now.", hindi: "मुझे अब पिछला महीना शब्द याद है।"),
+        ],
+        3370: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปีหน้า", romanization: "chǎn-kam-lang-rian-kham-wâa-pii-nâa", english: "I am learning the word next year.", hindi: "मैं अगला वर्ष शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปีหน้าได้แล้ว", romanization: "chǎn-jam-kham-wâa-pii-nâa-dâi-láeo", english: "I remember the word next year now.", hindi: "मुझे अब अगला वर्ष शब्द याद है।"),
+        ],
+        3371: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปีที่แล้ว", romanization: "chǎn-kam-lang-rian-kham-wâa-pii-thîi-laéaeo", english: "I am learning the word last year.", hindi: "मैं पिछला वर्ष शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปีที่แล้วได้แล้ว", romanization: "chǎn-jam-kham-wâa-pii-thîi-laéaeo-dâi-láeo", english: "I remember the word last year now.", hindi: "मुझे अब पिछला वर्ष शब्द याद है।"),
+        ],
+        3372: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าต้นเดือน", romanization: "chǎn-kam-lang-rian-kham-wâa-tôn-duean", english: "I am learning the word beginning of the month.", hindi: "मैं महीने की शुरुआत शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าต้นเดือนได้แล้ว", romanization: "chǎn-jam-kham-wâa-tôn-duean-dâi-láeo", english: "I remember the word beginning of the month now.", hindi: "मुझे अब महीने की शुरुआत शब्द याद है।"),
+        ],
+        3373: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากลางเดือน", romanization: "chǎn-kam-lang-rian-kham-wâa-klaang-duean", english: "I am learning the word middle of the month.", hindi: "मैं महीने का मध्य शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากลางเดือนได้แล้ว", romanization: "chǎn-jam-kham-wâa-klaang-duean-dâi-láeo", english: "I remember the word middle of the month now.", hindi: "मुझे अब महीने का मध्य शब्द याद है।"),
+        ],
+        3374: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสิ้นเดือน", romanization: "chǎn-kam-lang-rian-kham-wâa-sîn-duean", english: "I am learning the word end of the month.", hindi: "मैं महीने का अंत शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสิ้นเดือนได้แล้ว", romanization: "chǎn-jam-kham-wâa-sîn-duean-dâi-láeo", english: "I remember the word end of the month now.", hindi: "मुझे अब महीने का अंत शब्द याद है।"),
+        ],
+        3375: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าต้นปี", romanization: "chǎn-kam-lang-rian-kham-wâa-tôn-pii", english: "I am learning the word beginning of the year.", hindi: "मैं वर्ष की शुरुआत शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าต้นปีได้แล้ว", romanization: "chǎn-jam-kham-wâa-tôn-pii-dâi-láeo", english: "I remember the word beginning of the year now.", hindi: "मुझे अब वर्ष की शुरुआत शब्द याद है।"),
+        ],
+        3376: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสิ้นปี", romanization: "chǎn-kam-lang-rian-kham-wâa-sîn-pii", english: "I am learning the word end of the year.", hindi: "मैं वर्ष का अंत शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสิ้นปีได้แล้ว", romanization: "chǎn-jam-kham-wâa-sîn-pii-dâi-láeo", english: "I remember the word end of the year now.", hindi: "मुझे अब वर्ष का अंत शब्द याद है।"),
+        ],
+        3377: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าทศวรรษ", romanization: "chǎn-kam-lang-rian-kham-wâa-thót-sà-wát", english: "I am learning the word decade.", hindi: "मैं दशक शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าทศวรรษได้แล้ว", romanization: "chǎn-jam-kham-wâa-thót-sà-wát-dâi-láeo", english: "I remember the word decade now.", hindi: "मुझे अब दशक शब्द याद है।"),
+        ],
+        3378: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าศตวรรษ", romanization: "chǎn-kam-lang-rian-kham-wâa-sà-tà-wát", english: "I am learning the word century.", hindi: "मैं शताब्दी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าศตวรรษได้แล้ว", romanization: "chǎn-jam-kham-wâa-sà-tà-wát-dâi-láeo", english: "I remember the word century now.", hindi: "मुझे अब शताब्दी शब्द याद है।"),
+        ],
+        3379: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ายุค", romanization: "chǎn-kam-lang-rian-kham-wâa-yúk", english: "I am learning the word era.", hindi: "मैं युग शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ายุคได้แล้ว", romanization: "chǎn-jam-kham-wâa-yúk-dâi-láeo", english: "I remember the word era now.", hindi: "मुझे अब युग शब्द याद है।"),
+        ],
+        3380: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสมัยก่อน", romanization: "chǎn-kam-lang-rian-kham-wâa-sà-mǎi-kaẁawn", english: "I am learning the word in the old days.", hindi: "मैं पुराने समय में शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสมัยก่อนได้แล้ว", romanization: "chǎn-jam-kham-wâa-sà-mǎi-kaẁawn-dâi-láeo", english: "I remember the word in the old days now.", hindi: "मुझे अब पुराने समय में शब्द याद है।"),
+        ],
+        3381: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปัจจุบัน", romanization: "chǎn-kam-lang-rian-kham-wâa-pàt-jù-ban", english: "I am learning the word the present.", hindi: "मैं वर्तमान शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปัจจุบันได้แล้ว", romanization: "chǎn-jam-kham-wâa-pàt-jù-ban-dâi-láeo", english: "I remember the word the present now.", hindi: "मुझे अब वर्तमान शब्द याद है।"),
+        ],
+        3382: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าอนาคต", romanization: "chǎn-kam-lang-rian-kham-wâa-à-naa-khót", english: "I am learning the word the future.", hindi: "मैं भविष्य शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าอนาคตได้แล้ว", romanization: "chǎn-jam-kham-wâa-à-naa-khót-dâi-láeo", english: "I remember the word the future now.", hindi: "मुझे अब भविष्य शब्द याद है।"),
+        ],
+        3383: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าอดีต", romanization: "chǎn-kam-lang-rian-kham-wâa-à-dìit", english: "I am learning the word the past.", hindi: "मैं अतीत शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าอดีตได้แล้ว", romanization: "chǎn-jam-kham-wâa-à-dìit-dâi-láeo", english: "I remember the word the past now.", hindi: "मुझे अब अतीत शब्द याद है।"),
+        ],
+        3384: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าชั่วโมงเร่งด่วน", romanization: "chǎn-kam-lang-rian-kham-wâa-chûa-moong-rêng-dùan", english: "I am learning the word rush hour.", hindi: "मैं व्यस्त समय शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าชั่วโมงเร่งด่วนได้แล้ว", romanization: "chǎn-jam-kham-wâa-chûa-moong-rêng-dùan-dâi-láeo", english: "I remember the word rush hour now.", hindi: "मुझे अब व्यस्त समय शब्द याद है।"),
+        ],
+        3385: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าวันธรรมดา", romanization: "chǎn-kam-lang-rian-kham-wâa-wan-tham-má-daa", english: "I am learning the word weekday.", hindi: "मैं कार्यदिवस शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าวันธรรมดาได้แล้ว", romanization: "chǎn-jam-kham-wâa-wan-tham-má-daa-dâi-láeo", english: "I remember the word weekday now.", hindi: "मुझे अब कार्यदिवस शब्द याद है।"),
+        ],
+        3386: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าวันหยุดสุดสัปดาห์", romanization: "chǎn-kam-lang-rian-kham-wâa-wan-yùt-sùt-sàp-daa", english: "I am learning the word weekend (time).", hindi: "मैं सप्ताहांत शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าวันหยุดสุดสัปดาห์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-wan-yùt-sùt-sàp-daa-dâi-láeo", english: "I remember the word weekend (time) now.", hindi: "मुझे अब सप्ताहांत शब्द याद है।"),
+        ],
+        3387: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าวันหยุดนักขัตฤกษ์", romanization: "chǎn-kam-lang-rian-kham-wâa-wan-yùt-nák-khàt-tà-ruék", english: "I am learning the word public holiday.", hindi: "मैं सार्वजनिक अवकाश शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าวันหยุดนักขัตฤกษ์ได้แล้ว", romanization: "chǎn-jam-kham-wâa-wan-yùt-nák-khàt-tà-ruék-dâi-láeo", english: "I remember the word public holiday now.", hindi: "मुझे अब सार्वजनिक अवकाश शब्द याद है।"),
+        ],
+        3388: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าวันลา", romanization: "chǎn-kam-lang-rian-kham-wâa-wan-laa", english: "I am learning the word day off.", hindi: "मैं छुट्टी का दिन शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าวันลาได้แล้ว", romanization: "chǎn-jam-kham-wâa-wan-laa-dâi-láeo", english: "I remember the word day off now.", hindi: "मुझे अब छुट्टी का दिन शब्द याद है।"),
+        ],
+        3389: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าตลอดไป", romanization: "chǎn-kam-lang-rian-kham-wâa-tà-laẁawt-pai", english: "I am learning the word forever.", hindi: "मैं हमेशा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าตลอดไปได้แล้ว", romanization: "chǎn-jam-kham-wâa-tà-laẁawt-pai-dâi-láeo", english: "I remember the word forever now.", hindi: "मुझे अब हमेशा शब्द याद है।"),
+        ],
+        3390: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าระยะสั้น", romanization: "chǎn-kam-lang-rian-kham-wâa-rá-yá-sân", english: "I am learning the word short term.", hindi: "मैं अल्पकाल शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าระยะสั้นได้แล้ว", romanization: "chǎn-jam-kham-wâa-rá-yá-sân-dâi-láeo", english: "I remember the word short term now.", hindi: "मुझे अब अल्पकाल शब्द याद है।"),
+        ],
+        3391: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าระยะยาว", romanization: "chǎn-kam-lang-rian-kham-wâa-rá-yá-yaao", english: "I am learning the word long term.", hindi: "मैं दीर्घकाल शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าระยะยาวได้แล้ว", romanization: "chǎn-jam-kham-wâa-rá-yá-yaao-dâi-láeo", english: "I remember the word long term now.", hindi: "मुझे अब दीर्घकाल शब्द याद है।"),
+        ],
+        3392: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเลื่อน", romanization: "chǎn-kam-lang-rian-kham-wâa-luêan", english: "I am learning the word postpone.", hindi: "मैं स्थगित करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเลื่อนได้แล้ว", romanization: "chǎn-jam-kham-wâa-luêan-dâi-láeo", english: "I remember the word postpone now.", hindi: "मुझे अब स्थगित करना शब्द याद है।"),
+        ],
+        3393: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ายกเลิก", romanization: "chǎn-kam-lang-rian-kham-wâa-yók-loêoek", english: "I am learning the word cancel.", hindi: "मैं रद्द करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ายกเลิกได้แล้ว", romanization: "chǎn-jam-kham-wâa-yók-loêoek-dâi-láeo", english: "I remember the word cancel now.", hindi: "मुझे अब रद्द करना शब्द याद है।"),
+        ],
+        3394: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าไหมขัดฟัน", romanization: "chǎn-kam-lang-rian-kham-wâa-mǎi-khàt-fan", english: "I am learning the word dental floss.", hindi: "मैं दंत धागा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าไหมขัดฟันได้แล้ว", romanization: "chǎn-jam-kham-wâa-mǎi-khàt-fan-dâi-láeo", english: "I remember the word dental floss now.", hindi: "मुझे अब दंत धागा शब्द याद है।"),
+        ],
+        3395: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าน้ำยาบ้วนปาก", romanization: "chǎn-kam-lang-rian-kham-wâa-náam-yaa-bûan-pàak", english: "I am learning the word mouthwash.", hindi: "मैं माउथवॉश शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าน้ำยาบ้วนปากได้แล้ว", romanization: "chǎn-jam-kham-wâa-náam-yaa-bûan-pàak-dâi-láeo", english: "I remember the word mouthwash now.", hindi: "मुझे अब माउथवॉश शब्द याद है।"),
+        ],
+        3396: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าแปรงผม", romanization: "chǎn-kam-lang-rian-kham-wâa-praeaeng-phǒm", english: "I am learning the word hairbrush.", hindi: "मैं बालों का ब्रश शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าแปรงผมได้แล้ว", romanization: "chǎn-jam-kham-wâa-praeaeng-phǒm-dâi-láeo", english: "I remember the word hairbrush now.", hindi: "मुझे अब बालों का ब्रश शब्द याद है।"),
+        ],
+        3397: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าไดร์เป่าผม", romanization: "chǎn-kam-lang-rian-kham-wâa-drai-pào-phǒm", english: "I am learning the word hair dryer.", hindi: "मैं हेयर ड्रायर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าไดร์เป่าผมได้แล้ว", romanization: "chǎn-jam-kham-wâa-drai-pào-phǒm-dâi-láeo", english: "I remember the word hair dryer now.", hindi: "मुझे अब हेयर ड्रायर शब्द याद है।"),
+        ],
+        3398: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าโฟมโกนหนวด", romanization: "chǎn-kam-lang-rian-kham-wâa-foom-koon-nùat", english: "I am learning the word shaving foam.", hindi: "मैं शेविंग फोम शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าโฟมโกนหนวดได้แล้ว", romanization: "chǎn-jam-kham-wâa-foom-koon-nùat-dâi-láeo", english: "I remember the word shaving foam now.", hindi: "मुझे अब शेविंग फोम शब्द याद है।"),
+        ],
+        3399: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าระงับกลิ่นกาย", romanization: "chǎn-kam-lang-rian-kham-wâa-rá-ngáp-klìn-kaai", english: "I am learning the word deodorant.", hindi: "मैं डिओडोरेंट शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าระงับกลิ่นกายได้แล้ว", romanization: "chǎn-jam-kham-wâa-rá-ngáp-klìn-kaai-dâi-láeo", english: "I remember the word deodorant now.", hindi: "मुझे अब डिओडोरेंट शब्द याद है।"),
+        ],
+        3400: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าครีมกันแดด", romanization: "chǎn-kam-lang-rian-kham-wâa-khriim-kan-daèaet", english: "I am learning the word sunscreen.", hindi: "मैं सनस्क्रीन शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าครีมกันแดดได้แล้ว", romanization: "chǎn-jam-kham-wâa-khriim-kan-daèaet-dâi-láeo", english: "I remember the word sunscreen now.", hindi: "मुझे अब सनस्क्रीन शब्द याद है।"),
+        ],
+        3401: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าครีมบำรุงผิว", romanization: "chǎn-kam-lang-rian-kham-wâa-khriim-bam-rung-phǐu", english: "I am learning the word moisturiser.", hindi: "मैं मॉइस्चराइज़र शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าครีมบำรุงผิวได้แล้ว", romanization: "chǎn-jam-kham-wâa-khriim-bam-rung-phǐu-dâi-láeo", english: "I remember the word moisturiser now.", hindi: "मुझे अब मॉइस्चराइज़र शब्द याद है।"),
+        ],
+        3402: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเครื่องสำอาง", romanization: "chǎn-kam-lang-rian-kham-wâa-khruêang-sam-aaŋ", english: "I am learning the word cosmetics.", hindi: "मैं सौंदर्य प्रसाधन शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเครื่องสำอางได้แล้ว", romanization: "chǎn-jam-kham-wâa-khruêang-sam-aaŋ-dâi-láeo", english: "I remember the word cosmetics now.", hindi: "मुझे अब सौंदर्य प्रसाधन शब्द याद है।"),
+        ],
+        3403: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าลิปสติก", romanization: "chǎn-kam-lang-rian-kham-wâa-líp-sà-tìk", english: "I am learning the word lipstick.", hindi: "मैं लिपस्टिक शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าลิปสติกได้แล้ว", romanization: "chǎn-jam-kham-wâa-líp-sà-tìk-dâi-láeo", english: "I remember the word lipstick now.", hindi: "मुझे अब लिपस्टिक शब्द याद है।"),
+        ],
+        3404: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าแป้ง", romanization: "chǎn-kam-lang-rian-kham-wâa-paêaeng", english: "I am learning the word powder.", hindi: "मैं पाउडर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าแป้งได้แล้ว", romanization: "chǎn-jam-kham-wâa-paêaeng-dâi-láeo", english: "I remember the word powder now.", hindi: "मुझे अब पाउडर शब्द याद है।"),
+        ],
+        3405: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามาสคาร่า", romanization: "chǎn-kam-lang-rian-kham-wâa-maat-sà-khaa-râa", english: "I am learning the word mascara.", hindi: "मैं मस्कारा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามาสคาร่าได้แล้ว", romanization: "chǎn-jam-kham-wâa-maat-sà-khaa-râa-dâi-láeo", english: "I remember the word mascara now.", hindi: "मुझे अब मस्कारा शब्द याद है।"),
+        ],
+        3406: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากรรไกรตัดเล็บ", romanization: "chǎn-kam-lang-rian-kham-wâa-kan-krai-tàt-lép", english: "I am learning the word nail clippers.", hindi: "मैं नेल क्लिपर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากรรไกรตัดเล็บได้แล้ว", romanization: "chǎn-jam-kham-wâa-kan-krai-tàt-lép-dâi-láeo", english: "I remember the word nail clippers now.", hindi: "मुझे अब नेल क्लिपर शब्द याद है।"),
+        ],
+        3407: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ายาทาเล็บ", romanization: "chǎn-kam-lang-rian-kham-wâa-yaa-thaa-lép", english: "I am learning the word nail polish.", hindi: "मैं नेल पॉलिश शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ายาทาเล็บได้แล้ว", romanization: "chǎn-jam-kham-wâa-yaa-thaa-lép-dâi-láeo", english: "I remember the word nail polish now.", hindi: "मुझे अब नेल पॉलिश शब्द याद है।"),
+        ],
+        3408: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสำลี", romanization: "chǎn-kam-lang-rian-kham-wâa-sǎm-lii", english: "I am learning the word cotton wool.", hindi: "मैं रूई शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสำลีได้แล้ว", romanization: "chǎn-jam-kham-wâa-sǎm-lii-dâi-láeo", english: "I remember the word cotton wool now.", hindi: "मुझे अब रूई शब्द याद है।"),
+        ],
+        3409: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าทิชชู", romanization: "chǎn-kam-lang-rian-kham-wâa-thít-chuu", english: "I am learning the word tissue.", hindi: "मैं टिशू शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าทิชชูได้แล้ว", romanization: "chǎn-jam-kham-wâa-thít-chuu-dâi-láeo", english: "I remember the word tissue now.", hindi: "मुझे अब टिशू शब्द याद है।"),
+        ],
+        3410: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากระจกเงา", romanization: "chǎn-kam-lang-rian-kham-wâa-krà-jòk-ngao", english: "I am learning the word mirror.", hindi: "मैं दर्पण शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากระจกเงาได้แล้ว", romanization: "chǎn-jam-kham-wâa-krà-jòk-ngao-dâi-láeo", english: "I remember the word mirror now.", hindi: "मुझे अब दर्पण शब्द याद है।"),
+        ],
+        3411: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าตัดผม", romanization: "chǎn-kam-lang-rian-kham-wâa-tàt-phǒm", english: "I am learning the word get a haircut.", hindi: "मैं बाल कटवाना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าตัดผมได้แล้ว", romanization: "chǎn-jam-kham-wâa-tàt-phǒm-dâi-láeo", english: "I remember the word get a haircut now.", hindi: "मुझे अब बाल कटवाना शब्द याद है।"),
+        ],
+        3412: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าย้อมผม", romanization: "chǎn-kam-lang-rian-kham-wâa-yaẃawm-phǒm", english: "I am learning the word dye hair.", hindi: "मैं बाल रंगना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าย้อมผมได้แล้ว", romanization: "chǎn-jam-kham-wâa-yaẃawm-phǒm-dâi-láeo", english: "I remember the word dye hair now.", hindi: "मुझे अब बाल रंगना शब्द याद है।"),
+        ],
+        3413: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่านวด", romanization: "chǎn-kam-lang-rian-kham-wâa-nûat", english: "I am learning the word massage.", hindi: "मैं मालिश शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่านวดได้แล้ว", romanization: "chǎn-jam-kham-wâa-nûat-dâi-láeo", english: "I remember the word massage now.", hindi: "मुझे अब मालिश शब्द याद है।"),
+        ],
+        3414: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสปา", romanization: "chǎn-kam-lang-rian-kham-wâa-sà-paa", english: "I am learning the word spa.", hindi: "मैं स्पा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสปาได้แล้ว", romanization: "chǎn-jam-kham-wâa-sà-paa-dâi-láeo", english: "I remember the word spa now.", hindi: "मुझे अब स्पा शब्द याद है।"),
+        ],
+        3415: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าแต่งหน้า", romanization: "chǎn-kam-lang-rian-kham-wâa-taèaeng-nâa", english: "I am learning the word put on makeup.", hindi: "मैं मेकअप करना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าแต่งหน้าได้แล้ว", romanization: "chǎn-jam-kham-wâa-taèaeng-nâa-dâi-láeo", english: "I remember the word put on makeup now.", hindi: "मुझे अब मेकअप करना शब्द याद है।"),
+        ],
+        3416: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ามัสมั่น", romanization: "chǎn-kam-lang-rian-kham-wâa-mát-sà-màn", english: "I am learning the word massaman curry.", hindi: "मैं मस्समन करी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ามัสมั่นได้แล้ว", romanization: "chǎn-jam-kham-wâa-mát-sà-màn-dâi-láeo", english: "I remember the word massaman curry now.", hindi: "मुझे अब मस्समन करी शब्द याद है।"),
+        ],
+        3417: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าลาบ", romanization: "chǎn-kam-lang-rian-kham-wâa-lâap", english: "I am learning the word larb.", hindi: "मैं लार्ब शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าลาบได้แล้ว", romanization: "chǎn-jam-kham-wâa-lâap-dâi-láeo", english: "I remember the word larb now.", hindi: "मुझे अब लार्ब शब्द याद है।"),
+        ],
+        3418: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าหมูกรอบ", romanization: "chǎn-kam-lang-rian-kham-wâa-mǔu-kraẁawp", english: "I am learning the word crispy pork.", hindi: "मैं करारा सूअर का मांस शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าหมูกรอบได้แล้ว", romanization: "chǎn-jam-kham-wâa-mǔu-kraẁawp-dâi-láeo", english: "I remember the word crispy pork now.", hindi: "मुझे अब करारा सूअर का मांस शब्द याद है।"),
+        ],
+        3419: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปลาเผา", romanization: "chǎn-kam-lang-rian-kham-wâa-plaa-phào", english: "I am learning the word grilled fish.", hindi: "मैं भुनी मछली शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปลาเผาได้แล้ว", romanization: "chǎn-jam-kham-wâa-plaa-phào-dâi-láeo", english: "I remember the word grilled fish now.", hindi: "मुझे अब भुनी मछली शब्द याद है।"),
+        ],
+        3420: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าทับทิมกรอบ", romanization: "chǎn-kam-lang-rian-kham-wâa-tháp-thim-kraẁawp", english: "I am learning the word water chestnut dessert.", hindi: "मैं वॉटर चेस्टनट मिठाई शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าทับทิมกรอบได้แล้ว", romanization: "chǎn-jam-kham-wâa-tháp-thim-kraẁawp-dâi-láeo", english: "I remember the word water chestnut dessert now.", hindi: "मुझे अब वॉटर चेस्टनट मिठाई शब्द याद है।"),
+        ],
+        3421: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ายำ", romanization: "chǎn-kam-lang-rian-kham-wâa-yam", english: "I am learning the word Thai salad.", hindi: "मैं थाई सलाद शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ายำได้แล้ว", romanization: "chǎn-jam-kham-wâa-yam-dâi-láeo", english: "I remember the word Thai salad now.", hindi: "मुझे अब थाई सलाद शब्द याद है।"),
+        ],
+        3422: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสาหร่าย", romanization: "chǎn-kam-lang-rian-kham-wâa-sà-ràai", english: "I am learning the word seaweed.", hindi: "मैं समुद्री शैवाल शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสาหร่ายได้แล้ว", romanization: "chǎn-jam-kham-wâa-sà-ràai-dâi-láeo", english: "I remember the word seaweed now.", hindi: "मुझे अब समुद्री शैवाल शब्द याद है।"),
+        ],
+        3423: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเต้าหู้", romanization: "chǎn-kam-lang-rian-kham-wâa-tâo-hûu", english: "I am learning the word tofu.", hindi: "मैं टोफू शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเต้าหู้ได้แล้ว", romanization: "chǎn-jam-kham-wâa-tâo-hûu-dâi-láeo", english: "I remember the word tofu now.", hindi: "मुझे अब टोफू शब्द याद है।"),
+        ],
+        3424: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าลวก", romanization: "chǎn-kam-lang-rian-kham-wâa-lûak", english: "I am learning the word blanch.", hindi: "मैं उबालकर पकाना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าลวกได้แล้ว", romanization: "chǎn-jam-kham-wâa-lûak-dâi-láeo", english: "I remember the word blanch now.", hindi: "मुझे अब उबालकर पकाना शब्द याद है।"),
+        ],
+        3425: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าตุ๋น", romanization: "chǎn-kam-lang-rian-kham-wâa-tǔn", english: "I am learning the word stew.", hindi: "मैं धीमी आँच पर पकाना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าตุ๋นได้แล้ว", romanization: "chǎn-jam-kham-wâa-tǔn-dâi-láeo", english: "I remember the word stew now.", hindi: "मुझे अब धीमी आँच पर पकाना शब्द याद है।"),
+        ],
+        3426: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปรุงรส", romanization: "chǎn-kam-lang-rian-kham-wâa-prung-rót", english: "I am learning the word season.", hindi: "मैं मसाला डालना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปรุงรสได้แล้ว", romanization: "chǎn-jam-kham-wâa-prung-rót-dâi-láeo", english: "I remember the word season now.", hindi: "मुझे अब मसाला डालना शब्द याद है।"),
+        ],
+        3427: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าชิมรส", romanization: "chǎn-kam-lang-rian-kham-wâa-chim-rót", english: "I am learning the word taste-test.", hindi: "मैं चखना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าชิมรสได้แล้ว", romanization: "chǎn-jam-kham-wâa-chim-rót-dâi-láeo", english: "I remember the word taste-test now.", hindi: "मुझे अब चखना शब्द याद है।"),
+        ],
+        3428: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเผ็ดจัด", romanization: "chǎn-kam-lang-rian-kham-wâa-phèt-jàt", english: "I am learning the word very spicy (food-extra).", hindi: "मैं बहुत तीखा शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเผ็ดจัดได้แล้ว", romanization: "chǎn-jam-kham-wâa-phèt-jàt-dâi-láeo", english: "I remember the word very spicy (food-extra) now.", hindi: "मुझे अब बहुत तीखा शब्द याद है।"),
+        ],
+        3429: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสุกๆ ดิบๆ", romanization: "chǎn-kam-lang-rian-kham-wâa-sùk-sùk-dìp-dìp", english: "I am learning the word half-cooked.", hindi: "मैं अधपका शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสุกๆ ดิบๆได้แล้ว", romanization: "chǎn-jam-kham-wâa-sùk-sùk-dìp-dìp-dâi-láeo", english: "I remember the word half-cooked now.", hindi: "मुझे अब अधपका शब्द याद है।"),
+        ],
+        3430: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าไหม้", romanization: "chǎn-kam-lang-rian-kham-wâa-mâi", english: "I am learning the word burnt.", hindi: "मैं जला हुआ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าไหม้ได้แล้ว", romanization: "chǎn-jam-kham-wâa-mâi-dâi-láeo", english: "I remember the word burnt now.", hindi: "मुझे अब जला हुआ शब्द याद है।"),
+        ],
+        3431: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากลิ่นหอม", romanization: "chǎn-kam-lang-rian-kham-wâa-klìn-haw̌awm", english: "I am learning the word fragrant.", hindi: "मैं सुगंधित शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากลิ่นหอมได้แล้ว", romanization: "chǎn-jam-kham-wâa-klìn-haw̌awm-dâi-láeo", english: "I remember the word fragrant now.", hindi: "मुझे अब सुगंधित शब्द याद है।"),
+        ],
+        3432: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าอร่อยมาก", romanization: "chǎn-kam-lang-rian-kham-wâa-à-raẁawi-mâak", english: "I am learning the word very delicious.", hindi: "मैं बहुत स्वादिष्ट शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าอร่อยมากได้แล้ว", romanization: "chǎn-jam-kham-wâa-à-raẁawi-mâak-dâi-láeo", english: "I remember the word very delicious now.", hindi: "मुझे अब बहुत स्वादिष्ट शब्द याद है।"),
+        ],
+        3433: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าสั่งอาหาร", romanization: "chǎn-kam-lang-rian-kham-wâa-sàng-aa-hǎan", english: "I am learning the word order food.", hindi: "मैं खाना मँगाना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าสั่งอาหารได้แล้ว", romanization: "chǎn-jam-kham-wâa-sàng-aa-hǎan-dâi-láeo", english: "I remember the word order food now.", hindi: "मुझे अब खाना मँगाना शब्द याद है।"),
+        ],
+        3434: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าแบ่งจ่าย", romanization: "chǎn-kam-lang-rian-kham-wâa-bàeng-jàai", english: "I am learning the word split the bill.", hindi: "मैं बिल बाँटना शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าแบ่งจ่ายได้แล้ว", romanization: "chǎn-jam-kham-wâa-bàeng-jàai-dâi-láeo", english: "I remember the word split the bill now.", hindi: "मुझे अब बिल बाँटना शब्द याद है।"),
+        ],
+        3435: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเมนูแนะนำ", romanization: "chǎn-kam-lang-rian-kham-wâa-mee-nuu-naé-nam", english: "I am learning the word recommended menu.", hindi: "मैं अनुशंसित मेनू शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเมนูแนะนำได้แล้ว", romanization: "chǎn-jam-kham-wâa-mee-nuu-naé-nam-dâi-láeo", english: "I remember the word recommended menu now.", hindi: "मुझे अब अनुशंसित मेनू शब्द याद है।"),
+        ],
+        3436: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารถกระบะ", romanization: "chǎn-kam-lang-rian-kham-wâa-rót-krà-bà", english: "I am learning the word pickup truck.", hindi: "मैं पिकअप ट्रक शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารถกระบะได้แล้ว", romanization: "chǎn-jam-kham-wâa-rót-krà-bà-dâi-láeo", english: "I remember the word pickup truck now.", hindi: "मुझे अब पिकअप ट्रक शब्द याद है।"),
+        ],
+        3437: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารถบรรทุก", romanization: "chǎn-kam-lang-rian-kham-wâa-rót-ban-thúk", english: "I am learning the word lorry.", hindi: "मैं लॉरी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารถบรรทุกได้แล้ว", romanization: "chǎn-jam-kham-wâa-rót-ban-thúk-dâi-láeo", english: "I remember the word lorry now.", hindi: "मुझे अब लॉरी शब्द याद है।"),
+        ],
+        3438: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารถพ่วง", romanization: "chǎn-kam-lang-rian-kham-wâa-rót-phûang", english: "I am learning the word trailer.", hindi: "मैं ट्रेलर शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารถพ่วงได้แล้ว", romanization: "chǎn-jam-kham-wâa-rót-phûang-dâi-láeo", english: "I remember the word trailer now.", hindi: "मुझे अब ट्रेलर शब्द याद है।"),
+        ],
+        3439: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าเรือข้ามฟาก", romanization: "chǎn-kam-lang-rian-kham-wâa-ruea-khâam-fàak", english: "I am learning the word ferry (transport-extra).", hindi: "मैं फेरी शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าเรือข้ามฟากได้แล้ว", romanization: "chǎn-jam-kham-wâa-ruea-khâam-fàak-dâi-láeo", english: "I remember the word ferry (transport-extra) now.", hindi: "मुझे अब फेरी शब्द याद है।"),
+        ],
+        3440: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ารถไฟฟ้าใต้ดิน", romanization: "chǎn-kam-lang-rian-kham-wâa-rót-fai-fáa-tâi-din", english: "I am learning the word subway (transport-extra).", hindi: "मैं मेट्रो शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ารถไฟฟ้าใต้ดินได้แล้ว", romanization: "chǎn-jam-kham-wâa-rót-fai-fáa-tâi-din-dâi-láeo", english: "I remember the word subway (transport-extra) now.", hindi: "मुझे अब मेट्रो शब्द याद है।"),
+        ],
+        3441: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่ากระเช้าลอยฟ้า", romanization: "chǎn-kam-lang-rian-kham-wâa-krà-cháo-lawawi-fáa", english: "I am learning the word cable car.", hindi: "मैं केबल कार शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่ากระเช้าลอยฟ้าได้แล้ว", romanization: "chǎn-jam-kham-wâa-krà-cháo-lawawi-fáa-dâi-láeo", english: "I remember the word cable car now.", hindi: "मुझे अब केबल कार शब्द याद है।"),
+        ],
+        3442: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าตั๋วเที่ยวเดียว", romanization: "chǎn-kam-lang-rian-kham-wâa-tǔa-thîao-diao", english: "I am learning the word one-way ticket.", hindi: "मैं एकतरफ़ा टिकट शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าตั๋วเที่ยวเดียวได้แล้ว", romanization: "chǎn-jam-kham-wâa-tǔa-thîao-diao-dâi-láeo", english: "I remember the word one-way ticket now.", hindi: "मुझे अब एकतरफ़ा टिकट शब्द याद है।"),
+        ],
+        3443: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าที่นั่งริมทางเดิน", romanization: "chǎn-kam-lang-rian-kham-wâa-thîi-nâng-rim-thaang-doeoen", english: "I am learning the word aisle seat.", hindi: "मैं गलियारे की सीट शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าที่นั่งริมทางเดินได้แล้ว", romanization: "chǎn-jam-kham-wâa-thîi-nâng-rim-thaang-doeoen-dâi-láeo", english: "I remember the word aisle seat now.", hindi: "मुझे अब गलियारे की सीट शब्द याद है।"),
+        ],
+        3444: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าด่านเก็บเงิน", romanization: "chǎn-kam-lang-rian-kham-wâa-dàan-kèp-ngoen", english: "I am learning the word toll booth.", hindi: "मैं टोल बूथ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าด่านเก็บเงินได้แล้ว", romanization: "chǎn-jam-kham-wâa-dàan-kèp-ngoen-dâi-láeo", english: "I remember the word toll booth now.", hindi: "मुझे अब टोल बूथ शब्द याद है।"),
+        ],
+        3445: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าทางม้าลายข้าม", romanization: "chǎn-kam-lang-rian-kham-wâa-thaang-máa-laai-khâam", english: "I am learning the word pedestrian crossing.", hindi: "मैं पैदल पारपथ शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าทางม้าลายข้ามได้แล้ว", romanization: "chǎn-jam-kham-wâa-thaang-máa-laai-khâam-dâi-láeo", english: "I remember the word pedestrian crossing now.", hindi: "मुझे अब पैदल पारपथ शब्द याद है।"),
+        ],
+        3446: [
+            WordExample(thai: "ฉันกำลังเรียนคำว่าปั๊มน้ำมัน", romanization: "chǎn-kam-lang-rian-kham-wâa-pám-náam-man", english: "I am learning the word petrol station.", hindi: "मैं पेट्रोल पंप शब्द सीख रहा हूँ।"),
+            WordExample(thai: "ฉันจำคำว่าปั๊มน้ำมันได้แล้ว", romanization: "chǎn-jam-kham-wâa-pám-náam-man-dâi-láeo", english: "I remember the word petrol station now.", hindi: "मुझे अब पेट्रोल पंप शब्द याद है।"),
+        ],
+    ]
+
     // CHUNKS: sentence batches are appended as examples1, examples2, … by
     // tools/integrate_batch.py, which also maintains this merge list.
-    private static let exampleChunks: [[Int: [WordExample]]] = [examples0, examples1, examples3, examples4, examples5]
+    private static let exampleChunks: [[Int: [WordExample]]] = [examples0, examples1, examples3, examples4, examples5, examples6, examples7, examples8, examples9, examples10]
     private static let examples: [Int: [WordExample]] = exampleChunks.reduce(into: [:]) { $0.merge($1) { a, _ in a } }
 
     // How the word combines with (or is built from) other words.
