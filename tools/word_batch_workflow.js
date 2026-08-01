@@ -10,7 +10,7 @@ export const meta = {
 
 // args = output of tools/prepare_batch.py:
 // { batch, next_id, total, target, words_per_theme, themes: [{name, category,
-//   level, hint, existing: []}], gap_tokens: [] }
+//   level, hint, existing: []}], gap_tokens: [], compound_pool: [] }
 
 const CONVENTIONS = `
 CONTENT CONVENTIONS (authoritative — follow exactly):
@@ -72,6 +72,20 @@ For each token that is a REAL standalone Thai word or particle (e.g. ๆ the rep
 ${CONVENTIONS}
 Return ONLY the words array via structured output. Quality over quantity — skipping is better than inventing.`
   }
+  if (item.type === 'compounds') {
+    return `You are creating Thai vocabulary entries for a Thai-learning app for Hindi+English speakers.
+
+Thai builds many words by COMPOUNDING two simple words: น้ำ+ตก = น้ำตก (waterfall), ใจ+ดี = ใจดี (kind), ไฟ+ฟ้า = ไฟฟ้า (electricity), รถ+ไฟ = รถไฟ (train).
+
+Below are words already in our dictionary. Find up to 30 REAL, common Thai compound words formed by combining two (occasionally three) of these words. Only compounds that Thais genuinely use in everyday life — never invent a combination, and skip rare/literary ones. Prefer the most frequent, useful compounds first.
+
+DICTIONARY WORDS (the parts you may combine):
+${item.pool.join(', ')}
+
+For each compound, put the literal breakdown in the "en" field after the meaning, e.g. "waterfall (water+fall)". Choose a sensible existing-style category for each (e.g. "Nature", "Places", "Feelings", "Food", "Travel", "Basics").
+${CONVENTIONS}
+Return ONLY the words array via structured output. Quality over quantity — 10 real compounds beat 30 doubtful ones.`
+  }
   const t = item.t
   return `You are creating Thai vocabulary entries for a Thai-learning app for Hindi+English speakers.
 
@@ -86,7 +100,11 @@ Pick genuinely useful, natural, frequent words for this theme and level. Return 
 }
 
 function verifyPrompt(item, generated) {
-  return `You are a STRICT Thai language teacher reviewing vocabulary entries for a published learning app (theme: ${item.type === 'gaps' ? 'coverage gap fillers' : item.t.name}). Empty results are preferred over invented or wrong content.
+  const themeDesc =
+    item.type === 'gaps' ? 'coverage gap fillers'
+    : item.type === 'compounds' ? 'compound words built from existing dictionary words — also DROP any whose parts do not really combine into that word in Thai'
+    : item.t.name
+  return `You are a STRICT Thai language teacher reviewing vocabulary entries for a published learning app (theme: ${themeDesc}). Empty results are preferred over invented or wrong content.
 
 Review every entry below. For each:
 1. Is the Thai spelling a real, correctly spelled Thai word in normal use?
@@ -114,6 +132,7 @@ if (!A || !A.themes) {
           total: { type: 'number' }, target: { type: 'number' },
           words_per_theme: { type: 'number' },
           themes: { type: 'array' }, gap_tokens: { type: 'array' },
+          compound_pool: { type: 'array' },
         },
       } })
 }
@@ -123,17 +142,24 @@ const items = [
   ...A.themes.map(t => ({ type: 'theme', t, count: A.words_per_theme })),
   ...(A.gap_tokens && A.gap_tokens.length >= 5
     ? [{ type: 'gaps', tokens: A.gap_tokens }] : []),
+  ...(A.compound_pool && A.compound_pool.length
+    ? [{ type: 'compounds', pool: A.compound_pool }] : []),
 ]
+
+const itemName = item =>
+  item.type === 'gaps' ? 'gap-fill'
+  : item.type === 'compounds' ? 'compounds'
+  : item.t.name
 
 const verified = await pipeline(
   items,
   item => agent(genPrompt(item), {
-    label: `gen:${item.type === 'gaps' ? 'gap-fill' : item.t.name}`,
+    label: `gen:${itemName(item)}`,
     phase: 'Generate', schema: WORDS_SCHEMA,
   }),
   (gen, item) => gen && gen.words.length
     ? agent(verifyPrompt(item, gen), {
-        label: `verify:${item.type === 'gaps' ? 'gap-fill' : item.t.name}`,
+        label: `verify:${itemName(item)}`,
         phase: 'Verify', schema: WORDS_SCHEMA,
       })
     : { words: [] },

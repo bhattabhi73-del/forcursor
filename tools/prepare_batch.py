@@ -140,6 +140,13 @@ def main():
     gaps = V.coverage_gaps([w["thai"] for w in words], V.load_sentence_thai())
     top_gaps = [t for t, c in gaps.most_common(12) if c >= 2]
 
+    # Short existing words are the raw material for real Thai compounds
+    # (น้ำ+ตก=น้ำตก). id order ≈ frequency, so the pool stays beginner-heavy.
+    compound_pool = [
+        f'{w["thai"]} ({w["en"]})' for w in words
+        if len(w["thai"]) <= 5 and " " not in w["thai"]
+    ][:300]
+
     plan = {
         "batch": state["batch"],
         "next_id": max(w["id"] for w in words) + 1,
@@ -148,6 +155,7 @@ def main():
         "words_per_theme": state["words_per_theme"],
         "themes": slots,
         "gap_tokens": top_gaps,
+        "compound_pool": compound_pool,
     }
     state["theme_cursor"] = cursor + len(slots)
     state["batch"] += 1
