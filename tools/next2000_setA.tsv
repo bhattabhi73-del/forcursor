@@ -1,0 +1,1153 @@
+# =============================================================================
+# THAI LEARN — VOCABULARY SET A  (1000 words)
+# =============================================================================
+# Generated 2026-08-02. This is HALF of a 2,000-word expansion.
+# Set A (1000 words) -> assigned to Cursor.  Set B (1,000) -> handled separately.
+#
+# These 1000 Thai words are ALREADY VERIFIED UNIQUE against the existing
+# 2,446 words in ThaiWallpaperLearn/Shared/Vocabulary.swift. 395 candidate words
+# were dropped during generation because they collided. DO NOT re-check needed —
+# but DO NOT substitute your own words either. Use exactly this list.
+#
+# -----------------------------------------------------------------------------
+# WHAT YOU MUST PRODUCE
+# -----------------------------------------------------------------------------
+# For EACH of the 1000 rows below, produce one Swift ThaiWord entry:
+#
+#   ThaiWord(id: <int>, thai: "<given>", romanization: "<you>",
+#            hindiPronunciation: "<you>", englishMeaning: "<given>",
+#            hindiMeaning: "<you>", category: "<given>")
+#
+# IDs continue from the existing data: start at 2447, increment by 1, no gaps.
+# Append to the existing array in ThaiWallpaperLearn/Shared/Vocabulary.swift.
+#
+# PLUS: 2-3 example sentences per word, in the same structure the existing
+# examples use (thai / romanization / english / hindi). Every word needs them.
+#
+# -----------------------------------------------------------------------------
+# RULE 1 — ROMANIZATION (this is where the last batch went wrong)
+# -----------------------------------------------------------------------------
+# Match the EXISTING baseline style exactly. Reference rows from ids 1-1046:
+#
+#     ขอบคุณ  ->  khop-khun      (tones: khòp-khun)
+#     สวัสดี   ->  sa-wat-dii     (tones: sà-wàt-dii)
+#     น้ำ      ->  naam           (tones: náam)
+#     เรือ     ->  ruea           (baseline has "rʉa" in 5 stray rows — do NOT copy
+#                                  those; they are the exception, not the rule)
+#     เสื้อ     ->  suea           (tones: sûea)
+#     ศอก     ->  sook           (tones: sòok)
+#     ห้องครัว  ->  hoong-khrua    (tones: hôong-khrua)
+#     เขียว    ->  khiao          (tones: khǐao)
+#     เหลือง   ->  lueang         (tones: lǔeang)
+#
+#   1a. ASCII letters + tone diacritics ONLY.
+#       FORBIDDEN characters:  ʉ  ɔ  ə  ɛ  ɤ
+#       Write "ue" not "ʉ"   |  "aw"/"oo" not "ɔ"  |  "er" not "ə"
+#       WRONG: sʉ̂ʉa, khɔ̂ɔ-sɔ̀ɔk, mɔɔ-təə-sai, bpàa
+#       RIGHT: sûea,  khôo-sòok,  moo-ter-sai,  bpaa
+#
+#   1b. Syllables joined by HYPHENS. Never spaces.
+#       WRONG: "thaa aa-gaat yaan"      RIGHT: "thaa-aa-kaat-yaan"
+#
+#   1c. ก is romanized "k", NOT "g".
+#       WRONG: gaan, gài, gun-jae       RIGHT: kaan, kài, kun-jae
+#       Verified against baseline: ก=k  ข/ค=kh  ต=t  ท/ถ=th  ป=p  พ/ผ=ph
+#                                  จ=j  ด=d  บ=b  ง=ng  ญ/ย=y
+#       (baseline: กิน=kin, ตา=taa, ปี=pii, จาก=jàak, บ้าน=bâan)
+#       Long vowel ื = "ue" / "uue"  (baseline: คืน=khuen, ตื่น=tùuen)
+#
+#   1d. Tone marks go on the vowel: à á â ǎ  è é ê ě  ì í î ǐ  ò ó ô ǒ  ù ú û ǔ
+#
+#   1e. The SAME Thai syllable must romanize the same way everywhere.
+#       (Last batch had ไกด์ as both "kai" and "gai" — do not repeat this.)
+#
+# -----------------------------------------------------------------------------
+# RULE 2 — DEVANAGARI (hindiPronunciation)
+# -----------------------------------------------------------------------------
+#   2a. Devanagari script only. No Latin letters anywhere in the field.
+#   2b. Syllables joined by HYPHENS, mirroring the romanization:
+#         ขอบคุณ -> खोब-कुन        สวัสดี -> स-वट-दी
+#   2c. In compounds, न + ม is written नम (not न्म).
+#   2d. The "er" vowel (เ-อ) uses  र्  — e.g. เดิน -> दर्न
+#   2e. Unaspirated k/t/p stay क/त/प; aspirated kh/th/ph become ख/थ/फ.
+#         กิน -> किन     ขอบ -> खोब     ไป -> पाइ
+#
+# -----------------------------------------------------------------------------
+# RULE 3 — HINDI MEANING (hindiMeaning)
+# -----------------------------------------------------------------------------
+#   Natural Hindi, Devanagari only, no Latin. Add a disambiguator in
+#   parentheses when the English is ambiguous, e.g.  खाना (क्रिया) for "to eat".
+#
+# -----------------------------------------------------------------------------
+# RULE 4 — NO AMBIGUOUS DUPLICATES
+# -----------------------------------------------------------------------------
+#   Two words must never share an identical englishMeaning — the Quiz and Speak
+#   modes show the English and expect one Thai answer, so duplicates create
+#   unanswerable questions. The last batch broke this ("red" = both แดง and สีแดง).
+#   If a word here would collide with an existing meaning, DISAMBIGUATE the
+#   English instead of skipping: "goal (football)", "safe (secure)".
+#
+# -----------------------------------------------------------------------------
+# RULE 5 — CATEGORY
+# -----------------------------------------------------------------------------
+#   Use the category given in column 3 VERBATIM. Do not invent new ones, do not
+#   re-map to existing categories. Grouping consistency matters more than
+#   elegance here.
+#
+# -----------------------------------------------------------------------------
+# RULE 6 — VERIFY BEFORE COMMITTING
+# -----------------------------------------------------------------------------
+#   [ ] 1000 new entries, ids 2447-3446, no gaps, no duplicate ids
+#   [ ] No entry contains  ʉ ɔ ə ɛ ɤ  in romanization
+#   [ ] No romanization contains a space
+#   [ ] No romanization contains "g" followed by a vowel
+#   [ ] Every hindiPronunciation and hindiMeaning is pure Devanagari
+#   [ ] No two entries anywhere share an englishMeaning
+#   [ ] Every new word has 2-3 examples
+#   [ ] The iOS target still compiles
+#
+# -----------------------------------------------------------------------------
+# CATEGORY BREAKDOWN
+# -----------------------------------------------------------------------------
+#     55  Verbs-Action
+#     47  Technology
+#     45  Concepts
+#     44  Education
+#     43  Business
+#     43  Government
+#     41  Geography
+#     38  Jobs
+#     35  Media
+#     34  Adjectives
+#     32  Classifiers
+#     30  Religion
+#     30  Time
+#     28  Tools
+#     27  Measure
+#     26  Music
+#     26  Sports
+#     26  Shapes
+#     26  Materials
+#     25  Verbs-Motion
+#     25  Social
+#     24  Health
+#     23  Environment
+#     22  Grammar-Connect
+#     22  Finance
+#     22  Personal-Care
+#     20  Food-Extra
+#     19  Verbs-Speech
+#     18  Adverbs
+#     17  Verbs-Mental
+#     16  Art
+#     14  Verbs-Body
+#     14  Emergency
+#     12  Verbs-Sense
+#     11  Grammar-Particle
+#     11  Transport-Extra
+#      9  Grammar-Prep
+#
+# =============================================================================
+# thai<TAB>english<TAB>category
+# =============================================================================
+
+กระโดด	jump	Verbs-Motion
+คลาน	crawl	Verbs-Motion
+ปีน	climb	Verbs-Motion
+บิน	fly	Verbs-Motion
+ขี่	ride	Verbs-Motion
+เดินเล่น	stroll	Verbs-Motion
+วิ่งเหยาะ	jog	Verbs-Motion
+ก้าว	step	Verbs-Motion
+ถอย	back up	Verbs-Motion
+หมุน	spin	Verbs-Motion
+กลิ้ง	roll	Verbs-Motion
+ล้ม	fall over	Verbs-Motion
+สะดุด	trip	Verbs-Motion
+กระเด้ง	bounce	Verbs-Motion
+ผ่าน	pass by	Verbs-Motion
+ตาม	follow	Verbs-Motion
+หนี	flee	Verbs-Motion
+ไล่	chase	Verbs-Motion
+ซ่อน	hide	Verbs-Motion
+โผล่	emerge	Verbs-Motion
+มุด	duck under	Verbs-Motion
+เลื้อย	slither	Verbs-Motion
+กระโผลกกระเผลก	limp	Verbs-Motion
+เดินเร็ว	walk fast	Verbs-Motion
+ถอยหลัง	move backwards	Verbs-Motion
+โยน	throw	Verbs-Action
+ขว้าง	hurl	Verbs-Action
+ดึง	pull	Verbs-Action
+ผลัก	push	Verbs-Action
+วาง	put down	Verbs-Action
+แบก	carry on shoulder	Verbs-Action
+หิ้ว	carry by hand	Verbs-Action
+ลาก	drag	Verbs-Action
+ดัน	shove	Verbs-Action
+บีบ	squeeze	Verbs-Action
+กด	press	Verbs-Action
+ตี	hit	Verbs-Action
+ต่อย	punch	Verbs-Action
+เตะ	kick	Verbs-Action
+ฉีก	tear	Verbs-Action
+สับ	chop	Verbs-Action
+ทุบ	smash	Verbs-Action
+เจาะ	pierce	Verbs-Action
+ขูด	scrape	Verbs-Action
+พับ	fold	Verbs-Action
+ม้วน	roll up	Verbs-Action
+ผูก	tie	Verbs-Action
+มัด	bind	Verbs-Action
+ล็อก	lock	Verbs-Action
+เสียบ	plug in	Verbs-Action
+ถอด	take off	Verbs-Action
+สวม	wear	Verbs-Action
+ติด	attach	Verbs-Action
+แปะ	stick on	Verbs-Action
+ทา	spread on	Verbs-Action
+พ่น	spray	Verbs-Action
+เท	pour	Verbs-Action
+ราด	pour over	Verbs-Action
+กรอก	fill in	Verbs-Action
+เติม	top up	Verbs-Action
+ตวง	measure out	Verbs-Action
+ชั่ง	weigh	Verbs-Action
+แบ่ง	divide	Verbs-Action
+เรียง	arrange in order	Verbs-Action
+คัด	select out	Verbs-Action
+ขุด	dig	Verbs-Action
+รด	water (plants)	Verbs-Action
+เก็บเกี่ยว	harvest	Verbs-Action
+ล่า	hunt	Verbs-Action
+ยิง	shoot	Verbs-Action
+สาน	weave	Verbs-Action
+ปัก	embroider	Verbs-Action
+เย็บ	sew	Verbs-Action
+ทอ	weave (cloth)	Verbs-Action
+หลอม	melt down	Verbs-Action
+เชื่อม	weld	Verbs-Action
+ตอก	hammer in	Verbs-Action
+ขัน	tighten (screw)	Verbs-Action
+คลาย	loosen	Verbs-Action
+งัด	pry open	Verbs-Action
+เชื่อ	believe	Verbs-Mental
+เดา	guess	Verbs-Mental
+ตัดสินใจ	decide	Verbs-Mental
+วางแผน	plan	Verbs-Mental
+สนใจ	be interested	Verbs-Mental
+ปรารถนา	desire	Verbs-Mental
+ฝัน	dream	Verbs-Mental
+นึก	recall	Verbs-Mental
+จินตนาการ	imagine	Verbs-Mental
+สังเกต	observe	Verbs-Mental
+เดือดร้อน	be troubled	Verbs-Mental
+ตั้งสติ	compose oneself	Verbs-Mental
+ทบทวน	review	Verbs-Mental
+วิเคราะห์	analyse	Verbs-Mental
+คาดเดา	speculate	Verbs-Mental
+ตระหนัก	be aware of	Verbs-Mental
+ยอมแพ้	give up	Verbs-Mental
+เล่า	narrate	Verbs-Speech
+สนทนา	converse	Verbs-Speech
+เถียง	argue	Verbs-Speech
+บ่น	complain	Verbs-Speech
+ชม	praise	Verbs-Speech
+ด่า	scold	Verbs-Speech
+ล้อ	tease	Verbs-Speech
+โกหก	lie	Verbs-Speech
+สาบาน	swear an oath	Verbs-Speech
+เชิญ	invite	Verbs-Speech
+ขอร้อง	plead	Verbs-Speech
+ยอมรับ	accept	Verbs-Speech
+ตกลง	agree	Verbs-Speech
+ประกาศ	announce	Verbs-Speech
+บรรยาย	lecture	Verbs-Speech
+เรียก	call out	Verbs-Speech
+ทัก	greet	Verbs-Speech
+ลา	take leave	Verbs-Speech
+พูดเล่น	joke	Verbs-Speech
+มอง	look	Verbs-Sense
+จ้อง	stare	Verbs-Sense
+เหลือบ	glance	Verbs-Sense
+ได้ยิน	hear	Verbs-Sense
+ดม	smell	Verbs-Sense
+สัมผัส	touch	Verbs-Sense
+เพ่ง	focus eyes on	Verbs-Sense
+แอบดู	peek	Verbs-Sense
+สูดดม	sniff	Verbs-Sense
+เงี่ยหูฟัง	listen closely	Verbs-Sense
+ลูบ	stroke	Verbs-Sense
+เกา	scratch	Verbs-Sense
+สะอึก	hiccup	Verbs-Body
+หาว	yawn	Verbs-Body
+กลืน	swallow	Verbs-Body
+เคี้ยว	chew	Verbs-Body
+กัด	bite	Verbs-Body
+เลีย	lick	Verbs-Body
+ถ่มน้ำลาย	spit	Verbs-Body
+สั่น	shiver	Verbs-Body
+เหงื่อออก	sweat	Verbs-Body
+หัวเราะ	laugh	Verbs-Body
+ถอนหายใจ	sigh	Verbs-Body
+กระพริบตา	blink	Verbs-Body
+พยักหน้า	nod	Verbs-Body
+ส่ายหัว	shake head	Verbs-Body
+เครื่อง	machines	Classifiers
+แผ่น	flat sheets	Classifiers
+องค์	monks, royalty, images	Classifiers
+รูป	monks, photos	Classifiers
+ท่าน	respected persons	Classifiers
+ดวง	stars, hearts, stamps	Classifiers
+ต้น	trees, plants	Classifiers
+ดอก	flowers	Classifiers
+ผล	fruits, results	Classifiers
+เม็ด	seeds, pills, grains	Classifiers
+ก้อน	lumps, rocks	Classifiers
+หยด	drops	Classifiers
+ฟอง	eggs, bubbles	Classifiers
+มวน	cigarettes	Classifiers
+ซอง	envelopes, packs	Classifiers
+แห่ง	places	Classifiers
+เที่ยว	trips, journeys	Classifiers
+ที	times (informal)	Classifiers
+รอบ	rounds, cycles	Classifiers
+ประโยค	sentences	Classifiers
+ข้อ	items, clauses	Classifiers
+เรื่อง	stories, matters	Classifiers
+ชนิด	kinds, types	Classifiers
+อย่าง	sorts, ways	Classifiers
+แบบ	styles, models	Classifiers
+กลุ่ม	groups	Classifiers
+ฝูง	herds, flocks	Classifiers
+พวก	groups of people	Classifiers
+บาน	doors, windows	Classifiers
+ผืน	cloth, land, mats	Classifiers
+ลำ	boats, aircraft	Classifiers
+ขบวน	processions, trains	Classifiers
+เพราะ	because	Grammar-Connect
+ดังนั้น	therefore	Grammar-Connect
+ถ้า	if	Grammar-Connect
+เมื่อ	when	Grammar-Connect
+ขณะที่	while	Grammar-Connect
+ก่อนที่	before (clause)	Grammar-Connect
+หลังจาก	after	Grammar-Connect
+จนกระทั่ง	until	Grammar-Connect
+ตั้งแต่	since	Grammar-Connect
+เพื่อ	in order to	Grammar-Connect
+แม้ว่า	although	Grammar-Connect
+ถึงแม้	even though	Grammar-Connect
+นอกจาก	besides	Grammar-Connect
+รวมทั้ง	including	Grammar-Connect
+ยกเว้น	except	Grammar-Connect
+แทนที่	instead of	Grammar-Connect
+เช่น	such as	Grammar-Connect
+ได้แก่	namely	Grammar-Connect
+อย่างไรก็ตาม	however	Grammar-Connect
+ในขณะเดียวกัน	meanwhile	Grammar-Connect
+ยิ่งกว่านั้น	moreover	Grammar-Connect
+สรุปแล้ว	in conclusion	Grammar-Connect
+ใต้	under	Grammar-Prep
+ข้าง	beside	Grammar-Prep
+ไกลจาก	far from	Grammar-Prep
+โดย	by means of	Grammar-Prep
+สำหรับ	for	Grammar-Prep
+เกี่ยวกับ	about	Grammar-Prep
+ทั่ว	throughout	Grammar-Prep
+ภายใน	within	Grammar-Prep
+ภายนอก	outside of	Grammar-Prep
+เถอะ	let's, do it	Grammar-Particle
+หรอก	contradicting particle	Grammar-Particle
+ล่ะ	then, so	Grammar-Particle
+จ๊ะ	friendly particle	Grammar-Particle
+แหละ	emphasis particle	Grammar-Particle
+ใช่ไหม	isn't it	Grammar-Particle
+หรือเปล่า	or not	Grammar-Particle
+บ้าง	some, any	Grammar-Particle
+เอง	oneself	Grammar-Particle
+มั้ง	probably	Grammar-Particle
+นี่แหละ	this very one	Grammar-Particle
+นานๆ ครั้ง	rarely	Adverbs
+ค่อยๆ	gradually	Adverbs
+ทันใด	suddenly	Adverbs
+เกือบ	almost	Adverbs
+เพิ่ง	just now	Adverbs
+เท่านั้น	only	Adverbs
+อย่างน้อย	at least	Adverbs
+อย่างมาก	at most	Adverbs
+ค่อนข้าง	rather	Adverbs
+ทีเดียว	quite	Adverbs
+โดยเฉพาะ	especially	Adverbs
+ปกติ	normally	Adverbs
+โดยทั่วไป	generally	Adverbs
+คงจะ	probably	Adverbs
+แทบไม่	hardly	Adverbs
+เร็วๆ	quickly	Adverbs
+ช้าๆ	slowly	Adverbs
+เงียบๆ	quietly	Adverbs
+เรียบ	smooth	Adjectives
+ขรุขระ	rough	Adjectives
+ทื่อ	blunt	Adjectives
+ลึก	deep	Adjectives
+ตื้น	shallow	Adjectives
+หนา	thick	Adjectives
+เตี้ย	short (height)	Adjectives
+โค้ง	curved	Adjectives
+กลม	round	Adjectives
+แบน	flat	Adjectives
+เต็ม	full	Adjectives
+หลวม	loose	Adjectives
+รวย	rich	Adjectives
+จน	poor	Adjectives
+ขุ่น	cloudy	Adjectives
+กล้า	brave	Adjectives
+ขี้ขลาด	cowardly	Adjectives
+โกง	dishonest	Adjectives
+น่าเบื่อ	boring	Adjectives
+แปลก	strange	Adjectives
+คุ้นเคย	familiar	Adjectives
+ยุ่ง	busy	Adjectives
+ลำบาก	hard, troublesome	Adjectives
+ปลอม	fake	Adjectives
+เหมือน	same	Adjectives
+ต่าง	different	Adjectives
+พอ	enough	Adjectives
+ขาด	lacking	Adjectives
+เกิน	excessive	Adjectives
+สุกใส	radiant	Adjectives
+ซับซ้อน	complicated	Adjectives
+ทันสมัย	modern	Adjectives
+ล้าสมัย	outdated	Adjectives
+สดชื่น	refreshed	Adjectives
+แพทย์	physician	Jobs
+เภสัชกร	pharmacist	Jobs
+สถาปนิก	architect	Jobs
+ผู้พิพากษา	judge	Jobs
+นักดับเพลิง	firefighter	Jobs
+แอร์โฮสเตส	flight attendant	Jobs
+กัปตัน	captain	Jobs
+ชาวประมง	fisherman	Jobs
+ช่างไม้	carpenter	Jobs
+ช่างไฟฟ้า	electrician	Jobs
+ช่างประปา	plumber	Jobs
+ช่างเสริมสวย	hairdresser	Jobs
+ช่างซ่อม	repairman	Jobs
+บริกร	waiter	Jobs
+พนักงานบัญชี	accountant	Jobs
+เลขานุการ	secretary	Jobs
+ผู้อำนวยการ	director	Jobs
+เจ้าของ	owner	Jobs
+ลูกจ้าง	employee	Jobs
+นายจ้าง	employer	Jobs
+นักแปล	translator	Jobs
+นักวิทยาศาสตร์	scientist	Jobs
+นักวิจัย	researcher	Jobs
+โปรแกรมเมอร์	programmer	Jobs
+นักออกแบบ	designer	Jobs
+ศิลปิน	artist	Jobs
+นักดนตรี	musician	Jobs
+โค้ช	coach	Jobs
+พระ	monk	Jobs
+นักบวช	clergy	Jobs
+เกษตรกร	farmer	Jobs
+คนสวน	gardener	Jobs
+คนขับแท็กซี่	taxi driver	Jobs
+บุรุษไปรษณีย์	postman	Jobs
+พนักงานธนาคาร	bank clerk	Jobs
+สัตวแพทย์	veterinarian	Jobs
+ทันตแพทย์ผู้ช่วย	dental assistant	Jobs
+นักบัญชีภาษี	tax accountant	Jobs
+วิทยาลัย	college	Education
+อนุบาล	kindergarten	Education
+ประถม	primary school	Education
+มัธยม	secondary school	Education
+ห้องทดลอง	laboratory	Education
+สนามเด็กเล่น	playground	Education
+โรงอาหาร	canteen	Education
+กระดานดำ	blackboard	Education
+ชอล์ก	chalk	Education
+สมุด	notebook	Education
+ดินสอ	pencil	Education
+ปากกา	pen	Education
+ยางลบ	eraser	Education
+ไม้บรรทัด	ruler	Education
+กระเป๋านักเรียน	schoolbag	Education
+ตำรา	textbook	Education
+พจนานุกรม	dictionary	Education
+แบบฝึกหัด	exercise	Education
+ข้อสอบ	exam paper	Education
+เกรด	grade	Education
+วิชา	subject	Education
+คณิตศาสตร์	mathematics	Education
+วิทยาศาสตร์	science	Education
+ฟิสิกส์	physics	Education
+เคมี	chemistry	Education
+ชีววิทยา	biology	Education
+ประวัติศาสตร์	history	Education
+ภูมิศาสตร์	geography	Education
+ศิลปะ	art (subject)	Education
+พลศึกษา	physical education	Education
+ดนตรี	music (subject)	Education
+ท่อง	memorise	Education
+สอบ	take an exam	Education
+จบการศึกษา	graduate	Education
+ปริญญา	degree	Education
+ปริญญาตรี	bachelor's degree	Education
+ปริญญาโท	master's degree	Education
+ปริญญาเอก	doctorate	Education
+ค่าเทอม	tuition fee	Education
+ภาคเรียน	semester	Education
+ตารางเรียน	timetable	Education
+ผู้อำนวยการโรงเรียน	school principal	Education
+ใบรับรอง	certificate	Education
+ปฐมนิเทศ	orientation	Education
+บริษัท	company	Business
+ธุรกิจ	business	Business
+สาขา	branch	Business
+โรงงาน	factory	Business
+คลังสินค้า	warehouse	Business
+ร้านค้า	shop	Business
+ผู้ขาย	seller	Business
+ผู้ซื้อ	buyer	Business
+คู่แข่ง	competitor	Business
+หุ้นส่วน	partner	Business
+ข้อตกลง	agreement	Business
+ใบแจ้งหนี้	invoice	Business
+ใบสั่งซื้อ	purchase order	Business
+ต้นทุน	cost	Business
+รายจ่าย	expense	Business
+โบนัส	bonus	Business
+ค่าจ้าง	wage	Business
+สวัสดิการ	welfare benefits	Business
+โครงการ	project	Business
+ผลงาน	performance	Business
+รายงานประจำปี	annual report	Business
+การตลาด	marketing	Business
+โฆษณา	advertisement	Business
+แบรนด์	brand	Business
+สินค้า	goods	Business
+คลังสินค้าออนไลน์	online store	Business
+ส่งออก	export	Business
+นำเข้า	import	Business
+ขายส่ง	wholesale	Business
+ขายปลีก	retail	Business
+สต็อก	stock, inventory	Business
+จัดส่ง	delivery	Business
+รับประกัน	warranty	Business
+คืนสินค้า	return goods	Business
+ร้องเรียน	file a complaint	Business
+สมัครงาน	apply for a job	Business
+สัมภาษณ์	interview	Business
+เรซูเม่	resume	Business
+ลาออก	resign	Business
+เลิกจ้าง	lay off	Business
+เลื่อนตำแหน่ง	promotion	Business
+ฝึกงาน	internship	Business
+ทำงานล่วงเวลา	work overtime	Business
+คอมพิวเตอร์	computer	Technology
+แล็ปท็อป	laptop	Technology
+แท็บเล็ต	tablet	Technology
+สมาร์ตโฟน	smartphone	Technology
+คีย์บอร์ด	keyboard	Technology
+ลำโพง	speaker	Technology
+สแกนเนอร์	scanner	Technology
+ฮาร์ดดิสก์	hard disk	Technology
+หน่วยความจำ	memory	Technology
+อะแดปเตอร์	adapter	Technology
+ปลั๊ก	plug	Technology
+สายไฟ	electric wire	Technology
+อินเทอร์เน็ต	internet	Technology
+เว็บไซต์	website	Technology
+เบราว์เซอร์	browser	Technology
+เสิร์ชเอนจิน	search engine	Technology
+บัญชีผู้ใช้	user account	Technology
+สมัครสมาชิก	sign up	Technology
+ลบ	delete	Technology
+บันทึก	save	Technology
+แชร์	share	Technology
+โพสต์	post	Technology
+คอมเมนต์	comment	Technology
+ไลก์	like	Technology
+ติดตาม	follow	Technology
+บล็อก	block	Technology
+แชท	chat	Technology
+วิดีโอคอล	video call	Technology
+ซอฟต์แวร์	software	Technology
+ฮาร์ดแวร์	hardware	Technology
+โปรแกรม	program	Technology
+ไฟล์	file	Technology
+ข้อมูล	data	Technology
+ฐานข้อมูล	database	Technology
+เครือข่าย	network	Technology
+ไวไฟ	wi-fi	Technology
+บลูทูธ	bluetooth	Technology
+คลาวด์	cloud	Technology
+ไวรัส	virus	Technology
+แฮ็กเกอร์	hacker	Technology
+ความปลอดภัยไซเบอร์	cybersecurity	Technology
+ปัญญาประดิษฐ์	artificial intelligence	Technology
+หุ่นยนต์	robot	Technology
+โดรน	drone	Technology
+เครื่องพิมพ์สามมิติ	3D printer	Technology
+รถยนต์ไฟฟ้า	electric car	Technology
+พลังงานแสงอาทิตย์	solar energy	Technology
+ภาพยนตร์	film	Media
+ละคร	drama series	Media
+ซีรีส์	series	Media
+สารคดี	documentary	Media
+การ์ตูน	cartoon	Media
+รายการ	programme	Media
+ข่าว	news	Media
+หนังสือพิมพ์	newspaper	Media
+นิตยสาร	magazine	Media
+วิทยุ	radio	Media
+โทรทัศน์	television	Media
+ช่อง	channel	Media
+ผู้ประกาศข่าว	news anchor	Media
+พิธีกร	host	Media
+ผู้กำกับ	director (film)	Media
+นักแสดงนำ	lead actor	Media
+บทภาพยนตร์	screenplay	Media
+ฉาก	scene	Media
+ตัวอย่างหนัง	trailer	Media
+โปสเตอร์	poster	Media
+ตั๋วหนัง	movie ticket	Media
+คำบรรยาย	subtitles	Media
+พากย์เสียง	dubbing	Media
+เรตติ้ง	rating	Media
+รางวัล	award	Media
+เทศกาลภาพยนตร์	film festival	Media
+สตูดิโอ	studio	Media
+ถ่ายทำ	shoot, film	Media
+ตัดต่อ	edit	Media
+ออกอากาศ	broadcast	Media
+บันทึกเทป	recorded	Media
+ผู้ชม	audience	Media
+แฟนคลับ	fan club	Media
+ดารา	celebrity	Media
+บทบาท	role	Media
+เพลง	song	Music
+นักดนตรีอาชีพ	professional musician	Music
+วงดนตรี	band	Music
+วงออร์เคสตรา	orchestra	Music
+คอนเสิร์ต	concert	Music
+เวที	stage	Music
+เนื้อเพลง	lyrics	Music
+ทำนอง	melody	Music
+จังหวะ	rhythm	Music
+โน้ตดนตรี	musical note	Music
+คอร์ด	chord	Music
+กีตาร์	guitar	Music
+เปียโน	piano	Music
+ไวโอลิน	violin	Music
+กลอง	drum	Music
+ขลุ่ย	flute	Music
+ระนาด	Thai xylophone	Music
+ซอ	Thai fiddle	Music
+ฆ้อง	gong	Music
+พิณ	lute	Music
+แซกโซโฟน	saxophone	Music
+ทรัมเป็ต	trumpet	Music
+ร้องเพลง	sing	Music
+เล่นดนตรี	play music	Music
+แต่งเพลง	compose	Music
+ซ้อม	rehearse	Music
+จิตรกรรม	painting	Art
+ประติมากรรม	sculpture	Art
+ภาพวาด	drawing	Art
+ภาพเหมือน	portrait	Art
+ทิวทัศน์	landscape	Art
+พู่กัน	paintbrush	Art
+สีน้ำ	watercolour	Art
+สีน้ำมัน	oil paint	Art
+ผ้าใบ	canvas	Art
+นิทรรศการ	exhibition	Art
+ผลงานศิลปะ	artwork	Art
+ลวดลาย	pattern	Art
+งานฝีมือ	handicraft	Art
+เครื่องปั้นดินเผา	pottery	Art
+การถักทอ	weaving	Art
+แกะสลัก	carve	Art
+ฟุตบอล	football	Sports
+เทนนิส	tennis	Sports
+ปิงปอง	table tennis	Sports
+กอล์ฟ	golf	Sports
+มวยไทย	Muay Thai	Sports
+ยูโด	judo	Sports
+คาราเต้	karate	Sports
+ว่ายน้ำแข่ง	competitive swimming	Sports
+วิ่งมาราธอน	marathon	Sports
+โยคะ	yoga	Sports
+แอโรบิก	aerobics	Sports
+สนามหญ้า	pitch	Sports
+ลู่วิ่ง	running track	Sports
+กรรมการ	judge, official	Sports
+ทีมเหย้า	home team	Sports
+ทีมเยือน	away team	Sports
+กองเชียร์	supporters	Sports
+คะแนนนำ	lead	Sports
+แชมป์	champion	Sports
+เหรียญทอง	gold medal	Sports
+ถ้วยรางวัล	trophy	Sports
+รอบชิงชนะเลิศ	final round	Sports
+อบอุ่นร่างกาย	warm up	Sports
+บาดเจ็บ	injured	Sports
+ฟาวล์	foul	Sports
+ใบเหลือง	yellow card	Sports
+รัฐบาล	government	Government
+นายกรัฐมนตรี	prime minister	Government
+รัฐมนตรี	minister	Government
+กระทรวง	ministry	Government
+รัฐสภา	parliament	Government
+สมาชิกสภา	member of parliament	Government
+การเลือกตั้ง	election	Government
+ลงคะแนน	cast a vote	Government
+พรรคการเมือง	political party	Government
+นโยบาย	policy	Government
+กฎหมาย	law	Government
+รัฐธรรมนูญ	constitution	Government
+ศาล	court	Government
+คดี	legal case	Government
+หลักฐาน	evidence	Government
+จำเลย	defendant	Government
+โจทก์	plaintiff	Government
+คำพิพากษา	verdict	Government
+อุทธรณ์	appeal	Government
+เรือนจำ	prison	Government
+ค่าปรับ	fine	Government
+ทะเบียน	registration	Government
+สูติบัตร	birth certificate	Government
+ทะเบียนสมรส	marriage certificate	Government
+สัญชาติ	nationality	Government
+พลเมือง	citizen	Government
+สิทธิ	right	Government
+หน้าที่	duty	Government
+เสรีภาพ	freedom	Government
+ความยุติธรรม	justice	Government
+คอร์รัปชัน	corruption	Government
+ประท้วง	protest	Government
+สงคราม	war	Government
+สันติภาพ	peace	Government
+สนธิสัญญา	treaty	Government
+สถานทูต	embassy	Government
+กงสุล	consulate	Government
+ภาษีเงินได้	income tax	Government
+งบแผ่นดิน	national budget	Government
+ข้าราชการ	civil servant	Government
+เทศบาล	municipality	Government
+ตำบล	subdistrict	Government
+เมืองหลวง	capital city	Government
+ประเทศไทย	Thailand	Geography
+ประเทศอินเดีย	India	Geography
+ประเทศจีน	China	Geography
+ประเทศญี่ปุ่น	Japan	Geography
+ประเทศเกาหลี	Korea	Geography
+ประเทศลาว	Laos	Geography
+ประเทศกัมพูชา	Cambodia	Geography
+ประเทศเวียดนาม	Vietnam	Geography
+ประเทศพม่า	Myanmar	Geography
+ประเทศมาเลเซีย	Malaysia	Geography
+ประเทศสิงคโปร์	Singapore	Geography
+ประเทศอินโดนีเซีย	Indonesia	Geography
+ประเทศฟิลิปปินส์	Philippines	Geography
+ประเทศอังกฤษ	England	Geography
+ประเทศฝรั่งเศส	France	Geography
+ประเทศเยอรมนี	Germany	Geography
+ประเทศรัสเซีย	Russia	Geography
+ประเทศอเมริกา	America	Geography
+ประเทศออสเตรเลีย	Australia	Geography
+ทวีป	continent	Geography
+เอเชีย	Asia	Geography
+ยุโรป	Europe	Geography
+แอฟริกา	Africa	Geography
+มหาสมุทร	ocean	Geography
+ช่องแคบ	strait	Geography
+คาบสมุทร	peninsula	Geography
+ที่ราบ	plain	Geography
+ที่ราบสูง	plateau	Geography
+ยอดเขา	summit	Geography
+บึง	swamp	Geography
+ทะเลทราย	desert	Geography
+ป่าดิบ	rainforest	Geography
+ขั้วโลก	pole	Geography
+เส้นศูนย์สูตร	equator	Geography
+เข็มทิศ	compass	Geography
+ละติจูด	latitude	Geography
+ลองจิจูด	longitude	Geography
+พรมแดน	border	Geography
+ชายแดน	frontier	Geography
+ภูมิภาค	region	Geography
+ประชากร	population	Geography
+ศาสนา	religion	Religion
+พุทธศาสนา	Buddhism	Religion
+ศาสนาฮินดู	Hinduism	Religion
+ศาสนาคริสต์	Christianity	Religion
+ศาสนาอิสลาม	Islam	Religion
+พระพุทธเจ้า	the Buddha	Religion
+พระเจ้า	God	Religion
+เทพเจ้า	deity	Religion
+วิญญาณ	spirit	Religion
+สวรรค์	heaven	Religion
+นรก	hell	Religion
+กรรม	karma	Religion
+บุญ	merit	Religion
+บาป	sin	Religion
+ชาติหน้า	next life	Religion
+นิพพาน	nirvana	Religion
+ไหว้	pay respect	Religion
+บิณฑบาต	alms round	Religion
+วัดวาอาราม	temple grounds	Religion
+ศาลพระภูมิ	spirit house	Religion
+โบสถ์	church, ordination hall	Religion
+มัสยิด	mosque	Religion
+พิธีกรรม	ritual	Religion
+งานศพ	funeral	Religion
+งานแต่งงาน	wedding	Religion
+เผา	cremate	Religion
+โชคลาง	superstition	Religion
+เครื่องราง	amulet	Religion
+ดวงชะตา	fate	Religion
+หมอดู	fortune teller	Religion
+เมตร	metre	Measure
+เซนติเมตร	centimetre	Measure
+มิลลิเมตร	millimetre	Measure
+กิโลเมตร	kilometre	Measure
+ฟุต	foot	Measure
+ไมล์	mile	Measure
+กรัม	gram	Measure
+กิโลกรัม	kilogram	Measure
+ตัน	tonne	Measure
+ลิตร	litre	Measure
+มิลลิลิตร	millilitre	Measure
+แกลลอน	gallon	Measure
+ตารางเมตร	square metre	Measure
+ลูกบาศก์เมตร	cubic metre	Measure
+ไร่	rai (land unit)	Measure
+เปอร์เซ็นต์	percent	Measure
+เศษหนึ่งส่วนสี่	one quarter	Measure
+สองเท่า	double	Measure
+สามเท่า	triple	Measure
+ความยาว	length	Measure
+ความกว้าง	width	Measure
+ความสูง	height	Measure
+ความลึก	depth	Measure
+ปริมาตร	volume	Measure
+พื้นที่	area	Measure
+ความเร็ว	speed	Measure
+ความดัน	pressure	Measure
+วงกลม	circle	Shapes
+สี่เหลี่ยม	square	Shapes
+สามเหลี่ยม	triangle	Shapes
+สี่เหลี่ยมผืนผ้า	rectangle	Shapes
+วงรี	oval	Shapes
+ห้าเหลี่ยม	pentagon	Shapes
+หกเหลี่ยม	hexagon	Shapes
+ทรงกลม	sphere	Shapes
+ลูกบาศก์	cube	Shapes
+ทรงกระบอก	cylinder	Shapes
+กรวย	cone	Shapes
+พีระมิด	pyramid	Shapes
+เส้นตรง	straight line	Shapes
+เส้นโค้ง	curve	Shapes
+มุมฉาก	right angle	Shapes
+เส้นขนาน	parallel line	Shapes
+รัศมี	radius	Shapes
+เส้นผ่านศูนย์กลาง	diameter	Shapes
+บวก	add	Shapes
+คูณ	multiply	Shapes
+หาร	divide	Shapes
+เท่ากับ	equals	Shapes
+มากกว่า	greater than	Shapes
+น้อยกว่า	less than	Shapes
+ผลลัพธ์	result	Shapes
+สมการ	equation	Shapes
+ไม้	wood	Materials
+เหล็ก	iron	Materials
+เหล็กกล้า	steel	Materials
+ทองแดง	copper	Materials
+ทองเหลือง	brass	Materials
+อะลูมิเนียม	aluminium	Materials
+ทองคำ	gold	Materials
+แพลตินัม	platinum	Materials
+พลาสติก	plastic	Materials
+ยาง	rubber	Materials
+กระเบื้อง	tile	Materials
+ปูน	cement	Materials
+คอนกรีต	concrete	Materials
+อิฐ	brick	Materials
+ดินเหนียว	clay	Materials
+กระดาษ	paper	Materials
+กระดาษแข็ง	cardboard	Materials
+ผ้าฝ้าย	cotton	Materials
+ผ้าไหม	silk	Materials
+ผ้าลินิน	linen	Materials
+ผ้าขนสัตว์	wool	Materials
+หนัง	leather	Materials
+ใยสังเคราะห์	synthetic fibre	Materials
+โฟม	foam	Materials
+เซรามิก	ceramic	Materials
+คริสตัล	crystal	Materials
+ค้อน	hammer	Tools
+ตะปู	nail	Tools
+สกรู	screw	Tools
+ไขควง	screwdriver	Tools
+ประแจ	wrench	Tools
+คีม	pliers	Tools
+เลื่อย	saw	Tools
+สว่าน	drill	Tools
+กบไสไม้	plane	Tools
+สิ่ว	chisel	Tools
+ตะไบ	file	Tools
+มีดพับ	pocket knife	Tools
+เทปวัด	tape measure	Tools
+ระดับน้ำ	spirit level	Tools
+พลั่ว	shovel	Tools
+จอบ	hoe	Tools
+คราด	rake	Tools
+เคียว	sickle	Tools
+ขวาน	axe	Tools
+ลูกกลิ้ง	roller	Tools
+กาว	glue	Tools
+เทปกาว	adhesive tape	Tools
+เชือก	rope	Tools
+ลวด	wire	Tools
+โซ่	chain	Tools
+แม่แรง	jack	Tools
+ไฟฉาย	torch	Tools
+ถังน้ำมัน	fuel tank	Tools
+ความคิด	idea	Concepts
+ความจริง	truth	Concepts
+ความรู้	knowledge	Concepts
+ความเชื่อ	belief	Concepts
+ความหวัง	hope	Concepts
+ความฝัน	dream	Concepts
+ความทุกข์	suffering	Concepts
+ความกลัว	fear	Concepts
+ความโกรธ	anger	Concepts
+ความกล้าหาญ	courage	Concepts
+ความซื่อสัตย์	honesty	Concepts
+ความเมตตา	compassion	Concepts
+ความสำเร็จ	success	Concepts
+ความล้มเหลว	failure	Concepts
+ความพยายาม	effort	Concepts
+โอกาส	opportunity	Concepts
+ปัญหา	problem	Concepts
+วิธีแก้	solution	Concepts
+เหตุผล	reason	Concepts
+ผลลัพธ์สุดท้าย	outcome	Concepts
+ความเสี่ยง	risk	Concepts
+ประโยชน์	benefit	Concepts
+ข้อดี	advantage	Concepts
+ข้อเสีย	disadvantage	Concepts
+ความแตกต่าง	difference	Concepts
+ความคล้ายคลึง	similarity	Concepts
+ตัวอย่าง	example	Concepts
+คุณภาพ	quality	Concepts
+ปริมาณ	quantity	Concepts
+ระดับ	level	Concepts
+มาตรฐาน	standard	Concepts
+ระบบ	system	Concepts
+วิธีการ	method	Concepts
+ขั้นตอน	step, procedure	Concepts
+กระบวนการ	process	Concepts
+เป้าประสงค์	objective	Concepts
+แผนงาน	plan of work	Concepts
+ทางเลือก	alternative	Concepts
+การตัดสินใจ	decision	Concepts
+ความจำเป็น	necessity	Concepts
+วัฒนธรรม	culture	Concepts
+ประเพณี	tradition	Concepts
+สังคม	society	Concepts
+ครอบครัวใหญ่	extended family	Concepts
+มิตรภาพ	friendship	Concepts
+ธนาคารกลาง	central bank	Finance
+บัญชีออมทรัพย์	savings account	Finance
+บัญชีกระแสรายวัน	current account	Finance
+เงินกู้	loan	Finance
+จำนอง	mortgage	Finance
+เงินฝาก	deposit	Finance
+เช็ค	cheque	Finance
+สมุดบัญชี	passbook	Finance
+ธนบัตร	banknote	Finance
+หุ้น	share, stock	Finance
+ตลาดหลักทรัพย์	stock exchange	Finance
+กองทุน	fund	Finance
+การลงทุน	investment	Finance
+ผลตอบแทน	return	Finance
+เงินปันผล	dividend	Finance
+ประกันชีวิต	life insurance	Finance
+ประกันภัย	insurance	Finance
+เบี้ยประกัน	premium	Finance
+เงินทุน	capital	Finance
+ล้มละลาย	bankrupt	Finance
+เงินเฟ้อ	inflation	Finance
+เศรษฐกิจ	economy	Finance
+โรงพยาบาลรัฐ	public hospital	Health
+ห้องผ่าตัด	operating theatre	Health
+หอผู้ป่วย	ward	Health
+เปลหาม	stretcher	Health
+เตียงคนไข้	patient bed	Health
+ผู้ป่วย	patient	Health
+วินิจฉัย	diagnose	Health
+รักษา	treat	Health
+ผ้าพันแผล	bandage	Health
+เฝือก	cast, splint	Health
+เอกซเรย์	X-ray	Health
+ตรวจเลือด	blood test	Health
+ไข้หวัดใหญ่	influenza	Health
+ปอดบวม	pneumonia	Health
+เบาหวาน	diabetes	Health
+มะเร็ง	cancer	Health
+โรคหัวใจ	heart disease	Health
+ติดเชื้อ	infection	Health
+อักเสบ	inflammation	Health
+แผลเป็น	scar	Health
+กระดูกหัก	broken bone	Health
+เป็นลม	faint	Health
+พักฟื้น	recuperate	Health
+กายภาพบำบัด	physiotherapy	Health
+สึนามิ	tsunami	Emergency
+พายุไต้ฝุ่น	typhoon	Emergency
+ดินถล่ม	landslide	Emergency
+ภัยแล้ง	drought	Emergency
+ชนกัน	collide	Emergency
+ระเบิด	explosion	Emergency
+รั่ว	leak	Emergency
+ไฟดับ	power cut	Emergency
+ขาดน้ำ	water shortage	Emergency
+อพยพ	evacuate	Emergency
+ที่พักพิง	shelter	Emergency
+กู้ภัย	rescue	Emergency
+ผู้ประสบภัย	victim	Emergency
+บริจาค	donate	Emergency
+สิ่งแวดล้อม	environment	Environment
+มลพิษ	pollution	Environment
+มลพิษทางอากาศ	air pollution	Environment
+ฝุ่นละออง	dust particles	Environment
+ควัน	smoke	Environment
+ก๊าซเรือนกระจก	greenhouse gas	Environment
+โลกร้อน	global warming	Environment
+การเปลี่ยนแปลงสภาพภูมิอากาศ	climate change	Environment
+ขยะพลาสติก	plastic waste	Environment
+น้ำเสีย	wastewater	Environment
+บำบัด	treat (water)	Environment
+อนุรักษ์	conserve	Environment
+ทรัพยากรธรรมชาติ	natural resources	Environment
+พลังงานทดแทน	renewable energy	Environment
+พลังงานลม	wind power	Environment
+ตัดไม้ทำลายป่า	deforestation	Environment
+ปลูกป่า	reforestation	Environment
+สัตว์ใกล้สูญพันธุ์	endangered species	Environment
+เขตอนุรักษ์	conservation area	Environment
+อุทยานแห่งชาติ	national park	Environment
+ระบบนิเวศ	ecosystem	Environment
+ความหลากหลายทางชีวภาพ	biodiversity	Environment
+ยั่งยืน	sustainable	Environment
+คนรู้จัก	acquaintance	Social
+คู่หมั้น	fiancé	Social
+คู่สมรส	spouse	Social
+นัดเดต	go on a date	Social
+คบกัน	be together	Social
+ไว้ใจ	trust	Social
+นินทา	gossip	Social
+ให้อภัย	forgive	Social
+ช่วยเหลือ	assist	Social
+พึ่งพา	rely on	Social
+ร่วมมือ	cooperate	Social
+เข้ากันได้	get along	Social
+ขัดแย้ง	conflict	Social
+ประนีประนอม	compromise	Social
+เคารพ	respect	Social
+ดูถูก	look down on	Social
+ต้อนรับ	welcome	Social
+เลี้ยงฉลอง	throw a party	Social
+ของขวัญ	gift	Social
+การ์ดอวยพร	greeting card	Social
+มารยาท	manners	Social
+เกรงใจ	considerateness	Social
+เสียหน้า	lose face	Social
+รุ่นพี่	senior	Social
+รุ่นน้อง	junior	Social
+เมื่อวานซืน	the day before yesterday	Time
+มะรืนนี้	the day after tomorrow	Time
+สัปดาห์หน้า	next week	Time
+สัปดาห์ที่แล้ว	last week	Time
+เดือนหน้า	next month	Time
+เดือนที่แล้ว	last month	Time
+ปีหน้า	next year	Time
+ปีที่แล้ว	last year	Time
+ต้นเดือน	beginning of the month	Time
+กลางเดือน	middle of the month	Time
+สิ้นเดือน	end of the month	Time
+ต้นปี	beginning of the year	Time
+สิ้นปี	end of the year	Time
+ทศวรรษ	decade	Time
+ศตวรรษ	century	Time
+ยุค	era	Time
+สมัยก่อน	in the old days	Time
+ปัจจุบัน	the present	Time
+อนาคต	the future	Time
+อดีต	the past	Time
+ชั่วโมงเร่งด่วน	rush hour	Time
+วันธรรมดา	weekday	Time
+วันหยุดสุดสัปดาห์	weekend	Time
+วันหยุดนักขัตฤกษ์	public holiday	Time
+วันลา	day off	Time
+ตลอดไป	forever	Time
+ระยะสั้น	short term	Time
+ระยะยาว	long term	Time
+เลื่อน	postpone	Time
+ยกเลิก	cancel	Time
+ไหมขัดฟัน	dental floss	Personal-Care
+น้ำยาบ้วนปาก	mouthwash	Personal-Care
+แปรงผม	hairbrush	Personal-Care
+ไดร์เป่าผม	hair dryer	Personal-Care
+โฟมโกนหนวด	shaving foam	Personal-Care
+ระงับกลิ่นกาย	deodorant	Personal-Care
+ครีมกันแดด	sunscreen	Personal-Care
+ครีมบำรุงผิว	moisturiser	Personal-Care
+เครื่องสำอาง	cosmetics	Personal-Care
+ลิปสติก	lipstick	Personal-Care
+แป้ง	powder	Personal-Care
+มาสคาร่า	mascara	Personal-Care
+กรรไกรตัดเล็บ	nail clippers	Personal-Care
+ยาทาเล็บ	nail polish	Personal-Care
+สำลี	cotton wool	Personal-Care
+ทิชชู	tissue	Personal-Care
+กระจกเงา	mirror	Personal-Care
+ตัดผม	get a haircut	Personal-Care
+ย้อมผม	dye hair	Personal-Care
+นวด	massage	Personal-Care
+สปา	spa	Personal-Care
+แต่งหน้า	put on makeup	Personal-Care
+มัสมั่น	massaman curry	Food-Extra
+ลาบ	larb	Food-Extra
+หมูกรอบ	crispy pork	Food-Extra
+ปลาเผา	grilled fish	Food-Extra
+ทับทิมกรอบ	water chestnut dessert	Food-Extra
+ยำ	Thai salad	Food-Extra
+สาหร่าย	seaweed	Food-Extra
+เต้าหู้	tofu	Food-Extra
+ลวก	blanch	Food-Extra
+ตุ๋น	stew	Food-Extra
+ปรุงรส	season	Food-Extra
+ชิมรส	taste-test	Food-Extra
+เผ็ดจัด	very spicy	Food-Extra
+สุกๆ ดิบๆ	half-cooked	Food-Extra
+ไหม้	burnt	Food-Extra
+กลิ่นหอม	fragrant	Food-Extra
+อร่อยมาก	very delicious	Food-Extra
+สั่งอาหาร	order food	Food-Extra
+แบ่งจ่าย	split the bill	Food-Extra
+เมนูแนะนำ	recommended menu	Food-Extra
+รถกระบะ	pickup truck	Transport-Extra
+รถบรรทุก	lorry	Transport-Extra
+รถพ่วง	trailer	Transport-Extra
+เรือข้ามฟาก	ferry	Transport-Extra
+รถไฟฟ้าใต้ดิน	subway	Transport-Extra
+กระเช้าลอยฟ้า	cable car	Transport-Extra
+ตั๋วเที่ยวเดียว	one-way ticket	Transport-Extra
+ที่นั่งริมทางเดิน	aisle seat	Transport-Extra
+ด่านเก็บเงิน	toll booth	Transport-Extra
+ทางม้าลายข้าม	pedestrian crossing	Transport-Extra
+ปั๊มน้ำมัน	petrol station	Transport-Extra

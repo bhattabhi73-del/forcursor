@@ -24,6 +24,8 @@
 		E0000000000000000000B007 /* ThaiWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B007 /* ThaiWidgetBundle.swift */; };
 		E0000000000000000000B008 /* ThaiWord.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B004 /* ThaiWord.swift */; };
 		E0000000000000000000B009 /* Vocabulary.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000B005 /* Vocabulary.swift */; };
+		E0000000000000000000CF01 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000BF01 /* content.json */; };
+		E0000000000000000000CF02 /* content.json in Resources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000BF01 /* content.json */; };
 		E0000000000000000000C002 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000C002 /* Assets.xcassets */; };
 		E0000000000000000000D001 /* ThaiWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = D0000000000000000000A002 /* ThaiWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E0000000000000000000C003 /* Caladea-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0000000000000000000C004 /* Caladea-Regular.ttf */; };
@@ -72,6 +74,7 @@
 		D0000000000000000000B016 /* SpeakPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakPracticeView.swift; sourceTree = "<group>"; };
 		D0000000000000000000B004 /* ThaiWord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiWord.swift; sourceTree = "<group>"; };
 		D0000000000000000000B005 /* Vocabulary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vocabulary.swift; sourceTree = "<group>"; };
+		D0000000000000000000BF01 /* content.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = content.json; sourceTree = "<group>"; };
 		D0000000000000000000C001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0000000000000000000B006 /* ThaiWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiWidget.swift; sourceTree = "<group>"; };
 		D0000000000000000000B007 /* ThaiWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThaiWidgetBundle.swift; sourceTree = "<group>"; };
@@ -159,6 +162,7 @@
 			children = (
 				D0000000000000000000B004 /* ThaiWord.swift */,
 				D0000000000000000000B005 /* Vocabulary.swift */,
+				D0000000000000000000BF01 /* content.json */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -259,6 +263,7 @@
 				E0000000000000000000C005 /* OFL.txt in Resources */,
 				E0000000000000000000C006 /* Mitr-Medium.ttf in Resources */,
 				E0000000000000000000C007 /* OFL-Mitr.txt in Resources */,
+				E0000000000000000000CF01 /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0000000000000000000C002 /* Assets.xcassets in Resources */,
+				E0000000000000000000CF02 /* content.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

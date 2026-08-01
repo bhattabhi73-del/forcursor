@@ -1,0 +1,10 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Scratch files from the vocabulary batch pipeline (hidden dotfile TSVs).
+tools/.*.tsv
+
+# Source PDFs used while drafting word lists. Third-party copyrighted material —
+# keep them local, they are not ours to redistribute.
+ThaiWallpaperLearn/otherdata/
