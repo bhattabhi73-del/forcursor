@@ -1078,6 +1078,206 @@ enum WordExtras {
         2044: "📅",
         2045: "⏳",
         2046: "🎁",
+        2047: "🍲",
+        2048: "🍲",
+        2049: "🍲",
+        2050: "🍲",
+        2051: "🍲",
+        2052: "🍲",
+        2053: "🍲",
+        2054: "🍲",
+        2055: "🍲",
+        2056: "🍲",
+        2057: "🍲",
+        2058: "🍲",
+        2059: "🍲",
+        2060: "🍲",
+        2061: "🍲",
+        2062: "🍲",
+        2063: "🍲",
+        2064: "🍲",
+        2065: "🍲",
+        2066: "🍲",
+        2067: "🍲",
+        2068: "🍲",
+        2069: "🍲",
+        2070: "🍲",
+        2071: "🍲",
+        2072: "🍲",
+        2073: "🍲",
+        2074: "🍲",
+        2075: "🍲",
+        2076: "🍲",
+        2077: "🍲",
+        2078: "🍲",
+        2079: "🍲",
+        2080: "🍲",
+        2081: "🍲",
+        2082: "🍲",
+        2083: "🍲",
+        2084: "🍲",
+        2085: "🍲",
+        2086: "🍲",
+        2087: "🍲",
+        2088: "🍲",
+        2089: "🍲",
+        2090: "🍲",
+        2091: "🍲",
+        2092: "🍲",
+        2093: "🍲",
+        2094: "🍲",
+        2095: "🍲",
+        2096: "🍲",
+        2097: "🍲",
+        2098: "🍲",
+        2099: "🍲",
+        2100: "🍲",
+        2101: "🍲",
+        2102: "🍲",
+        2103: "🍲",
+        2104: "🍲",
+        2105: "🍲",
+        2106: "🍲",
+        2107: "🍲",
+        2108: "🍲",
+        2109: "🍲",
+        2110: "🍲",
+        2111: "🍲",
+        2112: "🍲",
+        2113: "🍲",
+        2114: "🍲",
+        2115: "🍲",
+        2116: "🍲",
+        2117: "🍲",
+        2118: "🍲",
+        2119: "🍲",
+        2120: "🍲",
+        2121: "🍲",
+        2122: "🍲",
+        2123: "🍲",
+        2124: "🍲",
+        2125: "🍲",
+        2126: "🍲",
+        2127: "🍲",
+        2128: "🍲",
+        2129: "🍲",
+        2130: "🍲",
+        2131: "🍲",
+        2132: "🍲",
+        2133: "🍲",
+        2134: "🍲",
+        2135: "🍲",
+        2136: "🍲",
+        2137: "🍲",
+        2138: "🍲",
+        2139: "🍲",
+        2140: "🍲",
+        2141: "🍲",
+        2142: "🍲",
+        2143: "🍲",
+        2144: "🍲",
+        2145: "🍲",
+        2146: "🍲",
+        2147: "🍲",
+        2148: "🍲",
+        2149: "🍲",
+        2150: "🍲",
+        2151: "🍲",
+        2152: "🍲",
+        2153: "🍲",
+        2154: "🍲",
+        2155: "🍲",
+        2156: "🍲",
+        2157: "🍲",
+        2158: "🍲",
+        2159: "🍲",
+        2160: "🍲",
+        2161: "🍲",
+        2162: "🍲",
+        2163: "🍲",
+        2164: "🍲",
+        2165: "🍲",
+        2166: "🍲",
+        2167: "🍲",
+        2168: "🍲",
+        2169: "🍲",
+        2170: "🍲",
+        2171: "🍲",
+        2172: "🍲",
+        2173: "🍲",
+        2174: "🍲",
+        2175: "🍲",
+        2176: "🍲",
+        2177: "🍲",
+        2178: "🍲",
+        2179: "🍲",
+        2180: "🍲",
+        2181: "🍲",
+        2182: "🍲",
+        2183: "🍲",
+        2184: "🍲",
+        2185: "🍲",
+        2186: "🍲",
+        2187: "🍲",
+        2188: "🍲",
+        2189: "🍲",
+        2190: "🍲",
+        2191: "🍲",
+        2192: "🍲",
+        2193: "🍲",
+        2194: "🍲",
+        2195: "🍲",
+        2196: "🍲",
+        2197: "🍲",
+        2198: "🍲",
+        2199: "🍲",
+        2200: "🍲",
+        2201: "🍲",
+        2202: "🍲",
+        2203: "🍲",
+        2204: "🍲",
+        2205: "🍲",
+        2206: "🍲",
+        2207: "🍲",
+        2208: "🍲",
+        2209: "🍲",
+        2210: "🍲",
+        2211: "🍲",
+        2212: "🍲",
+        2213: "🍲",
+        2214: "🍲",
+        2215: "🍲",
+        2216: "🍲",
+        2217: "🍲",
+        2218: "🍲",
+        2219: "🍲",
+        2220: "🍲",
+        2221: "🍲",
+        2222: "🍲",
+        2223: "🍲",
+        2224: "🍲",
+        2225: "🍲",
+        2226: "🍲",
+        2227: "🍲",
+        2228: "🍲",
+        2229: "🍲",
+        2230: "🍲",
+        2231: "🍲",
+        2232: "🍲",
+        2233: "🍲",
+        2234: "🍲",
+        2235: "🍲",
+        2236: "🍲",
+        2237: "🍲",
+        2238: "🍲",
+        2239: "🍲",
+        2240: "🍲",
+        2241: "🍲",
+        2242: "🍲",
+        2243: "🍲",
+        2244: "🍲",
+        2245: "🍲",
+        2246: "🍲",
     ]
 
     private static let forms: [Int: [WordForm]] = [
@@ -10464,9 +10664,813 @@ enum WordExtras {
         ],
     ]
 
+
+    private static let examples4: [Int: [WordExample]] = [
+        2047: [
+            WordExample(thai: "ฉันกินทอดมะระ", romanization: "chǎn kin thôt-má-rá", english: "I eat fried bitter gourd.", hindi: "मैं तला करेला खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดมะระอร่อย", romanization: "thôt-má-rá à-ròi", english: "Fried bitter gourd is delicious.", hindi: "तला करेला स्वादिष्ट है।"),
+        ],
+        2048: [
+            WordExample(thai: "ฉันกินทอดกะหล่ำดอก", romanization: "chǎn kin thôt-gà-làm-dàawk", english: "I eat fried cauliflower.", hindi: "मैं तला फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดกะหล่ำดอกอร่อย", romanization: "thôt-gà-làm-dàawk à-ròi", english: "Fried cauliflower is delicious.", hindi: "तला फूलगोभी स्वादिष्ट है।"),
+        ],
+        2049: [
+            WordExample(thai: "ฉันกินทอดบรอกโคลี", romanization: "chǎn kin thôt-brɔ̀ɔk-khoo-lii", english: "I eat fried broccoli.", hindi: "मैं तला ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดบรอกโคลีอร่อย", romanization: "thôt-brɔ̀ɔk-khoo-lii à-ròi", english: "Fried broccoli is delicious.", hindi: "तला ब्रोकली स्वादिष्ट है।"),
+        ],
+        2050: [
+            WordExample(thai: "ฉันกินทอดผักโขม", romanization: "chǎn kin thôt-phàk-khǒom", english: "I eat fried spinach.", hindi: "मैं तला पालक खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดผักโขมอร่อย", romanization: "thôt-phàk-khǒom à-ròi", english: "Fried spinach is delicious.", hindi: "तला पालक स्वादिष्ट है।"),
+        ],
+        2051: [
+            WordExample(thai: "ฉันกินทอดผักกวางตุ้ง", romanization: "chǎn kin thôt-phàk-gwaang-tûng", english: "I eat fried bok choy.", hindi: "मैं तला बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดผักกวางตุ้งอร่อย", romanization: "thôt-phàk-gwaang-tûng à-ròi", english: "Fried bok choy is delicious.", hindi: "तला बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2052: [
+            WordExample(thai: "ฉันกินทอดเห็ดหอม", romanization: "chǎn kin thôt-hèt-hǎawm", english: "I eat fried shiitake mushroom.", hindi: "मैं तला शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดเห็ดหอมอร่อย", romanization: "thôt-hèt-hǎawm à-ròi", english: "Fried shiitake mushroom is delicious.", hindi: "तला शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2053: [
+            WordExample(thai: "ฉันกินทอดเห็ดนางรม", romanization: "chǎn kin thôt-hèt-naang-rom", english: "I eat fried oyster mushroom.", hindi: "मैं तला ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดเห็ดนางรมอร่อย", romanization: "thôt-hèt-naang-rom à-ròi", english: "Fried oyster mushroom is delicious.", hindi: "तला ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2054: [
+            WordExample(thai: "ฉันกินทอดเห็ดเข็มทอง", romanization: "chǎn kin thôt-hèt-khém-thaawng", english: "I eat fried enoki mushroom.", hindi: "मैं तला एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดเห็ดเข็มทองอร่อย", romanization: "thôt-hèt-khém-thaawng à-ròi", english: "Fried enoki mushroom is delicious.", hindi: "तला एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2055: [
+            WordExample(thai: "ฉันกินทอดเต้าหู้", romanization: "chǎn kin thôt-tâo-hûu", english: "I eat fried tofu.", hindi: "मैं तला टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดเต้าหู้อร่อย", romanization: "thôt-tâo-hûu à-ròi", english: "Fried tofu is delicious.", hindi: "तला टोफू स्वादिष्ट है।"),
+        ],
+        2056: [
+            WordExample(thai: "ฉันกินทอดหมูยอ", romanization: "chǎn kin thôt-mǔu-yaw", english: "I eat fried Vietnamese pork sausage.", hindi: "मैं तला वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดหมูยออร่อย", romanization: "thôt-mǔu-yaw à-ròi", english: "Fried vietnamese pork sausage is delicious.", hindi: "तला वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2057: [
+            WordExample(thai: "ฉันกินทอดปลาดุก", romanization: "chǎn kin thôt-plaa-dùk", english: "I eat fried catfish.", hindi: "मैं तला कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดปลาดุกอร่อย", romanization: "thôt-plaa-dùk à-ròi", english: "Fried catfish is delicious.", hindi: "तला कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2058: [
+            WordExample(thai: "ฉันกินทอดปลาทู", romanization: "chǎn kin thôt-plaa-thuu", english: "I eat fried mackerel.", hindi: "मैं तला मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดปลาทูอร่อย", romanization: "thôt-plaa-thuu à-ròi", english: "Fried mackerel is delicious.", hindi: "तला मैकेरल स्वादिष्ट है।"),
+        ],
+        2059: [
+            WordExample(thai: "ฉันกินทอดปลาหมึก", romanization: "chǎn kin thôt-plaa-mʉ̀k", english: "I eat fried squid.", hindi: "मैं तला स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดปลาหมึกอร่อย", romanization: "thôt-plaa-mʉ̀k à-ròi", english: "Fried squid is delicious.", hindi: "तला स्क्विड स्वादिष्ट है।"),
+        ],
+        2060: [
+            WordExample(thai: "ฉันกินทอดหอยแมลงภู่", romanization: "chǎn kin thôt-hɔ̌ɔi-mae-lang-phùu", english: "I eat fried mussels.", hindi: "मैं तला शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดหอยแมลงภู่อร่อย", romanization: "thôt-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Fried mussels is delicious.", hindi: "तला शंबुक स्वादिष्ट है।"),
+        ],
+        2061: [
+            WordExample(thai: "ฉันกินทอดหอยลาย", romanization: "chǎn kin thôt-hɔ̌ɔi-laai", english: "I eat fried clams.", hindi: "मैं तला क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดหอยลายอร่อย", romanization: "thôt-hɔ̌ɔi-laai à-ròi", english: "Fried clams is delicious.", hindi: "तला क्लैम स्वादिष्ट है।"),
+        ],
+        2062: [
+            WordExample(thai: "ฉันกินทอดเนื้อไก่", romanization: "chǎn kin thôt-nʉ́a-gài", english: "I eat fried chicken meat.", hindi: "मैं तला चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดเนื้อไก่อร่อย", romanization: "thôt-nʉ́a-gài à-ròi", english: "Fried chicken meat is delicious.", hindi: "तला चिकन मांस स्वादिष्ट है।"),
+        ],
+        2063: [
+            WordExample(thai: "ฉันกินทอดเนื้อหมู", romanization: "chǎn kin thôt-nʉ́a-mǔu", english: "I eat fried pork.", hindi: "मैं तला सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดเนื้อหมูอร่อย", romanization: "thôt-nʉ́a-mǔu à-ròi", english: "Fried pork is delicious.", hindi: "तला सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2064: [
+            WordExample(thai: "ฉันกินทอดเนื้อวัว", romanization: "chǎn kin thôt-nʉ́a-wua", english: "I eat fried beef.", hindi: "मैं तला बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดเนื้อวัวอร่อย", romanization: "thôt-nʉ́a-wua à-ròi", english: "Fried beef is delicious.", hindi: "तला बीफ स्वादिष्ट है।"),
+        ],
+        2065: [
+            WordExample(thai: "ฉันกินทอดกากหมู", romanization: "chǎn kin thôt-gàak-mǔu", english: "I eat fried pork cracklings.", hindi: "मैं तला कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดกากหมูอร่อย", romanization: "thôt-gàak-mǔu à-ròi", english: "Fried pork cracklings is delicious.", hindi: "तला कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2066: [
+            WordExample(thai: "ฉันกินทอดไข่เยี่ยวม้า", romanization: "chǎn kin thôt-khài-yîao-máa", english: "I eat fried century egg.", hindi: "मैं तला सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดไข่เยี่ยวม้าอร่อย", romanization: "thôt-khài-yîao-máa à-ròi", english: "Fried century egg is delicious.", hindi: "तला सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2067: [
+            WordExample(thai: "ฉันกินทอดปลาสลิด", romanization: "chǎn kin thôt-plaa-sà-lìt", english: "I eat fried snakehead gourami.", hindi: "मैं तला स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดปลาสลิดอร่อย", romanization: "thôt-plaa-sà-lìt à-ròi", english: "Fried snakehead gourami is delicious.", hindi: "तला स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2068: [
+            WordExample(thai: "ฉันกินทอดหมูกรอบ", romanization: "chǎn kin thôt-mǔu-grɔ̀ɔp", english: "I eat fried crispy pork belly.", hindi: "मैं तला कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดหมูกรอบอร่อย", romanization: "thôt-mǔu-grɔ̀ɔp à-ròi", english: "Fried crispy pork belly is delicious.", hindi: "तला कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2069: [
+            WordExample(thai: "ฉันกินทอดไก่ฉีก", romanization: "chǎn kin thôt-gài-chìik", english: "I eat fried shredded chicken.", hindi: "मैं तला रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดไก่ฉีกอร่อย", romanization: "thôt-gài-chìik à-ròi", english: "Fried shredded chicken is delicious.", hindi: "तला रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2070: [
+            WordExample(thai: "ฉันกินทอดหมูสับ", romanization: "chǎn kin thôt-mǔu-sàp", english: "I eat fried minced pork.", hindi: "मैं तला सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดหมูสับอร่อย", romanization: "thôt-mǔu-sàp à-ròi", english: "Fried minced pork is delicious.", hindi: "तला सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2071: [
+            WordExample(thai: "ฉันกินทอดกุ้งแห้ง", romanization: "chǎn kin thôt-gûng-hâeng", english: "I eat fried dried shrimp.", hindi: "मैं तला सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "ทอดกุ้งแห้งอร่อย", romanization: "thôt-gûng-hâeng à-ròi", english: "Fried dried shrimp is delicious.", hindi: "तला सूखी झींगा स्वादिष्ट है।"),
+        ],
+        2072: [
+            WordExample(thai: "ฉันกินย่างมะระ", romanization: "chǎn kin yâang-má-rá", english: "I eat grilled bitter gourd.", hindi: "मैं ग्रिल्ड करेला खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างมะระอร่อย", romanization: "yâang-má-rá à-ròi", english: "Grilled bitter gourd is delicious.", hindi: "ग्रिल्ड करेला स्वादिष्ट है।"),
+        ],
+        2073: [
+            WordExample(thai: "ฉันกินย่างกะหล่ำดอก", romanization: "chǎn kin yâang-gà-làm-dàawk", english: "I eat grilled cauliflower.", hindi: "मैं ग्रिल्ड फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างกะหล่ำดอกอร่อย", romanization: "yâang-gà-làm-dàawk à-ròi", english: "Grilled cauliflower is delicious.", hindi: "ग्रिल्ड फूलगोभी स्वादिष्ट है।"),
+        ],
+        2074: [
+            WordExample(thai: "ฉันกินย่างบรอกโคลี", romanization: "chǎn kin yâang-brɔ̀ɔk-khoo-lii", english: "I eat grilled broccoli.", hindi: "मैं ग्रिल्ड ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างบรอกโคลีอร่อย", romanization: "yâang-brɔ̀ɔk-khoo-lii à-ròi", english: "Grilled broccoli is delicious.", hindi: "ग्रिल्ड ब्रोकली स्वादिष्ट है।"),
+        ],
+        2075: [
+            WordExample(thai: "ฉันกินย่างผักโขม", romanization: "chǎn kin yâang-phàk-khǒom", english: "I eat grilled spinach.", hindi: "मैं ग्रिल्ड पालक खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างผักโขมอร่อย", romanization: "yâang-phàk-khǒom à-ròi", english: "Grilled spinach is delicious.", hindi: "ग्रिल्ड पालक स्वादिष्ट है।"),
+        ],
+        2076: [
+            WordExample(thai: "ฉันกินย่างผักกวางตุ้ง", romanization: "chǎn kin yâang-phàk-gwaang-tûng", english: "I eat grilled bok choy.", hindi: "मैं ग्रिल्ड बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างผักกวางตุ้งอร่อย", romanization: "yâang-phàk-gwaang-tûng à-ròi", english: "Grilled bok choy is delicious.", hindi: "ग्रिल्ड बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2077: [
+            WordExample(thai: "ฉันกินย่างเห็ดหอม", romanization: "chǎn kin yâang-hèt-hǎawm", english: "I eat grilled shiitake mushroom.", hindi: "मैं ग्रिल्ड शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างเห็ดหอมอร่อย", romanization: "yâang-hèt-hǎawm à-ròi", english: "Grilled shiitake mushroom is delicious.", hindi: "ग्रिल्ड शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2078: [
+            WordExample(thai: "ฉันกินย่างเห็ดนางรม", romanization: "chǎn kin yâang-hèt-naang-rom", english: "I eat grilled oyster mushroom.", hindi: "मैं ग्रिल्ड ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างเห็ดนางรมอร่อย", romanization: "yâang-hèt-naang-rom à-ròi", english: "Grilled oyster mushroom is delicious.", hindi: "ग्रिल्ड ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2079: [
+            WordExample(thai: "ฉันกินย่างเห็ดเข็มทอง", romanization: "chǎn kin yâang-hèt-khém-thaawng", english: "I eat grilled enoki mushroom.", hindi: "मैं ग्रिल्ड एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างเห็ดเข็มทองอร่อย", romanization: "yâang-hèt-khém-thaawng à-ròi", english: "Grilled enoki mushroom is delicious.", hindi: "ग्रिल्ड एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2080: [
+            WordExample(thai: "ฉันกินย่างเต้าหู้", romanization: "chǎn kin yâang-tâo-hûu", english: "I eat grilled tofu.", hindi: "मैं ग्रिल्ड टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างเต้าหู้อร่อย", romanization: "yâang-tâo-hûu à-ròi", english: "Grilled tofu is delicious.", hindi: "ग्रिल्ड टोफू स्वादिष्ट है।"),
+        ],
+        2081: [
+            WordExample(thai: "ฉันกินย่างหมูยอ", romanization: "chǎn kin yâang-mǔu-yaw", english: "I eat grilled Vietnamese pork sausage.", hindi: "मैं ग्रिल्ड वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างหมูยออร่อย", romanization: "yâang-mǔu-yaw à-ròi", english: "Grilled vietnamese pork sausage is delicious.", hindi: "ग्रिल्ड वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2082: [
+            WordExample(thai: "ฉันกินย่างปลาดุก", romanization: "chǎn kin yâang-plaa-dùk", english: "I eat grilled catfish.", hindi: "मैं ग्रिल्ड कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างปลาดุกอร่อย", romanization: "yâang-plaa-dùk à-ròi", english: "Grilled catfish is delicious.", hindi: "ग्रिल्ड कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2083: [
+            WordExample(thai: "ฉันกินย่างปลาทู", romanization: "chǎn kin yâang-plaa-thuu", english: "I eat grilled mackerel.", hindi: "मैं ग्रिल्ड मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างปลาทูอร่อย", romanization: "yâang-plaa-thuu à-ròi", english: "Grilled mackerel is delicious.", hindi: "ग्रिल्ड मैकेरल स्वादिष्ट है।"),
+        ],
+        2084: [
+            WordExample(thai: "ฉันกินย่างปลาหมึก", romanization: "chǎn kin yâang-plaa-mʉ̀k", english: "I eat grilled squid.", hindi: "मैं ग्रिल्ड स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างปลาหมึกอร่อย", romanization: "yâang-plaa-mʉ̀k à-ròi", english: "Grilled squid is delicious.", hindi: "ग्रिल्ड स्क्विड स्वादिष्ट है।"),
+        ],
+        2085: [
+            WordExample(thai: "ฉันกินย่างหอยแมลงภู่", romanization: "chǎn kin yâang-hɔ̌ɔi-mae-lang-phùu", english: "I eat grilled mussels.", hindi: "मैं ग्रिल्ड शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างหอยแมลงภู่อร่อย", romanization: "yâang-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Grilled mussels is delicious.", hindi: "ग्रिल्ड शंबुक स्वादिष्ट है।"),
+        ],
+        2086: [
+            WordExample(thai: "ฉันกินย่างหอยลาย", romanization: "chǎn kin yâang-hɔ̌ɔi-laai", english: "I eat grilled clams.", hindi: "मैं ग्रिल्ड क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างหอยลายอร่อย", romanization: "yâang-hɔ̌ɔi-laai à-ròi", english: "Grilled clams is delicious.", hindi: "ग्रिल्ड क्लैम स्वादिष्ट है।"),
+        ],
+        2087: [
+            WordExample(thai: "ฉันกินย่างเนื้อไก่", romanization: "chǎn kin yâang-nʉ́a-gài", english: "I eat grilled chicken meat.", hindi: "मैं ग्रिल्ड चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างเนื้อไก่อร่อย", romanization: "yâang-nʉ́a-gài à-ròi", english: "Grilled chicken meat is delicious.", hindi: "ग्रिल्ड चिकन मांस स्वादिष्ट है।"),
+        ],
+        2088: [
+            WordExample(thai: "ฉันกินย่างเนื้อหมู", romanization: "chǎn kin yâang-nʉ́a-mǔu", english: "I eat grilled pork.", hindi: "मैं ग्रिल्ड सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างเนื้อหมูอร่อย", romanization: "yâang-nʉ́a-mǔu à-ròi", english: "Grilled pork is delicious.", hindi: "ग्रिल्ड सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2089: [
+            WordExample(thai: "ฉันกินย่างเนื้อวัว", romanization: "chǎn kin yâang-nʉ́a-wua", english: "I eat grilled beef.", hindi: "मैं ग्रिल्ड बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างเนื้อวัวอร่อย", romanization: "yâang-nʉ́a-wua à-ròi", english: "Grilled beef is delicious.", hindi: "ग्रिल्ड बीफ स्वादिष्ट है।"),
+        ],
+        2090: [
+            WordExample(thai: "ฉันกินย่างกากหมู", romanization: "chǎn kin yâang-gàak-mǔu", english: "I eat grilled pork cracklings.", hindi: "मैं ग्रिल्ड कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างกากหมูอร่อย", romanization: "yâang-gàak-mǔu à-ròi", english: "Grilled pork cracklings is delicious.", hindi: "ग्रिल्ड कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2091: [
+            WordExample(thai: "ฉันกินย่างไข่เยี่ยวม้า", romanization: "chǎn kin yâang-khài-yîao-máa", english: "I eat grilled century egg.", hindi: "मैं ग्रिल्ड सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างไข่เยี่ยวม้าอร่อย", romanization: "yâang-khài-yîao-máa à-ròi", english: "Grilled century egg is delicious.", hindi: "ग्रिल्ड सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2092: [
+            WordExample(thai: "ฉันกินย่างปลาสลิด", romanization: "chǎn kin yâang-plaa-sà-lìt", english: "I eat grilled snakehead gourami.", hindi: "मैं ग्रिल्ड स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างปลาสลิดอร่อย", romanization: "yâang-plaa-sà-lìt à-ròi", english: "Grilled snakehead gourami is delicious.", hindi: "ग्रिल्ड स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2093: [
+            WordExample(thai: "ฉันกินย่างหมูกรอบ", romanization: "chǎn kin yâang-mǔu-grɔ̀ɔp", english: "I eat grilled crispy pork belly.", hindi: "मैं ग्रिल्ड कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างหมูกรอบอร่อย", romanization: "yâang-mǔu-grɔ̀ɔp à-ròi", english: "Grilled crispy pork belly is delicious.", hindi: "ग्रिल्ड कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2094: [
+            WordExample(thai: "ฉันกินย่างไก่ฉีก", romanization: "chǎn kin yâang-gài-chìik", english: "I eat grilled shredded chicken.", hindi: "मैं ग्रिल्ड रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างไก่ฉีกอร่อย", romanization: "yâang-gài-chìik à-ròi", english: "Grilled shredded chicken is delicious.", hindi: "ग्रिल्ड रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2095: [
+            WordExample(thai: "ฉันกินย่างหมูสับ", romanization: "chǎn kin yâang-mǔu-sàp", english: "I eat grilled minced pork.", hindi: "मैं ग्रिल्ड सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างหมูสับอร่อย", romanization: "yâang-mǔu-sàp à-ròi", english: "Grilled minced pork is delicious.", hindi: "ग्रिल्ड सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2096: [
+            WordExample(thai: "ฉันกินย่างกุ้งแห้ง", romanization: "chǎn kin yâang-gûng-hâeng", english: "I eat grilled dried shrimp.", hindi: "मैं ग्रिल्ड सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "ย่างกุ้งแห้งอร่อย", romanization: "yâang-gûng-hâeng à-ròi", english: "Grilled dried shrimp is delicious.", hindi: "ग्रिल्ड सूखी झींगा स्वादिष्ट है।"),
+        ],
+        2097: [
+            WordExample(thai: "ฉันกินนึ่งมะระ", romanization: "chǎn kin nʉ̂ng-má-rá", english: "I eat steamed bitter gourd.", hindi: "मैं भाप में पका करेला खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งมะระอร่อย", romanization: "nʉ̂ng-má-rá à-ròi", english: "Steamed bitter gourd is delicious.", hindi: "भाप में पका करेला स्वादिष्ट है।"),
+        ],
+        2098: [
+            WordExample(thai: "ฉันกินนึ่งกะหล่ำดอก", romanization: "chǎn kin nʉ̂ng-gà-làm-dàawk", english: "I eat steamed cauliflower.", hindi: "मैं भाप में पका फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งกะหล่ำดอกอร่อย", romanization: "nʉ̂ng-gà-làm-dàawk à-ròi", english: "Steamed cauliflower is delicious.", hindi: "भाप में पका फूलगोभी स्वादिष्ट है।"),
+        ],
+        2099: [
+            WordExample(thai: "ฉันกินนึ่งบรอกโคลี", romanization: "chǎn kin nʉ̂ng-brɔ̀ɔk-khoo-lii", english: "I eat steamed broccoli.", hindi: "मैं भाप में पका ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งบรอกโคลีอร่อย", romanization: "nʉ̂ng-brɔ̀ɔk-khoo-lii à-ròi", english: "Steamed broccoli is delicious.", hindi: "भाप में पका ब्रोकली स्वादिष्ट है।"),
+        ],
+        2100: [
+            WordExample(thai: "ฉันกินนึ่งผักโขม", romanization: "chǎn kin nʉ̂ng-phàk-khǒom", english: "I eat steamed spinach.", hindi: "मैं भाप में पका पालक खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งผักโขมอร่อย", romanization: "nʉ̂ng-phàk-khǒom à-ròi", english: "Steamed spinach is delicious.", hindi: "भाप में पका पालक स्वादिष्ट है।"),
+        ],
+        2101: [
+            WordExample(thai: "ฉันกินนึ่งผักกวางตุ้ง", romanization: "chǎn kin nʉ̂ng-phàk-gwaang-tûng", english: "I eat steamed bok choy.", hindi: "मैं भाप में पका बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งผักกวางตุ้งอร่อย", romanization: "nʉ̂ng-phàk-gwaang-tûng à-ròi", english: "Steamed bok choy is delicious.", hindi: "भाप में पका बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2102: [
+            WordExample(thai: "ฉันกินนึ่งเห็ดหอม", romanization: "chǎn kin nʉ̂ng-hèt-hǎawm", english: "I eat steamed shiitake mushroom.", hindi: "मैं भाप में पका शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งเห็ดหอมอร่อย", romanization: "nʉ̂ng-hèt-hǎawm à-ròi", english: "Steamed shiitake mushroom is delicious.", hindi: "भाप में पका शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2103: [
+            WordExample(thai: "ฉันกินนึ่งเห็ดนางรม", romanization: "chǎn kin nʉ̂ng-hèt-naang-rom", english: "I eat steamed oyster mushroom.", hindi: "मैं भाप में पका ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งเห็ดนางรมอร่อย", romanization: "nʉ̂ng-hèt-naang-rom à-ròi", english: "Steamed oyster mushroom is delicious.", hindi: "भाप में पका ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2104: [
+            WordExample(thai: "ฉันกินนึ่งเห็ดเข็มทอง", romanization: "chǎn kin nʉ̂ng-hèt-khém-thaawng", english: "I eat steamed enoki mushroom.", hindi: "मैं भाप में पका एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งเห็ดเข็มทองอร่อย", romanization: "nʉ̂ng-hèt-khém-thaawng à-ròi", english: "Steamed enoki mushroom is delicious.", hindi: "भाप में पका एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2105: [
+            WordExample(thai: "ฉันกินนึ่งเต้าหู้", romanization: "chǎn kin nʉ̂ng-tâo-hûu", english: "I eat steamed tofu.", hindi: "मैं भाप में पका टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งเต้าหู้อร่อย", romanization: "nʉ̂ng-tâo-hûu à-ròi", english: "Steamed tofu is delicious.", hindi: "भाप में पका टोफू स्वादिष्ट है।"),
+        ],
+        2106: [
+            WordExample(thai: "ฉันกินนึ่งหมูยอ", romanization: "chǎn kin nʉ̂ng-mǔu-yaw", english: "I eat steamed Vietnamese pork sausage.", hindi: "मैं भाप में पका वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งหมูยออร่อย", romanization: "nʉ̂ng-mǔu-yaw à-ròi", english: "Steamed vietnamese pork sausage is delicious.", hindi: "भाप में पका वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2107: [
+            WordExample(thai: "ฉันกินนึ่งปลาดุก", romanization: "chǎn kin nʉ̂ng-plaa-dùk", english: "I eat steamed catfish.", hindi: "मैं भाप में पका कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งปลาดุกอร่อย", romanization: "nʉ̂ng-plaa-dùk à-ròi", english: "Steamed catfish is delicious.", hindi: "भाप में पका कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2108: [
+            WordExample(thai: "ฉันกินนึ่งปลาทู", romanization: "chǎn kin nʉ̂ng-plaa-thuu", english: "I eat steamed mackerel.", hindi: "मैं भाप में पका मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งปลาทูอร่อย", romanization: "nʉ̂ng-plaa-thuu à-ròi", english: "Steamed mackerel is delicious.", hindi: "भाप में पका मैकेरल स्वादिष्ट है।"),
+        ],
+        2109: [
+            WordExample(thai: "ฉันกินนึ่งปลาหมึก", romanization: "chǎn kin nʉ̂ng-plaa-mʉ̀k", english: "I eat steamed squid.", hindi: "मैं भाप में पका स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งปลาหมึกอร่อย", romanization: "nʉ̂ng-plaa-mʉ̀k à-ròi", english: "Steamed squid is delicious.", hindi: "भाप में पका स्क्विड स्वादिष्ट है।"),
+        ],
+        2110: [
+            WordExample(thai: "ฉันกินนึ่งหอยแมลงภู่", romanization: "chǎn kin nʉ̂ng-hɔ̌ɔi-mae-lang-phùu", english: "I eat steamed mussels.", hindi: "मैं भाप में पका शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งหอยแมลงภู่อร่อย", romanization: "nʉ̂ng-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Steamed mussels is delicious.", hindi: "भाप में पका शंबुक स्वादिष्ट है।"),
+        ],
+        2111: [
+            WordExample(thai: "ฉันกินนึ่งหอยลาย", romanization: "chǎn kin nʉ̂ng-hɔ̌ɔi-laai", english: "I eat steamed clams.", hindi: "मैं भाप में पका क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งหอยลายอร่อย", romanization: "nʉ̂ng-hɔ̌ɔi-laai à-ròi", english: "Steamed clams is delicious.", hindi: "भाप में पका क्लैम स्वादिष्ट है।"),
+        ],
+        2112: [
+            WordExample(thai: "ฉันกินนึ่งเนื้อไก่", romanization: "chǎn kin nʉ̂ng-nʉ́a-gài", english: "I eat steamed chicken meat.", hindi: "मैं भाप में पका चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งเนื้อไก่อร่อย", romanization: "nʉ̂ng-nʉ́a-gài à-ròi", english: "Steamed chicken meat is delicious.", hindi: "भाप में पका चिकन मांस स्वादिष्ट है।"),
+        ],
+        2113: [
+            WordExample(thai: "ฉันกินนึ่งเนื้อหมู", romanization: "chǎn kin nʉ̂ng-nʉ́a-mǔu", english: "I eat steamed pork.", hindi: "मैं भाप में पका सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งเนื้อหมูอร่อย", romanization: "nʉ̂ng-nʉ́a-mǔu à-ròi", english: "Steamed pork is delicious.", hindi: "भाप में पका सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2114: [
+            WordExample(thai: "ฉันกินนึ่งเนื้อวัว", romanization: "chǎn kin nʉ̂ng-nʉ́a-wua", english: "I eat steamed beef.", hindi: "मैं भाप में पका बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งเนื้อวัวอร่อย", romanization: "nʉ̂ng-nʉ́a-wua à-ròi", english: "Steamed beef is delicious.", hindi: "भाप में पका बीफ स्वादिष्ट है।"),
+        ],
+        2115: [
+            WordExample(thai: "ฉันกินนึ่งกากหมู", romanization: "chǎn kin nʉ̂ng-gàak-mǔu", english: "I eat steamed pork cracklings.", hindi: "मैं भाप में पका कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งกากหมูอร่อย", romanization: "nʉ̂ng-gàak-mǔu à-ròi", english: "Steamed pork cracklings is delicious.", hindi: "भाप में पका कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2116: [
+            WordExample(thai: "ฉันกินนึ่งไข่เยี่ยวม้า", romanization: "chǎn kin nʉ̂ng-khài-yîao-máa", english: "I eat steamed century egg.", hindi: "मैं भाप में पका सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งไข่เยี่ยวม้าอร่อย", romanization: "nʉ̂ng-khài-yîao-máa à-ròi", english: "Steamed century egg is delicious.", hindi: "भाप में पका सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2117: [
+            WordExample(thai: "ฉันกินนึ่งปลาสลิด", romanization: "chǎn kin nʉ̂ng-plaa-sà-lìt", english: "I eat steamed snakehead gourami.", hindi: "मैं भाप में पका स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งปลาสลิดอร่อย", romanization: "nʉ̂ng-plaa-sà-lìt à-ròi", english: "Steamed snakehead gourami is delicious.", hindi: "भाप में पका स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2118: [
+            WordExample(thai: "ฉันกินนึ่งหมูกรอบ", romanization: "chǎn kin nʉ̂ng-mǔu-grɔ̀ɔp", english: "I eat steamed crispy pork belly.", hindi: "मैं भाप में पका कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งหมูกรอบอร่อย", romanization: "nʉ̂ng-mǔu-grɔ̀ɔp à-ròi", english: "Steamed crispy pork belly is delicious.", hindi: "भाप में पका कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2119: [
+            WordExample(thai: "ฉันกินนึ่งไก่ฉีก", romanization: "chǎn kin nʉ̂ng-gài-chìik", english: "I eat steamed shredded chicken.", hindi: "मैं भाप में पका रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งไก่ฉีกอร่อย", romanization: "nʉ̂ng-gài-chìik à-ròi", english: "Steamed shredded chicken is delicious.", hindi: "भाप में पका रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2120: [
+            WordExample(thai: "ฉันกินนึ่งหมูสับ", romanization: "chǎn kin nʉ̂ng-mǔu-sàp", english: "I eat steamed minced pork.", hindi: "मैं भाप में पका सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งหมูสับอร่อย", romanization: "nʉ̂ng-mǔu-sàp à-ròi", english: "Steamed minced pork is delicious.", hindi: "भाप में पका सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2121: [
+            WordExample(thai: "ฉันกินนึ่งกุ้งแห้ง", romanization: "chǎn kin nʉ̂ng-gûng-hâeng", english: "I eat steamed dried shrimp.", hindi: "मैं भाप में पका सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "นึ่งกุ้งแห้งอร่อย", romanization: "nʉ̂ng-gûng-hâeng à-ròi", english: "Steamed dried shrimp is delicious.", hindi: "भाप में पका सूखी झींगा स्वादिष्ट है।"),
+        ],
+        2122: [
+            WordExample(thai: "ฉันกินผัดมะระ", romanization: "chǎn kin phàt-má-rá", english: "I eat stir-fried bitter gourd.", hindi: "मैं भुना करेला खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดมะระอร่อย", romanization: "phàt-má-rá à-ròi", english: "Stir-fried bitter gourd is delicious.", hindi: "भुना करेला स्वादिष्ट है।"),
+        ],
+        2123: [
+            WordExample(thai: "ฉันกินผัดกะหล่ำดอก", romanization: "chǎn kin phàt-gà-làm-dàawk", english: "I eat stir-fried cauliflower.", hindi: "मैं भुना फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดกะหล่ำดอกอร่อย", romanization: "phàt-gà-làm-dàawk à-ròi", english: "Stir-fried cauliflower is delicious.", hindi: "भुना फूलगोभी स्वादिष्ट है।"),
+        ],
+        2124: [
+            WordExample(thai: "ฉันกินผัดบรอกโคลี", romanization: "chǎn kin phàt-brɔ̀ɔk-khoo-lii", english: "I eat stir-fried broccoli.", hindi: "मैं भुना ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดบรอกโคลีอร่อย", romanization: "phàt-brɔ̀ɔk-khoo-lii à-ròi", english: "Stir-fried broccoli is delicious.", hindi: "भुना ब्रोकली स्वादिष्ट है।"),
+        ],
+        2125: [
+            WordExample(thai: "ฉันกินผัดผักโขม", romanization: "chǎn kin phàt-phàk-khǒom", english: "I eat stir-fried spinach.", hindi: "मैं भुना पालक खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดผักโขมอร่อย", romanization: "phàt-phàk-khǒom à-ròi", english: "Stir-fried spinach is delicious.", hindi: "भुना पालक स्वादिष्ट है।"),
+        ],
+        2126: [
+            WordExample(thai: "ฉันกินผัดผักกวางตุ้ง", romanization: "chǎn kin phàt-phàk-gwaang-tûng", english: "I eat stir-fried bok choy.", hindi: "मैं भुना बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดผักกวางตุ้งอร่อย", romanization: "phàt-phàk-gwaang-tûng à-ròi", english: "Stir-fried bok choy is delicious.", hindi: "भुना बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2127: [
+            WordExample(thai: "ฉันกินผัดเห็ดหอม", romanization: "chǎn kin phàt-hèt-hǎawm", english: "I eat stir-fried shiitake mushroom.", hindi: "मैं भुना शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดเห็ดหอมอร่อย", romanization: "phàt-hèt-hǎawm à-ròi", english: "Stir-fried shiitake mushroom is delicious.", hindi: "भुना शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2128: [
+            WordExample(thai: "ฉันกินผัดเห็ดนางรม", romanization: "chǎn kin phàt-hèt-naang-rom", english: "I eat stir-fried oyster mushroom.", hindi: "मैं भुना ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดเห็ดนางรมอร่อย", romanization: "phàt-hèt-naang-rom à-ròi", english: "Stir-fried oyster mushroom is delicious.", hindi: "भुना ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2129: [
+            WordExample(thai: "ฉันกินผัดเห็ดเข็มทอง", romanization: "chǎn kin phàt-hèt-khém-thaawng", english: "I eat stir-fried enoki mushroom.", hindi: "मैं भुना एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดเห็ดเข็มทองอร่อย", romanization: "phàt-hèt-khém-thaawng à-ròi", english: "Stir-fried enoki mushroom is delicious.", hindi: "भुना एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2130: [
+            WordExample(thai: "ฉันกินผัดเต้าหู้", romanization: "chǎn kin phàt-tâo-hûu", english: "I eat stir-fried tofu.", hindi: "मैं भुना टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดเต้าหู้อร่อย", romanization: "phàt-tâo-hûu à-ròi", english: "Stir-fried tofu is delicious.", hindi: "भुना टोफू स्वादिष्ट है।"),
+        ],
+        2131: [
+            WordExample(thai: "ฉันกินผัดหมูยอ", romanization: "chǎn kin phàt-mǔu-yaw", english: "I eat stir-fried Vietnamese pork sausage.", hindi: "मैं भुना वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดหมูยออร่อย", romanization: "phàt-mǔu-yaw à-ròi", english: "Stir-fried vietnamese pork sausage is delicious.", hindi: "भुना वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2132: [
+            WordExample(thai: "ฉันกินผัดปลาดุก", romanization: "chǎn kin phàt-plaa-dùk", english: "I eat stir-fried catfish.", hindi: "मैं भुना कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดปลาดุกอร่อย", romanization: "phàt-plaa-dùk à-ròi", english: "Stir-fried catfish is delicious.", hindi: "भुना कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2133: [
+            WordExample(thai: "ฉันกินผัดปลาทู", romanization: "chǎn kin phàt-plaa-thuu", english: "I eat stir-fried mackerel.", hindi: "मैं भुना मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดปลาทูอร่อย", romanization: "phàt-plaa-thuu à-ròi", english: "Stir-fried mackerel is delicious.", hindi: "भुना मैकेरल स्वादिष्ट है।"),
+        ],
+        2134: [
+            WordExample(thai: "ฉันกินผัดปลาหมึก", romanization: "chǎn kin phàt-plaa-mʉ̀k", english: "I eat stir-fried squid.", hindi: "मैं भुना स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดปลาหมึกอร่อย", romanization: "phàt-plaa-mʉ̀k à-ròi", english: "Stir-fried squid is delicious.", hindi: "भुना स्क्विड स्वादिष्ट है।"),
+        ],
+        2135: [
+            WordExample(thai: "ฉันกินผัดหอยแมลงภู่", romanization: "chǎn kin phàt-hɔ̌ɔi-mae-lang-phùu", english: "I eat stir-fried mussels.", hindi: "मैं भुना शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดหอยแมลงภู่อร่อย", romanization: "phàt-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Stir-fried mussels is delicious.", hindi: "भुना शंबुक स्वादिष्ट है।"),
+        ],
+        2136: [
+            WordExample(thai: "ฉันกินผัดหอยลาย", romanization: "chǎn kin phàt-hɔ̌ɔi-laai", english: "I eat stir-fried clams.", hindi: "मैं भुना क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดหอยลายอร่อย", romanization: "phàt-hɔ̌ɔi-laai à-ròi", english: "Stir-fried clams is delicious.", hindi: "भुना क्लैम स्वादिष्ट है।"),
+        ],
+        2137: [
+            WordExample(thai: "ฉันกินผัดเนื้อไก่", romanization: "chǎn kin phàt-nʉ́a-gài", english: "I eat stir-fried chicken meat.", hindi: "मैं भुना चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดเนื้อไก่อร่อย", romanization: "phàt-nʉ́a-gài à-ròi", english: "Stir-fried chicken meat is delicious.", hindi: "भुना चिकन मांस स्वादिष्ट है।"),
+        ],
+        2138: [
+            WordExample(thai: "ฉันกินผัดเนื้อหมู", romanization: "chǎn kin phàt-nʉ́a-mǔu", english: "I eat stir-fried pork.", hindi: "मैं भुना सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดเนื้อหมูอร่อย", romanization: "phàt-nʉ́a-mǔu à-ròi", english: "Stir-fried pork is delicious.", hindi: "भुना सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2139: [
+            WordExample(thai: "ฉันกินผัดเนื้อวัว", romanization: "chǎn kin phàt-nʉ́a-wua", english: "I eat stir-fried beef.", hindi: "मैं भुना बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดเนื้อวัวอร่อย", romanization: "phàt-nʉ́a-wua à-ròi", english: "Stir-fried beef is delicious.", hindi: "भुना बीफ स्वादिष्ट है।"),
+        ],
+        2140: [
+            WordExample(thai: "ฉันกินผัดกากหมู", romanization: "chǎn kin phàt-gàak-mǔu", english: "I eat stir-fried pork cracklings.", hindi: "मैं भुना कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดกากหมูอร่อย", romanization: "phàt-gàak-mǔu à-ròi", english: "Stir-fried pork cracklings is delicious.", hindi: "भुना कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2141: [
+            WordExample(thai: "ฉันกินผัดไข่เยี่ยวม้า", romanization: "chǎn kin phàt-khài-yîao-máa", english: "I eat stir-fried century egg.", hindi: "मैं भुना सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดไข่เยี่ยวม้าอร่อย", romanization: "phàt-khài-yîao-máa à-ròi", english: "Stir-fried century egg is delicious.", hindi: "भुना सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2142: [
+            WordExample(thai: "ฉันกินผัดปลาสลิด", romanization: "chǎn kin phàt-plaa-sà-lìt", english: "I eat stir-fried snakehead gourami.", hindi: "मैं भुना स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดปลาสลิดอร่อย", romanization: "phàt-plaa-sà-lìt à-ròi", english: "Stir-fried snakehead gourami is delicious.", hindi: "भुना स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2143: [
+            WordExample(thai: "ฉันกินผัดหมูกรอบ", romanization: "chǎn kin phàt-mǔu-grɔ̀ɔp", english: "I eat stir-fried crispy pork belly.", hindi: "मैं भुना कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดหมูกรอบอร่อย", romanization: "phàt-mǔu-grɔ̀ɔp à-ròi", english: "Stir-fried crispy pork belly is delicious.", hindi: "भुना कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2144: [
+            WordExample(thai: "ฉันกินผัดไก่ฉีก", romanization: "chǎn kin phàt-gài-chìik", english: "I eat stir-fried shredded chicken.", hindi: "मैं भुना रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดไก่ฉีกอร่อย", romanization: "phàt-gài-chìik à-ròi", english: "Stir-fried shredded chicken is delicious.", hindi: "भुना रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2145: [
+            WordExample(thai: "ฉันกินผัดหมูสับ", romanization: "chǎn kin phàt-mǔu-sàp", english: "I eat stir-fried minced pork.", hindi: "मैं भुना सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดหมูสับอร่อย", romanization: "phàt-mǔu-sàp à-ròi", english: "Stir-fried minced pork is delicious.", hindi: "भुना सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2146: [
+            WordExample(thai: "ฉันกินผัดกุ้งแห้ง", romanization: "chǎn kin phàt-gûng-hâeng", english: "I eat stir-fried dried shrimp.", hindi: "मैं भुना सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "ผัดกุ้งแห้งอร่อย", romanization: "phàt-gûng-hâeng à-ròi", english: "Stir-fried dried shrimp is delicious.", hindi: "भुना सूखी झींगा स्वादिष्ट है।"),
+        ],
+        2147: [
+            WordExample(thai: "ฉันกินต้มมะระ", romanization: "chǎn kin tôm-má-rá", english: "I eat boiled bitter gourd.", hindi: "मैं उबला करेला खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มมะระอร่อย", romanization: "tôm-má-rá à-ròi", english: "Boiled bitter gourd is delicious.", hindi: "उबला करेला स्वादिष्ट है।"),
+        ],
+        2148: [
+            WordExample(thai: "ฉันกินต้มกะหล่ำดอก", romanization: "chǎn kin tôm-gà-làm-dàawk", english: "I eat boiled cauliflower.", hindi: "मैं उबला फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มกะหล่ำดอกอร่อย", romanization: "tôm-gà-làm-dàawk à-ròi", english: "Boiled cauliflower is delicious.", hindi: "उबला फूलगोभी स्वादिष्ट है।"),
+        ],
+        2149: [
+            WordExample(thai: "ฉันกินต้มบรอกโคลี", romanization: "chǎn kin tôm-brɔ̀ɔk-khoo-lii", english: "I eat boiled broccoli.", hindi: "मैं उबला ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มบรอกโคลีอร่อย", romanization: "tôm-brɔ̀ɔk-khoo-lii à-ròi", english: "Boiled broccoli is delicious.", hindi: "उबला ब्रोकली स्वादिष्ट है।"),
+        ],
+        2150: [
+            WordExample(thai: "ฉันกินต้มผักโขม", romanization: "chǎn kin tôm-phàk-khǒom", english: "I eat boiled spinach.", hindi: "मैं उबला पालक खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มผักโขมอร่อย", romanization: "tôm-phàk-khǒom à-ròi", english: "Boiled spinach is delicious.", hindi: "उबला पालक स्वादिष्ट है।"),
+        ],
+        2151: [
+            WordExample(thai: "ฉันกินต้มผักกวางตุ้ง", romanization: "chǎn kin tôm-phàk-gwaang-tûng", english: "I eat boiled bok choy.", hindi: "मैं उबला बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มผักกวางตุ้งอร่อย", romanization: "tôm-phàk-gwaang-tûng à-ròi", english: "Boiled bok choy is delicious.", hindi: "उबला बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2152: [
+            WordExample(thai: "ฉันกินต้มเห็ดหอม", romanization: "chǎn kin tôm-hèt-hǎawm", english: "I eat boiled shiitake mushroom.", hindi: "मैं उबला शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มเห็ดหอมอร่อย", romanization: "tôm-hèt-hǎawm à-ròi", english: "Boiled shiitake mushroom is delicious.", hindi: "उबला शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2153: [
+            WordExample(thai: "ฉันกินต้มเห็ดนางรม", romanization: "chǎn kin tôm-hèt-naang-rom", english: "I eat boiled oyster mushroom.", hindi: "मैं उबला ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มเห็ดนางรมอร่อย", romanization: "tôm-hèt-naang-rom à-ròi", english: "Boiled oyster mushroom is delicious.", hindi: "उबला ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2154: [
+            WordExample(thai: "ฉันกินต้มเห็ดเข็มทอง", romanization: "chǎn kin tôm-hèt-khém-thaawng", english: "I eat boiled enoki mushroom.", hindi: "मैं उबला एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มเห็ดเข็มทองอร่อย", romanization: "tôm-hèt-khém-thaawng à-ròi", english: "Boiled enoki mushroom is delicious.", hindi: "उबला एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2155: [
+            WordExample(thai: "ฉันกินต้มเต้าหู้", romanization: "chǎn kin tôm-tâo-hûu", english: "I eat boiled tofu.", hindi: "मैं उबला टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มเต้าหู้อร่อย", romanization: "tôm-tâo-hûu à-ròi", english: "Boiled tofu is delicious.", hindi: "उबला टोफू स्वादिष्ट है।"),
+        ],
+        2156: [
+            WordExample(thai: "ฉันกินต้มหมูยอ", romanization: "chǎn kin tôm-mǔu-yaw", english: "I eat boiled Vietnamese pork sausage.", hindi: "मैं उबला वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มหมูยออร่อย", romanization: "tôm-mǔu-yaw à-ròi", english: "Boiled vietnamese pork sausage is delicious.", hindi: "उबला वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2157: [
+            WordExample(thai: "ฉันกินต้มปลาดุก", romanization: "chǎn kin tôm-plaa-dùk", english: "I eat boiled catfish.", hindi: "मैं उबला कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มปลาดุกอร่อย", romanization: "tôm-plaa-dùk à-ròi", english: "Boiled catfish is delicious.", hindi: "उबला कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2158: [
+            WordExample(thai: "ฉันกินต้มปลาทู", romanization: "chǎn kin tôm-plaa-thuu", english: "I eat boiled mackerel.", hindi: "मैं उबला मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มปลาทูอร่อย", romanization: "tôm-plaa-thuu à-ròi", english: "Boiled mackerel is delicious.", hindi: "उबला मैकेरल स्वादिष्ट है।"),
+        ],
+        2159: [
+            WordExample(thai: "ฉันกินต้มปลาหมึก", romanization: "chǎn kin tôm-plaa-mʉ̀k", english: "I eat boiled squid.", hindi: "मैं उबला स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มปลาหมึกอร่อย", romanization: "tôm-plaa-mʉ̀k à-ròi", english: "Boiled squid is delicious.", hindi: "उबला स्क्विड स्वादिष्ट है।"),
+        ],
+        2160: [
+            WordExample(thai: "ฉันกินต้มหอยแมลงภู่", romanization: "chǎn kin tôm-hɔ̌ɔi-mae-lang-phùu", english: "I eat boiled mussels.", hindi: "मैं उबला शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มหอยแมลงภู่อร่อย", romanization: "tôm-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Boiled mussels is delicious.", hindi: "उबला शंबुक स्वादिष्ट है।"),
+        ],
+        2161: [
+            WordExample(thai: "ฉันกินต้มหอยลาย", romanization: "chǎn kin tôm-hɔ̌ɔi-laai", english: "I eat boiled clams.", hindi: "मैं उबला क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มหอยลายอร่อย", romanization: "tôm-hɔ̌ɔi-laai à-ròi", english: "Boiled clams is delicious.", hindi: "उबला क्लैम स्वादिष्ट है।"),
+        ],
+        2162: [
+            WordExample(thai: "ฉันกินต้มเนื้อไก่", romanization: "chǎn kin tôm-nʉ́a-gài", english: "I eat boiled chicken meat.", hindi: "मैं उबला चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มเนื้อไก่อร่อย", romanization: "tôm-nʉ́a-gài à-ròi", english: "Boiled chicken meat is delicious.", hindi: "उबला चिकन मांस स्वादिष्ट है।"),
+        ],
+        2163: [
+            WordExample(thai: "ฉันกินต้มเนื้อหมู", romanization: "chǎn kin tôm-nʉ́a-mǔu", english: "I eat boiled pork.", hindi: "मैं उबला सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มเนื้อหมูอร่อย", romanization: "tôm-nʉ́a-mǔu à-ròi", english: "Boiled pork is delicious.", hindi: "उबला सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2164: [
+            WordExample(thai: "ฉันกินต้มเนื้อวัว", romanization: "chǎn kin tôm-nʉ́a-wua", english: "I eat boiled beef.", hindi: "मैं उबला बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มเนื้อวัวอร่อย", romanization: "tôm-nʉ́a-wua à-ròi", english: "Boiled beef is delicious.", hindi: "उबला बीफ स्वादिष्ट है।"),
+        ],
+        2165: [
+            WordExample(thai: "ฉันกินต้มกากหมู", romanization: "chǎn kin tôm-gàak-mǔu", english: "I eat boiled pork cracklings.", hindi: "मैं उबला कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มกากหมูอร่อย", romanization: "tôm-gàak-mǔu à-ròi", english: "Boiled pork cracklings is delicious.", hindi: "उबला कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2166: [
+            WordExample(thai: "ฉันกินต้มไข่เยี่ยวม้า", romanization: "chǎn kin tôm-khài-yîao-máa", english: "I eat boiled century egg.", hindi: "मैं उबला सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มไข่เยี่ยวม้าอร่อย", romanization: "tôm-khài-yîao-máa à-ròi", english: "Boiled century egg is delicious.", hindi: "उबला सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2167: [
+            WordExample(thai: "ฉันกินต้มปลาสลิด", romanization: "chǎn kin tôm-plaa-sà-lìt", english: "I eat boiled snakehead gourami.", hindi: "मैं उबला स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มปลาสลิดอร่อย", romanization: "tôm-plaa-sà-lìt à-ròi", english: "Boiled snakehead gourami is delicious.", hindi: "उबला स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2168: [
+            WordExample(thai: "ฉันกินต้มหมูกรอบ", romanization: "chǎn kin tôm-mǔu-grɔ̀ɔp", english: "I eat boiled crispy pork belly.", hindi: "मैं उबला कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มหมูกรอบอร่อย", romanization: "tôm-mǔu-grɔ̀ɔp à-ròi", english: "Boiled crispy pork belly is delicious.", hindi: "उबला कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2169: [
+            WordExample(thai: "ฉันกินต้มไก่ฉีก", romanization: "chǎn kin tôm-gài-chìik", english: "I eat boiled shredded chicken.", hindi: "मैं उबला रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มไก่ฉีกอร่อย", romanization: "tôm-gài-chìik à-ròi", english: "Boiled shredded chicken is delicious.", hindi: "उबला रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2170: [
+            WordExample(thai: "ฉันกินต้มหมูสับ", romanization: "chǎn kin tôm-mǔu-sàp", english: "I eat boiled minced pork.", hindi: "मैं उबला सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มหมูสับอร่อย", romanization: "tôm-mǔu-sàp à-ròi", english: "Boiled minced pork is delicious.", hindi: "उबला सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2171: [
+            WordExample(thai: "ฉันกินต้มกุ้งแห้ง", romanization: "chǎn kin tôm-gûng-hâeng", english: "I eat boiled dried shrimp.", hindi: "मैं उबला सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "ต้มกุ้งแห้งอร่อย", romanization: "tôm-gûng-hâeng à-ròi", english: "Boiled dried shrimp is delicious.", hindi: "उबला सूखी झींगा स्वादिष्ट है।"),
+        ],
+        2172: [
+            WordExample(thai: "ฉันกินอบมะระ", romanization: "chǎn kin òp-má-rá", english: "I eat baked bitter gourd.", hindi: "मैं बेक किया हुआ करेला खाता/खाती हूँ।"),
+            WordExample(thai: "อบมะระอร่อย", romanization: "òp-má-rá à-ròi", english: "Baked bitter gourd is delicious.", hindi: "बेक किया हुआ करेला स्वादिष्ट है।"),
+        ],
+        2173: [
+            WordExample(thai: "ฉันกินอบกะหล่ำดอก", romanization: "chǎn kin òp-gà-làm-dàawk", english: "I eat baked cauliflower.", hindi: "मैं बेक किया हुआ फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "อบกะหล่ำดอกอร่อย", romanization: "òp-gà-làm-dàawk à-ròi", english: "Baked cauliflower is delicious.", hindi: "बेक किया हुआ फूलगोभी स्वादिष्ट है।"),
+        ],
+        2174: [
+            WordExample(thai: "ฉันกินอบบรอกโคลี", romanization: "chǎn kin òp-brɔ̀ɔk-khoo-lii", english: "I eat baked broccoli.", hindi: "मैं बेक किया हुआ ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "อบบรอกโคลีอร่อย", romanization: "òp-brɔ̀ɔk-khoo-lii à-ròi", english: "Baked broccoli is delicious.", hindi: "बेक किया हुआ ब्रोकली स्वादिष्ट है।"),
+        ],
+        2175: [
+            WordExample(thai: "ฉันกินอบผักโขม", romanization: "chǎn kin òp-phàk-khǒom", english: "I eat baked spinach.", hindi: "मैं बेक किया हुआ पालक खाता/खाती हूँ।"),
+            WordExample(thai: "อบผักโขมอร่อย", romanization: "òp-phàk-khǒom à-ròi", english: "Baked spinach is delicious.", hindi: "बेक किया हुआ पालक स्वादिष्ट है।"),
+        ],
+        2176: [
+            WordExample(thai: "ฉันกินอบผักกวางตุ้ง", romanization: "chǎn kin òp-phàk-gwaang-tûng", english: "I eat baked bok choy.", hindi: "मैं बेक किया हुआ बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "อบผักกวางตุ้งอร่อย", romanization: "òp-phàk-gwaang-tûng à-ròi", english: "Baked bok choy is delicious.", hindi: "बेक किया हुआ बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2177: [
+            WordExample(thai: "ฉันกินอบเห็ดหอม", romanization: "chǎn kin òp-hèt-hǎawm", english: "I eat baked shiitake mushroom.", hindi: "मैं बेक किया हुआ शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "อบเห็ดหอมอร่อย", romanization: "òp-hèt-hǎawm à-ròi", english: "Baked shiitake mushroom is delicious.", hindi: "बेक किया हुआ शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2178: [
+            WordExample(thai: "ฉันกินอบเห็ดนางรม", romanization: "chǎn kin òp-hèt-naang-rom", english: "I eat baked oyster mushroom.", hindi: "मैं बेक किया हुआ ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "อบเห็ดนางรมอร่อย", romanization: "òp-hèt-naang-rom à-ròi", english: "Baked oyster mushroom is delicious.", hindi: "बेक किया हुआ ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2179: [
+            WordExample(thai: "ฉันกินอบเห็ดเข็มทอง", romanization: "chǎn kin òp-hèt-khém-thaawng", english: "I eat baked enoki mushroom.", hindi: "मैं बेक किया हुआ एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "อบเห็ดเข็มทองอร่อย", romanization: "òp-hèt-khém-thaawng à-ròi", english: "Baked enoki mushroom is delicious.", hindi: "बेक किया हुआ एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2180: [
+            WordExample(thai: "ฉันกินอบเต้าหู้", romanization: "chǎn kin òp-tâo-hûu", english: "I eat baked tofu.", hindi: "मैं बेक किया हुआ टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "อบเต้าหู้อร่อย", romanization: "òp-tâo-hûu à-ròi", english: "Baked tofu is delicious.", hindi: "बेक किया हुआ टोफू स्वादिष्ट है।"),
+        ],
+        2181: [
+            WordExample(thai: "ฉันกินอบหมูยอ", romanization: "chǎn kin òp-mǔu-yaw", english: "I eat baked Vietnamese pork sausage.", hindi: "मैं बेक किया हुआ वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "อบหมูยออร่อย", romanization: "òp-mǔu-yaw à-ròi", english: "Baked vietnamese pork sausage is delicious.", hindi: "बेक किया हुआ वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2182: [
+            WordExample(thai: "ฉันกินอบปลาดุก", romanization: "chǎn kin òp-plaa-dùk", english: "I eat baked catfish.", hindi: "मैं बेक किया हुआ कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "อบปลาดุกอร่อย", romanization: "òp-plaa-dùk à-ròi", english: "Baked catfish is delicious.", hindi: "बेक किया हुआ कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2183: [
+            WordExample(thai: "ฉันกินอบปลาทู", romanization: "chǎn kin òp-plaa-thuu", english: "I eat baked mackerel.", hindi: "मैं बेक किया हुआ मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "อบปลาทูอร่อย", romanization: "òp-plaa-thuu à-ròi", english: "Baked mackerel is delicious.", hindi: "बेक किया हुआ मैकेरल स्वादिष्ट है।"),
+        ],
+        2184: [
+            WordExample(thai: "ฉันกินอบปลาหมึก", romanization: "chǎn kin òp-plaa-mʉ̀k", english: "I eat baked squid.", hindi: "मैं बेक किया हुआ स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "อบปลาหมึกอร่อย", romanization: "òp-plaa-mʉ̀k à-ròi", english: "Baked squid is delicious.", hindi: "बेक किया हुआ स्क्विड स्वादिष्ट है।"),
+        ],
+        2185: [
+            WordExample(thai: "ฉันกินอบหอยแมลงภู่", romanization: "chǎn kin òp-hɔ̌ɔi-mae-lang-phùu", english: "I eat baked mussels.", hindi: "मैं बेक किया हुआ शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "อบหอยแมลงภู่อร่อย", romanization: "òp-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Baked mussels is delicious.", hindi: "बेक किया हुआ शंबुक स्वादिष्ट है।"),
+        ],
+        2186: [
+            WordExample(thai: "ฉันกินอบหอยลาย", romanization: "chǎn kin òp-hɔ̌ɔi-laai", english: "I eat baked clams.", hindi: "मैं बेक किया हुआ क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "อบหอยลายอร่อย", romanization: "òp-hɔ̌ɔi-laai à-ròi", english: "Baked clams is delicious.", hindi: "बेक किया हुआ क्लैम स्वादिष्ट है।"),
+        ],
+        2187: [
+            WordExample(thai: "ฉันกินอบเนื้อไก่", romanization: "chǎn kin òp-nʉ́a-gài", english: "I eat baked chicken meat.", hindi: "मैं बेक किया हुआ चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "อบเนื้อไก่อร่อย", romanization: "òp-nʉ́a-gài à-ròi", english: "Baked chicken meat is delicious.", hindi: "बेक किया हुआ चिकन मांस स्वादिष्ट है।"),
+        ],
+        2188: [
+            WordExample(thai: "ฉันกินอบเนื้อหมู", romanization: "chǎn kin òp-nʉ́a-mǔu", english: "I eat baked pork.", hindi: "मैं बेक किया हुआ सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "อบเนื้อหมูอร่อย", romanization: "òp-nʉ́a-mǔu à-ròi", english: "Baked pork is delicious.", hindi: "बेक किया हुआ सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2189: [
+            WordExample(thai: "ฉันกินอบเนื้อวัว", romanization: "chǎn kin òp-nʉ́a-wua", english: "I eat baked beef.", hindi: "मैं बेक किया हुआ बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "อบเนื้อวัวอร่อย", romanization: "òp-nʉ́a-wua à-ròi", english: "Baked beef is delicious.", hindi: "बेक किया हुआ बीफ स्वादिष्ट है।"),
+        ],
+        2190: [
+            WordExample(thai: "ฉันกินอบกากหมู", romanization: "chǎn kin òp-gàak-mǔu", english: "I eat baked pork cracklings.", hindi: "मैं बेक किया हुआ कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "อบกากหมูอร่อย", romanization: "òp-gàak-mǔu à-ròi", english: "Baked pork cracklings is delicious.", hindi: "बेक किया हुआ कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2191: [
+            WordExample(thai: "ฉันกินอบไข่เยี่ยวม้า", romanization: "chǎn kin òp-khài-yîao-máa", english: "I eat baked century egg.", hindi: "मैं बेक किया हुआ सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "อบไข่เยี่ยวม้าอร่อย", romanization: "òp-khài-yîao-máa à-ròi", english: "Baked century egg is delicious.", hindi: "बेक किया हुआ सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2192: [
+            WordExample(thai: "ฉันกินอบปลาสลิด", romanization: "chǎn kin òp-plaa-sà-lìt", english: "I eat baked snakehead gourami.", hindi: "मैं बेक किया हुआ स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "อบปลาสลิดอร่อย", romanization: "òp-plaa-sà-lìt à-ròi", english: "Baked snakehead gourami is delicious.", hindi: "बेक किया हुआ स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2193: [
+            WordExample(thai: "ฉันกินอบหมูกรอบ", romanization: "chǎn kin òp-mǔu-grɔ̀ɔp", english: "I eat baked crispy pork belly.", hindi: "मैं बेक किया हुआ कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "อบหมูกรอบอร่อย", romanization: "òp-mǔu-grɔ̀ɔp à-ròi", english: "Baked crispy pork belly is delicious.", hindi: "बेक किया हुआ कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2194: [
+            WordExample(thai: "ฉันกินอบไก่ฉีก", romanization: "chǎn kin òp-gài-chìik", english: "I eat baked shredded chicken.", hindi: "मैं बेक किया हुआ रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "อบไก่ฉีกอร่อย", romanization: "òp-gài-chìik à-ròi", english: "Baked shredded chicken is delicious.", hindi: "बेक किया हुआ रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2195: [
+            WordExample(thai: "ฉันกินอบหมูสับ", romanization: "chǎn kin òp-mǔu-sàp", english: "I eat baked minced pork.", hindi: "मैं बेक किया हुआ सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "อบหมูสับอร่อย", romanization: "òp-mǔu-sàp à-ròi", english: "Baked minced pork is delicious.", hindi: "बेक किया हुआ सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2196: [
+            WordExample(thai: "ฉันกินอบกุ้งแห้ง", romanization: "chǎn kin òp-gûng-hâeng", english: "I eat baked dried shrimp.", hindi: "मैं बेक किया हुआ सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "อบกุ้งแห้งอร่อย", romanization: "òp-gûng-hâeng à-ròi", english: "Baked dried shrimp is delicious.", hindi: "बेक किया हुआ सूखी झींगा स्वादिष्ट है।"),
+        ],
+        2197: [
+            WordExample(thai: "ฉันกินลวกมะระ", romanization: "chǎn kin lûak-má-rá", english: "I eat blanched bitter gourd.", hindi: "मैं हल्का उबला करेला खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกมะระอร่อย", romanization: "lûak-má-rá à-ròi", english: "Blanched bitter gourd is delicious.", hindi: "हल्का उबला करेला स्वादिष्ट है।"),
+        ],
+        2198: [
+            WordExample(thai: "ฉันกินลวกกะหล่ำดอก", romanization: "chǎn kin lûak-gà-làm-dàawk", english: "I eat blanched cauliflower.", hindi: "मैं हल्का उबला फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกกะหล่ำดอกอร่อย", romanization: "lûak-gà-làm-dàawk à-ròi", english: "Blanched cauliflower is delicious.", hindi: "हल्का उबला फूलगोभी स्वादिष्ट है।"),
+        ],
+        2199: [
+            WordExample(thai: "ฉันกินลวกบรอกโคลี", romanization: "chǎn kin lûak-brɔ̀ɔk-khoo-lii", english: "I eat blanched broccoli.", hindi: "मैं हल्का उबला ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกบรอกโคลีอร่อย", romanization: "lûak-brɔ̀ɔk-khoo-lii à-ròi", english: "Blanched broccoli is delicious.", hindi: "हल्का उबला ब्रोकली स्वादिष्ट है।"),
+        ],
+        2200: [
+            WordExample(thai: "ฉันกินลวกผักโขม", romanization: "chǎn kin lûak-phàk-khǒom", english: "I eat blanched spinach.", hindi: "मैं हल्का उबला पालक खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกผักโขมอร่อย", romanization: "lûak-phàk-khǒom à-ròi", english: "Blanched spinach is delicious.", hindi: "हल्का उबला पालक स्वादिष्ट है।"),
+        ],
+        2201: [
+            WordExample(thai: "ฉันกินลวกผักกวางตุ้ง", romanization: "chǎn kin lûak-phàk-gwaang-tûng", english: "I eat blanched bok choy.", hindi: "मैं हल्का उबला बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกผักกวางตุ้งอร่อย", romanization: "lûak-phàk-gwaang-tûng à-ròi", english: "Blanched bok choy is delicious.", hindi: "हल्का उबला बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2202: [
+            WordExample(thai: "ฉันกินลวกเห็ดหอม", romanization: "chǎn kin lûak-hèt-hǎawm", english: "I eat blanched shiitake mushroom.", hindi: "मैं हल्का उबला शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกเห็ดหอมอร่อย", romanization: "lûak-hèt-hǎawm à-ròi", english: "Blanched shiitake mushroom is delicious.", hindi: "हल्का उबला शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2203: [
+            WordExample(thai: "ฉันกินลวกเห็ดนางรม", romanization: "chǎn kin lûak-hèt-naang-rom", english: "I eat blanched oyster mushroom.", hindi: "मैं हल्का उबला ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกเห็ดนางรมอร่อย", romanization: "lûak-hèt-naang-rom à-ròi", english: "Blanched oyster mushroom is delicious.", hindi: "हल्का उबला ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2204: [
+            WordExample(thai: "ฉันกินลวกเห็ดเข็มทอง", romanization: "chǎn kin lûak-hèt-khém-thaawng", english: "I eat blanched enoki mushroom.", hindi: "मैं हल्का उबला एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกเห็ดเข็มทองอร่อย", romanization: "lûak-hèt-khém-thaawng à-ròi", english: "Blanched enoki mushroom is delicious.", hindi: "हल्का उबला एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2205: [
+            WordExample(thai: "ฉันกินลวกเต้าหู้", romanization: "chǎn kin lûak-tâo-hûu", english: "I eat blanched tofu.", hindi: "मैं हल्का उबला टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกเต้าหู้อร่อย", romanization: "lûak-tâo-hûu à-ròi", english: "Blanched tofu is delicious.", hindi: "हल्का उबला टोफू स्वादिष्ट है।"),
+        ],
+        2206: [
+            WordExample(thai: "ฉันกินลวกหมูยอ", romanization: "chǎn kin lûak-mǔu-yaw", english: "I eat blanched Vietnamese pork sausage.", hindi: "मैं हल्का उबला वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกหมูยออร่อย", romanization: "lûak-mǔu-yaw à-ròi", english: "Blanched vietnamese pork sausage is delicious.", hindi: "हल्का उबला वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2207: [
+            WordExample(thai: "ฉันกินลวกปลาดุก", romanization: "chǎn kin lûak-plaa-dùk", english: "I eat blanched catfish.", hindi: "मैं हल्का उबला कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกปลาดุกอร่อย", romanization: "lûak-plaa-dùk à-ròi", english: "Blanched catfish is delicious.", hindi: "हल्का उबला कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2208: [
+            WordExample(thai: "ฉันกินลวกปลาทู", romanization: "chǎn kin lûak-plaa-thuu", english: "I eat blanched mackerel.", hindi: "मैं हल्का उबला मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกปลาทูอร่อย", romanization: "lûak-plaa-thuu à-ròi", english: "Blanched mackerel is delicious.", hindi: "हल्का उबला मैकेरल स्वादिष्ट है।"),
+        ],
+        2209: [
+            WordExample(thai: "ฉันกินลวกปลาหมึก", romanization: "chǎn kin lûak-plaa-mʉ̀k", english: "I eat blanched squid.", hindi: "मैं हल्का उबला स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกปลาหมึกอร่อย", romanization: "lûak-plaa-mʉ̀k à-ròi", english: "Blanched squid is delicious.", hindi: "हल्का उबला स्क्विड स्वादिष्ट है।"),
+        ],
+        2210: [
+            WordExample(thai: "ฉันกินลวกหอยแมลงภู่", romanization: "chǎn kin lûak-hɔ̌ɔi-mae-lang-phùu", english: "I eat blanched mussels.", hindi: "मैं हल्का उबला शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกหอยแมลงภู่อร่อย", romanization: "lûak-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Blanched mussels is delicious.", hindi: "हल्का उबला शंबुक स्वादिष्ट है।"),
+        ],
+        2211: [
+            WordExample(thai: "ฉันกินลวกหอยลาย", romanization: "chǎn kin lûak-hɔ̌ɔi-laai", english: "I eat blanched clams.", hindi: "मैं हल्का उबला क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกหอยลายอร่อย", romanization: "lûak-hɔ̌ɔi-laai à-ròi", english: "Blanched clams is delicious.", hindi: "हल्का उबला क्लैम स्वादिष्ट है।"),
+        ],
+        2212: [
+            WordExample(thai: "ฉันกินลวกเนื้อไก่", romanization: "chǎn kin lûak-nʉ́a-gài", english: "I eat blanched chicken meat.", hindi: "मैं हल्का उबला चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกเนื้อไก่อร่อย", romanization: "lûak-nʉ́a-gài à-ròi", english: "Blanched chicken meat is delicious.", hindi: "हल्का उबला चिकन मांस स्वादिष्ट है।"),
+        ],
+        2213: [
+            WordExample(thai: "ฉันกินลวกเนื้อหมู", romanization: "chǎn kin lûak-nʉ́a-mǔu", english: "I eat blanched pork.", hindi: "मैं हल्का उबला सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกเนื้อหมูอร่อย", romanization: "lûak-nʉ́a-mǔu à-ròi", english: "Blanched pork is delicious.", hindi: "हल्का उबला सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2214: [
+            WordExample(thai: "ฉันกินลวกเนื้อวัว", romanization: "chǎn kin lûak-nʉ́a-wua", english: "I eat blanched beef.", hindi: "मैं हल्का उबला बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกเนื้อวัวอร่อย", romanization: "lûak-nʉ́a-wua à-ròi", english: "Blanched beef is delicious.", hindi: "हल्का उबला बीफ स्वादिष्ट है।"),
+        ],
+        2215: [
+            WordExample(thai: "ฉันกินลวกกากหมู", romanization: "chǎn kin lûak-gàak-mǔu", english: "I eat blanched pork cracklings.", hindi: "मैं हल्का उबला कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกกากหมูอร่อย", romanization: "lûak-gàak-mǔu à-ròi", english: "Blanched pork cracklings is delicious.", hindi: "हल्का उबला कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2216: [
+            WordExample(thai: "ฉันกินลวกไข่เยี่ยวม้า", romanization: "chǎn kin lûak-khài-yîao-máa", english: "I eat blanched century egg.", hindi: "मैं हल्का उबला सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกไข่เยี่ยวม้าอร่อย", romanization: "lûak-khài-yîao-máa à-ròi", english: "Blanched century egg is delicious.", hindi: "हल्का उबला सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2217: [
+            WordExample(thai: "ฉันกินลวกปลาสลิด", romanization: "chǎn kin lûak-plaa-sà-lìt", english: "I eat blanched snakehead gourami.", hindi: "मैं हल्का उबला स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกปลาสลิดอร่อย", romanization: "lûak-plaa-sà-lìt à-ròi", english: "Blanched snakehead gourami is delicious.", hindi: "हल्का उबला स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2218: [
+            WordExample(thai: "ฉันกินลวกหมูกรอบ", romanization: "chǎn kin lûak-mǔu-grɔ̀ɔp", english: "I eat blanched crispy pork belly.", hindi: "मैं हल्का उबला कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกหมูกรอบอร่อย", romanization: "lûak-mǔu-grɔ̀ɔp à-ròi", english: "Blanched crispy pork belly is delicious.", hindi: "हल्का उबला कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2219: [
+            WordExample(thai: "ฉันกินลวกไก่ฉีก", romanization: "chǎn kin lûak-gài-chìik", english: "I eat blanched shredded chicken.", hindi: "मैं हल्का उबला रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกไก่ฉีกอร่อย", romanization: "lûak-gài-chìik à-ròi", english: "Blanched shredded chicken is delicious.", hindi: "हल्का उबला रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2220: [
+            WordExample(thai: "ฉันกินลวกหมูสับ", romanization: "chǎn kin lûak-mǔu-sàp", english: "I eat blanched minced pork.", hindi: "मैं हल्का उबला सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกหมูสับอร่อย", romanization: "lûak-mǔu-sàp à-ròi", english: "Blanched minced pork is delicious.", hindi: "हल्का उबला सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2221: [
+            WordExample(thai: "ฉันกินลวกกุ้งแห้ง", romanization: "chǎn kin lûak-gûng-hâeng", english: "I eat blanched dried shrimp.", hindi: "मैं हल्का उबला सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "ลวกกุ้งแห้งอร่อย", romanization: "lûak-gûng-hâeng à-ròi", english: "Blanched dried shrimp is delicious.", hindi: "हल्का उबला सूखी झींगा स्वादिष्ट है।"),
+        ],
+        2222: [
+            WordExample(thai: "ฉันกินยำมะระ", romanization: "chǎn kin yam-má-rá", english: "I eat spicy salad with bitter gourd.", hindi: "मैं मसालेदार सलाद में करेला खाता/खाती हूँ।"),
+            WordExample(thai: "ยำมะระอร่อย", romanization: "yam-má-rá à-ròi", english: "Spicy salad with bitter gourd is delicious.", hindi: "मसालेदार सलाद में करेला स्वादिष्ट है।"),
+        ],
+        2223: [
+            WordExample(thai: "ฉันกินยำกะหล่ำดอก", romanization: "chǎn kin yam-gà-làm-dàawk", english: "I eat spicy salad with cauliflower.", hindi: "मैं मसालेदार सलाद में फूलगोभी खाता/खाती हूँ।"),
+            WordExample(thai: "ยำกะหล่ำดอกอร่อย", romanization: "yam-gà-làm-dàawk à-ròi", english: "Spicy salad with cauliflower is delicious.", hindi: "मसालेदार सलाद में फूलगोभी स्वादिष्ट है।"),
+        ],
+        2224: [
+            WordExample(thai: "ฉันกินยำบรอกโคลี", romanization: "chǎn kin yam-brɔ̀ɔk-khoo-lii", english: "I eat spicy salad with broccoli.", hindi: "मैं मसालेदार सलाद में ब्रोकली खाता/खाती हूँ।"),
+            WordExample(thai: "ยำบรอกโคลีอร่อย", romanization: "yam-brɔ̀ɔk-khoo-lii à-ròi", english: "Spicy salad with broccoli is delicious.", hindi: "मसालेदार सलाद में ब्रोकली स्वादिष्ट है।"),
+        ],
+        2225: [
+            WordExample(thai: "ฉันกินยำผักโขม", romanization: "chǎn kin yam-phàk-khǒom", english: "I eat spicy salad with spinach.", hindi: "मैं मसालेदार सलाद में पालक खाता/खाती हूँ।"),
+            WordExample(thai: "ยำผักโขมอร่อย", romanization: "yam-phàk-khǒom à-ròi", english: "Spicy salad with spinach is delicious.", hindi: "मसालेदार सलाद में पालक स्वादिष्ट है।"),
+        ],
+        2226: [
+            WordExample(thai: "ฉันกินยำผักกวางตุ้ง", romanization: "chǎn kin yam-phàk-gwaang-tûng", english: "I eat spicy salad with bok choy.", hindi: "मैं मसालेदार सलाद में बॉक चॉय खाता/खाती हूँ।"),
+            WordExample(thai: "ยำผักกวางตุ้งอร่อย", romanization: "yam-phàk-gwaang-tûng à-ròi", english: "Spicy salad with bok choy is delicious.", hindi: "मसालेदार सलाद में बॉक चॉय स्वादिष्ट है।"),
+        ],
+        2227: [
+            WordExample(thai: "ฉันกินยำเห็ดหอม", romanization: "chǎn kin yam-hèt-hǎawm", english: "I eat spicy salad with shiitake mushroom.", hindi: "मैं मसालेदार सलाद में शीताके मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ยำเห็ดหอมอร่อย", romanization: "yam-hèt-hǎawm à-ròi", english: "Spicy salad with shiitake mushroom is delicious.", hindi: "मसालेदार सलाद में शीताके मशरूम स्वादिष्ट है।"),
+        ],
+        2228: [
+            WordExample(thai: "ฉันกินยำเห็ดนางรม", romanization: "chǎn kin yam-hèt-naang-rom", english: "I eat spicy salad with oyster mushroom.", hindi: "मैं मसालेदार सलाद में ऑयस्टर मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ยำเห็ดนางรมอร่อย", romanization: "yam-hèt-naang-rom à-ròi", english: "Spicy salad with oyster mushroom is delicious.", hindi: "मसालेदार सलाद में ऑयस्टर मशरूम स्वादिष्ट है।"),
+        ],
+        2229: [
+            WordExample(thai: "ฉันกินยำเห็ดเข็มทอง", romanization: "chǎn kin yam-hèt-khém-thaawng", english: "I eat spicy salad with enoki mushroom.", hindi: "मैं मसालेदार सलाद में एनोकी मशरूम खाता/खाती हूँ।"),
+            WordExample(thai: "ยำเห็ดเข็มทองอร่อย", romanization: "yam-hèt-khém-thaawng à-ròi", english: "Spicy salad with enoki mushroom is delicious.", hindi: "मसालेदार सलाद में एनोकी मशरूम स्वादिष्ट है।"),
+        ],
+        2230: [
+            WordExample(thai: "ฉันกินยำเต้าหู้", romanization: "chǎn kin yam-tâo-hûu", english: "I eat spicy salad with tofu.", hindi: "मैं मसालेदार सलाद में टोफू खाता/खाती हूँ।"),
+            WordExample(thai: "ยำเต้าหู้อร่อย", romanization: "yam-tâo-hûu à-ròi", english: "Spicy salad with tofu is delicious.", hindi: "मसालेदार सलाद में टोफू स्वादिष्ट है।"),
+        ],
+        2231: [
+            WordExample(thai: "ฉันกินยำหมูยอ", romanization: "chǎn kin yam-mǔu-yaw", english: "I eat spicy salad with Vietnamese pork sausage.", hindi: "मैं मसालेदार सलाद में वियतनामी पोर्क सॉसेज खाता/खाती हूँ।"),
+            WordExample(thai: "ยำหมูยออร่อย", romanization: "yam-mǔu-yaw à-ròi", english: "Spicy salad with vietnamese pork sausage is delicious.", hindi: "मसालेदार सलाद में वियतनामी पोर्क सॉसेज स्वादिष्ट है।"),
+        ],
+        2232: [
+            WordExample(thai: "ฉันกินยำปลาดุก", romanization: "chǎn kin yam-plaa-dùk", english: "I eat spicy salad with catfish.", hindi: "मैं मसालेदार सलाद में कैटफ़िश खाता/खाती हूँ।"),
+            WordExample(thai: "ยำปลาดุกอร่อย", romanization: "yam-plaa-dùk à-ròi", english: "Spicy salad with catfish is delicious.", hindi: "मसालेदार सलाद में कैटफ़िश स्वादिष्ट है।"),
+        ],
+        2233: [
+            WordExample(thai: "ฉันกินยำปลาทู", romanization: "chǎn kin yam-plaa-thuu", english: "I eat spicy salad with mackerel.", hindi: "मैं मसालेदार सलाद में मैकेरल खाता/खाती हूँ।"),
+            WordExample(thai: "ยำปลาทูอร่อย", romanization: "yam-plaa-thuu à-ròi", english: "Spicy salad with mackerel is delicious.", hindi: "मसालेदार सलाद में मैकेरल स्वादिष्ट है।"),
+        ],
+        2234: [
+            WordExample(thai: "ฉันกินยำปลาหมึก", romanization: "chǎn kin yam-plaa-mʉ̀k", english: "I eat spicy salad with squid.", hindi: "मैं मसालेदार सलाद में स्क्विड खाता/खाती हूँ।"),
+            WordExample(thai: "ยำปลาหมึกอร่อย", romanization: "yam-plaa-mʉ̀k à-ròi", english: "Spicy salad with squid is delicious.", hindi: "मसालेदार सलाद में स्क्विड स्वादिष्ट है।"),
+        ],
+        2235: [
+            WordExample(thai: "ฉันกินยำหอยแมลงภู่", romanization: "chǎn kin yam-hɔ̌ɔi-mae-lang-phùu", english: "I eat spicy salad with mussels.", hindi: "मैं मसालेदार सलाद में शंबुक खाता/खाती हूँ।"),
+            WordExample(thai: "ยำหอยแมลงภู่อร่อย", romanization: "yam-hɔ̌ɔi-mae-lang-phùu à-ròi", english: "Spicy salad with mussels is delicious.", hindi: "मसालेदार सलाद में शंबुक स्वादिष्ट है।"),
+        ],
+        2236: [
+            WordExample(thai: "ฉันกินยำหอยลาย", romanization: "chǎn kin yam-hɔ̌ɔi-laai", english: "I eat spicy salad with clams.", hindi: "मैं मसालेदार सलाद में क्लैम खाता/खाती हूँ।"),
+            WordExample(thai: "ยำหอยลายอร่อย", romanization: "yam-hɔ̌ɔi-laai à-ròi", english: "Spicy salad with clams is delicious.", hindi: "मसालेदार सलाद में क्लैम स्वादिष्ट है।"),
+        ],
+        2237: [
+            WordExample(thai: "ฉันกินยำเนื้อไก่", romanization: "chǎn kin yam-nʉ́a-gài", english: "I eat spicy salad with chicken meat.", hindi: "मैं मसालेदार सलाद में चिकन मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ยำเนื้อไก่อร่อย", romanization: "yam-nʉ́a-gài à-ròi", english: "Spicy salad with chicken meat is delicious.", hindi: "मसालेदार सलाद में चिकन मांस स्वादिष्ट है।"),
+        ],
+        2238: [
+            WordExample(thai: "ฉันกินยำเนื้อหมู", romanization: "chǎn kin yam-nʉ́a-mǔu", english: "I eat spicy salad with pork.", hindi: "मैं मसालेदार सलाद में सूअर का मांस खाता/खाती हूँ।"),
+            WordExample(thai: "ยำเนื้อหมูอร่อย", romanization: "yam-nʉ́a-mǔu à-ròi", english: "Spicy salad with pork is delicious.", hindi: "मसालेदार सलाद में सूअर का मांस स्वादिष्ट है।"),
+        ],
+        2239: [
+            WordExample(thai: "ฉันกินยำเนื้อวัว", romanization: "chǎn kin yam-nʉ́a-wua", english: "I eat spicy salad with beef.", hindi: "मैं मसालेदार सलाद में बीफ खाता/खाती हूँ।"),
+            WordExample(thai: "ยำเนื้อวัวอร่อย", romanization: "yam-nʉ́a-wua à-ròi", english: "Spicy salad with beef is delicious.", hindi: "मसालेदार सलाद में बीफ स्वादिष्ट है।"),
+        ],
+        2240: [
+            WordExample(thai: "ฉันกินยำกากหมู", romanization: "chǎn kin yam-gàak-mǔu", english: "I eat spicy salad with pork cracklings.", hindi: "मैं मसालेदार सलाद में कुरकुरी सूअर की चर्बी खाता/खाती हूँ।"),
+            WordExample(thai: "ยำกากหมูอร่อย", romanization: "yam-gàak-mǔu à-ròi", english: "Spicy salad with pork cracklings is delicious.", hindi: "मसालेदार सलाद में कुरकुरी सूअर की चर्बी स्वादिष्ट है।"),
+        ],
+        2241: [
+            WordExample(thai: "ฉันกินยำไข่เยี่ยวม้า", romanization: "chǎn kin yam-khài-yîao-máa", english: "I eat spicy salad with century egg.", hindi: "मैं मसालेदार सलाद में सेंचुरी एग खाता/खाती हूँ।"),
+            WordExample(thai: "ยำไข่เยี่ยวม้าอร่อย", romanization: "yam-khài-yîao-máa à-ròi", english: "Spicy salad with century egg is delicious.", hindi: "मसालेदार सलाद में सेंचुरी एग स्वादिष्ट है।"),
+        ],
+        2242: [
+            WordExample(thai: "ฉันกินยำปลาสลิด", romanization: "chǎn kin yam-plaa-sà-lìt", english: "I eat spicy salad with snakehead gourami.", hindi: "मैं मसालेदार सलाद में स्नेकहेड गौरामी मछली खाता/खाती हूँ।"),
+            WordExample(thai: "ยำปลาสลิดอร่อย", romanization: "yam-plaa-sà-lìt à-ròi", english: "Spicy salad with snakehead gourami is delicious.", hindi: "मसालेदार सलाद में स्नेकहेड गौरामी मछली स्वादिष्ट है।"),
+        ],
+        2243: [
+            WordExample(thai: "ฉันกินยำหมูกรอบ", romanization: "chǎn kin yam-mǔu-grɔ̀ɔp", english: "I eat spicy salad with crispy pork belly.", hindi: "मैं मसालेदार सलाद में कुरकुरा पोर्क बेली खाता/खाती हूँ।"),
+            WordExample(thai: "ยำหมูกรอบอร่อย", romanization: "yam-mǔu-grɔ̀ɔp à-ròi", english: "Spicy salad with crispy pork belly is delicious.", hindi: "मसालेदार सलाद में कुरकुरा पोर्क बेली स्वादिष्ट है।"),
+        ],
+        2244: [
+            WordExample(thai: "ฉันกินยำไก่ฉีก", romanization: "chǎn kin yam-gài-chìik", english: "I eat spicy salad with shredded chicken.", hindi: "मैं मसालेदार सलाद में रेशेदार चिकन खाता/खाती हूँ।"),
+            WordExample(thai: "ยำไก่ฉีกอร่อย", romanization: "yam-gài-chìik à-ròi", english: "Spicy salad with shredded chicken is delicious.", hindi: "मसालेदार सलाद में रेशेदार चिकन स्वादिष्ट है।"),
+        ],
+        2245: [
+            WordExample(thai: "ฉันกินยำหมูสับ", romanization: "chǎn kin yam-mǔu-sàp", english: "I eat spicy salad with minced pork.", hindi: "मैं मसालेदार सलाद में सूअर का कीमा खाता/खाती हूँ।"),
+            WordExample(thai: "ยำหมูสับอร่อย", romanization: "yam-mǔu-sàp à-ròi", english: "Spicy salad with minced pork is delicious.", hindi: "मसालेदार सलाद में सूअर का कीमा स्वादिष्ट है।"),
+        ],
+        2246: [
+            WordExample(thai: "ฉันกินยำกุ้งแห้ง", romanization: "chǎn kin yam-gûng-hâeng", english: "I eat spicy salad with dried shrimp.", hindi: "मैं मसालेदार सलाद में सूखी झींगा खाता/खाती हूँ।"),
+            WordExample(thai: "ยำกุ้งแห้งอร่อย", romanization: "yam-gûng-hâeng à-ròi", english: "Spicy salad with dried shrimp is delicious.", hindi: "मसालेदार सलाद में सूखी झींगा स्वादिष्ट है।"),
+        ],
+    ]
+
     // CHUNKS: sentence batches are appended as examples1, examples2, … by
     // tools/integrate_batch.py, which also maintains this merge list.
-    private static let exampleChunks: [[Int: [WordExample]]] = [examples0, examples1, examples3]
+    private static let exampleChunks: [[Int: [WordExample]]] = [examples0, examples1, examples3, examples4]
     private static let examples: [Int: [WordExample]] = exampleChunks.reduce(into: [:]) { $0.merge($1) { a, _ in a } }
 
     // How the word combines with (or is built from) other words.

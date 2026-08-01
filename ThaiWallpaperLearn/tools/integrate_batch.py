@@ -81,12 +81,19 @@ def emoji_literal(wid: int, emoji: str) -> str:
     return f'        {wid}: "{esc(emoji)}",'
 
 
-def load_batches() -> list[dict]:
-    # Prefer quality-filtered / HQ fills. Fall back to batch*.json only if none.
-    prefer = sorted(BATCH_DIR.glob("quality_seed.json")) + sorted(BATCH_DIR.glob("hq_*.json"))
-    files = prefer if prefer else sorted(BATCH_DIR.glob("batch*.json"))
+def load_batches(files: list[Path] | None = None) -> list[dict]:
+    if files:
+        paths = files
+    else:
+        prefer = (
+            sorted(BATCH_DIR.glob("inject_ready.json"))
+            + sorted(BATCH_DIR.glob("cycle*.json"))
+            + sorted(BATCH_DIR.glob("quality_seed.json"))
+            + sorted(BATCH_DIR.glob("hq_*.json"))
+        )
+        paths = prefer if prefer else sorted(BATCH_DIR.glob("batch*.json"))
     items: list[dict] = []
-    for f in files:
+    for f in paths:
         data = json.loads(f.read_text(encoding="utf-8"))
         if not isinstance(data, list):
             raise SystemExit(f"{f} is not a JSON array")
@@ -96,7 +103,13 @@ def load_batches() -> list[dict]:
 
 
 def main() -> None:
-    batches = load_batches()
+    args = [a for a in sys.argv[1:] if not a.startswith("-")]
+    cap = 200
+    for a in sys.argv[1:]:
+        if a.startswith("--cap="):
+            cap = int(a.split("=", 1)[1])
+    files = [Path(a) if Path(a).is_absolute() else BATCH_DIR / a for a in args] if args else None
+    batches = load_batches(files)
     if not batches:
         raise SystemExit("No batch JSON files found in /tmp/thailearn_batches")
 
@@ -127,8 +140,7 @@ def main() -> None:
     if not accepted:
         raise SystemExit("Nothing to inject after dedupe")
 
-    # Cap at 1000 new words
-    accepted = accepted[:1000]
+    accepted = accepted[:cap]
     chunk_i = next_chunk_index(vocab_text, "words")
     # Prefer words2 if words0+words1 exist
     if "words1" in vocab_text and chunk_i < 2:
