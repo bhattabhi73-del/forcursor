@@ -92,27 +92,9 @@ fun BrowseScreen(speech: Speech) {
             onDismissRequest = { detail = null },
             containerColor = ThaiTheme.bgAlt,
         ) {
-            Column(
-                Modifier
-                    .fillMaxWidth()
-                    .padding(horizontal = 22.dp)
-                    .padding(bottom = 40.dp),
-                horizontalAlignment = Alignment.CenterHorizontally,
-            ) {
-                Chip(word.category.uppercase())
-                Spacer(Modifier.height(10.dp))
-                Text(word.thai, fontFamily = ThaiTheme.mitr, fontSize = 44.sp, color = ThaiTheme.ink)
-                Text("${word.hindiPron} · ${word.roman}", fontSize = 15.sp, color = ThaiTheme.textMuted)
-                Spacer(Modifier.height(12.dp))
-                Text(word.hi, fontSize = 22.sp, fontWeight = FontWeight.SemiBold, color = ThaiTheme.ink)
-                Text(word.en, fontSize = 22.sp, fontWeight = FontWeight.SemiBold, color = ThaiTheme.ink)
-                Spacer(Modifier.height(16.dp))
-                Button(
-                    onClick = { speech.speak(word.thai, word.roman) },
-                    colors = ButtonDefaults.buttonColors(containerColor = ThaiTheme.accent),
-                    shape = RoundedCornerShape(999.dp),
-                ) { Text("🔊  Play", fontWeight = FontWeight.Bold) }
-            }
+            // Tapping a chip inside the sheet swaps the sheet to that word,
+            // the same in-place drill-down iOS does.
+            WordDetailBody(word, speech, onOpenWord = { detail = it })
         }
     }
 }
