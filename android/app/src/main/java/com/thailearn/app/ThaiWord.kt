@@ -52,6 +52,30 @@ data class WordPair(
 /** A "must-know fact" card: headline plus explanation. */
 data class ThaiFact(val title: String, val body: String)
 
+/** One of the 44 consonants. Mirrors iOS `ThaiLetter`. */
+data class ThaiLetter(
+    val letter: String,
+    val name: String,
+    val nameRoman: String,
+    val nameEnglish: String,
+    val nameHindi: String,
+    val sound: String,
+    val devanagari: String,
+    val obsolete: Boolean,
+) {
+    /**
+     * Thai's three consonant classes — the key to the tone rules. Colour-coding
+     * letters by class is the classic "Read Thai" trick for absorbing the tone
+     * system visually. Same membership strings as iOS.
+     */
+    val letterClass: String
+        get() = when {
+            letter in "กจฎฏดตบปอ" -> "middle"
+            letter in "ขฃฉฐถผฝศษสห" -> "high"
+            else -> "low"
+        }
+}
+
 /**
  * The bundled content, decoded once — the Kotlin twin of iOS `ContentStore`.
  *
@@ -75,6 +99,7 @@ object Content {
         val opposites: List<WordPair>,
         val similars: List<WordPair>,
         val facts: List<ThaiFact>,
+        val letters: List<ThaiLetter>,
     )
 
     private fun payload(context: Context): Payload = loaded ?: synchronized(this) {
@@ -128,6 +153,13 @@ object Content {
             opposites = pairs(root, "opposites"),
             similars = pairs(root, "similars"),
             facts = rows(root, "facts") { ThaiFact(it.getString("title"), it.getString("body")) },
+            letters = rows(root, "letters") {
+                ThaiLetter(
+                    it.getString("letter"), it.getString("name"), it.getString("nameRoman"),
+                    it.getString("nameEnglish"), it.getString("nameHindi"),
+                    it.getString("sound"), it.getString("devanagari"), it.getBoolean("obsolete"),
+                )
+            },
         )
     }
 
@@ -186,6 +218,8 @@ object Content {
     fun similarPairs(context: Context): List<WordPair> = payload(context).similars
 
     fun facts(context: Context): List<ThaiFact> = payload(context).facts
+
+    fun letters(context: Context): List<ThaiLetter> = payload(context).letters
 
     fun examples(context: Context, id: Int): List<WordExample> =
         payload(context).examples[id].orEmpty()

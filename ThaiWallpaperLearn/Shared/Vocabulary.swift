@@ -37,10 +37,21 @@ enum ContentStore {
         let opposites: [PairRow]
         let similars: [PairRow]
         let facts: [FactRow]
+        let letters: [LetterRow]
 
         struct FactRow: Decodable {
             let title: String
             let body: String
+        }
+        struct LetterRow: Decodable {
+            let letter: String
+            let name: String
+            let nameRoman: String
+            let nameEnglish: String
+            let nameHindi: String
+            let sound: String
+            let devanagari: String
+            let obsolete: Bool
         }
 
         struct FunWordRow: Decodable {
@@ -120,6 +131,12 @@ enum ContentStore {
     static let opposites: [WordPair] = payload.opposites.map(wordPair)
     static let similars: [WordPair] = payload.similars.map(wordPair)
     static let facts: [(String, String)] = payload.facts.map { ($0.title, $0.body) }
+
+    static let letters: [ThaiLetter] = payload.letters.map {
+        ThaiLetter(letter: $0.letter, name: $0.name, nameRoman: $0.nameRoman,
+                   nameEnglish: $0.nameEnglish, nameHindi: $0.nameHindi,
+                   sound: $0.sound, devanagari: $0.devanagari, obsolete: $0.obsolete)
+    }
 
     private static func funWord(_ r: Payload.FunWordRow) -> FunWord {
         FunWord(thai: r.thai, roman: r.roman, meaning: r.meaning,

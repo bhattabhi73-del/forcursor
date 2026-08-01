@@ -22,6 +22,44 @@ import androidx.compose.ui.unit.sp
 /** The 1a Flip Deck, matching the iOS Practice tab. */
 @Composable
 fun PracticeScreen(speech: Speech) {
+    // Mode chips mirror the iOS Practice deck: the flip deck is home, the other
+    // modes are drills you dip into. Kept here rather than in the nav bar so
+    // both apps present the same shape.
+    var mode by remember { mutableStateOf(PracticeMode.Deck) }
+
+    when (mode) {
+        PracticeMode.Quiz -> { QuizScreen(speech) { mode = PracticeMode.Deck }; return }
+        PracticeMode.Tones -> { ToneTrainerScreen(speech) { mode = PracticeMode.Deck }; return }
+        PracticeMode.Deck -> Unit
+    }
+
+    FlipDeck(speech) { mode = it }
+}
+
+enum class PracticeMode { Deck, Quiz, Tones }
+
+@Composable
+private fun ModeChips(onPick: (PracticeMode) -> Unit) {
+    Row(
+        Modifier.fillMaxWidth().padding(top = 10.dp),
+        horizontalArrangement = Arrangement.spacedBy(8.dp),
+    ) {
+        listOf("🎯 Quiz" to PracticeMode.Quiz, "🎵 Tones" to PracticeMode.Tones).forEach { (label, target) ->
+            Text(
+                label,
+                fontSize = 12.sp, fontWeight = FontWeight.SemiBold, color = ThaiTheme.accent700,
+                modifier = Modifier
+                    .clip(RoundedCornerShape(999.dp))
+                    .background(ThaiTheme.accent100)
+                    .clickable { onPick(target) }
+                    .padding(horizontal = 14.dp, vertical = 7.dp),
+            )
+        }
+    }
+}
+
+@Composable
+private fun FlipDeck(speech: Speech, onPickMode: (PracticeMode) -> Unit) {
     val context = LocalContext.current
     val store = remember { ProgressStore(context) }
     val words = remember { Vocab.all(context) }
@@ -58,6 +96,7 @@ fun PracticeScreen(speech: Speech) {
             Column {
                 Text("Practice", fontSize = 22.sp, fontWeight = FontWeight.Bold, color = ThaiTheme.ink)
                 Text("Today's deck · ${deck.size} cards", fontSize = 12.sp, color = ThaiTheme.textMuted)
+                ModeChips(onPickMode)
             }
             Spacer(Modifier.weight(1f))
             Chip("${minOf(reviewed, target)}/$target", ThaiTheme.accent100, ThaiTheme.accent700)

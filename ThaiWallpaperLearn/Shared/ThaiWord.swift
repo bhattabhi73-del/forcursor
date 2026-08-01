@@ -460,3 +460,37 @@ struct WordPair: Identifiable {
     let note: String
     var id: String { thaiA + "·" + thaiB }
 }
+
+struct ThaiLetter: Identifiable {
+    let letter: String
+    let name: String
+    let nameRoman: String
+    let nameEnglish: String
+    let nameHindi: String
+    let sound: String
+    let devanagari: String
+    var obsolete = false
+
+    var id: String { letter }
+
+    /// Thai's three consonant classes — the key to the tone rules. The
+    /// classic "Read Thai" trick: color-code letters by class so the tone
+    /// system is absorbed visually.
+    var letterClass: String {
+        if "กจฎฏดตบปอ".contains(letter) { return "middle" }
+        if "ขฃฉฐถผฝศษสห".contains(letter) { return "high" }
+        return "low"
+    }
+
+    var classColor: Color {
+        switch letterClass {
+        case "middle": return ThaiTheme.indigo
+        case "high": return ThaiTheme.orchid
+        default: return ThaiTheme.classLow
+        }
+    }
+
+    /// The 44 consonants, loaded from content.json so the Alphabet tab is
+    /// identical on both platforms.
+    static let all: [ThaiLetter] = ContentStore.letters
+}

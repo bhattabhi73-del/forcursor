@@ -177,6 +177,27 @@ def parse_facts(src: str):
             for m in FACT_RE.finditer(body)]
 
 
+LETTER_FIELDS = ("letter", "name", "nameRoman", "nameEnglish", "nameHindi",
+                 "sound", "devanagari")
+# `obsolete` has a Swift default, so only the two dead letters (ฃ ฅ) carry it.
+LETTER_RE = re.compile(
+    r"ThaiLetter\(\s*" +
+    r",\s*".join(rf"{f}:\s*{STR}" for f in LETTER_FIELDS) +
+    r"(?:\s*,\s*obsolete:\s*(true|false))?\s*\)", re.S)
+
+
+def parse_letters(src: str):
+    body = _literal_span(src, "let all:")
+    if body is None:
+        return []
+    out = []
+    for m in LETTER_RE.finditer(body):
+        row = dict(zip(LETTER_FIELDS, (unescape(g) for g in m.groups()[:7])))
+        row["obsolete"] = m.group(8) == "true"
+        out.append(row)
+    return out
+
+
 def parse_more(src: str, decl: str, pattern, fields):
     """Rows of one MoreData literal (slang / cousins / opposites / similars)."""
     body = _literal_span(src, decl)
@@ -225,6 +246,7 @@ def main():
         "opposites": parse_more(more_src, "let opposites:", PAIR_RE, PAIR_FIELDS),
         "similars": parse_more(more_src, "let similars:", PAIR_RE, PAIR_FIELDS),
         "facts": parse_facts(more_src),
+        "letters": parse_letters(more_src),
     }
     origin = {}
     payload = {"version": 1}
