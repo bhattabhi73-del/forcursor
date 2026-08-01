@@ -54,7 +54,7 @@ fun ThaiLearnApp(speech: Speech) {
             containerColor = ThaiTheme.bg,
             bottomBar = {
                 NavigationBar(containerColor = ThaiTheme.surface) {
-                    listOf("Today" to "☀️", "Practice" to "🃏", "Browse" to "📖").forEachIndexed { i, (label, glyph) ->
+                    listOf("Today" to "☀️", "Practice" to "🃏", "Browse" to "📖", "More" to "✨").forEachIndexed { i, (label, glyph) ->
                         NavigationBarItem(
                             selected = tab == i,
                             onClick = { tab = i },
@@ -73,7 +73,8 @@ fun ThaiLearnApp(speech: Speech) {
                 when (tab) {
                     0 -> TodayScreen(speech)
                     1 -> PracticeScreen(speech)
-                    else -> BrowseScreen(speech)
+                    2 -> BrowseScreen(speech)
+                    else -> MoreScreen(speech)
                 }
             }
         }

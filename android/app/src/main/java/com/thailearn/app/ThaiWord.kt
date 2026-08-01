@@ -33,6 +33,25 @@ data class WordForm(
     val note: String,
 )
 
+/** A More-tab entry: slang, or a Hindi–Thai Sanskrit cousin. Mirrors iOS `FunWord`. */
+data class FunWord(
+    val thai: String,
+    val roman: String,
+    val meaning: String,
+    val hindi: String,
+    val note: String,
+)
+
+/** Two words shown side by side — opposites, or easily-confused pairs. */
+data class WordPair(
+    val thaiA: String, val romanA: String, val meaningA: String, val hindiA: String,
+    val thaiB: String, val romanB: String, val meaningB: String, val hindiB: String,
+    val note: String,
+)
+
+/** A "must-know fact" card: headline plus explanation. */
+data class ThaiFact(val title: String, val body: String)
+
 /**
  * The bundled content, decoded once — the Kotlin twin of iOS `ContentStore`.
  *
@@ -51,6 +70,11 @@ object Content {
         val similar: Map<Int, List<Int>>,
         val compounds: Map<Int, String>,
         val emoji: Map<Int, String>,
+        val slang: List<FunWord>,
+        val cousins: List<FunWord>,
+        val opposites: List<WordPair>,
+        val similars: List<WordPair>,
+        val facts: List<ThaiFact>,
     )
 
     private fun payload(context: Context): Payload = loaded ?: synchronized(this) {
@@ -99,6 +123,31 @@ object Content {
             similar = intMap(root, "similar") { rows -> List(rows.length()) { i -> rows.getInt(i) } },
             compounds = intStringMap(root, "compounds"),
             emoji = intStringMap(root, "emoji"),
+            slang = funWords(root, "slang"),
+            cousins = funWords(root, "cousins"),
+            opposites = pairs(root, "opposites"),
+            similars = pairs(root, "similars"),
+            facts = rows(root, "facts") { ThaiFact(it.getString("title"), it.getString("body")) },
+        )
+    }
+
+    private fun <T> rows(root: JSONObject, field: String, make: (JSONObject) -> T): List<T> {
+        val arr = root.getJSONArray(field)
+        return List(arr.length()) { i -> make(arr.getJSONObject(i)) }
+    }
+
+    private fun funWords(root: JSONObject, field: String) = rows(root, field) {
+        FunWord(
+            it.getString("thai"), it.getString("roman"),
+            it.getString("meaning"), it.getString("hindi"), it.getString("note"),
+        )
+    }
+
+    private fun pairs(root: JSONObject, field: String) = rows(root, field) {
+        WordPair(
+            it.getString("thaiA"), it.getString("romanA"), it.getString("meaningA"), it.getString("hindiA"),
+            it.getString("thaiB"), it.getString("romanB"), it.getString("meaningB"), it.getString("hindiB"),
+            it.getString("note"),
         )
     }
 
@@ -126,6 +175,17 @@ object Content {
     }
 
     fun words(context: Context): List<ThaiWord> = payload(context).words
+
+    fun slang(context: Context): List<FunWord> = payload(context).slang
+
+    /** Genuine Sanskrit/Pali cognates a Hindi speaker already half-knows. */
+    fun cousins(context: Context): List<FunWord> = payload(context).cousins
+
+    fun opposites(context: Context): List<WordPair> = payload(context).opposites
+
+    fun similarPairs(context: Context): List<WordPair> = payload(context).similars
+
+    fun facts(context: Context): List<ThaiFact> = payload(context).facts
 
     fun examples(context: Context, id: Int): List<WordExample> =
         payload(context).examples[id].orEmpty()

@@ -433,3 +433,30 @@ enum WordExtras {
         }
     }
 }
+
+// MARK: - More tab types
+//
+// These live in Shared, not ContentView.swift, because ContentStore
+// decodes them and ContentStore compiles into the widget extension too.
+
+struct FunWord: Identifiable {
+    let thai: String
+    let roman: String
+    let meaning: String
+    let hindi: String
+    let note: String
+    var id: String { thai }
+}
+
+struct WordPair: Identifiable {
+    let thaiA: String
+    let romanA: String
+    let meaningA: String
+    let hindiA: String
+    let thaiB: String
+    let romanB: String
+    let meaningB: String
+    let hindiB: String
+    let note: String
+    var id: String { thaiA + "·" + thaiB }
+}

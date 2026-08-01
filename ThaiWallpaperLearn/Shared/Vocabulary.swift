@@ -30,6 +30,31 @@ enum ContentStore {
         let similar: [String: [Int]]
         let compounds: [String: String]
         let emoji: [String: String]
+        // The More tab's content. Shared with Android, which had no access to
+        // it at all while it lived as Swift literals in ContentView.swift.
+        let slang: [FunWordRow]
+        let cousins: [FunWordRow]
+        let opposites: [PairRow]
+        let similars: [PairRow]
+        let facts: [FactRow]
+
+        struct FactRow: Decodable {
+            let title: String
+            let body: String
+        }
+
+        struct FunWordRow: Decodable {
+            let thai: String
+            let roman: String
+            let meaning: String
+            let hindi: String
+            let note: String
+        }
+        struct PairRow: Decodable {
+            let thaiA: String, romanA: String, meaningA: String, hindiA: String
+            let thaiB: String, romanB: String, meaningB: String, hindiB: String
+            let note: String
+        }
 
         struct Word: Decodable {
             let id: Int
@@ -89,6 +114,23 @@ enum ContentStore {
     static let similar: [Int: [Int]] = remap(payload.similar) { $0 }
     static let compounds: [Int: String] = remap(payload.compounds) { $0 }
     static let emoji: [Int: String] = remap(payload.emoji) { $0 }
+
+    static let slang: [FunWord] = payload.slang.map(funWord)
+    static let cousins: [FunWord] = payload.cousins.map(funWord)
+    static let opposites: [WordPair] = payload.opposites.map(wordPair)
+    static let similars: [WordPair] = payload.similars.map(wordPair)
+    static let facts: [(String, String)] = payload.facts.map { ($0.title, $0.body) }
+
+    private static func funWord(_ r: Payload.FunWordRow) -> FunWord {
+        FunWord(thai: r.thai, roman: r.roman, meaning: r.meaning,
+                hindi: r.hindi, note: r.note)
+    }
+
+    private static func wordPair(_ r: Payload.PairRow) -> WordPair {
+        WordPair(thaiA: r.thaiA, romanA: r.romanA, meaningA: r.meaningA, hindiA: r.hindiA,
+                 thaiB: r.thaiB, romanB: r.romanB, meaningB: r.meaningB, hindiB: r.hindiB,
+                 note: r.note)
+    }
 
     /// JSON object keys are strings; the app keys everything by `ThaiWord.id`.
     private static func remap<In, Out>(_ source: [String: In],

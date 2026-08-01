@@ -27,6 +27,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 VOCAB = ROOT / "ThaiWallpaperLearn/Shared/Vocabulary.swift"
 EXTRAS = ROOT / "ThaiWallpaperLearn/Shared/ThaiWord.swift"
+MORE = ROOT / "ThaiWallpaperLearn/App/ContentView.swift"
 IOS_OUT = ROOT / "ThaiWallpaperLearn/Shared/content.json"
 ANDROID_OUT = ROOT / "android/app/src/main/assets/content.json"
 
@@ -149,10 +150,47 @@ def parse_similar(src: str):
     return out
 
 
+FUN_FIELDS = ("thai", "roman", "meaning", "hindi", "note")
+PAIR_FIELDS = ("thaiA", "romanA", "meaningA", "hindiA",
+               "thaiB", "romanB", "meaningB", "hindiB", "note")
+
+
+def _ctor_re(name, fields):
+    """Regex for `Name(field: "…", field: "…")` with Swift string escapes."""
+    body = r",\s*".join(rf"{f}:\s*{STR}" for f in fields)
+    return re.compile(rf"{name}\(\s*{body}\s*\)", re.S)
+
+
+FUN_RE = _ctor_re("FunWord", FUN_FIELDS)
+PAIR_RE = _ctor_re("WordPair", PAIR_FIELDS)
+
+
+FACT_RE = re.compile(rf"\(\s*{STR}\s*,\s*{STR}\s*\)", re.S)
+
+
+def parse_facts(src: str):
+    """`static let facts: [(String, String)]` — (title, body) tuples."""
+    body = _literal_span(src, "let facts:")
+    if body is None:
+        return []
+    return [{"title": unescape(m.group(1)), "body": unescape(m.group(2))}
+            for m in FACT_RE.finditer(body)]
+
+
+def parse_more(src: str, decl: str, pattern, fields):
+    """Rows of one MoreData literal (slang / cousins / opposites / similars)."""
+    body = _literal_span(src, decl)
+    if body is None:
+        return []
+    return [dict(zip(fields, (unescape(g) for g in m.groups())))
+            for m in pattern.finditer(body)]
+
+
 def main():
     check_only = "--check" in sys.argv
     vocab_src = VOCAB.read_text(encoding="utf-8")
     extras_src = EXTRAS.read_text(encoding="utf-8")
+    more_src = MORE.read_text(encoding="utf-8")
 
     # Migration is incremental: each section moves out of Swift and into
     # content.json one at a time. Once a section's literals are gone the parser
@@ -179,6 +217,14 @@ def main():
         "compounds": {**parse_int_map(extras_src, "let numberCompounds:"),
                       **parse_int_map(extras_src, "let compounds:")},
         "emoji": parse_int_map(extras_src, "let emojis:"),
+        # The More tab's content, lifted out of ContentView.swift for the same
+        # reason as the word list: it was iOS-only Swift literals, so Android
+        # had no way to show any of it.
+        "slang": parse_more(more_src, "let slang:", FUN_RE, FUN_FIELDS),
+        "cousins": parse_more(more_src, "let cousins:", FUN_RE, FUN_FIELDS),
+        "opposites": parse_more(more_src, "let opposites:", PAIR_RE, PAIR_FIELDS),
+        "similars": parse_more(more_src, "let similars:", PAIR_RE, PAIR_FIELDS),
+        "facts": parse_facts(more_src),
     }
     origin = {}
     payload = {"version": 1}

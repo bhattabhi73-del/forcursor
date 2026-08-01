@@ -30,6 +30,18 @@ ROW_SCHEMA = {
     "forms": ("thai", "roman", "en", "hi", "note"),
 }
 
+# The More tab's flat lists — not keyed by word id, so they are checked
+# separately from the per-word sections above.
+LIST_SCHEMA = {
+    "slang": ("thai", "roman", "meaning", "hindi", "note"),
+    "cousins": ("thai", "roman", "meaning", "hindi", "note"),
+    "opposites": ("thaiA", "romanA", "meaningA", "hindiA",
+                  "thaiB", "romanB", "meaningB", "hindiB", "note"),
+    "similars": ("thaiA", "romanA", "meaningA", "hindiA",
+                 "thaiB", "romanB", "meaningB", "hindiB", "note"),
+    "facts": ("title", "body"),
+}
+
 
 def load_content():
     """The whole content.json payload."""
@@ -54,11 +66,17 @@ def validate_content(payload):
     """Problems that would make ContentStore.Payload fail to decode."""
     problems = []
     for key in ("version", "words", "examples", "forms", "similar",
-                "compounds", "emoji"):
+                "compounds", "emoji", *LIST_SCHEMA):
         if key not in payload:
             problems.append(f"missing top-level key {key}")
     if problems:
         return problems
+
+    for section, keys in LIST_SCHEMA.items():
+        for i, row in enumerate(payload[section]):
+            bad = [k for k in keys if not isinstance(row.get(k), str)]
+            if bad:
+                problems.append(f"{section}[{i}] missing/non-string {bad}")
 
     ids = []
     for w in payload["words"]:
