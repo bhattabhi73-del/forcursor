@@ -659,6 +659,19 @@ struct FunWord: Identifiable {
     var id: String { thai }
 }
 
+struct WordPair: Identifiable {
+    let thaiA: String
+    let romanA: String
+    let meaningA: String
+    let hindiA: String
+    let thaiB: String
+    let romanB: String
+    let meaningB: String
+    let hindiB: String
+    let note: String
+    var id: String { thaiA + "·" + thaiB }
+}
+
 struct MoreView: View {
     var body: some View {
         NavigationStack {
@@ -678,6 +691,26 @@ struct MoreView: View {
                 } label: {
                     moreRow(icon: "link", color: ThaiTheme.indigo, title: "Hindi–Thai Cousins",
                             subtitle: "ภาษา = भाषा, ครू = गुरु — words you already know")
+                }
+                .listRowBackground(ThaiTheme.cream)
+
+                NavigationLink {
+                    WordPairListView(title: "Opposite Words", pairs: MoreData.opposites,
+                                     symbol: "arrow.left.arrow.right",
+                                     intro: "Words stick twice as fast in pairs — learn ใหญ่ and เล็ก arrives free. Tap either side to hear it.")
+                } label: {
+                    moreRow(icon: "arrow.left.arrow.right", color: ThaiTheme.jade, title: "Opposite Words",
+                            subtitle: "ใหญ่ ↔ เล็ก, ร้อน ↔ หนาว — learn in pairs")
+                }
+                .listRowBackground(ThaiTheme.cream)
+
+                NavigationLink {
+                    WordPairListView(title: "Similar Words", pairs: MoreData.similars,
+                                     symbol: "equal",
+                                     intro: "Near-twins that trip learners up — same English translation, different Thai feel. The note tells you which one to use when.")
+                } label: {
+                    moreRow(icon: "equal.circle.fill", color: ThaiTheme.plum, title: "Similar Words",
+                            subtitle: "พูด ≈ คุย, ดู ≈ เห็น — which one when?")
                 }
                 .listRowBackground(ThaiTheme.cream)
 
@@ -770,6 +803,86 @@ struct FunWordListView: View {
         .scrollContentBackground(.hidden)
         .background(ThaiTheme.sand)
         .navigationTitle(title)
+    }
+}
+
+struct WordPairListView: View {
+    let title: String
+    let pairs: [WordPair]
+    let symbol: String
+    let intro: String
+
+    var body: some View {
+        List {
+            Section {
+                Text(intro)
+                    .font(.subheadline)
+                    .foregroundStyle(.secondary)
+                    .listRowBackground(ThaiTheme.parchment)
+                HStack {
+                    Image(systemName: "text.book.closed.fill")
+                        .foregroundStyle(ThaiTheme.gold)
+                    Text("\(pairs.count) pairs")
+                        .font(.headline)
+                        .foregroundStyle(ThaiTheme.ink)
+                    Spacer()
+                }
+                .listRowBackground(ThaiTheme.parchment)
+            }
+            ForEach(pairs) { pair in
+                VStack(alignment: .leading, spacing: 6) {
+                    HStack(alignment: .top, spacing: 8) {
+                        pairSide(thai: pair.thaiA, roman: pair.romanA,
+                                 meaning: pair.meaningA, hindi: pair.hindiA)
+                        Image(systemName: symbol)
+                            .font(.subheadline.weight(.bold))
+                            .foregroundStyle(ThaiTheme.gold)
+                            .padding(.top, 6)
+                        pairSide(thai: pair.thaiB, roman: pair.romanB,
+                                 meaning: pair.meaningB, hindi: pair.hindiB)
+                    }
+                    if !pair.note.isEmpty {
+                        Text(pair.note)
+                            .font(.caption)
+                            .foregroundStyle(.secondary)
+                    }
+                }
+                .padding(.vertical, 3)
+                .listRowBackground(ThaiTheme.cream)
+            }
+        }
+        .listStyle(.insetGrouped)
+        .scrollContentBackground(.hidden)
+        .background(ThaiTheme.sand)
+        .navigationTitle(title)
+    }
+
+    private func pairSide(thai: String, roman: String, meaning: String, hindi: String) -> some View {
+        Button {
+            SpeechService.shared.speak(thai: thai, romanization: roman)
+        } label: {
+            VStack(alignment: .leading, spacing: 2) {
+                HStack(spacing: 4) {
+                    Text(thai)
+                        .font(.title3.weight(.bold))
+                        .foregroundStyle(ThaiTheme.ink)
+                    Image(systemName: "speaker.wave.2.fill")
+                        .font(.caption2)
+                        .foregroundStyle(ThaiTheme.indigo.opacity(0.6))
+                }
+                Text(roman)
+                    .font(.caption)
+                    .foregroundStyle(ThaiTheme.indigo)
+                Text(meaning)
+                    .font(.caption)
+                    .foregroundStyle(ThaiTheme.ink)
+                Text(hindi)
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .buttonStyle(.plain)
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 
@@ -1018,6 +1131,207 @@ enum MoreData {
         ("Weekdays are planets, like Hindi", "Monday = วันจันทร์ (चन्द्र moon), Tuesday = อังคาร (मंगल Mars), Sunday = อาทิตย์ (आदित्य sun). If you know Hindi weekdays, you know Thai ones."),
         ("เกรงใจ — the most Thai word", "Kreng-jai: reluctance to impose on anyone. Declining a favor so the other person isn't troubled. Understand this and you understand Thai culture."),
         ("Nicknames rule", "Every Thai has a short nickname (often unrelated to their real name): Bird, Golf, Fon, Nok. Ask ชื่อเล่นอะไร (What's your nickname?) — it's friendlier than formal names."),
+    ]
+
+    static let opposites: [WordPair] = [
+        WordPair(thaiA: "ใหญ่", romanA: "yài", meaningA: "big", hindiA: "बड़ा",
+                 thaiB: "เล็ก", romanB: "lék", meaningB: "small", hindiB: "छोटा",
+                 note: "The first pair every learner needs — sizes, rooms, portions"),
+        WordPair(thaiA: "ร้อน", romanA: "rón", meaningA: "hot", hindiA: "गरम",
+                 thaiB: "หนาว", romanB: "nǎao", meaningB: "cold", hindiB: "ठंडा",
+                 note: "For weather and how you feel — น้ำร้อน hot water, อากาศหนาว cold weather"),
+        WordPair(thaiA: "ใหม่", romanA: "mài", meaningA: "new", hindiA: "नया",
+                 thaiB: "เก่า", romanB: "kào", meaningB: "old (things)", hindiB: "पुराना",
+                 note: "เก่า is for things only — old people use แก่ (kàe)"),
+        WordPair(thaiA: "เร็ว", romanA: "reo", meaningA: "fast", hindiA: "तेज़",
+                 thaiB: "ช้า", romanB: "cháa", meaningB: "slow", hindiB: "धीमा",
+                 note: "ช้า ๆ (cháa cháa) = \"slowly please!\" — say it to taxi drivers"),
+        WordPair(thaiA: "ง่าย", romanA: "ngâai", meaningA: "easy", hindiA: "आसान",
+                 thaiB: "ยาก", romanB: "yâak", meaningB: "difficult", hindiB: "मुश्किल",
+                 note: "ภาษาไทยไม่ยาก — Thai is not hard!"),
+        WordPair(thaiA: "ใกล้", romanA: "klâi", meaningA: "near", hindiA: "पास",
+                 thaiB: "ไกล", romanB: "klai", meaningB: "far", hindiB: "दूर",
+                 note: "Thai's cruelest joke: near and far differ ONLY by tone — falling = near, mid = far"),
+        WordPair(thaiA: "แพง", romanA: "phaeng", meaningA: "expensive", hindiA: "महँगा",
+                 thaiB: "ถูก", romanB: "thùuk", meaningB: "cheap", hindiB: "सस्ता",
+                 note: "แพงไป (too expensive) is your bargaining opener at any market"),
+        WordPair(thaiA: "มาก", romanA: "mâak", meaningA: "a lot / very", hindiA: "बहुत",
+                 thaiB: "น้อย", romanB: "nói", meaningB: "little / few", hindiB: "कम",
+                 note: "Both come after the word: อร่อยมาก very tasty, กินน้อย eat little"),
+        WordPair(thaiA: "ดี", romanA: "dii", meaningA: "good", hindiA: "अच्छा",
+                 thaiB: "แย่", romanB: "yâe", meaningB: "bad / terrible", hindiB: "बुरा",
+                 note: "Thais often soften แย่ to ไม่ดี (not good) — more polite"),
+        WordPair(thaiA: "สะอาด", romanA: "sà-àat", meaningA: "clean", hindiA: "साफ़",
+                 thaiB: "สกปรก", romanB: "sòk-kà-pròk", meaningB: "dirty", hindiB: "गंदा",
+                 note: ""),
+        WordPair(thaiA: "อ้วน", romanA: "ûan", meaningA: "fat", hindiA: "मोटा",
+                 thaiB: "ผอม", romanB: "phǒom", meaningB: "thin", hindiB: "दुबला",
+                 note: "Thais comment on weight casually — อ้วนขึ้น (got fatter) is small talk, not an insult"),
+        WordPair(thaiA: "ยาว", romanA: "yaao", meaningA: "long", hindiA: "लंबा",
+                 thaiB: "สั้น", romanB: "sân", meaningB: "short (length)", hindiB: "छोटा (लंबाई)",
+                 note: "For length only — a short person is เตี้ย (tîa)"),
+        WordPair(thaiA: "กว้าง", romanA: "kwâang", meaningA: "wide", hindiA: "चौड़ा",
+                 thaiB: "แคบ", romanB: "khâep", meaningB: "narrow", hindiB: "संकरा",
+                 note: ""),
+        WordPair(thaiA: "หนัก", romanA: "nàk", meaningA: "heavy", hindiA: "भारी",
+                 thaiB: "เบา", romanB: "bao", meaningB: "light (weight)", hindiB: "हल्का",
+                 note: "เบา ๆ = gently / softly — useful for massages and music volume"),
+        WordPair(thaiA: "ดัง", romanA: "dang", meaningA: "loud", hindiA: "तेज़ (आवाज़)",
+                 thaiB: "เงียบ", romanB: "ngîap", meaningB: "quiet", hindiB: "शांत",
+                 note: "ดัง also means famous — คนดัง = celebrity"),
+        WordPair(thaiA: "สูง", romanA: "sǔung", meaningA: "tall / high", hindiA: "ऊँचा",
+                 thaiB: "ต่ำ", romanB: "tàm", meaningB: "low", hindiB: "नीचा",
+                 note: "New word alert: ต่ำ — you'll see it on price boards (ราคาต่ำ low price)"),
+        WordPair(thaiA: "หวาน", romanA: "wǎan", meaningA: "sweet", hindiA: "मीठा",
+                 thaiB: "ขม", romanB: "khǒm", meaningB: "bitter", hindiB: "कड़वा",
+                 note: "Order coffee หวานน้อย (a little sweet) or Thai default will be VERY sweet"),
+        WordPair(thaiA: "แห้ง", romanA: "hâeng", meaningA: "dry", hindiA: "सूखा",
+                 thaiB: "เปียก", romanB: "pìak", meaningB: "wet", hindiB: "गीला",
+                 note: "Both on menus too: ก๋วยเตี๋ยวแห้ง dry noodles vs น้ำ soup version"),
+        WordPair(thaiA: "เปิด", romanA: "pòet", meaningA: "open / turn on", hindiA: "खोलना",
+                 thaiB: "ปิด", romanB: "pìt", meaningB: "close / turn off", hindiB: "बंद करना",
+                 note: "Same pair works for shops, doors, lights and AC — เปิดแอร์ turn on the AC"),
+        WordPair(thaiA: "ไป", romanA: "pai", meaningA: "to go", hindiA: "जाना",
+                 thaiB: "มา", romanB: "maa", meaningB: "to come", hindiB: "आना",
+                 note: "The two most-used verbs in Thai — ไปไหนมา = \"where have you been?\""),
+        WordPair(thaiA: "ซื้อ", romanA: "súue", meaningA: "to buy", hindiA: "खरीदना",
+                 thaiB: "ขาย", romanB: "khǎai", meaningB: "to sell", hindiB: "बेचना",
+                 note: "ซื้อขาย together = trade / commerce"),
+        WordPair(thaiA: "นอน", romanA: "noon", meaningA: "to sleep", hindiA: "सोना",
+                 thaiB: "ตื่น", romanB: "tùuen", meaningB: "to wake up", hindiB: "जागना",
+                 note: ""),
+        WordPair(thaiA: "จำ", romanA: "jam", meaningA: "to remember", hindiA: "याद रखना",
+                 thaiB: "ลืม", romanB: "luem", meaningB: "to forget", hindiB: "भूलना",
+                 note: "จำได้ = I remember; ลืมแล้ว = I forgot already"),
+        WordPair(thaiA: "เริ่ม", romanA: "rêrm", meaningA: "to begin", hindiA: "शुरू करना",
+                 thaiB: "เสร็จ", romanB: "sèt", meaningB: "to finish", hindiB: "ख़त्म होना",
+                 note: "เสร็จแล้ว = done! — you'll hear it everywhere"),
+        WordPair(thaiA: "ถาม", romanA: "thǎam", meaningA: "to ask", hindiA: "पूछना",
+                 thaiB: "ตอบ", romanB: "tòop", meaningB: "to answer", hindiB: "जवाब देना",
+                 note: "คำถาม question, คำตอบ answer — just add คำ (word)"),
+        WordPair(thaiA: "ส่ง", romanA: "sòng", meaningA: "to send", hindiA: "भेजना",
+                 thaiB: "รับ", romanB: "ráp", meaningB: "to receive", hindiB: "पाना",
+                 note: "Airport signs: ส่ง departures/drop-off, รับ arrivals/pick-up"),
+        WordPair(thaiA: "เข้า", romanA: "khâo", meaningA: "to enter", hindiA: "अंदर जाना",
+                 thaiB: "ออก", romanB: "òok", meaningB: "to exit", hindiB: "बाहर निकलना",
+                 note: "ทางเข้า entrance, ทางออก exit — the two signs you need in every mall"),
+        WordPair(thaiA: "ยืน", romanA: "yuuen", meaningA: "to stand", hindiA: "खड़ा होना",
+                 thaiB: "นั่ง", romanB: "nâng", meaningB: "to sit", hindiB: "बैठना",
+                 note: ""),
+        WordPair(thaiA: "หัวเราะ", romanA: "hǔa-ró", meaningA: "to laugh", hindiA: "हँसना",
+                 thaiB: "ร้องไห้", romanB: "róong-hâi", meaningB: "to cry", hindiB: "रोना",
+                 note: "หัวเราะ literally starts with หัว (head) — laughing with your whole head"),
+        WordPair(thaiA: "ซ้าย", romanA: "sáai", meaningA: "left", hindiA: "बायाँ",
+                 thaiB: "ขวา", romanB: "khwǎa", meaningB: "right", hindiB: "दायाँ",
+                 note: "เลี้ยวซ้าย turn left, เลี้ยวขวา turn right — taxi essentials"),
+        WordPair(thaiA: "ข้างบน", romanA: "khâang-bon", meaningA: "above / upstairs", hindiA: "ऊपर",
+                 thaiB: "ข้างล่าง", romanB: "khâang-lâang", meaningB: "below / downstairs", hindiB: "नीचे",
+                 note: ""),
+        WordPair(thaiA: "เช้า", romanA: "cháao", meaningA: "morning", hindiA: "सुबह",
+                 thaiB: "เย็น", romanB: "yen", meaningB: "evening", hindiB: "शाम",
+                 note: "ตอนเช้า in the morning, ตอนเย็น in the evening"),
+        WordPair(thaiA: "ก่อน", romanA: "kòon", meaningA: "before", hindiA: "पहले",
+                 thaiB: "หลัง", romanB: "lǎng", meaningB: "after", hindiB: "बाद",
+                 note: "ก่อนกิน before eating, หลังกิน after eating — on every medicine label"),
+        WordPair(thaiA: "พรุ่งนี้", romanA: "phrûng-níi", meaningA: "tomorrow", hindiA: "आने वाला कल",
+                 thaiB: "เมื่อวาน", romanB: "mûea-waan", meaningB: "yesterday", hindiB: "बीता कल",
+                 note: "Unlike Hindi's one कल for both, Thai keeps them separate"),
+        WordPair(thaiA: "ดีใจ", romanA: "dii-jai", meaningA: "happy / glad", hindiA: "खुश",
+                 thaiB: "เสียใจ", romanB: "sǐa-jai", meaningB: "sad", hindiB: "दुखी",
+                 note: "Literally good-heart vs lost-heart — ใจ (heart) builds dozens of feeling words"),
+        WordPair(thaiA: "หิว", romanA: "hǐu", meaningA: "hungry", hindiA: "भूखा",
+                 thaiB: "อิ่ม", romanB: "ìm", meaningB: "full (after eating)", hindiB: "पेट भरा",
+                 note: "อิ่มแล้ว (I'm full) is the polite way to stop a Thai host from refilling your plate"),
+        WordPair(thaiA: "เสมอ", romanA: "sà-měr", meaningA: "always", hindiA: "हमेशा",
+                 thaiB: "ไม่เคย", romanB: "mâi-kheuy", meaningB: "never", hindiB: "कभी नहीं",
+                 note: ""),
+        WordPair(thaiA: "ด้วยกัน", romanA: "dûai-kan", meaningA: "together", hindiA: "साथ में",
+                 thaiB: "คนเดียว", romanB: "kon-diao", meaningB: "alone", hindiB: "अकेला",
+                 note: "มาคนเดียวเหรอ — \"you came alone?\" A question solo travelers hear daily"),
+        WordPair(thaiA: "ถูกต้อง", romanA: "thùuk-tông", meaningA: "correct", hindiA: "सही",
+                 thaiB: "ผิด", romanB: "phìt", meaningB: "wrong", hindiB: "गलत",
+                 note: "ถูก alone also means correct — same word as \"cheap\", context decides"),
+        WordPair(thaiA: "ผู้ชาย", romanA: "phûu-chaai", meaningA: "man", hindiA: "आदमी",
+                 thaiB: "ผู้หญิง", romanB: "phûu-yǐng", meaningB: "woman", hindiB: "औरत",
+                 note: "ผู้ = person; ห้องน้ำชาย / ห้องน้ำหญิง on restroom doors drop the ผู้"),
+        WordPair(thaiA: "สุข", romanA: "sùk", meaningA: "happiness", hindiA: "सुख",
+                 thaiB: "ทุกข์", romanB: "thúk", meaningB: "suffering", hindiB: "दुःख",
+                 note: "Straight from Sanskrit — the same सुख-दुःख pair Hindi uses. See Hindi–Thai Cousins!"),
+    ]
+
+    static let similars: [WordPair] = [
+        WordPair(thaiA: "มาก", romanA: "mâak", meaningA: "very / a lot", hindiA: "बहुत",
+                 thaiB: "เยอะ", romanB: "yóe", meaningB: "a lot / many", hindiB: "ढेर सारा",
+                 note: "มาก intensifies (ร้อนมาก very hot); เยอะ is for amounts (คนเยอะ lots of people)"),
+        WordPair(thaiA: "เล็ก", romanA: "lék", meaningA: "small (size)", hindiA: "छोटा",
+                 thaiB: "น้อย", romanB: "nói", meaningB: "little (amount)", hindiB: "कम",
+                 note: "บ้านเล็ก small house, but เงินน้อย little money — size vs amount"),
+        WordPair(thaiA: "ดู", romanA: "duu", meaningA: "to look / watch", hindiA: "देखना",
+                 thaiB: "เห็น", romanB: "hěn", meaningB: "to see", hindiB: "दिखना",
+                 note: "ดู is deliberate (watch TV); เห็น just happens (I saw him) — like देखना vs दिखना"),
+        WordPair(thaiA: "พูด", romanA: "phûut", meaningA: "to speak", hindiA: "बोलना",
+                 thaiB: "คุย", romanB: "khui", meaningB: "to chat", hindiB: "बात करना",
+                 note: "พูดภาษาไทย speak Thai; คุยกับเพื่อน chat with friends — คุย is two-way and casual"),
+        WordPair(thaiA: "กิน", romanA: "kin", meaningA: "to eat", hindiA: "खाना",
+                 thaiB: "ทาน", romanB: "thaan", meaningB: "to eat (polite)", hindiB: "खाना (आदरपूर्वक)",
+                 note: "ทาน with elders, staff, strangers; กิน with friends. Waiters will ask ทานอะไรดี"),
+        WordPair(thaiA: "รู้", romanA: "rúu", meaningA: "to know", hindiA: "जानना",
+                 thaiB: "ทราบ", romanB: "sâap", meaningB: "to know (formal)", hindiB: "ज्ञात होना",
+                 note: "ไม่ทราบ is the polite \"I don't know\" — use it with officials and elders"),
+        WordPair(thaiA: "เจอ", romanA: "jer", meaningA: "to meet / run into", hindiA: "मिलना",
+                 thaiB: "พบ", romanB: "phóp", meaningB: "to meet (formal)", hindiB: "भेंट करना",
+                 note: "เจอกัน see you! (casual); พบ for appointments and news headlines"),
+        WordPair(thaiA: "รอ", romanA: "roo", meaningA: "to wait", hindiA: "इंतज़ार करना",
+                 thaiB: "คอย", romanB: "khoi", meaningB: "to wait / keep waiting", hindiB: "प्रतीक्षा करना",
+                 note: "Nearly interchangeable; รอคอย together = to long for (song lyrics love it)"),
+        WordPair(thaiA: "ชอบ", romanA: "chôp", meaningA: "to like", hindiA: "पसंद करना",
+                 thaiB: "รัก", romanB: "rák", meaningB: "to love", hindiB: "प्यार करना",
+                 note: "Same ladder as English — ชอบมาก (really like) sits safely between them"),
+        WordPair(thaiA: "อยาก", romanA: "yàak", meaningA: "to want (to do)", hindiA: "चाहना (क्रिया)",
+                 thaiB: "เอา", romanB: "ao", meaningB: "to want (a thing)", hindiB: "लेना / चाहिए",
+                 note: "อยากไป want to go; เอาน้ำ want water — verb after อยาก, noun after เอา"),
+        WordPair(thaiA: "ต้อง", romanA: "tôong", meaningA: "must", hindiA: "पड़ना / ज़रूरी",
+                 thaiB: "ควร", romanB: "khuan", meaningB: "should", hindiB: "चाहिए",
+                 note: "ต้องไป must go; ควรไป should go — obligation vs advice"),
+        WordPair(thaiA: "เร็ว", romanA: "reo", meaningA: "fast", hindiA: "तेज़",
+                 thaiB: "ไว", romanB: "wai", meaningB: "quick / prompt", hindiB: "फुर्तीला",
+                 note: "เร็ว ๆ = hurry up!; ไว is about reacting quickly — เรียนไว = fast learner"),
+        WordPair(thaiA: "ใหญ่", romanA: "yài", meaningA: "big", hindiA: "बड़ा",
+                 thaiB: "โต", romanB: "too", meaningB: "big / grown-up", hindiB: "बड़ा (बढ़ा हुआ)",
+                 note: "โต is about growing — โตขึ้น = to grow up; ใหญ่ is plain size"),
+        WordPair(thaiA: "สวย", romanA: "sǔai", meaningA: "beautiful", hindiA: "सुंदर",
+                 thaiB: "งาม", romanB: "ngaam", meaningB: "graceful / lovely", hindiB: "मनोहर",
+                 note: "งาม is poetic/traditional; together สวยงาม = beautiful (formal). Careful: flat-tone suai = unlucky!"),
+        WordPair(thaiA: "หนาว", romanA: "nǎao", meaningA: "cold (feeling)", hindiA: "ठंड (एहसास)",
+                 thaiB: "เย็น", romanB: "yen", meaningB: "cool / cold (things)", hindiB: "ठंडा (चीज़ें)",
+                 note: "You feel หนาว; drinks are เย็น — น้ำเย็น cold water, never น้ำหนาว"),
+        WordPair(thaiA: "ร้อน", romanA: "rón", meaningA: "hot", hindiA: "गरम",
+                 thaiB: "อุ่น", romanB: "ùn", meaningB: "warm", hindiB: "गुनगुना",
+                 note: "น้ำอุ่น warm water for showers; อบอุ่น = warm-hearted / cozy"),
+        WordPair(thaiA: "ปวด", romanA: "pùat", meaningA: "to ache", hindiA: "दर्द होना",
+                 thaiB: "เจ็บ", romanB: "jèp", meaningB: "to hurt (sharp)", hindiB: "चोट का दर्द",
+                 note: "ปวดหัว headache (dull, inside); เจ็บ for cuts and injuries — tell the pharmacy the right one"),
+        WordPair(thaiA: "เหนื่อย", romanA: "nùeai", meaningA: "tired", hindiA: "थका हुआ",
+                 thaiB: "ง่วง", romanB: "ngûang", meaningB: "sleepy", hindiB: "उनींदा",
+                 note: "เหนื่อย after exercise; ง่วง after lunch — Thais never mix these up"),
+        WordPair(thaiA: "ดี", romanA: "dii", meaningA: "good", hindiA: "अच्छा",
+                 thaiB: "เก่ง", romanB: "kèng", meaningB: "good at / skilled", hindiB: "होशियार",
+                 note: "คนดี good person (character); เก่ง for skills — พูดไทยเก่ง = you speak Thai well!"),
+        WordPair(thaiA: "ตอนนี้", romanA: "toon-níi", meaningA: "now", hindiA: "अभी",
+                 thaiB: "เดี๋ยวนี้", romanB: "dǐao-níi", meaningB: "right now!", hindiB: "अभी इसी वक़्त",
+                 note: "เดี๋ยวนี้ has urgency — what a parent says the second time"),
+        WordPair(thaiA: "เงิน", romanA: "ngoen", meaningA: "money", hindiA: "पैसा",
+                 thaiB: "ตังค์", romanB: "tang", meaningB: "money (colloquial)", hindiB: "पैसे (बोलचाल)",
+                 note: "ตังค์ from สตางค์ (satang, the coin) — ไม่มีตังค์ = I'm broke, like हिंदी का \"पैसे नहीं हैं\""),
+        WordPair(thaiA: "สบาย", romanA: "sà-baai", meaningA: "comfortable / relaxed", hindiA: "आराम से",
+                 thaiB: "ชิวๆ", romanB: "chiu-chiu", meaningB: "chill (slang)", hindiB: "चिल",
+                 note: "Same vibe, different register — see Thai Slang for more ชิวๆ"),
+        WordPair(thaiA: "อร่อย", romanA: "à-ròi", meaningA: "delicious", hindiA: "स्वादिष्ट",
+                 thaiB: "แซ่บ", romanB: "sâep", meaningB: "spicy-delicious (slang)", hindiB: "मस्त-तीखा",
+                 note: "แซ่บ is Isaan slang for food that's deliciously fiery — som tam is never just อร่อย"),
+        WordPair(thaiA: "บอก", romanA: "bòok", meaningA: "to tell", hindiA: "बताना",
+                 thaiB: "พูด", romanB: "phûut", meaningB: "to speak / say", hindiB: "बोलना",
+                 note: "บอก needs a listener (tell me = บอกหน่อย); พูด is just producing words"),
     ]
 }
 
